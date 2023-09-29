@@ -47,7 +47,7 @@ onionbuilding_eventScript_getAFreeLegendary_6:
 
 onionbuilding_eventScript_getAFreeLegendary2::
 	lockall
-	showmonpic SPECIES_CELEBI, 10, 3
+	showmonpic SPECIES_URSARING, 10, 3
 	msgbox onionbuilding_eventScript_getAFreeLegendary2_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq onionbuilding_eventScript_getAFreeLegendary2_2
@@ -59,7 +59,7 @@ onionbuilding_eventScript_getAFreeLegendary2_1:
 	end
 
 onionbuilding_eventScript_getAFreeLegendary2_2:
-	givemon SPECIES_CELEBI, 50, ITEM_MASTER_BALL
+	givemon SPECIES_URSARING, 50, ITEM_MASTER_BALL
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq onionbuilding_eventScript_getAFreeLegendary2_5
 	compare VAR_RESULT, MON_GIVEN_TO_PC
@@ -80,7 +80,7 @@ onionbuilding_eventScript_getAFreeLegendary2_5:
 
 onionbuilding_eventScript_getAFreeLegendary2_6:
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox onionbuilding_eventScript_getAFreeLegendary2_Text_1
+	msgbox onionbuilding_eventScript_getAFreeLegendary2_Text_2
 	removeobject 1
 	removeobject 2
 	removeobject 3
@@ -177,9 +177,13 @@ onionbuilding_eventScript_getAFreeLegendary_Text_2:
 	.string "No More Room$"
 
 onionbuilding_eventScript_getAFreeLegendary2_Text_0:
-	.string "Do you want to choose Celebi?$"
+	.string "Do you want to choose Ursaring?$"
 
 onionbuilding_eventScript_getAFreeLegendary2_Text_1:
+	.string "Recieved The best of the best baby.\n"
+	.string "easy cake from here$"
+
+onionbuilding_eventScript_getAFreeLegendary2_Text_2:
 	.string "Recieved Celebi$"
 
 onionbuilding_eventScript_getAFreeLegendary3_Text_0:

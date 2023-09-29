@@ -42,13 +42,13 @@ script onionbuilding_eventScript_getAFreeLegendary{
 }
 script onionbuilding_eventScript_getAFreeLegendary2{
 	lockall
-    showmonpic(SPECIES_CELEBI, 10,3)
-    msgbox("Do you want to choose Celebi?", MSGBOX_YESNO)
+    showmonpic(SPECIES_URSARING, 10,3)
+    msgbox("Do you want to choose Ursaring?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_CELEBI, 50, ITEM_MASTER_BALL)
+        givemon(SPECIES_URSARING, 50, ITEM_MASTER_BALL)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Recieved Celebi")
+            msgbox(format("Recieved The best of the best baby. easy cake from here"))
             removeobject(1)
             removeobject(2)
             removeobject(3)

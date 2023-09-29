@@ -888,6 +888,170 @@ static const union AnimCmd sSpriteAnim_TypeFairy[] = {
     ANIMCMD_FRAME(TYPE_FAIRY * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeFurry[] = {
+    ANIMCMD_FRAME(TYPE_FURRY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBear[] = {
+    ANIMCMD_FRAME(TYPE_BEAR * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFruity[] = {
+    ANIMCMD_FRAME(TYPE_FRUITY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTree[] = {
+    ANIMCMD_FRAME(TYPE_TREE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShuckle[] = {
+    ANIMCMD_FRAME(TYPE_SHUCKLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeUgly[] = {
+    ANIMCMD_FRAME(TYPE_UGLY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMassive[] = {
+    ANIMCMD_FRAME(TYPE_MASSIVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShort[] = {
+    ANIMCMD_FRAME(TYPE_SHORT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeKing[] = {
+    ANIMCMD_FRAME(TYPE_KING * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGod[] = {
+    ANIMCMD_FRAME(TYPE_GOD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSpace[] = {
+    ANIMCMD_FRAME(TYPE_SPACE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeStall[] = {
+    ANIMCMD_FRAME(TYPE_STALL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLoser[] = {
+    ANIMCMD_FRAME(TYPE_LOSER * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEvil[] = {
+    ANIMCMD_FRAME(TYPE_EVIL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFun[] = {
+    ANIMCMD_FRAME(TYPE_FUN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeNerd[] = {
+    ANIMCMD_FRAME(TYPE_NERD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeOak[] = {
+    ANIMCMD_FRAME(TYPE_OAK * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWood[] = {
+    ANIMCMD_FRAME(TYPE_WOOD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTable[] = {
+    ANIMCMD_FRAME(TYPE_TABLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBee[] = {
+    ANIMCMD_FRAME(TYPE_BEE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeCool[] = {
+    ANIMCMD_FRAME(TYPE_COOL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFish[] = {
+    ANIMCMD_FRAME(TYPE_FISH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHard[] = {
+    ANIMCMD_FRAME(TYPE_HARD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFake[] = {
+    ANIMCMD_FRAME(TYPE_FAKE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTrain[] = {
+    ANIMCMD_FRAME(TYPE_TRAIN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGoofy[] = {
+    ANIMCMD_FRAME(TYPE_GOOFY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSubmissive[] = {
+    ANIMCMD_FRAME(TYPE_SUBMISSIVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWafflehouse[] = {
+    ANIMCMD_FRAME(TYPE_WAFFLEHOUSE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEgo[] = {
+    ANIMCMD_FRAME(TYPE_EGO * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWizard[] = {
+    ANIMCMD_FRAME(TYPE_WIZARD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSong[] = {
+    ANIMCMD_FRAME(TYPE_SONG * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTech[] = {
+    ANIMCMD_FRAME(TYPE_TECH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSnow[] = {
+    ANIMCMD_FRAME(TYPE_SNOW * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSmart[] = {
+    ANIMCMD_FRAME(TYPE_SMART * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeStupid[] = {
+    ANIMCMD_FRAME(TYPE_STUPID * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMoney[] = {
+    ANIMCMD_FRAME(TYPE_MONEY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDog[] = {
+    ANIMCMD_FRAME(TYPE_DOG * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeCat[] = {
+    ANIMCMD_FRAME(TYPE_CAT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypePitbull[] = {
+    ANIMCMD_FRAME(TYPE_PITBULL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeNinja[] = {
+    ANIMCMD_FRAME(TYPE_NINJA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHMSlave[] = {
+    ANIMCMD_FRAME(TYPE_HMSLAVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -928,6 +1092,47 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
     sSpriteAnim_TypeFairy,
+    sSpriteAnim_TypeFurry,
+    sSpriteAnim_TypeBear,
+    sSpriteAnim_TypeFruity,
+    sSpriteAnim_TypeTree,
+    sSpriteAnim_TypeShuckle,
+    sSpriteAnim_TypeUgly,
+    sSpriteAnim_TypeMassive,
+    sSpriteAnim_TypeShort,
+    sSpriteAnim_TypeKing,
+    sSpriteAnim_TypeGod,
+    sSpriteAnim_TypeSpace,
+    sSpriteAnim_TypeStall,
+    sSpriteAnim_TypeLoser,
+    sSpriteAnim_TypeEvil,
+    sSpriteAnim_TypeFun,
+    sSpriteAnim_TypeNerd,
+    sSpriteAnim_TypeOak,
+    sSpriteAnim_TypeWood,
+    sSpriteAnim_TypeTable,
+    sSpriteAnim_TypeBee,
+    sSpriteAnim_TypeCool,
+    sSpriteAnim_TypeFish,
+    sSpriteAnim_TypeHard,
+    sSpriteAnim_TypeFake,
+    sSpriteAnim_TypeTrain,
+    sSpriteAnim_TypeGoofy,
+    sSpriteAnim_TypeSubmissive,
+    sSpriteAnim_TypeWafflehouse,
+    sSpriteAnim_TypeEgo,
+    sSpriteAnim_TypeWizard,
+    sSpriteAnim_TypeSong,
+    sSpriteAnim_TypeTech,
+    sSpriteAnim_TypeSnow,
+    sSpriteAnim_TypeSmart,
+    sSpriteAnim_TypeStupid,
+    sSpriteAnim_TypeMoney,
+    sSpriteAnim_TypeDog,
+    sSpriteAnim_TypeCat,
+    sSpriteAnim_TypePitbull,
+    sSpriteAnim_TypeNinja,
+    sSpriteAnim_TypeHMSlave,
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
@@ -972,6 +1177,47 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_DRAGON] = 15,
     [TYPE_DARK] = 13,
     [TYPE_FAIRY] = 14,
+    [TYPE_FURRY] = 14,
+    [TYPE_BEAR] = 13,
+    [TYPE_FRUITY]    = 13,
+    [TYPE_TREE]    = 13,
+    [TYPE_SHUCKLE]    = 13,
+    [TYPE_UGLY]    = 13,
+    [TYPE_MASSIVE]    = 13,
+    [TYPE_SHORT]    = 13,
+    [TYPE_KING]    = 15,
+    [TYPE_GOD]    = 15,
+    [TYPE_SPACE]    = 14,
+    [TYPE_STALL]=14 ,
+    [TYPE_LOSER]=14,
+    [TYPE_EVIL]=14,
+    [TYPE_FUN]=14,
+    [TYPE_NERD]=14,
+    [TYPE_OAK]=14,
+    [TYPE_WOOD]=14,
+    [TYPE_TABLE]=14,
+    [TYPE_BEE]=14,
+    [TYPE_COOL]=14,
+    [TYPE_FISH]=14,
+    [TYPE_HARD]=14,
+    [TYPE_FAKE]=14,
+    [TYPE_TRAIN]=14,
+    [TYPE_GOOFY]=14,
+    [TYPE_SUBMISSIVE]=14,
+    [TYPE_WAFFLEHOUSE]=14,
+    [TYPE_EGO]=14,
+    [TYPE_WIZARD]=14,
+    [TYPE_SONG]=14,
+    [TYPE_TECH]=14,
+    [TYPE_SNOW]=14,
+    [TYPE_SMART]=14,
+    [TYPE_STUPID]=14,
+    [TYPE_MONEY]=14,
+    [TYPE_DOG]=14,
+    [TYPE_CAT]=14,
+    [TYPE_PITBULL]=14,
+    [TYPE_NINJA]=14,
+    [TYPE_HMSLAVE]=14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = 14,

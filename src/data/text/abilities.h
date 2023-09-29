@@ -289,7 +289,7 @@ static const u8 sToxicDebrisDescription[] = _("Throws poison spikes if hit.");
 static const u8 sArmorTailDescription[] = _("Protects from priority.");
 static const u8 sEarthEaterDescription[] = _("Eats ground to heal HP.");
 static const u8 sMyceliumMightDescription[] = _("Status moves never fail.");
-static const u8 sModdModeDescription[] = _("youre the best around.");
+static const u8 sModdModeDescription[] = _("You're the best around.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =

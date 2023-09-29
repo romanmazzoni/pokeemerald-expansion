@@ -311,7 +311,7 @@ const struct OamData gOamData_BattleSpritePlayerSide =
 
 static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 
-const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
+const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] = //names can only be 6 letters long
 {
     [TYPE_NORMAL] = _("Normal"),
     [TYPE_FIGHTING] = _("Fight"),
@@ -332,6 +332,47 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_DRAGON] = _("Dragon"),
     [TYPE_DARK] = _("Dark"),
     [TYPE_FAIRY] = _("Fairy"),
+    [TYPE_FURRY] = _("Furry"),
+    [TYPE_BEAR] = _("Bear"),
+    [TYPE_FRUITY]    = _("Fruity"),
+    [TYPE_TREE]    = _("Tree"),
+    [TYPE_SHUCKLE]    = _("Shukle"),
+    [TYPE_UGLY]    = _("Ugly"),
+    [TYPE_MASSIVE]    = _("Masive"),
+    [TYPE_SHORT]    = _("Short"),
+    [TYPE_KING]    = _("King"),
+    [TYPE_GOD]    = _("God"),
+    [TYPE_SPACE]    = _("Space"),
+    [TYPE_STALL]    = _("Stall"),
+    [TYPE_LOSER]    = _("Loser"),
+    [TYPE_EVIL]    = _("Evil"),
+    [TYPE_FUN]    = _("Fun"),
+    [TYPE_NERD]    = _("Nerd"),
+    [TYPE_OAK]    = _("Oak"),
+    [TYPE_WOOD]    = _("Wood"),
+    [TYPE_TABLE]    = _("Table"),
+    [TYPE_BEE]    = _("Bee"),
+    [TYPE_COOL]    = _("Cool"),
+    [TYPE_FISH]    = _("Fish"),
+    [TYPE_HARD]    = _("Hard"),
+    [TYPE_FAKE]    = _("Fake"),
+    [TYPE_TRAIN]    = _("Train"),
+    [TYPE_GOOFY]    = _("Goofy"),
+    [TYPE_SUBMISSIVE]    = _("Sub"),
+    [TYPE_WAFFLEHOUSE]    = _("Waffle"),
+    [TYPE_EGO]    = _("Ego"),
+    [TYPE_WIZARD]    = _("Wizard"),
+    [TYPE_SONG]    = _("Song"),
+    [TYPE_TECH]    = _("Tech"),
+    [TYPE_SNOW]    = _("Snow"),
+    [TYPE_SMART]    = _("Smart"),
+    [TYPE_STUPID]    = _("Stupid"),
+    [TYPE_MONEY]    = _("Money"),
+    [TYPE_DOG]    = _("Dog"),
+    [TYPE_CAT]    = _("Cat"),
+    [TYPE_PITBULL]    = _("Pitbul"),
+    [TYPE_NINJA]    = _("Ninja"),
+    [TYPE_HMSLAVE]    = _("HMSlav"),
 };
 
 // This is a factor in how much money you get for beating a trainer.
@@ -5659,7 +5700,7 @@ void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
 
         // Subtract 4 instead of 1 below because 3 types are excluded (TYPE_NORMAL and TYPE_MYSTERY and TYPE_FAIRY)
         // The final + 1 skips past Normal, and the following conditional skips TYPE_MYSTERY
-        gBattleStruct->dynamicMoveType = ((NUMBER_OF_MON_TYPES - 4) * typeBits) / 63 + 1;
+        gBattleStruct->dynamicMoveType = ((NUMBER_OF_MON_TYPES - 5) * typeBits) / 63 + 1;
         if (gBattleStruct->dynamicMoveType >= TYPE_MYSTERY)
             gBattleStruct->dynamicMoveType++;
         gBattleStruct->dynamicMoveType |= F_DYNAMIC_TYPE_1 | F_DYNAMIC_TYPE_2;

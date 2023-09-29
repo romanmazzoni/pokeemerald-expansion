@@ -555,7 +555,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .accuracy = 95,
         #endif
         .effect = EFFECT_HIT,
-        .type = TYPE_NORMAL,
+        .type = TYPE_FURRY,
         .pp = 35,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -752,7 +752,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_ATTACK_DOWN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_MYSTERY,
         .accuracy = 100,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -877,7 +877,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_BURN_HIT,
         .power = 40,
-        .type = TYPE_FIRE,
+        .type = TYPE_GOD,
         .accuracy = 100,
         .pp = 25,
         .secondaryEffectChance = 10,
@@ -2943,7 +2943,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_SOUND,
         #endif
         .effect = EFFECT_SNORE,
-        .type = TYPE_NORMAL,
+        .type = TYPE_KING,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 30,

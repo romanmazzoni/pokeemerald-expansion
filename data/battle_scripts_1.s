@@ -8420,6 +8420,16 @@ BattleScript_SpeedBoostActivates::
 BattleScript_SpeedBoostActivatesEnd:
 	end3
 
+BattleScript_AttackBoostActivates::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_AttackBoostActivatesEnd
+	call BattleScript_AbilityPopUp
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_ATTACKERABILITYSTATRAISE 
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AttackBoostActivatesEnd:
+	end3	
+
 @ Can't compare directly to a value, have to compare to value at pointer
 sZero:
 .byte 0
