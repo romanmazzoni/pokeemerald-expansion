@@ -1,0 +1,150 @@
+raw `
+onionbuilding_MapScripts::
+	.byte 0
+`
+script onionbuilding_eventScript_getAFreeLegendary{
+	lockall
+    showmonpic(SPECIES_JIRACHI, 10,3)
+    msgbox("Do you want to choose Jirachi?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_JIRACHI, 50, ITEM_MASTER_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Jirachi")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Jirachi")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(NewProfessor_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}
+script onionbuilding_eventScript_getAFreeLegendary2{
+	lockall
+    showmonpic(SPECIES_CELEBI, 10,3)
+    msgbox("Do you want to choose Celebi?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_CELEBI, 50, ITEM_MASTER_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Celebi")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Celebi")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(NewProfessor_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}
+script onionbuilding_eventScript_getAFreeLegendary3{
+	lockall
+    showmonpic(SPECIES_VICTINI, 10,3)
+    msgbox("Do you want to choose Victini?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_VICTINI, 50, ITEM_MASTER_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Victini")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved Victini")
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            setflag(FLAG_TAKESTARTINGLEGENDARY)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(NewProfessor_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}
+ 
+script NicknamePartyMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+ 
+ 
+}
+ 
+script NicknameBoxMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+ 
+}
+ 
+text NewProfessor_NotChosen{
+    "You did not choose the Pokemon"
+}
+script onionbuilding_eventscrpt_guytalking{
+    lockall
+    msgbox(format("Yeah you want a free legendary? im mostly here for a test. look at how long i can talk for isnt this awesome?????"))
+    releaseall
+}

@@ -5814,7 +5814,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_URSARING] =
     {
-        .baseHP        = 90,
+        .baseHP        = 200,
         .baseAttack    = 130,
         .baseDefense   = 75,
         .baseSpeed     = 55,

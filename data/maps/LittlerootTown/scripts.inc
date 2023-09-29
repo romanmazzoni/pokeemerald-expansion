@@ -51,6 +51,7 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
+	call_if_unset FLAG_UNUSED_0x024, LittlerootTown_EventScript_SetupRivalBattle
 	end
 
 LittlerootTown_EventScript_LeftLabAfterDexUpgrade::
@@ -1019,3 +1020,59 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_EventScript_CreditsSign::
+	lockall
+	msgbox LittlerootTown_EventScript_CreditsSign_Text_0
+	releaseall
+	return
+
+
+LittlerootTown_EventScript_SetupRivalBattle::
+	goto_if_unset FLAG_TAKESTARTINGLEGENDARY, LittlerootTown_EventScript_SetupRivalBattle_1
+	clearflag FLAG_NEWMAYFIGHT
+	return
+
+LittlerootTown_EventScript_SetupRivalBattle_1:
+	setflag FLAG_NEWMAYFIGHT
+	return
+
+
+LittlerootTown_EventScript_MayRivalBattle::
+	trainerbattle_single TRAINER_MAY_ROUTE_103_TORCHIC, May_Intro, May_Outro, RivalBattleOver
+	end
+
+
+RivalBattleOver::
+	lockall
+	applymovement 9, MayLeave
+	waitmovement 0
+	removeobject 9
+	setflag FLAG_NEWMAYFIGHT
+	setflag FLAG_ADVENTURE_STARTED
+	releaseall
+	return
+
+
+MayLeave:
+	face_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+LittlerootTown_EventScript_CreditsSign_Text_0:
+	.string "Credits building$"
+
+May_Intro::
+	.string "You'll never win$"
+
+May_Outro::
+	.string "Kys$"
+
+PostBattle_May::
+	.string "no really kys$"

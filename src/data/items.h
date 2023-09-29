@@ -67,7 +67,7 @@ const struct Item gItems[] =
     {
         .name = _("Master Ball"),
         .itemId = ITEM_MASTER_BALL,
-        .price = 0,
+        .price = 1000,
         .description = sMasterBallDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
@@ -3793,7 +3793,7 @@ const struct Item gItems[] =
     {
         .name = _("Blue Orb"),
         .itemId = ITEM_BLUE_ORB,
-        .price = 0,
+        .price = 150,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
         .description = sBlueOrbDesc,
         .pocket = POCKET_ITEMS,
