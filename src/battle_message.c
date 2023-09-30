@@ -2056,6 +2056,16 @@ static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][17] =
     [TYPE_PITBULL]    = _("a PITBULL move"),
     [TYPE_NINJA]    = _("a NINJA move"),
     [TYPE_HMSLAVE]    = _("a HMSLAVE move"),
+    [TYPE_RED]    = _("a RED move"),
+    [TYPE_BLUE]    = _("a BLUE move"),
+    [TYPE_SCARY]    = _("a SCARY move"),
+    [TYPE_SPORTS]    = _("a SPORTS move"),
+    [TYPE_SOFT]    = _("a SOFT move"),
+    [TYPE_SLEDGE]    = _("a SLEDGE move"),
+    [TYPE_EXPLOSION]    = _("a EXPLOSIVE move"),
+    [TYPE_TURTLE]    = _("a TURTLE move"),
+    [TYPE_DINO]    = _("a DINO move"),
+    [TYPE_DANCE]    = _("a DANCE move"),
 };
 
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");

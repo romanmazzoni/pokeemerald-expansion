@@ -373,6 +373,16 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] = //names can onl
     [TYPE_PITBULL]    = _("Pitbul"),
     [TYPE_NINJA]    = _("Ninja"),
     [TYPE_HMSLAVE]    = _("HMSlav"),
+    [TYPE_RED]    = _("Red"),
+    [TYPE_BLUE]    = _("Blue"),
+    [TYPE_SCARY]    = _("Scary"),
+    [TYPE_SPORTS]    = _("Sports"),
+    [TYPE_SOFT]    = _("Soft"),
+    [TYPE_SLEDGE]    = _("Sledge"),
+    [TYPE_EXPLOSION]    = _("Explod"),
+    [TYPE_TURTLE]    = _("Turtle"),
+    [TYPE_DINO]    = _("Dino"),
+    [TYPE_DANCE]    = _("Dance"),
 };
 
 // This is a factor in how much money you get for beating a trainer.

@@ -24,7 +24,7 @@ STARTERGFXDIR := graphics/starter_choose
 NAMINGGFXDIR := graphics/naming_screen
 SPINDAGFXDIR := graphics/spinda_spots
 
-types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy furry bear fruity tree shuckle ugly massive short king god space stall loser evil fun nerd oak wood table bee cool fish hard fake train goofy submissive wafflehouse ego wizard song tech snow smart stupid money dog cat pitbull ninja hmslave
+types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy furry bear fruity tree shuckle ugly massive short king god space stall loser evil fun nerd oak wood table bee cool fish hard fake train goofy submissive wafflehouse ego wizard song tech snow smart stupid money dog cat pitbull ninja hmslave red blue scary sports soft sledge explosion turtle dino dance
 contest_types := cool beauty cute smart tough
 
 ### Cherrim ###

@@ -1052,6 +1052,46 @@ static const union AnimCmd sSpriteAnim_TypeHMSlave[] = {
     ANIMCMD_FRAME(TYPE_HMSLAVE * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeRed[] = {
+    ANIMCMD_FRAME(TYPE_RED * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBlue[] = {
+    ANIMCMD_FRAME(TYPE_BLUE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeScary[] = {
+    ANIMCMD_FRAME(TYPE_SCARY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSports[] = {
+    ANIMCMD_FRAME(TYPE_SPORTS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSoft[] = {
+    ANIMCMD_FRAME(TYPE_SOFT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSledge[] = {
+    ANIMCMD_FRAME(TYPE_SLEDGE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeExplosion[] = {
+    ANIMCMD_FRAME(TYPE_EXPLOSION * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTurtle[] = {
+    ANIMCMD_FRAME(TYPE_TURTLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDino[] = {
+    ANIMCMD_FRAME(TYPE_DINO * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDance[] = {
+    ANIMCMD_FRAME(TYPE_DANCE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -1218,6 +1258,16 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_PITBULL]=14,
     [TYPE_NINJA]=14,
     [TYPE_HMSLAVE]=14,
+    [TYPE_RED] = 14,
+    [TYPE_BLUE]=14,
+    [TYPE_SCARY]=14,
+    [TYPE_SPORTS]=14,
+    [TYPE_SOFT]=14,
+    [TYPE_SLEDGE]=14,
+    [TYPE_EXPLOSION]=14,
+    [TYPE_TURTLE]=14,
+    [TYPE_DINO]=14,
+    [TYPE_DANCE]=14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = 14,

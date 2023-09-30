@@ -63,7 +63,17 @@
 #define TYPE_PITBULL          57
 #define TYPE_NINJA            58
 #define TYPE_HMSLAVE          59
-#define NUMBER_OF_MON_TYPES   60
+#define TYPE_RED              60
+#define TYPE_BLUE             61
+#define TYPE_SCARY            62
+#define TYPE_SPORTS           63
+#define TYPE_SOFT             64
+#define TYPE_SLEDGE           65
+#define TYPE_EXPLOSION        66
+#define TYPE_TURTLE           67
+#define TYPE_DINO             68
+#define TYPE_DANCE            69
+#define NUMBER_OF_MON_TYPES   70
 
 
 // Pokemon egg groups
