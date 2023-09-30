@@ -3149,6 +3149,7 @@ u8 DoBattlerEndTurnEffects(void)
                 gBattleResources->flags->flags[gActiveBattler] &= ~RESOURCE_FLAG_ROOST;
                 gBattleMons[gActiveBattler].type1 = gBattleStruct->roostTypes[gActiveBattler][0];
                 gBattleMons[gActiveBattler].type2 = gBattleStruct->roostTypes[gActiveBattler][1];
+                gBattleMons[gActiveBattler].type3 = gBattleStruct->roostTypes[gActiveBattler][2];
             }
             gBattleStruct->turnEffectsTracker++;
             break;
@@ -9860,6 +9861,8 @@ static void TryNoticeIllusionInTypeEffectiveness(u32 move, u32 moveType, u32 bat
     MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[0], battlerAtk, FALSE);
     if (gSpeciesInfo[illusionSpecies].types[1] != gSpeciesInfo[illusionSpecies].types[0])
         MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
+    if (gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[0] && gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[1])
+        MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
 
     if (presumedModifier != resultingModifier)
         RecordAbilityBattle(battlerDef, ABILITY_ILLUSION);
@@ -9896,8 +9899,7 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
     MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type1, battlerAtk, recordAbilities);
     if (gBattleMons[battlerDef].type2 != gBattleMons[battlerDef].type1)
         MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type2, battlerAtk, recordAbilities);
-    if (gBattleMons[battlerDef].type3 != TYPE_MYSTERY && gBattleMons[battlerDef].type3 != gBattleMons[battlerDef].type2
-        && gBattleMons[battlerDef].type3 != gBattleMons[battlerDef].type1)
+    if (gBattleMons[battlerDef].type3 != gBattleMons[battlerDef].type2 && gBattleMons[battlerDef].type3 != gBattleMons[battlerDef].type1)
         MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type3, battlerAtk, recordAbilities);
 
     if (recordAbilities && (illusionSpecies = GetIllusionMonSpecies(battlerDef)))
@@ -9987,6 +9989,8 @@ u16 CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 abilit
         MulByTypeEffectiveness(&modifier, move, moveType, 0, gSpeciesInfo[speciesDef].types[0], 0, FALSE);
         if (gSpeciesInfo[speciesDef].types[1] != gSpeciesInfo[speciesDef].types[0])
             MulByTypeEffectiveness(&modifier, move, moveType, 0, gSpeciesInfo[speciesDef].types[1], 0, FALSE);
+        if (gSpeciesInfo[speciesDef].types[2] != gSpeciesInfo[speciesDef].types[0] && gSpeciesInfo[speciesDef].types[2] != gSpeciesInfo[speciesDef].types[1])
+            MulByTypeEffectiveness(&modifier, move, moveType, 0, gSpeciesInfo[speciesDef].types[2], 0, FALSE);
 
         if (moveType == TYPE_GROUND && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
             modifier = UQ_4_12(0.0);
@@ -10022,7 +10026,7 @@ u16 GetTypeModifier(u8 atkType, u8 defType)
     return sTypeEffectivenessTable[atkType][defType];
 }
 
-s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 maxHp)
+s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u8 type3, u32 maxHp)
 {
     s32 dmg = 0;
     u16 modifier = UQ_4_12(1.0);
@@ -10030,6 +10034,8 @@ s32 GetStealthHazardDamageByTypesAndHP(u8 hazardType, u8 type1, u8 type2, u32 ma
     MulModifier(&modifier, GetTypeModifier(hazardType, type1));
     if (type2 != type1)
         MulModifier(&modifier, GetTypeModifier(hazardType, type2));
+    if (type3 != type2 && type3 != type1)
+        MulModifier(&modifier, GetTypeModifier(hazardType, type3));
 
     switch (modifier)
     {
@@ -10070,9 +10076,10 @@ s32 GetStealthHazardDamage(u8 hazardType, u8 battlerId)
 {
     u8 type1 = gBattleMons[battlerId].type1;
     u8 type2 = gBattleMons[battlerId].type2;
+    u8 type3 = gBattleMons[battlerId].type3;
     u32 maxHp = gBattleMons[battlerId].maxHP;
 
-    return GetStealthHazardDamageByTypesAndHP(hazardType, type1, type2, maxHp);
+    return GetStealthHazardDamageByTypesAndHP(hazardType, type1, type2, type3, maxHp);
 }
 
 bool32 IsPartnerMonFromSameTrainer(u8 battlerId)
@@ -11015,7 +11022,7 @@ void CopyMonAbilityAndTypesToBattleMon(u32 battler, struct Pokemon *mon)
     gBattleMons[battler].ability = GetMonAbility(mon);
     gBattleMons[battler].type1 = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].type2 = gSpeciesInfo[gBattleMons[battler].species].types[1];
-    gBattleMons[battler].type3 = TYPE_MYSTERY;
+    gBattleMons[battler].type3 = gSpeciesInfo[gBattleMons[battler].species].types[2];
 }
 
 void RecalcBattlerStats(u32 battler, struct Pokemon *mon)

@@ -3457,7 +3457,7 @@ void FaintClearSetData(void)
 
     gBattleMons[gActiveBattler].type1 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[0];
     gBattleMons[gActiveBattler].type2 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[1];
-    gBattleMons[gActiveBattler].type3 = TYPE_MYSTERY;
+    gBattleMons[gActiveBattler].type3 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[2];
 
     Ai_UpdateFaintData(gActiveBattler);
     TryBattleFormChange(gActiveBattler, FORM_CHANGE_FAINT);
@@ -3558,7 +3558,7 @@ static void DoBattleIntro(void)
                 memcpy(&gBattleMons[gActiveBattler], &gBattleResources->bufferB[gActiveBattler][4], sizeof(struct BattlePokemon));
                 gBattleMons[gActiveBattler].type1 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[0];
                 gBattleMons[gActiveBattler].type2 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[1];
-                gBattleMons[gActiveBattler].type3 = TYPE_MYSTERY;
+                gBattleMons[gActiveBattler].type3 = gSpeciesInfo[gBattleMons[gActiveBattler].species].types[2];
                 gBattleMons[gActiveBattler].ability = GetAbilityBySpecies(gBattleMons[gActiveBattler].species, gBattleMons[gActiveBattler].abilityNum);
                 gBattleStruct->hpOnSwitchout[GetBattlerSide(gActiveBattler)] = gBattleMons[gActiveBattler].hp;
                 gBattleMons[gActiveBattler].status2 = 0;

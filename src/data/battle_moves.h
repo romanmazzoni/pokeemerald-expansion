@@ -877,7 +877,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_BURN_HIT,
         .power = 40,
-        .type = TYPE_GOD,
+        .type = TYPE_FIRE,
         .accuracy = 100,
         .pp = 25,
         .secondaryEffectChance = 10,

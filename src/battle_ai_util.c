@@ -729,7 +729,7 @@ bool32 MovesWithSplitUnusable(u32 attacker, u32 target, u32 split)
     s32 i, moveType;
     u32 usable = 0;
     u32 unusable = AI_DATA->moveLimitations[attacker];
-    u16 *moves = GetMovesArray(attacker);
+    u16 *moves = GetMovesArray(attacker); 
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -2546,6 +2546,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u8 currBattler, u8 switchBattler)
     s32 hazardDamage = 0;
     u8 type1 = gSpeciesInfo[species].types[0];
     u8 type2 = gSpeciesInfo[species].types[1];
+    u8 type3 = gSpeciesInfo[species].types[2];
     u32 maxHp = GetMonData(mon, MON_DATA_MAX_HP);
 
     if (flags == 0)
@@ -2561,7 +2562,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u8 currBattler, u8 switchBattler)
         return FALSE;
 
     if (flags & SIDE_STATUS_STEALTH_ROCK)
-        hazardDamage += GetStealthHazardDamageByTypesAndHP(gBattleMoves[MOVE_STEALTH_ROCK].type, type1, type2, maxHp);
+        hazardDamage += GetStealthHazardDamageByTypesAndHP(gBattleMoves[MOVE_STEALTH_ROCK].type, type1, type2, type3, maxHp);
 
     if (flags & SIDE_STATUS_SPIKES && ((type1 != TYPE_FLYING && type2 != TYPE_FLYING
         && ability != ABILITY_LEVITATE && holdEffect != HOLD_EFFECT_AIR_BALLOON)
