@@ -4209,20 +4209,28 @@ static void SetMonTypeIcons(void)
         {
             SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 160, 48, SPRITE_ARR_ID_TYPE + 1);
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
-            if (gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[0])
-            {
-                SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[2], 200, 48, SPRITE_ARR_ID_TYPE + 2);
-                SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, FALSE);
-            }
-            else{
-                SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, TRUE);
-            }
+
         }
         else
         {
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
         }
-        
+        if (gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[0])
+        {
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[2], 200, 48, SPRITE_ARR_ID_TYPE + 2);
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, FALSE);
+        }
+        else{
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, TRUE);
+        }
+        if (gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[0]&& gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[2])
+        {
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[3], 88, 48, SPRITE_ARR_ID_TYPE + 3);
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, FALSE);
+        }
+        else{
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, TRUE);
+        }
     }
 }
 

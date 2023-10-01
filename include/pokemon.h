@@ -283,7 +283,7 @@ struct BattlePokemon
     /*0x18*/ s8 statStages[NUM_BATTLE_STATS];
     /*0x20*/ u16 ability;
     /*0x22*/ u8 type1;
-    /*0x23*/ u8 type2;
+    /*0x23*/ u8 type2; 
     /*0x24*/ u8 type3;
     /*0x25*/ u8 pp[MAX_MON_MOVES];
     /*0x29*/ u16 hp;
@@ -300,6 +300,7 @@ struct BattlePokemon
     /*0x51*/ u32 status2;
     /*0x55*/ u32 otId;
     /*0x59*/ u8 metLevel;
+             u8 type4;
 };
 
 struct SpeciesInfo /*0x24*/
@@ -310,7 +311,7 @@ struct SpeciesInfo /*0x24*/
  /* 0x03 */ u8 baseSpeed;
  /* 0x04 */ u8 baseSpAttack;
  /* 0x05 */ u8 baseSpDefense;
- /* 0x06 */ u8 types[3];
+ /* 0x06 */ u8 types[4];
  /* 0x08 */ u8 catchRate;
  /* 0x09 padding */
  /* 0x0A */ u16 expYield; // expYield was changed from u8 to u16 for the new Exp System.
