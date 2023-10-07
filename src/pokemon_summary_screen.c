@@ -4401,22 +4401,6 @@ static void SetMonTypeIcons(void)
         {
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
         }
-        if (gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[0])
-        {
-            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[2], 164, 48, SPRITE_ARR_ID_TYPE + 2);
-            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, FALSE);
-        }
-        else{
-            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, TRUE);
-        }
-        if (gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[0]&& gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[2])
-        {
-            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[3], 202, 48, SPRITE_ARR_ID_TYPE + 3);
-            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, FALSE);
-        }
-        else{
-            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, TRUE);
-        }
     }
 }
 
