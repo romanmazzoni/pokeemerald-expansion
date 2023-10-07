@@ -3116,11 +3116,7 @@ u8 DoBattlerEndTurnEffects(void)
             break;
         case ENDTURN_ROOST: // Return flying type.
             if (gBattleResources->flags->flags[battler] & RESOURCE_FLAG_ROOST)
-            {
-                gBattleResources->flags->flags[gActiveBattler] &= ~RESOURCE_FLAG_ROOST;
-                gBattleMons[gActiveBattler].type1 = gBattleStruct->roostTypes[gActiveBattler][0];
-                gBattleMons[gActiveBattler].type2 = gBattleStruct->roostTypes[gActiveBattler][1];
-            }
+                gBattleResources->flags->flags[battler] &= ~RESOURCE_FLAG_ROOST;
             gBattleStruct->turnEffectsTracker++;
             break;
         case ENDTURN_ELECTRIFY:
@@ -11272,3 +11268,31 @@ bool32 IsGen6ExpShareEnabled(void)
     return FlagGet(I_EXP_SHARE_FLAG);
 #endif
 }
+
+
+u8 GetBattlerType(u32 battler, u8 typeIndex)
+{    
+    u16 types[3] = {0};
+    types[0] = gBattleMons[battler].type1;
+    types[1] = gBattleMons[battler].type2;
+    types[2] = gBattleMons[battler].type3;
+
+    // Handle Roost's Flying-type suppression
+    if (typeIndex == 0 || typeIndex == 1)
+    {
+        if (gBattleResources->flags->flags[battler] & RESOURCE_FLAG_ROOST)
+        {
+            if (types[0] == TYPE_FLYING && types[1] == TYPE_FLYING)
+#if B_ROOST_PURE_FLYING >= GEN_5
+                return TYPE_NORMAL;
+#else
+                return TYPE_MYSTERY;
+#endif
+            else
+                return types[typeIndex] == TYPE_FLYING ? TYPE_MYSTERY : types[typeIndex];
+        }
+    }
+
+    return types[typeIndex];
+}
+
