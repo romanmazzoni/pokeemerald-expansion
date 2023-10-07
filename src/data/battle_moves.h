@@ -14164,18 +14164,4 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
-    [MOVE_SHEER_WET] =
-    {
-        .effect = EFFECT_OHKO,
-        .power = 1,
-        .type = TYPE_WATER,
-        .accuracy = 60,
-        .pp = 31,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED, 
-        .split = SPLIT_SPECIAL,
-        .zMoveEffect = Z_EFFECT_NONE,
-    },
 };
