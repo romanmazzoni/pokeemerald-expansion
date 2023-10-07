@@ -729,7 +729,7 @@ bool32 MovesWithSplitUnusable(u32 attacker, u32 target, u32 split)
     s32 i, moveType;
     u32 usable = 0;
     u32 unusable = AI_DATA->moveLimitations[attacker];
-    u16 *moves = GetMovesArray(attacker); 
+    u16 *moves = GetMovesArray(attacker);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
