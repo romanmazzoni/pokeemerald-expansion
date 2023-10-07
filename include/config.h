@@ -6,7 +6,7 @@
 // still has them in the ROM. This is because the developers forgot
 // to define NDEBUG before release, however this has been changed as
 // Ruby's actual debug build does not use the AGBPrint features.
-#define NDEBUG
+//#define NDEBUG
 
 // To enable printf debugging, comment out "#define NDEBUG". This allows
 // the various AGBPrint functions to be used. (See include/gba/isagbprint.h).
@@ -71,7 +71,7 @@
 #define GEN_7 4
 #define GEN_8 5
 #define GEN_9 6
-#define GEN_LATEST GEN_9
+#define GEN_LATEST GEN_8
 
 // General settings
 #define EXPANSION_INTRO   TRUE    // If TRUE, a custom RHH intro will play after the vanilla copyright screen.

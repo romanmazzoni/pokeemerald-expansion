@@ -157,7 +157,7 @@ static const union AnimCmd sAnim_FallingFeather_1[] =
     ANIMCMD_END,
 };
 
-const union AnimCmd *const gAnims_FallingFeather[] =
+static const union AnimCmd *const sAnims_FallingFeather[] =
 {
     sAnim_FallingFeather_0,
     sAnim_FallingFeather_1,
@@ -168,7 +168,7 @@ const struct SpriteTemplate gFallingFeatherSpriteTemplate =
     .tileTag = ANIM_TAG_WHITE_FEATHER,
     .paletteTag = ANIM_TAG_WHITE_FEATHER,
     .oam = &gOamData_AffineNormal_ObjNormal_32x32,
-    .anims = gAnims_FallingFeather,
+    .anims = sAnims_FallingFeather,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimFallingFeather,

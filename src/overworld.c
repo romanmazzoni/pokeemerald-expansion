@@ -556,9 +556,12 @@ static void InitMapView(void)
     InitTilesetAnimations();
 }
 
-const struct MapLayout *GetMapLayout(u16 mapLayoutId)
+const struct MapLayout *GetMapLayout(void)
 {
-    return gMapLayouts[mapLayoutId - 1];
+    u16 mapLayoutId = gSaveBlock1Ptr->mapLayoutId;
+    if (mapLayoutId)
+        return gMapLayouts[mapLayoutId - 1];
+    return NULL;
 }
 
 void ApplyCurrentWarp(void)
@@ -615,13 +618,13 @@ static void LoadCurrentMapData(void)
     sLastMapSectionId = gMapHeader.regionMapSectionId;
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
     gSaveBlock1Ptr->mapLayoutId = gMapHeader.mapLayoutId;
-    gMapHeader.mapLayout = GetMapLayout(gMapHeader.mapLayoutId);
+    gMapHeader.mapLayout = GetMapLayout();
 }
 
 static void LoadSaveblockMapHeader(void)
 {
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
-    gMapHeader.mapLayout = GetMapLayout(gMapHeader.mapLayoutId);
+    gMapHeader.mapLayout = GetMapLayout();
 }
 
 static void SetPlayerCoordsFromWarp(void)
@@ -1017,7 +1020,7 @@ u8 GetFlashLevel(void)
 void SetCurrentMapLayout(u16 mapLayoutId)
 {
     gSaveBlock1Ptr->mapLayoutId = mapLayoutId;
-    gMapHeader.mapLayout = GetMapLayout(mapLayoutId);
+    gMapHeader.mapLayout = GetMapLayout();
 }
 
 void SetObjectEventLoadFlag(u8 flag)

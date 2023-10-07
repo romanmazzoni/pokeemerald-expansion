@@ -152,6 +152,7 @@ extern const u8 BattleScript_Recoil33End[];
 extern const u8 BattleScript_ItemSteal[];
 extern const u8 BattleScript_DrizzleActivates[];
 extern const u8 BattleScript_SpeedBoostActivates[];
+extern const u8 BattleScript_AttackBoostActivates[];
 extern const u8 BattleScript_TraceActivates[];
 extern const u8 BattleScript_TraceActivatesEnd3[];
 extern const u8 BattleScript_RainDishActivates[];
@@ -473,11 +474,7 @@ extern const u8 BattleScript_StealthRockActivates[];
 extern const u8 BattleScript_SpikesActivates[];
 extern const u8 BattleScript_BerserkGeneRet[];
 extern const u8 BattleScript_TargetFormChangeWithStringNoPopup[];
-extern const u8 BattleScript_DefDown[];
-extern const u8 BattleScript_UltraBurst[];
-extern const u8 BattleScript_SelectingNotAllowedCurrentMove[];
-extern const u8 BattleScript_SelectingNotAllowedCurrentMoveInPalace[];
-extern const u8 BattleScript_SaltCureExtraDamage[];
+extern const u8 BattleScript_ButItFailedAtkCanceler[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

@@ -13,6 +13,7 @@ static void AnimTask_Rollout_Step(u8 taskId);
 static void AnimRolloutParticle(struct Sprite *);
 static void AnimRockTomb(struct Sprite *);
 static void AnimRockTomb_Step(struct Sprite *sprite);
+static void AnimRockBlastRock(struct Sprite *);
 static void AnimRockScatter(struct Sprite *);
 static void AnimRockScatter_Step(struct Sprite *sprite);
 static void AnimParticleInVortex_Step(struct Sprite *sprite);
@@ -920,7 +921,7 @@ static void AnimRockTomb_Step(struct Sprite *sprite)
     }
 }
 
-void AnimRockBlastRock(struct Sprite *sprite)
+static void AnimRockBlastRock(struct Sprite *sprite)
 {
     if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
         StartSpriteAffineAnim(sprite, 1);

@@ -11,7 +11,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_STEEL_WING
+	giveitem ITEM_TM47
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
 	msgbox GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister, MSGBOX_DEFAULT
 	closemessage
@@ -118,4 +118,3 @@ GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
 GraniteCave_StevensRoom_Text_OhBagIsFull:
 	.string "Oh, your BAG is full…\n"
 	.string "That's too bad, then.$"
-

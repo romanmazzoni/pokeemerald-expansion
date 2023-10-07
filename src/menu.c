@@ -132,6 +132,19 @@ static const struct MenuInfoIcon sMenuInfoIcons[] =
     [TYPE_DRAGON + 1]   = { 32, 12, 0xA0 },
     [TYPE_DARK + 1]     = { 32, 12, 0x8C },
     [TYPE_FAIRY + 1]    = { 32, 12, 0x4  },
+    [TYPE_FURRY + 1]    = { 32, 12, 0x4  },
+    [TYPE_BEAR + 1]    = { 32, 12, 0x4  },
+    [TYPE_FRUITY + 1]    = { 32, 12, 0x4  },
+    [TYPE_TREE + 1]    = { 32, 12, 0x4  },
+    [TYPE_SHUCKLE + 1]    = { 32, 12, 0x4  },
+    [TYPE_UGLY + 1]    = { 32, 12, 0x4  },
+    [TYPE_MASSIVE + 1]    = { 32, 12, 0x4  },
+    [TYPE_SHORT + 1]    = { 32, 12, 0x4  },
+    [TYPE_KING+ 1]    = { 32, 12, 0x4  },
+    [TYPE_GOD + 1]    = { 32, 12, 0x4  },
+    [TYPE_SPACE + 1]    = { 32, 12, 0x4  },
+     //WHAT DOES THIS DO?? THIS DOES NOTHING??
+     //This needs to be updated to work because it doesnt work but probably doesnt crashh
     [MENU_INFO_ICON_TYPE]      = { 42, 12, 0xA8 },
     [MENU_INFO_ICON_POWER]     = { 42, 12, 0xC0 },
     [MENU_INFO_ICON_ACCURACY]  = { 42, 12, 0xC8 },
@@ -139,6 +152,7 @@ static const struct MenuInfoIcon sMenuInfoIcons[] =
     [MENU_INFO_ICON_EFFECT]    = { 42, 12, 0xE8 }, // Unused
     [MENU_INFO_ICON_BALL_RED]  = {  8,  8, 0xAE }, // For placed decorations in Secret Base
     [MENU_INFO_ICON_BALL_BLUE] = {  8,  8, 0xAF }, // For placed decorations in player's room
+    
 };
 
 void InitStandardTextBoxWindows(void)

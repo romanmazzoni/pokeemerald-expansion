@@ -1067,7 +1067,7 @@ static void SpriteCB_InputArrow(struct Sprite *sprite)
     if (sprite->sDelay == 0 || --sprite->sDelay == 0)
     {
         sprite->sDelay = 8;
-        sprite->sXPosId = MOD(sprite->sXPosId + 1, ARRAY_COUNT(x));
+        sprite->sXPosId = (sprite->sXPosId + 1) & (ARRAY_COUNT(x) - 1);
     }
     sprite->x2 = x[sprite->sXPosId];
 }
@@ -1097,7 +1097,7 @@ static void SpriteCB_Underscore(struct Sprite *sprite)
         sprite->sDelay++;
         if (sprite->sDelay > 8)
         {
-            sprite->sYPosId = MOD(sprite->sYPosId + 1, ARRAY_COUNT(y));
+            sprite->sYPosId = (sprite->sYPosId + 1) & (ARRAY_COUNT(y) - 1);
             sprite->sDelay = 0;
         }
     }
@@ -1480,6 +1480,9 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
     {
         bool8 textFull = AddTextCharacter();
 
+        if (sNamingScreen ->currentPage == KBPAGE_LETTERS_UPPER && GetTextEntryPosition() == 1)
+            MainState_StartPageSwap();
+            
         SquishCursor();
         if (textFull)
         {
@@ -1712,7 +1715,7 @@ static void DrawMonTextEntryBox(void)
 {
     u8 buffer[32];
 
-    StringCopy(buffer, GetSpeciesName(sNamingScreen->monSpecies));
+    StringCopy(buffer, gSpeciesNames[sNamingScreen->monSpecies]);
     StringAppendN(buffer, sNamingScreen->template->title, 15);
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
     AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 8, 1, 0, 0);

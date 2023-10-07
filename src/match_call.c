@@ -1777,7 +1777,7 @@ static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)
 
             if (numSpecies)
             {
-                StringCopy(destStr, GetSpeciesName(species[Random() % numSpecies]));
+                StringCopy(destStr, gSpeciesNames[species[Random() % numSpecies]]);
                 return;
             }
         }
@@ -1789,14 +1789,33 @@ static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)
 static void PopulateSpeciesFromTrainerParty(int matchCallId, u8 *destStr)
 {
     u16 trainerId;
-    const struct TrainerMon *party;
+    union TrainerMonPtr party;
     u8 monId;
     const u8 *speciesName;
 
     trainerId = GetLastBeatenRematchTrainerId(sMatchCallTrainers[matchCallId].trainerId);
     party = gTrainers[trainerId].party;
     monId = Random() % gTrainers[trainerId].partySize;
-    speciesName = GetSpeciesName(party[monId].species);
+
+    switch (gTrainers[trainerId].partyFlags)
+    {
+    case 0:
+    default:
+        speciesName = gSpeciesNames[party.NoItemDefaultMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET:
+        speciesName = gSpeciesNames[party.NoItemCustomMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_HELD_ITEM:
+        speciesName = gSpeciesNames[party.ItemDefaultMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+        speciesName = gSpeciesNames[party.ItemCustomMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_EVERYTHING_CUSTOMIZED:
+        speciesName = gSpeciesNames[party.EverythingCustomized[monId].species];
+        break;
+    }
 
     StringCopy(destStr, speciesName);
 }

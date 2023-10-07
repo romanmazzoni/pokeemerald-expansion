@@ -440,7 +440,7 @@ static u8 UpdateNormalPaletteFade(void)
         else
         {
             selectedPalettes = gPaletteFade_selectedPalettes >> 16;
-            paletteOffset = OBJ_PLTT_OFFSET;
+            paletteOffset = 256;
         }
 
         while (selectedPalettes)

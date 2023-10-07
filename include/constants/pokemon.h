@@ -22,7 +22,90 @@
 #define TYPE_DRAGON           16
 #define TYPE_DARK             17
 #define TYPE_FAIRY            18
-#define NUMBER_OF_MON_TYPES   19
+#define TYPE_FURRY            19
+#define TYPE_BEAR             20
+#define TYPE_FRUITY           21
+#define TYPE_TREE             22
+#define TYPE_SHUCKLE          23
+#define TYPE_UGLY             24
+#define TYPE_MASSIVE          25
+#define TYPE_SHORT            26
+#define TYPE_KING             27
+#define TYPE_GOD              28
+#define TYPE_SPACE            29
+#define TYPE_STALL            30
+#define TYPE_LOSER            31
+#define TYPE_EVIL             32
+#define TYPE_FUN              33
+#define TYPE_NERD             34
+#define TYPE_OAK              35
+#define TYPE_WOOD             36
+#define TYPE_TABLE            37
+#define TYPE_BEE              38
+#define TYPE_COOL             39
+#define TYPE_FISH             40
+#define TYPE_HARD             41
+#define TYPE_FAKE             42
+#define TYPE_TRAIN            43
+#define TYPE_GOOFY            44
+#define TYPE_SUBMISSIVE       45
+#define TYPE_WAFFLEHOUSE      46
+#define TYPE_EGO              47
+#define TYPE_WIZARD           48
+#define TYPE_SONG             49
+#define TYPE_TECH             50
+#define TYPE_SNOW             51
+#define TYPE_SMART            52
+#define TYPE_STUPID           53
+#define TYPE_MONEY            54
+#define TYPE_DOG              55
+#define TYPE_CAT              56
+#define TYPE_PITBULL          57
+#define TYPE_NINJA            58
+#define TYPE_HMSLAVE          59
+#define TYPE_RED              60
+#define TYPE_BLUE             61
+#define TYPE_SCARY            62
+#define TYPE_SPORTS           63
+#define TYPE_SOFT             64
+#define TYPE_SLEDGE           65
+#define TYPE_EXPLOSION        66
+#define TYPE_TURTLE           67
+#define TYPE_DINO             68
+#define TYPE_DANCE            69
+#define TYPE_SAND             70
+#define TYPE_HUMAN            71
+#define TYPE_LAVA             72
+#define TYPE_SNAKE            73
+#define TYPE_LANCE            74
+#define TYPE_VOID             75
+#define TYPE_BANANA           76
+#define TYPE_LOVE             77
+#define TYPE_OLD              78
+#define TYPE_REVERSE          79
+#define TYPE_BALL             80
+#define TYPE_WATER2           81
+#define TYPE_HOT              82
+#define TYPE_DEATH            83
+#define TYPE_SHROOM           84
+#define TYPE_FAT              85
+#define TYPE_LIGHT            86
+#define TYPE_LIFE             87
+#define TYPE_LOUD             88
+#define TYPE_WALL             89
+#define TYPE_FAST             90
+#define TYPE_PLURAL           91
+#define TYPE_HUNT             92
+#define TYPE_GLASS            93
+#define TYPE_ON               94
+#define TYPE_SWEET            95
+#define TYPE_PLAGUE           96
+#define TYPE_DOCTOR           97
+#define TYPE_JOKE             98
+#define TYPE_VIABLE           99
+#define TYPE_101             100
+#define NUMBER_OF_MON_TYPES  101
+
 
 // Pokemon egg groups
 #define EGG_GROUP_NONE          0
@@ -92,7 +175,7 @@
 #define MAX_STAT_STAGE    12
 
 // Shiny odds
-#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
+#define SHINY_ODDS 655 // Actual probability is SHINY_ODDS/65536
 
 // Ribbon IDs used by TV and Pokénav
 #define CHAMPION_RIBBON       0
@@ -213,6 +296,39 @@
 #define EV_ITEM_RAISE_LIMIT 100
 #endif
 
+// Battle move flags
+#define FLAG_MAKES_CONTACT                        (1 << 0)
+#define FLAG_PROTECT_AFFECTED                     (1 << 1)
+#define FLAG_MAGIC_COAT_AFFECTED                  (1 << 2)
+#define FLAG_SNATCH_AFFECTED                      (1 << 3)
+#define FLAG_MIRROR_MOVE_AFFECTED                 (1 << 4)
+#define FLAG_KINGS_ROCK_AFFECTED                  (1 << 5)
+#define FLAG_HIGH_CRIT                            (1 << 6)
+#define FLAG_RECKLESS_BOOST                       (1 << 7)
+#define FLAG_IRON_FIST_BOOST                      (1 << 8)
+#define FLAG_SHEER_FORCE_BOOST                    (1 << 9)
+#define FLAG_STRONG_JAW_BOOST                     (1 << 10)
+#define FLAG_MEGA_LAUNCHER_BOOST                  (1 << 11)
+#define FLAG_STAT_STAGES_IGNORED                  (1 << 12)
+#define FLAG_DMG_MINIMIZE                         (1 << 13)
+#define FLAG_DMG_UNDERGROUND                      (1 << 14)
+#define FLAG_DMG_UNDERWATER                       (1 << 15)
+#define FLAG_SOUND                                (1 << 16)
+#define FLAG_BALLISTIC                            (1 << 17)
+#define FLAG_PROTECTION_MOVE                      (1 << 18)
+#define FLAG_POWDER                               (1 << 19)
+#define FLAG_TARGET_ABILITY_IGNORED               (1 << 20)
+#define FLAG_DANCE                                (1 << 21)
+#define FLAG_DMG_2X_IN_AIR                        (1 << 22) // If target is in the air, can hit and deal double damage.
+#define FLAG_DMG_IN_AIR                           (1 << 23) // If target is in the air, can hit.
+#define FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING (1 << 24) // Makes a Ground type move do 1x damage to flying and levitating targets
+#define FLAG_THAW_USER                            (1 << 25)
+#define FLAG_HIT_IN_SUBSTITUTE                    (1 << 26) // Hyperspace Fury
+#define FLAG_TWO_STRIKES                          (1 << 27) // A move with this flag will strike twice, and may apply its effect on each hit
+#define FLAG_THREE_STRIKES                        (1 << 28) // A move with this flag will strike thrice, and may apply its effect on each hit
+#define FLAG_WIND_MOVE                            (1 << 29)
+#define FLAG_SLICING_MOVE                         (1 << 30)
+
 // Split defines.
 #define SPLIT_PHYSICAL  0x0
 #define SPLIT_SPECIAL   0x1
@@ -269,7 +385,7 @@
 #define EVO_MAPSEC                        25     // Pokémon levels up on specified mapsec
 #define EVO_ITEM_MALE                     26     // specified item is used on a male Pokémon
 #define EVO_ITEM_FEMALE                   27     // specified item is used on a female Pokémon
-#define EVO_LEVEL_RAIN                    28     // Pokémon reaches the specified level during rain in the overworld
+#define EVO_LEVEL_RAIN                    28     // Pokémon reaches the specified level while it's raining
 #define EVO_SPECIFIC_MON_IN_PARTY         29     // Pokémon levels up with a specified Pokémon in party
 #define EVO_LEVEL_DARK_TYPE_MON_IN_PARTY  30     // Pokémon reaches the specified level with a Dark Type Pokémon in party
 #define EVO_TRADE_SPECIFIC_MON            31     // Pokémon is traded for a specified Pokémon
@@ -283,7 +399,6 @@
 #define EVO_ITEM_NIGHT                    39     // specified item is used on Pokémon, is night
 #define EVO_ITEM_DAY                      40     // specified item is used on Pokémon, is day
 #define EVO_ITEM_HOLD                     41     // Pokémon levels up, holds specified item
-#define EVO_LEVEL_FOG                     42     // Pokémon reaches the specified level during fog in the overworld
 
 #define EVOS_PER_MON 10
 
@@ -301,13 +416,16 @@
 
 // Most pokemon have 2 frames (a default and an alternate for their animation).
 // There are 4 exceptions:
+// - Castform has 4 frames, 1 for each form
 // - Deoxys has 2 frames, 1 for each form
 // - Spinda has 1 frame, presumably to avoid the work of animating its spots
 // - Unown has 1 frame, presumably to avoid the work of animating all 28 of its forms
-#define MAX_MON_PIC_FRAMES 2
+#define MAX_MON_PIC_FRAMES 4
 
-#define BATTLE_ALIVE_EXCEPT_BATTLER  0
-#define BATTLE_ALIVE_SIDE            1
+#define BATTLE_ALIVE_EXCEPT_ACTIVE   0
+#define BATTLE_ALIVE_ATK_SIDE        1
+#define BATTLE_ALIVE_DEF_SIDE        2
+#define BATTLE_ALIVE_EXCEPT_ATTACKER 3
 
 #define SKIP_FRONT_ANIM (1 << 7)
 
@@ -324,9 +442,9 @@
 #define SPECIES_FLAG_ALOLAN_FORM        (1 << 5)
 #define SPECIES_FLAG_GALARIAN_FORM      (1 << 6)
 #define SPECIES_FLAG_HISUIAN_FORM       (1 << 7)
-#define SPECIES_FLAG_ALL_PERFECT_IVS    (1 << 8)
-#define SPECIES_FLAG_CANNOT_BE_TRADED   (1 << 9)
-#define SPECIES_FLAG_ULTRA_BURST        (1 << 10)
+#define SPECIES_FLAG_GENDER_DIFFERENCE  (1 << 8)
+#define SPECIES_FLAG_ALL_PERFECT_IVS    (1 << 9)
+#define SPECIES_FLAG_CANNOT_BE_TRADED   (1 << 10)
 
 #define LEGENDARY_PERFECT_IV_COUNT 3
 

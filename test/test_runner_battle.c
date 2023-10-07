@@ -435,7 +435,7 @@ u32 RandomWeightedArray(enum RandomTag tag, u32 sum, u32 n, const u8 *weights)
         if (turn && turn->criticalHit)
             return turn->criticalHit - 1;
         else
-            return weights[FALSE] > 0 ? FALSE : TRUE;
+            return FALSE;
 
     case RNG_SECONDARY_EFFECT:
         ASSUME(n == 2);
@@ -1487,9 +1487,6 @@ void Move(u32 sourceLine, struct BattlePokemon *battler, struct MoveContext ctx)
 
     if (ctx.explicitMegaEvolve && ctx.megaEvolve)
         moveSlot |= RET_MEGA_EVOLUTION;
-
-    if (ctx.explicitUltraBurst && ctx.ultraBurst)
-        moveSlot |= RET_ULTRA_BURST;
 
     if (ctx.explicitTarget)
     {

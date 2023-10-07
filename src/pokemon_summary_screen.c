@@ -888,6 +888,334 @@ static const union AnimCmd sSpriteAnim_TypeFairy[] = {
     ANIMCMD_FRAME(TYPE_FAIRY * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeFurry[] = {
+    ANIMCMD_FRAME(TYPE_FURRY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBear[] = {
+    ANIMCMD_FRAME(TYPE_BEAR * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFruity[] = {
+    ANIMCMD_FRAME(TYPE_FRUITY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTree[] = {
+    ANIMCMD_FRAME(TYPE_TREE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShuckle[] = {
+    ANIMCMD_FRAME(TYPE_SHUCKLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeUgly[] = {
+    ANIMCMD_FRAME(TYPE_UGLY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMassive[] = {
+    ANIMCMD_FRAME(TYPE_MASSIVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShort[] = {
+    ANIMCMD_FRAME(TYPE_SHORT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeKing[] = {
+    ANIMCMD_FRAME(TYPE_KING * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGod[] = {
+    ANIMCMD_FRAME(TYPE_GOD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSpace[] = {
+    ANIMCMD_FRAME(TYPE_SPACE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeStall[] = {
+    ANIMCMD_FRAME(TYPE_STALL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLoser[] = {
+    ANIMCMD_FRAME(TYPE_LOSER * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEvil[] = {
+    ANIMCMD_FRAME(TYPE_EVIL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFun[] = {
+    ANIMCMD_FRAME(TYPE_FUN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeNerd[] = {
+    ANIMCMD_FRAME(TYPE_NERD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeOak[] = {
+    ANIMCMD_FRAME(TYPE_OAK * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWood[] = {
+    ANIMCMD_FRAME(TYPE_WOOD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTable[] = {
+    ANIMCMD_FRAME(TYPE_TABLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBee[] = {
+    ANIMCMD_FRAME(TYPE_BEE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeCool[] = {
+    ANIMCMD_FRAME(TYPE_COOL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFish[] = {
+    ANIMCMD_FRAME(TYPE_FISH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHard[] = {
+    ANIMCMD_FRAME(TYPE_HARD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFake[] = {
+    ANIMCMD_FRAME(TYPE_FAKE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTrain[] = {
+    ANIMCMD_FRAME(TYPE_TRAIN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGoofy[] = {
+    ANIMCMD_FRAME(TYPE_GOOFY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSubmissive[] = {
+    ANIMCMD_FRAME(TYPE_SUBMISSIVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWafflehouse[] = {
+    ANIMCMD_FRAME(TYPE_WAFFLEHOUSE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEgo[] = {
+    ANIMCMD_FRAME(TYPE_EGO * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWizard[] = {
+    ANIMCMD_FRAME(TYPE_WIZARD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSong[] = {
+    ANIMCMD_FRAME(TYPE_SONG * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTech[] = {
+    ANIMCMD_FRAME(TYPE_TECH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSnow[] = {
+    ANIMCMD_FRAME(TYPE_SNOW * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSmart[] = {
+    ANIMCMD_FRAME(TYPE_SMART * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeStupid[] = {
+    ANIMCMD_FRAME(TYPE_STUPID * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMoney[] = {
+    ANIMCMD_FRAME(TYPE_MONEY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDog[] = {
+    ANIMCMD_FRAME(TYPE_DOG * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeCat[] = {
+    ANIMCMD_FRAME(TYPE_CAT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypePitbull[] = {
+    ANIMCMD_FRAME(TYPE_PITBULL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeNinja[] = {
+    ANIMCMD_FRAME(TYPE_NINJA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHMSlave[] = {
+    ANIMCMD_FRAME(TYPE_HMSLAVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeRed[] = {
+    ANIMCMD_FRAME(TYPE_RED * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBlue[] = {
+    ANIMCMD_FRAME(TYPE_BLUE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeScary[] = {
+    ANIMCMD_FRAME(TYPE_SCARY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSports[] = {
+    ANIMCMD_FRAME(TYPE_SPORTS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSoft[] = {
+    ANIMCMD_FRAME(TYPE_SOFT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSledge[] = {
+    ANIMCMD_FRAME(TYPE_SLEDGE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeExplosion[] = {
+    ANIMCMD_FRAME(TYPE_EXPLOSION * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeTurtle[] = {
+    ANIMCMD_FRAME(TYPE_TURTLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDino[] = {
+    ANIMCMD_FRAME(TYPE_DINO * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDance[] = {
+    ANIMCMD_FRAME(TYPE_DANCE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSand[] = {
+    ANIMCMD_FRAME(TYPE_SAND * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHuman[] = {
+    ANIMCMD_FRAME(TYPE_HUMAN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLava[] = {
+    ANIMCMD_FRAME(TYPE_LAVA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSnake[] = {
+    ANIMCMD_FRAME(TYPE_SNAKE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLance[] = {
+    ANIMCMD_FRAME(TYPE_LANCE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeVoid[] = {
+    ANIMCMD_FRAME(TYPE_VOID * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBanana[] = {
+    ANIMCMD_FRAME(TYPE_BANANA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLove[] = {
+    ANIMCMD_FRAME(TYPE_LOVE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeOld[] = {
+    ANIMCMD_FRAME(TYPE_OLD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeReverse[] = {
+    ANIMCMD_FRAME(TYPE_REVERSE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBall[] = {
+    ANIMCMD_FRAME(TYPE_BALL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWater2[] = {
+    ANIMCMD_FRAME(TYPE_WATER2 * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHot[] = {
+    ANIMCMD_FRAME(TYPE_HOT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDeath[] = {
+    ANIMCMD_FRAME(TYPE_DEATH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShroom[] = {
+    ANIMCMD_FRAME(TYPE_SHROOM * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFat[] = {
+    ANIMCMD_FRAME(TYPE_FAT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLight[] = {
+    ANIMCMD_FRAME(TYPE_LIGHT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLife[] = {
+    ANIMCMD_FRAME(TYPE_LIFE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLoud[] = {
+    ANIMCMD_FRAME(TYPE_LOUD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWall[] = {
+    ANIMCMD_FRAME(TYPE_WALL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFast[] = {
+    ANIMCMD_FRAME(TYPE_FAST * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypePlural[] = {
+    ANIMCMD_FRAME(TYPE_PLURAL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeHunt[] = {
+    ANIMCMD_FRAME(TYPE_HUNT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeGlass[] = {
+    ANIMCMD_FRAME(TYPE_GLASS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeOn[] = {
+    ANIMCMD_FRAME(TYPE_ON * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeSweet[] = {
+    ANIMCMD_FRAME(TYPE_SWEET * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypePlague[] = {
+    ANIMCMD_FRAME(TYPE_PLAGUE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDoctor[] = {
+    ANIMCMD_FRAME(TYPE_DOCTOR * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeJoke[] = {
+    ANIMCMD_FRAME(TYPE_JOKE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeViable[] = {
+    ANIMCMD_FRAME(TYPE_VIABLE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_Type101[] = {
+    ANIMCMD_FRAME(TYPE_101 * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -928,6 +1256,78 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
     sSpriteAnim_TypeFairy,
+    sSpriteAnim_TypeFurry,
+    sSpriteAnim_TypeBear,
+    sSpriteAnim_TypeFruity,
+    sSpriteAnim_TypeTree,
+    sSpriteAnim_TypeShuckle,
+    sSpriteAnim_TypeUgly,
+    sSpriteAnim_TypeMassive,
+    sSpriteAnim_TypeShort,
+    sSpriteAnim_TypeKing,
+    sSpriteAnim_TypeGod,
+    sSpriteAnim_TypeSpace,
+    sSpriteAnim_TypeStall,
+    sSpriteAnim_TypeLoser,
+    sSpriteAnim_TypeEvil,
+    sSpriteAnim_TypeFun,
+    sSpriteAnim_TypeNerd,
+    sSpriteAnim_TypeOak,
+    sSpriteAnim_TypeWood,
+    sSpriteAnim_TypeTable,
+    sSpriteAnim_TypeBee,
+    sSpriteAnim_TypeCool,
+    sSpriteAnim_TypeFish,
+    sSpriteAnim_TypeHard,
+    sSpriteAnim_TypeFake,
+    sSpriteAnim_TypeTrain,
+    sSpriteAnim_TypeGoofy,
+    sSpriteAnim_TypeSubmissive,
+    sSpriteAnim_TypeWafflehouse,
+    sSpriteAnim_TypeEgo,
+    sSpriteAnim_TypeWizard,
+    sSpriteAnim_TypeSong,
+    sSpriteAnim_TypeTech,
+    sSpriteAnim_TypeSnow,
+    sSpriteAnim_TypeSmart,
+    sSpriteAnim_TypeStupid,
+    sSpriteAnim_TypeMoney,
+    sSpriteAnim_TypeDog,
+    sSpriteAnim_TypeCat,
+    sSpriteAnim_TypePitbull,
+    sSpriteAnim_TypeNinja,
+    sSpriteAnim_TypeHMSlave,
+    sSpriteAnim_TypeSand,
+    sSpriteAnim_TypeHuman,
+    sSpriteAnim_TypeLava,
+    sSpriteAnim_TypeSnake,
+    sSpriteAnim_TypeLance,
+    sSpriteAnim_TypeVoid,
+    sSpriteAnim_TypeBanana,
+    sSpriteAnim_TypeLove,
+    sSpriteAnim_TypeOld,
+    sSpriteAnim_TypeReverse,
+    sSpriteAnim_TypeBall,
+    sSpriteAnim_TypeWater2,
+    sSpriteAnim_TypeHot,
+    sSpriteAnim_TypeDeath,
+    sSpriteAnim_TypeShroom,
+    sSpriteAnim_TypeFat,
+    sSpriteAnim_TypeLight,
+    sSpriteAnim_TypeLife,
+    sSpriteAnim_TypeLoud,
+    sSpriteAnim_TypeWall,
+    sSpriteAnim_TypeFast,
+    sSpriteAnim_TypePlural,
+    sSpriteAnim_TypeHunt,
+    sSpriteAnim_TypeGlass,
+    sSpriteAnim_TypeOn,
+    sSpriteAnim_TypeSweet,
+    sSpriteAnim_TypePlague,
+    sSpriteAnim_TypeDoctor,
+    sSpriteAnim_TypeJoke,
+    sSpriteAnim_TypeViable,
+    sSpriteAnim_Type101,
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
@@ -972,6 +1372,88 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_DRAGON] = 15,
     [TYPE_DARK] = 13,
     [TYPE_FAIRY] = 14,
+    [TYPE_FURRY] = 14,
+    [TYPE_BEAR] = 13,
+    [TYPE_FRUITY]    = 13,
+    [TYPE_TREE]    = 13,
+    [TYPE_SHUCKLE]    = 13,
+    [TYPE_UGLY]    = 13,
+    [TYPE_MASSIVE]    = 13,
+    [TYPE_SHORT]    = 13,
+    [TYPE_KING]    = 15,
+    [TYPE_GOD]    = 15,
+    [TYPE_SPACE]    = 14,
+    [TYPE_STALL]=14 ,
+    [TYPE_LOSER]=14,
+    [TYPE_EVIL]=14,
+    [TYPE_FUN]=14,
+    [TYPE_NERD]=14,
+    [TYPE_OAK]=14,
+    [TYPE_WOOD]=14,
+    [TYPE_TABLE]=14,
+    [TYPE_BEE]=14,
+    [TYPE_COOL]=14,
+    [TYPE_FISH]=14,
+    [TYPE_HARD]=14,
+    [TYPE_FAKE]=14,
+    [TYPE_TRAIN]=14,
+    [TYPE_GOOFY]=14,
+    [TYPE_SUBMISSIVE]=14,
+    [TYPE_WAFFLEHOUSE]=14,
+    [TYPE_EGO]=14,
+    [TYPE_WIZARD]=14,
+    [TYPE_SONG]=14,
+    [TYPE_TECH]=14,
+    [TYPE_SNOW]=14,
+    [TYPE_SMART]=14,
+    [TYPE_STUPID]=14,
+    [TYPE_MONEY]=14,
+    [TYPE_DOG]=14,
+    [TYPE_CAT]=14,
+    [TYPE_PITBULL]=14,
+    [TYPE_NINJA]=14,
+    [TYPE_HMSLAVE]=14,
+    [TYPE_RED] = 14,
+    [TYPE_BLUE]=14,
+    [TYPE_SCARY]=14,
+    [TYPE_SPORTS]=14,
+    [TYPE_SOFT]=14,
+    [TYPE_SLEDGE]=14,
+    [TYPE_EXPLOSION]=14,
+    [TYPE_TURTLE]=14,
+    [TYPE_DINO]=14,
+    [TYPE_DANCE]=14,
+    [TYPE_SAND]=14,
+    [TYPE_HUMAN]=14,
+    [TYPE_LAVA]=14,
+    [TYPE_SNAKE]=14,
+    [TYPE_LANCE]=14,
+    [TYPE_VOID]=14,
+    [TYPE_BANANA]=14,
+    [TYPE_LOVE]=14,
+    [TYPE_OLD]=14,
+    [TYPE_REVERSE]=14,
+    [TYPE_BALL]= 14,
+    [TYPE_WATER2 ]= 14,
+    [TYPE_HOT]= 14,
+    [TYPE_DEATH]= 14,
+    [TYPE_SHROOM]= 14,
+    [TYPE_FAT] = 14,
+    [TYPE_LIGHT]= 14,
+    [TYPE_LIFE]= 14,
+    [TYPE_LOUD]= 14,
+    [TYPE_WALL]= 14,
+    [TYPE_FAST]       = 14,
+    [TYPE_PLURAL]     = 14,
+    [TYPE_HUNT]       = 14,
+    [TYPE_GLASS]      = 14,
+    [TYPE_ON]         = 14,
+    [TYPE_SWEET]      = 14,
+    [TYPE_PLAGUE]     = 14,
+    [TYPE_DOCTOR]     = 14,
+    [TYPE_JOKE]       = 14,
+    [TYPE_VIABLE]     = 14,
+    [TYPE_101]        = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = 13,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = 14,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = 14,
@@ -2331,7 +2813,7 @@ static bool8 CanReplaceMove(void)
 {
     if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES
         || sMonSummaryScreen->newMove == MOVE_NONE
-        || IsMoveHM(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE)
+        || IsMoveHm(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE)
         return TRUE;
     else
         return FALSE;
@@ -2863,7 +3345,7 @@ static void PrintNotEggInfo(void)
     GetMonNickname(mon, gStringVar1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_NICKNAME, gStringVar1, 0, 1, 0, 1);
     strArray[0] = CHAR_SLASH;
-    StringCopy(&strArray[1], &GetSpeciesName(summary->species2)[0]);
+    StringCopy(&strArray[1], &gSpeciesNames[summary->species2][0]);
     PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, strArray, 0, 1, 0, 1);
     PrintGenderSymbol(mon, summary->species2);
     PutWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_NICKNAME);
@@ -2972,7 +3454,7 @@ static void PutPageWindowTilemaps(u8 page)
         PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_CANCEL);
         if (InBattleFactory() == TRUE || InSlateportBattleTent() == TRUE)
             PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL);
-        PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_INFO_TYPE);
+        //PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_INFO_TYPE);
         break;
     case PSS_PAGE_SKILLS:
         PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE);
@@ -3908,15 +4390,32 @@ static void SetMonTypeIcons(void)
     }
     else
     {
-        SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[0], 120, 48, SPRITE_ARR_ID_TYPE);
+        SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[0], 88, 48, SPRITE_ARR_ID_TYPE);
         if (gSpeciesInfo[summary->species].types[0] != gSpeciesInfo[summary->species].types[1])
         {
-            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 160, 48, SPRITE_ARR_ID_TYPE + 1);
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 126, 48, SPRITE_ARR_ID_TYPE + 1);
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
+
         }
         else
         {
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
+        }
+        if (gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[2] != gSpeciesInfo[summary->species].types[0])
+        {
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[2], 164, 48, SPRITE_ARR_ID_TYPE + 2);
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, FALSE);
+        }
+        else{
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 2, TRUE);
+        }
+        if (gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[1] && gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[0]&& gSpeciesInfo[summary->species].types[3] != gSpeciesInfo[summary->species].types[2])
+        {
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[3], 202, 48, SPRITE_ARR_ID_TYPE + 3);
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, FALSE);
+        }
+        else{
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 3, TRUE);
         }
     }
 }

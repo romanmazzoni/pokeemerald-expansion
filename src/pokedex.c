@@ -1397,6 +1397,88 @@ static const struct SearchOptionText sDexSearchTypeOptions[NUMBER_OF_MON_TYPES +
     {gText_DexEmptyString, gTypeNames[TYPE_DRAGON]},
     {gText_DexEmptyString, gTypeNames[TYPE_DARK]},
     {gText_DexEmptyString, gTypeNames[TYPE_FAIRY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FURRY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BEAR]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FRUITY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_TREE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SHUCKLE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_UGLY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_MASSIVE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SHORT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_KING]},
+    {gText_DexEmptyString, gTypeNames[TYPE_GOD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SPACE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_STALL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LOSER]},
+    {gText_DexEmptyString, gTypeNames[TYPE_EVIL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FUN]},
+    {gText_DexEmptyString, gTypeNames[TYPE_NERD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_OAK]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WOOD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_TABLE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BEE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_COOL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FISH]},
+    {gText_DexEmptyString, gTypeNames[TYPE_HARD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FAKE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_TRAIN]},
+    {gText_DexEmptyString, gTypeNames[TYPE_GOOFY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SUBMISSIVE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WAFFLEHOUSE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_EGO]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WIZARD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SONG]},
+    {gText_DexEmptyString, gTypeNames[TYPE_TECH]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SNOW]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SMART]},
+    {gText_DexEmptyString, gTypeNames[TYPE_STUPID]},
+    {gText_DexEmptyString, gTypeNames[TYPE_MONEY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DOG]},
+    {gText_DexEmptyString, gTypeNames[TYPE_CAT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_PITBULL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_NINJA]},
+    {gText_DexEmptyString, gTypeNames[TYPE_HMSLAVE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_RED]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BLUE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SCARY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SPORTS]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SOFT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SLEDGE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_EXPLOSION]},
+    {gText_DexEmptyString, gTypeNames[TYPE_TURTLE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DINO]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DANCE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SAND]},
+    {gText_DexEmptyString, gTypeNames[TYPE_HUMAN]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LAVA]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SNAKE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LANCE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_VOID]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BANANA]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LOVE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_OLD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_REVERSE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BALL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WATER2]},
+    {gText_DexEmptyString, gTypeNames[TYPE_HOT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DEATH]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SHROOM]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FAT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LIGHT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LIFE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LOUD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WALL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FAST]},
+    {gText_DexEmptyString, gTypeNames[TYPE_PLURAL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_HUNT]},
+    {gText_DexEmptyString, gTypeNames[TYPE_GLASS]},
+    {gText_DexEmptyString, gTypeNames[TYPE_ON]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SWEET]},
+    {gText_DexEmptyString, gTypeNames[TYPE_PLAGUE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DOCTOR]},
+    {gText_DexEmptyString, gTypeNames[TYPE_JOKE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_VIABLE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_101]},
     {},
 };
 
@@ -1432,6 +1514,88 @@ static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
     TYPE_DRAGON,
     TYPE_DARK,
     TYPE_FAIRY,
+    TYPE_FURRY,
+    TYPE_BEAR,
+    TYPE_FRUITY,
+    TYPE_TREE,
+    TYPE_SHUCKLE,
+    TYPE_UGLY,
+    TYPE_MASSIVE,
+    TYPE_SHORT,
+    TYPE_KING,
+    TYPE_GOD,
+    TYPE_SPACE,
+    TYPE_STALL,
+    TYPE_LOSER,
+    TYPE_EVIL,
+    TYPE_FUN,
+    TYPE_NERD,
+    TYPE_OAK,
+    TYPE_WOOD,
+    TYPE_TABLE,
+    TYPE_BEE,
+    TYPE_COOL,
+    TYPE_FISH,
+    TYPE_HARD,
+    TYPE_FAKE,
+    TYPE_TRAIN,
+    TYPE_GOOFY,
+    TYPE_SUBMISSIVE,
+    TYPE_WAFFLEHOUSE,
+    TYPE_EGO,
+    TYPE_WIZARD,
+    TYPE_SONG,
+    TYPE_TECH,
+    TYPE_SNOW,
+    TYPE_SMART,
+    TYPE_STUPID,
+    TYPE_MONEY,
+    TYPE_DOG,
+    TYPE_CAT,
+    TYPE_PITBULL,
+    TYPE_NINJA,
+    TYPE_HMSLAVE,
+    TYPE_RED,
+    TYPE_BLUE,
+    TYPE_SCARY,
+    TYPE_SPORTS,
+    TYPE_SOFT,
+    TYPE_SLEDGE,
+    TYPE_EXPLOSION,
+    TYPE_TURTLE,
+    TYPE_DINO,
+    TYPE_DANCE,
+    TYPE_SAND,
+    TYPE_HUMAN,
+    TYPE_LAVA,
+    TYPE_SNAKE,
+    TYPE_LANCE,
+    TYPE_VOID,
+    TYPE_BANANA,
+    TYPE_LOVE,
+    TYPE_OLD,
+    TYPE_REVERSE,
+    TYPE_BALL,
+    TYPE_WATER2,
+    TYPE_HOT,
+    TYPE_DEATH,
+    TYPE_SHROOM,
+    TYPE_FAT,
+    TYPE_LIGHT,
+    TYPE_LIFE,
+    TYPE_LOUD,
+    TYPE_WALL,
+    TYPE_FAST,
+    TYPE_PLURAL,
+    TYPE_HUNT,
+    TYPE_GLASS,
+    TYPE_ON,
+    TYPE_SWEET,
+    TYPE_PLAGUE,
+    TYPE_DOCTOR,
+    TYPE_JOKE,
+    TYPE_VIABLE,
+    TYPE_101,
 };
 
 // Number pairs are the task data for tracking the cursor pos and scroll offset of each option list
@@ -2447,7 +2611,7 @@ static u8 CreateMonName(u16 num, u8 left, u8 top)
 
     num = NationalPokedexNumToSpecies(num);
     if (num)
-        str = GetSpeciesName(num);
+        str = gSpeciesNames[num];
     else
         str = sText_TenDashes;
     PrintMonDexNumAndName(0, FONT_NARROW, str, left, top);
@@ -3755,7 +3919,7 @@ static void Task_LoadSizeScreen(u8 taskId)
 
             StringCopy(string, gText_SizeComparedTo);
             StringAppend(string, gSaveBlock2Ptr->playerName);
-            PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
+            PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, 0xF0), 0x79);
             gMain.state++;
         }
         break;
@@ -4072,14 +4236,14 @@ static void Task_ExitCaughtMonPage(u8 taskId)
 
 static void SpriteCB_SlideCaughtMonToCenter(struct Sprite *sprite)
 {
-    if (sprite->x < DISPLAY_WIDTH / 2)
+    if (sprite->x < 0x78)
         sprite->x += 2;
-    if (sprite->x > DISPLAY_WIDTH / 2)
+    if (sprite->x > 0x78)
         sprite->x -= 2;
 
-    if (sprite->y < DISPLAY_HEIGHT / 2)
+    if (sprite->y < 0x50)
         sprite->y += 1;
-    if (sprite->y > DISPLAY_HEIGHT / 2)
+    if (sprite->y > 0x50)
         sprite->y -= 1;
 }
 
@@ -4103,7 +4267,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     const u8 *description;
 
     if (newEntry)
-        PrintInfoScreenText(gText_PokedexRegistration, GetStringCenterAlignXOffset(FONT_NORMAL, gText_PokedexRegistration, DISPLAY_WIDTH), 0);
+        PrintInfoScreenText(gText_PokedexRegistration, GetStringCenterAlignXOffset(FONT_NORMAL, gText_PokedexRegistration, 0xF0), 0);
     if (value == 0)
         value = NationalToHoennOrder(num);
     else
@@ -4112,7 +4276,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     PrintInfoScreenText(str, 0x60, 0x19);
     natNum = NationalPokedexNumToSpecies(num);
     if (natNum)
-        name = GetSpeciesName(natNum);
+        name = gSpeciesNames[natNum];
     else
         name = sText_TenDashes2;
     PrintInfoScreenText(name, 0x84, 0x19);
@@ -4142,7 +4306,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
         description = gPokedexEntries[num].description;
     else
         description = sExpandedPlaceholder_PokedexDescription;
-    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, DISPLAY_WIDTH), 95);
+    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 0x5F);
 }
 
 static void PrintMonHeight(u16 height, u8 left, u8 top)
@@ -4459,8 +4623,8 @@ static u8 PrintCryScreenSpeciesName(u8 windowId, u16 num, u8 left, u8 top)
     switch (num)
     {
     default:
-        for (i = 0; GetSpeciesName(num)[i] != EOS && i < POKEMON_NAME_LENGTH; i++)
-            str[i] = GetSpeciesName(num)[i];
+        for (i = 0; gSpeciesNames[num][i] != EOS && i < POKEMON_NAME_LENGTH; i++)
+            str[i] = gSpeciesNames[num][i];
         break;
     case 0:
         for (i = 0; i < 5; i++)
@@ -4661,7 +4825,7 @@ static int DoPokedexSearch(u8 dexMode, u8 order, u8 abcGroup, u8 bodyColor, u8 t
             u8 firstLetter;
 
             species = NationalPokedexNumToSpecies(sPokedexView->pokedexList[i].dexNum);
-            firstLetter = GetSpeciesName(species)[0];
+            firstLetter = gSpeciesNames[species][0];
             if (LETTER_IN_RANGE_UPPER(firstLetter, abcGroup) || LETTER_IN_RANGE_LOWER(firstLetter, abcGroup))
             {
                 sPokedexView->pokedexList[resultsCount] = sPokedexView->pokedexList[i];

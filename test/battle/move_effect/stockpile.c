@@ -250,3 +250,4 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
         EXPECT_MUL_EQ(results[2].dmgSpecialBefore,  UQ_4_12(1.0), results[2].dmgSpecialAfter);
     }
 }
+
