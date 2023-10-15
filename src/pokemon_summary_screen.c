@@ -736,6 +736,7 @@ static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 #define TAG_MOVE_TYPES 30002
 #define TAG_MON_MARKINGS 30003
 #define TAG_SPLIT_ICONS 30004
+#define TAG_MOVE_TYPES2 30005
 
 static const u16 sSplitIcons_Pal[] = INCBIN_U16("graphics/interface/split_icons.gbapal");
 static const u32 sSplitIcons_Gfx[] = INCBIN_U32("graphics/interface/split_icons.4bpp.lz");
@@ -1297,6 +1298,16 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypePitbull,
     sSpriteAnim_TypeNinja,
     sSpriteAnim_TypeHMSlave,
+    sSpriteAnim_TypeRed,
+    sSpriteAnim_TypeBlue,
+    sSpriteAnim_TypeScary,
+    sSpriteAnim_TypeSports,
+    sSpriteAnim_TypeSoft,
+    sSpriteAnim_TypeSledge,
+    sSpriteAnim_TypeExplosion,
+    sSpriteAnim_TypeTurtle,
+    sSpriteAnim_TypeDino,
+    sSpriteAnim_TypeDance,
     sSpriteAnim_TypeSand,
     sSpriteAnim_TypeHuman,
     sSpriteAnim_TypeLava,
@@ -1338,8 +1349,14 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
 static const struct CompressedSpriteSheet sSpriteSheet_MoveTypes =
 {
     .data = gMoveTypes_Gfx,
-    .size = (NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT) * 0x100,
+    .size = (70) * 0x100,
     .tag = TAG_MOVE_TYPES
+};
+static const struct CompressedSpriteSheet sSpriteSheet_MoveTypes2 =
+{
+    .data = gMoveTypes2_Gfx,
+    .size = (36) * 0x100,
+    .tag = TAG_MOVE_TYPES2
 };
 static const struct SpriteTemplate sSpriteTemplate_MoveTypes =
 {
@@ -1813,7 +1830,7 @@ static bool8 LoadGraphics(void)
         }
         break;
     case 18:
-        CreateMonMarkingsSprite(&sMonSummaryScreen->currentMon);
+        //CreateMonMarkingsSprite(&sMonSummaryScreen->currentMon);
         gMain.state++;
         break;
     case 19:
@@ -1910,6 +1927,7 @@ static bool8 DecompressGraphics(void)
         break;
     case 7:
         LoadCompressedSpriteSheet(&sSpriteSheet_MoveTypes);
+        LoadCompressedSpriteSheet(&sSpriteSheet_MoveTypes2);
         sMonSummaryScreen->switchCounter++;
         break;
     case 8:

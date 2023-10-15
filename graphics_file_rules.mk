@@ -24,7 +24,8 @@ STARTERGFXDIR := graphics/starter_choose
 NAMINGGFXDIR := graphics/naming_screen
 SPINDAGFXDIR := graphics/spinda_spots
 
-types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy furry bear fruity tree shuckle ugly massive short king god space stall loser evil fun nerd oak wood table bee cool fish hard fake train goofy submissive wafflehouse ego wizard song tech snow smart stupid money dog cat pitbull ninja hmslave red blue scary sports soft
+types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy furry bear fruity tree shuckle ugly massive short king god space stall loser evil fun nerd oak wood table bee cool fish hard fake train goofy submissive wafflehouse ego wizard song tech snow smart stupid money dog cat pitbull ninja hmslave red blue scary sports soft sledge explosion turtle dino dance
+types2 := sand human lava snake lance void banana love old reverse ball water2 hot death shroom fat light life loud wall fast plural hunt glass on sweet plague doctor joke viable lol
 contest_types := cool beauty cute smart tough
 
 ### Cherrim ###
@@ -420,12 +421,15 @@ $(BATTRANSGFXDIR)/vs_frame.4bpp: %.4bpp: %.png
 graphics/party_menu/bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 62 -Wnum_tiles
 
-$(TYPESGFXDIR)/move_types.4bpp: $(types:%=$(TYPESGFXDIR)/%.4bpp) $(contest_types:%=$(TYPESGFXDIR)/contest_%.4bpp)
+$(TYPESGFXDIR)/move_types.4bpp: $(types:%=$(TYPESGFXDIR)/%.4bpp)
 	@cat $^ >$@
 
 $(TYPESGFXDIR)/move_types.gbapal: $(TYPESGFXDIR)/move_types_1.gbapal \
                                   $(TYPESGFXDIR)/move_types_2.gbapal \
                                   $(TYPESGFXDIR)/move_types_3.gbapal
+	@cat $^ >$@
+
+$(TYPESGFXDIR)/move_types_2.4bpp: $(types2:%=$(TYPESGFXDIR)/%.4bpp) $(contest_types:%=$(TYPESGFXDIR)/contest_%.4bpp)
 	@cat $^ >$@
 
 graphics/bag/menu.4bpp: %.4bpp: %.png
