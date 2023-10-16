@@ -2232,7 +2232,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
             return;
         break;
     case 5:
-        RemoveAndCreateMonMarkingsSprite(&sMonSummaryScreen->currentMon);
+        //RemoveAndCreateMonMarkingsSprite(&sMonSummaryScreen->currentMon);
         break;
     case 6:
         CreateCaughtBallSprite(&sMonSummaryScreen->currentMon);
