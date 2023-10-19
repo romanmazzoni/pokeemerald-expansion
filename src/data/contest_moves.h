@@ -5919,6 +5919,14 @@ const struct ContestMove gContestMoves[MOVES_COUNT] =
         .comboMoves = {0}
     },
 
+    [MOVE_SHEER_WET] =
+    {
+        .effect = CONTEST_EFFECT_BETTER_WHEN_LATER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .comboStarterId = 0,
+        .comboMoves = {0}
+    },
+
     [MOVE_DIRE_CLAW] = {0}, // TODO
 
     [MOVE_PSYSHIELD_BASH] = {0}, // TODO

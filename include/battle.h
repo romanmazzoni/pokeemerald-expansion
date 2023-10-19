@@ -691,18 +691,20 @@ struct BattleStruct
 #define TARGET_TURN_DAMAGED ((gSpecialStatuses[gBattlerTarget].physicalDmg != 0 || gSpecialStatuses[gBattlerTarget].specialDmg != 0))
 #define BATTLER_DAMAGED(battlerId) ((gSpecialStatuses[battlerId].physicalDmg != 0 || gSpecialStatuses[battlerId].specialDmg != 0))
 
-#define IS_BATTLER_OF_TYPE(battlerId, type)((gBattleMons[battlerId].type1 == type || gBattleMons[battlerId].type2 == type || (gBattleMons[battlerId].type3 != TYPE_MYSTERY && gBattleMons[battlerId].type3 == type)))
+#define IS_BATTLER_OF_TYPE(battlerId, type)((gBattleMons[battlerId].type1 == type || gBattleMons[battlerId].type2 == type || (gBattleMons[battlerId].type3 == type || gBattleMons[battlerId].type4 == type)))
 #define SET_BATTLER_TYPE(battlerId, type)           \
 {                                                   \
     gBattleMons[battlerId].type1 = type;            \
     gBattleMons[battlerId].type2 = type;            \
     gBattleMons[battlerId].type3 = type;    \
+    gBattleMons[battlerId].type4 = type;
 }
 #define RESTORE_BATTLER_TYPE(battlerId)                                                     \
 {                                                                                           \
     gBattleMons[battlerId].type1 = gSpeciesInfo[gBattleMons[battlerId].species].types[0];   \
     gBattleMons[battlerId].type2 = gSpeciesInfo[gBattleMons[battlerId].species].types[1];   \
     gBattleMons[battlerId].type3 = gSpeciesInfo[gBattleMons[battlerId].species].types[2];                                            \
+    gBattleMons[battlerId].type4 = gSpeciesInfo[gBattleMons[battlerId].species].types[3];
 }
 
 
