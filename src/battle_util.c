@@ -9959,7 +9959,7 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
         MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type4, battlerAtk, recordAbilities);
     if (recordAbilities && (illusionSpecies = GetIllusionMonSpecies(battlerDef)))
         TryNoticeIllusionInTypeEffectiveness(move, moveType, battlerAtk, battlerDef, modifier, illusionSpecies);
-    if (modifier == 4095 || modifier == 8190)
+    if (modifier == 4095)
         modifier++; //part 2 of the best solution better
     if (gBattleMoves[move].split == SPLIT_STATUS && move != MOVE_THUNDER_WAVE)
     {
