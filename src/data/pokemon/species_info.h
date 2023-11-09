@@ -230,7 +230,7 @@
         .baseSpeed     = 120,                          \
         .baseSpAttack  = 120,                          \
         .baseSpDefense = 120,                          \
-        .types = { type, type },                       \
+        .types = { TYPE_GOD, type, TYPE_GOD, type },                       \
         .catchRate = 3,                                \
         .expYield = 324,                               \
         .evYield_HP        = 3,                        \
