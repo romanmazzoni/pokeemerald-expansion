@@ -350,7 +350,7 @@ PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Come on and battle me!$"
 
 PetalburgWoods_Text_YoureKiddingMe:
-	.string "You're kidding me! You're tough!$"
+	.string "You've got to be kitten me right meow!$"
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve\n"
