@@ -3886,7 +3886,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_DITTO] =
     {
-        .baseHP        = 48,
+        .baseHP        = 82,
         .baseAttack    = 48,
         .baseDefense   = 48,
         .baseSpeed     = 48,
@@ -10797,7 +10797,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 103,
         .baseAttack    = 93,
-        .baseDefense   = 67,
+        .baseDefense   = 87,
         .baseSpeed     = 84,
         .baseSpAttack  = 71,
         .baseSpDefense = 61,
@@ -11050,7 +11050,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseHP        = 135,
         .baseAttack    = 85,
         .baseDefense   = 40,
-        .baseSpeed     = 5,
+        .baseSpeed     = 20,
         .baseSpAttack  = 40,
         .baseSpDefense = 85,
         .types = { TYPE_WAFFLEHOUSE, TYPE_FAT, TYPE_WAFFLEHOUSE, TYPE_FAT},
