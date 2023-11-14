@@ -2472,7 +2472,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_VICTREEBEL] =
     {
-        .baseHP        = 80,
+        .baseHP        = 88,
         .baseAttack    = 105,
         .baseDefense   = 65,
         .baseSpeed     = 70,
@@ -2525,7 +2525,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 70,
         .baseDefense   = 65,
         .baseSpeed     = 100,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 92,
         .baseSpDefense = 120,
         .types = {  TYPE_FISH, TYPE_EVIL, TYPE_POISON, TYPE_FISH},
         .catchRate = 60,
@@ -2591,7 +2591,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_GOLEM] =
     {
         .baseHP        = 80,
-        .baseDefense   = 130,
+        .baseDefense   = 134,
         .baseSpeed     = 45,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
@@ -5422,8 +5422,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseHP        = 95,
         .baseAttack    = 75,
         .baseDefense   = 80,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 10,
+        .baseSpAttack  = 130,
         .baseSpDefense = 110,
         .types = { TYPE_KING, TYPE_REVERSE, TYPE_FAST, TYPE_FAST },
         .catchRate = 70,
@@ -5442,9 +5442,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MISDREAVUS] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
+        .baseHP        = 72,
+        .baseAttack    = 95,
+        .baseDefense   = 72,
         .baseSpeed     = 85,
         .baseSpAttack  = 85,
         .baseSpDefense = 85,
@@ -5488,11 +5488,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GIRAFARIG] =
     {
-        .baseHP        = 70,
+        .baseHP        = 80,
         .baseAttack    = 80,
         .baseDefense   = 65,
         .baseSpeed     = 85,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 99,
         .baseSpDefense = 65,
         .types = { TYPE_PLURAL, TYPE_REVERSE, TYPE_SHORT, TYPE_DARK },
         .catchRate = 60,
@@ -6905,10 +6905,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_LINOONE] =
     {
-        .baseHP        = 85,
+        .baseHP        = 88,
         .baseAttack    = 105,
         .baseDefense   = 61,
-        .baseSpeed     = 100,
+        .baseSpeed     = 110,
         .baseSpAttack  = 50,
         .baseSpDefense = 61,
         .types = { TYPE_NORMAL, TYPE_SOFT, TYPE_SNAKE, TYPE_VIABLE },
@@ -13947,11 +13947,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ZOROARK] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 105,
+        .baseHP        = 70,
+        .baseAttack    = 100,
         .baseDefense   = 60,
         .baseSpeed     = 105,
-        .baseSpAttack  = 120,
+        .baseSpAttack  = 130,
         .baseSpDefense = 60,
         .types = { TYPE_FURRY, TYPE_DARK, TYPE_FAKE, TYPE_COOL},
         .catchRate = 45,
@@ -13993,7 +13993,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 75,
         .baseAttack    = 95,
-        .baseDefense   = 60,
+        .baseDefense   = 90,
         .baseSpeed     = 115,
         .baseSpAttack  = 65,
         .baseSpDefense = 60,
@@ -14062,7 +14062,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense   = 95,
         .baseSpeed     = 65,
         .baseSpAttack  = 95,
-        .baseSpDefense = 110,
+        .baseSpDefense = 92,
         .types = { TYPE_DARK, TYPE_HUMAN, TYPE_LOUD, TYPE_HUMAN},
         .catchRate = 50,
         .expYield = 221,
@@ -14126,7 +14126,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseHP        = 110,
         .baseAttack    = 65,
         .baseDefense   = 75,
-        .baseSpeed     = 30,
+        .baseSpeed     = 44,
         .baseSpAttack  = 125,
         .baseSpDefense = 85,
         .types = { TYPE_WIZARD, TYPE_PLAGUE, TYPE_REVERSE, TYPE_HUNT},
@@ -24332,7 +24332,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_LYCANROC_MIDNIGHT] =
     {
         .baseHP        = 85,
-        .baseAttack    = 115,
+        .baseAttack    = 130,
         .baseDefense   = 75,
         .baseSpeed     = 82,
         .baseSpAttack  = 55,
