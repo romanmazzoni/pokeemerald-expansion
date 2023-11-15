@@ -7256,7 +7256,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_PELIPPER] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 50,
         .baseDefense   = 100,
         .baseSpeed     = 65,
