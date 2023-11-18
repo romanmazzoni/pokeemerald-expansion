@@ -5128,7 +5128,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 break;
             case ABILITY_WATER_ABSORB:
             case ABILITY_DRY_SKIN:
-                if (moveType == TYPE_WATER || movetype == TYPE_BANANA)
+                if (moveType == TYPE_WATER || moveType == TYPE_BANANA)
                     effect = 1;
                 break;
             case ABILITY_MOTOR_DRIVE:
@@ -5136,7 +5136,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                     effect = 2, statId = STAT_SPEED;
                 break;
             case ABILITY_LIGHTNING_ROD:
-                if (moveType == TYPE_ELECTRIC)
+                if (moveType == TYPE_ELECTRIC || moveType == TYPE_GOD)
                     effect = 2, statId = STAT_SPATK;
                 break;
             case ABILITY_STORM_DRAIN:
@@ -11028,7 +11028,7 @@ u32 ApplyWeatherDamageMultiplier(u8 battlerAtk, u16 move, u8 moveType, u32 dmg, 
                 else if (moveType == TYPE_SPORTS)
                     dmg = ApplyModifier(UQ_4_12(0.5), dmg);
             }
-            }
+            
         }
     }
     return dmg;
