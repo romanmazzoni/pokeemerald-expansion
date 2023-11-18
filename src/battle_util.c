@@ -11018,6 +11018,17 @@ u32 ApplyWeatherDamageMultiplier(u8 battlerAtk, u16 move, u8 moveType, u32 dmg, 
                 else if (moveType == TYPE_WATER || moveType == TYPE_DARK || moveType == TYPE_NINJA || moveType == TYPE_EVIL || moveType == TYPE_NERD || moveType == TYPE_ICE || moveType == TYPE_SCARY || moveType == TYPE_VOID)
                     dmg = ApplyModifier(UQ_4_12(0.5), dmg);
             }
+            else if(gBattleWeather & B_WEATHER_SANDSTORM){
+                if (moveType == TYPE_SAND)
+                    dmg = ApplyModifier(UQ_4_12(1.5), dmg);
+            }
+            else if(gBattleWeather & B_WEATHER_SNOW){
+                if (moveType == TYPE_SNOW || moveType == TYPE_FUN)
+                    dmg = ApplyModifier(UQ_4_12(1.5), dmg);
+                else if (moveType == TYPE_SPORTS)
+                    dmg = ApplyModifier(UQ_4_12(0.5), dmg);
+            }
+            }
         }
     }
     return dmg;
