@@ -5128,7 +5128,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                 break;
             case ABILITY_WATER_ABSORB:
             case ABILITY_DRY_SKIN:
-                if (moveType == TYPE_WATER)
+                if (moveType == TYPE_WATER || movetype == TYPE_BANANA)
                     effect = 1;
                 break;
             case ABILITY_MOTOR_DRIVE:
@@ -5148,7 +5148,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                     effect = 2, statId = STAT_ATK;
                 break;
             case ABILITY_FLASH_FIRE:
-                if (moveType == TYPE_FIRE
+                if (moveType == TYPE_FIRE || moveType == TYPE_LAVA
                 #if B_FLASH_FIRE_FROZEN <= GEN_4
                     && !(gBattleMons[battler].status1 & STATUS1_FREEZE)
                 #endif
@@ -9078,7 +9078,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         }
         break;
     case ABILITY_DRY_SKIN:
-        if (moveType == TYPE_FIRE)
+        if (moveType == TYPE_FIRE || moveType == TYPE_SOFT)
             MulModifier(&modifier, UQ_4_12(1.25));
         break;
     case ABILITY_FLUFFY:
@@ -9088,7 +9088,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, defAbility);
         }
-        if (moveType == TYPE_FIRE)
+        if (moveType == TYPE_FIRE || moveType == TYPE_HARD)
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
     case ABILITY_PROTOSYNTHESIS:
@@ -9403,7 +9403,7 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
     switch (GetBattlerAbility(battlerDef))
     {
     case ABILITY_THICK_FAT:
-        if (moveType == TYPE_FIRE || moveType == TYPE_ICE)
+        if (moveType == TYPE_FIRE || moveType == TYPE_ICE || moveType == TYPE_FAT)
         {
             MulModifier(&modifier, UQ_4_12(0.5));
             if (updateFlags)
@@ -11006,16 +11006,16 @@ u32 ApplyWeatherDamageMultiplier(u8 battlerAtk, u16 move, u8 moveType, u32 dmg, 
         {
             if (gBattleWeather & B_WEATHER_RAIN)
             {
-                if (moveType == TYPE_FIRE)
+                if (moveType == TYPE_FIRE || moveType == TYPE_SOFT || moveType == TYPE_FLYING || moveType == TYPE_BUG || moveType == TYPE_DEATH || moveType == TYPE_HOT )
                     dmg = ApplyModifier(UQ_4_12(0.5), dmg);
-                else if (moveType == TYPE_WATER)
+                else if (moveType == TYPE_WATER || moveType == TYPE_ELECTRIC || moveType == TYPE_BLUE || moveType == TYPE_TURTLE || moveType == TYPE_LIFE || moveType == TYPE_SHUCKLE || moveType == TYPE_TREE)
                     dmg = ApplyModifier(UQ_4_12(1.5), dmg);
             }
             else if (gBattleWeather & B_WEATHER_SUN)
             {
-                if (moveType == TYPE_FIRE)
+                if (moveType == TYPE_FIRE || moveType == TYPE_LIGHT || moveType == TYPE_FAST || moveType == TYPE_SAND || moveType == TYPE_LIFE || moveType == TYPE_CAT || moveType == TYPE_SPORTS)
                     dmg = ApplyModifier(UQ_4_12(1.5), dmg);
-                else if (moveType == TYPE_WATER)
+                else if (moveType == TYPE_WATER || moveType == TYPE_DARK || moveType == TYPE_NINJA || moveType == TYPE_EVIL || moveType == TYPE_NERD || moveType == TYPE_ICE || moveType == TYPE_SCARY || moveType == TYPE_VOID)
                     dmg = ApplyModifier(UQ_4_12(0.5), dmg);
             }
         }
@@ -11119,5 +11119,5 @@ bool8 AreBattlersOfOppositeGender(u8 battler1, u8 battler2)
     u8 gender1 = GetBattlerGender(battler1);
     u8 gender2 = GetBattlerGender(battler2);
 
-    return (gender1 != MON_GENDERLESS && gender2 != MON_GENDERLESS && gender1 != gender2);
+    return (gender1 == gender2);
 }

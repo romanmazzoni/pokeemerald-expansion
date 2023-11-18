@@ -13801,42 +13801,49 @@ static void Cmd_magnitudedamagecalculation(void)
 {
     CMD_ARGS();
 
-    u32 magnitude = Random() % 100;
+    u32 magnitude = Random() % 150;
 
     if (magnitude < 5)
     {
-        gBattleStruct->magnitudeBasePower = 10;
+        gBattleStruct->magnitudeBasePower = 5;
         magnitude = 4;
     }
-    else if (magnitude < 15)
+    else if (magnitude < 20)
     {
-        gBattleStruct->magnitudeBasePower = 30;
+        gBattleStruct->magnitudeBasePower = 20;
         magnitude = 5;
     }
-    else if (magnitude < 35)
+    else if (magnitude < 30)
     {
         gBattleStruct->magnitudeBasePower = 50;
         magnitude = 6;
     }
+    else if (magnitude < 50)
+    {
+        gBattleStruct->magnitudeBasePower = 60;
+        magnitude = 7;
+    }
     else if (magnitude < 65)
     {
-        gBattleStruct->magnitudeBasePower = 70;
-        magnitude = 7;
+        gBattleStruct->magnitudeBasePower = 80;
+        magnitude = 8;
     }
     else if (magnitude < 85)
     {
-        gBattleStruct->magnitudeBasePower = 90;
-        magnitude = 8;
-    }
-    else if (magnitude < 95)
-    {
-        gBattleStruct->magnitudeBasePower = 110;
+        gBattleStruct->magnitudeBasePower = 105;
         magnitude = 9;
     }
-    else
+    else if (magnitude < 105)
     {
-        gBattleStruct->magnitudeBasePower = 150;
+        gBattleStruct->magnitudeBasePower = 130;
         magnitude = 10;
+    } else if (magnitude < 135)
+    {
+        gBattleStruct->magnitudeBasePower = 160;
+        magnitude = 11;
+    } else {
+        gBattleStruct->magnitudeBasePower = 220;
+        magnitude = 9001;
     }
 
     PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff1, 2, magnitude)
