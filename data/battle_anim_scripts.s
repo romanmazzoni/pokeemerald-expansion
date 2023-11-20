@@ -857,6 +857,24 @@ gBattleAnims_Moves::
 	.4byte Move_PSYBLADE
 	.4byte Move_HYDRO_STEAM
 	.4byte Move_SHEER_WET
+	.4byte Move_LANCE_BLAST
+	.4byte Move_LANCE_PUNCH
+	.4byte Move_SPECIAL_BEAM_CANNON
+	.4byte Move_KAMEKAMEHA
+	.4byte Move_TRIBEAM
+	.4byte Move_GALICK_GUN
+	.4byte Move_SHADOW_CLONE
+	.4byte Move_101_CANNON
+	.4byte Move_101_KICK
+	.4byte Move_FEAR
+	.4byte Move_YELL
+	.4byte Move_SHUCKLE_SHUK
+	.4byte Move_STALL_PUNCH
+	.4byte Move_MAGNI2DE
+	.4byte Move_MAGNIDUDE
+	.4byte Move_MAGNIFOOD
+	.4byte Move_MAGNIRUDE
+
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING

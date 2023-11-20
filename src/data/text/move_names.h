@@ -1666,6 +1666,23 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_PSYBLADE] = _("Psyblade"),
     [MOVE_HYDRO_STEAM] = _("Hydro Steam"),
     [MOVE_SHEER_WET] = _("Sheer Wet"),
+    [MOVE_LANCE_BLAST] = _("Lance Blast"),
+    [MOVE_LANCE_PUNCH] = _("Lance Punch"),
+    [MOVE_SPECIAL_BEAM_CANNON] = _("SBC!"),
+    [MOVE_KAMEKAMEHA] = _("KAMEKAMEHA"),
+    [MOVE_TRI_BEAM] = _("Tri Beam"),
+    [MOVE_GALICK_GUN] = _("Galick Gun"),
+    [MOVE_SHADOW_CLONE] = _("Shadow Clone"),
+    [MOVE_101_CANNON] = _("101 Cannon"),
+    [MOVE_101_KICK] = _("101 Kick"),
+    [MOVE_FEAR] = _("FEAR"),
+    [MOVE_YELL] = _("Yell!!"),
+    [MOVE_SHUCKLE_SHUK] = _("Shuckle Shuk"),
+    [MOVE_STALL_PUNCH] = _("Stall Punch"),
+    [MOVE_MAGNI2DE] = _("Magni2de"),
+    [MOVE_MAGNIDUDE] = _("Magnidude"),
+    [MOVE_MAGNIFOOD] = _("Magnifood"),
+    [MOVE_MAGNIRUDE] = _("Magnirude"),
 };
 #endif
 

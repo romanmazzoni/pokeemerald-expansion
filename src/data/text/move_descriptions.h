@@ -3264,6 +3264,75 @@ static const u8 sSheerWetDescription[] = _(
     "Get your opponent so wet\n"
     "that they instantly faint.");
 
+static const u8 sLanceBlastDescription[] = _(
+    "Harness the power of lance\n"
+    "Blast them.");
+
+static const u8 sLancePunchDescription[] = _(
+    "Harness the power of lance\n"
+    "Kick them.");
+
+static const u8 sSpecialBeamCannonDescription[] = _(
+    "Piccolo's signature move\n"
+    "No moves like it!");
+
+static const u8 sKamekamehaDescription[] = _(
+    "Goku's signature move\n"
+    "No moves like it!");
+
+static const u8 sTriBeamDescription[] = _(
+    "Tien's signature move\n"
+    "No moves like it!");
+
+static const u8 sGalickGunDescription[] = _(
+    "Vageta's signature move\n"
+    "No moves like it!");
+
+static const u8 sShadowCloneDescription[] = _(
+    "Get your opponent so wet\n"
+    "that they instantly faint.");
+
+static const u8 s101CannonDescription[] = _(
+    "Lucky number!\n"
+    "Get a broken special attack.");
+
+static const u8 s101KickDescription[] = _(
+    "Lucky number!\n"
+    "Get a broken physical attack.");
+
+static const u8 sFearDescription[] = _(
+    "Harness true fear\n"
+    "Freeze them in their tracks.");
+
+static const u8 sYellDescription[] = _(
+    "AHHHHHHHHHHHHHHHHHHHH\n"
+    "GAHHHHHHHHHHHHHHHHHHHH.");
+
+static const u8 sShuckleShukDescription[] = _(
+    "Shuckle\n"
+    "Shuckle");
+
+static const u8 sStallPunchDescription[] = _(
+    "A very slow weak punch\n"
+    "This is REVERSE useful.");
+
+static const u8 sMagni2deDescription[] = _(
+    "Random damage is great\n"
+    "So theres more magnitudes.");
+
+static const u8 sMagnidudeDescription[] = _(
+    "Random damage is great\n"
+    "So theres more magnitudes.");
+
+static const u8 sMagnifoodDescription[] = _(
+    "Random damage is great\n"
+    "So theres more magnitudes.");
+
+static const u8 sMagnirudeDescription[] = _(
+    "Random damage is great\n"
+    "So theres more magnitudes.");
+
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4104,4 +4173,17 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PSYBLADE - 1] = sPsybladeDescription,
     [MOVE_HYDRO_STEAM - 1] = sHydroSteamDescription,
     [MOVE_SHEER_WET - 1] = sSheerWetDescription,
+    [MOVE_LANCE_BLAST - 1] = sLanceBlastDescription,
+    [MOVE_LANCE_PUNCH - 1] = sLancePunchDescription,
+    [MOVE_SPECIAL_BEAM_CANNON - 1] = sSpecialBeamCannonDescription,
+    [MOVE_KAMEKAMEHA - 1] = sKamekamehaDescription,
+    [MOVE_TRI_BEAM - 1] = sTriBeamDescription,
+    [MOVE_GALICK_GUN - 1] = sGalickGunDescription,
+    [MOVE_SHADOW_CLONE - 1] = sShadowCloneDescription,
+    [MOVE_101_CANNON - 1] = s101CannonDescription,
+    [MOVE_101_KICK - 1] = s101KickDescription,
+    [MOVE_FEAR - 1] = sFearDescription,
+    [MOVE_YELL - 1] = sYellDescription,
+    [MOVE_SHUCKLE_SHUK - 1] = sShuckleShukDescription,
+    [MOVE_STALL_PUNCH - 1] = sStallPunchDescription,
 };
