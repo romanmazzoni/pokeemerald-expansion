@@ -1162,7 +1162,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #endif
         .effect = EFFECT_COUNTER,
         .power = 1,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_TABLE,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,

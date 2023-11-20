@@ -19142,12 +19142,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_CINDERACE] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 116,
+        .baseHP        = 88,
+        .baseAttack    = 119,
         .baseDefense   = 75,
         .baseSpeed     = 119,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 75,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 80,
         .types = { TYPE_FURRY, TYPE_SPORTS, TYPE_HOT, TYPE_FRUITY},
         .catchRate = 45,
         .expYield = 265,
