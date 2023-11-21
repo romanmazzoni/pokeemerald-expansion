@@ -13828,22 +13828,22 @@ static void Cmd_magnitudedamagecalculation(void)
         gBattleStruct->magnitudeBasePower = 80;
         magnitude = 8;
     }
-    else if (magnitude < 85)
+    else if (magnitude < 95)
     {
         gBattleStruct->magnitudeBasePower = 105;
         magnitude = 9;
     }
-    else if (magnitude < 105)
+    else if (magnitude < 120)
     {
         gBattleStruct->magnitudeBasePower = 130;
         magnitude = 10;
-    } else if (magnitude < 135)
+    } else if (magnitude < 140)
     {
         gBattleStruct->magnitudeBasePower = 160;
         magnitude = 11;
     } else {
         gBattleStruct->magnitudeBasePower = 220;
-        magnitude = 9001;
+        magnitude = 200;
     }
 
     PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff1, 2, magnitude)
