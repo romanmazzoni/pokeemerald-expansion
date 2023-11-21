@@ -3289,8 +3289,8 @@ static const u8 sGalickGunDescription[] = _(
     "No moves like it!");
 
 static const u8 sShadowCloneDescription[] = _(
-    "Get your opponent so wet\n"
-    "that they instantly faint.");
+    "Use your health to create a\n"
+    "clone that absorbs damage.");
 
 static const u8 s101CannonDescription[] = _(
     "Lucky number!\n"
@@ -3319,19 +3319,6 @@ static const u8 sStallPunchDescription[] = _(
 static const u8 sMagni2deDescription[] = _(
     "Random damage is great\n"
     "So theres more magnitudes.");
-
-static const u8 sMagnidudeDescription[] = _(
-    "Random damage is great\n"
-    "So theres more magnitudes.");
-
-static const u8 sMagnifoodDescription[] = _(
-    "Random damage is great\n"
-    "So theres more magnitudes.");
-
-static const u8 sMagnirudeDescription[] = _(
-    "Random damage is great\n"
-    "So theres more magnitudes.");
-
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4186,4 +4173,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_YELL - 1] = sYellDescription,
     [MOVE_SHUCKLE_SHUK - 1] = sShuckleShukDescription,
     [MOVE_STALL_PUNCH - 1] = sStallPunchDescription,
+    [MOVE_MAGNI2DE - 1] = sMagni2deDescription,
+    [MOVE_MAGNIDUDE - 1] = sMagni2deDescription,
+    [MOVE_MAGNIFOOD - 1] = sMagni2deDescription,
+    [MOVE_MAGNIRUDE - 1] = sMagni2deDescription,
 };
