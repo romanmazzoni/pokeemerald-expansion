@@ -4830,13 +4830,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_IGGLYBUFF] =
     {
         .baseHP        = 90,
-        .baseAttack    = 150,
-        .baseDefense   = 40,
-        .baseSpeed     = 140,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 40,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 100,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_SOFT, TYPE_EGO, TYPE_SOFT, TYPE_EGO},
+            .types = { TYPE_SOFT, TYPE_EGO, TYPE_VIABLE, TYPE_EGO},
         #else
             .types = { TYPE_NORMAL, TYPE_NORMAL},
         #endif
@@ -5421,7 +5421,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 95,
         .baseAttack    = 75,
-        .baseDefense   = 80,
+        .baseDefense   = 85,
         .baseSpeed     = 10,
         .baseSpAttack  = 130,
         .baseSpDefense = 110,

@@ -470,7 +470,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SAND_ATTACK] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
-        .power = 40,
+        .power = 45,
         .type = TYPE_SAND,
         .accuracy = 100,
         .pp = 15,
@@ -671,11 +671,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_POISON_STING] =
     {
         .effect = EFFECT_POISON_HIT,
-        .power = 15,
+        .power = 35,
         .type = TYPE_BEE,
         .accuracy = 100,
         .pp = 35,
-        .secondaryEffectChance = 45,
+        .secondaryEffectChance = 40,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -3648,7 +3648,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_ATTRACT,
         .power = 0,
-        .type = TYPE_LOVE,
+        .type = TYPE_FRUITY,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -3895,12 +3895,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_RAPID_SPIN] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_8
-            .power = 50,
+            .power = 75,
         #else
             .power = 20,
         #endif
         .effect = EFFECT_RAPID_SPIN,
-        .type = TYPE_BALL,
+        .type = TYPE_VIABLE,
         .accuracy = 100,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -10256,7 +10256,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SMACK_DOWN,
         .power = 90,
-        .type = TYPE_KING,
+        .type = TYPE_SAND,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -10271,7 +10271,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_HIT_PREVENT_ESCAPE,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_SAND,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -14196,9 +14196,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SPECIAL_BEAM_CANNON] =
     {
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_NERD,
-        .accuracy = 100,
+        .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -14210,9 +14210,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_KAMEKAMEHA] =
     {
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_NERD,
-        .accuracy = 100,
+        .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -14224,9 +14224,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_TRI_BEAM] =
     {
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_NERD,
-        .accuracy = 100,
+        .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -14238,9 +14238,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_GALICK_GUN] =
     {
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_NERD,
-        .accuracy = 100,
+        .accuracy = 95,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -14297,7 +14297,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .effect = EFFECT_FREEZE_HIT,
         .power = 15,
         .type = TYPE_SCARY,
-        .accuracy = 55,
+        .accuracy = 65,
         .pp = 15,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
@@ -14339,7 +14339,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_STALL_PUNCH] =
     {
         .effect = EFFECT_HIT,
-        .power = 15,
+        .power = 20,
         .type = TYPE_STALL,
         .accuracy = 100,
         .pp = 20,
