@@ -92,7 +92,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PAY_DAY] =
     {
         .effect = EFFECT_PAY_DAY,
-        .power = 40,
+        .power = 55,
         .type = TYPE_MONEY,
         .accuracy = 100,
         .pp = 20,
@@ -515,7 +515,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FURY_ATTACK] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 20,
+        .power = 22,
         .type = TYPE_FURRY,
         .accuracy = 85,
         .pp = 20,
@@ -2043,7 +2043,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_LICK] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 30,
+            .power = 40,
         #else
             .power = 20,
         #endif
@@ -2051,7 +2051,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_PITBULL,
         .accuracy = 100,
         .pp = 30,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 40,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -9950,14 +9950,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .split = SPLIT_PHYSICAL,
         #endif
         .effect = EFFECT_MULTI_HIT,
-        .power = 15,
+        .power = 20,
         .type = TYPE_NINJA,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 1,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
         .zMoveEffect = Z_EFFECT_NONE,
 
     },
@@ -11069,12 +11069,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_MOONGEIST_BEAM] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_CONFUSE_HIT,
         .power = 100,
         .type = TYPE_SPACE,
         .accuracy = 100,
         .pp = 5,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_TARGET_ABILITY_IGNORED,
@@ -14196,7 +14196,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SPECIAL_BEAM_CANNON] =
     {
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 105,
         .type = TYPE_NERD,
         .accuracy = 95,
         .pp = 20,
@@ -14210,7 +14210,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_KAMEKAMEHA] =
     {
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 105,
         .type = TYPE_NERD,
         .accuracy = 95,
         .pp = 20,
@@ -14224,7 +14224,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_TRI_BEAM] =
     {
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 105,
         .type = TYPE_NERD,
         .accuracy = 95,
         .pp = 20,
@@ -14238,7 +14238,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_GALICK_GUN] =
     {
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 105,
         .type = TYPE_NERD,
         .accuracy = 95,
         .pp = 20,
