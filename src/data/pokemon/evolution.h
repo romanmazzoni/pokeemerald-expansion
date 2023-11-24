@@ -131,7 +131,6 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
                                     #endif
                                     #if P_GEN_6_POKEMON == TRUE
-                                       {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}
                                        {EVO_ITEM, ITEM_MOON_STONE, SPECIES_SYLVEON}
                                     #endif
                                        },
