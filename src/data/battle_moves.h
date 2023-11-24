@@ -5335,11 +5335,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_AIR_CUTTER] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 90,
         #else
             .power = 55,
         #endif
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_RECOIL_25,
         .type = TYPE_NINJA,
         .accuracy = 95,
         .pp = 25,
@@ -7235,7 +7235,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SHADOW_SNEAK] =
     {
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 50,
         .type = TYPE_NINJA,
         .accuracy = 100,
         .pp = 30,

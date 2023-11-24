@@ -10084,13 +10084,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_BIBAREL] =
     {
-        .baseHP        = 104,
+        .baseHP        = 107,
         .baseAttack    = 85,
         .baseDefense   = 60,
         .baseSpeed     = 71,
         .baseSpAttack  = 55,
-        .baseSpDefense = 60,
-        .types = { TYPE_WALL, TYPE_GOD, TYPE_WALL, TYPE_GOD},
+        .baseSpDefense = 90,
+        .types = { TYPE_WALL, TYPE_GOD, TYPE_WAFFLEHOUSE, TYPE_GOD},
         .catchRate = 127,
         .expYield = 144,
         .evYield_Attack    = 2,
