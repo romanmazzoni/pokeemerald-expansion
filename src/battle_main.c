@@ -2681,9 +2681,6 @@ static void AskRecordBattle(void)
             PlaySE(SE_SELECT);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
-        else if(JOY_NEW(L_BUTTON)){ // Load pokemon summary screen here
-            
-        }
         break;
     case STATE_RECORD_NO:
         if (IsLinkTaskFinished() == TRUE)

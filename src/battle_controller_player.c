@@ -23,6 +23,7 @@
 #include "random.h"
 #include "recorded_battle.h"
 #include "reshow_battle_screen.h"
+#include "pokemon_summary_screen.h"
 #include "sound.h"
 #include "string_util.h"
 #include "task.h"
@@ -186,6 +187,7 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
 
 // unknown unused data
 static const u8 sUnused[] = {0x48, 0x48, 0x20, 0x5a, 0x50, 0x50, 0x50, 0x58};
+EWRAM_DATA u8 stateOfMenu = 0;
 
 void BattleControllerDummy(void)
 {
@@ -243,7 +245,7 @@ static void HandleInputChooseAction(void)
     else
         gPlayerDpadHoldFrames = 0;
 
-    if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(A_BUTTON) && stateOfMenu == 0)
     {
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
@@ -265,7 +267,7 @@ static void HandleInputChooseAction(void)
         }
         PlayerBufferExecCompleted();
     }
-    else if (JOY_NEW(DPAD_LEFT))
+    else if (JOY_NEW(DPAD_LEFT) && stateOfMenu == 0)
     {
         if (gActionSelectionCursor[gActiveBattler] & 1) // if is B_ACTION_USE_ITEM or B_ACTION_RUN
         {
@@ -275,7 +277,7 @@ static void HandleInputChooseAction(void)
             ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
-    else if (JOY_NEW(DPAD_RIGHT))
+    else if (JOY_NEW(DPAD_RIGHT) && stateOfMenu == 0)
     {
         if (!(gActionSelectionCursor[gActiveBattler] & 1)) // if is B_ACTION_USE_MOVE or B_ACTION_SWITCH
         {
@@ -285,7 +287,7 @@ static void HandleInputChooseAction(void)
             ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
-    else if (JOY_NEW(DPAD_UP))
+    else if (JOY_NEW(DPAD_UP) && stateOfMenu == 0)
     {
         if (gActionSelectionCursor[gActiveBattler] & 2) // if is B_ACTION_SWITCH or B_ACTION_RUN
         {
@@ -295,7 +297,7 @@ static void HandleInputChooseAction(void)
             ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
         }
     }
-    else if (JOY_NEW(DPAD_DOWN))
+    else if (JOY_NEW(DPAD_DOWN) && stateOfMenu == 0)
     {
         if (!(gActionSelectionCursor[gActiveBattler] & 2)) // if is B_ACTION_USE_MOVE or B_ACTION_USE_ITEM
         {
@@ -321,8 +323,9 @@ static void HandleInputChooseAction(void)
             BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_CANCEL_PARTNER, 0);
             PlayerBufferExecCompleted();
         }
+        stateOfMenu = 0;
     }
-    else if (JOY_NEW(START_BUTTON))
+    else if (JOY_NEW(START_BUTTON) && stateOfMenu == 0)
     {
         SwapHpBarsWithHpText();
     }
@@ -334,7 +337,7 @@ static void HandleInputChooseAction(void)
     }
 #endif
 #if B_LAST_USED_BALL == TRUE
-    else if (JOY_NEW(B_LAST_USED_BALL_BUTTON) && CanThrowLastUsedBall())
+    else if (JOY_NEW(B_LAST_USED_BALL_BUTTON) && CanThrowLastUsedBall() && stateOfMenu == 0)
     {
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
@@ -342,6 +345,13 @@ static void HandleInputChooseAction(void)
         PlayerBufferExecCompleted();
     }
 #endif
+    else if(JOY_NEW(L_BUTTON) && stateOfMenu == 0){ // Load pokemon summary screen here ROMAN scorbunny cinderace
+            gPlttBufferUnfaded[BG_PLTT_ID(14) + 4] = gPlttBufferFaded[BG_PLTT_ID(14) + 4];
+             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+            ShowPokemonSummaryScreen(1, gEnemyParty, gPartyMenu.slotId, gEnemyPartyCount, CB2_SetUpReshowBattleScreenAfterMenu);
+            FreeAllWindowBuffers();
+            stateOfMenu = 1;
+        } //this almost works
 }
 
 static void UnusedEndBounceEffect(void)
