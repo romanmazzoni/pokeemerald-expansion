@@ -184,7 +184,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SNUBBULL]              = {{EVO_LEVEL, 23, SPECIES_GRANBULL}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_SNEASEL]               = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
-                                       {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}},
+                                       {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
+                                       {EVO_LEVEL, 42, SPECIES_SNEASLER}},
 #endif
     [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 30, SPECIES_URSARING}},
     [SPECIES_SLUGMA]                = {{EVO_LEVEL, 38, SPECIES_MAGCARGO}},
@@ -620,9 +621,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_BASCULIN]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_BASCULEGION},
                                         {EVO_LEVEL, 50, SPECIES_BASCULEGION}},
     [SPECIES_QWILFISH]      = {{EVO_MOVE, MOVE_BARB_BARRAGE, SPECIES_OVERQWIL}},
-    [SPECIES_SNEASEL]       = {{EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
-                                       {EVO_ITEM_HOLD_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER}},
-    [SPECIES_STANTLER]       = {{EVO_LEVEL, 40, SPECIES_WYRDEER}},
+    [SPECIES_STANTLER]      = {{EVO_LEVEL, 38, SPECIES_WYRDEER}},
 
 #endif
 };
