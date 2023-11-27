@@ -3338,7 +3338,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ICY_WIND] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .power = 60,
+        .power = 75,
         .type = TYPE_ICE,
         .accuracy = 95,
         .pp = 15,
