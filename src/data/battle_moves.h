@@ -2760,7 +2760,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SLASH] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
-        .power = 40,
+        .power = 45,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
@@ -7540,14 +7540,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_STONE_EDGE] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
-        .power = 80, 
+        .power = 75, 
         .type = TYPE_ROCK,
         .accuracy = 65,
         .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_HIGH_CRIT,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED ,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
@@ -8416,7 +8416,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_CHIP_AWAY] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
-        .power = 60,
+        .power = 55,
         .type = TYPE_SPORTS,
         .accuracy = 100,
         .pp = 20,
