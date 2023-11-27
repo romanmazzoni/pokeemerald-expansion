@@ -9831,7 +9831,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_TORTERRA] =
     {
-        .baseHP        = 95,
+        .baseHP        = 109,
         .baseAttack    = 109,
         .baseDefense   = 107,
         .baseSpeed     = 56,

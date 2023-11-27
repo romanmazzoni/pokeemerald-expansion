@@ -4532,7 +4532,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SMELLING_SALTS] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 70,
+            .power = 75,
         #else
             .power = 60,
         #endif
@@ -5756,7 +5756,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_RAMPAGE,
         .power = 120,
-        .type = TYPE_GRASS,
+        .type = TYPE_TREE,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 0,
@@ -6100,7 +6100,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_WAKE_UP_SLAP] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 70,
+            .power = 75,
         #else
             .power = 60,
         #endif
@@ -11815,8 +11815,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BREAKING_SWIPE] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 60,
-        .type = TYPE_DRAGON,
+        .power = 75,
+        .type = TYPE_KING,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 100,
@@ -11829,12 +11829,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_BRANCH_POKE] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_FLINCH_HIT,
         .power = 40,
         .type = TYPE_TREE,
         .accuracy = 100,
         .pp = 40,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
