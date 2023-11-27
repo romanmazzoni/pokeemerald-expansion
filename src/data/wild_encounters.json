@@ -3338,62 +3338,62 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_KARRABLAST"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_SCYTHER"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_DELIBIRD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_ELECTRODE"
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_YAMPER"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_MAGNETON"
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_PYUKUMUKU"
               }
             ]
           }
@@ -6864,62 +6864,62 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_KARRABLAST"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOXEL"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_SCYTHER"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_DELIBIRD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_YAMPER"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PYUKUMUKU"
               }
             ]
           }
