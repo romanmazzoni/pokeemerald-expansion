@@ -4936,7 +4936,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_BASCULEGION"
+                "species": "SPECIES_BASCULIN"
               },
               {
                 "min_level": 15,
@@ -9141,27 +9141,27 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_BINACLE"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_TYNAMO"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_DEWPIDER"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_DEWPIDER"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_DEWPIDER"
               }
             ]
           },
@@ -9217,6 +9217,71 @@
                 "min_level": 40,
                 "max_level": 45,
                 "species": "SPECIES_WAILMER"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 33,
+                "max_level": 41,
+                "species": "SPECIES_DEINO"
+              },
+              {
+                "min_level": 36,
+                "max_level": 41,
+                "species": "SPECIES_FENNEKIN"
+              },
+              {
+                "min_level": 36,
+                "max_level": 41,
+                "species": "SPECIES_HONEDGE"
+              },
+              {
+                "min_level": 36,
+                "max_level": 41,
+                "species": "SPECIES_ROOKIDEE"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_DREEPY"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_NICKIT"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_DURALUDON"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_URSALUNA"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_INDEEDEE"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_HEATMOR"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_LARVESTA"
+              },
+              {
+                "min_level": 35,
+                "max_level": 41,
+                "species": "SPECIES_LARVESTA"
               }
             ]
           }
