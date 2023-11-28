@@ -17481,13 +17481,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_CHARJABUG] =
     {
-        .baseHP        = 57,
+        .baseHP        = 64,
         .baseAttack    = 82,
         .baseDefense   = 95,
         .baseSpeed     = 36,
         .baseSpAttack  = 55,
-        .baseSpDefense = 75,
-        .types = { TYPE_BUG, TYPE_STALL, TYPE_BUG, TYPE_BUG},
+        .baseSpDefense = 90,
+        .types = { TYPE_BUG, TYPE_STALL, TYPE_REVERSE, TYPE_BALL},
         .catchRate = 120,
         .expYield = 140,
         .evYield_Defense   = 2,
@@ -24600,7 +24600,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 128,
         .baseSpAttack  = 80,
         .baseSpDefense = 145,
-        .types = { TYPE_FIGHTING, TYPE_STEEL},
+        .types = { TYPE_LOSER, TYPE_DOG, TYPE_LOSER, TYPE_DOG},
         .catchRate = 10,
         .expYield = 360,
         .evYield_Speed     = 3,
