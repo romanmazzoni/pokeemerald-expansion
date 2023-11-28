@@ -11861,7 +11861,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 80,
-        .type = TYPE_GRASS,
+        .type = TYPE_SWEET,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -11876,7 +11876,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_GRAV_APPLE,
         .power = 80,
-        .type = TYPE_GRASS,
+        .type = TYPE_SWEET,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 100,
@@ -11921,7 +11921,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_JUNGLE_HEALING,
         .power = 0,
-        .type = TYPE_WATER,
+        .type = TYPE_LIFE,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
