@@ -543,36 +543,6 @@
                 "species": "SPECIES_PLUSLE"
               }
             ]
-          },
-          "water_mons": {
-            "encounter_rate": 4,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
-              }
-            ]
           }
         },
         {
@@ -2189,12 +2159,12 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_MANKEY"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 24,
@@ -3465,165 +3435,70 @@
           "map": "MAP_ROUTE129",
           "base_label": "gRoute129",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_CRABRAWLER"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_BASCULIN"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_WAILORD"
+                "species": "SPECIES_CLOBBOPUS"
               }
             ]
           }
         },
         {
           "map": "MAP_ROUTE130",
-          "base_label": "gRoute130",
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 45,
-                "max_level": 45,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_WYNAUT"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WYNAUT"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 4,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
-              }
-            ]
-          }
+          "base_label": "gRoute130"
         },
         {
           "map": "MAP_ROUTE131",
           "base_label": "gRoute131",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_CRABRAWLER"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_BASCULIN"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_CLOBBOPUS"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_CLOBBOPUS"
               }
             ]
           }
@@ -3632,32 +3507,32 @@
           "map": "MAP_ROUTE132",
           "base_label": "gRoute132",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_EISCUE"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               }
             ]
           }
@@ -3666,32 +3541,32 @@
           "map": "MAP_ROUTE133",
           "base_label": "gRoute133",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_EISCUE"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               }
             ]
           }
@@ -3700,32 +3575,32 @@
           "map": "MAP_ROUTE134",
           "base_label": "gRoute134",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_EISCUE"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               }
             ]
           }
@@ -4946,36 +4821,6 @@
                 "species": "SPECIES_CELESTEELA"
               }
             ]
-          },
-          "water_mons": {
-            "encounter_rate": 9,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
-              }
-            ]
           }
         },
         {
@@ -5112,36 +4957,6 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_PHEROMOSA"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 9,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_PSYDUCK"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_GOLDUCK"
-              },
-              {
-                "min_level": 25,
-                "max_level": 40,
-                "species": "SPECIES_GOLDUCK"
               }
             ]
           }
@@ -6184,27 +5999,27 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_EISCUE"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               }
             ]
           }
@@ -6312,32 +6127,32 @@
           "map": "MAP_PACIFIDLOG_TOWN",
           "base_label": "gPacifidlogTown",
           "water_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_EISCUE"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_PIKIPEK"
               }
             ]
           }
@@ -6884,36 +6699,6 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_NAGANADEL"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 9,
-            "mons": [
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_WOOPER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 35,
-                "max_level": 40,
-                "species": "SPECIES_QUAGSIRE"
               }
             ]
           }
