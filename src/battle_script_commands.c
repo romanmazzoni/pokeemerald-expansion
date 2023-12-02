@@ -8528,13 +8528,14 @@ static void HandleTerrainMove(u16 move)
 bool32 CanPoisonType(u8 battlerAttacker, u8 battlerTarget)
 {
     return ((GetBattlerAbility(battlerAttacker) == ABILITY_CORROSION && gBattleMoves[gCurrentMove].split == SPLIT_STATUS)
-            || !(IS_BATTLER_OF_TYPE(battlerTarget, TYPE_POISON) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_STEEL)));
+            || !((IS_BATTLER_OF_TYPE(battlerTarget, TYPE_POISON) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_STEEL) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_WAFFLEHOUSE) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_SNAKE) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_SHROOM) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_NERD))));
 }
 
 bool32 CanParalyzeType(u8 battlerAttacker, u8 battlerTarget)
 {
-    return !(B_PARALYZE_ELECTRIC >= GEN_6 && IS_BATTLER_OF_TYPE(battlerTarget, TYPE_ELECTRIC));
+    return !(IS_BATTLER_OF_TYPE(battlerTarget, TYPE_ELECTRIC) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_DANCE) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_TREE) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_BANANA) || IS_BATTLER_OF_TYPE(battlerTarget, TYPE_BALL)  );
 }
+
 
 bool32 CanUseLastResort(u8 battlerId)
 {

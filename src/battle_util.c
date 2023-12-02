@@ -5207,7 +5207,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             if (effect == 1) // Drain Hp ability.
             {
 #if B_HEAL_BLOCKING >= GEN_5
-                if (BATTLER_MAX_HP(battler) || gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+                if (BATTLER_MAX_HP(battler) || (gStatuses3[battler] & STATUS3_HEAL_BLOCK && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DOCTOR)))
 #else
                 if (BATTLER_MAX_HP(battler))
 #endif
@@ -6426,7 +6426,7 @@ bool32 IsBattlerTerrainAffected(u8 battlerId, u32 terrainFlag)
         return FALSE;
     else if (gStatuses3[battlerId] & STATUS3_SEMI_INVULNERABLE)
         return FALSE;
-
+    
     return IsBattlerGrounded(battlerId);
 }
 
@@ -6440,7 +6440,8 @@ bool32 CanSleep(u8 battlerId)
       || gBattleMons[battlerId].status1 & STATUS1_ANY
       || IsAbilityOnSide(battlerId, ABILITY_SWEET_VEIL)
       || IsAbilityStatusProtected(battlerId)
-      || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_ELECTRIC_TERRAIN | STATUS_FIELD_MISTY_TERRAIN))
+      || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_ELECTRIC_TERRAIN | STATUS_FIELD_MISTY_TERRAIN)
+      || IS_BATTLER_OF_TYPE(battlerId, TYPE_BANANA) || IS_BATTLER_OF_TYPE(battlerId, TYPE_PLURAL) || IS_BATTLER_OF_TYPE(battlerId, TYPE_LIGHT) || IS_BATTLER_OF_TYPE(battlerId, TYPE_LOUD) || IS_BATTLER_OF_TYPE(battlerId, TYPE_NINJA) || IS_BATTLER_OF_TYPE(battlerId, TYPE_SONG))
         return FALSE;
     return TRUE;
 }
@@ -6449,7 +6450,7 @@ bool32 CanBePoisoned(u8 battlerAttacker, u8 battlerTarget)
 {
     u16 ability = GetBattlerAbility(battlerTarget);
 
-    if (!(CanPoisonType(battlerAttacker, battlerTarget))
+    if (!(CanPoisonType(battlerAttacker, battlerTarget) )
      || gSideStatuses[GetBattlerSide(battlerTarget)] & SIDE_STATUS_SAFEGUARD
      || gBattleMons[battlerTarget].status1 & STATUS1_ANY
      || ability == ABILITY_IMMUNITY
@@ -6464,7 +6465,7 @@ bool32 CanBePoisoned(u8 battlerAttacker, u8 battlerTarget)
 bool32 CanBeBurned(u8 battlerId)
 {
     u16 ability = GetBattlerAbility(battlerId);
-    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_FIRE)
+    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_FIRE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_HOT) || IS_BATTLER_OF_TYPE(battlerId, TYPE_EGO) || IS_BATTLER_OF_TYPE(battlerId, TYPE_EXPLOSION) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FISH) || IS_BATTLER_OF_TYPE(battlerId, TYPE_VIABLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_BEAR)
       || gSideStatuses[GetBattlerSide(battlerId)] & SIDE_STATUS_SAFEGUARD
       || gBattleMons[battlerId].status1 & STATUS1_ANY
       || ability == ABILITY_WATER_VEIL
@@ -6482,7 +6483,7 @@ bool32 CanBeParalyzed(u8 battlerId)
     u16 ability = GetBattlerAbility(battlerId);
     if (
     #if B_PARALYZE_ELECTRIC >= GEN_6
-        IS_BATTLER_OF_TYPE(battlerId, TYPE_ELECTRIC) ||
+        IS_BATTLER_OF_TYPE(battlerId, TYPE_ELECTRIC) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DANCE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_TREE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_BANANA) || IS_BATTLER_OF_TYPE(battlerId, TYPE_BALL) ||
     #endif
         gSideStatuses[GetBattlerSide(battlerId)] & SIDE_STATUS_SAFEGUARD
         || ability == ABILITY_LIMBER
@@ -6497,7 +6498,7 @@ bool32 CanBeParalyzed(u8 battlerId)
 bool32 CanBeFrozen(u8 battlerId)
 {
     u16 ability = GetBattlerAbility(battlerId);
-    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE)
+    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_SNOW) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FURRY) || IS_BATTLER_OF_TYPE(battlerId, TYPE_HOT) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DEATH)
       || IsBattlerWeatherAffected(battlerId, B_WEATHER_SUN)
       || gSideStatuses[GetBattlerSide(battlerId)] & SIDE_STATUS_SAFEGUARD
       || ability == ABILITY_MAGMA_ARMOR
@@ -6512,7 +6513,7 @@ bool32 CanBeFrozen(u8 battlerId)
 bool32 CanGetFrostbite(u8 battlerId)
 {
     u16 ability = GetBattlerAbility(battlerId);
-    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE)
+    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_SNOW) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FURRY) || IS_BATTLER_OF_TYPE(battlerId, TYPE_HOT) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DEATH)
       || gSideStatuses[GetBattlerSide(battlerId)] & SIDE_STATUS_SAFEGUARD
       || ability == ABILITY_MAGMA_ARMOR
       || ability == ABILITY_COMATOSE
@@ -6527,7 +6528,8 @@ bool32 CanBeConfused(u8 battlerId)
 {
     if (GetBattlerAbility(battlerId) == ABILITY_OWN_TEMPO
       || gBattleMons[battlerId].status2 & STATUS2_CONFUSION
-      || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_MISTY_TERRAIN))
+      || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_MISTY_TERRAIN)
+      || IS_BATTLER_OF_TYPE(battlerId, TYPE_SMART) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DOCTOR) || IS_BATTLER_OF_TYPE(battlerId, TYPE_REVERSE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_TURTLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FAIRY))
         return FALSE;
     return TRUE;
 }
@@ -6540,6 +6542,8 @@ bool32 HasEnoughHpToEatBerry(u32 battlerId, u32 hpFraction, u32 itemId)
     if (gBattleMons[battlerId].hp == 0)
         return FALSE;
     if (gBattleScripting.overrideBerryRequirements)
+        return TRUE;
+    if(IS_BATTLER_OF_TYPE(battlerId, TYPE_FAT)&& gBattleMons[battlerId].hp <= (gBattleMons[battlerId].maxHP / 2) + (gBattleMons[battlerId].maxHP / 4) && isBerry) 
         return TRUE;
     // Unnerve prevents consumption of opponents' berries.
     if (isBerry && IsUnnerveAbilityOnOpposingSide(battlerId))
@@ -9624,12 +9628,14 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     }
 
     // sandstorm sp.def boost for rock types
-    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ROCK) && gBattleWeather & B_WEATHER_SANDSTORM && WEATHER_HAS_EFFECT && !usesDefStat)
+    if ((IS_BATTLER_OF_TYPE(battlerDef, TYPE_ROCK) || IS_BATTLER_OF_TYPE(battlerDef, TYPE_SAND)) && gBattleWeather & B_WEATHER_SANDSTORM && WEATHER_HAS_EFFECT && !usesDefStat)
         MulModifier(&modifier, UQ_4_12(1.5));
     // snow def boost for ice types
     if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE) && gBattleWeather & B_WEATHER_SNOW && WEATHER_HAS_EFFECT && usesDefStat)
         MulModifier(&modifier, UQ_4_12(1.5));
 
+    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_SNOW) && gBattleWeather & B_WEATHER_SNOW && WEATHER_HAS_EFFECT && usesDefStat)
+        MulModifier(&modifier, UQ_4_12(1.5));
     // The defensive stats of a Player's Pokémon are boosted by x1.1 (+10%) if they have the 5th badge and 7th badges.
     // Having the 5th badge boosts physical defense while having the 7th badge boosts special defense.
     if (ShouldGetStatBadgeBoost(FLAG_BADGE05_GET, battlerDef) && IS_MOVE_PHYSICAL(move))
