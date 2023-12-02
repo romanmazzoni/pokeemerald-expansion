@@ -1340,6 +1340,7 @@ static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
 static const struct LevelUpMove sTentacoolLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 4, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 4, MOVE_REST),
     LEVEL_UP_MOVE( 7, MOVE_CONSTRICT),
     LEVEL_UP_MOVE(10, MOVE_ACID),
     LEVEL_UP_MOVE(13, MOVE_TOXIC_SPIKES),

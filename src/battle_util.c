@@ -2666,6 +2666,7 @@ enum
     ENDTURN_SLOW_START,
     ENDTURN_PLASMA_FISTS,
     ENDTURN_CUD_CHEW,
+    ENDTURN_SLEEP,
     ENDTURN_BATTLER_COUNT
 };
 
@@ -3195,6 +3196,7 @@ u8 DoBattlerEndTurnEffects(void)
                 gBattleMons[gActiveBattler].type1 = gBattleStruct->roostTypes[gActiveBattler][0];
                 gBattleMons[gActiveBattler].type2 = gBattleStruct->roostTypes[gActiveBattler][1];
                 gBattleMons[gActiveBattler].type3 = gBattleStruct->roostTypes[gActiveBattler][2];
+                gBattleMons[gActiveBattler].type4 = gBattleStruct->roostTypes[gActiveBattler][3];
             }
             gBattleStruct->turnEffectsTracker++;
             break;
@@ -3231,6 +3233,17 @@ u8 DoBattlerEndTurnEffects(void)
                 gDisableStructs[gActiveBattler].cudChew = TRUE;
             gBattleStruct->turnEffectsTracker++;
             break;
+        case ENDTURN_SLEEP:
+            if ((gBattleMons[gActiveBattler].status1 & STATUS1_SLEEP)
+                && (gBattleMons[gActiveBattler].type1 == TYPE_FISH || gBattleMons[gActiveBattler].type2 == TYPE_FISH || gBattleMons[gActiveBattler].type3 == TYPE_FISH || gBattleMons[gActiveBattler].type4 == TYPE_FISH)
+                && gBattleMons[gActiveBattler].hp != 0)
+            {
+                MAGIC_GUARD_CHECK;
+                gBattleMoveDamage = gBattleMons[gActiveBattler].maxHP;
+                BattleScriptExecute(BattleScript_SleepWithFishes);
+                effect++;
+            }
+            gBattleStruct->turnEffectsTracker++;
         case ENDTURN_BATTLER_COUNT:  // done
             gBattleStruct->turnEffectsTracker = 0;
             gBattleStruct->turnEffectsBattlerId++;
