@@ -12703,6 +12703,9 @@ static void Cmd_weatherdamage(void)
             if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
                 && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_SAND)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_WALL)
+                && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_WAFFLEHOUSE)
                 && ability != ABILITY_SAND_VEIL
                 && ability != ABILITY_SAND_FORCE
                 && ability != ABILITY_SAND_RUSH
@@ -12728,7 +12731,7 @@ static void Cmd_weatherdamage(void)
                     gBattleMoveDamage = 1;
                 gBattleMoveDamage *= -1;
             }
-            else if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE)
+            else if (!(IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_SNOW) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_HOT) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DINO) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_FISH))
                 && ability != ABILITY_SNOW_CLOAK
                 && ability != ABILITY_OVERCOAT
                 && ability != ABILITY_ICE_BODY
