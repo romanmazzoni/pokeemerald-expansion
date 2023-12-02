@@ -9935,6 +9935,8 @@ static void TryNoticeIllusionInTypeEffectiveness(u32 move, u32 moveType, u32 bat
         MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
     if (gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[0] && gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[1])
         MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
+    if (gSpeciesInfo[illusionSpecies].types[3] != gSpeciesInfo[illusionSpecies].types[0] && gSpeciesInfo[illusionSpecies].types[3] != gSpeciesInfo[illusionSpecies].types[1] && gSpeciesInfo[illusionSpecies].types[3] != gSpeciesInfo[illusionSpecies].types[2])
+        MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
 
     if (presumedModifier != resultingModifier)
         RecordAbilityBattle(battlerDef, ABILITY_ILLUSION);
