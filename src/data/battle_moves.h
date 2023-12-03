@@ -8982,9 +8982,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #else
             .pp = 20,
         #endif
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_BRICK_BREAK,
         .power = 90,
-        .type = TYPE_RED,
+        .type = TYPE_KING,
         .accuracy = 100,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
