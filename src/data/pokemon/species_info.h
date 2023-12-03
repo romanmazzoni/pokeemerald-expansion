@@ -5554,12 +5554,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_DUNSPARCE] =
     {
-        .baseHP        = 100,
+        .baseHP        = 105,
         .baseAttack    = 70,
         .baseDefense   = 70,
         .baseSpeed     = 45,
         .baseSpAttack  = 116,
-        .baseSpDefense = 65,
+        .baseSpDefense = 75,
         .types = { TYPE_STUPID, TYPE_NORMAL, TYPE_REVERSE, TYPE_VIABLE },
         .catchRate = 190,
         .expYield = 145,
