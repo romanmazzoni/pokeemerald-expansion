@@ -13602,12 +13602,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MARACTUS] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 86,
+        .baseHP        = 77,
+        .baseAttack    = 89,
         .baseDefense   = 67,
         .baseSpeed     = 60,
         .baseSpAttack  = 106,
-        .baseSpDefense = 67,
+        .baseSpDefense =  74,
         .types = { TYPE_EVIL, TYPE_TREE, TYPE_EVIL, TYPE_TREE},
         .catchRate = 255,
         .expYield = 161,

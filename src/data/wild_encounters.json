@@ -347,7 +347,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RIOLU"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 4,
@@ -539,7 +539,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SILICOBRA"
+                "species": "SPECIES_MARACTUS"
               },
               {
                 "min_level": 19,
@@ -1166,12 +1166,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BELLOSSOM"
+                "species": "SPECIES_SUNKERN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SUNKERN"
+                "species": "SPECIES_CUTIEFLY"
               },
               {
                 "min_level": 6,
