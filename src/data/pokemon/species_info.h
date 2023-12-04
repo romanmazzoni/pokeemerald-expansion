@@ -3382,13 +3382,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_WEEZING] =
     {
-        .baseHP        = 65,
+        .baseHP        = 68,
         .baseAttack    = 90,
         .baseDefense   = 120,
         .baseSpeed     = 60,
         .baseSpAttack  = 85,
-        .baseSpDefense = 70,
-        .types = { TYPE_BALL, TYPE_PLAGUE, TYPE_PLURAL, TYPE_PLAGUE},
+        .baseSpDefense = 74,
+        .types = { TYPE_BALL, TYPE_PLAGUE, TYPE_PLURAL, TYPE_VIABLE},
         .catchRate = 60,
         .expYield = 172,
         .evYield_Defense   = 2,
@@ -9388,12 +9388,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 43,
+        .baseHP        = 83,
         .baseAttack    = 30,
         .baseDefense   = 55,
         .baseSpeed     = 97,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 75,
         .types = { TYPE_LOVE, TYPE_LOVE, TYPE_LOVE, TYPE_LOVE},
         .catchRate = 225,
         .expYield = 116,
