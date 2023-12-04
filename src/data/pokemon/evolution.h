@@ -59,9 +59,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM},
                                        {EVO_LEVEL, 41, SPECIES_GOLEM}},
     [SPECIES_PONYTA]                = {{EVO_LEVEL, 40, SPECIES_RAPIDASH}},
-    [SPECIES_SLOWPOKE]              = {{EVO_LEVEL, 37, SPECIES_SLOWBRO},
-                                       {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},
-                                       {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}},
+    [SPECIES_SLOWPOKE]              = {{EVO_LEVEL, 37, SPECIES_SLOWBRO}},
+    [SPECIES_SLOWBRO]               = {{EVO_LEVEL, 52, SPECIES_SLOWKING}},
     [SPECIES_MAGNEMITE]             = {{EVO_LEVEL, 30, SPECIES_MAGNETON}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_MAGNETON]              = {{EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_MAGNEZONE},
