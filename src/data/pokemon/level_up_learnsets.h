@@ -12282,6 +12282,7 @@ static const struct LevelUpMove sAmoongussLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_SOLAR_BEAM),
     LEVEL_UP_MOVE(54, MOVE_RAGE_POWDER),
     LEVEL_UP_MOVE(56, MOVE_SPORE),
+    LEVEL_UP_MOVE(78, MOVE_SPIKY_SHIELD),
     LEVEL_UP_END
 };
 

@@ -11597,20 +11597,69 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
 
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {
-    .iv = 255,
-    .lvl = 20,
+    .iv = 150,
+    .lvl = 68,
     .species = SPECIES_SKARMORY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_STEALTH_ROCK, MOVE_STEEL_WING}
     },
+    {
+    .iv = 150,
+    .lvl = 76,
+    .species = SPECIES_PIKACHU,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_SURF, MOVE_QUICK_ATTACK, MOVE_VOLT_SWITCH, MOVE_IRON_TAIL}
+    },
+    {
+    .iv = 150,
+    .lvl = 70,
+    .species = SPECIES_SIRFETCHD,
+    .heldItem = ITEM_LEEK,
+    .moves = {MOVE_SACRED_SWORD, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_SURGING_STRIKES}
+    },
+    {
+    .iv = 150,
+    .lvl = 69,
+    .species = SPECIES_GRIMMSNARL,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FAKE_OUT, MOVE_KNOCK_OFF, MOVE_METRONOME, MOVE_U_TURN}
+    }
 };
 static const struct TrainerMonItemCustomMoves sParty_Stephen[] = {
     {
     .iv = 255,
-    .lvl = 77,
+    .lvl = 75,
     .species = SPECIES_ARCEUS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_EXTRASENSORY, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_FEAR, MOVE_SPECIAL_BEAM_CANNON, MOVE_MAGNIRUDE, MOVE_YELL}
+    },
+    {
+    .iv = 255,
+    .lvl = 75,
+    .species = SPECIES_ETERNATUS,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DARK_PULSE, MOVE_SAFEGUARD, MOVE_TAILWIND, MOVE_SMOG}
+    },
+    {
+    .iv = 255,
+    .lvl = 76,
+    .species = SPECIES_AMOONGUSS,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_POLLEN_PUFF, MOVE_SPORE, MOVE_STALL_PUNCH, MOVE_SPIKY_SHIELD}
+    },
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_CINDERACE,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_PYRO_BALL, MOVE_ANCIENT_POWER, MOVE_GRASS_KNOT, MOVE_EXTREME_SPEED}
+    }, 
+    {
+    .iv = 255,
+    .lvl = 78,
+    .species = SPECIES_CLEFABLE,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_METRONOME, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
 

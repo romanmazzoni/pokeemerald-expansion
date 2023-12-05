@@ -10267,7 +10267,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_STEVEN,
         .trainerName = _("STEPHEN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_MAX_REVIVE},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = ITEM_CUSTOM_MOVES(sParty_Stephen),
     },
