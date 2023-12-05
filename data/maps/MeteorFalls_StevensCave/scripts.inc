@@ -18,6 +18,7 @@ MeteorFalls_StevensCave_EventScript_Steven::
 	trainerbattle_no_intro TRAINER_STEVEN, MeteorFalls_StevensCave_Text_StevenDefeat
 	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_STEPHEN, MeteorFalls_StevensCave_Text_StevenDefeat2
+	msgbox MeteorFalls_StevensCave_Text_StevenDefeat3, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_METEOR_FALLS_STEVEN
 	release
 	end
@@ -25,7 +26,7 @@ MeteorFalls_StevensCave_EventScript_Steven::
 MeteorFalls_StevensCave_EventScript_Defeated::
 	applymovement LOCALID_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox MeteorFalls_StevensCave_Text_MyPredictionCameTrue, MSGBOX_DEFAULT
+	msgbox MeteorFalls_StevensCave_Text_StevenDefeat3, MSGBOX_DEFAULT
 	release
 	end
 
@@ -44,7 +45,7 @@ MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
 	.string "Well, you've worked hard for this!\p"
-	.string "Even if that was just luck!$"
+	.string "And you did not disappoint!$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "STEVEN: HAHA! \n"
@@ -56,10 +57,16 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "I guess this was fate {PLAYER}{KUN}.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "I must admit I was holding back\n"
+	.string "STEPHEN: I must admit I was holding back\n"
 	.string "but don't worry about that anymore\p"
 	.string "Hey, {PLAYER}{KUN} promise you'll keep up?$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat2:
-	.string "Wake me up!\p"
-	.string "Before you go go!$"
+	.string "I can't go on\p"
+	.string "There is no stopping you!$"
+
+MeteorFalls_StevensCave_Text_StevenDefeat3:
+	.string "STEPHEN: Nothing more to say about it\n"
+	.string "You beat me while I was going all out\p"
+	.string "You are the true champion of Hoenn.\n"
+	.string "A title well deserved.$"
