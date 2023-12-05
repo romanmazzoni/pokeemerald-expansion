@@ -775,7 +775,7 @@ DewfordTown_Text_OfCourseIKnowAboutThat:
 	.string "Yeah, I knew that! Knew it all along!\p"
 	.string "Of course I know about that!\n"
 	.string "“{STR_VAR_2},” right?\p"
-	.string "Yeah, that's it, it's there!\n"
+	.string "Yeah, that's it, its there!\n"
 	.string "Isn't “{STR_VAR_2}”\l"
 	.string "the coolest, or what?\p"
 	.string "It's the hippest thing in hip.\n"

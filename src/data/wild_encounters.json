@@ -6357,9 +6357,9 @@
                 "species": "SPECIES_TURTONATOR"
               },
               {
-                "min_level": 37,
-                "max_level": 37,
-                "species": "SPECIES_TYPE_NULL"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_ZAPDOS"
               },
               {
                 "min_level": 38,

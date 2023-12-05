@@ -2512,10 +2512,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .accuracy = 70,
         #endif
         .effect = EFFECT_ACCURACY_DOWN_HIT,
-        .power = 75,
+        .power = 70,
         .type = TYPE_LIGHT,
         .pp = 20,
-        .secondaryEffectChance = 70,
+        .secondaryEffectChance = 60,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
