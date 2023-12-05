@@ -5829,7 +5829,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_MODD_MODE, ABILITY_FLUFFY, ABILITY_BEAST_BOOST},
+        .abilities = {ABILITY_MOXIE, ABILITY_INTIMIDATE, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -20699,7 +20699,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
-        .abilities = {ABILITY_PRESSURE, ABILITY_NONE},
+        .abilities = {ABILITY_AIR_LOCK, ABILITY_NONE},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
         .flags = SPECIES_FLAG_LEGENDARY,
@@ -20730,7 +20730,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_URSHIFU] =
     {
-        .baseHP        = 100,
+        .baseHP        = 105,
         .baseAttack    = 130,
         .baseDefense   = 100,
         .baseSpeed     = 97,
@@ -20759,7 +20759,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseAttack    = 100,
         .baseDefense   = 50,
         .baseSpeed     = 200,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 105,
         .baseSpDefense = 50,
         .types = { TYPE_ELECTRIC, TYPE_FAKE, TYPE_VIABLE, TYPE_VIABLE},
         .catchRate = 3,

@@ -59,7 +59,8 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\p"
 	.string "STEPHEN: I must admit I was holding back\n"
 	.string "but don't worry about that anymore\p"
-	.string "Hey, {PLAYER}{KUN} promise you'll keep up?$"
+	.string "Try your best!\n"
+	.string "Try everything you can!$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat2:
 	.string "I can't go on\p"
