@@ -301,13 +301,13 @@
                 "species": "SPECIES_BELLSPROUT"
               },
               {
-                "min_level": 2,
+                "min_level": 1,
                 "max_level": 2,
                 "species": "SPECIES_FURFROU"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": 1,
+                "max_level": 2,
                 "species": "SPECIES_FURFROU"
               }
             ]
@@ -1820,7 +1820,7 @@
               {
                 "min_level": 33,
                 "max_level": 35,
-                "species": "SPECIES_MEOWSTIC"
+                "species": "SPECIES_ESPURR"
               },
               {
                 "min_level": 33,
@@ -5023,7 +5023,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MEOWSTIC"
+                "species": "SPECIES_ESPURR"
               },
               {
                 "min_level": 14,
@@ -5122,7 +5122,7 @@
               {
                 "min_level": 33,
                 "max_level": 35,
-                "species": "SPECIES_MEOWSTIC"
+                "species": "SPECIES_ESPURR"
               },
               {
                 "min_level": 33,
@@ -5221,7 +5221,7 @@
               {
                 "min_level": 33,
                 "max_level": 35,
-                "species": "SPECIES_MEOWSTIC"
+                "species": "SPECIES_ESPURR"
               },
               {
                 "min_level": 33,
@@ -8202,7 +8202,7 @@
               {
                 "min_level": 33,
                 "max_level": 35,
-                "species": "SPECIES_MEOWSTIC"
+                "species": "SPECIES_ESPURR"
               },
               {
                 "min_level": 33,

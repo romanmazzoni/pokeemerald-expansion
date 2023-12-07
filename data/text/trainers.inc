@@ -1,15 +1,15 @@
 Route102_Text_CalvinIntro:
 	.string "If you have POKéMON with you, then\n"
 	.string "you're an official POKéMON TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+	.string "I challenge you to a duel!$"
 
 Route102_Text_CalvinDefeated:
 	.string "Arrgh, I lost…\n"
 	.string "I should have trained mine more…$"
 
 Route102_Text_CalvinPostBattle:
-	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+	.string "I can only see 2 tiles in front of me.\n"
+	.string "You could have skipped this!$"
 
 Route102_Text_CalvinRegister:
 	.string "I've been working hard at this since\n"
@@ -36,26 +36,26 @@ Route102_Text_CalvinRematchPostBattle:
 
 Route102_Text_AllenIntro:
 	.string "Did you just become a TRAINER?\n"
-	.string "We're both beginners!$"
+	.string "Should be a cake walk for me!$"
 
 Route102_Text_AllenDefeated:
-	.string "I called you because I thought\n"
-	.string "I could beat you…$"
+	.string "I guess I was the cake and\n"
+	.string "you were the walk...$"
 
 Route102_Text_AllenPostBattle:
-	.string "I haven't won once yet…\n"
-	.string "I wish I would win soon…$"
+	.string "Now I want some cake…\n"
+	.string "I never met you…$"
 
 Route102_Text_RickIntro:
-	.string "Hahah! Our eyes met!\n"
-	.string "I'll take you on with my BUG POKéMON!$"
+	.string "Hahah! I'm on a 999 match win streak\n"
+	.string "Come on, you'll be number 1000!$"
 
 Route102_Text_RickDefeated:
-	.string "Ow! Down and out!$"
+	.string "7 years of my life wasted$"
 
 Route102_Text_RickPostBattle:
-	.string "If you lock eyes with a TRAINER,\n"
-	.string "you have to challenge! It's a rule!$"
+	.string "Yeah I'm done with battling forever.\n"
+	.string "I'm gonna go apply to colleges.$"
 
 Route102_Text_TianaIntro:
 	.string "I'm going to keep winning and aim\n"

@@ -291,17 +291,14 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Going against him with NORMAL-type\n"
 	.string "POKéMON is asking for trouble.\p"
 	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "smack down on NORMAL POKéMON,\l"
-	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
-	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
-	.string "Hey, okay, go for it!$"
+	.string "SMACK DOWN on NORMAL POKéMON,\p"
+	.string "Ok I lied about the fighting types!\n"
+	.string "But I was hinting that they all know\l"
+	.string "SMACK DOWN, the move SMACK DOWN.$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "Whoah! It's turned too bright in here!\p"
-	.string "Your future is bright, too little one!$"
+	.string "Lmao none of them knew smack down!\p"
+	.string "Fell for the classic SMACK DOWN trick!$"
 
 DewfordTown_Gym_Text_TakaoIntro:
 	.string "Might is right!\n"
@@ -411,7 +408,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
 	.string "It's what I do every day\n"
-	.string "“Brawny flexes”\p"
+	.string "-Brawny flexes-\p"
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:

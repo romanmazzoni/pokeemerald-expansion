@@ -406,12 +406,12 @@
 
 #define FURFROU_SPECIES_INFO(flip)                    \
     {                                                 \
-        .baseHP        = 75,                          \
-        .baseAttack    = 80,                          \
+        .baseHP        = 65,                          \
+        .baseAttack    = 70,                          \
         .baseDefense   = 60,                          \
-        .baseSpeed     = 102,                         \
+        .baseSpeed     = 97,                         \
         .baseSpAttack  = 65,                          \
-        .baseSpDefense = 90,                          \
+        .baseSpDefense = 70,                          \
         .types = { TYPE_FURRY, TYPE_LIGHT, TYPE_FURRY, TYPE_LIGHT},         \
         .catchRate = 160,                             \
         .expYield = 165,                              \
