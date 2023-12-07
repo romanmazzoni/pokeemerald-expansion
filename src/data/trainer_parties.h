@@ -11615,7 +11615,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     .lvl = 70,
     .species = SPECIES_SIRFETCHD,
     .heldItem = ITEM_LEEK,
-    .moves = {MOVE_SACRED_SWORD, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_SURGING_STRIKES}
+    .moves = {MOVE_SACRED_SWORD, MOVE_BRAVE_BIRD, MOVE_PROTECT, MOVE_SURGING_STRIKES}
     },
     {
     .iv = 150,
@@ -11645,7 +11645,7 @@ static const struct TrainerMonItemCustomMoves sParty_Stephen[] = {
     .lvl = 76,
     .species = SPECIES_SLOWKING,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_SLACK_OFF, MOVE_YAWN, MOVE_STALL_PUNCH, MOVE_SPIKY_SHIELD}
+    .moves = {MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_STALL_PUNCH, MOVE_SPIKY_SHIELD}
     },
     {
     .iv = 255,

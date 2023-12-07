@@ -20079,12 +20079,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GRIMMSNARL] =
     {
-        .baseHP        = 95,
+        .baseHP        = 96,
         .baseAttack    = 120,
         .baseDefense   = 65,
-        .baseSpeed     = 60,
+        .baseSpeed     = 75,
         .baseSpAttack  = 95,
-        .baseSpDefense = 75,
+        .baseSpDefense = 83,
         .types = {  TYPE_VIABLE, TYPE_EVIL, TYPE_REVERSE, TYPE_UGLY},
         .catchRate = 45,
         .expYield = 255,
