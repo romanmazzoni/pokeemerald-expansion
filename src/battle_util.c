@@ -6529,7 +6529,7 @@ bool32 CanBeConfused(u8 battlerId)
     if (GetBattlerAbility(battlerId) == ABILITY_OWN_TEMPO
       || gBattleMons[battlerId].status2 & STATUS2_CONFUSION
       || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_MISTY_TERRAIN)
-      || IS_BATTLER_OF_TYPE(battlerId, TYPE_SMART) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DOCTOR) B || IS_BATTLER_OF_TYPE(battlerId, TYPE_TURTLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FAIRY))
+      || IS_BATTLER_OF_TYPE(battlerId, TYPE_SMART) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DOCTOR) || IS_BATTLER_OF_TYPE(battlerId, TYPE_TURTLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FAIRY))
         return FALSE;
     return TRUE;
 }

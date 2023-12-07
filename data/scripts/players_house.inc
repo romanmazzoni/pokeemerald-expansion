@@ -345,7 +345,7 @@ PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	giveitem ITEM_AMULET_COIN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
-	PlayersHouse_1F_EventScript_ReceiveCastform
+	goto PlayersHouse_1F_EventScript_ReceiveCastform
 	setflag FLAG_RECEIVED_AMULET_COIN
 	end
 
