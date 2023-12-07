@@ -5207,7 +5207,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
             if (effect == 1) // Drain Hp ability.
             {
 #if B_HEAL_BLOCKING >= GEN_5
-                if (BATTLER_MAX_HP(battler) || (gStatuses3[battler] & STATUS3_HEAL_BLOCK && IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DOCTOR)))
+                if (BATTLER_MAX_HP(battler) || (gStatuses3[battler] & STATUS3_HEAL_BLOCK || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_DOCTOR)))
 #else
                 if (BATTLER_MAX_HP(battler))
 #endif
@@ -6529,7 +6529,7 @@ bool32 CanBeConfused(u8 battlerId)
     if (GetBattlerAbility(battlerId) == ABILITY_OWN_TEMPO
       || gBattleMons[battlerId].status2 & STATUS2_CONFUSION
       || IsBattlerTerrainAffected(battlerId, STATUS_FIELD_MISTY_TERRAIN)
-      || IS_BATTLER_OF_TYPE(battlerId, TYPE_SMART) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DOCTOR) || IS_BATTLER_OF_TYPE(battlerId, TYPE_REVERSE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_TURTLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FAIRY))
+      || IS_BATTLER_OF_TYPE(battlerId, TYPE_SMART) || IS_BATTLER_OF_TYPE(battlerId, TYPE_DOCTOR) B || IS_BATTLER_OF_TYPE(battlerId, TYPE_TURTLE) || IS_BATTLER_OF_TYPE(battlerId, TYPE_FAIRY))
         return FALSE;
     return TRUE;
 }

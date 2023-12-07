@@ -345,8 +345,8 @@ PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	giveitem ITEM_AMULET_COIN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
+	PlayersHouse_1F_EventScript_ReceiveCastform
 	setflag FLAG_RECEIVED_AMULET_COIN
-	release
 	end
 
 PlayersHouse_1F_EventScript_ReceiveCastform::
@@ -392,7 +392,6 @@ PlayersHouse_1F_EventScript_ExplainCastform::
 	end
 
 PlayersHouse_1F_EventScript_MomHealsParty::
-	goto PlayersHouse_1F_EventScript_ReceiveCastform
 	msgbox PlayersHouse_1F_Text_YouShouldRestABit, MSGBOX_DEFAULT
 	goto PlayersHouse_1F_EventScript_HealParty
 	end
