@@ -349,7 +349,50 @@ PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	release
 	end
 
+PlayersHouse_1F_EventScript_ReceiveCastform::
+	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonRaikou, MSGBOX_DEFAULT
+	setvar VAR_TEMP_1, SPECIES_RAIKOU
+	givemon SPECIES_RAIKOU, 30, ITEM_DUSK_STONE
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, PlayersHouse_1F_EventScript_ReceiveCastformParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, PlayersHouse_1F_EventScript_ReceiveCastformPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+PlayersHouse_1F_EventScript_ReceiveCastformParty::
+	call PlayersHouse_1F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_1F_EventScript_ExplainCastform
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto PlayersHouse_1F_EventScript_ExplainCastform
+	end
+
+PlayersHouse_1F_EventScript_ReceiveCastformPC::
+	call PlayersHouse_1F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_1F_EventScript_SendCastformToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto PlayersHouse_1F_EventScript_SendCastformToPC
+	end
+
+PlayersHouse_1F_EventScript_SendCastformToPC::
+	call Common_EventScript_TransferredToPC
+	goto PlayersHouse_1F_EventScript_ExplainCastform
+	end
+
+PlayersHouse_1F_EventScript_ReceivedCastformFanfare::
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_RAIKOU
+	return
+
+PlayersHouse_1F_EventScript_ExplainCastform::
+	msgbox PlayersHouse_1F_Text_MomIsTheBest, MSGBOX_DEFAULT
+	release
+	end
+
 PlayersHouse_1F_EventScript_MomHealsParty::
+	goto PlayersHouse_1F_EventScript_ReceiveCastform
 	msgbox PlayersHouse_1F_Text_YouShouldRestABit, MSGBOX_DEFAULT
 	goto PlayersHouse_1F_EventScript_HealParty
 	end

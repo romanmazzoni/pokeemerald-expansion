@@ -340,7 +340,7 @@ PlayersHouse_1F_Text_DidYouMeetProfBirch:
 PlayersHouse_1F_Text_YouShouldRestABit:
 	.string "MOM: How are you doing, {PLAYER}?\n"
 	.string "You look a little tired.\p"
-	.string "I think you should rest a bit.$"
+	.string "Luckily I'm a registered nurse.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
 	.string "MOM: Take care, honey!$"
@@ -348,6 +348,9 @@ PlayersHouse_1F_Text_TakeCareHoney:
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
 	.string "MOM: Oh? Did DAD give you that BADGE?\p"
 	.string "Then here's something from your MOM!$"
+
+PlayersHouse_1F_Text_MomIsTheBest:
+	.string "Wow! Mom is the best!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "Don't push yourself too hard, dear.\n"

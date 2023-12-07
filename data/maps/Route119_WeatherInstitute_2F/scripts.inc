@@ -330,3 +330,9 @@ Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
 	.string "no longer being reported.\p"
 	.string "The occasional rainfall is a blessing,\n"
 	.string "really.$"
+
+Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonRaikou:
+	.string "Also take this!\n"
+	.string "I caught this Raikou awhile ago.\p"
+	.string "I was going to give it to Norman\n"
+	.string "but since youre so much better, take it.$"
