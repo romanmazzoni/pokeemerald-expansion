@@ -12746,6 +12746,7 @@ static void Cmd_weatherdamage(void)
         if (gBattleWeather & B_WEATHER_SNOW)
         {
             if (ability == ABILITY_ICE_BODY
+                && !(IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_SNOW) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_HOT) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DINO) || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_FISH))
                 && !(gStatuses3[gBattlerAttacker] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
                 && !BATTLER_MAX_HP(gBattlerAttacker)
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_HEAL_BLOCK))
