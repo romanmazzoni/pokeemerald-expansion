@@ -677,80 +677,84 @@ Route107_Text_RayPostBattle:
 	.string "and it got worse!$"
 
 Route107_Text_RayNotEnoughPokemon:
-	.string "RAY: If you want to battle us,\n"
-	.string "go bring some more POKéMON!$"
+	.string "RAY: I have more pokemon than you.\n"
+	.string "No point in fighting!!$"
 
 Route107_Text_CamronIntro:
 	.string "I'm in the middle of a triathlon,\n"
-	.string "but I'm nowhere near tired!$"
+	.string "but I'm so far ahead I can stop\l"
+	.string "and battle.$"
 
 Route107_Text_CamronDefeated:
-	.string "That exhausted me…$"
+	.string "Why did I stop for this...$"
 
 Route107_Text_CamronPostBattle:
 	.string "I still have swimming and running left\n"
 	.string "to do after this.\p"
-	.string "Am I going to be okay?$"
+	.string "I really wish I knew how to swim.\n"
+	.string "I must be swift as the coursing river.$"
 
 Route108_Text_JeromeIntro:
 	.string "My dream is to swim the world's seven\n"
 	.string "seas!$"
 
 Route108_Text_JeromeDefeated:
-	.string "I won't be able to swim the seven seas\n"
-	.string "like this…$"
+	.string "Atlantic ocean? Whats that?$"
 
 Route108_Text_JeromePostBattle:
-	.string "Playing with marine POKéMON is one of\n"
-	.string "the pleasures of swimming!$"
+	.string "How does dive work? Wouldn't\n"
+	.string "you run out of air?$"
 
 Route108_Text_MatthewIntro:
-	.string "Ahoy, there! Are you going out to\n"
-	.string "the ABANDONED SHIP, too?$"
+	.string "I'm a real man of the sea.\n"
+	.string "I've got my eyes set on the spoils of\l"
+	.string "the legendary ghost ship!$"
 
 Route108_Text_MatthewDefeated:
-	.string "I'm sinking!\n"
-	.string "Glub… Glub…$"
+	.string "You're telling me its a trap from Bellum?$"
 
 Route108_Text_MatthewPostBattle:
-	.string "Some people even go inside that\n"
-	.string "ABANDONED SHIP.$"
+	.string "The ghost ship is actually used\n"
+	.string "to drain the life force of unsuspecting\l"
+	.string "adventures? How do you know this?$"
 
 Route108_Text_TaraIntro:
 	.string "My liar of a boyfriend told me that\n"
-	.string "I look great in a bikini…$"
+	.string "gaslighting is a real word!$"
 
 Route108_Text_TaraDefeated:
-	.string "Oh, boo!$"
+	.string "Gaslighting! Preposterous!$"
 
 Route108_Text_TaraPostBattle:
-	.string "Even if it's a lie, I love being told\n"
-	.string "I look great…\l"
-	.string "We girls are so complex…$"
+	.string "Gaslighting is such a stupid word!\n"
+	.string "No one in their right mind would believe\l"
+	.string "that that is a real thing!$"
 
 Route108_Text_MissyIntro:
 	.string "I love the sea!\n"
-	.string "I forget all my worries when I swim!$"
+	.string "I love the sea!\p"
+	.string "You know that its better!\n"
+	.string "Where it is wetter!\p"
+	.string "Take it from me!$"
 
 Route108_Text_MissyDefeated:
-	.string "When I lose a battle, I get all\n"
-	.string "stressed out!$"
+	.string "Under the sea?\n"
+	.string "Never heard of it.$"
 
 Route108_Text_MissyPostBattle:
-	.string "Work off your stress by swimming!\n"
-	.string "It's so healthy!$"
+	.string "I wrote that song myself!\n"
+	.string "I love the sea!$"
 
 Route108_Text_CoryIntro:
-	.string "I love WATER-type POKéMON.\n"
-	.string "I love other POKéMON, too!$"
+	.string "I love FISH-type POKéMON.\n"
+	.string "What clever design!$"
 
 Route108_Text_CoryDefeated:
-	.string "Waaah! I lost!\n"
-	.string "Waaah! Waaah!$"
+	.string "Fishing rod? Whats that?$"
 
 Route108_Text_CoryPostBattle:
-	.string "Shouting is good for me!\n"
-	.string "It uplifts me!$"
+	.string "Only losers use fishing rods\p"
+	.string "Maybe I should buy one...$"
 
 Route108_Text_CoryRegister:
 	.string "I love tough TRAINERS, too!\n"
@@ -768,15 +772,16 @@ Route108_Text_CoryRematchPostBattle:
 	.string "try shouting at the sea!$"
 
 Route108_Text_CarolinaIntro:
-	.string "I take huge pride in my POKéMON.\n"
-	.string "We'll show you one speedy battle!$"
+	.string "Tonight, I wanna give it all to you.\n"
+	.string "In the darkness,\l"
+	.string "there's so much I want to do!$"
 
 Route108_Text_CarolinaDefeated:
-	.string "That wasn't cute at all.$"
+	.string "Can you give it all to me?$"
 
 Route108_Text_CarolinaPostBattle:
-	.string "Since I'm at sea like this, I wouldn't\n"
-	.string "mind putting on a pink, frilly swimsuit…$"
+	.string "I can't get enough!\n"
+	.string "No, I can't get enough!$"
 
 Route109_Text_DavidIntro:
 	.string "Hiyah! Look at my chiseled abs!\n"
@@ -787,30 +792,31 @@ Route109_Text_DavidDefeated:
 	.string "Flubbed out!$"
 
 Route109_Text_DavidPostBattle:
-	.string "Hiyah!\p"
+	.string "Biyah!\p"
 	.string "My sculpted abs have nothing to do\n"
-	.string "with POKéMON battles!$"
+	.string "are simply too big!$"
 
 Route109_Text_AliceIntro:
 	.string "Are you properly protected against\n"
-	.string "the sun?$"
+	.string "the sun?\p"
+	.string "Bring a drizzle mon!$"
 
 Route109_Text_AliceDefeated:
 	.string "Ouch, ouch, ouch!$"
 
 Route109_Text_AlicePostBattle:
-	.string "Cheeks are the most prone to burning!$"
+	.string "Drizzle is kinda broken!$"
 
 Route109_Text_HueyIntro:
-	.string "I've laid anchor in ports around\n"
-	.string "the world, but SLATEPORT's the best.$"
+	.string "I've laid anchor in ports around.\p"
+	.string "I have a lot of kids.$"
 
 Route109_Text_HueyDefeated:
-	.string "You're the best!$"
+	.string "Not laying anchor in you.$"
 
 Route109_Text_HueyPostBattle:
-	.string "In the best port was the best\n"
-	.string "TRAINER…$"
+	.string "I'm trying to get people to say laying\n"
+	.string "anchor, but its not catching on.$"
 
 Route109_Text_EdmondIntro:
 	.string "Urrrrppp…\n"

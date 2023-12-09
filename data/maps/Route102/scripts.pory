@@ -85,7 +85,7 @@ Route102_Text_WatchMeCatchPokemon:
 Route102_Text_WallyIDidIt:
 	.string "WALLY: I did it… It's my…\n"
 	.string "My POKéMON!\p"
-	.string "WALLY: Ralts is only a 5 percent\n"
+	.string "Ralts is only a 5 percent\n"
 	.string "encounter! I must be pretty lucky!$"
 
 Route102_Text_LetsGoBack:
