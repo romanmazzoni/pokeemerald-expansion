@@ -1201,72 +1201,65 @@ Route110_Text_KalebPostBattle:
 	.string "Or is is calamari...$"
 
 Route111_Text_DrewIntro:
-	.string "Oh, hey! Those GO-GOGGLES suit you.\n"
-	.string "But I think they look better on me.\p"
-	.string "Let's decide who they look better on\n"
-	.string "with a battle!$"
+	.string "Camel by Camel!\n"
+	.string "Gettin through this desert!$"
 
 Route111_Text_DrewDefeat:
-	.string "I couldn't see what was happening at\n"
-	.string "my sides because of the GO-GOGGLES.$"
+	.string "I wish camel type pokemon were a thing...\n"
+	.string "Then I might be the best!$"
 
 Route111_Text_DrewPostBattle:
-	.string "The GO-GOGGLES make it possible to\n"
-	.string "get through sandstorms.\l"
-	.string "That makes me happy!$"
+	.string "I'm gonna go back to listening to\n"
+	.string "camel by camel.\p"
+	.string "I love this song for some reason!$"
 
 Route111_Text_HeidiIntro:
-	.string "I'm having a picnic in the desert.\p"
-	.string "You can always find a TRAINER,\n"
-	.string "so I can enjoy a battle here, too!$"
+	.string "I take the moon and I take the sun!$"
 
 Route111_Text_HeidiDefeat:
-	.string "Ohhh! You're mean!$"
+	.string "You take everything that seems like fun!$"
 
 Route111_Text_HeidiPostBattle:
-	.string "When you're battling in a sandstorm,\n"
-	.string "watch out for your POKéMON's HP.\p"
-	.string "It can faint if you don't keep\n"
-	.string "an eye on it!$"
+	.string "Rada rada rada, rada rada$"
 
 Route111_Text_BeauIntro:
 	.string "Wearing these GO-GOGGLES makes me\n"
 	.string "feel like a superhero.\l"
-	.string "Right now, nobody can beat me!$"
+	.string "All I need is a cape!$"
 
 Route111_Text_BeauDefeat:
-	.string "I can't win on spirit alone…$"
+	.string "I really needed that cape…$"
 
 Route111_Text_BeauPostBattle:
-	.string "I'm going to be a real hero one day.\n"
-	.string "I'm going to work harder to make me\l"
-	.string "and my POKéMON stronger.$"
+	.string "Real heroes don't wear capes?\p"
+	.string "That's only true for the incredibles!\n"
+	.string "Lance is a real hero! He has one!$"
 
 Route111_Text_BeckyIntro:
-	.string "I heard there are fossils to be found\n"
-	.string "in the desert. Where could they be?$"
+	.string "I thought that guy said dessert.\n"
+	.string "I now realize he said desert.$"
 
 Route111_Text_BeckyDefeat:
-	.string "I came up short…$"
+	.string "Now I'm a loser and I don't\n"
+	.string "have any dessert.$"
 
 Route111_Text_BeckyPostBattle:
-	.string "If they can find fossils in the desert,\n"
-	.string "it must have been a sea before.$"
+	.string "I don't have any dessert but I\n"
+	.string "could try eating 71 pounds of sand.$"
 
 Route111_Text_DustyIntro:
-	.string "For thirty years I have searched for\n"
-	.string "ancient ruins!\l"
+	.string "For twenty five years I have searched\n"
+	.string "for ancient ruins!\l"
 	.string "I am to be challenged?$"
 
 Route111_Text_DustyDefeat:
-	.string "While I have searched for ruins,\n"
-	.string "I've not searched for strong POKéMON.$"
+	.string "twenty years and my life is still tryna\n"
+	.string "to get up that great big hill of hope.$"
 
 Route111_Text_DustyPostBattle:
-	.string "For thirty years I have searched for\n"
-	.string "ancient ruins!\p"
-	.string "No, wait, was that forty years?\n"
-	.string "Which was it now?$"
+	.string "I cry sometimes when I'm lying in bed\n"
+	.string "just to get it all out what's in my head.\p"
+	.string "I am feeling a little peculiar.$"
 
 Route111_Text_DustyRegister:
 	.string "I haven't been searching for any\n"
@@ -1293,15 +1286,15 @@ Route111_Text_DustyPostRematch:
 	.string "How long have I been at this?$"
 
 Route111_Text_TravisIntro:
-	.string "I'm full of pep!\n"
-	.string "And my POKéMON is peppy, too!$"
+	.string "I woke up this morning feeling\n"
+	.string "great! Nothing can stop me!$"
 
 Route111_Text_TravisDefeat:
-	.string "My POKéMON lost its pep…$"
+	.string "I'm going back to bed.$"
 
 Route111_Text_TravisPostBattle:
-	.string "When I see a TRAINER with a lot of pep,\n"
-	.string "I can't help looking.$"
+	.string "What if I just stood here?\n"
+	.string "For like, the rest of my life?$"
 
 Route111_Text_IreneIntro:
 	.string "I don't know where you're going,\n"
