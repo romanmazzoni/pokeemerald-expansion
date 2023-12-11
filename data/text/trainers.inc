@@ -871,7 +871,7 @@ Route109_Text_LolaRegister:
 	.string "You want me on your cs team?$"
 
 Route109_Text_LolaRematchIntro:
-	.string "I learned 2 new lineups!$
+	.string "I learned 2 new lineups!$"
 
 Route109_Text_LolaRematchDefeated:
 	.string "Rushing B?$"
@@ -881,7 +881,7 @@ Route109_Text_LolaRematchPostBattle:
 	.string "I wasn't prepared for such sick dips!$"
 
 Route109_Text_AustinaIntro:
-	.string "I was in queue 3 weeks for this match.$
+	.string "I was in queue 3 weeks for this match.$"
 
 Route109_Text_AustinaDefeated:
 	.string "Unbalanced matchmaking...$"
@@ -1010,19 +1010,17 @@ Route110_Text_AnthonyPostBattle:
 	.string "2 cups all purpose flour.$"
 
 Route110_Text_BenjaminIntro:
-	.string "Don't panic if your BIKE's going fast!$"
+	.string "I'm probably the best nuzlocker alive$"
 
 Route110_Text_BenjaminDefeated:
-	.string "I shouldn't panic during POKéMON\n"
-	.string "battles…$"
+	.string "Random crits...\n"
+	.string "Skippable encounter...$"
 
 Route110_Text_BenjaminPostBattle:
-	.string "There's no need to panic or stress.\n"
-	.string "Take it easy. There's plenty of time.$"
+	.string "Who is Jan?$"
 
 Route110_Text_BenjaminRegister:
-	.string "I'll keep chugging on without stressing.\n"
-	.string "Give me a shout if you're up to it.$"
+	.string "Yeah I'd be fine to start another run.$"
 
 Route110_Text_BenjaminRematchIntro:
 	.string "Aren't you going a little too fast?\n"
@@ -1036,16 +1034,14 @@ Route110_Text_BenjaminRematchPostBattle:
 	.string "Take it easy. There's plenty of time.$"
 
 Route110_Text_AbigailIntro:
-	.string "The triathlon is hard in the extreme.\p"
-	.string "You have to complete the three events\n"
-	.string "of swimming, cycling, and running.$"
+	.string "I main meta knight. You don't have\n"
+	.string "a chance.$"
 
 Route110_Text_AbigailDefeated:
-	.string "POKéMON battles are hard, too!$"
+	.string "Oh I thought this was brawl.$"
 
 Route110_Text_AbigailPostBattle:
-	.string "I'm exhausted, so I need a break.\n"
-	.string "It's important to get proper rest.$"
+	.string "I would've won if this was brawl.$"
 
 Route110_Text_AbigailRegister:
 	.string "You know, I like you!\n"
