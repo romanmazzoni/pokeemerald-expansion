@@ -991,7 +991,7 @@ Route110_Text_JacobPostBattle:
 	.string "and I lost.\p"
 	.string "I don't see a reason to continue engaging\n"
 	.string "in an activity where what is within my\l"
-	.string "control is overwhelmingly outweighed\n"
+	.string "control is overwhelmingly outweighed\l"
 	.string "by what is not.\p"
 	.string "I am done with competitive Pokemon\n"
 	.string "and you won't get a fond farewell.\p"
@@ -1010,7 +1010,7 @@ Route110_Text_AnthonyPostBattle:
 	.string "2 cups all purpose flour.$"
 
 Route110_Text_BenjaminIntro:
-	.string "I'm probably the best nuzlocker alive$"
+	.string "I'm probably the best nuzlocker alive.$"
 
 Route110_Text_BenjaminDefeated:
 	.string "Random crits...\n"
@@ -1060,54 +1060,50 @@ Route110_Text_AbigailRematchPostBattle:
 	.string "I'm sorry if I held you up!$"
 
 Route110_Text_JasmineIntro:
-	.string "I've been riding without stopping.\n"
-	.string "My thighs are like rocks!$"
+	.string "lorem ipsum lorem ipsum lorem ipsum.\n"
+	.string "lorem ipsum lorem ipsum lorem ipsum.$"
 
 Route110_Text_JasmineDefeated:
-	.string "I'm worried about muscle cramps…$"
+	.string "I need to stop using placeholder text!$"
 
 Route110_Text_JasminePostBattle:
-	.string "Oh, you have some GYM BADGES?\n"
-	.string "No wonder you're so strong!$"
+	.string "I'm done using that lorem ipsum nonsense.\p"
+	.string "It doesn't make sense to use in real life$"
 
 Route110_Text_EdwardIntro:
-	.string "I have foreseen your intentions!\n"
-	.string "I cannot possibly lose!$"
+	.string "It really is that shrimple.$"
 
 Route110_Text_EdwardDefeated:
-	.string "I failed to prophesize my own demise!$"
+	.string "Shrimpossible!$"
 
 Route110_Text_EdwardPostBattle:
-	.string "I see your future…\p"
 	.string "Hmm…\n"
-	.string "I see a shining light…$"
+	.string "Its not so shrimple now…$"
 
 Route110_Text_JaclynIntro:
 	.string "Ahahahaha!\n"
-	.string "I'll dazzle you with my wonders!$"
+	.string "My pokemon's ability is broken!$"
 
 Route110_Text_JaclynDefeated:
-	.string "I wondrously lost!$"
+	.string "I thought it had sturdy...$"
 
 Route110_Text_JaclynPostBattle:
-	.string "You managed to win only because it was\n"
-	.string "a wonder! Yes, a wonder!\l"
-	.string "Don't think you can win all the time!$"
+	.string "You managed to win only because\n"
+	.string "my ability was useless!\p"
+	.string "Sturdy would have won that!$"
 
 Route110_Text_EdwinIntro:
-	.string "Could I see your POKéMON?\n"
-	.string "Just one look, please?$"
+	.string "The Brotherhood shall prevail!$"
 
 Route110_Text_EdwinDefeated:
-	.string "I wanted to complete\n"
-	.string "my collection…$"
+	.string "Laptops, all of you!$"
 
 Route110_Text_EdwinPostBattle:
-	.string "When I see a POKéMON that I don't know,\n"
-	.string "my passion as a collector is ignited!$"
+	.string "Sorry that sounded cooler in my head.\n"
+	.string "I'm a loser like all rogue players...$"
 
 Route110_Text_EdwinRegister:
-	.string "I like collecting MATCH CALL\n"
+	.string "I like collecting erasers\n"
 	.string "registrations, too…$"
 
 Route110_Text_EdwinRematchIntro:
@@ -1124,27 +1120,26 @@ Route110_Text_EdwinRematchPostBattle:
 	.string "mine!$"
 
 Route110_Text_DaleIntro:
-	.string "Hey!\n"
-	.string "Don't sneak up behind me like that!$"
+	.string "Sneak attack!$"
 
 Route110_Text_DaleDefeated:
-	.string "I lost!\n"
-	.string "Drat!$"
+	.string "You saw me coming?$"
 
 Route110_Text_DalePostBattle:
-	.string "Fishing is all about concentration.\n"
-	.string "You have to focus on the floater.$"
+	.string "I wish I was a real ninja.\n"
+	.string "Then I would stand a chance.$"
 
 Route110_Text_IsabelIntro:
-	.string "Ahahaha! I would go anywhere to show\n"
-	.string "off my delightful POKéMON.$"
+	.string "YARR!\p"
+	.string "Ye be walkin the plank landlubber!$"
 
 Route110_Text_IsabelDefeated:
-	.string "Oh, dear, this won't do.$"
+	.string "Pirates need boats?$"
 
 Route110_Text_IsabelPostBattle:
-	.string "Rather than battling, perhaps I should\n"
-	.string "show off my POKéMON at the FAN CLUB.$"
+	.string "I pirate a lot of movies so I\n"
+	.string "thought I was a good pirate.\p"
+	.string "I spent 3 years in prison.$"
 
 Route110_Text_IsabelRegister:
 	.string "That wasn't close to what I could\n"
@@ -1165,50 +1160,45 @@ Route110_Text_IsabelRematchPostBattle:
 	.string "But I like to battle, too!$"
 
 Route110_Text_TimmyIntro:
-	.string "I found some cool POKéMON in the grass\n"
-	.string "around here!$"
+	.string "Pizza time!$"
 
 Route110_Text_TimmyDefeated:
-	.string "Being cool isn't enough to win…$"
+	.string "Tobey did it better...$"
 
 Route110_Text_TimmyPostBattle:
-	.string "It's hard to battle with POKéMON you\n"
-	.string "just caught.$"
+	.string "Spider man 2 was the peak of cinema.\p"
+	.string "We simply need more Tobey Maguire movies!$"
 
 Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
-	.string "I'll get over my embarrassment by\n"
-	.string "battling with you!$"
+	.string "Heres how SSG can still win the major.$"
 
 Route110_Text_AlyssaDefeated:
-	.string "Oops!\n"
-	.string "I ended up losing!$"
+	.string "M80...$"
 
 Route110_Text_AlyssaPostBattle:
-	.string "Falling… Losing…\n"
-	.string "This is so humiliating for me!$"
+	.string "Well, I'm sure a NA team will win\n"
+	.string "the next invitational!$"
 
 Route110_Text_JosephIntro:
-	.string "Okay! Full-throttle time! If you can't\n"
-	.string "groove, you get left behind!$"
+	.string "Genji players are so cool!\n"
+	.string "I want to become a genji main too!$"
 
 Route110_Text_JosephDefeated:
-	.string "You got into the groove all right…$"
+	.string "You thought I meant overwatch?$"
 
 Route110_Text_JosephPostBattle:
-	.string "This isn't going to bring me down!\n"
-	.string "Losing has made me a better man!$"
+	.string "Overwatch is a dead game. I was talking\n"
+	.string "about Awesomenauts! The most alive\l"
+	.string "game ever!$"
 
 Route110_Text_KalebIntro:
-	.string "When cute POKéMON help each other…\n"
-	.string "You won't see a more adorable sight!$"
+	.string "Down from the seas in to space!$"
 
 Route110_Text_KalebDefeated:
-	.string "Have you no compassion or pity?$"
+	.string "They're making suishi out of me!$"
 
 Route110_Text_KalebPostBattle:
-	.string "Okay, okay, you've done the best you\n"
-	.string "could, my pretties.$"
+	.string "Or is is calamari...$"
 
 Route111_Text_DrewIntro:
 	.string "Oh, hey! Those GO-GOGGLES suit you.\n"
