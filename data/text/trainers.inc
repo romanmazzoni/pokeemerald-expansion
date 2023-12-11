@@ -819,7 +819,7 @@ Route109_Text_HueyPostBattle:
 	.string "anchor, but its not catching on.$"
 
 Route109_Text_EdmondIntro:
-	.string "Urrrrppp…\n"
+	.string "Yeah?\n"
 	.string "Battle? With me?$"
 
 Route109_Text_EdmondDefeated:
@@ -827,20 +827,18 @@ Route109_Text_EdmondDefeated:
 	.string "Urrrrpppp…$"
 
 Route109_Text_EdmondPostBattle:
-	.string "I'm usually stronger than this!\n"
-	.string "I'm just seasick as a dog!\p"
-	.string "I'm a SAILOR, but…$"
+	.string "Why did I fight you!\n"
+	.string "You're overleveled!$"
 
 Route109_Text_RickyIntro:
-	.string "I'm thirsty… I could go for a SODA POP\n"
-	.string "at the SEASHORE HOUSE…$"
+	.string "How did I get here?\n"
 
 Route109_Text_RickyDefeated:
-	.string "Groan…$"
+	.string "You knocked out my pokemon?$"
 
 Route109_Text_RickyPostBattle:
-	.string "I'm getting famished… My inner tube\n"
-	.string "looks like a giant doughnut…$"
+	.string "Now I'm stuck in the ocean\n"
+	.string "with only fainted pokemon...$"
 
 Route109_Text_RickyRegister:
 	.string "Will you have another match with me\n"
@@ -859,93 +857,85 @@ Route109_Text_RickyRematchPostBattle:
 	.string "seems to taste a little better.$"
 
 Route109_Text_LolaIntro:
-	.string "Doesn't a beach umbrella look like\n"
-	.string "a giant flower?$"
+	.string "Do you know any dust 2 smoke lineups?$"
 
 Route109_Text_LolaDefeated:
-	.string "Mommy!$"
+	.string "My source lineups don't work!$"
 
 Route109_Text_LolaPostBattle:
-	.string "If you look at the beach from the sky,\n"
-	.string "it looks like a big flower garden!$"
+	.string "My CS source team broke up in 1997.\n"
+	.string "I haven't been keeping up.$"
 
 Route109_Text_LolaRegister:
 	.string "Me?\n"
-	.string "I'm here every day!$"
+	.string "You want me on your cs team?$"
 
 Route109_Text_LolaRematchIntro:
-	.string "I'm not losing to you again!\n"
-	.string "That's why I have my inner tube!$"
+	.string "I learned 2 new lineups!$
 
 Route109_Text_LolaRematchDefeated:
-	.string "Mommy!$"
+	.string "Rushing B?$"
 
 Route109_Text_LolaRematchPostBattle:
-	.string "If I have an inner tube, me and my\n"
-	.string "POKéMON's cuteness goes way up!$"
+	.string "Give me time to counter strat!\n"
+	.string "I wasn't prepared for such sick dips!$"
 
 Route109_Text_AustinaIntro:
-	.string "I can't swim without my inner tube,\n"
-	.string "but I won't lose at POKéMON!$"
+	.string "I was in queue 3 weeks for this match.$
 
 Route109_Text_AustinaDefeated:
-	.string "Did I lose because I have an inner\n"
-	.string "tube?$"
+	.string "Unbalanced matchmaking...$"
 
 Route109_Text_AustinaPostBattle:
-	.string "My inner tube is a fashion item.\n"
-	.string "I can't be seen without it.$"
+	.string "You would think after 19 years\n"
+	.string "They would have fixed the matchmaking.$"
 
 Route109_Text_GwenIntro:
-	.string "Hi, big TRAINER.\n"
-	.string "Will you battle with me?$"
+	.string "I'm gonna try gnaw this game.$"
 
 Route109_Text_GwenDefeated:
-	.string "Oh, you're strong.$"
+	.string "Placement damage on weedlings?$"
 
 Route109_Text_GwenPostBattle:
-	.string "How did you get to be so strong?$"
+	.string "I just wanted to play a character?\n"
+	.string "That built sentries...$"
 
 Route109_Text_CarterIntro:
-	.string "Wahahah! This dude's going to catch\n"
-	.string "himself a big one!$"
+	.string "Whelp, this Goku guy is definitely\n"
+	.string "going to lose to Frieza!$"
 
 Route109_Text_CarterDefeated:
-	.string "This dude just lost one…$"
+	.string "Super saiyan…$"
 
 Route109_Text_CarterPostBattle:
-	.string "This dude thinks you're a big one.\n"
-	.string "No, you're a big-one-to-be!$"
+	.string "If you could do that the whole time\n"
+	.string "it was never really a fair fight!$"
 
 Route109_Text_PaulIntro:
-	.string "PAUL: Well, this is a mood-breaker.\p"
-	.string "I wish you wouldn't disturb our\n"
-	.string "precious time together.$"
+	.string "PAUL: Hair combed back.\n"
+	.string "Sunglasses on baby.$"
 
 Route109_Text_PaulDefeated:
-	.string "PAUL: Well, I give up.$"
+	.string "PAUL: The boys of summer are gone.$"
 
 Route109_Text_PaulPostBattle:
-	.string "PAUL: Well, don't tell anyone that\n"
-	.string "we're here.\l"
-	.string "This is just our private world of two!$"
+	.string "PAUL: I saw a deadhead sticker on\n"
+	.string "a cadilac.$"
 
 Route109_Text_PaulNotEnoughPokemon:
-	.string "PAUL: We're totally, deeply in love.\n"
-	.string "That's why we make our POKéMON battle\l"
-	.string "together.$"
+	.string "PAUL: Why are you here?\n"
+	.string "Just to suffer?$"
 
 Route109_Text_MelIntro:
-	.string "MEL: We're, like, totally in love.\n"
-	.string "Our romance is heating up all of HOENN!$"
+	.string "MEL: Walking real slow\n"
+	.string "Smiling at everyone.$"
 
 Route109_Text_MelDefeated:
-	.string "MEL: We lost, and it's my fault!\n"
-	.string "PAUL will hate me!$"
+	.string "MEL: I can see you.$"
 
 Route109_Text_MelPostBattle:
-	.string "MEL: Um, PAUL, are you angry with me?\n"
-	.string "Please don't be angry.$"
+	.string "MEL: A little voice inside my head said\n"
+	.string "don't look back you can never look back.$"
 
 Route109_Text_MelNotEnoughPokemon:
 	.string "MEL: We're, like, deeply and truly in love.\n"
@@ -953,64 +943,71 @@ Route109_Text_MelNotEnoughPokemon:
 	.string "battle together.$"
 
 Route109_Text_ChandlerIntro:
-	.string "Tadaah! See?\n"
-	.string "My inner tube's round!$"
+	.string "Looks like these afternoons of reverie\n"
+	.string "are through!$"
 
 Route109_Text_ChandlerDefeated:
-	.string "Oh, oh!\n"
-	.string "Too bad!$"
+	.string "dangerous and true!$"
 
 Route109_Text_ChandlerPostBattle:
-	.string "After I showed you my round inner\n"
-	.string "tube, too…$"
+	.string "Siren in the night, with streaks of red\n"
+	.string "and blue.$"
 
 Route109_Text_HaileyIntro:
-	.string "I can't swim, so I'm pretending\n"
-	.string "to swim.$"
+	.string "I just learned the quadratic formula!\p"
+	.string "A squared plus B squared equals C squared$"
 
 Route109_Text_HaileyDefeated:
-	.string "I thought so!\n"
-	.string "I didn't think we could win.$"
+	.string "Pythagoras?\n"
 
 Route109_Text_HaileyPostBattle:
-	.string "When I learn how to swim, I think\n"
-	.string "my POKéMON will become tougher.$"
+	.string "That explains why I can't solve a\n"
+	.string "quadratic equation. My formula made\l"
+	.string "no sense.$"
 
 Route109_Text_ElijahIntro:
-	.string "For a guy as macho as me, this kind\n"
-	.string "of POKéMON is the perfect match!$"
+	.string "Come out Virginia don't let me wait!\n"
+	.string "You Catholic girls start much too late!$"
 
 Route109_Text_ElijahDefeated:
-	.string "I'm cool even in defeat, hey?$"
+	.string "The good always die young?$"
 
 Route109_Text_ElijahPostBattle:
-	.string "For a guy as macho as me, a port\n"
-	.string "is the perfect setting!\p"
-	.string "I guess I'll head for SLATEPORT.$"
+	.string "I'd rather lose with saints than\n"
+	.string "win with the sinners!$"
 
 Route110_Text_JacobIntro:
-	.string "Whoa! Watch it!\n"
-	.string "I guess you're not used to BIKE racing.$"
+	.string "I know how to counter your exact team!$"
 
 Route110_Text_JacobDefeated:
-	.string "Whoa!\n"
-	.string "My brakes failed!$"
+	.string "Unfortunate doesn't begin to describe\n"
+	.string "my series!\p"
+	.string "this game rewards blind luck and nothing \n"
+	.string "else, I am beyond convinced at this point\p"
 
 Route110_Text_JacobPostBattle:
-	.string "Flat tires and brake problems can\n"
-	.string "cause serious injury!\l"
-	.string "Inspect your BIKE for problems!$"
+	.string "My preparation was superior.\n"
+	.string "My play was superior.\l"
+	.string "and I lost.\p"
+	.string "I don't see a reason to continue engaging\n"
+	.string "in an activity where what is within my\l"
+	.string "control is overwhelmingly outweighed\n"
+	.string "by what is not.\p"
+	.string "I am done with competitive Pokemon\n"
+	.string "and you won't get a fond farewell.\p"
 
 Route110_Text_AnthonyIntro:
-	.string "Yo, you!\n"
-	.string "Can you keep up with my speed?$"
+	.string "1 18.25 ounce package chocolate cake mix.\n"
+	.string "1 can prepared coconut pecan frosting.\p"
+	.string "4 large eggs.\n"
+	.string "1 cup semi-sweet chocolate chips.$"
 
 Route110_Text_AnthonyDefeated:
-	.string "Crash and burn!$"
+	.string "3/4 cups butter or margarine.\n"
+	.string "1&2/3 cups granulated sugar.$"
 
 Route110_Text_AnthonyPostBattle:
-	.string "Speed alone won't let me win at POKéMON.\n"
-	.string "I need to reconsider this…$"
+	.string "2 cups all purpose flour.$"
 
 Route110_Text_BenjaminIntro:
 	.string "Don't panic if your BIKE's going fast!$"
