@@ -3712,7 +3712,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_PRESENT,
         .power = 1,
-        .type = TYPE_COOL,
+        .type = TYPE_SNOW,
         .accuracy = 90,
         .pp = 15,
         .secondaryEffectChance = 0,
