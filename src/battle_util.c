@@ -5647,7 +5647,6 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
              && gBattleMons[gBattlerTarget].hp != 0
              && RandomWeighted(RNG_CUTE_CHARM, 2, 1)
              && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_INFATUATION)
-             && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget)
              && GetBattlerAbility(gBattlerAttacker) != ABILITY_OBLIVIOUS
              && IsMoveMakingContact(move, gBattlerAttacker)
              && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL))
@@ -8535,11 +8534,11 @@ static const u8 sFlailHpScaleToPowerTable[] =
 // format: min. weight (hectograms), base power
 static const u16 sWeightToDamageTable[] =
 {
-    100, 20,
+    100, 30,
     250, 40,
-    500, 60,
-    1000, 80,
-    2000, 100,
+    500, 70,
+    1000, 85,
+    2000, 120,
     0xFFFF, 0xFFFF
 };
 
