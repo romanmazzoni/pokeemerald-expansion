@@ -240,7 +240,7 @@ Route103_Text_MarcosDefeated:
 	.string "You want us to name the band after him?$"
 
 Route103_Text_MarcosPostBattle:
-	.string "Thats a stupid name for a band$"
+	.string "Thats a stupid name for a band.$"
 
 Route104_Text_GinaIntro:
 	.string "Abra Abra Kadabra\p"
@@ -1304,35 +1304,31 @@ Route111_Text_IreneDefeat:
 	.string "Oh, you're disgustingly good!$"
 
 Route111_Text_IrenePostBattle:
-	.string "I'm thinking that I should go to\n"
-	.string "MT. CHIMNEY, but the view around\l"
-	.string "here is very nice, too.$"
+	.string "Gross! Using such bad pokemon and\n"
+	.string "winning? I would never be able\l"
+	.string "to do that!$"
 
 Route111_Text_DaisukeIntro:
-	.string "To train myself, I challenge all\n"
-	.string "whom I meet!$"
+	.string "I study the works of Sun Tzu!\n"
+	.string "All warfare is based!$"
 
 Route111_Text_DaisukeDefeat:
-	.string "Uncle! I give up!$"
+	.string "Based? Based on what?$"
 
 Route111_Text_DaisukePostBattle:
-	.string "All I can do is keep training until\n"
-	.string "I can defeat strong TRAINERS such\l"
-	.string "as yourself.$"
+	.string "Have I misunderstood Sun Tzu?$"
 
 Route111_Text_WiltonIntro:
-	.string "Show me how much you've toughened\n"
-	.string "your POKéMON.$"
+	.string "The winner takes all.\p"
+	.string "The thrill of one more kill.\n"
+	.string "The last one to fall!$"
 
 Route111_Text_WiltonDefeat:
-	.string "I see, you've toughened them\n"
-	.string "considerably.$"
+	.string "I'll never sacrifice my will!$"
 
 Route111_Text_WiltonPostBattle:
-	.string "POKéMON and TRAINERS learn much\n"
-	.string "through battling.\p"
-	.string "What's important is to never give up\n"
-	.string "even if you lose.$"
+	.string "I should probably look back on\n"
+	.string "the world closing in$"
 
 Route111_Text_WiltonRegister:
 	.string "There is much to be learned from\n"
@@ -1353,18 +1349,15 @@ Route111_Text_WiltonPostRematch:
 	.string "aim for the POKéMON LEAGUE.$"
 
 Route111_Text_BrookeIntro:
-	.string "Oh, your POKéMON look like serious\n"
-	.string "actors.\l"
-	.string "I have to ask you for an engagement.$"
+	.string "I take a wake up pill and fill\n"
+	.string "with energy!$"
 
 Route111_Text_BrookeDefeat:
-	.string "They didn't just look strong,\n"
-	.string "they are strong!$"
+	.string "I don't have any messages...$
 
 Route111_Text_BrookePostBattle:
-	.string "I thought I was raising my POKéMON\n"
-	.string "diligently, but, oh no, there is still\l"
-	.string "much to be done.$"
+	.string "All I know is the steak tastes better\n"
+	.string "when I take my steak taste better pill.$"
 
 Route111_Text_BrookeRegister:
 	.string "I wish I could become friends with\n"
@@ -1386,29 +1379,31 @@ Route111_Text_BrookePostRematch:
 	.string "learned better moves…$"
 
 Route111_Text_CeliaIntro:
-	.string "I shouldn't have come to a place like\n"
-	.string "this for a picnic!$"
+	.string "One scoop of justice,\n"
+	.string "coming up!$"
 
 Route111_Text_CeliaDefeat:
-	.string "Aww!\n"
-	.string "I really shouldn't have come!$"
+	.string "I'm melting...$
 
 Route111_Text_CeliaPostBattle:
-	.string "In a sandstorm like this, I can't set\n"
-	.string "the places for a picnic even with my\l"
-	.string "GO-GOGGLES on…$"
+	.string "That was not cool...$"
 
 Route111_Text_BryanIntro:
-	.string "How tough are you?\n"
-	.string "We shall expose that secret!$"
+	.string "I missed the part where\n"
+	.string "that's my problem.$"
 
 Route111_Text_BryanDefeat:
-	.string "Oh! Your strength!\n"
-	.string "It is shrouded in mystery!$"
+	.string "Oh! You got some dirt\n"
+	.string "in my eye!$"
 
 Route111_Text_BryanPostBattle:
-	.string "This desert hoards mysteries in\n"
-	.string "its shifting sands!$"
+	.string "I might have some character traits\n"
+	.string "that some might see as innocence\l$"
+	.string "or naive.\p"
+	.string "That's because I have discovered peace\n"
+	.string "and happiness in my soul.\p"
+	.string "With this knowledge I see the\n"
+	.string "beauty of human life.$"
 
 Route111_Text_BrandenIntro:
 	.string "I'll give you some of my sandwich\n"
@@ -1419,56 +1414,54 @@ Route111_Text_BrandenDefeat:
 	.string "enough of a bribe…$"
 
 Route111_Text_BrandenPostBattle:
-	.string "My SANDSHREW loves eating\n"
+	.string "Me loves eating\n"
 	.string "my sandwiches.$"
 
 Route111_Text_TyronIntro:
-	.string "This is my favorite kind of POKéMON!$"
+	.string "That pokemon is so cool!\n"
+	.string "I'm gonna kill it!$"
 
 Route111_Text_TyronDefeat:
-	.string "Wait!\n"
-	.string "Did you get a good look at my POKéMON?$"
+	.string "My pokemon!\n"
+	.string "How can I kill anything now?$"
 
 Route111_Text_TyronPostBattle:
 	.string "When having a battle, I get a kick out\n"
-	.string "of showing off my POKéMON.\p"
-	.string "I bet everyone feels that way when\n"
-	.string "they enter a battle!$"
+	.string "of suffering!\p"
+	.string "I need to teach my pokemon\n"
+	.string "the move guillotine!$"
 
 Route111_Text_CelinaIntro:
-	.string "Show me how to put a little excitement\n"
-	.string "into my life.$"
+	.string "Dance with me!$"
 
 Route111_Text_CelinaDefeat:
-	.string "Oh… My…\n"
-	.string "That was too much excitement.$"
+	.string "Applesauce!$"
 
 Route111_Text_CelinaPostBattle:
-	.string "My pulse is still racing.\n"
-	.string "You're one fabulous TRAINER.$"
+	.string "I simply do not care$"
 
 Route111_Text_HaydenIntro:
-	.string "When you're as famished as I am,\n"
-	.string "there is no room for pity!$"
+	.string "I play a lot of the London system!\n"
+	.string "I'm rated 1500!$"
 
 Route111_Text_HaydenDefeat:
-	.string "Groan…$"
+	.string "Grandmaster...$"
 
 Route111_Text_HaydenPostBattle:
-	.string "My stomach is grumbling!\n"
-	.string "Maybe I can grill some BERRIES…$"
+	.string "The London system sucks!\n"
+	.string "Levy was right!$"
 
 Route111_Text_BiancaIntro:
-	.string "Did you come from MAUVILLE?\n"
-	.string "Then you should be full of energy!$"
+	.string "Hey lets do a quick warm up battle!$"
+	.string "I need practice for the real deal!$"
 
 Route111_Text_BiancaDefeat:
-	.string "Ooh lala!\n"
-	.string "That's a lot to take!$"
+	.string "Good warmup!\n"
+	.string "Now for the real deal!$"
 
 Route111_Text_BiancaPostBattle:
-	.string "This road here…\n"
-	.string "You have quite a ways to travel.$"
+	.string "My pokemon fainted.\n"
+	.string "Maybe the warmup was a bad idea...$"
 
 Route112_Text_BriceIntro:
 	.string "Hahahaha!\n"
