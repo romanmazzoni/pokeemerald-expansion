@@ -5441,7 +5441,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     },
 
     [SPECIES_MISDREAVUS] =
-    {buff
+    {
         .baseHP        = 72,
         .baseAttack    = 95,
         .baseDefense   = 72,

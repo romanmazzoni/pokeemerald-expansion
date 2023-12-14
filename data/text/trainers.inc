@@ -1353,7 +1353,7 @@ Route111_Text_BrookeIntro:
 	.string "with energy!$"
 
 Route111_Text_BrookeDefeat:
-	.string "I don't have any messages...$
+	.string "I don't have any messages...$"
 
 Route111_Text_BrookePostBattle:
 	.string "All I know is the steak tastes better\n"
@@ -1383,7 +1383,7 @@ Route111_Text_CeliaIntro:
 	.string "coming up!$"
 
 Route111_Text_CeliaDefeat:
-	.string "I'm melting...$
+	.string "I'm melting...$"
 
 Route111_Text_CeliaPostBattle:
 	.string "That was not cool...$"
@@ -1464,13 +1464,13 @@ Route111_Text_BiancaPostBattle:
 	.string "Maybe the warmup was a bad idea...$"
 
 Route112_Text_BriceIntro:
-	.string "Hahahaha!\n"
+	.string "Hahahahaha!\n"
 	.string "How about we have a battle?\l"
 	.string "You and me!\l"
 	.string "Hahahaha!$"
 
 Route112_Text_BriceDefeat:
-	.string "I lost!\n"
+	.string "I lived!\n"
 	.string "Hahahaha!$"
 
 Route112_Text_BricePostBattle:
@@ -1480,19 +1480,18 @@ Route112_Text_BricePostBattle:
 Route112_Text_TrentIntro:
 	.string "My legs are solid from pounding up\n"
 	.string "and down the mountains.\p"
-	.string "They're not going to buckle easily,\n"
+	.string "Not even you could get them trembling\n"
 	.string "friend!$"
 
 Route112_Text_TrentDefeat:
-	.string "Ouch! My legs cramped up!$"
+	.string "Knees weak, arms are heavy.$"
 
 Route112_Text_TrentPostBattle:
-	.string "Try hiking, and I mean really\n"
-	.string "pounding, on these mountain trails\l"
-	.string "with a heavy pack weighing dozens of\l"
-	.string "pounds.\p"
-	.string "That, my friend, will get your body\n"
-	.string "into serious shape.$"
+	.string "The moment, you own it\n"
+	.string "you better never let it go.\p"
+	.string "You only get one shot\n"
+	.string "do not miss your chance to blow.\p"
+	.string "This opportunity comes once in a lifetime$"
 
 Route112_Text_TrentRegister:
 	.string "Ow, my legs have cramped up.\n"
@@ -1515,18 +1514,19 @@ Route112_Text_TrentRematchPostBattle:
 	.string "a challenge!$"
 
 Route112_Text_LarryIntro:
-	.string "I'm strong.\n"
-	.string "I won't cry if I lose.$"
+	.string "Your team looks strong!\n"
+	.string "I would surely win if I had that team!$"
 
 Route112_Text_LarryDefeat:
-	.string "Waaaah!$"
+	.string "Well that proves it!$"
 
 Route112_Text_LarryPostBattle:
-	.string "I'm not crying because I miss my mommy!\n"
-	.string "Snivel…$"
+	.string "I played better than you so\n"
+	.string "I would have definitely won if\l"
+	.string "I had that team!$"
 
 Route112_Text_CarolIntro:
-	.string "When you're out on a picnic, why,\n"
+	.string "I'm top 50 champ in R6S!\n"
 	.string "you simply have to sing!\l"
 	.string "Come on, sing with me!$"
 
