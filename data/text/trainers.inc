@@ -1527,68 +1527,69 @@ Route112_Text_LarryPostBattle:
 
 Route112_Text_CarolIntro:
 	.string "I'm top 50 champ in R6S!\n"
-	.string "you simply have to sing!\l"
-	.string "Come on, sing with me!$"
+	.string "Your team can't beat my tactics!$"
 
 Route112_Text_CarolDefeat:
-	.string "Oh, you're so strong!$"
+	.string "Rushed!$"
 
 Route112_Text_CarolPostBattle:
-	.string "It doesn't matter if you're good or bad\n"
-	.string "at singing or POKéMON.\p"
-	.string "If you have the most fun, you win!$"
+	.string "My team only wins because we\n"
+	.string "Hit the servers before we lose.\p"
+	.string "I commit felonies for elo.$"
 
 Route112_Text_BryantIntro:
 	.string "I caught hot POKéMON in FIERY PATH!\n"
 	.string "Take a look!$"
 
 Route112_Text_BryantDefeat:
-	.string "What a bumpy ride that was!$"
+	.string "Super hot, Super hot.$"
 
 Route112_Text_BryantPostBattle:
-	.string "I like the way you battle.\n"
-	.string "It has a certain flair to it.$"
+	.string "Every action you did to perfection!\n"
+	.string "Its like time stopped when you did!$"
 
 Route112_Text_ShaylaIntro:
-	.string "Oh, aren't you an adorable TRAINER!\n"
-	.string "Please, I need a romantic battle!\l"
-	.string "I'm somewhat decent!$"
+	.string "I'm an evil genius!\n"
+	.string "You're just a stupid kid!$"
 
 Route112_Text_ShaylaDefeat:
-	.string "Oh, how strong you are!\n"
-	.string "You've given me quite a shock!$"
+	.string "What the scallop!$"
 
 Route112_Text_ShaylaPostBattle:
-	.string "Are you busy right now?\n"
-	.string "I was thinking that maybe we can have\l"
-	.string "a rematch right now…\l"
-	.string "But it's all right if you're busy.$"
+	.string "Its only been 6 days, 5 minutes 27 and\n"
+	.string "a half seconds!\p"
+	.string "How have you already so strong?\p"
+	.string "Goofy goober?$"
 
 Route113_Text_JaylenIntro:
 	.string "Can you guess why it's so cool\n"
-	.string "around here?$"
+	.string "around here?\p"
+	.string "Heres a hint. Its me.$"
 
 Route113_Text_JaylenDefeat:
-	.string "Peeuuw!\n"
-	.string "That stinks!$"
+	.string "Woah!\n"
+	.string "Even Cooler!$"
 
 Route113_Text_JaylenPostBattle:
-	.string "The volcanic ash blocks the sun,\n"
-	.string "so it doesn't get very warm.\p"
-	.string "That's good for me--I can't stand heat!$"
+	.string "To think there was someone who\n"
+	.string "could out cool me!\p"
+	.string "Nay! I thought it impossible!$"
 
 Route113_Text_DillonIntro:
-	.string "The volcano's eruption is proof that\n"
-	.string "the earth is alive.$"
+	.string "There is a big bad boomin' system\p"
+	.string "The parties exploded\n"
+	.string "the core is corroded!\p"
+	.string "You don't believe me\n"
+	.string "that this scenery\l"
+	.string "could be a cold blooded killer!$"
 
 Route113_Text_DillonDefeat:
-	.string "You're some kind of strong!$"
+	.string "It's gonna blow, woah woah woah\n"
+	.string "Volcano!$"
 
 Route113_Text_DillonPostBattle:
-	.string "Ouch! Owww! I can't see!\n"
-	.string "I got ashes in my eyelashes!\p"
-	.string "Get it? Ashes and eyelashes?\p"
-	.string "Okay, that was bad, sorry…$"
+	.string "Even the presidents of the united\n"
+	.string "states would be scared of this one!$"
 
 Route113_Text_MadelineIntro:
 	.string "I use this parasol to ward off this\n"

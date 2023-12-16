@@ -59,7 +59,7 @@ onionbuilding_eventScript_getAFreeLegendary2_1:
 	end
 
 onionbuilding_eventScript_getAFreeLegendary2_2:
-	givemon SPECIES_URSARING, 100, ITEM_MASTER_BALL
+	givemon SPECIES_URSARING, 50, ITEM_MASTER_BALL
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq onionbuilding_eventScript_getAFreeLegendary2_5
 	compare VAR_RESULT, MON_GIVEN_TO_PC
