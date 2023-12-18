@@ -1625,8 +1625,8 @@ Route113_Text_LaoDefeat:
 	.string "With honor I admit defeat!$"
 
 Route113_Text_LaoPostBattle:
-	.string "I must refine the art of concealment.\n"
-	.string "I bid thee farewell.$"
+	.string "Zane always wanna the better ninja.\n"
+	.string "I must train harder.$"
 
 Route113_Text_LaoRegister:
 	.string "Yiiyaah! Witness the ancient ninja\n"
@@ -1650,80 +1650,75 @@ Route113_Text_LungIntro:
 
 Route113_Text_LungDefeat:
 	.string "I'll use my ninjutsu on you…\n"
-	.string "“VOLCANIC ASH SWIRL CLOAK”!\p"
+	.string "“GIANT RASENGAN”!\p"
 	.string "…What?\n"
 	.string "It's already over?$"
 
 Route113_Text_LungPostBattle:
-	.string "You know what's crummy about hiding?\n"
-	.string "It's lonely if no one comes along.$"
+	.string "Wind type chakra is useless.\n"
+	.string "Theres no cool moves I can do with it.$"
 
 Route113_Text_ToriIntro:
-	.string "TORI: Both of us, we collect ashes.\n"
-	.string "We battle POKéMON, too.$"
+	.string "TORI: Anything you can do I can\n"
+	.string "do better.$"
 
 Route113_Text_ToriDefeat:
-	.string "TORI: We lost… It's boring, so I'm going\n"
-	.string "to get some more ashes.$"
+	.string "TORI: No I can't...$"
 
 Route113_Text_ToriPostBattle:
-	.string "TORI: How much ash do we have?\n"
-	.string "Enough for a WHITE FLUTE, I hope.$"
+	.string "TORI: I can live on bread and cheese.$"
 
 Route113_Text_ToriNotEnoughMons:
-	.string "TORI: We want to battle 2-on-2.\n"
-	.string "If we didn't, we would lose!$"
+	.string "TORI: Any mons you can have\n"
+	.string "I can have more of!$"
 
 Route113_Text_TiaIntro:
-	.string "TIA: Both of us, we collect ashes.\n"
-	.string "We battle POKéMON, too.$"
+	.string "TIA: I can do anything\n"
+	.string "better than you!$"
 
 Route113_Text_TiaDefeat:
-	.string "TIA: We couldn't win… It's boring,\n"
-	.string "so I'm getting some more ashes.$"
+	.string "TIA: No you can't.$"
 
 Route113_Text_TiaPostBattle:
-	.string "TIA: We have a lot of ashes!\n"
-	.string "I think enough for a WHITE FLUTE!$"
+	.string "TIA: And only that? So can a rat!$"
 
 Route113_Text_TiaNotEnoughMons:
-	.string "TIA: We want to battle 2-on-2.\n"
-	.string "If we don't, we won't win!$"
+	.string "TIA: I can have any mons more\n"
+	.string "of than you!$"
 
 Route113_Text_CobyIntro:
-	.string "Pfft, with these wings I can\n"
-	.string "flick you away!$"
+	.string "Wait a minute am I fired?\n"
+	.string "I thought we were family around here!$"
 
 Route113_Text_CobyDefeat:
-	.string "A… What?$"
+	.string "Oh Fay is fired...$"
 
 Route113_Text_CobyPostBattle:
-	.string "I don't know what to say when I get\n"
-	.string "beaten so easily…$"
+	.string "Gohhh, whats the use its hopeless\n"
+	.string "he's gone...$"
 
 Route113_Text_SophieIntro:
 	.string "The warmth here is making me drowsy.\n"
 	.string "Battle with me so I can stay awake.$"
 
 Route113_Text_SophieDefeat:
-	.string "This is a dream.\n"
-	.string "I'm sure of it…$"
+	.string "I'm drifting...\n"
+	.string "Away...$"
 
 Route113_Text_SophiePostBattle:
-	.string "Losing burns me up…\n"
-	.string "I'm just going to sleep right here!\l"
+	.string "So boring...\n"
+	.string "Asleep... Again...\l"
 	.string "Zzz!$"
 
 Route113_Text_LawrenceIntro:
-	.string "Were you maybe in the middle\n"
-	.string "of gathering volcanic ashes?$"
+	.string "Be sure to drink...$"
 
 Route113_Text_LawrenceDefeat:
-	.string "Ehehe.\n"
-	.string "We got beaten cleanly.$"
+	.string "Your ovaltine??$"
 
 Route113_Text_LawrencePostBattle:
-	.string "I ought to hide under the ashes, too.$"
+	.string "Ovaltine?\n"
+	.string "A crummy commercial?$"
 
 Route113_Text_WyattIntro:
 	.string "Y-you want to battle with me?\n"
