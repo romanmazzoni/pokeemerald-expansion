@@ -4113,6 +4113,11 @@ static const struct TrainerMonItemDefaultMoves sParty_Isabel5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Timothy1[] = {
     {
     .iv = 200,
+    .lvl = 35,
+    .species = SPECIES_MAGIKARP, //He needs magikarp
+    },
+    {
+    .iv = 200,
     .lvl = 27,
     .species = SPECIES_HARIYAMA,
     }
@@ -5634,7 +5639,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cyndy1[] = {
     {
     .iv = 100,
     .lvl = 18,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_FARFETCHD,
     },
     {
     .iv = 100,
@@ -10065,16 +10070,18 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Alix[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Helene[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Helene[] = {
     {
     .iv = 0,
     .lvl = 26,
     .species = SPECIES_MEDITITE,
+    .heldItem = ITEM_BLACK_BELT // Keep black belts on all pokemon here
     },
     {
     .iv = 0,
     .lvl = 26,
     .species = SPECIES_MAKUHITA,
+    .heldItem = ITEM_BLACK_BELT
     }
 };
 
@@ -11632,7 +11639,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     .iv = 150,
     .lvl = 76,
     .species = SPECIES_PIKACHU,
-    .heldItem = ITEM_SCOPE_LENS,
+    .heldItem = ITEM_LIGHT_BALL,
     .moves = {MOVE_SURF, MOVE_QUICK_ATTACK, MOVE_VOLT_SWITCH, MOVE_IRON_TAIL}
     },
     {

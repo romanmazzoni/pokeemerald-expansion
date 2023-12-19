@@ -7781,7 +7781,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_RECHARGE,
         .power = 150,
-        .type = TYPE_TRAIN,
+        .type = TYPE_DOCTOR,
         .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 0,
