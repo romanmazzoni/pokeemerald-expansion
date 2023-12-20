@@ -2511,8 +2511,8 @@ Route117_Text_AishaDefeat:
 	.string "on my loss.$"
 
 Route117_Text_AishaPostBattle:
-	.string "I think that if you worry about losing,\n"
-	.string "you're more likely to lose.$"
+	.string "My mental is completely reversed.\n"
+	.string "I need to go lie down.$"
 
 Route118_Text_RoseIntro:
 	.string "The aroma of flowers has a magical\n"
