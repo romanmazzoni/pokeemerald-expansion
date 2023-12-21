@@ -2515,18 +2515,16 @@ Route117_Text_AishaPostBattle:
 	.string "I need to go lie down.$"
 
 Route118_Text_RoseIntro:
-	.string "The aroma of flowers has a magical\n"
-	.string "power. It cleanses us body and soul.$"
+	.string "On a cold winter morning\n"
+	.string "in the time before the light.$"
 
 Route118_Text_RoseDefeat:
-	.string "Oh, dear me.\n"
-	.string "I seem to have lost.$"
+	.string "Through the fire and the\n"
+	.string "flames I carry on...$"
 
 Route118_Text_RosePostBattle:
-	.string "Flowers, POKéMON…\n"
-	.string "I love whatever smells nice.\p"
-	.string "Stinky things…\n"
-	.string "I'll pass.$"
+	.string "We fought so hard\n"
+	.string "now can we understand?$"
 
 Route118_Text_RoseRegister:
 	.string "Sniff… That odor--it's a POKéNAV!\n"
@@ -2545,27 +2543,29 @@ Route118_Text_RosePostRematch:
 	.string "POKéMON will be attracted by it.$"
 
 Route118_Text_PerryIntro:
-	.string "BIRD POKéMON that FLY elegantly in\n"
-	.string "the sky… They're the best!$"
+	.string "Goodra is the worst pokemon\n"
+	.string "in the game! I would never want\l"
+	.string "him on my team!$"
 
 Route118_Text_PerryDefeat:
-	.string "Urgh…\n"
-	.string "I crashed…$"
+	.string "Goodra's...\n"
+	.string "Fault...$"
 
 Route118_Text_PerryPostBattle:
-	.string "You've got great POKéMON.\n"
-	.string "I'll have to train mine better.$"
+	.string "I need to throw blame around more.\p"
+	.string "A loss is really easy to handle\n"
+	.string "when I just say It's not my fault!$"
 
 Route118_Text_ChesterIntro:
-	.string "Take flight!\n"
-	.string "My BIRD POKéMON!$"
+	.string "My name is John Jacob Jingleheimer\n"
+	.string "Schmmidt! Please just call me chester.$"
 
 Route118_Text_ChesterDefeat:
-	.string "They did take flight…$"
+	.string "Why would you call me that?$"
 
 Route118_Text_ChesterPostBattle:
-	.string "If they'd get stronger, they'd be able\n"
-	.string "to fly more freely…$"
+	.string "The main problem is someone else I\n"
+	.string "know had the same name as me...$"
 
 Route118_Text_BarnyIntro:
 	.string "I'm a FISHERMAN, but also a TRAINER.\n"
