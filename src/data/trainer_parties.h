@@ -4610,12 +4610,19 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Barny[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Wade[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Wade[] = {
     {
     .iv = 0,
     .lvl = 16,
     .species = SPECIES_TENTACOOL,
-    }
+    .heldItem = ITEM_FOCUS_SASH,
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_BRUXISH,
+    .heldItem = ITEM_FOCUS_SASH,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Carter[] = {

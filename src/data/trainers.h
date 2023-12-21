@@ -4138,7 +4138,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Wade),
+        .party = ITEM_DEFAULT_MOVES(sParty_Wade),
     },
 
     [TRAINER_CARTER] =

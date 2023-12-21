@@ -2569,40 +2569,41 @@ Route118_Text_ChesterPostBattle:
 
 Route118_Text_BarnyIntro:
 	.string "I'm a FISHERMAN, but also a TRAINER.\n"
-	.string "I'm raising the POKéMON I caught.$"
+	.string "I'll eat my pokemon if I lose.$"
 
 Route118_Text_BarnyDefeat:
-	.string "I thought I was doing okay in my\n"
-	.string "training…$"
+	.string "Whelp, I was hungry anyway.$"
 
 Route118_Text_BarnyPostBattle:
-	.string "I couldn't win by training POKéMON\n"
-	.string "while I fished…\p"
-	.string "Was I doing things in half measures?$"
+	.string "I was a fishman and a trainer.\n"
+	.string "Now I'm going back to just\l"
+	.string "a fisherman.$"
 
 Route118_Text_WadeIntro:
 	.string "For FISHERMEN, equipment is the key.\p"
 	.string "But for TRAINERS, the key ingredients\n"
-	.string "are POKéMON and heart, of course!$"
+	.string "are focus sashes!$"
 
 Route118_Text_WadeDefeat:
-	.string "I was beaten in heart?$"
+	.string "You broke my sashes...$"
 
 Route118_Text_WadePostBattle:
-	.string "Come to think of it, fishing is a battle\n"
-	.string "between a FISHERMAN and a POKéMON.$"
+	.string "Atleast I have a job!\p"
+	.string "A kid like you will never\n"
+	.string "be able to buy as many focus\l"
+	.string "sashes as me!$"
 
 Route118_Text_DaltonIntro:
-	.string "Let my melody rock your soul!$"
+	.string "I like that old time rock and roll!$"
 
 Route118_Text_DaltonDefeat:
-	.string "La-lalala…$"
+	.string "That kind of battle just\n"
+	.string "soothes the soul!$"
 
 Route118_Text_DaltonPostBattle:
-	.string "An electric guitar doesn't always\n"
-	.string "have to be noisy…\p"
-	.string "It can be strummed to squeeze out\n"
-	.string "this heart-stirring melody…$"
+	.string "I lost because I was reminiscing\n"
+	.string "about those days of old...\p"
+	.string "With the old time rock and roll!$"
 
 Route118_Text_DaltonRegister:
 	.string "When I compose better melodies,\n"
@@ -2613,24 +2614,22 @@ Route118_Text_DaltonRematchIntro:
 	.string "Let us deliver it to your soul.$"
 
 Route118_Text_DaltonRematchDefeat:
-	.string "La-lalala…$"
+	.string "Can't beat the classics.$"
 
 Route118_Text_DaltonPostRematch:
 	.string "When I play, my emotions should reach\n"
 	.string "you through my electric guitar…$"
 
 Route118_Text_DeandreIntro:
-	.string "Go, go, go!\n"
-	.string "POKéMON 1, 2, and 3!$"
+	.string "from ivy, out middle\n"
+	.string "through our connector like a speed demon!$"
 
 Route118_Text_DeandreDefeat:
-	.string "Come in, POKéMON! Are you okay?\n"
-	.string "POKéMON 1, 2, and 3?!$"
+	.string "Admin he's doing it sideways!$"
 
 Route118_Text_DeandrePostBattle:
-	.string "Isn't it cool that I have a POKéMON\n"
-	.string "battle team?\p"
-	.string "You can copy me--I don't mind!$"
+	.string "Yo if you don't script you\n"
+	.string "wanna give me some bhop lessons?$"
 
 Route119_Text_BrentIntro:
 	.string "We're the MIMIC CIRCLE!\n"
