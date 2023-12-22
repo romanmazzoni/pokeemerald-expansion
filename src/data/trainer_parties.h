@@ -5251,9 +5251,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Hugh[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Phil[] = {
     {
-    .iv = 0,
+    .iv = 40,
     .lvl = 26,
-    .species = SPECIES_SWELLOW,
+    .species = SPECIES_HITMONCHAN, //this was set
     }
 };
 
