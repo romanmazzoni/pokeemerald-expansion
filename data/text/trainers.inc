@@ -3453,31 +3453,27 @@ Route123_Text_JazmynPostBattle:
 	.string "to help you at all.$"
 
 Route123_Text_FrederickIntro:
-	.string "Hello, child!\n"
-	.string "Can you spare some time?$"
+	.string "Hey, remember to have fun.\n"
+	.string "That's the most important part$"
+	.string "of playing a game right?$"
 
 Route123_Text_FrederickDefeat:
-	.string "Ah, a mighty capable child!\n"
-	.string "Let me contribute to your allowance.$"
+	.string "Ah, winning is fun!\n"
+	.string "Well done!$"
 
 Route123_Text_FrederickPostBattle:
-	.string "Contribute to your allowance?\n"
-	.string "Wasn't the prize money enough?$"
+	.string "I think winning is always fun.\n"
+	.string "Well, as long as you aren't over\l"
+	.string "preparing and grinding at nothing it is.$"
 
 Route123_Text_AlbertoIntro:
-	.string "I have to tell you, BIRD POKéMON\n"
-	.string "are my obsession!\p"
-	.string "Birds are cool!\n"
-	.string "They're the best!$"
+	.string "I'm charing my laser.$"
 
 Route123_Text_AlbertoDefeat:
-	.string "Even in defeat, BIRD POKéMON are cool!$"
+	.string "I'm firing my laser.$"
 
 Route123_Text_AlbertoPostBattle:
-	.string "I gather BIRD POKéMON feathers that\n"
-	.string "scatter during battles.\p"
-	.string "I'm going to make a hat with\n"
-	.string "BIRD POKéMON feathers.$"
+	.string "Wait how did you predict that?$"
 
 Route123_Text_EdIntro:
 	.string "When there are no TRAINERS around,\n"
@@ -3485,23 +3481,22 @@ Route123_Text_EdIntro:
 	.string "I watch them.$"
 
 Route123_Text_EdDefeat:
-	.string "I kind of like your POKéMON.$"
+	.string "I like watching my pokemon\n"
+	.string "get hurt.$"
 
 Route123_Text_EdPostBattle:
-	.string "Hehe, I'm swiping your battling ideas!\n"
-	.string "I think they'll make me better.$"
+	.string "Animal abuse doesn't exist in this\n"
+	.string "universe. I'm allowed to do this.$"
 
 Route123_Text_JonasIntro:
-	.string "I lay in ambush, and a TRAINER has\n"
-	.string "landed in my trap!$"
+	.string "My name is Jonas!$"
 
 Route123_Text_JonasDefeat:
-	.string "If you don't lose, how am I supposed\n"
-	.string "to have fun playing ninja?$"
+	.string "I'm carrying the wheel...$"
 
 Route123_Text_JonasPostBattle:
-	.string "I'm going to ambush a weaker-looking\n"
-	.string "TRAINER next time.$"
+	.string "Now this tank is dry.\n"
+	.string "Now this wheel is flat.$"
 
 Route123_Text_KayleyIntro:
 	.string "I just bought this parasol.\n"
@@ -3512,21 +3507,21 @@ Route123_Text_KayleyDefeat:
 	.string "five times!$"
 
 Route123_Text_KayleyPostBattle:
-	.string "Using accessories effectively is\n"
-	.string "the secret behind fashion appeal.$"
+	.string "I have a degree in statics.\p"
+	.string "It's about 87 percent more useful$"
+	.string "than other degrees.$"
 
 Route124_Text_SpencerIntro:
 	.string "Hey, are you lost at sea?\p"
-	.string "If you can beat my POKéMON,\n"
-	.string "I can serve as your pilot.$"
+	.string "Since the fall,\n"
+	.string "I've been lost at sea.$"
 
 Route124_Text_SpencerDefeat:
-	.string "I lost my bearings in battle!$"
+	.string "I'm drinkin in the gasoline.$"
 
 Route124_Text_SpencerPostBattle:
-	.string "Many people lose their bearings at sea.\p"
-	.string "If you're that sort, you should refer\n"
-	.string "to the POKéNAV's MAP.$"
+	.string "I'm walkin in the weeds.\p"
+	.string "I'm sinkin in a submarine.$"
 
 Route124_Text_RolandIntro:
 	.string "Hm! You're riding a POKéMON instead\n"
@@ -3534,55 +3529,58 @@ Route124_Text_RolandIntro:
 	.string "I am envious!$"
 
 Route124_Text_RolandDefeat:
-	.string "Oh!\n"
-	.string "I can't…$"
+	.string "Well uh...\n"
+	.string "Atleast I know how to swim!$"
 
 Route124_Text_RolandPostBattle:
-	.string "I'm getting chilled…\n"
-	.string "I've been in the water too long…\p"
-	.string "I wish I could ride a POKéMON like you…$"
+	.string "Wait you know how to swim\n"
+	.string "and you know how to battle?\p"
+	.string "pick a side dr. flip flop!$"
 
 Route124_Text_JennyIntro:
-	.string "If you just float in the sea like\n"
-	.string "this, POKéMON come around to play.$"
+	.string "I find lots of cool stuff in\n"
+	.string "the ocean when I'm swimming.\p"
+	.string "Look! A car battery!$"
 
 Route124_Text_JennyDefeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "You can't have my\n"
+	.string "car battery.$"
 
 Route124_Text_JennyPostBattle:
-	.string "While swimming, I noticed that some\n"
-	.string "POKéMON attack, and some just watch.\p"
-	.string "I guess POKéMON have personalities\n"
-	.string "of their own.$"
+	.string "It's important to throw your\n"
+	.string "used car batteries in the ocean\l"
+	.string "to feed the electric eels.$"
 
 Route124_Text_JennyRegister:
-	.string "It's only on a whim, but maybe I'll get\n"
-	.string "you to register me in your POKéNAV.$"
+	.string "Let me get your number so\n"
+	.string "we can get batteries together!$"
 
 Route124_Text_JennyRematchIntro:
-	.string "If you just float in the sea like this,\n"
-	.string "TRAINERS challenge you!$"
+	.string "Why would they take the worst character\n"
+	.string "from TF2, and put them in overwatch?$"
 
 Route124_Text_JennyRematchDefeat:
 	.string "That's strange…\n"
-	.string "I lost again…$"
+	.string "The devs are strange…$"
 
 Route124_Text_JennyPostRematch:
-	.string "This has nothing to do with anything,\n"
-	.string "but maybe I'll visit the TRICK HOUSE.$"
+	.string "Insta kill long range options\n"
+	.string "in class based first person shooters \l"
+	.string "just aren't fun in general.\p"
+	.string "Have the devs learned nothing\l"
+	.string "from the game they copied?$"
 
 Route124_Text_GraceIntro:
-	.string "I'm growing bored of swimming…\n"
-	.string "How about a battle?$"
+	.string "I'm knowledgable but not always right!$"
 
 Route124_Text_GraceDefeat:
-	.string "I had no idea that you were\n"
-	.string "this strong!$"
+	.string "Who am I kidding...\n"
+	.string "Who would fall in love with a\l"
+	.string "chicken with its head cut off.$"
 
 Route124_Text_GracePostBattle:
-	.string "All the effort you put in must have\n"
-	.string "made you this strong.$"
+	.string "I just wanted to be a star\n"
+	.string "exploding in the night...$"
 
 Route124_Text_ChadIntro:
 	.string "Fufufufu… I dive deep underwater\n"
