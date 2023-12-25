@@ -546,7 +546,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
             .power = 40,
-            .accuracy = 100,
+            .accuracy = 90,
         #elif B_UPDATED_MOVE_DATA == GEN_5 || B_UPDATED_MOVE_DATA == GEN_6
             .power = 50,
             .accuracy = 100,
@@ -641,7 +641,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DOUBLE_EDGE] =
     {
         .effect = EFFECT_RECOIL_33,
-        .power = 120,
+        .power = 125,
         .type = TYPE_VIABLE,
         .accuracy = 100,
         .pp = 15,
@@ -1210,7 +1210,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .pp = 20,
         #endif
         .effect = EFFECT_ABSORB,
-        .power = 25,
+        .power = 30,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .secondaryEffectChance = 0,
@@ -1296,7 +1296,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SOLAR_BEAM] =
     {
         .effect = EFFECT_SOLAR_BEAM,
-        .power = 125,
+        .power = 105,
         .type = TYPE_LIGHT,
         .accuracy = 100,
         .pp = 10,
@@ -3410,7 +3410,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_OUTRAGE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 120,
+            .power = 125,
             .pp = 10,
         #elif B_UPDATED_MOVE_DATA == GEN_4
             .power = 120,
@@ -3525,7 +3525,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_FALSE_SWIPE,
         .power = 75,
-        .type = TYPE_DARK,
+        .type = TYPE_FAKE,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3880,7 +3880,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PURSUIT] =
     {
         .effect = EFFECT_PURSUIT,
-        .power = 40,
+        .power = 70,
         .type = TYPE_HUNT,
         .accuracy = 100,
         .pp = 20,
@@ -4769,7 +4769,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_REVENGE] =
     {
         .effect = EFFECT_REVENGE,
-        .power = 60,
+        .power = 70,
         .type = TYPE_EVIL,
         .accuracy = 100,
         .pp = 10,
@@ -4855,7 +4855,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
-        .flags = FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_DMG_UNDERGROUND,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
@@ -8546,7 +8546,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .power = 50,
         #endif
         .effect = EFFECT_HEX,
-        .type = TYPE_GHOST,
+        .type = TYPE_WIZARD,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,

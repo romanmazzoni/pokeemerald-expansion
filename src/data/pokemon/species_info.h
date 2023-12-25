@@ -204,10 +204,10 @@
         .baseHP        = 50,                          \
         .baseAttack    = 65,                          \
         .baseDefense   = 107,                         \
-        .baseSpeed     = 86,                          \
+        .baseSpeed     = 89,                          \
         .baseSpAttack  = 105,                         \
         .baseSpDefense = 107,                         \
-        .types = { TYPE_ELECTRIC, type , TYPE_GHOST, TYPE_GHOST},             \
+        .types = { TYPE_ELECTRIC, type , TYPE_TECH, TYPE_LIFE},             \
         .catchRate = 45,                              \
         .expYield = 182,                              \
         .evYield_Speed     = 1,                       \
@@ -9205,12 +9205,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GLALIE] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 80,
-        .baseDefense   = 80,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
+        .baseHP        = 86,
+        .baseAttack    = 86,
+        .baseDefense   = 86,
+        .baseSpeed     = 86,
+        .baseSpAttack  = 86,
+        .baseSpDefense = 86,
         .types = { TYPE_SNOW, TYPE_EVIL, TYPE_HARD, TYPE_BALL},
         .catchRate = 75,
         .expYield = 168,
@@ -9317,7 +9317,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_HUNTAIL] =
     {
-        .baseHP        = 58,
+        .baseHP        = 65,
         .baseAttack    = 104,
         .baseDefense   = 105,
         .baseSpeed     = 52,
@@ -9341,7 +9341,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GOREBYSS] =
     {
-        .baseHP        = 58,
+        .baseHP        = 65,
         .baseAttack    = 84,
         .baseDefense   = 105,
         .baseSpeed     = 52,
@@ -9390,7 +9390,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 83,
         .baseAttack    = 30,
-        .baseDefense   = 58,
+        .baseDefense   = 75,
         .baseSpeed     = 97,
         .baseSpAttack  = 79,
         .baseSpDefense = 75,
@@ -21899,7 +21899,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 120,
         .baseSpAttack  = 120,
         .baseSpDefense = 90,
-        .types = { TYPE_DRAGON, TYPE_FLYING},
+        .types = { TYPE_LANCE, TYPE_MASSIVE, TYPE_REVERSE, TYPE_LOSER},
         .catchRate = 45,
         .expYield = 315,
         .evYield_Attack    = 3,
@@ -23649,7 +23649,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GASTRODON_EAST_SEA] = GASTRODON_SPECIES_INFO(BODY_COLOR_BLUE),
 
-    [SPECIES_ROTOM_HEAT]  = ROTOM_FORM_SPECIES_INFO(TYPE_FIRE, FLIP),
+    [SPECIES_ROTOM_HEAT]  = ROTOM_FORM_SPECIES_INFO(TYPE_SWEET, FLIP),
     [SPECIES_ROTOM_WASH]  = ROTOM_FORM_SPECIES_INFO(TYPE_WATER, NO_FLIP),
     [SPECIES_ROTOM_FROST] = ROTOM_FORM_SPECIES_INFO(TYPE_ICE, FLIP),
     [SPECIES_ROTOM_FAN]   = ROTOM_FORM_SPECIES_INFO(TYPE_FLYING, FLIP),

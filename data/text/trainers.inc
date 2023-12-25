@@ -3082,22 +3082,21 @@ Route121_Text_VanessaDefeat:
 	.string "This isn't what I meant!$"
 
 Route121_Text_VanessaPostBattle:
-	.string "I'm going to a CONTEST in LILYCOVE.\p"
-	.string "My POKéMON should have no problem\n"
-	.string "sweeping the MASTER CLASS.$"
+	.string "You...\p"
+	.string "You killed him!$"
 
 Route121_Text_WalterIntro:
 	.string "With my POKéMON, I have traveled\n"
 	.string "to the world's four corners.\p"
-	.string "You might say I have some confidence\n"
-	.string "in my abilities.$"
+	.string "I believe that the earth\n"
+	.string "is flat!$"
 
 Route121_Text_WalterDefeat:
-	.string "Ah, well played.$"
+	.string "Round earther...$"
 
 Route121_Text_WalterPostBattle:
-	.string "I would like to circle the globe once\n"
-	.string "again with my POKéMON.$"
+	.string "If the earth isn't flat, why\n"
+	.string "can't I see canada from here?$"
 
 Route121_Text_WalterRegister:
 	.string "Your POKéMON prowess is remarkable.\n"
@@ -3118,16 +3117,17 @@ Route121_Text_WalterPostRematch:
 	.string "considered strong, even overseas.$"
 
 Route121_Text_TammyIntro:
-	.string "There are powers beyond our\n"
+	.string "There are powers beyond your\n"
 	.string "understanding in the world…$"
 
 Route121_Text_TammyDefeat:
-	.string "I have lost…$"
+	.string "This battle was beyond$"
+	.string "your understanding."
 
 Route121_Text_TammyPostBattle:
-	.string "MT. PYRE…\n"
-	.string "There is a mysterious power\l"
-	.string "at work there…$"
+	.string "MT. PYRE…\p"
+	.string "Even a mountain you\n"
+	.string "cannot comprehend...$"
 
 Route121_Text_KateIntro:
 	.string "KATE: Together, we're fearless!\n"
@@ -3148,31 +3148,31 @@ Route121_Text_KateNotEnoughMons:
 	.string "That would be bullying.$"
 
 Route121_Text_JoyIntro:
-	.string "JOY: Together, we're fearless!\n"
-	.string "We'll demonstrate how tough we are!$"
+	.string "JOY: Alone we're losers!\n"
+	.string "That's why we fight together!$"
 
 Route121_Text_JoyDefeat:
-	.string "JOY: Please forgive me, KATE!$"
+	.string "JOY: She was supposed to carry!$"
 
 Route121_Text_JoyPostBattle:
-	.string "JOY: Ehehe, I'll have to train with KATE,\n"
-	.string "my senior student partner, again.$"
+	.string "JOY: I'm a loser alone but\n"
+	.string "playing with her is much worse.$"
 
 Route121_Text_JoyNotEnoughMons:
 	.string "JOY: You need at least two POKéMON\n"
 	.string "if you're going to challenge us!$"
 
 Route121_Text_JessicaIntro:
-	.string "Stop! Have a good look at my precious\n"
-	.string "POKéMON!$"
+	.string "I was caught in the middle\n"
+	.string "of a railroad track.$"
 
 Route121_Text_JessicaDefeat:
-	.string "Oh, how dare you!\n"
-	.string "Don't take it so seriously!$"
+	.string "You've been...\n"
+	.string "Thundershocked!!$"
 
 Route121_Text_JessicaPostBattle:
-	.string "Maybe I'll go catch more POKéMON at\n"
-	.string "the SAFARI.$"
+	.string "I got thundershocked?\n"
+	.string "You mean thunderstruck?$"
 
 Route121_Text_JessicaRegister:
 	.string "I took it easy on you this time!\n"
@@ -3200,12 +3200,12 @@ Route121_Text_CristinDefeat:
 	.string "You're horrid!$"
 
 Route121_Text_CristinPostBattle:
-	.string "I didn't expect to lose this easily…\n"
-	.string "I'll win next time!$"
+	.string "You played so poorly I'm counting it.\n"
+	.string "I win that 9 out of 10 times.$"
 
 Route121_Text_CristinRegister:
-	.string "That was total humiliation!\n"
-	.string "I won't forget you…\l"
+	.string "You win, but I never\n"
+	.string "forget, never forgive!\l"
 	.string "Hand over your POKéNAV!$"
 
 Route121_Text_CristinRematchIntro:
@@ -3223,66 +3223,60 @@ Route121_Text_CristinPostRematch:
 	.string "I can't believe this is happening…$"
 
 Route121_Text_CaleIntro:
-	.string "Can't you see that I have all this\n"
-	.string "stuff with me?\p"
-	.string "Despite that, you still insist that\n"
-	.string "we battle?$"
+	.string "Oh careful! My wife has a strict\n"
+	.string "policy of no knives in the house,\l"
+	.string "and I have a strict policy of\l"
+	.string "not pissing off my wife!$"
 
 Route121_Text_CaleDefeat:
-	.string "Of course I lost!\n"
-	.string "I'm holding stuff in both hands!$"
+	.string "This is how rainbow dies...$"
 
 Route121_Text_CalePostBattle:
-	.string "I bought too much stuff at\n"
-	.string "the LILYCOVE DEPT. STORE.\p"
-	.string "It's up the road from here.\n"
-	.string "I wish I had a BAG like yours.$"
+	.string "The disgrace is yours.$"
 
 Route121_Text_MylesIntro:
 	.string "There's nothing I love more than\n"
 	.string "checking out other people's POKéMON!$"
 
 Route121_Text_MylesDefeat:
-	.string "Super awesome!$"
+	.string "Losing is awesome too!$"
 
 Route121_Text_MylesPostBattle:
-	.string "They're great, your POKéMON!\n"
-	.string "How do you raise them?$"
+	.string "You're pokemon aren't very\n"
+	.string "cool, but atleast losing was fun!$"
 
 Route121_Text_PatIntro:
-	.string "I want everybody to see the POKéMON\n"
-	.string "I've raised!$"
+	.string "Now I can see every\n"
+	.string "single possibility!$"
 
 Route121_Text_PatDefeat:
-	.string "Wow!\n"
-	.string "Spectacular!$"
+	.string "I guess it's half timing and\n"
+	.string "the other half's luck!$"
 
 Route121_Text_PatPostBattle:
-	.string "I raise every POKéMON with the same\n"
-	.string "love and care--I don't pick favorites.$"
+	.string "Promise you kid,\n"
+	.string "I'll give more then I get.$"
 
 Route121_Text_MarcelIntro:
-	.string "My POKéMON have never tasted defeat!\n"
-	.string "On their next win, I'm entering them\l"
-	.string "in CONTESTS.$"
+	.string "There are 3 steps to baking.\n"
+	.string "Let's start with step one.$"
 
 Route121_Text_MarcelDefeat:
-	.string "Oh, now what happened here?$"
+	.string "On to step 2...$"
 
 Route121_Text_MarcelPostBattle:
-	.string "I may have to train my gang some more\n"
-	.string "before entering any CONTEST.$"
+	.string "I was cooking baklava in that rotom.\n"
+	.string "Now the dish is gonna be ruined.$"
 
 Route123_Text_WendyIntro:
-	.string "Want to determine how strong you are?\n"
-	.string "I'll be the test!$"
+	.string "Who owned the sports bar?$"
 
 Route123_Text_WendyDefeat:
-	.string "You passed with flying colors!$"
+	.string "I am very confused right now.$"
 
 Route123_Text_WendyPostBattle:
-	.string "To best even me…\n"
-	.string "Your strength is marvelous!$"
+	.string "You... You worked for home\n"
+	.string "improvement the show?$"
 
 Route123_Text_BraxtonIntro:
 	.string "You seem to have a big collection\n"
