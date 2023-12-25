@@ -518,7 +518,7 @@ Route105_Text_JosueDefeated:
 
 Route105_Text_JosuePostBattle:
 	.string "That was a joke.\n"
-	.string "Please dont hurt me JoJo fans.$"
+	.string "Please don't hurt me JoJo fans.$"
 
 Route106_Text_ElliotIntro:
 	.string "This is the place you end up\n"
@@ -3279,71 +3279,66 @@ Route123_Text_WendyPostBattle:
 	.string "improvement the show?$"
 
 Route123_Text_BraxtonIntro:
-	.string "You seem to have a big collection\n"
-	.string "of GYM BADGES.\p"
-	.string "Let me see if you're actually worthy of\n"
-	.string "those BADGES!$"
+	.string "Do you have any problems\n"
+	.string "with tardiness?\p"
+	.string "Alright you're hired!$"
 
 Route123_Text_BraxtonDefeat:
-	.string "Oh, you're worthy, all right!$"
+	.string "Often belligerent?$"
 
 Route123_Text_BraxtonPostBattle:
-	.string "You did your BADGES proud in that\n"
-	.string "match!$"
+	.string "You're a poor communicator.\n"
+	.string "I'll have to let you go.$"
 
 Route123_Text_VioletIntro:
-	.string "They say that good times are filled\n"
-	.string "with good aromas.$"
+	.string "You don't have the nerve to\n"
+	.string "compete. You scared?$"
 
 Route123_Text_VioletDefeat:
-	.string "Oh…\n"
-	.string "I smell the bitter scent of misery…$"
+	.string "Terrified, mortified,\n"
+	.string "petrified...$"
 
 Route123_Text_VioletPostBattle:
-	.string "The BERRY MASTER's garden is filled\n"
-	.string "with uplifting fragrances.$"
+	.string "Stupefied, by you!$"
 
 Route123_Text_CameronIntro:
-	.string "Being a psychic is about willpower.\p"
-	.string "I've willed myself not to lose to\n"
-	.string "anyone. That makes me strong!$"
+	.string "Hi can I speak to champ?\p"
+	.string "Who is champ?$"
 
 Route123_Text_CameronDefeat:
-	.string "I feel sad…$"
+	.string "Hello... And goodbye...$"
 
 Route123_Text_CameronPostBattle:
-	.string "Being a psychic is about willpower.\n"
-	.string "I thought I wouldn't lose to you…$"
+	.string "I could never actually handle\n"
+	.string "a spit swapping makeout match...$"
 
 Route123_Text_CameronRegister:
-	.string "I sense it!\n"
-	.string "You and I shall battle again!\l"
-	.string "I can't tell if I'll win, though…\p"
-	.string "Let's see your POKéNAV.$"
+	.string "Not interested.\n"
+	.string "Stop calling my house.$"
 
 Route123_Text_CameronRematchIntro:
-	.string "I've convinced myself that I won't\n"
-	.string "lose anymore. That makes me strong!$"
+	.string "AND HIS NAME IS JOHN CENA!$"
 
 Route123_Text_CameronRematchDefeat:
-	.string "I feel sad…$"
+	.string "Thats exactly what the undertaker said…$"
 
 Route123_Text_CameronPostRematch:
-	.string "I should train at MT. PYRE…\n"
-	.string "I'll never beat you this way…$"
+	.string "Yeah. I'm calling the police.\n"
+	.string "Good luck to you. have a nice day.$"
 
 Route123_Text_JackiIntro:
-	.string "Don't be too happy if your POKéMON\n"
-	.string "develop psychic powers.\p"
-	.string "You need to refine those powers to\n"
-	.string "make them really useful.$"
+	.string "I was thinking about why so many\n"
+	.string "in the radical left participate\l"
+	.string "in speedrunning.\p"
+	.string "The reason is the left's lack\n"
+	.string "of work ethic!$"
 
 Route123_Text_JackiDefeat:
-	.string "Overwhelmed!$"
+	.string "Go fast rather than do it right...$"
 
 Route123_Text_JackiPostBattle:
-	.string "We all have psychic powers.\n"
-	.string "We've just forgotten how to use them.$"
+	.string "I lost,\n"
+	.string "in a petersonian sense...$"
 
 Route123_Text_JackiRegister:
 	.string "I would like to face you again.\n"
@@ -3361,60 +3356,56 @@ Route123_Text_JackiPostRematch:
 	.string "That could be a psychic power, too.$"
 
 Route123_Text_MiuIntro:
-	.string "MIU: Hello, TRAINER. I hope your\n"
-	.string "POKéMON won't cry when they lose.$"
+	.string "MIU: Don't go breaking my heart$"
 
 Route123_Text_MiuDefeat:
-	.string "MIU: Uh-oh, we lost.$"
+	.string "MIU: Honey I get restless.$"
 
 Route123_Text_MiuPostBattle:
-	.string "MIU: TRAINER, your POKéMON are\n"
-	.string "strong because you are friends.$"
+	.string "MIU: When I was down\n"
+	.string "I was your clown..$"
 
 Route123_Text_MiuNotEnoughMons:
 	.string "MIU: It's no fun to battle if you\n"
 	.string "don't have two POKéMON.$"
 
 Route123_Text_YukiIntro:
-	.string "YUKI: Okay!\n"
-	.string "We're beating the TRAINER's POKéMON!$"
+	.string "YUKI: I couldn't if I tried!$"
 
 Route123_Text_YukiDefeat:
-	.string "YUKI: Uh-oh, we lost.$"
+	.string "YUKI: Baby you're not kind.$"
 
 Route123_Text_YukiPostBattle:
-	.string "YUKI: Why are you so strong?\n"
-	.string "We've never lost before.$"
+	.string "YUKI: Right from the start,\n"
+	.string "I gave you my heart...$"
 
 Route123_Text_YukiNotEnoughMons:
 	.string "YUKI: It's no fun to battle if you\n"
 	.string "don't have two POKéMON.$"
 
 Route123_Text_KindraIntro:
-	.string "MT. PYRE…\n"
-	.string "Where the spirits of POKéMON sleep…\l"
-	.string "Will your POKéMON sleep?$"
+	.string "So confirmed, santa's\n"
+	.string "number one healper is a squirrel!$"
 
 Route123_Text_KindraDefeat:
-	.string "Overflowing with vitality…$"
+	.string "I would really prefer if\n"
+	.string "you would be quiet.$"
 
 Route123_Text_KindraPostBattle:
-	.string "MT. PYRE…\n"
-	.string "Where the spirits of POKéMON sleep…\p"
-	.string "It must overflow with a power that\n"
-	.string "soothes spirits…$"
+	.string "But yes.\n"
+	.string "You are correct.$"
 
 Route123_Text_FernandoIntro:
-	.string "I'll turn your lights out while\n"
-	.string "I rip through this tune!$"
+	.string "I speedrun super mario 64!\n"
+	.string "My talent will suprise you!$"
 
 Route123_Text_FernandoDefeat:
-	.string "Hey, hold it!\n"
-	.string "I was still playing the intro!$"
+	.string "Wait that isn't a mechanic.\n"
+	.string "That... That can't happen...$"
 
 Route123_Text_FernandoPostBattle:
-	.string "You're rock steady.\n"
-	.string "I'd like to write a tune about you.$"
+	.string "There is no way I just lost\n"
+	.string "to a cosmic ray bit flip...$"
 
 Route123_Text_FernandoRegister:
 	.string "The next time, lend your ears to\n"
@@ -3434,28 +3425,32 @@ Route123_Text_FernandoPostRematch:
 	.string "by my tune, you'd lose.$"
 
 Route123_Text_DavisIntro:
-	.string "This is my awesome BUG POKéMON!\n"
-	.string "My big brother got it for me.$"
+	.string "I get up at 12 and start\n"
+	.string "work at 1.\p"
+	.string "Take an hour lunch and then\n"
+	.string "at 2...$"
 
 Route123_Text_DavisDefeat:
-	.string "Waaaah!\n"
-	.string "You meanie!$"
+	.string "I'm done.$"
 
 Route123_Text_DavisPostBattle:
-	.string "Don't tell my brother I lost.\n"
-	.string "You have to keep it a secret!$"
+	.string "This was a jolly ol town.\p"
+	.string "Then you showed up.$"
 
 Route123_Text_JazmynIntro:
-	.string "My confidence will get a boost by\n"
-	.string "beating someone obviously strong!$"
+	.string "You look like the type of person\n"
+	.string "who is gonna save the world\l"
+	.string "from some dumb legendary pokemon.\p"
+	.string "Not if I can stop you!$"
 
 Route123_Text_JazmynDefeat:
-	.string "There goes my confidence…$"
+	.string "You might actually be able\n"
+	.string "to save the world.$"
 
 Route123_Text_JazmynPostBattle:
-	.string "They say that you can't judge a person\n"
-	.string "by their appearance.\p"
-	.string "But often, their looks don't lie…$"
+	.string "Whelp. you seem pretty strong.\n"
+	.string "I guess there's no reason\l"
+	.string "to help you at all.$"
 
 Route123_Text_FrederickIntro:
 	.string "Hello, child!\n"
