@@ -612,6 +612,7 @@ gSongTable::
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
 	song Ponce, 0, 0
+	song mus_throughthefireandflames, 0, 0
 
 
 	.align 2

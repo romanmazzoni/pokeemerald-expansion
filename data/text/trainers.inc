@@ -2260,7 +2260,7 @@ Route116_Text_DawsonDefeat:
 Route116_Text_DawsonPostBattle:
 	.string "I'm done with team rocket!\n"
 	.string "They suck!\p"
-	.string "...........\P"
+	.string "...........\p"
 	.string "I'm gonna try to join team magma.$"
 
 Route116_Text_DevanIntro:
