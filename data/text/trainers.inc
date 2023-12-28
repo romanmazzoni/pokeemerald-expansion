@@ -3678,78 +3678,71 @@ Route124_Text_DeclanPostBattle:
 	.string "Come on!$"
 
 Route124_Text_IsabellaIntro:
-	.string "I'm not going to lose to some\n"
-	.string "surfer TRAINER.$"
+	.string "Resto chesto!$"
 
 Route124_Text_IsabellaDefeat:
-	.string "I've only got sweat in my eyes!\n"
-	.string "I am not crying!$"
-
+	.string "I fell asleep.$
+ 
 Route124_Text_IsabellaPostBattle:
-	.string "You can find pretty colored shards\n"
-	.string "of things around here.$"
+	.string "Resto chesto is my favorite combo.\n"
+	.string "Where can I get chesto berries?$"
 
 Route125_Text_NolenIntro:
-	.string "I heard you approaching, so I hung\n"
-	.string "around for you!$"
+	.string "DRACO METEOR!!!$
 
 Route125_Text_NolenDefeat:
-	.string "I surrender!$"
+	.string "DRACO METEOR!!!$"
 
 Route125_Text_NolenPostBattle:
-	.string "Sound travels faster in water than\n"
-	.string "it does through air.$"
+	.string "Did I run out of PP?$"
 
 Route125_Text_StanIntro:
-	.string "Hey, there!\n"
-	.string "Check out my sweet POKéMON!$"
+	.string "After it clicks curse here\n"
+	.string "it'll click curse 6 more times...$"
 
 Route125_Text_StanDefeat:
-	.string "I floundered…$"
+	.string "Charizard 1?$"
 
 Route125_Text_StanPostBattle:
-	.string "I was blown away by HORSEA's charm,\n"
-	.string "so I started swimming, too.$"
+	.string "Even if you plan everything meticulously\n"
+	.string "not everything can always\l"
+	.string "go your way.$"
 
 Route125_Text_TanyaIntro:
-	.string "I'm tired of swimming.\n"
-	.string "Are you up for a battle with me?$"
+	.string "I have double black ice Jager.\n"
+	.string "I'm too cool to stop!$"
 
 Route125_Text_TanyaDefeat:
-	.string "You're too much!$"
+	.string "Triple black ice?$"
 
 Route125_Text_TanyaPostBattle:
-	.string "Whew…\n"
-	.string "Which way is it to MOSSDEEP CITY?$"
+	.string "I got shotgun and pistol.\p"
+	.string "That counts as double right?$"
 
 Route125_Text_SharonIntro:
-	.string "How would you like to take on the\n"
-	.string "WATER-type POKéMON I raised?$"
+	.string "Hello world!$"
 
 Route125_Text_SharonDefeat:
-	.string "Lost it…$"
+	.string "Goodbye world...$"
 
 Route125_Text_SharonPostBattle:
-	.string "Your power… You're the real deal.\n"
-	.string "I'm amazed!$"
+	.string "I hate bug pokemon.$"
 
 Route125_Text_ErnestIntro:
-	.string "Ahoy! I'm a buff, tough SAILOR!\n"
-	.string "I've braved the world's seas!$"
+	.string "Hey, I've been trying to reach\n"
+	.string "you about your car's extended warrenty!$"
 
 Route125_Text_ErnestDefeat:
-	.string "Gwrroooar!\n"
-	.string "I couldn't win!$"
+	.string "Don't hang up!$"
 
 Route125_Text_ErnestPostBattle:
-	.string "The tide ebbs and flows inside the\n"
-	.string "SHOAL CAVE.\p"
-	.string "By the way, it's about six hours from\n"
-	.string "high tide to low tide. Did you know?$"
+	.string "Do you not care about your\n"
+	.string "car's extended warrenty?$"
 
 Route125_Text_ErnestRegister:
-	.string "Register me in your POKéNAV,\n"
-	.string "and I'll tell you something good.$"
+	.string "I need you to verify that you are\n"
+	.string "the owner of your car. Please provide\l"
+	.string "your credit card details for proof,$"
 
 Route125_Text_ErnestRematchIntro:
 	.string "It's high time I get my payback\n"

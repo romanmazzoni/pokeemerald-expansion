@@ -1988,11 +1988,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Roland[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Nolen[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_Nolen[] = {
     {
     .iv = 0,
-    .lvl = 34,
-    .species = SPECIES_TENTACRUEL,
+    .lvl = 35,
+    .species = SPECIES_DRAGAPULT,
+    .moves = = {MOVE_DRACO_METEOR, MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE}
     }
 };
 

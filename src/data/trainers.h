@@ -1939,10 +1939,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("NOLEN"),
-        .items = {},
+        .items = {ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Nolen),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Nolen),
     },
 
     [TRAINER_STAN] =

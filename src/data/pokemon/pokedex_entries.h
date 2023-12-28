@@ -1142,7 +1142,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ONIX] =
     {
-        .categoryName = _("Rock Snake"),
+        .categoryName = _("Sturdy"),
         .height = 88,
         .weight = 2100,
         .description = gOnixPokedexText,
@@ -8563,7 +8563,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_AVALUGG] =
     {
-        .categoryName = _("Iceberg"),
+        .categoryName = _("Table"),
         .height = 20,
         .weight = 5050,
         .description = gAvaluggPokedexText,
@@ -9791,7 +9791,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_CINDERACE] =
     {
-        .categoryName = _("Striker"),
+        .categoryName = _("Twink Bunny"),
         .height = 14,
         .weight = 330,
         .description = gCinderacePokedexText,
