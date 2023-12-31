@@ -3996,70 +3996,64 @@ Route127_Text_AidanIntro:
 	.string "I am simply unaware.$"
 
 Route127_Text_AidanDefeat:
-	.string "Whew… I give up.$"
+	.string "Nice setup.$"
 
 Route127_Text_AidanPostBattle:
-	.string "There're lots of diving spots in\n"
-	.string "the sea around here.\p"
-	.string "You can spot them easily from the sky\n"
-	.string "because of their darker color.$"
+	.string "Dragon dance is really strong.\p"
+	.string "Tail whip is stronger.\p"
+	.string "I don't know what either of\n"
+	.string "these moves do.$"
 
 Route127_Text_KojiIntro:
-	.string "Run in your bare feet.\n"
-	.string "That will toughen up your soles!$"
+	.string "Heavy duty boots?\n"
+	.string "Choice band?\p"
+	.string "I usually try to use\n"
+	.string "Choice band?\p"
 
 Route127_Text_KojiDefeat:
-	.string "Yowch!\n"
-	.string "I got a pebble under a toenail!$"
+	.string "The bird flew?\n"
 
 Route127_Text_KojiPostBattle:
-	.string "Going barefoot feels great.\n"
-	.string "But your RUNNING SHOES are cool, too.$"
+	.string "Yeah, they tend to do that.$"
 
 Route127_Text_KojiRegister:
-	.string "This is what I do to people who beat me!\n"
-	.string "I hope we can do this again.$"
+	.string "Do you not know how birds work?\p"
+	.string "New to birds?.$"
 
 Route127_Text_KojiRematchIntro:
-	.string "I still run in my bare feet daily.\n"
-	.string "My soles are tough!$"
+	.string "Shrimp fried rice?$"
 
 Route127_Text_KojiRematchDefeat:
-	.string "Yowch!\n"
-	.string "Pebbles dug into my arches!$"
+	.string "There is no way a shrimp\n"
+	.string "fried that rice.$"
 
 Route127_Text_KojiPostRematch:
-	.string "Want to go barefoot for a while?\n"
-	.string "So I can try your RUNNING SHOES?$"
+	.string "It's the name of a food?\p"
+	.string "Yeah a food that a shrimp very\n"
+	.string "clearly did NOT fry.\n"
 
 Route127_Text_AthenaIntro:
-	.string "We should have a slow and methodical\n"
-	.string "match.$"
+	.string "What's upstairs?$"
 
 Route127_Text_AthenaDefeat:
-	.string "You didn't give me the chance to\n"
-	.string "do any strategizing.$"
+	.string "They can't talk!$"
 
 Route127_Text_AthenaPostBattle:
-	.string "When I'm surrounded by the blue sea\n"
-	.string "and sky, it feels as if time slows down.$"
+	.string "Maybe you mean up dog?\p"
+	.string "That's more of a proper greeting.$"
 
 Route128_Text_IsaiahIntro:
-	.string "EVER GRANDE CITY is still a long ways\n"
-	.string "away…$"
+	.string "Apartment complex?$"
 
 Route128_Text_IsaiahDefeat:
-	.string "My first victory seems to be far\n"
-	.string "away, too…$"
+	.string "I find it quite simple really.$"
 
 Route128_Text_IsaiahPostBattle:
-	.string "My whole life has been about losing,\n"
-	.string "but I will never give up!$"
+	.string "I also find losing quite simple.\n"
+	.string "Overwhelmingly simple.$"
 
 Route128_Text_IsaiahRegister:
-	.string "I know I'm not good now, but I think\n"
-	.string "I can win eventually.\p"
-	.string "Please register me in your POKéNAV.$"
+	.string "You a phone kind of guy?$"
 
 Route128_Text_IsaiahRematchIntro:
 	.string "I'm still feeling good. I'll keep on\n"
@@ -4073,21 +4067,18 @@ Route128_Text_IsaiahPostRematch:
 	.string "where I can eventually win…$"
 
 Route128_Text_KatelynIntro:
-	.string "You have to swim, cycle, and then run\n"
-	.string "a marathon in a triathlon.\p"
-	.string "It's a grueling race that consists\n"
-	.string "of three events.$"
+	.string "Road work ahead?$"
 
 Route128_Text_KatelynDefeat:
-	.string "A POKéMON battle is grueling, too…$"
+	.string "I sure hope it does!$"
 
 Route128_Text_KatelynPostBattle:
-	.string "I have to ride a BIKE next, but…\n"
-	.string "I'm about to throw in the towel…$"
+	.string "People working on the road?\n"
+	.string "But it still works right?$"
 
 Route128_Text_KatelynRegister:
-	.string "Well, I may as well make the best\n"
-	.string "of this. I'd like a rematch sometime.$"
+	.string "Call me if the road ever\n"
+	.string "stops working.$"
 
 Route128_Text_KatelynRematchIntro:
 	.string "A triathlon is long. But I guess the\n"
@@ -4103,54 +4094,51 @@ Route128_Text_KatelynPostRematch:
 	.string "challenges on VICTORY ROAD.$"
 
 Route128_Text_AlexaIntro:
-	.string "We've been working so hard to mount\n"
-	.string "a POKéMON LEAGUE challenge…\p"
-	.string "We can't afford to lose now!$"
+	.string "Wood fired pizza?\p"
 
 Route128_Text_AlexaDefeat:
 	.string "Oh!\n"
-	.string "How could this happen?!$"
+	.string "How is pizza gonna get a job now!$"
 
 Route128_Text_AlexaPostBattle:
-	.string "After all I've done to get here,\n"
-	.string "I won't give up after one setback.$"
+	.string "Getting wood fired makes pizza\n"
+	.string "taste better?\p"
+	.string "Please don't seek revenge on wood!\p"
 
 Route128_Text_RubenIntro:
-	.string "There is no stronger TRAINER than I!$"
+	.string "Based?$"
 
 Route128_Text_RubenDefeat:
-	.string "This can't be!$"
+	.string "Based on what!$"
 
 Route128_Text_RubenPostBattle:
-	.string "There probably is no stronger TRAINER\n"
-	.string "than you!$"
+	.string "Speaking ofk based. I need paste.$"
 
 Route128_Text_WayneIntro:
 	.string "I want to visit EVER GRANDE, so I\n"
 	.string "caught myself a POKéMON that knows\l"
-	.string "the move WATERFALL to crest the falls.$"
+	.string "the move WATERFALL to crest the falls.p"
+	.string "Using a hm is for losers.\n"
+	.string "Just catch a pokemon that knows waterfall.$"
 
 Route128_Text_WayneDefeat:
-	.string "I'm crestfallen!$"
+	.string "I'm waterfallen!$"
 
 Route128_Text_WaynePostBattle:
 	.string "Awww, phooey!\p"
 	.string "My POKéMON knows WATERFALL, but\n"
-	.string "I don't have the SOOTOPOLIS GYM BADGE!$"
+	.string "it's a terrible move!$"
 
 Route128_Text_HarrisonIntro:
 	.string "You're looking awfully tough.\n"
-	.string "I wonder if I can win?$"
+	.string "I'm feeling awfully submissive?$"
 
 Route128_Text_HarrisonDefeat:
-	.string "Ouch!\n"
-	.string "I guess it was impossible to win.$"
+	.string "Meow meow meow!$"
 
 Route128_Text_HarrisonPostBattle:
-	.string "There are tough TRAINERS galore\n"
-	.string "around EVER GRANDE.\p"
-	.string "Do you think I may be out\n"
-	.string "of my league?$"
+	.string "Nice match.\n"
+	.string "You really dominated me.$"
 
 Route128_Text_CarleeIntro:
 	.string "The sunlight seems to be more harsh\n"
