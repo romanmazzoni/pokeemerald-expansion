@@ -1993,7 +1993,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Nolen[] = {
     .iv = 0,
     .lvl = 35,
     .species = SPECIES_DRAGAPULT,
-    .moves = = {MOVE_DRACO_METEOR, MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_DRACO_METEOR, MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE}
     }
 };
 

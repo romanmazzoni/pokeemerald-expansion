@@ -3681,14 +3681,14 @@ Route124_Text_IsabellaIntro:
 	.string "Resto chesto!$"
 
 Route124_Text_IsabellaDefeat:
-	.string "I fell asleep.$
+	.string "I fell asleep.$"
  
 Route124_Text_IsabellaPostBattle:
 	.string "Resto chesto is my favorite combo.\n"
 	.string "Where can I get chesto berries?$"
 
 Route125_Text_NolenIntro:
-	.string "DRACO METEOR!!!$
+	.string "DRACO METEOR!!!$"
 
 Route125_Text_NolenDefeat:
 	.string "DRACO METEOR!!!$"
@@ -4131,7 +4131,7 @@ Route128_Text_WaynePostBattle:
 
 Route128_Text_HarrisonIntro:
 	.string "You're looking awfully tough.\n"
-	.string "I'm feeling awfully submissive?$"
+	.string "I'm feeling awfully submissive.$"
 
 Route128_Text_HarrisonDefeat:
 	.string "Meow meow meow!$"
@@ -4251,62 +4251,50 @@ Route130_Text_SantiagoDefeat:
 	.string "I needed to be a little less peaceful!$"
 
 Route130_Text_SantiagoPostBattle:
-	.string "Swimming and battling like this…\n"
-	.string "I'm one happy guy…$"
+	.string "Well...\n"
+	.string "I guess I'll drown...$"
 
 Route131_Text_RichardIntro:
-	.string "The sea is teeming with POKéMON.\n"
-	.string "It's not easy swimming, I tell you.$"
+	.string "The ump is the hardest gun in r6.$"
 
 Route131_Text_RichardDefeat:
-	.string "POKéMON raised by TRAINERS are\n"
-	.string "seriously tough…$"
+	.string "I shouldn't have played castle...$"
 
 Route131_Text_RichardPostBattle:
 	.string "Gasp… Gasp…\n"
-	.string "I'm wiped out…\p"
-	.string "The going's easy. It's the leaving\n"
-	.string "that's the hard part.\p"
-	.string "Will I have any energy left to make\n"
-	.string "the return trip?$"
+	.string "Too much recoil...$"
 
 Route131_Text_HermanIntro:
-	.string "The sea… The sea… The sea…\n"
-	.string "The sea as far as these eyes can see!\l"
-	.string "I'm sick and tired of the sea!$"
+	.string "I want it to be known that this\n"
+	.string "nuzlocke review is purely for\l"
+	.string "educational purposes.$"
 
 Route131_Text_HermanDefeat:
-	.string "Bleah!$"
+	.string "Wow you're trolling.$"
 
 Route131_Text_HermanPostBattle:
-	.string "Bored I am by the sea, but swim I must.\p"
-	.string "I'm a born swimmer!\n"
-	.string "That's what I am.$"
+	.string "I usually don't shit on people\n"
+	.string "in these reviews,\p"
+	.string "but you're horrible.$"
 
 Route131_Text_SusieIntro:
-	.string "Hi, sweetie, wait!\n"
-	.string "We should battle, you and I!$"
+	.string "Feeling silly!$"
 
 Route131_Text_SusieDefeat:
-	.string "You're tough in spite of the way\n"
-	.string "you look!$"
+	.string "Bleach!$"
 
 Route131_Text_SusiePostBattle:
-	.string "Did you see a guy over there who whines\n"
-	.string "that he's bored of the sea?\p"
-	.string "That's all talk.\n"
-	.string "He's hopelessly in love with the sea!$"
+	.string "I still played sillier than you.$"
 
 Route131_Text_KaraIntro:
-	.string "Why do men love bathing suits so much?\p"
-	.string "They all ogle me!$"
+	.string "Cinderace use thunderbolt!$"
 
 Route131_Text_KaraDefeat:
-	.string "I'm out of my depth!$"
+	.string "Why won't my pokemon listen to me?$"
 
 Route131_Text_KaraPostBattle:
-	.string "Maybe it's not my bathing suit that\n"
-	.string "makes men look. It must be my beauty!$"
+	.string "Just because my pokemon isn't a cinderace\n"
+	.string "doesn't mean it shouldn't respond anyway!$"
 
 Route131_Text_ReliIntro:
 	.string "RELI: We'll work together as siblings\n"
@@ -4317,173 +4305,155 @@ Route131_Text_ReliDefeat:
 	.string "worked together…$"
 
 Route131_Text_ReliPostBattle:
-	.string "RELI: The people of PACIFIDLOG are\n"
-	.string "together with the sea and POKéMON from\l"
-	.string "the time they are born.$"
+	.string "RELI: Training hard and fighting\n"
+	.string "battles together! Thats what\l"
+	.string "family is for!$"
 
 Route131_Text_ReliNotEnoughMons:
 	.string "RELI: You don't have two POKéMON?\n"
 	.string "We can't enjoy a battle, then.$"
 
 Route131_Text_IanIntro:
-	.string "IAN: I'm doing my best together with\n"
-	.string "my sis!$"
+	.string "IAN: I'm not related to her!\n"
+	.string "don't tell her though!$"
 
 Route131_Text_IanDefeat:
-	.string "IAN: I did my best with my sis,\n"
-	.string "but we still couldn't win…$"
+	.string "IAN: I threw on purpose,\n"
+	.string "lol.$"
 
 Route131_Text_IanPostBattle:
-	.string "IAN: You know how PACIFIDLOG is\n"
-	.string "a floating town?\p"
-	.string "So, wherever there is the sea,\n"
-	.string "that's a part of PACIFIDLOG!$"
+	.string "IAN: She is so dumb\n"
+	.string "does she not remember what\l"
+	.string "her brother looked like?$"
 
 Route131_Text_IanNotEnoughMons:
 	.string "IAN: If you have two POKéMON,\n"
 	.string "we'll take you on!$"
 
 Route131_Text_TaliaIntro:
-	.string "If you can beat me, I'll give you some\n"
-	.string "great information!$"
+	.string "Telephone line?\n"
+	.string "Give me some time!$"
 
 Route131_Text_TaliaDefeat:
 	.string "Oh?\n"
-	.string "Did I lose?$"
+	.string "I'm living in twilight.$"
 
 Route131_Text_TaliaPostBattle:
-	.string "There is an odd place nearby.\n"
-	.string "There's a huge tower there.\l"
-	.string "Why don't you go take a look?$"
+	.string "Doo-wop, doo-be-doo-doo-wop,\n"
+	.string "doo-wah, doo-lang.$"
 
 Route131_Text_KevinIntro:
-	.string "The people of PACIFIDLOG are\n"
-	.string "a peaceful bunch.\p"
-	.string "They never get angry.\n"
-	.string "That goes for me, too.$"
+	.string "Here you are with your faith\n"
+	.string "and your Peter pan advice!$"
 
 Route131_Text_KevinDefeat:
-	.string "Oops!$"
+	.string "You have no scars on your face?$"
 
 Route131_Text_KevinPostBattle:
-	.string "Tch! …Oh, wait.\n"
-	.string "I'm not angry. Honestly!\p"
-	.string "But, boy, you're strong!\n"
-	.string "Hahaha!$"
+	.string "But, how can you handle\n"
+	.string "pressure?$"
 
 Route132_Text_GilbertIntro:
-	.string "I used to catch colds all the time as\n"
-	.string "a kid, but I became totally fit after\l"
-	.string "I started swimming.$"
+	.string "Thats me in the spotlight!$"
 
 Route132_Text_GilbertDefeat:
-	.string "I crave more power…$"
+	.string "Losing my religion…$"
 
 Route132_Text_GilbertPostBattle:
-	.string "TRAINERS travel the fields and\n"
-	.string "mountains, so they must be fit, too.$"
+	.string "The slip. That brought me to\n"
+	.string "my knees...$"
 
 Route132_Text_DanaIntro:
-	.string "I try not to swim where the currents\n"
-	.string "are too strong.$"
+	.string "I'm five foot six.\n"
+	.string "That's why I usually spend my time in\l"
+	.string "the ocean. people can't see my height!$"
 
 Route132_Text_DanaDefeat:
-	.string "Oh, please, no!$"
+	.string "I got shorted a whole battle!$"
 
 Route132_Text_DanaPostBattle:
-	.string "If I get swept away, I'll lose all my\n"
-	.string "sense of place…$"
+	.string "Five foot six is inhumanely short.\n"
+	.string "I live a sad life...$"
 
 Route132_Text_RonaldIntro:
 	.string "Win or lose, you'll never know until\n"
 	.string "you try!$"
 
 Route132_Text_RonaldDefeat:
-	.string "Waah!\n"
-	.string "I sank in defeat!$"
+	.string "Nevermind...\n"
+	.string "I always lose...$"
 
 Route132_Text_RonaldPostBattle:
-	.string "I never battle when I know I'll win.\n"
-	.string "I like to battle at the razor's edge of\l"
-	.string "victory and defeat!$"
+	.string "I never battle when I know I'll win.\p"
+	.string "...........\p"
+	.string "Probably because I never win!$"
 
 Route132_Text_KiyoIntro:
-	.string "I contemplate POKéMON 24 hours a day.\n"
-	.string "How could you possibly beat me?$"
+	.string "The visions dancing in my mind!$"
 
 Route132_Text_KiyoDefeat:
-	.string "I lose.\n"
-	.string "I will concede defeat.$"
+	.string "I only meant to stay a while.$"
 
 Route132_Text_KiyoPostBattle:
-	.string "Urggh…\n"
-	.string "You're a POKéMON fanatic, aren't you?\p"
-	.string "You must contemplate POKéMON 24 hours\n"
-	.string "a day, don't you?$"
+	.string "I gave you time to steal\n"
+	.string "my mind away from me...$"
 
 Route132_Text_MakaylaIntro:
-	.string "I'm always with my husband,\n"
-	.string "but I can win even without him.$"
+	.string "burgir!$"
 
 Route132_Text_MakaylaDefeat:
-	.string "Oh, I guess I wasn't good enough.$"
+	.string "..........$"
 
 Route132_Text_MakaylaPostBattle:
-	.string "That young man over there looks just\n"
-	.string "like my husband when he was young.\p"
-	.string "He's making me blush!$"
+	.string "burgir!$"
 
 Route132_Text_JonathanIntro:
-	.string "Someone's been watching me intently.\n"
-	.string "Was it you?$"
+	.string "You wanna be tough?\n"
+	.string "Just beat it!$"
 
 Route132_Text_JonathanDefeat:
-	.string "Wow!\n"
-	.string "That's pretty strong, all right!$"
+	.string "You tricked me. You beat me,\n"
+	.string "and you tell me it's fair?$"
 
 Route132_Text_JonathanPostBattle:
-	.string "I can't shake this feeling that\n"
-	.string "someone's watching me.\p"
-	.string "I can't concentrate!$"
+	.string "It doesn't matter who's wrong\n"
+	.string "and who's right.\p"
+	.string "Just beat it.$"
 
 Route132_Text_PaxtonIntro:
-	.string "Now where could my wife have gone?\n"
-	.string "I'm always with her.\l"
-	.string "I wonder if I can win on my own.$"
+	.string "Paxton....\p"
+	.string "HALEEEEEEEEE!!!$"
 
 Route132_Text_PaxtonDefeat:
-	.string "Ah, I see that I couldn't manage\n"
-	.string "to win on my own after all.$"
+	.string "But I'm the Ceo\n"
+	.string "of Hamm Co...$"
 
 Route132_Text_PaxtonPostBattle:
-	.string "My wife must be looking for me.\n"
-	.string "I'd best go find her right away.$"
+	.string "We sell hams\n"
+	.string "and get in fights!$"
 
 Route132_Text_DarcyIntro:
 	.string "I liked training here by myself.\n"
-	.string "It's awful that all these people came!$"
+	.string "Too bad I have pokemon.$"
 
 Route132_Text_DarcyDefeat:
-	.string "Okay! I won't complain about other\n"
-	.string "people being here.$"
+	.string "My pokemon lost to you.$"
 
 Route132_Text_DarcyPostBattle:
-	.string "I suppose I can partner up with that\n"
-	.string "old man and challenge that other team.$"
+	.string "If it was me in that battle,\n"
+	.string "I would have clobbered your pokemon.$"
 
 Route133_Text_FranklinIntro:
-	.string "Did the currents carry you here, too?\n"
-	.string "This must have been fated.\l"
-	.string "Let's battle!$"
+	.string "I'll show you how to win a battle\n"
+	.string "Fight me!$"
 
 Route133_Text_FranklinDefeat:
-	.string "Strong!\n"
-	.string "Too much so!$"
+	.string "Perfect!\n"
+	.string "Just like that!$"
 
 Route133_Text_FranklinPostBattle:
-	.string "It's just my luck that a tough TRAINER\n"
-	.string "like you would drift here…\l"
-	.string "I must be cursed…$"
+	.string "Wow!\p"
+	.string "I am such a good teacher!$"
 
 Route133_Text_DebraIntro:
 	.string "I've led a life of woe and misery…\n"
@@ -4494,44 +4464,49 @@ Route133_Text_DebraDefeat:
 	.string "Another loss…$"
 
 Route133_Text_DebraPostBattle:
-	.string "A life adrift…\n"
-	.string "I don't want it anymore!$"
+	.string "A life adrift…\p"
+	.string "Oh well, life goes on and I\l"
+	.string "know it will be better. Work\l"
+	.string "hard and earn what you deserve.\p"
+	.string "Life will be better.$"
 
 Route133_Text_LindaIntro:
-	.string "Welcome!\n"
-	.string "I've been expecting you!$"
+	.string "I'm taking a shot for every\n"
+	.string "pokemon that faints.$"
 
 Route133_Text_LindaDefeat:
-	.string "No! Please!$"
+	.string "I'm gonna be sick...$"
 
 Route133_Text_LindaPostBattle:
-	.string "A strong child TRAINER…\n"
-	.string "That's so annoying!$"
+	.string "I was gonna drink even if your\n"
+	.string "pokemon fainted.\p"
+	.string "I love drinking all the time.$"
 
 Route133_Text_WarrenIntro:
-	.string "I want to win like everyone else, but I\n"
-	.string "won't raise POKéMON like everyone else.$"
+	.string "Whats your win condition?$
 
 Route133_Text_WarrenDefeat:
-	.string "Darn it!\n"
-	.string "My way is still too slack!$"
+	.string "Play poorly, win anyway?\n"
+	.string "What a horrible win con!$"
 
 Route133_Text_WarrenPostBattle:
-	.string "It's way more fun to do things the way\n"
-	.string "I want than to be like everybody else.\l"
-	.string "I mean, that's obvious!$"
+	.string "I trash talk that way my opponent\n"
+	.string "plays worse.\p"
+	.string "It doesn't work but I've lost the\n"
+	.string "ability to talk like a normal person.$"
 
 Route133_Text_BeckIntro:
 	.string "I came all the way out here with my\n"
 	.string "BIRD POKéMON.$"
 
 Route133_Text_BeckDefeat:
-	.string "You…\n"
-	.string "You're stunningly cool!$"
+	.string "I also came here with my\n"
+	.string "weak pokemon!$"
 
 Route133_Text_BeckPostBattle:
-	.string "I'd like to go back to FORTREE,\n"
-	.string "but I've grown to like this place, too.$"
+	.string "You're lucky I didn't use\n"
+	.string "my strong bird pokemon.$"
+	.string "It's a max level ho-ho.$"
 
 Route133_Text_MollieIntro:
 	.string "I must have battled thousands\n"
