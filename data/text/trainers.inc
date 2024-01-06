@@ -4483,7 +4483,7 @@ Route133_Text_LindaPostBattle:
 	.string "I love drinking all the time.$"
 
 Route133_Text_WarrenIntro:
-	.string "Whats your win condition?$
+	.string "Whats your win condition?$"
 
 Route133_Text_WarrenDefeat:
 	.string "Play poorly, win anyway?\n"
@@ -4572,7 +4572,7 @@ Route134_Text_HitoshiDefeat:
 	.string "… … … … … …$"
 
 Route134_Text_HitoshiPostBattle:
-	.string "Very annoying.$
+	.string "Very annoying.$"
 
 Route134_Text_AaronIntro:
 	.string "The savage tide in this area serves to\n"
