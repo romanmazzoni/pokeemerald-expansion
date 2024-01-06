@@ -4505,76 +4505,74 @@ Route133_Text_BeckDefeat:
 
 Route133_Text_BeckPostBattle:
 	.string "You're lucky I didn't use\n"
-	.string "my strong bird pokemon.$"
+	.string "my strong bird pokemon.\p"
 	.string "It's a max level ho-ho.$"
 
 Route133_Text_MollieIntro:
 	.string "I must have battled thousands\n"
-	.string "of times. I've lost count.$"
+	.string "of times. Maybe millions.$"
 
 Route133_Text_MollieDefeat:
-	.string "I may have lost thousands of times,\n"
-	.string "but a loss still stings.$"
+	.string "I just checked.\n"
+	.string "It was only 4 times.$"
 
 Route133_Text_MolliePostBattle:
-	.string "Keep at this, youngster. So you can\n"
-	.string "become like my husband and me.$"
+	.string "If I had battled more than 4 times,\n"
+	.string "I would have wiped the floor with you.$"
 
 Route133_Text_ConorIntro:
-	.string "Young people are too happy to go with\n"
-	.string "the flow. They're without direction.$"
+	.string "Imprisoned for 10,000 yeards...\n"
+	.string "You are not prepared!$"
 
 Route133_Text_ConorDefeat:
-	.string "You have a firm sense of purpose.$"
+	.string "You are now prepared...$"
 
 Route133_Text_ConorPostBattle:
-	.string "Don't let others lead you astray.\n"
-	.string "Don't lose direction as you grow older.$"
+	.string "You want to heal my scars?\p"
+	.string "I am my scars!$"
 
 Route134_Text_JackIntro:
-	.string "Even those POKéMON that can swim are\n"
-	.string "carried along by the rapid currents.$"
+	.string "What I want you got and it might\n"
+	.string "be hard to handle!$"
 
 Route134_Text_JackDefeat:
-	.string "Aiyeeeeh!$"
+	.string "Wow! You fight like a flame\n"
+	.string "that burns the candle!$"
 
 Route134_Text_JackPostBattle:
-	.string "I think POKéMON enjoy the fast-running\n"
-	.string "currents around these parts.$"
+	.string "You catch that team and\n"
+	.string "then you pull them all together?$"
 
 Route134_Text_LaurelIntro:
-	.string "My LUVDISC are looking for a fun\n"
-	.string "match. Will you join us?$"
+	.string "I'll throw this match for $1000.\n"
+	.string "deal?$"
 
 Route134_Text_LaurelDefeat:
-	.string "Oopsie!$"
+	.string "Dang I lost!$"
 
 Route134_Text_LaurelPostBattle:
-	.string "There's a collector who's after\n"
-	.string "the SCALES of LUVDISC.$"
+	.string "Alright.\p"
+	.string "Pay up bub.$"
 
 Route134_Text_AlexIntro:
-	.string "Okeydokey! That's enough rest, gang!\n"
-	.string "It's time for a match!$"
+	.string "I train a lot of bird pokemon.$"
 
 Route134_Text_AlexDefeat:
-	.string "Tuckered out again…$"
+	.string "And this bird you cannot change...$"
 
 Route134_Text_AlexPostBattle:
-	.string "My BIRD POKéMON get tired quickly after\n"
-	.string "a long flight…$"
+	.string "Lord help me I can't change...$"
 
 Route134_Text_HitoshiIntro:
-	.string "You're a POKéMON TRAINER.\n"
-	.string "No need for words. We battle now.$"
+	.string "You are not cute.\n"
+	.string "You are ugly and annoying.$"
 
 Route134_Text_HitoshiDefeat:
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 
 Route134_Text_HitoshiPostBattle:
-	.string "It was I who challenged you, and yet\n"
-	.string "I lost. I am deeply shamed…$"
+	.string "Very annoying.$
 
 Route134_Text_AaronIntro:
 	.string "The savage tide in this area serves to\n"
@@ -4586,57 +4584,47 @@ Route134_Text_AaronDefeat:
 Route134_Text_AaronPostBattle:
 	.string "We will return for more training at\n"
 	.string "METEOR FALLS.\p"
-	.string "If you'd like, you should go, too.\n"
-	.string "It will definitely toughen you up!$"
+	.string "If you'd like, you should go, too.\p"
+	.string "Steven awaits you!$"
 
 Route134_Text_KelvinIntro:
-	.string "O-our boat!\n"
-	.string "The tide carried it away!$"
+	.string "I love office!\n"
+	.string "I love the sawed off!$"
 
 Route134_Text_KelvinDefeat:
-	.string "Awawawawah!\n"
-	.string "Please, stop! Please!$"
+	.string "Who plays office like that?$"
 
 Route134_Text_KelvinPostBattle:
-	.string "If we can't SURF, how are we supposed\n"
-	.string "to get home?\p"
-	.string "Actually, I know a fainted POKéMON\n"
-	.string "can still SURF, but it feels wrong.$"
+	.string "Rushing on office is fundementally wrong.\p"
+	.string "Your tactics are bad and you\n"
+	.string "should feel bad!$"
 
 Route134_Text_MarleyIntro:
-	.string "Can your POKéMON dodge our\n"
-	.string "lightning-quick attacks?$"
+	.string "L did you know?$"
 
 Route134_Text_MarleyDefeat:
-	.string "I never knew such a technique existed!\n"
-	.string "You've defeated us thoroughly.$"
+	.string "Gods of death.$"
 
 Route134_Text_MarleyPostBattle:
-	.string "I haven't lost my passion for speed.\n"
-	.string "I will try harder.$"
+	.string "Love apples.$"
 
 Route134_Text_ReynaIntro:
-	.string "My POKéMON can't be taken down\n"
-	.string "easily!$"
+	.string "Olmec ending is really good!$"
 
 Route134_Text_ReynaDefeat:
-	.string "You're kidding!\n"
-	.string "Explain how I lost!$"
+	.string "Yama ending?$"
 
 Route134_Text_ReynaPostBattle:
-	.string "Haha!\n"
-	.string "You won, all right!\p"
-	.string "I'll work my way back up by taking on\n"
-	.string "TRAINERS I happen to meet!$"
+	.string "Solo eggplant ending??$"
 
 Route134_Text_HudsonIntro:
-	.string "Listen, have you seen another SAILOR\n"
-	.string "around here?$"
+	.string "Shoutout to jack.$"
 
 Route134_Text_HudsonDefeat:
-	.string "Now, that's something!$"
+	.string "I couldn't have done this\n"
+	.string "without him.$"
 
 Route134_Text_HudsonPostBattle:
-	.string "Our boat drifted out to sea.\p"
-	.string "My buddy's a timid fellow, so I'm\n"
-	.string "worried about him.$"
+	.string "I couldn't have lost\n"
+	.string "without him?\p"
+	.string "No, something else...$"
