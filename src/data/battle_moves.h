@@ -2116,7 +2116,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .power = 120,
         #endif
         .effect = EFFECT_BURN_HIT,
-        .type = TYPE_FIRE,
+        .type = TYPE_WIZARD,
         .accuracy = 85,
         .pp = 5,
         .secondaryEffectChance = 10,
@@ -5659,7 +5659,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SLICING_MOVE,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SLICING_MOVE | FLAG_HIGH_CRIT,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },

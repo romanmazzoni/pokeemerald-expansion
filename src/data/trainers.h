@@ -391,10 +391,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
         .trainerName = _("SHELLY"),
-        .items = {},
+        .items = {ITEM_POTION},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_ShellyWeatherInstitute),
+        .party = ITEM_DEFAULT_MOVES(sParty_ShellyWeatherInstitute),
     },
 
     [TRAINER_SHELLY_SEAFLOOR_CAVERN] =
@@ -403,10 +403,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
         .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
         .trainerName = _("SHELLY"),
-        .items = {},
+        .items = {ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_ShellySeafloorCavern),
+        .party = ITEM_DEFAULT_MOVES(sParty_ShellySeafloorCavern),
     },
 
     [TRAINER_ARCHIE] =
@@ -418,7 +418,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Archie),
+        .party = ITEM_DEFAULT_MOVES(sParty_Archie),
     },
 
     [TRAINER_LEAH] =
@@ -538,7 +538,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty1),
+        .party = ITEM_CUSTOM_MOVES(sParty_Dusty1),
     },
 
     [TRAINER_CHIP] =
@@ -2071,10 +2071,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
         .trainerPic = TRAINER_PIC_SWIMMER_M,
         .trainerName = _("JACK"),
-        .items = {},
+        .items = {ITEM_FULL_HEAL},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jack),
+        .party = EVERYTHING_CUSTOMIZED(sParty_Jack),
     },
 
     [TRAINER_DUDLEY] =

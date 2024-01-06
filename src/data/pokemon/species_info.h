@@ -1326,11 +1326,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_FEAROW] =
     {
-        .baseHP        = 68,
+        .baseHP        = 80,
         .baseAttack    = 99,
         .baseDefense   = 65,
         .baseSpeed     = 100,
-        .baseSpAttack  = 61,
+        .baseSpAttack  = 99,
         .baseSpDefense = 61,
         .types = { TYPE_FLYING, TYPE_SCARY, TYPE_VIABLE, TYPE_SCARY },
         .catchRate = 90,
