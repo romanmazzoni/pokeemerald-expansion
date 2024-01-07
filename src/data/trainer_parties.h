@@ -11729,7 +11729,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     },
     {
     .iv = 150,
-    .lvl = 76,
+    .lvl = 77,
     .species = SPECIES_PIKACHU,
     .heldItem = ITEM_LIGHT_BALL,
     .moves = {MOVE_SURF, MOVE_QUICK_ATTACK, MOVE_VOLT_SWITCH, MOVE_IRON_TAIL}
@@ -11754,7 +11754,7 @@ static const struct TrainerMonItemCustomMoves sParty_Stephen[] = {
     .iv = 200,
     .lvl = 75,
     .species = SPECIES_ARCEUS,
-    .heldItem = ITEM_WHITE_HERB,
+    .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_FEAR, MOVE_SPECIAL_BEAM_CANNON, MOVE_MAGNIRUDE, MOVE_YELL}
     },
     {
