@@ -3664,7 +3664,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 120,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_PSYCHIC, TYPE_UGLY,  TYPE_HUMAN, TYPE_UGLY},
+            .types = { TYPE_PSYCHIC, TYPE_UGLY,  TYPE_HUMAN, TYPE_NORMAL},
         #else
             .types = { TYPE_PSYCHIC, TYPE_PSYCHIC},
         #endif

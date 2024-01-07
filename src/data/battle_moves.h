@@ -5739,8 +5739,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_DRAGON_CLAW] =
     {
-        .effect = EFFECT_HIT,
-        .power = 80,
+        .effect = EFFECT_PURSUIT,
+        .power = 70,
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
@@ -5982,11 +5982,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SHOCK_WAVE] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 60,
+        .power = 70,
         .type = TYPE_ELECTRIC,
         .accuracy = 0,
         .pp = 20,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -8129,7 +8129,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_STORM_THROW] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 45,
         #else
             .power = 40,
         #endif
@@ -8839,7 +8839,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FROST_BREATH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 50,
         #else
             .power = 40,
         #endif
@@ -10393,7 +10393,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FIRST_IMPRESSION] =
     {
         .effect = EFFECT_FAKE_OUT,
-        .power = 90,
+        .power = 50,
         .type = TYPE_HUMAN,
         .accuracy = 100,
         .pp = 10,
@@ -12254,15 +12254,15 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_TRIPLE_AXEL] =
     {
-        .effect = EFFECT_TRIPLE_KICK,
+        .effect = EFFECT_FREEZE_HIT,
         .power = 20,
         .type = TYPE_ICE,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_THREE_STRIKES,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },

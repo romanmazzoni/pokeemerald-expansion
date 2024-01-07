@@ -3588,30 +3588,44 @@ static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
     .iv = 200,
     .lvl = 27,
-    .species = SPECIES_SPINDA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}
+    .species = SPECIES_GOTHORITA,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_AURORA_BEAM, MOVE_FIRST_IMPRESSION}
     },
     {
     .iv = 200,
     .lvl = 27,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FEINT_ATTACK}
+    .species = SPECIES_HITMONTOP,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_LUNGE, MOVE_FACADE, MOVE_TRIPLE_AXEL, MOVE_FIRST_IMPRESSION}
     },
     {
     .iv = 200,
     .lvl = 29,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}
+    .species = SPECIES_MR_MIME,
+    .heldItem = ITEM_PETAYA_BERRY,
+    .moves = {MOVE_PSYCHIC, MOVE_REFLECT, MOVE_MIRROR_COAT, MOVE_FIRST_IMPRESSION}
+    },
+    {
+    .iv = 200,
+    .lvl = 29,
+    .species = SPECIES_MANECTRIC,
+    .heldItem = ITEM_WISE_GLASSES,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_ICE_BEAM, MOVE_FIRST_IMPRESSION}
+    },
+    {
+    .iv = 200,
+    .lvl = 29,
+    .species = SPECIES_SAWK,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_STORM_THROW, MOVE_AQUA_TAIL, MOVE_REVENGE, MOVE_FIRST_IMPRESSION}
     },
     {
     .iv = 250,
     .lvl = 31,
-    .species = SPECIES_SLAKING,
+    .species = SPECIES_HARIYAMA,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FEINT_ATTACK}
+    .moves = {MOVE_BODY_SLAM, MOVE_YAWN, MOVE_PURSUIT, MOVE_FIRST_IMPRESSION}
     }
 };
 
@@ -3619,37 +3633,44 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     {
     .iv = 210,
     .lvl = 29,
-    .species = SPECIES_SWABLU,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PERISH_SONG, MOVE_MIRROR_MOVE, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}
+    .species = SPECIES_SANDACONDA,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_STICKY_WEB, MOVE_STEALTH_ROCK, MOVE_LEECH_SEED, MOVE_SANDSEAR_STORM}
     },
     {
     .iv = 210,
     .lvl = 29,
-    .species = SPECIES_TROPIUS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUNNY_DAY, MOVE_AERIAL_ACE, MOVE_SOLAR_BEAM, MOVE_SYNTHESIS}
+    .species = SPECIES_SANDSLASH,
+    .heldItem = ITEM_MENTAL_HERB,
+    .moves = {MOVE_SLASH, MOVE_TOXIC, MOVE_SAND_TOMB, MOVE_SANDSEAR_STORM}
     },
     {
     .iv = 210,
     .lvl = 30,
-    .species = SPECIES_PELIPPER,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_PROTECT, MOVE_AERIAL_ACE}
+    .species = SPECIES_DUSCLOPS,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_HYPNOSIS, MOVE_MAGNIFOOD, MOVE_SKULL_BASH, MOVE_SANDSEAR_STORM}
     },
     {
     .iv = 220,
     .lvl = 31,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_FURY_ATTACK, MOVE_STEEL_WING, MOVE_AERIAL_ACE}
+    .species = SPECIES_PALOSSAND,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_COVET, MOVE_DESTINY_BOND, MOVE_SANDSTORM, MOVE_SANDSEAR_STORM}
+    },
+    {
+    .iv = 220,
+    .lvl = 31,
+    .species = SPECIES_HELIOLISK,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SKY_UPPERCUT, MOVE_HEADBUTT, MOVE_PURSUIT, MOVE_SANDSEAR_STORM}
     },
     {
     .iv = 255,
-    .lvl = 33,
-    .species = SPECIES_ALTARIA,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
+    .lvl = 34,
+    .species = SPECIES_COFAGRIGUS,
+    .heldItem = ITEM_WEAKNESS_POLICY,
+    .moves = {MOVE_SECRET_SWORD, MOVE_OMINOUS_WIND, MOVE_CALM_MIND, MOVE_SANDSEAR_STORM}
     }
 };
 
