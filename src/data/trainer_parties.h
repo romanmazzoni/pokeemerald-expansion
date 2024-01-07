@@ -3505,30 +3505,37 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     {
     .iv = 200,
     .lvl = 20,
-    .species = SPECIES_VOLTORB,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROLLOUT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SHOCK_WAVE}
+    .species = SPECIES_PANSAGE,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_GROWTH, MOVE_MAGNIFOOD, MOVE_SELF_DESTRUCT, MOVE_ANCIENT_POWER}
     },
     {
     .iv = 200,
     .lvl = 20,
-    .species = SPECIES_ELECTRIKE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHOCK_WAVE, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_HOWL}
+    .species = SPECIES_HERDIER,
+    .heldItem = ITEM_KEE_BERRY,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_SUBMISSION, MOVE_CRUNCH, MOVE_ANCIENT_POWER}
     },
     {
     .iv = 220,
     .lvl = 22,
-    .species = SPECIES_MAGNETON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SUPERSONIC, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM}
+    .species = SPECIES_SEALEO,
+    .heldItem = ITEM_MARANGA_BERRY,
+    .moves = {MOVE_SUPERSONIC, MOVE_BUBBLE, MOVE_GLACIATE, MOVE_ANCIENT_POWER}
+    },
+    {
+    .iv = 220,
+    .lvl = 22,
+    .species = SPECIES_LOMBRE,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_FLAIL, MOVE_WHIRLPOOL, MOVE_LEAF_BLADE, MOVE_ANCIENT_POWER}
     },
     {
     .iv = 250,
     .lvl = 24,
-    .species = SPECIES_MANECTRIC,
+    .species = SPECIES_MIENSHAO,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE, MOVE_HOWL}
+    .moves = {MOVE_QUICK_ATTACK, MOVE_FURY_ATTACK, MOVE_BRICK_BREAK, MOVE_ANCIENT_POWER}
     }
 };
 
@@ -3536,30 +3543,44 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     {
     .iv = 200,
     .lvl = 24,
-    .species = SPECIES_NUMEL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}
+    .species = SPECIES_LOUDRED,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_CALM_MIND, MOVE_RELIC_SONG, MOVE_MAGNIRUDE, MOVE_CHATTER}
     },
     {
     .iv = 200,
     .lvl = 24,
-    .species = SPECIES_SLUGMA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}
+    .species = SPECIES_PHANPY,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_MAGNITUDE, MOVE_BULK_UP, MOVE_WAKE_UP_SLAP, MOVE_CHATTER}
+    },
+    {
+    .iv = 250,
+    .lvl = 25,
+    .species = SPECIES_WEEPINBELL,
+    .heldItem = ITEM_POWER_HERB,
+    .moves = {MOVE_HEADBUTT, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY, MOVE_CHATTER}
     },
     {
     .iv = 250,
     .lvl = 26,
-    .species = SPECIES_CAMERUPT,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
+    .species = SPECIES_KRICKETUNE,
+    .heldItem = ITEM_BIG_ROOT,
+    .moves = {MOVE_ANCIENT_POWER, MOVE_LEECH_LIFE, MOVE_WILL_O_WISP, MOVE_CHATTER}
+    },
+    {
+    .iv = 250,
+    .lvl = 26,
+    .species = SPECIES_SPEWPA,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_STUN_SPORE, MOVE_SMART_STRIKE, MOVE_QUIVER_DANCE, MOVE_CHATTER}
     },
     {
     .iv = 250,
     .lvl = 29,
-    .species = SPECIES_TORKOAL,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}
+    .species = SPECIES_QUAGSIRE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_BRUTAL_SWING, MOVE_WATERFALL, MOVE_PLUCK, MOVE_CHATTER}
     }
 };
 

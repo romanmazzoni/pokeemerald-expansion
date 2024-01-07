@@ -134,7 +134,7 @@ static const u8 sHornAttackDescription[] = _(
 
 static const u8 sFuryAttackDescription[] = _(
     "Jabs the foe 2 to 5 times\n"
-    "with sharp horns, etc.");
+    "with soft paws, etc.");
 
 static const u8 sHornDrillDescription[] = _(
     "A one-hit KO attack that\n"
