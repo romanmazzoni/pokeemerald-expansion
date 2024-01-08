@@ -4197,7 +4197,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_OLD,
         .accuracy = 100,
         .pp = 5,
-        .secondaryEffectChance = 25,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -4814,7 +4814,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_KNOCK_OFF] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 70,
+            .power = 50,
         #else
             .power = 20,
         #endif
@@ -6801,7 +6801,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 20,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
@@ -7205,7 +7205,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_ICE,
         .accuracy = 95,
         .pp = 15,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -7645,7 +7645,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BUG_BITE] =
     {
         .effect = EFFECT_BUG_BITE,
-        .power = 60,
+        .power = 70,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
@@ -7905,8 +7905,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_MYSTERY,
         .accuracy = 100,
         .pp = 5,
-        .secondaryEffectChance = 30,
-        .target = MOVE_TARGET_SELECTED,
+        .secondaryEffectChance = 15,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_SPECIAL,
@@ -8978,12 +8978,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SACRED_SWORD] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .pp = 15,
+            .pp = 10,
         #else
             .pp = 20,
         #endif
         .effect = EFFECT_BRICK_BREAK,
-        .power = 90,
+        .power = 75,
         .type = TYPE_KING,
         .accuracy = 100,
         .secondaryEffectChance = 0,
@@ -9896,13 +9896,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DIAMOND_STORM] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .effect = EFFECT_DEFENSE_UP2_HIT,
+            .effect = EFFECT_DEFENSE_UP_HIT,
         #else
             .effect = EFFECT_DEFENSE_UP_HIT,
         #endif
         .power = 100,
         .type = TYPE_GLASS,
-        .accuracy = 95,
+        .accuracy = 70,
         .pp = 5,
         .secondaryEffectChance = 50,
         .target = MOVE_TARGET_BOTH,
@@ -10194,7 +10194,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HOLD_BACK] =
     {
         .effect = EFFECT_FALSE_SWIPE,
-        .power = 85,
+        .power = 90,
         .type = TYPE_KING,
         .accuracy = 100,
         .pp = 20,
@@ -10257,7 +10257,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .effect = EFFECT_SMACK_DOWN,
         .power = 90,
         .type = TYPE_SAND,
-        .accuracy = 100,
+        .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
@@ -10272,7 +10272,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .effect = EFFECT_HIT_PREVENT_ESCAPE,
         .power = 90,
         .type = TYPE_SAND,
-        .accuracy = 100,
+        .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
@@ -12478,7 +12478,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #if B_UPDATED_MOVE_DATA >= GEN_9
             .power = 80,
         #else
-            .power = 80,
+            .power = 75,
         #endif
         .effect = EFFECT_DIRE_CLAW,
         .type = TYPE_BEAR,

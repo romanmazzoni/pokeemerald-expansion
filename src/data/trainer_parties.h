@@ -3678,30 +3678,44 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     {
     .iv = 250,
     .lvl = 41,
-    .species = SPECIES_CLAYDOL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
+    .species = SPECIES_NIDOKING,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .moves = {MOVE_EARTHQUAKE, MOVE_BREAKING_SWIPE, MOVE_MEGA_PUNCH, MOVE_FOUL_PLAY}
     },
     {
     .iv = 250,
     .lvl = 41,
-    .species = SPECIES_XATU,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
+    .species = SPECIES_RIBOMBEE,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_STICKY_WEB, MOVE_SPIKES, MOVE_ICY_WIND, MOVE_FOUL_PLAY}
     },
     {
     .iv = 250,
     .lvl = 42,
-    .species = SPECIES_LUNATONE,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_CALM_MIND}
+    .species = SPECIES_KROOKODILE,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_THOUSAND_WAVES, MOVE_REFLECT, MOVE_THIEF, MOVE_FOUL_PLAY}
     },
     {
     .iv = 250,
     .lvl = 42,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_CRYOGONAL,
+    .heldItem = ITEM_NEVER_MELT_ICE,
+    .moves = {MOVE_KAMEKAMEHA, MOVE_FREEZE_DRY, MOVE_FEAR, MOVE_FOUL_PLAY}
+    },
+    {
+    .iv = 250,
+    .lvl = 43,
+    .species = SPECIES_VIVILLON,
+    .heldItem = ITEM_PETAYA_BERRY,
+    .moves = {MOVE_PSYCHIC, MOVE_QUIVER_DANCE, MOVE_OMINOUS_WIND, MOVE_FOUL_PLAY}
+    },
+    {
+    .iv = 250,
+    .lvl = 45,
+    .species = SPECIES_OVERQWIL,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
+    .moves = {MOVE_POISON_JAB, MOVE_ROLLING_KICK, MOVE_ICE_FANG, MOVE_FOUL_PLAY}
     }
 };
 
@@ -3709,37 +3723,44 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
     .iv = 200,
     .lvl = 41,
-    .species = SPECIES_LUVDISC,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_FLAIL}
+    .species = SPECIES_SIRFETCHD,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_MAGNIDUDE, MOVE_BREAKING_SWIPE, MOVE_DIRE_CLAW, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
     .lvl = 41,
-    .species = SPECIES_WHISCASH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_AMNESIA, MOVE_EARTHQUAKE}
+    .species = SPECIES_NIDOQUEEN,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_CRUSH_GRIP, MOVE_PLAY_ROUGH, MOVE_BULK_UP, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
     .lvl = 43,
-    .species = SPECIES_SEALEO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ENCORE, MOVE_BODY_SLAM, MOVE_AURORA_BEAM, MOVE_WATER_PULSE}
+    .species = SPECIES_SLOWKING,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_DARK_PULSE, MOVE_REFLECT, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
     .lvl = 43,
-    .species = SPECIES_CRAWDAUNT,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_LEER}
+    .species = SPECIES_JELLICENT,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_DESTINY_BOND, MOVE_BUBBLE_BEAM, MOVE_POLTERGEIST, MOVE_SACRED_SWORD}
+    },
+    {
+    .iv = 200,
+    .lvl = 44,
+    .species = SPECIES_LIEPARD,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_NUZZLE, MOVE_FAKE_OUT, MOVE_BITE, MOVE_SACRED_SWORD}
     },
     {
     .iv = 250,
-    .lvl = 46,
-    .species = SPECIES_KINGDRA,
-    .heldItem = ITEM_CHESTO_BERRY,
-    .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST}
+    .lvl = 40,
+    .species = SPECIES_ZACIAN,
+    .heldItem = ITEM_RUSTED_SWORD,
+    .moves = {MOVE_FURY_ATTACK, MOVE_SHADOW_BONE, MOVE_PLAY_ROUGH, MOVE_SACRED_SWORD}
     }
 };
 
