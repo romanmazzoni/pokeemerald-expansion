@@ -1992,6 +1992,12 @@ static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i)
         buffer = (const u8 *) &trainer->party.EverythingCustomized[i];
         n = sizeof(*trainer->party.EverythingCustomized);
     }
+     else if (trainer->partyFlags == F_TRAINER_PARTY_MIRROR)
+    {
+        buffer = (const u8 *) &trainer->party.EverythingCustomized[i];
+        n = sizeof(*trainer->party.EverythingCustomized);
+    }
+    
     return Crc32B(buffer, n);
 }
 
@@ -2113,6 +2119,21 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 const struct TrainerMonItemCustomMoves *partyData = trainer->party.ItemCustomMoves;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+
+                SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+
+                for (j = 0; j < MAX_MON_MOVES; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
+                    SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
+                }
+                break;
+            }
+            case F_TRAINER_PARTY_MIRROR:
+            {
+                const struct TrainerMonItemCustomMoves *partyData = trainer->party.ItemCustomMoves;
+                fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
+                CreateMon(&party[i], GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_SPECIES), GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_LEVEL), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 

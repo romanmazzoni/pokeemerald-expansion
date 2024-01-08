@@ -5753,11 +5753,34 @@ static const struct TrainerMonItemCustomMoves sParty_Lao5[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Jocelyn[] = {
+static const struct TrainerMonItemCustomMoves sParty_Jocelyn[] = {
     {
-    .iv = 127,
-    .lvl = 13,
-    .species = SPECIES_MEDITITE,
+    .iv = 40,
+    .lvl = 21,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_SMOKE_BALL,
+    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 40,
+    .lvl = 21,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_SMOKE_BALL,
+    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 40,
+    .lvl = 21,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_SMOKE_BALL,
+    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 40,
+    .lvl = 21,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_SMOKE_BALL,
+    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
     }
 };
 

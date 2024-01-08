@@ -88,6 +88,7 @@ struct TrainerMonItemCustomMoves
 #define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
 #define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
 #define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
+#define MIRROR_MATCH(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_MIRROR
 #define EVERYTHING_CUSTOMIZED(party) { .EverythingCustomized = party}, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_EVERYTHING_CUSTOMIZED
 
 union TrainerMonPtr

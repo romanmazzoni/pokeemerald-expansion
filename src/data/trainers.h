@@ -5110,7 +5110,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jocelyn),
+        .party = MIRROR_MATCH(sParty_Jocelyn),
     },
 
     [TRAINER_LAURA] =
