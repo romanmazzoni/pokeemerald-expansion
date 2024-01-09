@@ -2132,14 +2132,15 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             case F_TRAINER_PARTY_MIRROR:
             {
                 const struct TrainerMonItemCustomMoves *partyData = trainer->party.ItemCustomMoves;
+                u16 part1 = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_SPECIES), GetMonData(&gPlayerParty[gBattlerPartyIndexes[i]], MON_DATA_LEVEL), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-
-                SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+                CreateMon(&party[i], GetMonData(&gPlayerParty[i], MON_DATA_SPECIES), GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) + 3, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                SetMonData(&party[i], MON_DATA_HELD_ITEM, &part1);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
-                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
+                    part1 = GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + j);
+                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &part1);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
                 break;

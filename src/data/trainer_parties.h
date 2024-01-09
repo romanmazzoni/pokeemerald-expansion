@@ -3300,35 +3300,42 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = { //ELITE 4 MEMB
     .lvl = 46,
     .species = SPECIES_MIGHTYENA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROAR, MOVE_DOUBLE_EDGE, MOVE_SAND_ATTACK, MOVE_CRUNCH}
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
     },
     {
     .iv = 250,
     .lvl = 48,
     .species = SPECIES_SHIFTRY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TORMENT, MOVE_DOUBLE_TEAM, MOVE_SWAGGER, MOVE_EXTRASENSORY}
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
     },
     {
     .iv = 250,
     .lvl = 46,
     .species = SPECIES_CACTURNE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LEECH_SEED, MOVE_FEINT_ATTACK, MOVE_NEEDLE_ARM, MOVE_COTTON_SPORE}
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
     },
     {
     .iv = 250,
     .lvl = 48,
     .species = SPECIES_CRAWDAUNT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SURF, MOVE_SWORDS_DANCE, MOVE_STRENGTH, MOVE_FACADE}
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
     },
     {
     .iv = 255,
     .lvl = 49,
     .species = SPECIES_ABSOL,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH}
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
+    },
+    {
+    .iv = 255,
+    .lvl = 49,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH, MOVE_FIRE_PUNCH}
     }
 };
 
@@ -5753,35 +5760,13 @@ static const struct TrainerMonItemCustomMoves sParty_Lao5[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Jocelyn[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Jocelyn[] = {
     {
-    .iv = 40,
-    .lvl = 21,
-    .species = SPECIES_WEEZING,
-    .heldItem = ITEM_SMOKE_BALL,
-    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
-    },
-    {
-    .iv = 40,
-    .lvl = 21,
-    .species = SPECIES_WEEZING,
-    .heldItem = ITEM_SMOKE_BALL,
-    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
-    },
-    {
-    .iv = 40,
-    .lvl = 21,
-    .species = SPECIES_WEEZING,
-    .heldItem = ITEM_SMOKE_BALL,
-    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
-    },
-    {
-    .iv = 40,
-    .lvl = 21,
-    .species = SPECIES_WEEZING,
-    .heldItem = ITEM_SMOKE_BALL,
-    .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_NONE, MOVE_NONE}
+        .iv = 200,
+        .lvl = 13,
+        .species = SPECIES_DITTO,
     }
+
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Laura[] = {
