@@ -3343,37 +3343,44 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     {
     .iv = 250,
     .lvl = 48,
-    .species = SPECIES_DUSCLOPS,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_PROTECT}
+    .species = SPECIES_VAPOREON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_BLEAKWIND_STORM, MOVE_HYDRO_STEAM, MOVE_TOXIC, MOVE_ZAP_CANNON}
     },
     {
     .iv = 250,
     .lvl = 49,
-    .species = SPECIES_BANETTE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_GRUDGE, MOVE_WILL_O_WISP, MOVE_FEINT_ATTACK}
+    .species = SPECIES_MANAPHY,
+    .heldItem = ITEM_WACAN_BERRY,
+    .moves = {MOVE_TAIL_GLOW, MOVE_ENERGY_BALL, MOVE_EERIE_SPELL, MOVE_MAGNIDUDE}
     },
     {
     .iv = 250,
     .lvl = 50,
-    .species = SPECIES_SABLEYE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM, MOVE_NIGHT_SHADE, MOVE_FEINT_ATTACK}
+    .species = SPECIES_ROTOM_FROST,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FREEZE_DRY, MOVE_ENERGY_BALL, MOVE_OVERDRIVE, MOVE_THUNDER_WAVE}
     },
     {
     .iv = 250,
     .lvl = 49,
-    .species = SPECIES_BANETTE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_FACADE}
+    .species = SPECIES_CARRACOSTA,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_SHELL_SMASH, MOVE_AQUA_TAIL, MOVE_AQUA_JET, MOVE_FACADE}
+    },
+    {
+    .iv = 250,
+    .lvl = 49,
+    .species = SPECIES_SAMUROTT,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_WATERFALL, MOVE_SHELL_SIDE_ARM, MOVE_WATER_SHURIKEN, MOVE_BLUE_FLARE}
     },
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_DUSCLOPS,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE}
+    .species = SPECIES_XURKITREE,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_LEAF_STORM, MOVE_LEAF_TORNADO, MOVE_FAKE_OUT, MOVE_MIRROR_SHOT}
     }
 };
 

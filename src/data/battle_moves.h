@@ -6956,7 +6956,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_GLASS,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 50,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -9950,7 +9950,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .split = SPLIT_PHYSICAL,
         #endif
         .effect = EFFECT_MULTI_HIT,
-        .power = 20,
+        .power = 22,
         .type = TYPE_NINJA,
         .accuracy = 100,
         .pp = 20,
