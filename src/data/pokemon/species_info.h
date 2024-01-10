@@ -6005,12 +6005,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_DELIBIRD] =
     {
-        .baseHP        = 76,
+        .baseHP        = 78,
         .baseAttack    = 90,
-        .baseDefense   = 55,
-        .baseSpeed     = 75,
+        .baseDefense   = 70,
+        .baseSpeed     = 90,
         .baseSpAttack  = 65,
-        .baseSpDefense = 55,
+        .baseSpDefense = 70,
         .types = { TYPE_SNOW, TYPE_FLYING, TYPE_REVERSE, TYPE_DEATH },
         .catchRate = 45,
         .expYield = 116,
@@ -8272,10 +8272,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 170,
         .baseAttack    = 90,
-        .baseDefense   = 55,
+        .baseDefense   = 35,
         .baseSpeed     = 60,
         .baseSpAttack  = 90,
-        .baseSpDefense = 50,
+        .baseSpDefense = 35,
         .types = { TYPE_WATER, TYPE_MASSIVE, TYPE_STALL, TYPE_STALL},
         .catchRate = 60,
         .expYield = 175,
@@ -10086,9 +10086,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 107,
         .baseAttack    = 85,
-        .baseDefense   = 60,
+        .baseDefense   = 67,
         .baseSpeed     = 71,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 85,
         .baseSpDefense = 103,
         .types = { TYPE_WALL, TYPE_GOD, TYPE_WAFFLEHOUSE, TYPE_GOD},
         .catchRate = 127,
@@ -12859,7 +12859,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 50,
         .baseSpDefense = 40,
-        .types = { TYPE_ROCK, TYPE_REVERSE, TYPE_BALL, TYPE_WALL},
+        .types = { TYPE_ROCK, TYPE_WALL, TYPE_REVERSE, TYPE_BALL},
         .catchRate = 120,
         .expYield = 137,
         .evYield_Attack    = 1,
@@ -12888,7 +12888,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         #else
             .baseSpDefense = 70,
         #endif
-        .types = { TYPE_MASSIVE, TYPE_REVERSE, TYPE_BALL, TYPE_WALL},
+        .types = { TYPE_MASSIVE, TYPE_WALL, TYPE_REVERSE, TYPE_BALL},
         .catchRate = 45,
         .expYield = 232,
         .evYield_Attack    = 3,
