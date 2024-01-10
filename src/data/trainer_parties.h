@@ -12652,3 +12652,48 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Lance[] = {
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_CHARIZARD,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD}
+    },
+    {
+    .iv = 255,
+    .lvl = 55,
+    .species = SPECIES_GYARADOS,
+    .heldItem = ITEM_STARF_BERRY,
+    .moves = {MOVE_TOXIC, MOVE_HYDRO_PUMP, MOVE_SLUDGE_BOMB, MOVE_ICE_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_ALTARIA,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 56,
+    .species = SPECIES_GARCHOMP,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 54,
+    .species = SPECIES_SALAMENCE,
+    .heldItem = ITEM_SALAMENCITE,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF}
+    },
+    {
+    .iv = 255,
+    .lvl = 58,
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC}
+    }
+};
