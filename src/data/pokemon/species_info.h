@@ -7846,14 +7846,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MAWILE] =
     {
-        .baseHP        = 50,
+        .baseHP        = 85,
         .baseAttack    = 85,
         .baseDefense   = 85,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 55,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_DARK, TYPE_PLURAL, TYPE_SWEET, TYPE_SWEET},
+            .types = { TYPE_DARK, TYPE_PLURAL, TYPE_SWEET, TYPE_101},
         #else
             .types = { TYPE_STEEL, TYPE_STEEL},
         #endif
@@ -7867,7 +7867,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FAIRY},
-        .abilities = {ABILITY_HYPER_CUTTER, ABILITY_INTIMIDATE, ABILITY_SHEER_FORCE},
+        .abilities = {ABILITY_MAGIC_BOUNCE, ABILITY_INTIMIDATE, ABILITY_SHEER_FORCE},
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
     },
@@ -12404,13 +12404,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_WATCHOG] =
     {
-        .baseHP        = 70,
+        .baseHP        = 78,
         .baseAttack    = 110,
         .baseDefense   = 69,
         .baseSpeed     = 77,
         .baseSpAttack  = 60,
-        .baseSpDefense = 69,
-        .types = { TYPE_NORMAL, TYPE_REVERSE, TYPE_HMSLAVE, TYPE_REVERSE},
+        .baseSpDefense = 76,
+        .types = { TYPE_NORMAL, TYPE_101, TYPE_REVERSE, TYPE_HMSLAVE},
         .catchRate = 255,
         .expYield = 147,
         .evYield_Attack    = 2,
