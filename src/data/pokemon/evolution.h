@@ -461,6 +461,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_GOOMY]                 = {{EVO_LEVEL, 40, SPECIES_SLIGGOO},
                                        {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}},
     [SPECIES_SLIGGOO]               = {{EVO_LEVEL_RAIN, 50, SPECIES_GOODRA}},
+    [SPECIES_GOODRA]               = {{EVO_LEVEL, 51, SPECIES_SLIGGOO}},
     [SPECIES_SLIGGOO_HISUIAN]       = {{EVO_LEVEL_RAIN, 40, SPECIES_GOODRA_HISUIAN}},
     [SPECIES_PHANTUMP]              = {{EVO_TRADE, 0, SPECIES_TREVENANT},
                                        {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT},
