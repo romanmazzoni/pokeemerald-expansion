@@ -11951,7 +11951,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_HIT,
         .power = 80,
-        .type = TYPE_DARK,
+        .type = TYPE_EVIL,
         .accuracy = 0,
         .pp = 10,
         .secondaryEffectChance = 0,
