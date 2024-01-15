@@ -145,6 +145,6 @@ text NewProfessor_NotChosen{
 }
 script onionbuilding_eventscrpt_guytalking{
     lockall
-    msgbox(format("Yeah you want a free legendary? im mostly here for a test. look at how long i can talk for isnt this awesome?????"))
+    msgbox(format("First and foremost thank you to gamefreak for making pokemon emerald."))
     releaseall
 }

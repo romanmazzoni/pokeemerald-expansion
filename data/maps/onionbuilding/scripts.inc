@@ -196,9 +196,8 @@ NicknamePartyMon_Text_0:
 	.string "Give it a nickname?$"
 
 onionbuilding_eventscrpt_guytalking_Text_0:
-	.string "Yeah you want a free legendary? im\n"
-	.string "mostly here for a test. look at how long\l"
-	.string "i can talk for isnt this awesome?????$"
+	.string "First and foremost thank you to\n"
+	.string "gamefreak for making pokemon emerald.$"
 
 NewProfessor_NotChosen::
 	.string "You did not choose the Pokemon$"
