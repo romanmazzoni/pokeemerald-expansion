@@ -530,7 +530,7 @@ Route106_Text_ElliotDefeated:
 	.string "Everybody's scared of this place$"
 
 Route106_Text_ElliotPostBattle:
-	.string "I forget where it is though./p"
+	.string "I forget where it is though.\p"
 	.string "I have a bad memory.$"
 
 Route106_Text_ElliotRegister:

@@ -302,8 +302,9 @@ Route103_Text_MayLetsBattle:
 	.string "a TRAINER is like.$"
 
 Route103_Text_MayDefeated:
-	.string "Um ok??\n"
-	.string "You only won because youre a higher level$"
+	.string "Um ok??\p"
+	.string "You only won because youre a\n"
+	.string "higher level than me.\p"
 
 Route103_Text_MayTimeToHeadBack:
 	.string "MAY: I think I know why my dad has\n"

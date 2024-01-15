@@ -7227,7 +7227,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute103Torchic[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_SCORBUNNY,
+    .species = SPECIES_OSHAWOTT,
     }
 };
 
@@ -10641,7 +10641,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroTorchic[] = {
     {
     .iv = 50,
     .lvl = 15,
-    .species = SPECIES_SCORBUNNY,
+    .species = SPECIES_OSHAWOTT,
     }
 };
 
