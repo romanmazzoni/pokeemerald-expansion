@@ -955,7 +955,8 @@ Route109_Text_ChandlerPostBattle:
 
 Route109_Text_HaileyIntro:
 	.string "I just learned the quadratic formula!\p"
-	.string "A squared plus B squared equals C squared$"
+	.string "A squared plus B squared\l"
+	.string "equals C squared$"
 
 Route109_Text_HaileyDefeated:
 	.string "Pythagoras?\n"
@@ -967,7 +968,8 @@ Route109_Text_HaileyPostBattle:
 
 Route109_Text_ElijahIntro:
 	.string "Come out Virginia don't let me wait!\n"
-	.string "You Catholic girls start much too late!$"
+	.string "You Catholic girls start much\l"
+	.string "too late!$"
 
 Route109_Text_ElijahDefeated:
 	.string "The good always die young?$"
@@ -980,25 +982,28 @@ Route110_Text_JacobIntro:
 	.string "I know how to counter your exact team!$"
 
 Route110_Text_JacobDefeated:
-	.string "Unfortunate doesn't begin to describe\n"
-	.string "my series!\p"
-	.string "this game rewards blind luck and nothing \n"
-	.string "else, I am beyond convinced at this point\p"
+	.string "Unfortunate doesn't begin to\n"
+	.string "describe my series!\p"
+	.string "this game rewards blind luck\n"
+	.string "and nothing else, I am beyond\n"
+	.string "convinced at this point\p"
 
 Route110_Text_JacobPostBattle:
 	.string "My preparation was superior.\n"
 	.string "My play was superior.\l"
 	.string "and I lost.\p"
-	.string "I don't see a reason to continue engaging\n"
-	.string "in an activity where what is within my\l"
-	.string "control is overwhelmingly outweighed\l"
+	.string "I don't see a reason to continue\n"
+	.string "engaging in an activity where what \l"
+	.string "is within my control is \l"
+	.string "overwhelmingly outweighed.\l"
 	.string "by what is not.\p"
 	.string "I am done with competitive Pokemon\n"
 	.string "and you won't get a fond farewell.\p"
 
 Route110_Text_AnthonyIntro:
-	.string "1 18.25 ounce package chocolate cake mix.\n"
-	.string "1 can prepared coconut pecan frosting.\p"
+	.string "1 18.25 ounce package chocolate\n"
+	.string "cake mix. 1 can prepared coconut\l"
+	.string "pecan frosting.\p"
 	.string "4 large eggs.\n"
 	.string "1 cup semi-sweet chocolate chips.$"
 
@@ -1067,8 +1072,9 @@ Route110_Text_JasmineDefeated:
 	.string "I need to stop using placeholder text!$"
 
 Route110_Text_JasminePostBattle:
-	.string "I'm done using that lorem ipsum nonsense.\p"
-	.string "It doesn't make sense to use in real life$"
+	.string "I'm done using that lorem\n"
+	.string "ipsum nonsense. It doesn't make\l"
+	.string "sense to use in real life$"
 
 Route110_Text_EdwardIntro:
 	.string "It really is that shrimple.$"

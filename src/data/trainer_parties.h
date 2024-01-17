@@ -899,9 +899,9 @@ static const struct TrainerMonItemCustomMoves sParty_George[] = {
 static const struct TrainerMonItemCustomMoves sParty_Berke[] = {
     {
     .iv = 255,
-    .lvl = 26,
+    .lvl = 25,
     .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_CHESTO_BERRY,
+    .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_BIDE, MOVE_SLASH, MOVE_MAGNIFOOD, MOVE_NONE}
     }
 };
@@ -6737,9 +6737,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest5[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Eli[] = {
     {
-    .iv = 100,
+    .iv = 160,
     .lvl = 23,
-    .species = SPECIES_WALREIN,
+    .species = SPECIES_SEALEO,
     }
 };
 

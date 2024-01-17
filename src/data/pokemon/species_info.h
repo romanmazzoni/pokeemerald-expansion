@@ -2753,13 +2753,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_FARFETCHD] =
     {
-        .baseHP        = 110,
-        .baseDefense   = 100,
+        .baseHP        = 65,
+        .baseDefense   = 84,
         .baseSpeed     = 60,
         .baseSpAttack  = 58,
         .baseSpDefense = 90,
         #if P_UPDATED_STATS >= GEN_7
-            .baseAttack    = 120,
+            .baseAttack    = 85,
         #else
             .baseAttack    = 65,
         #endif
@@ -3695,6 +3695,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_Attack    = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
+        .itemRare = ITEM_METAL_COAT,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG},
@@ -18581,7 +18582,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .expYield = 40,
         .evYield_HP        = 1,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
+        .eggCycles = 25,
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
@@ -19717,6 +19718,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_Defense   = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
+        .itemCommon = ITEM_TART_APPLE,
+        .itemRare = ITEM_SWEET_APPLE,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_DRAGON},
@@ -20175,12 +20178,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SIRFETCHD] =
     {
-        .baseHP        = 62,
+        .baseHP        = 90,
         .baseAttack    = 135,
         .baseDefense   = 95,
-        .baseSpeed     = 65,
+        .baseSpeed     = 77,
         .baseSpAttack  = 68,
-        .baseSpDefense = 82,
+        .baseSpDefense = 87,
         .types = { TYPE_KING, TYPE_COOL, TYPE_KING, TYPE_COOL},
         .catchRate = 45,
         .expYield = 177,
