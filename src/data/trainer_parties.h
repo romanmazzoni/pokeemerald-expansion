@@ -1187,8 +1187,8 @@ static const struct TrainerMonItemCustomMoves sParty_Jody[] = {
     {
     .iv = 255,
     .lvl = 26,
-    .species = SPECIES_ABOMASNOW,
-    .heldItem = ITEM_NEVER_MELT_ICE,
+    .species = SPECIES_SNOVER,
+    .heldItem = ITEM_SNOWBALL,
     .moves = {MOVE_FEAR, MOVE_ICE_HAMMER, MOVE_DIRE_CLAW, MOVE_POWDER_SNOW}
     }
 };

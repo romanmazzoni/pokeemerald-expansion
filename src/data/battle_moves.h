@@ -3176,11 +3176,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .power = 25,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 90,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
-        .split = SPLIT_STATUS,
+        .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_SPATK_UP_1,
     },
 

@@ -3069,7 +3069,7 @@ Route120_Text_CalliePostBattle:
 	.string "who had which team.$"
 
 Route120_Text_LeonelIntro:
-	.string "I hate 50 eggs today!\p"
+	.string "I ate 50 eggs today!\p"
 	.string "300 grams of protein!?"
 	.string "I'm unstoppable!$"
 
