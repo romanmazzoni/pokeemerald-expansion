@@ -348,7 +348,7 @@ static void HandleInputChooseAction(void)
     else if(JOY_NEW(L_BUTTON) && stateOfMenu == 0){ // Load pokemon summary screen here ROMAN scorbunny cinderace
             gPlttBufferUnfaded[BG_PLTT_ID(14) + 4] = gPlttBufferFaded[BG_PLTT_ID(14) + 4];
              BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
-            ShowPokemonSummaryScreen(1, gEnemyParty, 0, gEnemyPartyCount -1, CB2_SetUpReshowBattleScreenAfterMenu);
+            ShowPokemonSummaryScreen(1, gEnemyParty, 0, gEnemyPartyCount -1, ReshowBattleScreenAfterMenu);
             FreeAllWindowBuffers();
             stateOfMenu = 1;
         } //this almost works
