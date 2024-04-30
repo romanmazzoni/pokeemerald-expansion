@@ -117,10 +117,10 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
 	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
+	.string "of Cool-type POKéMON.\p"
+	.string "The Cool type is very durable, but\n"
+	.string "it can't stand Loser-type and\l"
+	.string "stupid loser trainers.\p"
 	.string "Come see me afterwards, if you beat\n"
 	.string "the GYM LEADER.\p"
 	.string "Well, go for it!$"
@@ -181,8 +181,8 @@ RustboroCity_Gym_Text_RoxanneIntro:
 	.string "I became a GYM LEADER so that I might\n"
 	.string "apply what I learned at the POKéMON\l"
 	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "What have we learned?\p"
+	.string "I always win!$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
@@ -210,21 +210,18 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That TECHNICAL MACHINE, TM39,\n"
 	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "Its not very good.\n"
+	.string "I wouldn't use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"
 	.string "challenge other GYM LEADERS.\p"
 	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "learn better moves than rock tomb.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY POKéMON GYM$"
+	.string "It says don't touch.\p"
+	.string "You already messed up.$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "RUSTBORO CITY POKéMON GYM\p"
@@ -235,7 +232,7 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
 	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is ROXANNE of RUSTBORO CITY.\p"
+	.string "You...\p"
 	.string "I heard from BRAWNY that you're\n"
 	.string "moving up through the ranks of\l"
 	.string "TRAINERS at an incredible clip.\p"
