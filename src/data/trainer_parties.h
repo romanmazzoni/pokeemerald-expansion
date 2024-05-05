@@ -893,6 +893,13 @@ static const struct TrainerMonItemCustomMoves sParty_George[] = {
     .species = SPECIES_SLAKOTH,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SLACK_OFF, MOVE_COUNTER, MOVE_SHADOW_BALL, MOVE_THUNDER}
+    },
+    {
+    .iv = 255,
+    .lvl = 26,
+    .species = SPECIES_PAWNIARD,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CEASELESS_EDGE, MOVE_COUNTER, MOVE_KNOCK_OFF, MOVE_GIGATON_HAMMER}
     }
 };
 

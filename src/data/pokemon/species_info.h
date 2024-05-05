@@ -4619,7 +4619,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 100,
         .baseAttack    = 50,
-        .baseDefense   = 50,
+        .baseDefense   = 55,
         .baseSpeed     = 70,
         .baseSpDefense = 103,
         #if P_UPDATED_STATS >= GEN_7
@@ -4668,8 +4668,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseHP        = 55,
         .baseAttack    = 35,
         .baseDefense   = 50,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 125,
         .baseSpDefense = 110,
         .types = { TYPE_BUG, TYPE_RED, TYPE_FLYING, TYPE_COOL },
         .catchRate = 90,
@@ -4709,13 +4709,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ARIADOS] =
     {
-        .baseHP        = 70,
+        .baseHP        = 78,
         .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 60,
+        .baseDefense   = 78,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 77,
         #if P_UPDATED_STATS >= GEN_7
-            .baseSpDefense = 70,
+            .baseSpDefense = 90,
         #else
             .baseSpDefense = 60,
         #endif
@@ -9581,7 +9581,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_REGICE] =
     {
-        .baseHP        = 80,
+        .baseHP        = 100,
         .baseAttack    = 50,
         .baseDefense   = 100,
         .baseSpeed     = 50,
@@ -19152,10 +19152,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_CINDERACE] =
     {
         .baseHP        = 88,
-        .baseAttack    = 121,
+        .baseAttack    = 113,
         .baseDefense   = 80,
         .baseSpeed     = 119,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 113,
         .baseSpDefense = 80,
         .types = { TYPE_FURRY, TYPE_SPORTS, TYPE_HOT, TYPE_FRUITY},
         .catchRate = 45,
