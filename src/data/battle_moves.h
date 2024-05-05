@@ -10393,7 +10393,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FIRST_IMPRESSION] =
     {
         .effect = EFFECT_FAKE_OUT,
-        .power = 50,
+        .power = 45,
         .type = TYPE_HUMAN,
         .accuracy = 100,
         .pp = 10,

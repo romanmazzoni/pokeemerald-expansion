@@ -288,12 +288,12 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "bound {PLAYER}?\p"
 	.string "DEWFORD's GYM LEADER BRAWNY commands\n"
 	.string "FIGHTING-type POKéMON.\p"
-	.string "Going against him with NORMAL-type\n"
+	.string "Going against him with BRAN-type\n"
 	.string "POKéMON is asking for trouble.\p"
 	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "SMACK DOWN on NORMAL POKéMON,\p"
-	.string "Ok I lied about the fighting types!\n"
-	.string "But I was hinting that they all know\l"
+	.string "SMACK DOWN on BRAN POKéMON,\p"
+	.string "Ok I lied about the fighting types\n"
+	.string "but I was hinting that they all know\l"
 	.string "SMACK DOWN, the move SMACK DOWN.$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:

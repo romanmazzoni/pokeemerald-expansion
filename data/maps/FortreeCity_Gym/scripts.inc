@@ -136,33 +136,34 @@ FortreeCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "FORTREE GYM LEADER WINONA is\n"
-	.string "a master of FLYING-type POKéMON.\p"
+	.string "a master of SAND-type POKéMON.\p"
 	.string "She's waiting at the back of this GYM,\n"
 	.string "behind the rotating doors.\p"
 	.string "She's waiting for new challengers\n"
-	.string "who are trying to take wing!\p"
+	.string "shake the sand out of your boots!\p"
 	.string "Okay, go for it!$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
 	.string "You did it!\n"
-	.string "You've achieved liftoff!$"
+	.string "You've achieved SAND!$"
 
 FortreeCity_Gym_Text_JaredIntro:
 	.string "Behold the elegant battle style of\n"
-	.string "BIRD POKéMON!$"
+	.string "DESERT POKéMON!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
 	.string "You…\n"
-	.string "You're strong…$"
+	.string "You're strong…\p"
+	.string "Its hard to be the strong one...\p"
+	.string "Reaching out for something...\p"
+	.string "When you don't even know what...$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "A TRAINER has to be smart to keep\n"
-	.string "up with unexpected turns of events.\p"
-	.string "Do you have the smarts to get to\n"
-	.string "our LEADER?$"
+	.string "Knowing when you see it,\n"
+	.string "doesn't matter.$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "The lovers of BIRD POKéMON aspire\n"
+	.string "The lovers of SAND POKéMON aspire\n"
 	.string "to join this GYM.\p"
 	.string "As a member of the FORTREE GYM,\n"
 	.string "I'm not allowed to lose!$"
@@ -172,10 +173,8 @@ FortreeCity_Gym_Text_EdwardoDefeat:
 	.string "to bear…$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "The world is huge, and there are\n"
-	.string "countless tough TRAINERS.\p"
-	.string "I'm going to keep training and make\n"
-	.string "myself even stronger.$"
+	.string "I was not allowed to lose.\p"
+	.string "I better skip town.$"
 
 FortreeCity_Gym_Text_FlintIntro:
 	.string "There's no need for WINONA, our GYM\n"
@@ -200,7 +199,10 @@ FortreeCity_Gym_Text_AshleyDefeat:
 
 FortreeCity_Gym_Text_AshleyPostBattle:
 	.string "Thanks to WINONA, the people of\n"
-	.string "FORTREE can live without fear.$"
+	.string "FORTREE can live without fear.\p"
+	.string "Her voice patrols the pier\n"
+	.string "from a mountain of cliche\l"
+	.string "that advances every day!$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
 	.string "When WINONA takes to battle, her face\n"
@@ -218,34 +220,33 @@ FortreeCity_Gym_Text_HumbertoPostBattle:
 	.string "or you'll go crashing down in a heap!$"
 
 FortreeCity_Gym_Text_DariusIntro:
-	.string "You'd better know that there are all\n"
-	.string "sorts of FLYING-type POKéMON.\p"
-	.string "You do know that, right?$"
+	.string "My name is Darius.\n"
+	.string "I am quite.\p"
+	.string "...\p"
+	.string "Nefarious.$"
 
 FortreeCity_Gym_Text_DariusDefeat:
-	.string "You seem to know your stuff!$"
+	.string "You're just plain evil!$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
-	.string "Sure, you beat me all right.\n"
-	.string "But you'd better watch it! Our LEADER\l"
-	.string "WINONA's POKéMON are all business.$"
+	.string "I'm done being nefarious.\n"
+	.string "Now people are gonna call me darius.\p"
+	.string "...\p"
+	.string "The nice person.$"
 
 FortreeCity_Gym_Text_WinonaIntro:
 	.string "I am WINONA. I am the LEADER of\n"
 	.string "the FORTREE POKéMON GYM.\p"
-	.string "I have become one with BIRD POKéMON\n"
-	.string "and have soared the skies…\p"
-	.string "However grueling the battle, we have\n"
-	.string "triumphed with grace…\p"
-	.string "Witness the elegant choreography\n"
-	.string "of BIRD POKéMON and I!$"
+	.string "People used to call me Loseona\n"
+	.string "but then I started winning.\p"
+	.string "You want to win?\n"
+	.string "I can't stop now its already begun!\p"
+	.string "You feel it\n"
+	.string "running through your bones!$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "Never before have I seen a TRAINER\n"
-	.string "command POKéMON with more grace\l"
-	.string "than I…\p"
-	.string "In recognition of your prowess,\n"
-	.string "I present to you this GYM BADGE.$"
+	.string "Its easy.\n"
+	.string "Once you know how its done!$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
 	.string "{PLAYER} received the FEATHER BADGE\n"
@@ -272,7 +273,9 @@ FortreeCity_Gym_Text_RegisteredWinona:
 
 FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "Though I fell to you, I will remain\n"
-	.string "devoted to BIRD POKéMON.$"
+	.string "devoted to BIRD POKéMON.\p"
+	.string "Err, sorry I meant SAND POKéMON.\n"
+	.string "Why would I like BIRD POKéMON?$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "FORTREE CITY POKéMON GYM$"
