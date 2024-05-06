@@ -5997,11 +5997,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_WATER_PULSE] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 60,
+        .power = 45,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_MEGA_LAUNCHER_BOOST,
