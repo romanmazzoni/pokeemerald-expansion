@@ -82,12 +82,61 @@ void ClearRoamerLocationData(void)
     sRoamerLocation[MAP_NUM] = 0;
 }
 
-static void CreateInitialRoamerMon(bool16 createLatios)
+static void CreateInitialRoamerMon()
 {
+    /*
     if (!createLatios)
         ROAMER->species = SPECIES_LATIAS;
     else
         ROAMER->species = SPECIES_LATIOS;
+*/
+    u16 totalMons[] = {0,0,0,0,0,0,0,0,0,0};
+    u8 sizeMons = 0;
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIOS), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_LATIOS;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIAS), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_LATIAS;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_BULU), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_TAPU_BULU;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_FINI), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_TAPU_FINI;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_KOKO), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_TAPU_KOKO;
+        sizeMons++;
+    }   
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_LELE), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_TAPU_LELE;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_KELDEO), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_KELDEO;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_VIRIZION), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_VIRIZION;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_COBALION), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_COBALION;
+        sizeMons++;
+    }
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TERRAKION), FLAG_GET_CAUGHT))){
+        totalMons[sizeMons] = SPECIES_TERRAKION;
+        sizeMons++;
+    } 
+    
+    u16 result = totalMons[Random() % sizeMons];
+    ROAMER->species = result;
+           
+
 
     CreateMon(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     ROAMER->level = 40;
@@ -104,13 +153,34 @@ static void CreateInitialRoamerMon(bool16 createLatios)
     sRoamerLocation[MAP_GRP] = ROAMER_MAP_GROUP;
     sRoamerLocation[MAP_NUM] = sRoamerLocations[Random() % NUM_LOCATION_SETS][0];
 }
+void NextRoamer(void)
+{
+    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIOS), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIAS), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_KOKO), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_LELE), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_BULU), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_FINI), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_COBALION), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TERRAKION), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_VIRIZION), FLAG_GET_CAUGHT))
+    && (GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_KELDEO), FLAG_GET_CAUGHT))
+    ){
+       SetRoamerInactive();
+   }
+    else{
+        ClearRoamerData();
+        ClearRoamerLocationData();
+        CreateInitialRoamerMon();
+    }
+}
 
 // gSpecialVar_0x8004 here corresponds to the options in the multichoice MULTI_TV_LATI (0 for 'Red', 1 for 'Blue')
 void InitRoamer(void)
 {
     ClearRoamerData();
     ClearRoamerLocationData();
-    CreateInitialRoamerMon(gSpecialVar_0x8004);
+    CreateInitialRoamerMon();
 }
 
 void UpdateLocationHistoryForRoamer(void)
@@ -227,19 +297,7 @@ bool8 TryStartRoamerEncounter(void)
     }
 }
 
-void NextRoamer(void)
-{
-    if ((ROAMER->species == SPECIES_LATIAS && GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIOS), FLAG_GET_SEEN))
-    || (ROAMER->species == SPECIES_LATIOS && GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIAS), FLAG_GET_SEEN))){
-       SetRoamerInactive();
-   }
-    else{
-        bool16 createLatios = ROAMER->species == SPECIES_LATIAS;
-        ClearRoamerData();
-        ClearRoamerLocationData();
-        CreateInitialRoamerMon(createLatios);
-    }
-}
+
 
 void UpdateRoamerHPStatus(struct Pokemon *mon)
 {
