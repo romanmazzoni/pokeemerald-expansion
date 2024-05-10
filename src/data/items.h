@@ -1041,7 +1041,7 @@ const struct Item gItems[] =
     {
         .name = _("AbilityPatch"),
         .itemId = ITEM_ABILITY_PATCH,
-        .price = 0,
+        .price = 15000,
         .holdEffectParam = 0,
         .description = sAbilityPatchDesc,
         .pocket = POCKET_ITEMS,
@@ -1309,7 +1309,7 @@ const struct Item gItems[] =
     {
         .name = _("Rare Candy"),
         .itemId = ITEM_RARE_CANDY,
-        .price = 10000,
+        .price = 500,
         .description = sRareCandyDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -6319,7 +6319,7 @@ const struct Item gItems[] =
     {
         .name = _("Expert Belt"),
         .itemId = ITEM_EXPERT_BELT,
-        .price = 4000,
+        .price = 2000,
         .holdEffect = HOLD_EFFECT_EXPERT_BELT,
         .holdEffectParam = 20,
         .description = sExpertBeltDesc,
@@ -9929,7 +9929,7 @@ const struct Item gItems[] =
     {
         .name = _("Covert Cloak"),
         .itemId = ITEM_COVERT_CLOAK,
-        .price = 20000,
+        .price = 12000,
         .holdEffect = HOLD_EFFECT_COVERT_CLOAK,
         .description = sCovertCloakDesc,
         .pocket = POCKET_ITEMS,
@@ -9942,7 +9942,7 @@ const struct Item gItems[] =
     {
         .name = _("Loaded Dice"),
         .itemId = ITEM_LOADED_DICE,
-        .price = 20000,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_LOADED_DICE,
         .description = sLoadedDiceDesc,
         .pocket = POCKET_ITEMS,
@@ -10039,7 +10039,7 @@ const struct Item gItems[] =
     {
         .name = _("ScrllOfDrknss"),
         .itemId = ITEM_SCROLL_OF_DARKNESS,
-        .price = 0,
+        .price = 10000,
         .description = sScrollOfDarknessDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -10051,7 +10051,7 @@ const struct Item gItems[] =
     {
         .name = _("ScrollOfWatrs"),
         .itemId = ITEM_SCROLL_OF_WATERS,
-        .price = 0,
+        .price = 10000,
         .description = sScrollOfWatersDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,

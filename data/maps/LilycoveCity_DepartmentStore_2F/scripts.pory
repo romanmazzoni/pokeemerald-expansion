@@ -80,3 +80,27 @@ LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 	.string "I need to stock up on items.$"
 
 `
+script LillyCove_2ndfloor_CustomShop_Intro{
+    lock
+    faceplayer
+    message(format("The circus of value!"))
+    waitmessage
+    pokemart(ChocoMart2)
+    msgbox("Please Come Again.")
+    release
+    end
+}
+
+mart ChocoMart2{
+	ITEM_CHOICE_BAND
+	ITEM_CHOICE_SCARF
+	ITEM_CHOICE_SPECS
+	ITEM_LOADED_DICE
+	ITEM_COVERT_CLOAK
+	ITEM_EXPERT_BELT
+	ITEM_HEAVY_DUTY_BOOTS
+	ITEM_ASSAULT_VEST
+	ITEM_ROCKY_HELMET
+	ITEM_SCROLL_OF_DARKNESS
+	ITEM_SCROLL_OF_WATERS
+}

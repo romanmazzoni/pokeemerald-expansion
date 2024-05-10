@@ -77,3 +77,35 @@ LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 	.string "I'm leaving on a long journey soon.\n"
 	.string "I need to stock up on items.$"
+
+LillyCove_2ndfloor_CustomShop_Intro::
+	lock
+	faceplayer
+	message LillyCove_2ndfloor_CustomShop_Intro_Text_0
+	waitmessage
+	pokemart ChocoMart2
+	msgbox LillyCove_2ndfloor_CustomShop_Intro_Text_1
+	release
+	end
+
+
+	.align 2
+ChocoMart2:
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_LOADED_DICE
+	.2byte ITEM_COVERT_CLOAK
+	.2byte ITEM_EXPERT_BELT
+	.2byte ITEM_HEAVY_DUTY_BOOTS
+	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_SCROLL_OF_DARKNESS
+	.2byte ITEM_SCROLL_OF_WATERS
+	.2byte ITEM_NONE
+
+LillyCove_2ndfloor_CustomShop_Intro_Text_0:
+	.string "The circus of value!$"
+
+LillyCove_2ndfloor_CustomShop_Intro_Text_1:
+	.string "Please Come Again.$"

@@ -92,6 +92,7 @@ static void CreateInitialRoamerMon()
 */
     u16 totalMons[] = {0,0,0,0,0,0,0,0,0,0};
     u8 sizeMons = 0;
+    u16 resultRoll = 0; 
     if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIOS), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_LATIOS;
         sizeMons++;
@@ -133,8 +134,9 @@ static void CreateInitialRoamerMon()
         sizeMons++;
     } 
     
-    u16 result = totalMons[Random() % sizeMons];
-    ROAMER->species = result;
+    
+    resultRoll = totalMons[Random() % sizeMons];
+    ROAMER->species = resultRoll;
            
 
 

@@ -219,3 +219,19 @@ LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney:
 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink:
 	.string "Decided against buying a drink.$"
 `
+script LillyCove_Topfloor_CustomShop_Intro{
+    lock
+    faceplayer
+    message(format("There are a whole lot of pokemon in this game. It would be a shame if you didn't get to try them all. Use the candy responsibly."))
+    waitmessage
+    pokemart(ChocoMart)
+    msgbox("Please Come Again.")
+    release
+    end
+}
+
+mart ChocoMart{
+	ITEM_RARE_CANDY
+	ITEM_ABILITY_CAPSULE
+	ITEM_ABILITY_PATCH
+}
