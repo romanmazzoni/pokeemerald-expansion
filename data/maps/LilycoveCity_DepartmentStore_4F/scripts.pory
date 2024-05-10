@@ -1,5 +1,6 @@
 raw `
 LilycoveCity_DepartmentStore_4F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, hideRedEarly
 	.byte 0
 
 LilycoveCity_DepartmentStore_4F_EventScript_Gentleman::
@@ -64,11 +65,40 @@ LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
 	.string "There are so many different kinds of\n"
 	.string "TM moves.\p"
-	.string "A catalog I read said there are fifty\n"
+	.string "A catalog I read said there are ten\n"
 	.string "different kinds.$"
 
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
 	.string "I'd like to get all the different TMs,\n"
-	.string "but a POKéMON learns only four moves.$"
+	.string "but I have 4 dollars.$"
 
 `
+script hideRedEarly{
+	if (!flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN))
+	{
+		setflag(FLAG_Red_Shop)
+	}
+		else
+		{
+		clearflag(FLAG_Red_Shop)
+		}
+
+}
+
+script LillyCove_4thfloor_CustomShop_Intro{
+    lock
+    faceplayer
+    message(format("..."))
+    waitmessage
+    pokemart(ChocoMart3)
+    msgbox("Enjoy...")
+    release
+    end
+}
+
+mart ChocoMart3{
+	ITEM_EON_TICKET
+	ITEM_AURORA_TICKET
+	ITEM_MYSTIC_TICKET
+	ITEM_OLD_SEA_MAP
+}
