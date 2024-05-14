@@ -17,14 +17,14 @@ SouthernIsland_Interior_EventScript_TryRemoveLati::
 	return
 
 SouthernIsland_Interior_OnTransition:
-	call_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetUpLatios
+	call SouthernIsland_Interior_EventScript_SetUpLatios
 	call_if_ne VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetUpLatias
 	call SouthernIsland_Interior_EventScript_SetUpPlayerGfx
 	end
 
 SouthernIsland_Interior_EventScript_SetUpLatios::
 	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_LATIOS
-	setvar VAR_TEMP_4, SPECIES_LATIOS
+	setvar VAR_TEMP_4, SPECIES_MEWTWO
 	return
 
 SouthernIsland_Interior_EventScript_SetUpLatias::
@@ -53,10 +53,7 @@ SouthernIsland_Interior_EventScript_TryLatiEncounter::
 	end
 
 SouthernIsland_Interior_EventScript_Lati::
-	goto_if_set FLAG_TEMP_2, SouthernIsland_Interior_EventScript_Sign
-	goto_if_set FLAG_DEFEATED_LATIAS_OR_LATIOS, SouthernIsland_Interior_EventScript_Sign
 	goto_if_set FLAG_CAUGHT_LATIAS_OR_LATIOS, SouthernIsland_Interior_EventScript_Sign
-	goto_if_unset FLAG_ENABLE_SHIP_SOUTHERN_ISLAND, SouthernIsland_Interior_EventScript_Sign
 	setflag FLAG_ENCOUNTERED_LATIAS_OR_LATIOS
 	setflag FLAG_TEMP_2
 	special SpawnCameraObject
@@ -75,8 +72,7 @@ SouthernIsland_Interior_EventScript_Lati::
 	delay 50
 	special RemoveCameraObject
 	setvar VAR_LAST_TALKED, LOCALID_LATI
-	call_if_eq VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiosBattleVars
-	call_if_ne VAR_ROAMER_POKEMON, 0, SouthernIsland_Interior_EventScript_SetLatiasBattleVars
+	call SouthernIsland_Interior_EventScript_SetLatiosBattleVars
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLatiBattle
 	waitstate
@@ -106,7 +102,7 @@ SouthernIsland_Interior_EventScript_Sign::
 	end
 
 SouthernIsland_Interior_EventScript_SetLatiosBattleVars::
-	seteventmon SPECIES_LATIOS, 50, ITEM_SOUL_DEW
+	seteventmon SPECIES_MEWTWO, 50, ITEM_EVIOLITE
 	return
 
 SouthernIsland_Interior_EventScript_SetLatiasBattleVars::
