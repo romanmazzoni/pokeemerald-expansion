@@ -269,7 +269,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #endif
     [SPECIES_SLAKOTH]               = {{EVO_LEVEL, 18, SPECIES_VIGOROTH}},
     [SPECIES_VIGOROTH]              = {{EVO_LEVEL, 36, SPECIES_SLAKING}},
-    [SPECIES_GULPIN]                = {{EVO_LEVEL, 26, SPECIES_SWALOT}},
+    [SPECIES_GULPIN]                = {{EVO_LEVEL, 29, SPECIES_SWALOT}},
     [SPECIES_WHISMUR]               = {{EVO_LEVEL, 20, SPECIES_LOUDRED}},
     [SPECIES_LOUDRED]               = {{EVO_LEVEL, 40, SPECIES_EXPLOUD}},
     [SPECIES_CLAMPERL]              = {{EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
@@ -301,7 +301,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_PRINPLUP]              = {{EVO_LEVEL, 36, SPECIES_EMPOLEON}},
     [SPECIES_STARLY]                = {{EVO_LEVEL, 14, SPECIES_STARAVIA}},
     [SPECIES_STARAVIA]              = {{EVO_LEVEL, 34, SPECIES_STARAPTOR}},
-    [SPECIES_BIDOOF]                = {{EVO_LEVEL, 15, SPECIES_BIBAREL}},
+    [SPECIES_BIDOOF]                = {{EVO_LEVEL, 25, SPECIES_BIBAREL}},
     [SPECIES_KRICKETOT]             = {{EVO_LEVEL, 10, SPECIES_KRICKETUNE}},
     [SPECIES_SHINX]                 = {{EVO_LEVEL, 15, SPECIES_LUXIO}},
     [SPECIES_LUXIO]                 = {{EVO_LEVEL, 30, SPECIES_LUXRAY}},
