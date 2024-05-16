@@ -1709,7 +1709,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT},
+        .abilities = {ABILITY_FLASH_FIRE, ABILITY_QUICK_FEET, ABILITY_DROUGHT},
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -4579,7 +4579,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
-        .types = {TYPE_SOFT, TYPE_SNAKE, TYPE_FAST, TYPE_SOFT},
+        .types = {TYPE_FURRY, TYPE_SNAKE, TYPE_FAST, TYPE_SOFT},
         .catchRate = 90,
         .expYield = 145,
         .evYield_Speed     = 2,
@@ -4832,7 +4832,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_IGGLYBUFF] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,
         .baseAttack    = 120,
         .baseDefense   = 100,
         .baseSpeed     = 80,
@@ -20365,7 +20365,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 72,
         .baseSpAttack  = 24,
         .baseSpDefense = 21,
-        .types = { TYPE_STUPID, TYPE_ROCK, TYPE_LIFE, TYPE_LIFE},
+        .types = { TYPE_STUPID, TYPE_ROCK, TYPE_LIFE, TYPE_TABLE},
         .catchRate = 60,
         .expYield = 165,
         .evYield_Defense   = 2,
