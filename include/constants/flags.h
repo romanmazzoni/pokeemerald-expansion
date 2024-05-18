@@ -43,9 +43,9 @@
 
 #define FLAG_Red_Shop    0x20 // Unused Flag
 #define FLAG_Zygarde    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
+#define FLAG_reshiram    0x22 // Unused Flag
 #define FLAG_NEWMAYFIGHT    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_zekrom    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag

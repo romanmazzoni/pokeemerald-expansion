@@ -982,7 +982,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ICE_BEAM] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 95,
+            .power = 85,
         #else
             .power = 95,
         #endif
@@ -2798,8 +2798,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
             .effect = EFFECT_RECOIL_25,
         #endif
-        .power = 50,
-        .type = TYPE_NORMAL,
+        .power = 70,
+        .type = TYPE_LOSER,
         .pp = 1,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
