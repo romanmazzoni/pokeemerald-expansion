@@ -800,3 +800,15 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+
+	Regigigas_sign::
+	lockall
+	braillemsgbox Regigigas_sign_Text_0
+	releaseall
+	return
+
+
+Regigigas_sign_Text_0:
+	.braille "L DID\n"
+	.braille "YOU KNOW$"
