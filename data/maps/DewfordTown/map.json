@@ -146,7 +146,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Regigigas_sign"
+      "script": "DewfordTown_EventScript_GymSign"
     },
     {
       "type": "sign",
