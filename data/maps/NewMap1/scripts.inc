@@ -34,6 +34,38 @@ Regigigas_sign_Text_2:
 	.braille "LOVE\n"
 	.braille "APPLES?$"
 
+    Regiroom_EventScript_Regired::
+	trainerbattle_single TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat
+	msgbox Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE
+    return
+
+    Regiroom_Text_REDIntro:
+	.string "Prove yourself.$"
+
+    Regiroom_Text_REDDefeat:
+	.string "Good enough.$"
+    
+	Regiroom_Text_REDPostBattle:
+	.string "No reason for me\p"
+    .string "to be here anymore.$"
+
+Regiroom_EventScript_RedBattle::
+	lockall
+	goto_if_unset FLAG_BADGE08_GET, Regiroom_EventScript_RedBattle_2
+	goto Regiroom_EventScript_Regired
+	setflag FLAG_regired_battle
+	fadescreen FADE_TO_BLACK
+	removeobject 4
+	fadescreen FADE_FROM_BLACK
+Regiroom_EventScript_RedBattle_1:
+	releaseall
+	return
+
+Regiroom_EventScript_RedBattle_2:
+	msgbox Regiroom_EventScript_RedBattle_Text_0
+	goto Regiroom_EventScript_RedBattle_1
+
+
 Regiroom_Regigigas::
 	lockall
 	setflag FLAG_Regigigas
@@ -84,3 +116,8 @@ Regiroom_Regieleki::
 	releaseall
 	return
 
+
+Regiroom_EventScript_RedBattle_Text_0:
+	.string "I guard these three beings. You are not\n"
+	.string "ready to face me. Come back when you\l"
+	.string "have 8 gym badges$"

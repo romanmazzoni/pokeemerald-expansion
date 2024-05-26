@@ -406,6 +406,12 @@ static const struct TrainerMonItemDefaultMoves sParty_Archie[] = {
     {
     .iv = 150,
     .lvl = 41,
+    .species = SPECIES_SWAMPERT,
+    .heldItem = ITEM_EXPERT_BELT,
+    },
+    {
+    .iv = 150,
+    .lvl = 41,
     .species = SPECIES_ESPEON,
     .heldItem = ITEM_PSYCHIC_SEED,
     },
@@ -8189,26 +8195,42 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroMudkip[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMagmaHideout[] = {
+static const struct TrainerMonItemDefaultMoves sParty_MaxieMagmaHideout[] = {
     {
     .iv = 150,
     .lvl = 37,
     .species = SPECIES_ZOROARK,
+    .heldItem = ITEM_FOCUS_SASH
     },
     {
     .iv = 150,
     .lvl = 38,
     .species = SPECIES_LUCARIO,
+    .heldItem = ITEM_LUM_BERRY
     },
     {
     .iv = 150,
     .lvl = 39,
     .species = SPECIES_BEARTIC,
+    .heldItem = ITEM_ICY_ROCK
+    },
+    {
+    .iv = 150,
+    .lvl = 39,
+    .species = SPECIES_HONCHKROW,
+    .heldItem = ITEM_LEFTOVERS
+    },
+    {
+    .iv = 150,
+    .lvl = 39,
+    .species = SPECIES_MISMAGIUS,
+    .heldItem = ITEM_WISE_GLASSES
     },
     {
     .iv = 150,
     .lvl = 40,
     .species = SPECIES_URSHIFU,
+    .heldItem = ITEM_BLACK_BELT
     }
 };
 
@@ -8227,6 +8249,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
     .iv = 150,
     .lvl = 25,
     .species = SPECIES_CUBCHOO,
+    },
+    {
+    .iv = 150,
+    .lvl = 24,
+    .species = SPECIES_MURKROW,
+    },
+    {
+    .iv = 150,
+    .lvl = 25,
+    .species = SPECIES_MISDREAVUS,
     },
     {
     .iv = 150,
@@ -12785,11 +12817,49 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Everett[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Red[] = {
+static const struct TrainerMonItemCustomMoves sParty_Red[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_CHARMANDER,
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_LEAVANNY,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_TEETER_DANCE, MOVE_STICKY_WEB, MOVE_DIRE_CLAW, MOVE_FOUL_PLAY}
+    },
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_RILLABOOM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_EXPLOSION, MOVE_SLASH, MOVE_WOOD_HAMMER, MOVE_RECOVER}
+    },
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_WEAKNESS_POLICY,
+    .moves = {MOVE_POISON_GAS, MOVE_ROLLOUT, MOVE_DESTINY_BOND, MOVE_PSYSHOCK}
+    }, 
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_MELMETAL,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_CLANGOROUS_SOUL, MOVE_STORED_POWER, MOVE_STEEL_ROLLER, MOVE_KNOCK_OFF}
+    },
+    
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_RAPIDASH,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_ELECTRO_BALL, MOVE_FLARE_BLITZ, MOVE_SUCKER_PUNCH, MOVE_HEADBUTT}
+    },
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_ABOMASNOW,
+    .heldItem = ITEM_ICY_ROCK,
+    .moves = {MOVE_BLIZZARD, MOVE_THRASH, MOVE_SPIKY_SHIELD, MOVE_AURORA_VEIL}
     }
 };
 

@@ -8233,7 +8233,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_ELECTRO_BALL,
         .power = 1,
-        .type = TYPE_BALL,
+        .type = TYPE_FAST,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
