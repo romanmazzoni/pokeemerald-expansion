@@ -1063,3 +1063,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/onionbuilding/scripts.inc"
 
 	.include "data/maps/Pokemarttest/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"

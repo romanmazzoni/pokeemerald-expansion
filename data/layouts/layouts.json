@@ -375,7 +375,7 @@
       "id": "LAYOUT_ROUTE122",
       "name": "Route122_Layout",
       "width": 40,
-      "height": 40,
+      "height": 42,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route122/border.bin",
@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Pokemarttest/border.bin",
       "blockdata_filepath": "data/layouts/Pokemarttest/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
     }
   ]
 }
