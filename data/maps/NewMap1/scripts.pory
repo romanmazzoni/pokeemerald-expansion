@@ -48,13 +48,13 @@ Regigigas_sign_Text_2:
     
 	Regiroom_Text_REDPostBattle:
 	.string "No reason for me\p"
-    .string "to be here anymore.$"
+    .string "to stop you.$"
 `
 
 script Regiroom_EventScript_RedBattle{
     lockall
     if (!flag(FLAG_BADGE08_GET)){
-        msgbox(format("I guard these three beings. You are not ready to face me. Come back when you have 8 gym badges"))
+        msgbox(format("I guard these three beings. You are not ready to face me. Come back when you have 8 gym badges."))
     } else{
         goto(Regiroom_EventScript_Regired)
         setflag(FLAG_regired_battle)
