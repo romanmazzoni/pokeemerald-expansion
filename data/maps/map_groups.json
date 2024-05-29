@@ -433,7 +433,8 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "NewMap1",
-    "VictoryRoad_B3F"
+    "VictoryRoad_B3F",
+    "VictoryRoad_B4F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

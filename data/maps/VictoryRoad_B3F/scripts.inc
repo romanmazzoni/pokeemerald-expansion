@@ -15,21 +15,34 @@ VR3_ROCK::
 	return
 
 
+VR4_ROCK::
+	lockall
+	msgbox VR4_ROCK_Text_0
+	releaseall
+	return
+
+
 VR3_fight_YVELTAL::
 	lockall
-	setflag FLAG_YVELTAL
 	playmoncry SPECIES_YVELTAL, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_YVELTAL, 55, ITEM_IRON_BALL
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne VR3_fight_YVELTAL_2
+VR3_fight_YVELTAL_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
+
+VR3_fight_YVELTAL_2:
+	setflag FLAG_YVELTAL
+	goto VR3_fight_YVELTAL_1
 
 
 VR3_fight_XERNEAS::
@@ -61,6 +74,11 @@ VR3_LORE_Text_0:
 	.string "You decide to not read it.$"
 
 VR3_ROCK_Text_0:
-	.string "This rock moarns for its fallen\n"
-	.string "rockrades. You feel a tinge of guilt\l"
-	.string "and spare it.$"
+	.string "This rock mourns for its fallen\n"
+	.string "rockrades.\p"
+	.string "You feel a tinge of guilt and decide to\n"
+	.string "spare it.$"
+
+VR4_ROCK_Text_0:
+	.string "There is no item in this rock.\p"
+	.string "This room sucks.$"

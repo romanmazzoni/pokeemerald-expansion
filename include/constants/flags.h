@@ -59,7 +59,7 @@
 #define FLAG_XERNEAS    0x2F // Unused Flag
 #define FLAG_YVELTAL    0x30 // Unused Flag
 #define FLAG_Goo    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_Repel23    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

@@ -14,7 +14,11 @@ script VR3_ROCK {
     msgbox(format("This rock mourns for its fallen rockrades.\p You feel a tinge of guilt and decide to spare it."))
     releaseall
 }
-
+script VR4_ROCK {
+    lockall
+    msgbox(format("There is no item in this rock.\pThis room sucks."))
+    releaseall
+}
 script VR3_fight_YVELTAL {
     lockall
     playmoncry(SPECIES_YVELTAL, CRY_MODE_ENCOUNTER)
