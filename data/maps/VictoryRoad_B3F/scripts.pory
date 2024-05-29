@@ -1,0 +1,51 @@
+raw `
+VictoryRoad_B3F_MapScripts::
+	.byte 0
+
+`
+
+script VR3_LORE {
+    lockall
+    msgbox(format("Theres some really boring lore written on the wall.\pYou decide to not read it."))
+    releaseall
+}
+script VR3_ROCK {
+    lockall
+    msgbox(format("This rock mourns for its fallen rockrades.\p You feel a tinge of guilt and decide to spare it."))
+    releaseall
+}
+
+script VR3_fight_YVELTAL {
+    lockall
+    playmoncry(SPECIES_YVELTAL, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_YVELTAL, 55, ITEM_IRON_BALL)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_YVELTAL)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
+script VR3_fight_XERNEAS {
+    lockall
+    playmoncry(SPECIES_XERNEAS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_XERNEAS, 55, ITEM_AIR_BALLOON)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_XERNEAS)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
