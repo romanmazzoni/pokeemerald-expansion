@@ -47,7 +47,7 @@ Regigigas_sign_Text_2:
     
 	Regiroom_Text_REDPostBattle:
 	.string "No reason for me\p"
-    .string "to be here anymore.$"
+    .string "to stop you.$"
 
 Regiroom_EventScript_RedBattle::
 	lockall
@@ -120,4 +120,4 @@ Regiroom_Regieleki::
 Regiroom_EventScript_RedBattle_Text_0:
 	.string "I guard these three beings. You are not\n"
 	.string "ready to face me. Come back when you\l"
-	.string "have 8 gym badges$"
+	.string "have 8 gym badges.$"

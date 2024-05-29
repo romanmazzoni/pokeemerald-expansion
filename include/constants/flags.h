@@ -50,11 +50,11 @@
 #define FLAG_Regidrago    0x26 // Unused Flag
 #define FLAG_Regieleki    0x27 // Unused Flag
 #define FLAG_regired_battle    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_Zacian    0x29 // Unused Flag
+#define FLAG_Zamazenta    0x2A // Unused Flag
+#define FLAG_Jirachi    0x2B // Unused Flag
+#define FLAG_Diancie    0x2C // Unused Flag
+#define FLAG_Magearna    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

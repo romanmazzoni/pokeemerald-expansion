@@ -61,3 +61,20 @@ Route126_EventScript_RematchPablo::
 	trainerbattle_rematch TRAINER_PABLO_1, Route126_Text_PabloRematchIntro, Route126_Text_PabloRematchDefeat
 	msgbox Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE
 	end
+
+Route126_fight_Magearna::
+	lockall
+	setflag FLAG_Zygarde
+	playmoncry SPECIES_MAGEARNA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MAGEARNA, 40, ITEM_METRONOME
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	fadescreen FADE_TO_BLACK
+	removeobject 2
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	releaseall
+	return
+

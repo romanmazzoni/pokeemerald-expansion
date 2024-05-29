@@ -198,3 +198,19 @@ Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
 `
+
+script Route123_fight_Jirachi {
+    lockall
+    setflag(FLAG_Jirachi)
+    playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_JIRACHI, 40, ITEM_BRIGHT_POWDER)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}

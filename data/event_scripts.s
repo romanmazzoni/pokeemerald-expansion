@@ -1065,3 +1065,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Pokemarttest/scripts.inc"
 
 	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/VictoryRoad_B3F/scripts.inc"

@@ -590,3 +590,20 @@ LilycoveCity_Harbor_Text_SailorFerryAvailable:
 	.string "The folks at the SHIPYARD in SLATEPORT\n"
 	.string "must've worked extra hard.\p"
 	.string "Well, it's my turn to get busy now!$"
+
+Harbor_fight_Diancie::
+	lockall
+	setflag FLAG_Diancie
+	playmoncry SPECIES_DIANCIE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_DIANCIE, 40, ITEM_RELIC_CROWN
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	fadescreen FADE_TO_BLACK
+	removeobject 2
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	releaseall
+	return
+
