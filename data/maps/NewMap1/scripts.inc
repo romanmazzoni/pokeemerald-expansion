@@ -68,13 +68,15 @@ Regiroom_EventScript_RedBattle_2:
 
 Regiroom_Regigigas::
 	lockall
-	setflag FLAG_Regigigas
 	playmoncry SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_REGIGIGAS, 50, ITEM_ROCK_MEMORY
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Regiroom_Regigigas_2
+Regiroom_Regigigas_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
@@ -82,16 +84,22 @@ Regiroom_Regigigas::
 	releaseall
 	return
 
+Regiroom_Regigigas_2:
+	setflag FLAG_Regigigas
+	goto Regiroom_Regigigas_1
+
 
 Regiroom_Regidrago::
 	lockall
-	setflag FLAG_Regidrago
 	playmoncry SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_REGIDRAGO, 50, ITEM_DRACO_PLATE
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Regiroom_Regidrago_2
+Regiroom_Regidrago_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
@@ -99,22 +107,32 @@ Regiroom_Regidrago::
 	releaseall
 	return
 
+Regiroom_Regidrago_2:
+	setflag FLAG_Regidrago
+	goto Regiroom_Regidrago_1
+
 
 Regiroom_Regieleki::
 	lockall
-	setflag FLAG_Regieleki
 	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_REGIELEKI, 50, ITEM_ZAP_PLATE
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Regiroom_Regieleki_2
+Regiroom_Regieleki_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
+
+Regiroom_Regieleki_2:
+	setflag FLAG_Regieleki
+	goto Regiroom_Regieleki_1
 
 
 Regiroom_EventScript_RedBattle_Text_0:

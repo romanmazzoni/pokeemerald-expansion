@@ -6,13 +6,15 @@ NavelRock_Fork_MapScripts::
 
 script navelrock_fork_fight_reshiram {
     lockall
-    setflag(FLAG_reshiram)
     playmoncry(SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
     setwildbattle(SPECIES_RESHIRAM, 50, ITEM_SITRUS_BERRY)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_reshiram)
+    }
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -21,13 +23,15 @@ script navelrock_fork_fight_reshiram {
 }
 script navelrock_fork_fight_zekrom {
     lockall
-    setflag(FLAG_zekrom)
     playmoncry(SPECIES_ZEKROM, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
     setwildbattle(SPECIES_ZEKROM, 50, ITEM_TOXIC_ORB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_zekrom)
+    }
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)

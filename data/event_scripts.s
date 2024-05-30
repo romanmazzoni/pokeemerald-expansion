@@ -1069,3 +1069,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/VictoryRoad_B3F/scripts.inc"
 
 	.include "data/maps/VictoryRoad_B4F/scripts.inc"
+
+	.include "data/maps/HiddenGrove/scripts.inc"

@@ -183,7 +183,7 @@ Route123_Text_YouLikeGrassMonsTooHaveThis:
 
 Route123_Text_CheckTreesWithMyGrassMon:
 	.string "I check trees with my GRASS-type\n"
-	.string "POKéMON. I'm like a tree doctor.$"
+	.string "POKéMON. I'm like a time doctor.$"
 
 Route123_Text_RouteSign:
 	.string "{RIGHT_ARROW} ROUTE 123\n"
@@ -198,17 +198,23 @@ Route123_Text_BerryMastersHouse:
 
 Route123_fight_Jirachi::
 	lockall
-	setflag FLAG_Jirachi
 	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_JIRACHI, 40, ITEM_BRIGHT_POWDER
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Route123_fight_Jirachi_2
+Route123_fight_Jirachi_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
+
+Route123_fight_Jirachi_2:
+	setflag FLAG_Jirachi
+	goto Route123_fight_Jirachi_1
 

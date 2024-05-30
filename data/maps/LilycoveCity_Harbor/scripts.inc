@@ -593,17 +593,23 @@ LilycoveCity_Harbor_Text_SailorFerryAvailable:
 
 Harbor_fight_Diancie::
 	lockall
-	setflag FLAG_Diancie
 	playmoncry SPECIES_DIANCIE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_DIANCIE, 40, ITEM_RELIC_CROWN
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Harbor_fight_Diancie_2
+Harbor_fight_Diancie_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
+
+Harbor_fight_Diancie_2:
+	setflag FLAG_Diancie
+	goto Harbor_fight_Diancie_1
 

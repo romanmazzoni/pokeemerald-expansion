@@ -64,17 +64,23 @@ Route126_EventScript_RematchPablo::
 
 Route126_fight_Magearna::
 	lockall
-	setflag FLAG_Zygarde
 	playmoncry SPECIES_MAGEARNA, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_MAGEARNA, 40, ITEM_METRONOME
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
+	compare VAR_RESULT, 0
+	goto_if_ne Route126_fight_Magearna_2
+Route126_fight_Magearna_1:
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
+
+Route126_fight_Magearna_2:
+	setflag FLAG_Magearna
+	goto Route126_fight_Magearna_1
 

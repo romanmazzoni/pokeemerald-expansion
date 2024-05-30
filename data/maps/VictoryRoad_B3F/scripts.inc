@@ -27,7 +27,7 @@ VR3_fight_YVELTAL::
 	playmoncry SPECIES_YVELTAL, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_YVELTAL, 55, ITEM_IRON_BALL
+	setwildbattle SPECIES_YVELTAL, 1, ITEM_IRON_BALL
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, 0
@@ -50,7 +50,7 @@ VR3_fight_XERNEAS::
 	playmoncry SPECIES_XERNEAS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_XERNEAS, 55, ITEM_AIR_BALLOON
+	setwildbattle SPECIES_XERNEAS, 1, ITEM_AIR_BALLOON
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, 0

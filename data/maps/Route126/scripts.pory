@@ -67,13 +67,15 @@ Route126_EventScript_RematchPablo::
 
 script Route126_fight_Magearna {
     lockall
-    setflag(FLAG_Zygarde)
     playmoncry(SPECIES_MAGEARNA, CRY_MODE_ENCOUNTER)
     delay(40)
     waitmoncry
     setwildbattle(SPECIES_MAGEARNA, 40, ITEM_METRONOME)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT)){
+        setflag(FLAG_Magearna)
+    }
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)

@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/VictoryRoad_B4F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HIDDEN_GROVE",
+      "name": "HiddenGrove_Layout",
+      "width": 15,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/HiddenGrove/border.bin",
+      "blockdata_filepath": "data/layouts/HiddenGrove/map.bin"
     }
   ]
 }

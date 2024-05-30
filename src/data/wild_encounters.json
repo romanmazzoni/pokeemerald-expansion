@@ -1555,13 +1555,13 @@
               },
               {
                 "min_level": 36,
-                "max_level": 36,
+                "max_level": 38,
                 "species": "SPECIES_KANGASKHAN"
               },
               {
-                "min_level": 36,
-                "max_level": 36,
-                "species": "SPECIES_KANGASKHAN"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_ZERAORA"
               }
             ]
           }
@@ -2409,14 +2409,14 @@
                 "species": "SPECIES_ABSOL"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_PETILIL"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_TORNADUS"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_PETILIL"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_THUNDURUS"
               }
             ]
           },
@@ -2480,7 +2480,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_CHIKORITA"
+                "species": "SPECIES_PORYGON"
               },
               {
                 "min_level": 26,
@@ -2603,7 +2603,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_TREECKO"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 28,
@@ -2641,14 +2641,14 @@
                 "species": "SPECIES_FALINKS"
               },
               {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_PACHIRISU"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_GLASTRIER"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_PACHIRISU"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_SPECTRIER"
               }
             ]
           },
@@ -4843,14 +4843,14 @@
                 "species": "SPECIES_KABUTO"
               },
               {
-                "min_level": 42,
-                "max_level": 42,
-                "species": "SPECIES_PORYGON"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_ENAMORUS"
               },
               {
-                "min_level": 38,
-                "max_level": 38,
-                "species": "SPECIES_PORYGON"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_MARSHADOW"
               }
             ]
           },
@@ -5981,12 +5981,12 @@
               {
                 "min_level": 35,
                 "max_level": 41,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_SHAYMIN"
               },
               {
                 "min_level": 35,
                 "max_level": 41,
-                "species": "SPECIES_LARVESTA"
+                "species": "SPECIES_DARKRAI"
               }
             ]
           },

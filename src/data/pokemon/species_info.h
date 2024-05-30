@@ -3220,7 +3220,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_EXEGGUTOR] =
     {
-        .baseHP        = 95,
+        .baseHP        = 120,
         .baseAttack    = 95,
         .baseDefense   = 85,
         .baseSpeed     = 55,
@@ -3495,7 +3495,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_KANGASKHAN] =
     {
         .baseHP        = 105,
-        .baseAttack    = 60,
+        .baseAttack    = 70,
         .baseDefense   = 80,
         .baseSpeed     = 90,
         .baseSpAttack  = 40,
@@ -3509,7 +3509,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER},
-        .abilities = {ABILITY_PARENTAL_BOND, ABILITY_NONE, ABILITY_INNER_FOCUS},
+        .abilities = {ABILITY_PARENTAL_BOND, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },

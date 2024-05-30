@@ -822,7 +822,7 @@
       "x": 12,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_MAX_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE"
     },
     {
@@ -843,7 +843,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 138,
+      "x": 139,
       "y": 18,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
