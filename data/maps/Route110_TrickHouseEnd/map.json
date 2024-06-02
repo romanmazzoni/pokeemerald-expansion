@@ -26,6 +26,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route110_TrickHouseEnd_EventScript_TrickMaster",
       "flag": "FLAG_HIDE_TRICK_HOUSE_END_MAN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BALTOY_DOLL",
+      "x": 6,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "fight_hoopa",
+      "flag": "FLAG_Hoopa"
     }
   ],
   "warp_events": [
