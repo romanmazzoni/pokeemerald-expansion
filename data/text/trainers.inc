@@ -372,7 +372,7 @@ Route104_Text_WinstonPostRematch:
 Route104_Text_CindyIntro:
 	.string "Last night I had the strangest dream.\p"
 	.string "I sailed away to China\n"
-	.string "in a little row boat to find ya."
+	.string "in a little row boat to find ya.$"
 
 Route104_Text_CindyDefeat:
 	.string "My stride? broken?$"
