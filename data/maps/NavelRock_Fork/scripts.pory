@@ -38,3 +38,56 @@ script navelrock_fork_fight_zekrom {
     waitmessage
     releaseall
 }
+
+script grove_fight_Cresselia {
+    lockall
+    playmoncry(SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_CRESSELIA, 30, ITEM_MOON_STONE)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_Cresselia)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
+script fight_Calyrex {
+    lockall
+    playmoncry(SPECIES_CALYREX, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_CALYREX, 40, ITEM_SACHET)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_Calyrex)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
+
+script fight_Giratina {
+    lockall
+    playmoncry(SPECIES_GIRATINA, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_GIRATINA, 50, ITEM_SACHET)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT)){
+        setflag(FLAG_Giratina)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
