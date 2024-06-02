@@ -46,12 +46,12 @@ OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
 	.string "Naturally, that means you're welcome\n"
 	.string "to use it, too.\p"
 	.string "The last guy got peanut butter on\n"
-	.string "the keys though...\p"
+	.string "the keys though...$"
 
 OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
 	.string "I don't think peanut butter \n"
 	.string "exists in the pokemon universe.\p"
-	.string "maybe someone eated it all...$"
+	.string "Maybe someone eated it all...$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
 	.string "The POKéMON WIRELESS CLUB on\n"
