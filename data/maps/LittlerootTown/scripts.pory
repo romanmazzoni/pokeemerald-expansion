@@ -1028,46 +1028,28 @@ script LittlerootTown_EventScript_CreditsSign{
 	msgbox("Credits building")
 	releaseall
 }
-script LittlerootTown_EventScript_SetupRivalBattle{
-	if (!(flag(FLAG_TAKESTARTINGLEGENDARY))){
-		setflag(FLAG_NEWMAYFIGHT)
-	}
-	else{
-		clearflag(FLAG_NEWMAYFIGHT)
-	}
-}
-script LittlerootTown_EventScript_MayRivalBattle{
- 
-	trainerbattle_single(TRAINER_MAY_ROUTE_103_TORCHIC, May_Intro, May_Outro, RivalBattleOver)
-    end
- 
-}
-script RivalBattleOver{
+script Creditsbuilding_EventScript_CreditsSign1{
 	lockall
-	applymovement(9, MayLeave)
-	waitmovement(0)
-	removeobject(9)
-	setflag(FLAG_NEWMAYFIGHT)
-
-	setflag(FLAG_ADVENTURE_STARTED)
+	msgbox(format("First and foremost thank you to gamefreak for making pokemon emerald."))
 	releaseall
 }
- 
-movement MayLeave {
-	face_down
-    walk_down 
-    walk_left * 7
- 
+script Creditsbuilding_EventScript_CreditsSign2{
+	lockall
+	msgbox(format("Thank you to Alpharad and friends for creating the too many types romhack that Inspired this romhack."))
+	releaseall
 }
- 
-text May_Intro{
-    "You'll never win"
+script Creditsbuilding_EventScript_CreditsSign3{
+	lockall
+	msgbox(format("Thank you to Team aqua's hideout and their romhacking community teaching me everything I know about romhacking."))
+	releaseall
 }
- 
-text May_Outro{
-    "Kys"
+script Creditsbuilding_EventScript_CreditsSign4{
+	lockall
+	msgbox(format("Thank you to Nuzlockers, competitive players, trivia makers and casual pokemon youtubers because I really knew nothing about pokemon before making this."))
+	releaseall
 }
- 
-text PostBattle_May{
-    "no really kys"
+script Creditsbuilding_EventScript_CreditsSign5{
+	lockall
+	msgbox(format("And of course, thank you the player for playing this game :)"))
+	releaseall
 }

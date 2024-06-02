@@ -13848,7 +13848,7 @@ static void Cmd_magnitudedamagecalculation(void)
         magnitude = 11;
     } else {
         gBattleStruct->magnitudeBasePower = 220;
-        magnitude = 200;
+        magnitude = 20;
     }
 
     PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff1, 2, magnitude)

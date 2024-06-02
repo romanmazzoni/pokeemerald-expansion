@@ -1027,52 +1027,65 @@ LittlerootTown_EventScript_CreditsSign::
 	return
 
 
-LittlerootTown_EventScript_SetupRivalBattle::
-	goto_if_unset FLAG_TAKESTARTINGLEGENDARY, LittlerootTown_EventScript_SetupRivalBattle_1
-	clearflag FLAG_NEWMAYFIGHT
-	return
-
-LittlerootTown_EventScript_SetupRivalBattle_1:
-	setflag FLAG_NEWMAYFIGHT
-	return
-
-
-LittlerootTown_EventScript_MayRivalBattle::
-	trainerbattle_single TRAINER_MAY_ROUTE_103_TORCHIC, May_Intro, May_Outro, RivalBattleOver
-	end
-
-
-RivalBattleOver::
+Creditsbuilding_EventScript_CreditsSign1::
 	lockall
-	applymovement 9, MayLeave
-	waitmovement 0
-	removeobject 9
-	setflag FLAG_NEWMAYFIGHT
-	setflag FLAG_ADVENTURE_STARTED
+	msgbox Creditsbuilding_EventScript_CreditsSign1_Text_0
 	releaseall
 	return
 
 
-MayLeave:
-	face_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
+Creditsbuilding_EventScript_CreditsSign2::
+	lockall
+	msgbox Creditsbuilding_EventScript_CreditsSign2_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_CreditsSign3::
+	lockall
+	msgbox Creditsbuilding_EventScript_CreditsSign3_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_CreditsSign4::
+	lockall
+	msgbox Creditsbuilding_EventScript_CreditsSign4_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_CreditsSign5::
+	lockall
+	msgbox Creditsbuilding_EventScript_CreditsSign5_Text_0
+	releaseall
+	return
+
 
 LittlerootTown_EventScript_CreditsSign_Text_0:
 	.string "Credits building$"
 
-May_Intro::
-	.string "You'll never win$"
+Creditsbuilding_EventScript_CreditsSign1_Text_0:
+	.string "First and foremost thank you to\n"
+	.string "gamefreak for making pokemon emerald.$"
 
-May_Outro::
-	.string "Kys$"
+Creditsbuilding_EventScript_CreditsSign2_Text_0:
+	.string "Thank you to Alpharad and friends for\n"
+	.string "creating the too many types romhack\l"
+	.string "that Inspired this romhack.$"
 
-PostBattle_May::
-	.string "no really kys$"
+Creditsbuilding_EventScript_CreditsSign3_Text_0:
+	.string "Thank you to Team aqua's hideout and\n"
+	.string "their romhacking community teaching\l"
+	.string "me everything I know about romhacking.$"
+
+Creditsbuilding_EventScript_CreditsSign4_Text_0:
+	.string "Thank you to Nuzlockers, competitive\n"
+	.string "players, trivia makers and casual\l"
+	.string "pokemon youtubers because I really\l"
+	.string "knew nothing about pokemon before\l"
+	.string "making this.$"
+
+Creditsbuilding_EventScript_CreditsSign5_Text_0:
+	.string "And of course, thank you the player for\n"
+	.string "playing this game :)$"
