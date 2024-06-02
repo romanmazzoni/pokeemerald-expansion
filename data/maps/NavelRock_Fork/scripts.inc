@@ -98,7 +98,7 @@ fight_Giratina::
 	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_GIRATINA, 50, ITEM_GRISEOUS_ORB
+	setwildbattle SPECIES_GIRATINA, 30, ITEM_GRISEOUS_ORB
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, 0
@@ -144,7 +144,7 @@ fight_hoopa::
 	playmoncry SPECIES_HOOPA, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_HOOPA, 50, ITEM_PRISON_BOTTLE
+	setwildbattle SPECIES_HOOPA, 30, ITEM_PRISON_BOTTLE
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, 0
