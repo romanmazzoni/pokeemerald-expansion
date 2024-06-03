@@ -956,7 +956,7 @@ Route109_Text_ChandlerPostBattle:
 Route109_Text_HaileyIntro:
 	.string "I just learned the quadratic formula!\p"
 	.string "A squared plus B squared\l"
-	.string "equals C squared$"
+	.string "equals C squared.$"
 
 Route109_Text_HaileyDefeated:
 	.string "Pythagoras?$"

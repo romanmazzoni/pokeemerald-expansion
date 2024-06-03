@@ -331,7 +331,7 @@ DewfordTown_Gym_Text_LauraIntro:
 	.string "I'll never lose!$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "Waaaaaaah Waaaaaaah Waaaaaaaaaaaaaaah!\n"
+	.string "Waaaaaaah Waaaaaaah Waaaaaaaaaaaah!\n"
 	.string "Who sent all these babies to fight?$"
 
 DewfordTown_Gym_Text_LauraPostBattle:

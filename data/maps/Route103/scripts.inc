@@ -289,7 +289,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's a 8 percent\n"
+	.string "MAY: Okay, so it's a 8 percent\n"
 	.string "chance of a bellsprout encounter…$"
 
 Route103_Text_MayLetsBattle:
