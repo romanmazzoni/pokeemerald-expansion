@@ -477,7 +477,7 @@ Route105_Text_ImaniDefeated:
 
 Route105_Text_ImaniPostBattle:
 	.string "Never mind. I'll remember you\n"
-	.string "This day$"
+	.string "This day.$"
 
 Route105_Text_AndresIntro:
 	.string "I'm convinced that the sea keeps\n"
@@ -959,7 +959,7 @@ Route109_Text_HaileyIntro:
 	.string "equals C squared$"
 
 Route109_Text_HaileyDefeated:
-	.string "Pythagoras?\n"
+	.string "Pythagoras?$"
 
 Route109_Text_HaileyPostBattle:
 	.string "That explains why I can't solve a\n"
