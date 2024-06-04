@@ -185,7 +185,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
                                        {EVO_LEVEL, 42, SPECIES_SNEASLER}},
 #endif
-    [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 30, SPECIES_URSARING}},
+    [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 45, SPECIES_URSARING}},
     [SPECIES_SLUGMA]                = {{EVO_LEVEL, 38, SPECIES_MAGCARGO}},
     [SPECIES_SWINUB]                = {{EVO_LEVEL, 33, SPECIES_PILOSWINE}},
 #if P_GEN_4_POKEMON == TRUE
@@ -335,6 +335,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_FINNEON]               = {{EVO_LEVEL, 31, SPECIES_LUMINEON}},
     [SPECIES_MANTYKE]               = {{EVO_SPECIFIC_MON_IN_PARTY, SPECIES_REMORAID, SPECIES_MANTINE}},
     [SPECIES_SNOVER]                = {{EVO_LEVEL, 40, SPECIES_ABOMASNOW}},
+    [SPECIES_PHIONE]                = {{EVO_LEVEL, 34, SPECIES_MANAPHY}},
 #endif
 #if P_GEN_5_POKEMON == TRUE
     [SPECIES_SNIVY]                 = {{EVO_LEVEL, 17, SPECIES_SERVINE}},
