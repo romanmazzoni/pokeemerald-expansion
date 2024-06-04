@@ -7052,7 +7052,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 90,
-        .type = TYPE_GROUND,
+        .type = TYPE_LIFE,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 10,
@@ -7251,7 +7251,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
         .power = 65,
-        .type = TYPE_GROUND,
+        .type = TYPE_EXPLOSION,
         .accuracy = 85,
         .pp = 10,
         .secondaryEffectChance = 30,
