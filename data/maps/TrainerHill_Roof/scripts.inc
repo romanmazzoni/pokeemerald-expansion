@@ -68,17 +68,11 @@ trainerhill_roof_fight_zygarde::
 	setwildbattle SPECIES_ZYGARDE, 40, ITEM_RELIC_CROWN
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 0
-	goto_if_ne trainerhill_roof_fight_zygarde_2
-trainerhill_roof_fight_zygarde_1:
+	setflag FLAG_Zygarde
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
-
-trainerhill_roof_fight_zygarde_2:
-	setflag FLAG_Zygarde
-	goto trainerhill_roof_fight_zygarde_1
 

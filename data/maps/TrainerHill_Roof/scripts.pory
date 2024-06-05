@@ -71,9 +71,7 @@ script trainerhill_roof_fight_zygarde {
 	setwildbattle(SPECIES_ZYGARDE, 40, ITEM_RELIC_CROWN)
 	dowildbattle
 	specialvar(VAR_RESULT, GetBattleOutcome)
-	if(var(VAR_RESULT)){
-        setflag(FLAG_Zygarde)
-    }
+    setflag(FLAG_Zygarde)
 	fadescreen(FADE_TO_BLACK)
 	removeobject(2)
 	fadescreen(FADE_FROM_BLACK)

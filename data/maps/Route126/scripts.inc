@@ -70,17 +70,11 @@ Route126_fight_Magearna::
 	setwildbattle SPECIES_MAGEARNA, 40, ITEM_METRONOME
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 0
-	goto_if_ne Route126_fight_Magearna_2
-Route126_fight_Magearna_1:
+	setflag FLAG_Magearna
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
-
-Route126_fight_Magearna_2:
-	setflag FLAG_Magearna
-	goto Route126_fight_Magearna_1
 

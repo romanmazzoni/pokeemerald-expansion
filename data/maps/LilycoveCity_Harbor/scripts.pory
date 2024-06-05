@@ -600,9 +600,7 @@ script Harbor_fight_Diancie {
     setwildbattle(SPECIES_DIANCIE, 40, ITEM_RELIC_CROWN)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-	if(var(VAR_RESULT)){
-        setflag(FLAG_Diancie)
-    }
+    setflag(FLAG_Diancie)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)

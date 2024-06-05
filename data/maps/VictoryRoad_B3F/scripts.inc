@@ -30,19 +30,13 @@ VR3_fight_YVELTAL::
 	setwildbattle SPECIES_YVELTAL, 55, ITEM_IRON_BALL
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 0
-	goto_if_ne VR3_fight_YVELTAL_2
-VR3_fight_YVELTAL_1:
+	setflag FLAG_YVELTAL
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
-
-VR3_fight_YVELTAL_2:
-	setflag FLAG_YVELTAL
-	goto VR3_fight_YVELTAL_1
 
 
 VR3_fight_XERNEAS::
@@ -53,19 +47,13 @@ VR3_fight_XERNEAS::
 	setwildbattle SPECIES_XERNEAS, 55, ITEM_AIR_BALLOON
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 0
-	goto_if_ne VR3_fight_XERNEAS_2
-VR3_fight_XERNEAS_1:
+	setflag FLAG_XERNEAS
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
-
-VR3_fight_XERNEAS_2:
-	setflag FLAG_XERNEAS
-	goto VR3_fight_XERNEAS_1
 
 
 VR3_LORE_Text_0:

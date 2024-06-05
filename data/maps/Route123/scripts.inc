@@ -204,17 +204,11 @@ Route123_fight_Jirachi::
 	setwildbattle SPECIES_JIRACHI, 40, ITEM_BRIGHT_POWDER
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, 0
-	goto_if_ne Route123_fight_Jirachi_2
-Route123_fight_Jirachi_1:
+	setflag FLAG_Jirachi
 	fadescreen FADE_TO_BLACK
 	removeobject 2
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
 	return
-
-Route123_fight_Jirachi_2:
-	setflag FLAG_Jirachi
-	goto Route123_fight_Jirachi_1
 

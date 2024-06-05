@@ -12,9 +12,7 @@ script navelrock_fork_fight_reshiram {
     setwildbattle(SPECIES_RESHIRAM, 50, ITEM_SITRUS_BERRY)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_reshiram)
-    }
+    setflag(FLAG_reshiram)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -29,9 +27,7 @@ script navelrock_fork_fight_zekrom {
     setwildbattle(SPECIES_ZEKROM, 50, ITEM_TOXIC_ORB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_zekrom)
-    }
+    setflag(FLAG_zekrom)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -47,9 +43,7 @@ script grove_fight_Cresselia {
     setwildbattle(SPECIES_CRESSELIA, 30, ITEM_MOON_STONE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Cresselia)
-    }
+    setflag(FLAG_Cresselia)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -64,9 +58,7 @@ script fight_Calyrex {
     setwildbattle(SPECIES_CALYREX, 40, ITEM_SACHET)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Calyrex)
-    }
+    setflag(FLAG_Calyrex)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -82,9 +74,7 @@ script fight_Giratina {
     setwildbattle(SPECIES_GIRATINA, 30, ITEM_GRISEOUS_ORB)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Giratina)
-    }
+    setflag(FLAG_Giratina)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -100,9 +90,7 @@ script fight_kyurem {
     setwildbattle(SPECIES_KYUREM, 50, ITEM_DNA_SPLICERS)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Kyurem)
-    }
+    setflag(FLAG_Kyurem)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -117,9 +105,7 @@ script fight_hoopa {
     setwildbattle(SPECIES_HOOPA, 30, ITEM_PRISON_BOTTLE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Hoopa)
-    }
+    setflag(FLAG_Hoopa)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -134,9 +120,7 @@ script fight_NECROZMA {
     setwildbattle(SPECIES_NECROZMA, 50, ITEM_STARDUST)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Necrozma)
-    }
+    setflag(FLAG_Necrozma)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)

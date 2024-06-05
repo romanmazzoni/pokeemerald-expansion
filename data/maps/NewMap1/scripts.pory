@@ -75,9 +75,7 @@ script Regiroom_Regigigas {
     setwildbattle(SPECIES_REGIGIGAS, 50, ITEM_ROCK_MEMORY)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Regigigas)
-    }
+    setflag(FLAG_Regigigas)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -93,9 +91,7 @@ script Regiroom_Regidrago {
     setwildbattle(SPECIES_REGIDRAGO, 50, ITEM_DRACO_PLATE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Regidrago)
-    }
+    setflag(FLAG_Regidrago)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
@@ -110,9 +106,7 @@ script Regiroom_Regieleki {
     setwildbattle(SPECIES_REGIELEKI, 50, ITEM_ZAP_PLATE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
-    if(var(VAR_RESULT)){
-        setflag(FLAG_Regieleki)
-    }
+    setflag(FLAG_Regieleki)
     fadescreen(FADE_TO_BLACK)
     removeobject(2)
     fadescreen(FADE_FROM_BLACK)
