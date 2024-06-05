@@ -2051,7 +2051,7 @@ Route115_Text_CyndyPostRematch:
 Route115_Text_HectorIntro:
 	.string "You should've know when to fold em!\p"
 	.string "Know when to walk away!\n"
-	.string "Know when to walk run!$"
+	.string "Know when to run!$"
 
 Route115_Text_HectorDefeat:
 	.string "Never count your money...$"

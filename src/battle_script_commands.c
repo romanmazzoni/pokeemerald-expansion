@@ -2075,7 +2075,7 @@ static void Cmd_ppreduce(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (i != gBattlerAttacker && IsBattlerAlive(i))
-                    ppToDeduct += (GetBattlerAbility(i) == ABILITY_PRESSURE);
+                    ppToDeduct += 2*(GetBattlerAbility(i) == ABILITY_PRESSURE);
             }
             break;
         case MOVE_TARGET_BOTH:
@@ -2083,7 +2083,7 @@ static void Cmd_ppreduce(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (GetBattlerSide(i) != GetBattlerSide(gBattlerAttacker) && IsBattlerAlive(i))
-                    ppToDeduct += (GetBattlerAbility(i) == ABILITY_PRESSURE);
+                    ppToDeduct += 2*(GetBattlerAbility(i) == ABILITY_PRESSURE);
             }
             break;
         default:
