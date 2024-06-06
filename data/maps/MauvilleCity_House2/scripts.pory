@@ -57,7 +57,8 @@ MauvilleCity_House2_Text_IllTradeYouCoinCase:
 
 MauvilleCity_House2_Text_UseCoinCaseAtGameCorner:
 	.string "That COIN CASE can be used\n"
-	.string "at the GAME CORNER.$"
+	.string "at the GAME CORNER.\p"
+	.string "I love telling kids to gamble.$"
 
 MauvilleCity_House2_Text_ThatsDisappointing:
 	.string "Oh, that's disappointing.\p"

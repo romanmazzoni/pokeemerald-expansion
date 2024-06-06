@@ -713,8 +713,8 @@ MauvilleCity_GameCorner_Text_DontBeNegative:
 	.string "You can have this!$"
 
 MauvilleCity_GameCorner_Text_CantWinJackpot:
-	.string "There's a prize I want, but I can't win\n"
-	.string "the jackpot.$"
+	.string "Its not addiction!\n"
+	.string "Call it dedication!$"
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor:
 	.string "Hey, kid, if you want to play here,\n"
@@ -728,9 +728,9 @@ MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins:
 	.string "Here, take some COINS!$"
 
 MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone:
-	.string "MAUVILLE has something for\n"
-	.string "everyone.\p"
-	.string "For me, it's the GAME CORNER.$"
+	.string "96 percent of gamblers quit\n"
+	.string "right before they hit it big.\p"
+	.string "Its just statistics!$"
 
 MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates:
 	.string "The ROULETTE tables have different\n"
@@ -739,8 +739,8 @@ MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates:
 	.string "pick a table.$"
 
 MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime:
-	.string "It's easy to lose track of time in here. \n"
-	.string "I should get back to work.$"
+	.string "I love gambling!\n"
+	.string "Its just easy money!$"
 
 MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
 	.string "COINS are needed to play here\n"
