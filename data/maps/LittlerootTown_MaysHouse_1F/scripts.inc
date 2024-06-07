@@ -356,8 +356,8 @@ RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
 	.string "travel with POKéMON.\p"
 	.string "But you should go home every so often\n"
 	.string "to let your mother know you're okay.\p"
-	.string "She might not say it, but I'm sure she\n"
-	.string "worries about you, {PLAYER}{KUN}.$"
+	.string "Or just call her on the phone.\n"
+	.string "Its not that hard.$"
 
 RivalsHouse_1F_Text_MayWhoAreYou:
 	.string "Huh?\n"

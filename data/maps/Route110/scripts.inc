@@ -942,8 +942,7 @@ Route110_Text_TrainerTipsPrlzSleep:
 	.string "TRAINER TIPS\p"
 	.string "The foe can be made helpless by\n"
 	.string "paralyzing it or causing it to sleep.\p"
-	.string "It is an important technique for\n"
-	.string "POKéMON battles.$"
+	.string "Or some sinister 3rd thing.$"
 
 Route110_Text_TrainerTipsRegisterItems:
 	.string "TRAINER TIPS\p"
@@ -978,7 +977,7 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "Well, then, I should register you in\n"
 	.string "my POKéNAV as well.\p"
 	.string "That way, even when we're apart,\n"
-	.string "I can rate your POKéDEX anytime.\p"
+	.string "we'll still be together.\p"
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:

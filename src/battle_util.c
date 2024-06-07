@@ -8537,11 +8537,11 @@ static u32 ApplyModifier(u16 modifier, u32 val)
 
 static const u8 sFlailHpScaleToPowerTable[] =
 {
-    1, 200,
+    1, 170,
     4, 150,
-    9, 100,
-    16, 80,
-    32, 40,
+    9, 110,
+    16, 90,
+    32, 60,
     48, 20
 };
 
@@ -8549,10 +8549,10 @@ static const u8 sFlailHpScaleToPowerTable[] =
 static const u16 sWeightToDamageTable[] =
 {
     100, 30,
-    250, 40,
-    500, 70,
-    1000, 85,
-    2000, 120,
+    250, 45,
+    500, 80,
+    1000, 95,
+    2000, 150,
     0xFFFF, 0xFFFF
 };
 

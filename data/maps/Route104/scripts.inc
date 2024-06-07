@@ -1007,19 +1007,19 @@ Route104_Text_BrineyLivesInSeasideCottage:
 Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "The sea, huh?\p"
 	.string "I wonder what it's like at the bottom\n"
-	.string "of the sea?$"
+	.string "of the sea?\p"
+	.string "I need to find the iron boots!$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
-	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+	.string "Grovyle was a good guy the whole time?\p"
+	.string "Then why was he stealing all those time\l"
+	.string "gears!$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
-	.string "You're a thief if you try to steal\n"
+	.string "I wanted to steal\n"
 	.string "someone else's POKéMON.\p"
-	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+	.string "Turns out POKé BALLS only\n"
+	.string "work on wild POKéMON.$"
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
@@ -1039,8 +1039,8 @@ Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
 	.string "A TM, TECHNICAL MACHINE, is good only\n"
 	.string "for one-time use.\p"
-	.string "Once you use it, it's gone.\n"
-	.string "Think twice before using it!$"
+	.string "Or atleast that was true.\n"
+	.string "I guess they fixed it!$"
 
 Route104_Text_DontNeedThisTakeIt:
 	.string "This FLOWER SHOP started selling\n"
