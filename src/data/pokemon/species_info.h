@@ -8980,13 +8980,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_KECLEON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
+        .baseHP        = 68,
+        .baseAttack    = 120,
         .baseDefense   = 70,
         .baseSpeed     = 40,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 100,
         .baseSpDefense = 120,
-        .types = { TYPE_JOKE, TYPE_ON, TYPE_FAKE, TYPE_FAKE},
+        .types = { TYPE_JOKE, TYPE_ON, TYPE_FAKE, TYPE_MONEY},
         .catchRate = 200,
         .expYield = 154,
         .evYield_SpDefense = 1,
