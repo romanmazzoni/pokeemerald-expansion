@@ -12863,12 +12863,70 @@ static const struct TrainerMonItemCustomMoves sParty_Red[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Leaf[] = {
+static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_BULBASAUR,
-    }
+    .iv = 255,
+    .lvl = 80,
+    .nickname = "Shuckool",
+    .isShiny = TRUE,
+    .species = SPECIES_SHUCKLE,
+    .ability = ABILITY_NEUTRALIZING_GAS,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_STICKY_WEB, MOVE_SHUCKLE_SHUK, MOVE_TOXIC, MOVE_FOUL_PLAY},
+    .ball = ITEM_PREMIER_BALL,
+    },
+    {
+    .iv = 255,
+    .lvl = 82,
+    .nickname = "Josh",
+    .species = SPECIES_LUCARIO,
+    .ability = ABILITY_INNER_FOCUS,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_BONE_RUSH, MOVE_WICKED_BLOW, MOVE_THUNDER_PUNCH},
+    .ball = ITEM_LUXURY_BALL,
+    },
+    {
+    .iv = 255,
+    .lvl = 74,
+    .nickname = "Modd",
+    .species = SPECIES_URSARING,
+    .ability = ABILITY_MODD_MODE,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DIRE_CLAW, MOVE_FLAIL, MOVE_ROAR, MOVE_ICE_PUNCH},
+    .ball = ITEM_BEAST_BALL,
+    },
+    {
+    .iv = 255,
+    .lvl = 79,
+    .nickname = "Choco",
+    .species = SPECIES_CINDERACE,
+    .ability = ABILITY_CUTE_CHARM,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_NUZZLE, MOVE_VICTORY_DANCE, MOVE_EXTREME_SPEED, MOVE_ACROBATICS},
+    .gender = MALE,
+    .ball = ITEM_LOVE_BALL,
+    },
+    {
+    .iv = 255,
+    .lvl = 82,
+    .nickname = "Lamp",
+    .species = SPECIES_CHANDELURE,
+    .ability = ABILITY_MAGIC_BOUNCE,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_INFERNO, MOVE_DAZZLING_GLEAM, MOVE_SNIPE_SHOT, MOVE_HEX},
+    .gender = MALE,
+    .ball = ITEM_DUSK_BALL,
+    },
+    {
+    .iv = 255,
+    .lvl = 85,
+    .nickname = "Mr.Cool",
+    .species = SPECIES_FERALIGATR,
+    .ability = ABILITY_MAGIC_BOUNCE,
+    .heldItem = ITEM_SHELL_BELL,
+    .moves = {MOVE_HYDRO_PUMP, MOVE_SLASH, MOVE_WATERFALL, MOVE_CRUNCH},
+    .ball = ITEM_POKE_BALL,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLinkPlaceholder[] = {
@@ -12914,7 +12972,7 @@ static const struct TrainerMonItemCustomMoves sParty_Lance[] = {
     .lvl = 56,
     .species = SPECIES_GARCHOMP,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_CRUSH_CLAW, MOVE_LANCE_PUNCH, MOVE_LANCE_BLAST}
+    .moves = {MOVE_EARTHQUAKE, MOVE_DIRE_CLAW, MOVE_LANCE_PUNCH, MOVE_LANCE_BLAST}
     },
     {
     .iv = 150,

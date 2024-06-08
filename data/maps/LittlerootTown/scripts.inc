@@ -1062,6 +1062,43 @@ Creditsbuilding_EventScript_CreditsSign5::
 	return
 
 
+Creditsbuilding_EventScript_Roman::
+	lockall
+	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_3
+Creditsbuilding_EventScript_Roman_1:
+	goto_if_unset FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_7
+Creditsbuilding_EventScript_Roman_6:
+	goto_if_set FLAG_defeated_roman, Creditsbuilding_EventScript_Roman_10
+Creditsbuilding_EventScript_Roman_9:
+	releaseall
+	return
+
+Creditsbuilding_EventScript_Roman_2:
+	msgbox Creditsbuilding_EventScript_Roman_Text_0
+	trainerbattle_no_intro TRAINER_LEAF, Creditsbuilding_EventScript_Roman_Text_1
+	setflag FLAG_defeated_roman
+	goto Creditsbuilding_EventScript_Roman_1
+
+Creditsbuilding_EventScript_Roman_3:
+	goto_if_unset FLAG_defeated_roman, Creditsbuilding_EventScript_Roman_2
+	goto Creditsbuilding_EventScript_Roman_1
+
+Creditsbuilding_EventScript_Roman_7:
+	msgbox Creditsbuilding_EventScript_Roman_Text_2
+	goto Creditsbuilding_EventScript_Roman_6
+
+Creditsbuilding_EventScript_Roman_10:
+	msgbox Creditsbuilding_EventScript_Roman_Text_3
+	goto Creditsbuilding_EventScript_Roman_9
+
+
+Creditsbuilding_EventScript_Adonu::
+	lockall
+	msgbox Creditsbuilding_EventScript_Adonu_Text_0
+	releaseall
+	return
+
+
 LittlerootTown_EventScript_CreditsSign_Text_0:
 	.string "Credits building$"
 
@@ -1089,3 +1126,21 @@ Creditsbuilding_EventScript_CreditsSign4_Text_0:
 Creditsbuilding_EventScript_CreditsSign5_Text_0:
 	.string "And of course, thank you the player for\n"
 	.string "playing this game :)$"
+
+Creditsbuilding_EventScript_Roman_Text_0:
+	.string "Roman: Oh, you wanted to fight me?$"
+
+Creditsbuilding_EventScript_Roman_Text_1:
+	.string "Rats.$"
+
+Creditsbuilding_EventScript_Roman_Text_2:
+	.string "Roman: I think I did a pretty good job\n"
+	.string "here.$"
+
+Creditsbuilding_EventScript_Roman_Text_3:
+	.string "Roman: Nice job man. Hope you enjoyed\n"
+	.string "the Romhack.$"
+
+Creditsbuilding_EventScript_Adonu_Text_0:
+	.string "Adonu: I downloaded the files from\n"
+	.string "GitHub. I came really close to helping)$"

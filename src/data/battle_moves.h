@@ -130,7 +130,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .type = TYPE_ICE,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_IRON_FIST_BOOST | FLAG_SHEER_FORCE_BOOST,
@@ -642,7 +642,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_RECOIL_33,
         .power = 125,
-        .type = TYPE_VIABLE,
+        .type = TYPE_PLURAL,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
@@ -1090,7 +1090,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PECK] =
     {
         .effect = EFFECT_BUG_BITE,
-        .power = 45,
+        .power = 55,
         .type = TYPE_TURTLE,
         .accuracy = 100,
         .pp = 35,
@@ -2681,7 +2681,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HYPER_FANG] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_SNAKE,
         .accuracy = 90,
         .pp = 15,
@@ -4208,7 +4208,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .power = 80,
-        .type = TYPE_DARK,
+        .type = TYPE_VIABLE,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 20,
@@ -7576,7 +7576,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #endif
         .effect = EFFECT_STEALTH_ROCK,
         .power = 0,
-        .type = TYPE_SAND,
+        .type = TYPE_VIABLE,
         .accuracy = 0,
         .pp = 20,
         .secondaryEffectChance = 0,

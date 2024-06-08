@@ -1053,3 +1053,24 @@ script Creditsbuilding_EventScript_CreditsSign5{
 	msgbox(format("And of course, thank you the player for playing this game :)"))
 	releaseall
 }
+
+script Creditsbuilding_EventScript_Roman{
+	lockall
+	if(flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN) && !flag(FLAG_defeated_roman)){
+	msgbox(format("Roman: Oh, you wanted to fight me?"))
+	trainerbattle_no_intro(TRAINER_LEAF, format("Rats."))
+	setflag(FLAG_defeated_roman)
+	}
+	if(!flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)){
+	msgbox(format("Roman: I think I did a pretty good job here."))
+	}
+	if(flag(FLAG_defeated_roman)){
+		msgbox(format("Roman: Nice job man. Hope you enjoyed the Romhack."))
+	}
+	releaseall
+}
+script Creditsbuilding_EventScript_Adonu{
+	lockall
+	msgbox(format("Adonu: I downloaded the files from GitHub. I came really close to helping)"))
+	releaseall
+}

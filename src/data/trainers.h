@@ -2601,7 +2601,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_SMART_SWITCHING,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan1),
     },
 
@@ -10229,12 +10229,12 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_RIVAL,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEAF,
-        .trainerName = _("LEAF"),
+        .trainerPic = TRAINER_PIC_RS_BRENDAN,
+        .trainerName = _("Roman"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = 0,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Leaf),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = EVERYTHING_CUSTOMIZED(sParty_Leaf),
     },
 
     [TRAINER_BRENDAN_PLACEHOLDER] =
