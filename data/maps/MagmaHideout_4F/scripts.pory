@@ -146,7 +146,8 @@ MagmaHideout_4F_Text_Grunt11Defeat:
 	.string "doesn't have a calm mind…$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "I wonder if GROUDON even has a tail?$"
+	.string "When you catch groundon, let\n"
+	.string "me see what it looks like!$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
 	.string "Fuhahaha!\n"
@@ -208,27 +209,26 @@ MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
 	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "MAXIE: Oh, so it was you?\p"
-	.string "I've seen you poking around uninvited\n"
-	.string "here and there…\p"
-	.string "I get it now!\n"
-	.string "You must have pulled a cheap stunt!$"
+	.string "MAXIE: Oh, hi {PLAYER}{KUN}!\p"
+	.string "I'm tryna summon groundon\n"
+	.string "for ya but it didn't work.\p"
+	.string "We'll he left, sorry about that!\n"
+	.string "Hey, since you're here, wanna battle?$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "What makes you so adept at handling\n"
-	.string "POKéMON?$"
+	.string "Wow you are awesome!$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "MAXIE: There has to be some reason\n"
 	.string "why GROUDON fled…\p"
-	.string "That's what you're trying to say,\n"
-	.string "aren't you?\p"
+	.string "I swear on my life,\n"
+	.string "I will help you catch groundon!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Humph…\n"
-	.string "You think I didn't know that?\p"
+	.string "Well, getting a but hot in here.\p"
 	.string "With GROUDON gone, there is no longer\n"
-	.string "any need for this blasted volcano.\p"
-	.string "I am going after GROUDON, so this\n"
-	.string "is where we part!$"
+	.string "any need for us to be in this volcano.\p"
+	.string "I am going after GROUDON, so\n"
+	.string "I'll see you later!$"
 `

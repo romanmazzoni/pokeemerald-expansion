@@ -6903,19 +6903,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Hector[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMossdeep[] = {
     {
     .iv = 100,
-    .lvl = 36,
-    .species = SPECIES_VENIPEDE,
+    .lvl = 42,
+    .species = SPECIES_MIGHTYENA,
     },
     {
     .iv = 100,
-    .lvl = 38,
-    .species = SPECIES_WHIRLIPEDE,
+    .lvl = 42,
+    .species = SPECIES_YANMEGA,
     },
     {
     .iv = 50,
     .lvl = 43,
     .species = SPECIES_SCOLIPEDE,
-    }
+    },
+    {
+    .iv = 50,
+    .lvl = 43,
+    .species = SPECIES_GIRAFARIG,
+    },
+    {
+    .iv = 200,
+    .lvl = 43,
+    .species = SPECIES_AUDINO,
+    },
+    {
+    .iv = 50,
+    .lvl = 44,
+    .species = SPECIES_SEISMITOAD,
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Edwin2[] = {
@@ -10202,22 +10217,32 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMossdeep[] = { //th
     {
     .iv = 250,
     .lvl = 42,
+    .species = SPECIES_MIGHTYENA,
+    },
+    {
+    .iv = 100,
+    .lvl = 42,
     .species = SPECIES_ZOROARK,
-    },
-    {
-    .iv = 250,
-    .lvl = 43,
-    .species = SPECIES_LUCARIO,
-    },
-    {
-    .iv = 250,
-    .lvl = 44,
-    .species = SPECIES_BEARTIC,
     },
     {
     .iv = 150,
     .lvl = 45,
-    .species = SPECIES_URSHIFU,
+    .species = SPECIES_CINCCINO,
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_ZAPDOS_GALARIAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_MOLTRES_GALARIAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_ARTICUNO_GALARIAN,
     }
 };
 
@@ -12910,21 +12935,21 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     .iv = 255,
     .lvl = 82,
     .nickname = "Lamp",
-    .species = SPECIES_CHANDELURE,
+    .species = SPECIES_AMPHAROS,
     .ability = ABILITY_MAGIC_BOUNCE,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_INFERNO, MOVE_DAZZLING_GLEAM, MOVE_SNIPE_SHOT, MOVE_HEX},
+    .moves = {MOVE_THUNDER, MOVE_DAZZLING_GLEAM, MOVE_SNIPE_SHOT, MOVE_BLUE_FLARE},
     .gender = MALE,
     .ball = ITEM_DUSK_BALL,
     },
     {
     .iv = 255,
     .lvl = 85,
-    .nickname = "Mr.Cool",
-    .species = SPECIES_FERALIGATR,
-    .ability = ABILITY_MAGIC_BOUNCE,
+    .nickname = "SANTA!",
+    .species = SPECIES_DELIBIRD,
+    .ability = ABILITY_SNOW_WARNING,
     .heldItem = ITEM_SHELL_BELL,
-    .moves = {MOVE_HYDRO_PUMP, MOVE_SLASH, MOVE_WATERFALL, MOVE_CRUNCH},
+    .moves = {MOVE_PRESENT, MOVE_SLASH, MOVE_RECOVER, MOVE_AVALANCHE},
     .ball = ITEM_POKE_BALL,
     },
 };

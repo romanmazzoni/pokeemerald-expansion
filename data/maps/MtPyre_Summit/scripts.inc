@@ -430,7 +430,7 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
+	.string "No! Those TEAM MAGMA gooners got\n"
 	.string "here ahead of us!\p"
 	.string "We can't fall behind!$"
 

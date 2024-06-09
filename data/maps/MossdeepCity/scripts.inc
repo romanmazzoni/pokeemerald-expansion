@@ -311,16 +311,16 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "I got this from STEVEN, but I don't\n"
-	.string "know what it's good for.\p"
-	.string "I think it's called KING'S ROCK.\n"
+	.string "I got this from STEVEN, but flinching\n"
+	.string "is a stupid mechanic.\p"
+	.string "It's a KING'S ROCK.\n"
 	.string "Do you want it?$"
 
 MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
 	.string "You're weird.\p"
-	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "I'm kinda weird.\n"
+	.string "Wanna kiss?$"
 
 MossdeepCity_Text_StevensHouseOverThere:
 	.string "STEVEN's house is right over there!$"
@@ -335,13 +335,13 @@ MossdeepCity_Text_WailmerWatching:
 	.string "It's called, uh…\n"
 	.string "What was it now…\p"
 	.string "WAI, WAI, WAI…\p"
-	.string "WAILMER watching!$"
+	.string "WAIL watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
 	.string "The island's SPACE CENTER has been\n"
 	.string "launching huge rockets.\p"
 	.string "There's been some kind of an uproar\n"
-	.string "over a letter they received recently.$"
+	.string "because the rockets are nukes.$"
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
 	.string "The island's SPACE CENTER has been\n"
@@ -360,8 +360,8 @@ MossdeepCity_Text_MossdeepTargetedByMagma:
 MossdeepCity_Text_FeelReliefOnLand:
 	.string "I'm a SAILOR, so the sea's obviously\n"
 	.string "more important to me.\p"
-	.string "But you know? When I get back on land\n"
-	.string "after a long voyage, I do feel relief!$"
+	.string "But you know whats more important?\n"
+	.string "Buying a cat!$"
 
 MossdeepCity_Text_NiceIfWorldCoveredByFlowers:
 	.string "Wouldn't it be nice?\p"
@@ -373,15 +373,14 @@ MossdeepCity_Text_LifeNeedsSeaToLive:
 	.string "though it makes its home on the land.\p"
 	.string "Life, having run its course, becomes\n"
 	.string "soil and returns to the land.\p"
-	.string "And the sea is always connected to\n"
-	.string "the land.\p"
-	.string "Yes, like the very shoreline here.$"
+	.string "Life, boats, and soil!\n"
+	.string "That's my motto!$"
 
 MossdeepCity_Text_SurfExhilarating:
 	.string "A voyage on a ship is fine.\p"
 	.string "But crossing the sea with POKéMON\n"
 	.string "using SURF…\p"
-	.string "Now that's an exhilarating trip!\n"
+	.string "Now that's an HMSLAVE!\n"
 	.string "Wouldn't you agree, youngster?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
@@ -404,11 +403,11 @@ MossdeepCity_Text_GymSign:
 
 MossdeepCity_Text_CitySign:
 	.string "MOSSDEEP CITY\n"
-	.string "“Our slogan: Cherish POKéMON!”$"
+	.string "“Our slogan: Catch POKéMON!”$"
 
 MossdeepCity_Text_SpaceCenterSign:
 	.string "MOSSDEEP SPACE CENTER\n"
-	.string "“The closest place to space.”$"
+	.string "“We got nukes baby!”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
 	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"

@@ -1546,7 +1546,7 @@
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_DELIBIRD"
               },
               {
                 "min_level": 36,
@@ -2228,7 +2228,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_DELIBIRD"
+                "species": "SPECIES_MAGNEMITE"
               },
               {
                 "min_level": 22,
