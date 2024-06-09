@@ -81,8 +81,8 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "Is it the METEORITE that TEAM MAGMA\n"
 	.string "took from METEOR FALLS?\p"
 	.string "Please, may I have it?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "I'm probably not part of team magma.\n"
+	.string "Probably.$"
 
 FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
 	.string "PROF. COZMO: This TM, it represents\n"
@@ -92,7 +92,7 @@ FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
 	.string "PROF. COZMO: Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "This is a meteorite!$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "PROF. COZMO: Oh, but…\n"

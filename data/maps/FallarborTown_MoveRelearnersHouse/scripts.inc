@@ -90,9 +90,9 @@ FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale:
 	.string "in exchange.$"
 
 FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale:
-	.string "If your POKéMON need to learn a move,\n"
-	.string "come back with a HEART SCALE.$"
+	.string "If your POKéMON needs to learn a \n"
+	.string "move, come back with a HEART SCALE.$"
 
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
-	.string "Hunh? There isn't a single move that\n"
-	.string "I can teach an EGG.$"
+	.string "Dude, thats an egg.\n"
+	.string "Are you stupid?$"

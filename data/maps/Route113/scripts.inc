@@ -137,7 +137,7 @@ Route113_Text_AshCanBeFashionedIntoGlass:
 	.string "Wahahaha! Today's technology is a\n"
 	.string "wondrous thing!\p"
 	.string "Take this volcanic ash here.\n"
-	.string "It can be fashioned into glass.$"
+	.string "We can tell it came from a volcano!$"
 
 Route113_Text_FunWalkingThroughAsh:
 	.string "It's fun walking through the volcano's\n"
@@ -162,4 +162,4 @@ Route113_Text_TrainerTipsRegisterKeyItems:
 
 Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
-	.string "“Turning Volcanic Ash into Glass Items”$"
+	.string "“Mosaics classes going on now.”$"

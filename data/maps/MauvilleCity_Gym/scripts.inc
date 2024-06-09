@@ -280,7 +280,7 @@ MauvilleCity_Gym_Text_KirkDefeat:
 
 MauvilleCity_Gym_Text_KirkPostBattle:
 	.string "The time to strike at the head of the\n"
-	.string "beast will soon be upon us!\p"
+	.string "will soon be upon us!\p"
 	.string "Focus your anger and\n"
 	.string "hatred on his minions!$"
 

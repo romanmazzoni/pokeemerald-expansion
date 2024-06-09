@@ -323,8 +323,8 @@ FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "so I came to camp out.\p"
 	.string "I didn't know that tents these days\n"
 	.string "are so luxurious!\p"
-	.string "Since I'm here, I may as well try\n"
-	.string "my hand at battling!$"
+	.string "This is like some weirdo\n"
+	.string "Harry Potter crap!$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
 	.string "SCOTT: Hi, {PLAYER}{KUN}!\n"
@@ -339,7 +339,7 @@ FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
 	.string "If there were a TRAINER like that,\n"
 	.string "I'd immediately…\p"
 	.string "Whoops! Never mind!\n"
-	.string "Keep working at it!$"
+	.string "You look really bad at battling!$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
 	.string "SCOTT: Instead of wasting your\n"

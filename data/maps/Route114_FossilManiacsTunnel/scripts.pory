@@ -69,18 +69,15 @@ Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "You found a FOSSIL, didn't you?\n"
-	.string "That's so nice… It's so dreamy…\p"
-	.string "What are you going to do with that\n"
-	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS…\p"
-	.string "I love my FOSSILS, so I would never\n"
-	.string "do anything like that…$"
+	.string "bring your fossil to DEVON.\p"
+	.string "DEVON!! THE PLACE AT\n"
+	.string "THE BEGGINING OF THE GAME.\p"
+	.string "GO GET YOU FOSSIL EXAMINED!\n"
+	.string "ITS A PALKIA.$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSILS are so… Wonderful…\n"
-	.string "It's so dreamy…$"
+	.string "FOSSILS are so… Dreamy…\n"
+	.string "I wish I could meet a fossil boy…$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
 	.string "Oh…\n"

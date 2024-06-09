@@ -8537,8 +8537,8 @@ static u32 ApplyModifier(u16 modifier, u32 val)
 
 static const u8 sFlailHpScaleToPowerTable[] =
 {
-    1, 170,
-    4, 150,
+    1, 140,
+    4, 120,
     9, 110,
     16, 90,
     32, 60,

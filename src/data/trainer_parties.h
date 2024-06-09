@@ -8427,7 +8427,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rick[] = {
     {
     .iv = 0,
     .lvl = 4,
-    .species = SPECIES_WURMPLE,
+    .species = SPECIES_BLIPBUG,
     },
     {
     .iv = 0,
@@ -12872,7 +12872,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     .species = SPECIES_SHUCKLE,
     .ability = ABILITY_NEUTRALIZING_GAS,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_STICKY_WEB, MOVE_SHUCKLE_SHUK, MOVE_TOXIC, MOVE_FOUL_PLAY},
+    .moves = {MOVE_STICKY_WEB, MOVE_SHUCKLE_SHUK, MOVE_TOXIC, MOVE_STEALTH_ROCK},
     .ball = ITEM_PREMIER_BALL,
     },
     {
@@ -12902,7 +12902,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     .species = SPECIES_CINDERACE,
     .ability = ABILITY_CUTE_CHARM,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_NUZZLE, MOVE_VICTORY_DANCE, MOVE_EXTREME_SPEED, MOVE_ACROBATICS},
+    .moves = {MOVE_NUZZLE, MOVE_VICTORY_DANCE, MOVE_GRASS_KNOT, MOVE_ACROBATICS},
     .gender = MALE,
     .ball = ITEM_LOVE_BALL,
     },

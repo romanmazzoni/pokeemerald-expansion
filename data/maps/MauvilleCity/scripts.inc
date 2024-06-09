@@ -516,8 +516,7 @@ MauvilleCity_Text_WallyHereICome:
 
 MauvilleCity_Text_WallyDefeat:
 	.string "WALLY: … … … … … … …\p"
-	.string "… … … … … … … …\p"
-	.string "I lost…$"
+	.string "Ralts sucks?$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
 	.string "WALLY: UNCLE…\n"
@@ -527,8 +526,8 @@ MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "{PLAYER}, thank you.\n"
 	.string "Being a TRAINER is tough, isn't it?\p"
 	.string "It's not enough just to have POKéMON\n"
-	.string "and make them battle. That isn't what\l"
-	.string "being a real TRAINER is about.$"
+	.string "and make them battle. Its about\l"
+	.string "abusing Xattacks and Xdefenses.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
 	.string "UNCLE: WALLY, there's no need to be so\n"
@@ -536,7 +535,7 @@ MauvilleCity_Text_UncleNoNeedToBeDown:
 	.string "Why, what's keeping you from becoming\n"
 	.string "stronger and stronger?\p"
 	.string "Come on, let's go home.\n"
-	.string "Everyone's waiting for you.$"
+	.string "Everyone's counting on you.$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
@@ -553,7 +552,7 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "… … … … … Beep!\p"
 	.string "WALLY: Oh, hello, {PLAYER}!\p"
 	.string "I just wanted to tell you that\n"
-	.string "my uncle bought me a POKéNAV!\p"
+	.string "my uncle bought me a phone!\p"
 	.string "Now I can get in touch with you\n"
 	.string "anytime, {PLAYER}!\p"
 	.string "… … … … … …\n"
@@ -586,8 +585,8 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "sector called NEW MAUVILLE.\p"
 	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
 	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
-	.string "haywire. It's getting unsafe.\p"
+	.string "I want revenge.\n"
+	.string "Cut off their power.\p"
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
 
@@ -616,7 +615,7 @@ MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "You know, it's cool to have POKéMON\n"
 	.string "battles and stuff…\p"
 	.string "But if your POKéMON gets hurt,\n"
-	.string "you have to nurse it back to health.$"
+	.string "you won't forgive yourself!$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
 	.string "The roads of this town stretch north\n"
@@ -631,7 +630,9 @@ MauvilleCity_Text_RydelVeryGenerous:
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
 	.string "Even if you're riding a BIKE,\n"
-	.string "wild POKéMON could jump you.$"
+	.string "wild POKéMON could jump you.\p"
+	.string "Thats how they got my grandpa.\n"
+	.string "RIP lol.$"
 
 MauvilleCity_Text_CitySign:
 	.string "MAUVILLE CITY\n"
@@ -640,15 +641,16 @@ MauvilleCity_Text_CitySign:
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
 	.string "LEADER: WATTSON\l"
-	.string "“The cheerfully electrifying man!”$"
+	.string "“He's really old!”$"
 
 MauvilleCity_Text_BikeShopSign:
 	.string "“Ride in gravel and shake up your\n"
-	.string "soul!”\l"
-	.string "RYDEL'S CYCLES$"
+	.string "soul!”\p"
+	.string "I wanna get lost in your\n"
+	.string "rock and roll!”$"
 
 MauvilleCity_Text_GameCornerSign:
-	.string "“The play spot for all!”\n"
+	.string "“yaaayyyy gamblllinnnggg”\n"
 	.string "MAUVILLE GAME CORNER$"
 
 MauvilleCity_Text_ExplainTV:
@@ -660,8 +662,8 @@ MauvilleCity_Text_ExplainTV:
 	.string "And, sometimes, they even put you on TV\n"
 	.string "without telling you.\p"
 	.string "I wish I would be on TV sometime.\p"
-	.string "That's why I think you should check\n"
-	.string "out TVs whenever you can.$"
+	.string "Like willy wonka style.\n"
+	.string "And then I turn tiny to get out.$"
 
 MauvilleCity_Text_BeenCheckingOutTV:
-	.string "Hi, have you been checking out TVs?$"
+	.string "I love refridgerators.$"
