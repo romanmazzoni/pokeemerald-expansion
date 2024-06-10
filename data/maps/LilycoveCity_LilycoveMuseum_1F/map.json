@@ -9,10 +9,10 @@
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
@@ -168,7 +168,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -297,6 +299,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LilycoveCity_LilycoveMuseum_1F_EventScript_StoneTablet"
+    },
+    {
+      "type": "hidden_item",
+      "x": 0,
+      "y": 13,
+      "elevation": 0,
+      "item": "ITEM_FOCUS_SASH",
+      "flag": "FLAG_focus_sash_new"
     }
   ]
 }
