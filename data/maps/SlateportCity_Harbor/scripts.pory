@@ -400,8 +400,8 @@ SlateportCity_Harbor_Text_MayISeeYourTicket:
 SlateportCity_Harbor_Text_YouMustHaveTicket:
 	.string "{PLAYER} doesn't have the TICKET…\p"
 	.string "I'm terribly sorry.\p"
-	.string "You must have a TICKET to board\n"
-	.string "the ferry.$"
+	.string "You must be an idiot.\n"
+	.string "Buy a ticket.$"
 
 SlateportCity_Harbor_Text_FlashedTicketWhereTo:
 	.string "{PLAYER} flashed the TICKET.\p"

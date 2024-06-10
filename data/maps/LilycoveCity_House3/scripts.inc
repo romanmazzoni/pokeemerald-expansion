@@ -145,11 +145,11 @@ LilycoveCity_House3_Text_ExplainPokeblocks:
 LilycoveCity_House3_Text_HappyToHaveQuadruplets:
 	.string "When my wife gave birth to quadruplets,\n"
 	.string "you bet I was shocked.\p"
-	.string "But, now, seeing them play together,\n"
-	.string "it makes me happy.$"
+	.string "But, now, I think about how,\n"
+	.string "well I did on that night!$"
 
 LilycoveCity_House3_Text_GoingToWinMultiBattles:
-	.string "We're having MULTI BATTLES, but I know\n"
+	.string "We're having double BATTLES, but I know\n"
 	.string "I'm going to win.$"
 
 LilycoveCity_House3_Text_LikeMixingAtRecordCorner:
@@ -163,5 +163,5 @@ LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender:
 
 LilycoveCity_House3_Text_GoingToEnterContest:
 	.string "I want to brag about how tough my\n"
-	.string "POKéMON is, so we're going to enter\l"
-	.string "a CONTEST together.$"
+	.string "POKéMON is, but its just\l"
+	.string "a WURMPLE.$"

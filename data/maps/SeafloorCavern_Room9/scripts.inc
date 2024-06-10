@@ -282,11 +282,13 @@ SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
 	.string "expanding the sea.\p"
 	.string "What?!\p"
 	.string "It's raining far harder than we\n"
-	.string "envisioned? You're in danger?\p"
+	.string "envisioned? Too much rain?\p"
 	.string "That can't be…\n"
-	.string "That's just not possible…\p"
-	.string "Hold your position and monitor\n"
-	.string "the situation!$"
+	.string "I thought kyogre…\p"
+	.string "I thought the ability drizzle\n"
+	.string "would only make it drizzle!\p"
+	.string "A full downpour?\p"
+	.string "Very misleading!$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
 	.string "ARCHIE: There's something wrong…\p"
@@ -309,8 +311,8 @@ SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
 	.string "ARCHIE: W-what?!\n"
 	.string "Don't get all high and mighty with me!\p"
 	.string "Wasn't it you, TEAM MAGMA, that\n"
-	.string "infuriated GROUDON?\p"
-	.string "So long as I have this RED ORB,\n"
+	.string "wanted to build homeless shelters\l"
+	.string "for tiny adorable kittens?\n"
 	.string "I should be able to control KYOGRE…\p"
 	.string "I should be able to control it…$"
 
@@ -323,4 +325,6 @@ SeafloorCavern_Room9_Text_MaxieWeDontHaveTimeToArgue:
 
 SeafloorCavern_Room9_Text_MaxieComeOnPlayer:
 	.string "MAXIE: {PLAYER}, come on, you have\n"
-	.string "to get out of here, too!$"
+	.string "to get out of here, too!\p"
+	.string "If anyone has the power to stop\n"
+	.string "this madness, I know its you!$"

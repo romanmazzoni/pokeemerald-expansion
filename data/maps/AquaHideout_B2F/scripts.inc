@@ -92,12 +92,11 @@ AquaHideout_B2F_EventScript_Grunt8::
 AquaHideout_B2F_Text_MattIntro:
 	.string "Hehehe…\p"
 	.string "Got here already, did you?\n"
-	.string "We underestimated you!\p"
-	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
+	.string "Hehehe…\p"
+	.string "So quick!\n"
+	.string "Hehehe…\p"
 	.string "I'm not stalling for time.\n"
-	.string "I'm going to pulverize you!$"
+	.string "I'm just going Hehehe!$"
 
 AquaHideout_B2F_Text_MattDefeat:
 	.string "Hehehe…\n"
@@ -135,18 +134,18 @@ AquaHideout_B2F_Text_Grunt6Intro:
 	.string "and joy!\p"
 	.string "You're clueless about where you are,\n"
 	.string "aren't you?\p"
-	.string "Fluster and tire out the enemy, then\n"
-	.string "lower the boom! That's our plan!$"
+	.string "I'm clueless too!\n"
+	.string "Where are we!$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "What's wrong with you?\n"
-	.string "You're not tired at all!$"
+	.string "Where am I?$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
 	.string "That reminds me… I can't remember\n"
 	.string "where I put the MASTER BALL.\p"
 	.string "If I fail to guard it, our BOSS will\n"
-	.string "chew me out…$"
+	.string "chew me out…\p"
+	.string "Hey, could you find it for me?$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
 	.string "When I joined TEAM AQUA, the first\n"
@@ -154,8 +153,8 @@ AquaHideout_B2F_Text_Grunt8Intro:
 	.string "warp panels connected.$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "I was too occupied thinking about\n"
-	.string "the warp panels…$"
+	.string "I still don't know how\n"
+	.string "the warp panels work…$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
 	.string "I'll have to learn about how I can\n"

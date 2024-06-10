@@ -1407,8 +1407,8 @@ SootopolisCity_Movement_DestroyTask::
 SootopolisCity_Text_GymSign:
 	.string "SOOTOPOLIS CITY POKéMON GYM\n"
 	.string "LEADER: JUAN\p"
-	.string "“The GYM LEADER with the beauty\n"
-	.string "of pure water!”$"
+	.string "“The GYM LEADER of pure\n"
+	.string "Swanage!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "SOOTOPOLIS CITY\p"
@@ -1538,9 +1538,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "superior talent…\p"
 	.string "A TRAINER who has knowledge and\n"
 	.string "experience of many kinds of POKéMON…\p"
-	.string "If such a person were to appear, I was\n"
-	.string "instructed by WALLACE to lead that\l"
-	.string "TRAINER to this CAVE.$"
+	.string "Or someone like you…$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
 	.string "Oh, my…\p"
@@ -1597,20 +1595,18 @@ SootopolisCity_Text_YouBroughtFlyingMon:
 
 SootopolisCity_Text_GroudonPleaseStop:
 	.string "MAXIE: G… GROUDON…\n"
-	.string "Please! Stop what you're doing!\p"
-	.string "I know the extent of your power now!\p"
-	.string "If you keep going, all HOENN, not just\n"
-	.string "SOOTOPOLIS, will be utterly ruined!$"
+	.string "WOW!\p"
+	.string "You are so cool!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
 	.string "MAXIE: So the super-ancient POKéMON\n"
 	.string "weren't only GROUDON and KYOGRE…\p"
-	.string "After all our fruitless scheming and\n"
-	.string "frantic efforts, that one POKéMON's\l"
+	.string "That one POKéMON's\n"
 	.string "simple action puts everything right\l"
 	.string "again as if nothing had happened…\p"
-	.string "Fu…\n"
-	.string "Fuhahaha…$"
+	.string "So cool!\n"
+	.string "{PLAYER}{KUN}!$"
+	.string "You should catch that one too!$"
 
 SootopolisCity_Text_KyogreCalmDown:
 	.string "ARCHIE: KYOGRE! What's wrong?!\n"
@@ -1693,10 +1689,10 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 	.string "Lance: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM MAGMA and AQUA,\n"
-	.string "I don't think they meant harm.\p"
-	.string "It wouldn't hurt to hear what they\n"
-	.string "have to say for themselves.$"
+	.string "The leader of Team AQUA,\n"
+	.string "I don't think he meant harm.\p"
+	.string "It wouldn't hurt to hear what he\n"
+	.string "have to say for himself.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Lance: {PLAYER}{KUN}…\n"
@@ -1712,15 +1708,15 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "WATERFALL.\p"
 	.string "If you have the RAIN BADGE, a POKéMON\n"
 	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
+	.string "swim its way up waterfalls.\p"
 	.string "And where does one get the RAIN BADGE?\n"
 	.string "You know, don't you?\p"
 	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "When you're all set to go, step through\n"
-	.string "that door.$"
+	.string "the mother swan himself.\p"
+	.string "JUANDASWAN BABY!\n"
+	.string "GYYYYMMM TIMMMEEEEE!!!$"
 
 SootopolisCity_Text_DazzledByMentor:
 	.string "Lance: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
-	.string "elegant battle style.$"
+	.string "swanny battle style.$"

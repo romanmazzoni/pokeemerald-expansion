@@ -314,6 +314,7 @@ BattleFrontier_OutsideWest_Text_BattleDomeSign:
 
 BattleFrontier_OutsideWest_Text_BattleFactorySign:
 	.string "This is the BATTLE FACTORY!\n"
+	.string "You should play this one!\n"
 	.string "Seek out the toughest POKéMON!$"
 
 BattleFrontier_OutsideWest_Text_BattlePikeSign:

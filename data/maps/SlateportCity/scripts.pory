@@ -983,27 +983,25 @@ SlateportCity_Text_EffortRibbonLooksGoodOnIt:
 SlateportCity_Text_WonderIfLighthouseStartlesPokemon:
 	.string "The light of the lighthouse reaches\n"
 	.string "dozens of miles away.\p"
-	.string "I wonder if it doesn't startle POKéMON\n"
-	.string "in the sea.$"
+	.string "Thats ampharos for ya!$"
 
 SlateportCity_Text_SeaweedFullOfLife:
 	.string "Ooh, look at this!\p"
 	.string "The seaweed you can get around these\n"
 	.string "parts is fresh and full of life.\p"
-	.string "Why, it looks like it can even rear up\n"
-	.string "and attack!$"
+	.string "Why, it looks like it can even learn\n"
+	.string "Hydro Pump!$"
 
 SlateportCity_Text_HowTownIsBornAndGrows:
 	.string "Where the water is clean, the fruits\n"
 	.string "of bountiful harvest gather.\p"
-	.string "And where people gather, a market\n"
-	.string "soon starts.\p"
-	.string "That is how a town is born and grows.$"
+	.string "I need to become evil.\p"
+	.string "I could stop this.$"
 
 SlateportCity_Text_SlateportWonderfulPlace:
 	.string "Shopping where you can breathe the\n"
-	.string "scent of the ocean…\p"
-	.string "SLATEPORT is such a wonderful place!$"
+	.string "feel of the ocean…\p"
+	.string "And the taste of champagne!$"
 
 SlateportCity_Text_BuyBricksSoDecorWontGetDirty:
 	.string "If you put DOLLS or CUSHIONS on\n"
@@ -1016,30 +1014,30 @@ SlateportCity_Text_GoingToCompeteInBattleTent:
 	.string "Wroooar! I'm going to compete in\n"
 	.string "the BATTLE TENT, too!\p"
 	.string "But before that, I need to catch\n"
-	.string "some POKéMON!$"
+	.string "a POKéMON!$"
 
 SlateportCity_Text_BushedHikingFromMauville:
 	.string "Whew… I'm just bushed…\p"
 	.string "I hiked over from MAUVILLE CITY.\n"
 	.string "But, boy, this city's huge.\p"
-	.string "If I'd known this, I would've ridden\n"
-	.string "my BIKE here.$"
+	.string "It must be atleast 40 tiles wide\n"
+	.string "and 60 tiles tall...$"
 
 SlateportCity_Text_EveryoneCallsHimCaptStern:
 	.string "STERN, the fellow who built the\n"
 	.string "MUSEUM, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
-	.string "So, everyone calls him CAPT. STERN.$"
+	.string "So, everyone calls him underwater guy.$"
 
 SlateportCity_Text_WhatsLongLineOverThere:
-	.string "What is that over there?\n"
-	.string "That long line…$"
+	.string "Hey look, Its team Aqua!\n"
+	.string "Those guys are so cool!$"
 
 SlateportCity_Text_VisitedMuseumOften:
 	.string "When I was a child, I visited\n"
 	.string "the MUSEUM often.\p"
-	.string "I used to dream about the mysteries of\n"
-	.string "the sea after seeing the exhibits.$"
+	.string "I used to dream about becoming\n"
+	.string "a MUSEUM.$"
 
 SlateportCity_Text_QuitPushing:
 	.string "Hey, there! Quit pushing!\n"
@@ -1052,13 +1050,14 @@ SlateportCity_Text_AquaHasPolicy:
 
 SlateportCity_Text_BossIsBrilliant:
 	.string "Our BOSS is brilliant.\p"
-	.string "What would he want to do with\n"
-	.string "a MUSEUM now?$"
+	.string "His name is Archie.\p"
+	.string "His mother's maiden name is Baker.\p"
+	.string "His first childhood pet was Monty.$"
 
 SlateportCity_Text_WhatsNewSchemeIWonder:
 	.string "What's the new scheme, I wonder?\p"
 	.string "Our BOSS is scary when he's mad, so\n"
-	.string "I'd better not screw things up…$"
+	.string "give you his mother's maiden name…$"
 
 SlateportCity_Text_ShouldTakeItAll:
 	.string "If there's something we need in\n"
@@ -1070,8 +1069,8 @@ SlateportCity_Text_DontButtIn:
 
 SlateportCity_Text_RemindsMeOfLongLineForGames:
 	.string "A long line, huh?\p"
-	.string "It reminds me of the times I lined up to\n"
-	.string "buy smash-hit games…$"
+	.string "It reminds me of the time I lined up to\n"
+	.string "buy Super Smash Brothers: Brawl…$"
 
 SlateportCity_Text_WhyAreWeLiningUp:
 	.string "Why are we even lining up and paying?\n"
@@ -1088,9 +1087,9 @@ SlateportCity_Text_IllReadSignForYou:
 SlateportCity_Text_SaysSomethingLikeSeaIsEndless:
 	.string "Let's see…\p"
 	.string "Um… I think it says something like\n"
-	.string "“the life in the sea is endless.”\p"
-	.string "Yup, I'm pretty sure that's what\n"
-	.string "it says.$"
+	.string "“chopped crayon funny onions.”\p"
+	.string ".....................\p"
+	.string "I can't read.$"
 
 SlateportCity_Text_ShouldveBroughtMyGameBoy:
 	.string "Grumble…\p"
@@ -1106,18 +1105,19 @@ SlateportCity_Text_HotSpringsAfterOperation:
 
 SlateportCity_Text_SeaIsSoWet:
 	.string "The sea is just so vast…\p"
-	.string "Could the sea have been made by\n"
-	.string "the tears shed by POKéMON?$"
+	.string "Could the sea have been made out\n"
+	.string "of water?$"
 
 SlateportCity_Text_SinkOldBoats:
 	.string "Do you know what they do with old\n"
 	.string "ships that become too creaky to sail?\p"
 	.string "They sink them in the sea so they\n"
-	.string "become habitats for POKéMON.$"
+	.string "become habitats for POKéMON.\p"
+	.string "Just like used car batteries!$"
 
 SlateportCity_Text_BuyTooMuch:
-	.string "Whenever I visit here, I get carried\n"
-	.string "away and buy too much.$"
+	.string "Whenever I visit here, I get the\n"
+	.string "onions! I love onions!$"
 
 SlateportCity_Text_GetNameRaterToHelpYou:
 	.string "If you want to change your POKéMON's\n"
@@ -1142,24 +1142,26 @@ SlateportCity_Text_CaptSternBeingInterviewed:
 	.string "I was hoping that it was a famous star\n"
 	.string "so I could get an autograph.\p"
 	.string "But who's that being interviewed?\n"
-	.string "Isn't that CAPT. STERN?$"
+	.string "Isn't that underwater guy?$"
 
 SlateportCity_Text_InterviewerSoCool:
 	.string "That lady interviewer is so cool\n"
 	.string "and pretty.\p"
 	.string "When I grow up, I'm going to be\n"
-	.string "an international journalist!$"
+	.string "an international journalist!\p"
+	.string "I just hope I don't have to do\p"
+	.string "an article on Boeing!$"
 
 SlateportCity_Text_SternSaysDiscoveredSomething:
 	.string "CAPT. STERN says they discovered\n"
 	.string "something at the bottom of the sea.\p"
 	.string "I wonder what it is?\n"
-	.string "What could it be?$"
+	.string "Probably Kyogre.$"
 
 SlateportCity_Text_CaptainComeBackWithBigFish:
 	.string "What's going on here?\p"
 	.string "Did the good CAPTAIN come back with\n"
-	.string "a big fish from the ocean floor?$"
+	.string "the big fish from the ocean floor?$"
 
 SlateportCity_Text_AmIOnTV:
 	.string "Hey! Are you watching?\n"
@@ -1191,7 +1193,8 @@ SlateportCity_Text_GabbyWonderfulThanksForInterview:
 SlateportCity_Text_SternWhewFirstInterview:
 	.string "CAPT. STERN: Whew…\p"
 	.string "That was my first time to be filmed for\n"
-	.string "TV. That was nerve-wracking.$"
+	.string "I hope I didn't accidentally metion\p"
+	.string "my extra toe!$"
 
 SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "Oh! {PLAYER}{KUN}!\n"
@@ -1236,7 +1239,7 @@ SlateportCity_Text_BattleTentSign:
 SlateportCity_Text_SternsShipyardWantedSign:
 	.string "STERN'S SHIPYARD\p"
 	.string "“Wanted: A sailor capable of sailing\n"
-	.string "in all currents.”$"
+	.string "in the ocean.”$"
 
 SlateportCity_Text_SternsShipyardNearsCompletion:
 	.string "STERN'S SHIPYARD\p"
@@ -1252,33 +1255,33 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 
 SlateportCity_Text_PokemonFanClubSign:
 	.string "POKéMON FAN CLUB\n"
-	.string "“Calling all fans of POKéMON!”$"
+	.string "“Calling all fans of Cinderace!”$"
 
 SlateportCity_Text_OceanicMuseumSign:
-	.string "“The endless sea sustains\n"
-	.string "all life.”\p"
+	.string "“The endless ocean for\n"
+	.string "the nintendo wii.”\p"
 	.string "OCEANIC MUSEUM$"
 
 SlateportCity_Text_CitySign:
 	.string "SLATEPORT CITY\p"
-	.string "“The port where people and POKéMON\n"
+	.string "“The port where POKéMON and people\n"
 	.string "cross paths.”$"
 
 SlateportCity_Text_MarketSign:
 	.string "SLATEPORT MARKET\n"
-	.string "“Unique items found nowhere else!”$"
+	.string "“Unique items and normal stuff!”$"
 
 SlateportCity_Text_HarborFerryUnderConstruction:
 	.string "SLATEPORT HARBOR\p"
 	.string "“The ferry S.S. TIDAL is under\n"
 	.string "construction in the SHIPYARD.\p"
 	.string "“Service is scheduled to begin\n"
-	.string "shortly.”$"
+	.string "Wednesday.”$"
 
 SlateportCity_Text_HarborSign:
 	.string "SLATEPORT HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
-	.string "the ferry S.S. TIDAL.”$"
+	.string "or the ferry S.S. TIDAL.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
 	.string "NAME RATER'S HOUSE\n"
@@ -1379,7 +1382,7 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
 	.string "to take the BATTLE TENT challenge?\p"
-	.string "Yeah! That's a good idea!\n"
+	.string "Yeah! Baby! Yeah!!!!\n"
 	.string "That's a really great idea!\p"
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"

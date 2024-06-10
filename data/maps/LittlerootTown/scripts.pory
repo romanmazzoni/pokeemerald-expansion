@@ -1056,6 +1056,7 @@ script Creditsbuilding_EventScript_CreditsSign5{
 
 script Creditsbuilding_EventScript_Roman{
 	lockall
+	faceplayer
 	if(flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN) && !flag(FLAG_defeated_roman)){
 	msgbox(format("Roman: Oh, you wanted to fight me?"))
 	trainerbattle_no_intro(TRAINER_LEAF, format("Rats."))
@@ -1071,6 +1072,7 @@ script Creditsbuilding_EventScript_Roman{
 }
 script Creditsbuilding_EventScript_Adonu{
 	lockall
-	msgbox(format("Adonu: I downloaded the files from GitHub. I came really close to helping)"))
+	faceplayer
+	msgbox(format("Adonu: I downloaded the files from GitHub. I came really close to helping."))
 	releaseall
 }

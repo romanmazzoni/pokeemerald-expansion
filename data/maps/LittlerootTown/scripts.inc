@@ -1064,6 +1064,7 @@ Creditsbuilding_EventScript_CreditsSign5::
 
 Creditsbuilding_EventScript_Roman::
 	lockall
+	faceplayer
 	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_3
 Creditsbuilding_EventScript_Roman_1:
 	goto_if_unset FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_7
@@ -1094,6 +1095,7 @@ Creditsbuilding_EventScript_Roman_10:
 
 Creditsbuilding_EventScript_Adonu::
 	lockall
+	faceplayer
 	msgbox Creditsbuilding_EventScript_Adonu_Text_0
 	releaseall
 	return
@@ -1143,4 +1145,4 @@ Creditsbuilding_EventScript_Roman_Text_3:
 
 Creditsbuilding_EventScript_Adonu_Text_0:
 	.string "Adonu: I downloaded the files from\n"
-	.string "GitHub. I came really close to helping)$"
+	.string "GitHub. I came really close to helping.$"

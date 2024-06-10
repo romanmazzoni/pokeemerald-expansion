@@ -6904,11 +6904,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMossdeep[] = {
     {
     .iv = 100,
     .lvl = 42,
-    .species = SPECIES_MIGHTYENA,
-    },
-    {
-    .iv = 100,
-    .lvl = 42,
     .species = SPECIES_YANMEGA,
     },
     {
@@ -6917,19 +6912,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMossdeep[] = {
     .species = SPECIES_SCOLIPEDE,
     },
     {
-    .iv = 50,
-    .lvl = 43,
-    .species = SPECIES_GIRAFARIG,
-    },
-    {
     .iv = 200,
     .lvl = 43,
     .species = SPECIES_AUDINO,
-    },
-    {
-    .iv = 50,
-    .lvl = 44,
-    .species = SPECIES_SEISMITOAD,
     },
 };
 
@@ -10214,21 +10199,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darcy[] = {
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMossdeep[] = { //this was set
-    {
-    .iv = 250,
-    .lvl = 42,
-    .species = SPECIES_MIGHTYENA,
-    },
-    {
-    .iv = 100,
-    .lvl = 42,
-    .species = SPECIES_ZOROARK,
-    },
-    {
-    .iv = 150,
-    .lvl = 45,
-    .species = SPECIES_CINCCINO,
-    },
     {
     .iv = 0,
     .lvl = 40,

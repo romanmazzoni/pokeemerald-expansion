@@ -775,9 +775,9 @@ struct
     {
         .species = SPECIES_METAGROSS,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 42,
+        .level = 44,
         .nature = NATURE_BRAVE,
-        .evs = {0, 252, 252, 0, 6, 0},
+        .evs = {0, 0, 0, 252, 252, 6},
         .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW}
     },
     {
@@ -789,38 +789,13 @@ struct
         .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING}
     },
     {
-        .species = SPECIES_AGGRON,
+        .species = SPECIES_ARCEUS,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 44,
         .nature = NATURE_ADAMANT,
         .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
-    }, 
-    {
-        .species = SPECIES_AGGRON,
-        .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
-    },
-    {
-        .species = SPECIES_AGGRON,
-        .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
-    },
-    {
-        .species = SPECIES_AGGRON,
-        .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+        .moves = {MOVE_JUDGMENT, MOVE_RECOVER, MOVE_VICTORY_DANCE, MOVE_EXTREME_SPEED}
     }
-
 };
 
 #include "data/battle_frontier/battle_tent.h"
