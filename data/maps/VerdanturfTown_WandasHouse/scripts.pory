@@ -150,12 +150,13 @@ VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven:
 	.string "He's been digging a tunnel nonstop\n"
 	.string "just so he can see my daughter.\p"
 	.string "My daughter's a little concerned,\n"
-	.string "so she goes out to the tunnel a lot.$"
+	.string "so she's going to break up with him.$"
 
 VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
 	.string "It's amazing. My daughter's boyfriend\n"
 	.string "was digging the tunnel by hand!\p"
-	.string "It's so incredible!$"
+	.string "Why wouldn't he just teach his\n"
+	.string "pokemon rock smash?$"
 
 VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
 	.string "If anything were to happen to WALLY,\n"

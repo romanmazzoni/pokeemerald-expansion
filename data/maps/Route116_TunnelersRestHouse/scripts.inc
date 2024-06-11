@@ -35,8 +35,8 @@ Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
 	.string "It turns out that we would have had\n"
 	.string "a negative effect on wild POKéMON in\l"
 	.string "the area.\p"
-	.string "So, we've got nothing to do but loll\n"
-	.string "around here doing nothing.$"
+	.string "Digging a tunnel here would\n"
+	.string "be really really terrible!$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "There's a man digging his way to\n"
@@ -46,7 +46,9 @@ Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
 	.string "without using machines, he won't\l"
 	.string "disturb POKéMON, and he'll avoid\l"
 	.string "harming the natural environment.\p"
-	.string "I wonder if he made it through yet.$"
+	.string "Is he stupid?\p"
+	.string "Why would digging without a\n"
+	.string "machine make any difference.$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
 	.string "To get to VERDANTURF without using\n"

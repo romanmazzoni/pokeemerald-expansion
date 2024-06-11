@@ -69,10 +69,8 @@ VerdanturfTown_Text_ManTryingToDigTunnel:
 	.string "timid POKéMON.\p"
 	.string "They get all scared of loud noise and\n"
 	.string "make a big uproar.\p"
-	.string "So they had to stop the big tunnel\n"
-	.string "project.\p"
-	.string "But there's one man. He's trying to dig\n"
-	.string "the tunnel by himself!$"
+	.string "So I like to yell into the tunnel\n"
+	.string "to troll all the POKEMON!$"
 
 VerdanturfTown_Text_ManDugTunnelForLove:
 	.string "There was a man who dug a tunnel for\n"
@@ -83,8 +81,8 @@ VerdanturfTown_Text_AirCleanHere:
 	.string "The way the winds blow, volcanic ash\n"
 	.string "is never blown in this direction.\p"
 	.string "The air is clean and delicious here.\n"
-	.string "Living here should do wonders for even\l"
-	.string "frail and sickly people.$"
+	.string "I love pollution!\l"
+	.string "It doesn't affect us!$"
 
 VerdanturfTown_Text_MakeBattleTentDebut:
 	.string "My POKéMON and I, we've been riding\n"
@@ -98,8 +96,8 @@ VerdanturfTown_Text_GuyTryingToBustThroughCave:
 	.string "There's a guy in there who's trying to\n"
 	.string "bust up boulders so he can bust out\l"
 	.string "through to the other side.\p"
-	.string "It'd be great if we could go through…\n"
-	.string "It'll make it easy to visit RUSTBORO.$"
+	.string "Someone needs to tell him\n"
+	.string "about the move rock smash.$"
 
 VerdanturfTown_Text_EasyToGetToRustboroNow:
 	.string "That cave next to the POKéMON MART\n"
@@ -110,7 +108,9 @@ VerdanturfTown_Text_EasyToGetToRustboroNow:
 VerdanturfTown_Text_TownSign:
 	.string "VERDANTURF TOWN\p"
 	.string "“The windswept highlands with the\n"
-	.string "sweet fragrance of grass.”$"
+	.string "sweet fragrance of grass.”\p"
+	.string "Wait, what grass is sweet?\n"
+	.string "Is this talking about weed?$"
 
 VerdanturfTown_Text_WandasHouse:
 	.string "WANDA'S HOUSE$"

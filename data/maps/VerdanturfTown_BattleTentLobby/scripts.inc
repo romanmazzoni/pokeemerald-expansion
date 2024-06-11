@@ -333,18 +333,15 @@ VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
 	.string "It doesn't matter how strong it is,\n"
 	.string "either.\p"
 	.string "For example, a POKéMON with a GENTLE\n"
-	.string "nature probably won't enjoy hurting\l"
-	.string "its opponents.\p"
-	.string "If it can't seem to live up to its\n"
-	.string "potential, it's probably failing at\l"
-	.string "using a disliked move against its will.$"
+	.string "nature will have lower defense\l"
+	.string "and higher special defense.\p"
+	.string "I guess that doesn't really\n"
+	.string "make too much sense.$"
 
 VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
-	.string "My big sister is gentle usually.\n"
-	.string "But when she gets angry,\l"
-	.string "she's really, really scary!\p"
-	.string "I bet a gentle POKéMON will be scary\n"
-	.string "if it gets angry!$"
+	.string "My big sister is brave usually.\n"
+	.string "That means she has extra attack,\l"
+	.string "and less speed!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 	.string "My feelings toward my POKéMON…\n"
@@ -357,15 +354,16 @@ VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
 	.string "My feelings toward my POKéMON…\n"
 	.string "I'm sure the attraction is mutual!\p"
-	.string "They battle exactly the way I want\n"
-	.string "them to!$"
+	.string "They behave exactly the way I want\n"
+	.string "them to!\p"
+	.string "I'm gonna go to jail...$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "What kind of moves have you taught\n"
 	.string "your POKéMON?\p"
 	.string "I think you would give yourself\n"
-	.string "an advantage if they knew how to\l"
-	.string "heal or protect themselves.$"
+	.string "an advantage if they knew\l"
+	.string "metronome.$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
 	.string "SCOTT: Hey there, {PLAYER}{KUN}!\n"

@@ -8717,7 +8717,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_Mike1[] = {
     .iv = 0,
     .lvl = 10,
     .species = SPECIES_BLITZLE,
-    .moves = {MOVE_BITE, MOVE_SCARY_FACE, MOVE_QUICK_ATTACK, MOVE_NONE}
+    .moves = {MOVE_STOMP, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 7,
+    .species = SPECIES_MIMIKYU,
+    .moves = {MOVE_FAKE_OUT, MOVE_SUCKER_PUNCH, MOVE_NONE, MOVE_NONE}
     }
 };
 
@@ -8735,7 +8741,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Mike2[] = {
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_MACHOP,
+    .species = SPECIES_HO_OH,
     }
 };
 
