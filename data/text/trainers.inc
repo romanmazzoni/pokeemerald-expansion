@@ -2148,7 +2148,7 @@ Route116_Text_JoeyPostBattle:
 Route116_Text_JoseIntro:
 	.string "I've studied every bit of\n"
 	.string "pokemon since release.\p"
-	.string "I'm simply more prepared than you.\p"
+	.string "I'm simply more prepared than you.$"
 
 Route116_Text_JoseDefeat:
 	.string "But how?\n"

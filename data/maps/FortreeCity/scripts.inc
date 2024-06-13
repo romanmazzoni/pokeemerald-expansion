@@ -92,15 +92,15 @@ FortreeCity_Text_SawGiganticPokemonInSky:
 	.string "gigantic POKéMON in the sky.\p"
 	.string "It seemed to squirm as it flew toward\n"
 	.string "ROUTE 131.\p"
-	.string "By the way… Sniff…\n"
-	.string "Um… You, uh…smell singed.\p"
-	.string "Were you at a volcano or something?$"
+	.string "Why would no one believe that?\n"
+	.string "Its normal to see pokemon right?\p"
+	.string "Am I the crazy one?$"
 
 FortreeCity_Text_SomethingBlockingGym:
 	.string "I want to go to the POKéMON GYM,\n"
 	.string "but something's blocking the way.\p"
-	.string "After all the bother I went through\n"
-	.string "training on ROUTE 120…$"
+	.string "It's probably a kecleon.\n"
+	.string "They're common around here.$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
 	.string "I've got my pride-and-joy POKéMON\n"
@@ -108,9 +108,9 @@ FortreeCity_Text_ThisTimeIllBeatWinona:
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
 	.string "The ground absorbs rainwater, and\n"
-	.string "trees grow by drinking that water…\p"
-	.string "Our FORTREE CITY exists because\n"
-	.string "there's both water and soil.$"
+	.string "we call it groundwater.\p"
+	.string "Am I really that dumb for calling\n"
+	.string "clouds uppies water?$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "The CITY consists of homes built on\n"
@@ -118,17 +118,18 @@ FortreeCity_Text_EveryoneHealthyAndLively:
 	.string "Perhaps because of that lifestyle,\n"
 	.string "everyone is healthy and lively.\p"
 	.string "Why, even myself--I feel as if I've\n"
-	.string "grown thirty years younger.$"
+	.string "become a tree.$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "Living on top of trees is okay.\p"
-	.string "But sometimes BUG POKéMON come in\n"
-	.string "through windows.\l"
-	.string "It can be really startling.$"
+	.string "I saw The Langoliers when\n"
+	.string "I was 6.\p"
+	.string "It scarred me for life.$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
 	.string "There are POKéMON that evolve when\n"
-	.string "you trade them! That's what I heard.$"
+	.string "you trade them! That's what I heard.\p"
+	.string "Not in this rom though!\n"
+	.string "Those mons evolve through level!$"
 
 FortreeCity_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
@@ -152,4 +153,4 @@ FortreeCity_Text_GymSign:
 	.string "FORTREE CITY POKéMON GYM\n"
 	.string "LEADER: WINONA\p"
 	.string "“The bird user taking flight into\n"
-	.string "the world.”$"
+	.string "the skies.”$"

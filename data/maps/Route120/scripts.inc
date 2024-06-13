@@ -401,14 +401,21 @@ Route120_Text_StevenGiveDevonScope:
 	.string "I'd like you to have this\n"
 	.string "DEVON SCOPE.\p"
 	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "concealed POKéMON.\p"
+	.string "LIKE AT THE GYM. REMEMBER WHEN YOU\n"
+	.string "WENT TO THE GYM IN FORTREE AND IT WAS\l"
+	.string "BLOCKED, JUST PLOP ON THESE BAD BOYS\l"
+	.string "AND GO TO TOWN. Sorry, it's kinda hard to\l"
+	.string "know where to go sometimes so I wanted\l"
+	.string "to be really direct here.$"
 
 Route120_Text_StevenGoodbye:
 	.string "STEVEN: {PLAYER}{KUN}.\p"
 	.string "I enjoy seeing POKéMON and TRAINERS\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "Well, let's meet again\n"
+	.string "when you beat everyone else.$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
