@@ -570,12 +570,12 @@
 
 #define SILVALLY_SPECIES_INFO(type)                     \
     {                                                   \
-        .baseHP        = 95,                            \
-        .baseAttack    = 95,                            \
-        .baseDefense   = 95,                            \
-        .baseSpeed     = 95,                            \
-        .baseSpAttack  = 95,                            \
-        .baseSpDefense = 95,                            \
+        .baseHP        = 103,                            \
+        .baseAttack    = 103,                            \
+        .baseDefense   = 103,                            \
+        .baseSpeed     = 103,                            \
+        .baseSpAttack  = 103,                            \
+        .baseSpDefense = 103,                            \
         .types = { TYPE_VOID, TYPE_FAKE, TYPE_MONEY, TYPE_MONEY },                        \
         .catchRate = 3,                                 \
         .expYield = 257,                                \
@@ -12541,7 +12541,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_LIMBER, ABILITY_UNBURDEN, ABILITY_PRANKSTER},
+        .abilities = {ABILITY_FUR_COAT, ABILITY_UNBURDEN, ABILITY_PRANKSTER},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -14038,7 +14038,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE},
-        .abilities = {ABILITY_FRISK, ABILITY_COMPETITIVE, ABILITY_SHADOW_TAG},
+        .abilities = {ABILITY_SHADOW_TAG, ABILITY_COMPETITIVE, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -14060,7 +14060,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE},
-        .abilities = {ABILITY_FRISK, ABILITY_COMPETITIVE, ABILITY_SHADOW_TAG},
+        .abilities = {ABILITY_SHADOW_TAG, ABILITY_COMPETITIVE, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -14082,7 +14082,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE},
-        .abilities = {ABILITY_FRISK, ABILITY_COMPETITIVE, ABILITY_SHADOW_TAG},
+        .abilities = {ABILITY_SHADOW_TAG, ABILITY_COMPETITIVE, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
     },
@@ -19376,11 +19376,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_DOTTLER] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 35,
+        .baseHP        = 60,
+        .baseAttack    = 45,
         .baseDefense   = 80,
         .baseSpeed     = 30,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 90,
         .types = { TYPE_STUPID, TYPE_HARD, TYPE_STUPID, TYPE_HARD},
         .catchRate = 120,
@@ -19399,11 +19399,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ORBEETLE] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 45,
+        .baseHP        = 68,
+        .baseAttack    = 55,
         .baseDefense   = 110,
         .baseSpeed     = 90,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 90,
         .baseSpDefense = 120,
         .types = { TYPE_RED, TYPE_EVIL, TYPE_REVERSE, TYPE_BALL},
         .catchRate = 45,
@@ -19516,7 +19516,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 48,
         .baseSpAttack  = 40,
         .baseSpDefense = 45,
-        .types = { TYPE_NORMAL, TYPE_NORMAL, TYPE_NORMAL, TYPE_NORMAL},
+        .types = { TYPE_NORMAL, TYPE_SOFT, TYPE_NORMAL, TYPE_NORMAL},
         .catchRate = 255,
         .expYield = 122,
         .evYield_Defense   = 1,
@@ -19538,7 +19538,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 88,
         .baseSpAttack  = 60,
         .baseSpDefense = 90,
-        .types = { TYPE_NORMAL, TYPE_REVERSE, TYPE_FAKE, TYPE_NORMAL},
+        .types = { TYPE_NORMAL, TYPE_SOFT, TYPE_REVERSE, TYPE_FAKE},
         .catchRate = 127,
         .expYield = 172,
         .evYield_Defense   = 2,

@@ -10239,14 +10239,14 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BRENDAN_PLACEHOLDER] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RS_BRENDAN,
-        .trainerName = _("BRENDAN"),
-        .items = {},
+        .trainerClass = TRAINER_CLASS_RIVAL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerName = _("ADONU"),
+        .items = {ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = 0,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanLinkPlaceholder),
+        .party = ITEM_CUSTOM_MOVES(sParty_Adonu),
     },
 
     [TRAINER_MAY_PLACEHOLDER] =

@@ -307,13 +307,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FLY] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 90,
+            .power = 95,
         #else
             .power = 70,
         #endif
         .effect = EFFECT_SEMI_INVULNERABLE,
         .type = TYPE_HMSLAVE,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -1312,7 +1312,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_POISON,
         .power = 0,
-        .type = TYPE_POISON,
+        .type = TYPE_SHROOM,
         .accuracy = 85,
         .pp = 35,
         .secondaryEffectChance = 0,
@@ -3173,7 +3173,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .type = TYPE_NORMAL,
         #endif
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 25,
+        .power = 30,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 90,
@@ -5421,7 +5421,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SILVER_WIND] =
     {
         .effect = EFFECT_ALL_STATS_UP_HIT,
-        .power = 60,
+        .power = 40,
         .type = TYPE_MONEY,
         .accuracy = 100,
         .pp = 5,
@@ -5786,7 +5786,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 95,
-        .type = TYPE_SOFT,
+        .type = TYPE_SPORTS,
         .accuracy = 95,
         .pp = 5,
         .secondaryEffectChance = 30,
@@ -6339,7 +6339,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ASSURANCE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 67,
         #else
             .power = 50,
         #endif
@@ -6411,7 +6411,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_TRUMP_CARD] =
     {
         .effect = EFFECT_TRUMP_CARD,
-        .power = 0,
+        .power = 1,
         .type = TYPE_LANCE,
         .accuracy = 0,
         .pp = 5,
@@ -8312,7 +8312,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT_2,
         .power = 40,
-        .type = TYPE_POISON,
+        .type = TYPE_SHROOM,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -12086,7 +12086,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_MISTY_EXPLOSION] =
     {
         .effect = EFFECT_EXPLOSION,
-        .power = 100,
+        .power = 230,
         .type = TYPE_EXPLOSION,
         .accuracy = 100,
         .pp = 5,

@@ -791,7 +791,7 @@ struct
     {
         .species = SPECIES_ARCEUS,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
+        .level = 37,
         .nature = NATURE_ADAMANT,
         .evs = {0, 252, 0, 0, 252, 6},
         .moves = {MOVE_JUDGMENT, MOVE_RECOVER, MOVE_VICTORY_DANCE, MOVE_EXTREME_SPEED}

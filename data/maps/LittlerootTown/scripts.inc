@@ -1096,9 +1096,32 @@ Creditsbuilding_EventScript_Roman_10:
 Creditsbuilding_EventScript_Adonu::
 	lockall
 	faceplayer
-	msgbox Creditsbuilding_EventScript_Adonu_Text_0
+	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Adonu_3
+Creditsbuilding_EventScript_Adonu_1:
+	goto_if_unset FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Adonu_7
+Creditsbuilding_EventScript_Adonu_6:
+	goto_if_set FLAG_defeated_adonu, Creditsbuilding_EventScript_Adonu_10
+Creditsbuilding_EventScript_Adonu_9:
 	releaseall
 	return
+
+Creditsbuilding_EventScript_Adonu_2:
+	msgbox Creditsbuilding_EventScript_Adonu_Text_0
+	trainerbattle_no_intro TRAINER_BRENDAN_PLACEHOLDER, Creditsbuilding_EventScript_Adonu_Text_1
+	setflag FLAG_defeated_adonu
+	goto Creditsbuilding_EventScript_Adonu_1
+
+Creditsbuilding_EventScript_Adonu_3:
+	goto_if_unset FLAG_defeated_adonu, Creditsbuilding_EventScript_Adonu_2
+	goto Creditsbuilding_EventScript_Adonu_1
+
+Creditsbuilding_EventScript_Adonu_7:
+	msgbox Creditsbuilding_EventScript_Adonu_Text_2
+	goto Creditsbuilding_EventScript_Adonu_6
+
+Creditsbuilding_EventScript_Adonu_10:
+	msgbox Creditsbuilding_EventScript_Adonu_Text_3
+	goto Creditsbuilding_EventScript_Adonu_9
 
 
 LittlerootTown_EventScript_CreditsSign_Text_0:
@@ -1144,5 +1167,15 @@ Creditsbuilding_EventScript_Roman_Text_3:
 	.string "the Romhack.$"
 
 Creditsbuilding_EventScript_Adonu_Text_0:
+	.string "Adonu: Ok I'll fight you, smile.$"
+
+Creditsbuilding_EventScript_Adonu_Text_1:
+	.string "PepeSmile.$"
+
+Creditsbuilding_EventScript_Adonu_Text_2:
 	.string "Adonu: I downloaded the files from\n"
 	.string "GitHub. I came really close to helping.$"
+
+Creditsbuilding_EventScript_Adonu_Text_3:
+	.string "Adonu: I cannot believe my eyes! 10\n"
+	.string "million fireflies!$"

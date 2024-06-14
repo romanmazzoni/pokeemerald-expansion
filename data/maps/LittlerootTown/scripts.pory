@@ -1073,6 +1073,16 @@ script Creditsbuilding_EventScript_Roman{
 script Creditsbuilding_EventScript_Adonu{
 	lockall
 	faceplayer
+	if(flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN) && !flag(FLAG_defeated_adonu)){
+	msgbox(format("Adonu: Ok I'll fight you, smile."))
+	trainerbattle_no_intro(TRAINER_BRENDAN_PLACEHOLDER, format("PepeSmile."))
+	setflag(FLAG_defeated_adonu)
+	}
+	if(!flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)){
 	msgbox(format("Adonu: I downloaded the files from GitHub. I came really close to helping."))
+	}
+	if(flag(FLAG_defeated_adonu)){
+		msgbox(format("Adonu: I cannot believe my eyes! 10 million fireflies!"))
+	}
 	releaseall
 }
