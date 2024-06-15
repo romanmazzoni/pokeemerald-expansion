@@ -1013,7 +1013,7 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "Grovyle was a good guy the whole time?\p"
-	.string "Then why was he stealing all those time\l"
+	.string "Then why was he stealing all those time\n"
 	.string "gears!$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:

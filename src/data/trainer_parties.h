@@ -888,7 +888,7 @@ static const struct TrainerMonItemCustomMoves sParty_Parker[] = {
     .lvl = 31,
     .species = SPECIES_SPINDA,
     .heldItem = ITEM_TOXIC_ORB,
-    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE}
+    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_TRICK, MOVE_NONE}
     }
 };
 
@@ -3514,14 +3514,14 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
     .iv = 100,
-    .lvl = 15,
+    .lvl = 14,
     .species = SPECIES_DARUMAKA,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_MAGNIDUDE, MOVE_LOW_KICK, MOVE_HEAT_CRASH, MOVE_HEAT_WAVE}
     },
     {
     .iv = 100,
-    .lvl = 16,
+    .lvl = 15,
     .species = SPECIES_GROWLITHE,
     .heldItem = ITEM_RAZOR_CLAW,
     .moves = {MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_GROWL, MOVE_BULK_UP}
@@ -8012,6 +8012,11 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nicholas[] = {
     .iv = 0,
     .lvl = 36,
     .species = SPECIES_WOBBUFFET,
+    },
+    {
+    .iv = 200,
+    .lvl = 35,
+    .species = SPECIES_SNORLAX,
     },
     {
     .iv = 200,
