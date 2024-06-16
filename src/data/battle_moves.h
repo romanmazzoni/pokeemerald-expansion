@@ -2791,7 +2791,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
             .accuracy = 0,
-            .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+            .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
             .effect = EFFECT_RECOIL_HP_25,
         #else
             .accuracy = 100,
@@ -2800,7 +2800,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #endif
         .power = 70,
         .type = TYPE_LOSER,
-        .pp = 1,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -10194,7 +10194,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HOLD_BACK] =
     {
         .effect = EFFECT_FALSE_SWIPE,
-        .power = 90,
+        .power = 95,
         .type = TYPE_KING,
         .accuracy = 100,
         .pp = 20,

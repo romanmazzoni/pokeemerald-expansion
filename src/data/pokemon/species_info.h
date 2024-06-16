@@ -14355,7 +14355,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_EFFECT_SPORE, ABILITY_NONE, ABILITY_REGENERATOR},
+        .abilities = {ABILITY_REGENERATORE, ABILITY_NONE, ABILITY_EFFECT_SPORE},
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
     },
@@ -14379,7 +14379,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_EFFECT_SPORE, ABILITY_NONE, ABILITY_REGENERATOR},
+        .abilities = {ABILITY_REGENERATOR, ABILITY_NONE, ABILITY_EFFECT_SPORE},
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
     },
@@ -20271,7 +20271,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_FALINKS] =
     {
-        .baseHP        = 73,
+        .baseHP        = 74,
         .baseAttack    = 100,
         .baseDefense   = 100,
         .baseSpeed     = 75,

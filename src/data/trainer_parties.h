@@ -1566,7 +1566,7 @@ static const struct TrainerMonItemCustomMoves sParty_Daphne[] = {
     .lvl = 39,
     .species = SPECIES_LUVDISC,
     .heldItem = ITEM_NUGGET,
-    .moves = {MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_GIGA_DRAIN, MOVE_WATER_PULSE}
+    .moves = {MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_GIGA_DRAIN, MOVE_FLING}
     },
     {
     .iv = 100,
@@ -3553,7 +3553,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     .lvl = 14,
     .species = SPECIES_DARUMAKA,
     .heldItem = ITEM_QUICK_CLAW,
-    .moves = {MOVE_MAGNIDUDE, MOVE_LOW_KICK, MOVE_HEAT_CRASH, MOVE_HEAT_WAVE}
+    .moves = {MOVE_MAGNIDUDE, MOVE_LOW_KICK, MOVE_HEAT_CRASH, MOVE_BULK_UP}
     },
     {
     .iv = 100,
