@@ -273,12 +273,12 @@ RustboroCity_DevonCorp_2F_EventScript_WorkOnNext::
 RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon:
 	.string "We're developing a device for talking\n"
 	.string "with POKéMON.\p"
-	.string "But we haven't had much success…$"
+	.string "I meow at cats…$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
 	.string "I'm developing new kinds of\n"
 	.string "POKé BALLS…\p"
-	.string "But I haven't made much headway…$"
+	.string "But it's hard to beat the masterball…$"
 
 RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "We finally made new kinds of\n"
@@ -294,7 +294,7 @@ RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 RustboroCity_DevonCorp_2F_Text_IMadePokenav:
 	.string "I made the POKéNAV!\p"
 	.string "As an engineer, I feel blessed to have\n"
-	.string "made something so great!$"
+	.string "a wife!$"
 
 RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "Oh, wow!\n"
@@ -304,14 +304,14 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "the feelings of POKéMON.\p"
 	.string "Would you like me to describe its\n"
 	.string "features in detail?\p"
-	.string "No, no. I think you'll find out just by\n"
-	.string "trying the POKéNAV out.$"
+	.string "Sorry, I don't know the details.\n"
+	.string "I don't do any work here.$"
 
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
 	.string "I'm trying to develop a device that\n"
 	.string "visually reproduces the dreams of\l"
 	.string "POKéMON…\p"
-	.string "But it's not going well.$"
+	.string "I should catch a hypno.$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
 	.string "I've been trying to develop a device\n"
@@ -379,5 +379,5 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 	.string "developing next?\p"
 	.string "Our company allows us to make our\n"
 	.string "inspirations into reality.\p"
-	.string "One couldn't ask for a better\n"
-	.string "environment as an engineer.$"
+	.string "Just like Valve once did\n"
+	.string "before they turned evil.$"

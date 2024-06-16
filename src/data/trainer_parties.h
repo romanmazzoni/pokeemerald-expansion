@@ -885,11 +885,47 @@ static const struct TrainerMonItemCustomMoves sParty_Randall[] = {
 static const struct TrainerMonItemCustomMoves sParty_Parker[] = {
     {
     .iv = 255,
-    .lvl = 31,
-    .species = SPECIES_SPINDA,
+    .lvl = 30,
+    .species = SPECIES_GARDEVOIR,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_AURORA_BEAM, MOVE_LIGHT_SCREEN, MOVE_ATTRACT, MOVE_PSYBEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 32,
+    .species = SPECIES_MAGNETON,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_EXPLOSION, MOVE_VOLT_SWITCH, MOVE_ENERGY_BALL, MOVE_NONE}
+    },
+    {
+    .iv = 255,
+    .lvl = 29,
+    .species = SPECIES_KLINK,
     .heldItem = ITEM_TOXIC_ORB,
-    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_TRICK, MOVE_NONE}
+    .moves = {MOVE_TRICK, MOVE_MIRROR_COAT, MOVE_VISE_GRIP, MOVE_NONE}
+    }, 
+    {
+    .iv = 255,
+    .lvl = 31,
+    .species = SPECIES_HAUNTER,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_CURSE, MOVE_SPITE, MOVE_ICE_FANG, MOVE_NONE}
+    },
+    {
+    .iv = 255,
+    .lvl = 30,
+    .species = SPECIES_LILLIGANT_HISUIAN,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_VICTORY_DANCE, MOVE_PETAL_BLIZZARD, MOVE_FAKE_OUT, MOVE_NONE}
+    },
+    {
+    .iv = 255,
+    .lvl = 33,
+    .species = SPECIES_UMBREON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_THUNDER_WAVE, MOVE_FOUL_PLAY, MOVE_WISH, MOVE_BITE}
     }
+    
 };
 
 static const struct TrainerMonItemCustomMoves sParty_George[] = {

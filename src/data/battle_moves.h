@@ -170,12 +170,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_VISE_GRIP] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_DIRE_CLAW,
         .power = 55,
         .type = TYPE_TECH,
         .accuracy = 100,
         .pp = 30,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -9605,7 +9605,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_FREEZE_HIT,
         .power = 90,
-        .type = TYPE_GRASS,
+        .type = TYPE_TREE,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 20,

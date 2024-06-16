@@ -82,10 +82,8 @@ RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
 	.string "Oh, it's so hard every day…\p"
 	.string "What's hard?\n"
 	.string "You need to ask?\p"
-	.string "It's trying to figure out what to\n"
-	.string "make for meals every day.\p"
-	.string "It really isn't easy coming up with\n"
-	.string "meals every day.$"
+	.string "I can't say!\n"
+	.string "It's a kid's game!$"
 
 RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
 	.string "Oh, hello!\n"
@@ -134,7 +132,7 @@ RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
 	.string "{STR_VAR_1}.\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "She must not like you…$"
 
 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
 	.string "Oh, so you don't know any good words.\n"
@@ -147,14 +145,14 @@ RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
 	.string "{STR_VAR_1}.\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+	.string "You're bad at this…$"
 
 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
 	.string "Oh, so you don't know any good words.\n"
 	.string "I guess I'll try to amuse her with\l"
 	.string "the saying I used before.\p"
 	.string "Anyways, if you have a good suggestion,\n"
-	.string "don't hesitate in telling me, okay?$"
+	.string "I'd be suprised.$"
 
 RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "Thank you!\p"
@@ -162,9 +160,9 @@ RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
 	.string "laughed for me!\p"
 	.string "Actually, I may not look all that\n"
 	.string "special, but I'm one of DEVON\l"
-	.string "CORPORATION's top researchers.\p"
-	.string "So, how about I do something in return\n"
-	.string "for you?\p"
+	.string "CORPORATION's top researchers\l"
+	.string "so I usually my family doesn't\n"
+	.string "love me.\p"
 	.string "I know, I'll add some new wallpaper\n"
 	.string "patterns for the BOXES in the PC\l"
 	.string "POKéMON Storage System.\p"
