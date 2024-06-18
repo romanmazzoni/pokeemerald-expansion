@@ -736,7 +736,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BITE] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 60,
+        .power = 70,
         .type = TYPE_CAT,
         .accuracy = 100,
         .pp = 25,
@@ -2933,7 +2933,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SNORE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .power = 60,
+            .power = 80,
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_SOUND,
         #elif B_UPDATED_MOVE_DATA == GEN_5
             .power = 40,
@@ -9359,8 +9359,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_V_CREATE,
         .power = 180,
-        .type = TYPE_FIRE,
-        .accuracy = 95,
+        .type = TYPE_GOD,
+        .accuracy = 85,
         .pp = 5,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
@@ -9374,7 +9374,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_FUSION_COMBO,
         .power = 100,
-        .type = TYPE_FIRE,
+        .type = TYPE_RED,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -9389,7 +9389,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_FUSION_COMBO,
         .power = 100,
-        .type = TYPE_ELECTRIC,
+        .type = TYPE_BLUE,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -9408,7 +9408,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .power = 80,
         #endif
         .effect = EFFECT_TWO_TYPED_MOVE,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_FAT,
         .accuracy = 95,
         .pp = 10,
         .secondaryEffectChance = 0,

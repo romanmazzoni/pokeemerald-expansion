@@ -3609,7 +3609,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     },
     {
     .iv = 250,
-    .lvl = 24,
+    .lvl = 23,
     .species = SPECIES_MIENSHAO,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_QUICK_ATTACK, MOVE_FURY_ATTACK, MOVE_BRICK_BREAK, MOVE_ANCIENT_POWER}
@@ -12925,19 +12925,20 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Everett[] = {
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Red[] = {
-    {
-    .iv = 150,
-    .lvl = 50,
-    .species = SPECIES_LEAVANNY,
-    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
-    .moves = {MOVE_TEETER_DANCE, MOVE_STICKY_WEB, MOVE_DIRE_CLAW, MOVE_FOUL_PLAY}
-    },
+    
     {
     .iv = 150,
     .lvl = 50,
     .species = SPECIES_RILLABOOM,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_EXPLOSION, MOVE_SLASH, MOVE_WOOD_HAMMER, MOVE_RECOVER}
+    },
+    {
+    .iv = 150,
+    .lvl = 50,
+    .species = SPECIES_LEAVANNY,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_TEETER_DANCE, MOVE_STICKY_WEB, MOVE_DIRE_CLAW, MOVE_FOUL_PLAY}
     },
     {
     .iv = 150,

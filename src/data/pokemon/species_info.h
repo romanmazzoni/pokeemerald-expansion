@@ -1089,17 +1089,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_BUTTERFREE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 81,
         .baseAttack    = 45,
-        .baseDefense   = 50,
-        .baseSpeed     = 70,
+        .baseDefense   = 62,
+        .baseSpeed     = 80,
         .baseSpDefense = 80,
         #if P_UPDATED_STATS >= GEN_6
-            .baseSpAttack  = 90,
+            .baseSpAttack  = 110,
         #else
             .baseSpAttack  = 80,
         #endif
-        .types = { TYPE_FLYING, TYPE_BEE, TYPE_REVERSE, TYPE_REVERSE},
+        .types = { TYPE_FLYING, TYPE_REVERSE, TYPE_BEE, TYPE_BEE},
         .catchRate = 45,
         .expYield = 178,
         .evYield_SpAttack  = 2,
@@ -1161,13 +1161,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_BEEDRILL] =
     {
-        .baseHP        = 80,
-        .baseDefense   = 40,
-        .baseSpeed     = 75,
+        .baseHP        = 88,
+        .baseDefense   = 62,
+        .baseSpeed     = 81,
         .baseSpAttack  = 45,
         .baseSpDefense = 80,
         #if P_UPDATED_STATS >= GEN_6
-            .baseAttack    = 90,
+            .baseAttack    = 110,
         #else
             .baseAttack    = 80,
         #endif
@@ -5818,9 +5818,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_URSARING] =
     {
         .baseHP        = 140,
-        .baseAttack    = 130,
+        .baseAttack    = 100,
         .baseDefense   = 84,
-        .baseSpeed     = 130,
+        .baseSpeed     = 120,
         .baseSpAttack  = 75,
         .baseSpDefense = 78,
         .types = { TYPE_BEAR, TYPE_GOD, TYPE_KING, TYPE_BEAR},
@@ -5832,7 +5832,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_MOXIE, ABILITY_INTIMIDATE, ABILITY_CONTRARY},
+        .abilities = {ABILITY_MODD_MODE, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
@@ -14355,7 +14355,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_REGENERATORE, ABILITY_NONE, ABILITY_EFFECT_SPORE},
+        .abilities = {ABILITY_REGENERATOR, ABILITY_NONE, ABILITY_EFFECT_SPORE},
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
     },
@@ -18672,7 +18672,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 103,
         .baseSpAttack  = 127,
         .baseSpDefense = 131,
-        .types = { TYPE_PSYCHIC, TYPE_LIGHT, TYPE_PSYCHIC, TYPE_LIGHT},
+        .types = { TYPE_PSYCHIC, TYPE_LIGHT, TYPE_FUN, TYPE_LIGHT},
         .catchRate = 45,
         .expYield = 257,
         .evYield_SpDefense = 3,
@@ -20910,7 +20910,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense   = 95,
         .baseSpeed     = 85,
         .baseSpAttack  = 45,
-        .baseSpDefense = 70,
+        .baseSpDefense = 78,
         .types = { TYPE_SLEDGE, TYPE_ROCK, TYPE_UGLY, TYPE_UGLY},
         .catchRate = 25,
         .expYield = 175,
@@ -23716,7 +23716,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_GIRATINA_ORIGIN] =
     {
-        .baseHP        = 30,
+        .baseHP        = 150,
         .baseAttack    = 120,
         .baseDefense   = 100,
         .baseSpeed     = 20,
