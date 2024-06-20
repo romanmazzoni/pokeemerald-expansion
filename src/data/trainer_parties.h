@@ -3057,12 +3057,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Joshua[] = {
     {
     .iv = 0,
     .lvl = 41,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_VAPOREON,
     },
     {
     .iv = 0,
     .lvl = 41,
-    .species = SPECIES_WEEPINBELL,
+    .species = SPECIES_SYLVEON,
     }
 };
 
@@ -4468,6 +4468,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_Josh[] = {
     .iv = 100,
     .lvl = 10,
     .species = SPECIES_MILCERY,
+    .moves = {MOVE_ABSORB, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 100,
+    .lvl = 10,
+    .species = SPECIES_DITTO,
     .moves = {MOVE_ABSORB, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
@@ -9094,7 +9100,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_WallyMauville[] = {
     },
     {
     .iv = 170,
-    .lvl = 14,
+    .lvl = 17,
     .species = SPECIES_KOMMO_O,
     }
 };

@@ -563,8 +563,8 @@ MtChimney_Text_MaxieIntro:
 	.string "friends with Norman.\p"
 	.string "Tell ya what {PLAYER}{KUN}.\p"
 	.string "How about a Pokemon battle!\p"
-	.string "I owe a favor to Norman anyway,\p"
-	.string "so a battle for groundon?\n"
+	.string "I owe a favor to Norman anyway,\n"
+	.string "so a battle for groundon?\l"
 	.string "If you win, I'll back off.\p"
 	.string "So how about it?$"
 

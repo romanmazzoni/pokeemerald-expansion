@@ -986,7 +986,7 @@ Route110_Text_JacobDefeated:
 	.string "describe my series!\p"
 	.string "this game rewards blind luck\n"
 	.string "and nothing else, I am beyond\n"
-	.string "convinced at this point\p"
+	.string "convinced at this point.$"
 
 Route110_Text_JacobPostBattle:
 	.string "My preparation was superior.\n"
@@ -994,11 +994,11 @@ Route110_Text_JacobPostBattle:
 	.string "and I lost.\p"
 	.string "I don't see a reason to continue\n"
 	.string "engaging in an activity where what \l"
-	.string "is within my control is \l"
-	.string "overwhelmingly outweighed.\l"
+	.string "is within my control is\l"
+	.string "overwhelmingly outweighed\l"
 	.string "by what is not.\p"
 	.string "I am done with competitive Pokemon\n"
-	.string "and you won't get a fond farewell.\p"
+	.string "and you won't get a fond farewell.$"
 
 Route110_Text_AnthonyIntro:
 	.string "1 18.25 ounce package chocolate\n"

@@ -375,7 +375,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_COTTONEE]              = {{EVO_ITEM, ITEM_SUN_STONE, SPECIES_WHIMSICOTT}},
     [SPECIES_PETILIL]               = {{EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
                                        {EVO_NONE, 0, SPECIES_LILLIGANT_HISUIAN}},
-    [SPECIES_SANDILE]               = {{EVO_LEVEL, 29, SPECIES_KROKOROK}},
+    [SPECIES_SANDILE]               = {{EVO_LEVEL, 23, SPECIES_KROKOROK}},
     [SPECIES_KROKOROK]              = {{EVO_LEVEL, 40, SPECIES_KROOKODILE}},
     [SPECIES_DARUMAKA]              = {{EVO_LEVEL, 35, SPECIES_DARMANITAN}},
     [SPECIES_DWEBBLE]               = {{EVO_LEVEL, 34, SPECIES_CRUSTLE}},

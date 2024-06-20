@@ -2373,7 +2373,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BARRAGE] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 15,
+        .power = 17,
         .type = TYPE_LOVE,
         .accuracy = 85,
         .pp = 20,
@@ -12577,7 +12577,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #if B_UPDATED_MOVE_DATA >= GEN_9
             .power = 120,
         #else
-            .power = 90,
+            .power = 105,
         #endif
         .effect = EFFECT_RAMPAGE,
         .type = TYPE_FURRY,
@@ -13171,12 +13171,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_KOWTOW_CLEAVE] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SLEEP_HIT,
         .power = 85,
-        .type = TYPE_DARK,
+        .type = TYPE_FAKE,
         .accuracy = 0,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,  // | FLAG_SLICING_MOVE,
