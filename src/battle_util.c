@@ -9844,7 +9844,6 @@ static s32 DoMoveDamageCalc(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType,
                             bool32 isCrit, bool32 randomFactor, bool32 updateFlags, u16 typeEffectivenessModifier)
 {
     s32 dmg;
-
     // Don't calculate damage if the move has no effect on target.
     if (typeEffectivenessModifier == UQ_4_12(0))
         return 0;
@@ -9993,6 +9992,12 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
         MulByTypeEffectiveness(&modifier, move, moveType, battlerDef, gBattleMons[battlerDef].type4, battlerAtk, recordAbilities);
     if (recordAbilities && (illusionSpecies = GetIllusionMonSpecies(battlerDef)))
         TryNoticeIllusionInTypeEffectiveness(move, moveType, battlerAtk, battlerDef, modifier, illusionSpecies);
+
+    DebugPrintf("type1 = %d",gBattleMons[battlerDef].type1);
+    DebugPrintf("type2 = %d",gBattleMons[battlerDef].type2);
+    DebugPrintf("type3 = %d",gBattleMons[battlerDef].type3);
+    DebugPrintf("type4 = %d",gBattleMons[battlerDef].type4);
+
     if (modifier == 4095)
         modifier++; //part 2 of the best solution better
     if (gBattleMoves[move].split == SPLIT_STATUS && move != MOVE_THUNDER_WAVE)
@@ -10026,7 +10031,7 @@ static u16 CalcTypeEffectivenessMultiplierInternal(u16 move, u8 moveType, u8 bat
 
     // Thousand Arrows ignores type modifiers for flying mons
     if (!IsBattlerGrounded(battlerDef) && (gBattleMoves[move].flags & FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING)
-        && (gBattleMons[battlerDef].type1 == TYPE_FLYING || gBattleMons[battlerDef].type2 == TYPE_FLYING || gBattleMons[battlerDef].type3 == TYPE_FLYING))
+        && (gBattleMons[battlerDef].type1 == TYPE_FLYING || gBattleMons[battlerDef].type2 == TYPE_FLYING || gBattleMons[battlerDef].type3 == TYPE_FLYING ||  gBattleMons[battlerDef].type4 == TYPE_FLYING))
     {
         modifier = UQ_4_12(1.0);
     }
@@ -10456,7 +10461,7 @@ bool32 DoBattlersShareType(u32 battler1, u32 battler2)
     if (types2[2] == TYPE_MYSTERY)
         types2[2] = types2[0];
 
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < 4; i++)
     {
         if (types1[i] == types2[0] || types1[i] == types2[1] || types1[i] == types2[2] || types1[i] == types2[3])
             return TRUE;

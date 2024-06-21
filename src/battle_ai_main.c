@@ -2430,7 +2430,7 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             if (PartnerMoveIsSameAsAttacker(BATTLE_PARTNER(battlerAtk), battlerDef, move, AI_DATA->partnerMove)
               || (gBattleMons[battlerDef].type1 == TYPE_WATER
               && gBattleMons[battlerDef].type2 == TYPE_WATER
-              && gBattleMons[battlerDef].type3 == TYPE_MYSTERY))
+              ))
                 score -= 10;    // target is already water-only
             break;
         case EFFECT_THIRD_TYPE:

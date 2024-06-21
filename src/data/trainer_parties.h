@@ -3609,8 +3609,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     },
     {
     .iv = 250,
-    .lvl = 23,
-    .species = SPECIES_MIENSHAO,
+    .lvl = 24,
+    .species = SPECIES_MIENFOO,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_QUICK_ATTACK, MOVE_FURY_ATTACK, MOVE_BRICK_BREAK, MOVE_ANCIENT_POWER}
     }
@@ -9999,8 +9999,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Celina[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Bianca[] = {
     {
     .iv = 0,
-    .lvl = 18,
-    .species = SPECIES_SHROOMISH,
+    .lvl = 6,
+    .species = SPECIES_BARBARACLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_BARBARACLE,
     }
 };
 

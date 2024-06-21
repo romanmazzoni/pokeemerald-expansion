@@ -703,7 +703,7 @@ struct BattleStruct
 {                                                                                           \
     gBattleMons[battlerId].type1 = gSpeciesInfo[gBattleMons[battlerId].species].types[0];   \
     gBattleMons[battlerId].type2 = gSpeciesInfo[gBattleMons[battlerId].species].types[1];   \
-    gBattleMons[battlerId].type3 = gSpeciesInfo[gBattleMons[battlerId].species].types[2];                                            \
+    gBattleMons[battlerId].type3 = gSpeciesInfo[gBattleMons[battlerId].species].types[2];   \
     gBattleMons[battlerId].type4 = gSpeciesInfo[gBattleMons[battlerId].species].types[3];  \
 }
 
