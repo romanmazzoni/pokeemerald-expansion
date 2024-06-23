@@ -525,12 +525,12 @@
 
 #define ORICORIO_SPECIES_INFO(type, color)          \
 {                                                   \
-        .baseHP        = 75,                        \
-        .baseAttack    = 70,                        \
-        .baseDefense   = 70,                        \
-        .baseSpeed     = 93,                        \
-        .baseSpAttack  = 98,                        \
-        .baseSpDefense = 70,                        \
+        .baseHP        = 88,                        \
+        .baseAttack    = 89,                        \
+        .baseDefense   = 90,                        \
+        .baseSpeed     = 91,                        \
+        .baseSpAttack  = 92,                        \
+        .baseSpDefense = 93,                        \
         .types = { TYPE_SMART, TYPE_RED, TYPE_DANCE, TYPE_SMART },             \
         .catchRate = 45,                            \
         .expYield = 167,                            \
@@ -5822,7 +5822,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense   = 84,
         .baseSpeed     = 120,
         .baseSpAttack  = 75,
-        .baseSpDefense = 78,
+        .baseSpDefense = 81,
         .types = { TYPE_BEAR, TYPE_GOD, TYPE_KING, TYPE_BEAR},
         .catchRate = 60,
         .expYield = 175,
@@ -8031,7 +8031,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
-        .abilities = {ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS},
+        .abilities = {ABILITY_CONTRARY, ABILITY_NONE, ABILITY_MINUS},
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = FALSE,
     },
@@ -10386,7 +10386,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG},
-        .abilities = {ABILITY_ANTICIPATION, ABILITY_NONE, ABILITY_OVERCOAT},
+        .abilities = {ABILITY_CONTRARY, ABILITY_NONE, ABILITY_OVERCOAT},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -12251,7 +12251,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_ADAPTABILITY, ABILITY_NONE, ABILITY_CONTRARY},
+        .abilities = {ABILITY_CONTRARY, ABILITY_NONE, ABILITY_ADAPTABILITY`},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -13747,7 +13747,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_FLYING},
-        .abilities = {ABILITY_WONDER_SKIN, ABILITY_MAGIC_GUARD, ABILITY_TINTED_LENS},
+        .abilities = {ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_GUARD, ABILITY_TINTED_LENS},
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
     },
@@ -13777,7 +13777,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_COFAGRIGUS] =
     {
-        .baseHP        = 58,
+        .baseHP        = 65,
         .baseAttack    = 50,
         .baseDefense   = 145,
         .baseSpeed     = 30,
@@ -14246,7 +14246,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_VANILLUXE] =
     {
         .baseHP        = 71,
-        .baseAttack    = 95,
+        .baseAttack    = 110,
         .baseDefense   = 85,
         .baseSpeed     = 79,
         .baseSpAttack  = 110,
@@ -16916,7 +16916,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 56,
         .baseSpAttack  = 65,
         .baseSpDefense = 82,
-        .types = { TYPE_GHOST, TYPE_OAK,TYPE_TREE, TYPE_OAK},
+        .types = { TYPE_GHOST, TYPE_OAK,TYPE_TREE, TYPE_SLEDGE},
         .catchRate = 60,
         .expYield = 166,
         .evYield_Attack    = 2,

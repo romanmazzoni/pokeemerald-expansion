@@ -9999,13 +9999,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Celina[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Bianca[] = {
     {
     .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_BARBARACLE,
+    .lvl = 19,
+    .species = SPECIES_SNOM,
     },
     {
     .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_BARBARACLE,
+    .lvl = 19,
+    .species = SPECIES_FROSMOTH,
     }
 };
 

@@ -165,6 +165,7 @@ const u16 gBattleFrontierHeldItems[] =
     [BATTLE_FRONTIER_ITEM_FOCUS_SASH] = ITEM_FOCUS_SASH,
     [BATTLE_FRONTIER_ITEM_WACAN_BERRY] = ITEM_WACAN_BERRY,
     [BATTLE_FRONTIER_ITEM_HEAVY_DUTY_BOOTS] = ITEM_HEAVY_DUTY_BOOTS,
+    [BATTLE_FRONTIER_ITEM_WIDE_LENS] = ITEM_WIDE_LENS,
 };
 
 #include "data/battle_frontier/battle_frontier_trainer_mons.h"
