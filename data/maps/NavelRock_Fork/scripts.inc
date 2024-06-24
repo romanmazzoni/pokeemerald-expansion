@@ -28,7 +28,7 @@ navelrock_fork_fight_zekrom::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_zekrom
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 1
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
@@ -45,7 +45,7 @@ grove_fight_Cresselia::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Cresselia
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 1
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
@@ -62,7 +62,7 @@ fight_Calyrex::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Calyrex
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 1
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
@@ -79,7 +79,7 @@ fight_Giratina::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Giratina
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 9
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
@@ -96,7 +96,7 @@ fight_kyurem::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Kyurem
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 3
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall

@@ -602,7 +602,7 @@ script Harbor_fight_Diancie {
     specialvar(VAR_RESULT, GetBattleOutcome)
     setflag(FLAG_Diancie)
     fadescreen(FADE_TO_BLACK)
-    removeobject(2)
+    removeobject(6)
     fadescreen(FADE_FROM_BLACK)
     waitmessage
     releaseall

@@ -382,11 +382,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_STOMP] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 65,
+        .power = 72,
         .type = TYPE_MASSIVE,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 35,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_DMG_MINIMIZE,
@@ -1029,11 +1029,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PSYBEAM] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 65,
+        .power = 68,
         .type = TYPE_GOOFY,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 25,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -2476,7 +2476,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DIZZY_PUNCH] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 70,
+        .power = 73,
         .type = TYPE_GOOFY,
         .accuracy = 100,
         .pp = 10,
@@ -2601,7 +2601,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_EXPLOSION] =
     {
         .effect = EFFECT_EXPLOSION,
-        .power = 250,
+        .power = 249,
         .type = TYPE_EXPLOSION,
         .accuracy = 100,
         .pp = 5,
@@ -4246,7 +4246,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ROCK_SMASH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            .power = 55,
+            .power = 60,
         #else
             .power = 20,
         #endif
@@ -11754,8 +11754,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PYRO_BALL] =
     {
         .effect = EFFECT_BURN_HIT,
-        .power = 110,
-        .type = TYPE_FIRE,
+        .power = 116,
+        .type = TYPE_SPORTS,
         .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 25,

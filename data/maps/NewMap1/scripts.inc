@@ -76,7 +76,7 @@ Regiroom_Regigigas::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Regigigas
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 1
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall
@@ -110,7 +110,7 @@ Regiroom_Regieleki::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Regieleki
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 3
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall

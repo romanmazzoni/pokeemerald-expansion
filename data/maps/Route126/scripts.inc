@@ -72,7 +72,7 @@ Route126_fight_Magearna::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Magearna
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 10
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall

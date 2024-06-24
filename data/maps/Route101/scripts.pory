@@ -313,7 +313,7 @@ script route101_fight_zacian {
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     fadescreen(FADE_TO_BLACK)
-    removeobject(2)
+    removeobject(7)
     fadescreen(FADE_FROM_BLACK)
     waitmessage
 	}
@@ -334,7 +334,7 @@ script route101_fight_zamazenta {
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
     fadescreen(FADE_TO_BLACK)
-    removeobject(2)
+    removeobject(8)
     fadescreen(FADE_FROM_BLACK)
     waitmessage
 	}

@@ -206,7 +206,7 @@ Route123_fight_Jirachi::
 	specialvar VAR_RESULT, GetBattleOutcome
 	setflag FLAG_Jirachi
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 44
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	releaseall

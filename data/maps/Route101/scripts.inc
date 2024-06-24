@@ -317,7 +317,7 @@ route101_fight_zacian_2:
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 7
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	goto route101_fight_zacian_1
@@ -340,7 +340,7 @@ route101_fight_zamazenta_2:
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 8
 	fadescreen FADE_FROM_BLACK
 	waitmessage
 	goto route101_fight_zamazenta_1

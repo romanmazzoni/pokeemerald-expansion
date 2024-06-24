@@ -1334,7 +1334,7 @@ Route111_Text_WiltonDefeat:
 
 Route111_Text_WiltonPostBattle:
 	.string "I should probably look back on\n"
-	.string "the world closing in$"
+	.string "the world closing in.$"
 
 Route111_Text_WiltonRegister:
 	.string "There is much to be learned from\n"
@@ -1444,7 +1444,7 @@ Route111_Text_CelinaDefeat:
 	.string "Applesauce!$"
 
 Route111_Text_CelinaPostBattle:
-	.string "I simply do not care$"
+	.string "I simply do not care.$"
 
 Route111_Text_HaydenIntro:
 	.string "I play a lot of the London system!\n"
@@ -1497,7 +1497,8 @@ Route112_Text_TrentPostBattle:
 	.string "you better never let it go.\p"
 	.string "You only get one shot\n"
 	.string "do not miss your chance to blow.\p"
-	.string "This opportunity comes once in a lifetime$"
+	.string "This opportunity comes once\n"
+	.string "in a lifetime.$"
 
 Route112_Text_TrentRegister:
 	.string "Ow, my legs have cramped up.\n"
@@ -1540,7 +1541,7 @@ Route112_Text_CarolDefeat:
 
 Route112_Text_CarolPostBattle:
 	.string "My team only wins because we\n"
-	.string "Hit the servers before we lose.\p"
+	.string "hit the servers before we lose.\p"
 	.string "I commit felonies for elo.$"
 
 Route112_Text_BryantIntro:
@@ -1948,7 +1949,7 @@ Route114_Text_AngelinaDefeat:
 
 Route114_Text_AngelinaPostBattle:
 	.string "When my dunsparce evolves into ditto\n"
-	.string "You won't stant a chance!\p"
+	.string "You won't stand a chance!\p"
 	.string "What level is that?$"
 
 Route115_Text_TimothyIntro:

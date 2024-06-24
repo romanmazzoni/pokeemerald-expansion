@@ -31439,6 +31439,7 @@ static const u16 sSirfetchdTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWORDS_DANCE,
+    MOVE_CUT,
     MOVE_UNAVAILABLE,
 };
 
