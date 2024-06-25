@@ -52,7 +52,8 @@ Regigigas_sign_Text_2:
 Regiroom_EventScript_RedBattle::
 	lockall
 	goto_if_unset FLAG_BADGE08_GET, Regiroom_EventScript_RedBattle_2
-	goto Regiroom_EventScript_Regired
+	trainerbattle_single TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat
+	msgbox Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE
 	setflag FLAG_regired_battle
 	fadescreen FADE_TO_BLACK
 	removeobject 4

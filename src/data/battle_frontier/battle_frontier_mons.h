@@ -5006,9 +5006,9 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST
     },
     [FRONTIER_MON_DONPHAN_4] = {
-        .species = SPECIES_DONPHAN,
-        .moves = {MOVE_FISSURE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_IRON_TAIL},
-        .itemTableId = BATTLE_FRONTIER_ITEM_QUICK_CLAW,
+        .species = SPECIES_TOXTRICITY,
+        .moves = {MOVE_FISSURE, MOVE_POISON_JAB, MOVE_HEAT_WAVE, MOVE_FLASH},
+        .itemTableId = BATTLE_FRONTIER_ITEM_ASSAULT_VEST,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
     },

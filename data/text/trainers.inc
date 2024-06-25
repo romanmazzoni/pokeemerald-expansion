@@ -4406,13 +4406,13 @@ Route132_Text_KiyoPostBattle:
 	.string "my mind away from me...$"
 
 Route132_Text_MakaylaIntro:
-	.string "burgir!$"
+	.string "Burgir!$"
 
 Route132_Text_MakaylaDefeat:
 	.string "..........$"
 
 Route132_Text_MakaylaPostBattle:
-	.string "burgir!$"
+	.string "Burgir!$"
 
 Route132_Text_JonathanIntro:
 	.string "You wanna be tough?\n"
@@ -4528,7 +4528,7 @@ Route133_Text_MolliePostBattle:
 	.string "I would have wiped the floor with you.$"
 
 Route133_Text_ConorIntro:
-	.string "Imprisoned for 10,000 yeards...\n"
+	.string "Imprisoned for 10,000 years...\n"
 	.string "You are not prepared!$"
 
 Route133_Text_ConorDefeat:
@@ -4551,8 +4551,8 @@ Route134_Text_JackPostBattle:
 	.string "then you pull them all together?$"
 
 Route134_Text_LaurelIntro:
-	.string "I'll throw this match for $1000.\n"
-	.string "deal?$"
+	.string "I'll throw this match for 1000.\n"
+	.string "dollars. Deal?$"
 
 Route134_Text_LaurelDefeat:
 	.string "Dang I lost!$"
@@ -4607,13 +4607,13 @@ Route134_Text_KelvinPostBattle:
 	.string "should feel bad!$"
 
 Route134_Text_MarleyIntro:
-	.string "L did you know?$"
+	.string "Why am I on this island?$"
 
 Route134_Text_MarleyDefeat:
-	.string "Gods of death.$"
+	.string "Now I have no way off.$"
 
 Route134_Text_MarleyPostBattle:
-	.string "Love apples.$"
+	.string "Please take me with you.$"
 
 Route134_Text_ReynaIntro:
 	.string "Olmec ending is really good!$"

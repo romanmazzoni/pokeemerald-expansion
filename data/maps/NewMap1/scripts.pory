@@ -56,7 +56,8 @@ script Regiroom_EventScript_RedBattle{
     if (!flag(FLAG_BADGE08_GET)){
         msgbox(format("I guard these three beings. You are not ready to face me. Come back when you have 8 gym badges."))
     } else{
-        goto(Regiroom_EventScript_Regired)
+        trainerbattle_single (TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat)
+	    msgbox(Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE)
         setflag(FLAG_regired_battle)
         fadescreen(FADE_TO_BLACK)
         removeobject(4)

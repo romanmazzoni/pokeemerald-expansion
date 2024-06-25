@@ -5996,7 +5996,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_WATER_PULSE] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 45,
+        .power = 67,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 20,
@@ -6951,7 +6951,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #else
             .power = 70,
         #endif
-        .effect = EFFECT_ATTACK_UP_HIT,
+        .effect = EFFECT_SP_ATTACK_UP_HIT,
         .type = TYPE_GLASS,
         .accuracy = 100,
         .pp = 20,
@@ -14182,7 +14182,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_PARALYZE_HIT,
         .power = 85,
-        .type = TYPE_NERD,
+        .type = TYPE_LANCE,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 30,

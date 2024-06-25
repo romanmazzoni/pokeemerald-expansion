@@ -20048,6 +20048,7 @@ static const u16 sCresseliaTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
+    MOVE_FLY,
     MOVE_FRUSTRATION,
     MOVE_HIDDEN_POWER,
     MOVE_HYPER_BEAM,

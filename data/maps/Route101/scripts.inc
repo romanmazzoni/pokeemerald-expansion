@@ -336,7 +336,7 @@ route101_fight_zamazenta_2:
 	playmoncry SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ZACIAN, 50, ITEM_LIGHT_CLAY
+	setwildbattle SPECIES_ZAMAZENTA, 50, ITEM_LIGHT_CLAY
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	fadescreen FADE_TO_BLACK

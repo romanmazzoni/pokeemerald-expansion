@@ -105,8 +105,40 @@ ChocoMart2:
 	.2byte ITEM_SCROLL_OF_WATERS
 	.2byte ITEM_NONE
 
+ChocoScript_I_Love_Balls::
+	lock
+	faceplayer
+	message ChocoScript_I_Love_Balls_Text_0
+	waitmessage
+	pokemart ChocoMartBalls
+	msgbox LillyCove_2ndfloor_CustomShop_Intro_Text_1
+	release
+	end
+
+
+	.align 2
+ChocoMartBalls:
+	.2byte ITEM_TIMER_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_REPEAT_BALL
+	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_DREAM_BALL
+	.2byte ITEM_CHERISH_BALL
+	.2byte ITEM_IRON_BALL
+	.2byte ITEM_NONE
+
 LillyCove_2ndfloor_CustomShop_Intro_Text_0:
 	.string "The circus of value!$"
 
 LillyCove_2ndfloor_CustomShop_Intro_Text_1:
 	.string "Please Come Again.$"
+
+ChocoScript_I_Love_Balls_Text_0:
+	.string "I love balls!$"
