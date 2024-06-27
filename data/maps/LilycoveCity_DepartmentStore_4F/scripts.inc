@@ -84,6 +84,10 @@ hideRedEarly_1:
 LillyCove_4thfloor_CustomShop_Intro::
 	lock
 	faceplayer
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
 	message LillyCove_4thfloor_CustomShop_Intro_Text_0
 	waitmessage
 	pokemart ChocoMart3

@@ -3523,7 +3523,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FALSE_SWIPE] =
     {
         .effect = EFFECT_FALSE_SWIPE,
-        .power = 75,
+        .power = 80,
         .type = TYPE_FAKE,
         .accuracy = 100,
         .pp = 20,

@@ -5108,12 +5108,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_SUDOWOODO] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 100,
-        .baseDefense   = 115,
+        .baseHP        = 88,
+        .baseAttack    = 115,
+        .baseDefense   = 135,
         .baseSpeed     = 30,
         .baseSpAttack  = 30,
-        .baseSpDefense = 68,
+        .baseSpDefense = 72,
         .types = { TYPE_OAK, TYPE_BEE, TYPE_WOOD, TYPE_WOOD },
         .catchRate = 65,
         .expYield = 144,
@@ -8482,7 +8482,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         #else
             .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG},
         #endif
-        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE},
+        .abilities = {ABILITY_LEVITATE, ABILITY_ARENA_TRAP, ABILITY_LEVITATE},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -8509,7 +8509,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         #else
             .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG},
         #endif
-        .abilities = {ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE},
+        .abilities = {ABILITY_LEVITATE, ABILITY_ARENA_TRAP, ABILITY_LEVITATE},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },

@@ -12986,7 +12986,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 83,
-    .nickname = "Shuckool",
+    .nickname = ("Shuckool"),
     .isShiny = TRUE,
     .species = SPECIES_SHUCKLE,
     .ability = ABILITY_NEUTRALIZING_GAS,
@@ -12997,7 +12997,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 85,
-    .nickname = "Josh",
+    .nickname = ("Josh"),
     .species = SPECIES_LUCARIO,
     .ability = ABILITY_INNER_FOCUS,
     .heldItem = ITEM_FOCUS_SASH,
@@ -13007,7 +13007,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 81,
-    .nickname = "Modd",
+    .nickname = ("Modd"),
     .species = SPECIES_URSARING,
     .ability = ABILITY_MODD_MODE,
     .heldItem = ITEM_EXPERT_BELT,
@@ -13017,7 +13017,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 84,
-    .nickname = "Choco",
+    .nickname = ("Choco"),
     .species = SPECIES_CINDERACE,
     .ability = ABILITY_CUTE_CHARM,
     .heldItem = ITEM_SITRUS_BERRY,
@@ -13028,7 +13028,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 85,
-    .nickname = "Lamp",
+    .nickname = ("Lamp"),
     .species = SPECIES_AMPHAROS,
     .ability = ABILITY_MAGIC_BOUNCE,
     .heldItem = ITEM_LUM_BERRY,
@@ -13039,7 +13039,7 @@ static const struct TrainerMonCustomized sParty_Leaf[] = {
     {
     .iv = 255,
     .lvl = 88,
-    .nickname = "SANTA!",
+    .nickname = ("SANTA!"),
     .species = SPECIES_DELIBIRD,
     .ability = ABILITY_SNOW_WARNING,
     .heldItem = ITEM_SHELL_BELL,
@@ -13150,6 +13150,6 @@ static const struct TrainerMonItemCustomMoves sParty_Adonu[] = {
     .lvl = 80,
     .species = SPECIES_RAYQUAZA_MEGA,
     .heldItem = ITEM_LIFE_ORB,
-    .moves = {MOVE_SKY_ATTACK, MOVE_DRAGON_ASCENT, MOVE_LANCE_PUNCH, MOVE_LANCE_BLAST}
+    .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_ASCENT, MOVE_LANCE_PUNCH, MOVE_LANCE_BLAST}
     }
 };

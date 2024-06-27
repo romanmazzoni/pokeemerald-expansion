@@ -1062,6 +1062,90 @@ Creditsbuilding_EventScript_CreditsSign5::
 	return
 
 
+Creditsbuilding_EventScript_Computer1::
+	lockall
+	msgbox Creditsbuilding_EventScript_Computer1_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Computer2::
+	lockall
+	msgbox Creditsbuilding_EventScript_Computer2_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Computer3::
+	lockall
+	msgbox Creditsbuilding_EventScript_Computer3_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Book1::
+	lockall
+	msgbox Creditsbuilding_EventScript_Book1_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Book2::
+	lockall
+	msgbox Creditsbuilding_EventScript_Book2_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Book3::
+	lockall
+	msgbox Creditsbuilding_EventScript_Book3_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Book4::
+	lockall
+	msgbox Creditsbuilding_EventScript_Book4_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Book5::
+	lockall
+	msgbox Creditsbuilding_EventScript_Book5_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Chair::
+	lockall
+	msgbox Creditsbuilding_EventScript_Chair_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Plant1::
+	lockall
+	msgbox Creditsbuilding_EventScript_Plant1_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Plant2::
+	lockall
+	msgbox Creditsbuilding_EventScript_Plant2_Text_0
+	releaseall
+	return
+
+
+Creditsbuilding_EventScript_Plant3::
+	lockall
+	msgbox Creditsbuilding_EventScript_Plant3_Text_0
+	releaseall
+	return
+
+
 Creditsbuilding_EventScript_Roman::
 	lockall
 	faceplayer
@@ -1151,6 +1235,55 @@ Creditsbuilding_EventScript_CreditsSign4_Text_0:
 Creditsbuilding_EventScript_CreditsSign5_Text_0:
 	.string "And of course, thank you the player for\n"
 	.string "playing this game :)$"
+
+Creditsbuilding_EventScript_Computer1_Text_0:
+	.string "The tabs open are not safe to read\n"
+	.string "aloud. Who is pent up pup?$"
+
+Creditsbuilding_EventScript_Computer2_Text_0:
+	.string "Counter Strike is open. Whoever was\n"
+	.string "playing only has 3 kills.$"
+
+Creditsbuilding_EventScript_Computer3_Text_0:
+	.string "A lot of pictures of cats are open. That\n"
+	.string "one's name is Divy.$"
+
+Creditsbuilding_EventScript_Book1_Text_0:
+	.string "The joy of mathematics by Arthur T\n"
+	.string "Benjamin. Mathematics has an e in it?$"
+
+Creditsbuilding_EventScript_Book2_Text_0:
+	.string "University Physics with Modern Physics\n"
+	.string "14th Edition by Hugh D. Young, Roger A.\l"
+	.string "Freedman. Tears of joy stream down\l"
+	.string "your face.$"
+
+Creditsbuilding_EventScript_Book3_Text_0:
+	.string "How to raise a cat. Do cats exist in the\n"
+	.string "pokemon world?$"
+
+Creditsbuilding_EventScript_Book4_Text_0:
+	.string "Piles of untouched books. At least get\n"
+	.string "a bookshelf.$"
+
+Creditsbuilding_EventScript_Book5_Text_0:
+	.string "Shelves of untouched books. Very\n"
+	.string "neatly organized. The shelf looks\l"
+	.string "really nice.$"
+
+Creditsbuilding_EventScript_Chair_Text_0:
+	.string "This chair is covered in claw marks.$"
+
+Creditsbuilding_EventScript_Plant1_Text_0:
+	.string "A jalepeno plant. It looks like it is\n"
+	.string "doing well.$"
+
+Creditsbuilding_EventScript_Plant2_Text_0:
+	.string "A basil plant. It is doing extremely well.$"
+
+Creditsbuilding_EventScript_Plant3_Text_0:
+	.string "A fig tree. If it keeps growing it will\n"
+	.string "need to be planted outside.$"
 
 Creditsbuilding_EventScript_Roman_Text_0:
 	.string "Roman: Oh, you wanted to fight me?$"

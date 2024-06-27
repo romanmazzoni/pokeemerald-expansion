@@ -1054,6 +1054,67 @@ script Creditsbuilding_EventScript_CreditsSign5{
 	releaseall
 }
 
+script Creditsbuilding_EventScript_Computer1{
+	lockall
+	msgbox(format("The tabs open are not safe to read aloud. Who is pent up pup?"))
+	releaseall
+}
+script Creditsbuilding_EventScript_Computer2{
+	lockall
+	msgbox(format("Counter Strike is open. Whoever was playing only has 3 kills."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Computer3{
+	lockall
+	msgbox(format("A lot of pictures of cats are open. That one's name is Divy."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Book1{
+	lockall
+	msgbox(format("The joy of mathematics by Arthur T Benjamin. Mathematics has an e in it?"))
+	releaseall
+}
+script Creditsbuilding_EventScript_Book2{
+	lockall
+	msgbox(format("University Physics with Modern Physics 14th Edition by Hugh D. Young, Roger A. Freedman. Tears of joy stream down your face."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Book3{
+	lockall
+	msgbox(format("How to raise a cat. Do cats exist in the pokemon world?"))
+	releaseall
+}
+script Creditsbuilding_EventScript_Book4{
+	lockall
+	msgbox(format("Piles of untouched books. At least get a bookshelf."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Book5{
+	lockall
+	msgbox(format("Shelves of untouched books. Very neatly organized. The shelf looks really nice."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Chair{
+	lockall
+	msgbox(format("This chair is covered in claw marks."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Plant1{
+	lockall
+	msgbox(format("A jalepeno plant. It looks like it is doing well."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Plant2{
+	lockall
+	msgbox(format("A basil plant. It is doing extremely well."))
+	releaseall
+}
+script Creditsbuilding_EventScript_Plant3{
+	lockall
+	msgbox(format("A fig tree. If it keeps growing it will need to be planted outside."))
+	releaseall
+}
+
 script Creditsbuilding_EventScript_Roman{
 	lockall
 	faceplayer
