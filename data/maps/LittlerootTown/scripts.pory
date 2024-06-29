@@ -1056,7 +1056,7 @@ script Creditsbuilding_EventScript_CreditsSign5{
 
 script Creditsbuilding_EventScript_Computer1{
 	lockall
-	msgbox(format("The tabs open are not safe to read aloud. Who is pent up pup?"))
+	msgbox(format("The tabs open are not safe to read aloud. A spotify tab is also playing boys of summer."))
 	releaseall
 }
 script Creditsbuilding_EventScript_Computer2{

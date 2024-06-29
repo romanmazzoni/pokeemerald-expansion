@@ -1644,7 +1644,7 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             {
                 score -= 10;
             }
-            else if (move == MOVE_FAKE_OUT) // filter out first impression
+            else  // filter out first impression
             {
                 if ((AI_DATA->holdEffects[battlerAtk] == HOLD_EFFECT_CHOICE_BAND || AI_DATA->abilities[battlerAtk] == ABILITY_GORILLA_TACTICS)
                   && (CountUsablePartyMons(battlerDef) > 0 || !CanIndexMoveFaintTarget(battlerAtk, battlerDef, AI_THINKING_STRUCT->movesetIndex, 0)))
@@ -4114,8 +4114,7 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         IncreaseStatUpScore(battlerAtk, battlerDef, STAT_DEF, &score);
         break;
     case EFFECT_FAKE_OUT:
-        if (move == MOVE_FAKE_OUT    // filter out first impression
-          && ShouldFakeOut(battlerAtk, battlerDef, move))
+        if (ShouldFakeOut(battlerAtk, battlerDef, move))
             score += 8;
         break;
     case EFFECT_STOCKPILE:

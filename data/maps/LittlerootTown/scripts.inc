@@ -1238,7 +1238,8 @@ Creditsbuilding_EventScript_CreditsSign5_Text_0:
 
 Creditsbuilding_EventScript_Computer1_Text_0:
 	.string "The tabs open are not safe to read\n"
-	.string "aloud. Who is pent up pup?$"
+	.string "aloud. A spotify tab is also playing\l"
+	.string "boys of summer.$"
 
 Creditsbuilding_EventScript_Computer2_Text_0:
 	.string "Counter Strike is open. Whoever was\n"

@@ -3080,11 +3080,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         #else
             .effect = EFFECT_FREEZE_HIT,
         #endif
-        .power = 40,
+        .power = 60,
         .type = TYPE_SNOW,
         .accuracy = 100,
         .pp = 25,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 25,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
@@ -3523,7 +3523,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FALSE_SWIPE] =
     {
         .effect = EFFECT_FALSE_SWIPE,
-        .power = 80,
+        .power = 105,
         .type = TYPE_FAKE,
         .accuracy = 100,
         .pp = 20,
@@ -5275,7 +5275,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_DMG_MINIMIZE,
         #endif
         .effect = EFFECT_FLINCH_HIT,
-        .power = 30,
+        .power = 51,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,
@@ -5289,7 +5289,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_WEATHER_BALL] =
     {
         .effect = EFFECT_WEATHER_BALL,
-        .power = 50,
+        .power = 80,
         .type = TYPE_LIFE,
         .accuracy = 100,
         .pp = 10,
@@ -5578,7 +5578,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SAND_TOMB] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 35,
+            .power = 46,
             .accuracy = 85,
         #else
             .power = 15,
@@ -7125,7 +7125,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_AVALANCHE] =
     {
         .effect = EFFECT_REVENGE,
-        .power = 70,
+        .power = 75,
         .type = TYPE_SNOW,
         .accuracy = 100,
         .pp = 10,
@@ -8947,7 +8947,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HEART_STAMP] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 60,
+        .power = 78,
         .type = TYPE_LOVE,
         .accuracy = 100,
         .pp = 25,
@@ -10193,7 +10193,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HOLD_BACK] =
     {
         .effect = EFFECT_FALSE_SWIPE,
-        .power = 95,
+        .power = 105,
         .type = TYPE_KING,
         .accuracy = 100,
         .pp = 20,
@@ -10392,14 +10392,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FIRST_IMPRESSION] =
     {
         .effect = EFFECT_FAKE_OUT,
-        .power = 45,
+        .power = 48,
         .type = TYPE_HUMAN,
         .accuracy = 100,
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 2,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .priority = 3,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
@@ -12194,8 +12194,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_POLTERGEIST] =
     {
         .effect = EFFECT_POLTERGEIST,
-        .power = 110,
-        .type = TYPE_GHOST,
+        .power = 115,
+        .type = TYPE_EVIL,
         .accuracy = 90,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -12240,7 +12240,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_HIT_ESCAPE,
         .power = 60,
-        .type = TYPE_WATER,
+        .type = TYPE_SPORTS,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -12333,7 +12333,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_ALWAYS_CRIT,
         .power = 16,
-        .type = TYPE_WATER,
+        .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 0,
@@ -13376,7 +13376,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
         .power = 50,
-        .type = TYPE_BUG,
+        .type = TYPE_FURRY,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 100,
@@ -13703,7 +13703,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ACID_DOWNPOUR] =
     {
         .effect = EFFECT_HIT,
-        .power = 1,
+        .power = 100,
         .type = TYPE_POISON,
         .accuracy = 0,
         .pp = 1,

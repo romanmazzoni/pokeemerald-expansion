@@ -3799,7 +3799,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
 static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
     .iv = 200,
-    .lvl = 44,
+    .lvl = 45,
     .species = SPECIES_SIRFETCHD,
     .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_MAGNIDUDE, MOVE_BREAKING_SWIPE, MOVE_DIRE_CLAW, MOVE_SACRED_SWORD}
@@ -3813,21 +3813,21 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     },
     {
     .iv = 200,
-    .lvl = 45,
+    .lvl = 46,
     .species = SPECIES_SLOWKING,
     .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_QUICK_ATTACK, MOVE_DARK_PULSE, MOVE_REFLECT, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
-    .lvl = 43,
+    .lvl = 46,
     .species = SPECIES_JELLICENT,
     .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_DESTINY_BOND, MOVE_BUBBLE_BEAM, MOVE_POLTERGEIST, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
-    .lvl = 46,
+    .lvl = 48,
     .species = SPECIES_LIEPARD,
     .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_NUZZLE, MOVE_FAKE_OUT, MOVE_BITE, MOVE_SACRED_SWORD}

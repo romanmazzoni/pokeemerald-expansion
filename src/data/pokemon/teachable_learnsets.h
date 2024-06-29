@@ -507,6 +507,8 @@ static const u16 sBeedrillTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_WATERFALL,
+    MOVE_SURF,
     MOVE_UNAVAILABLE,
 };
 
