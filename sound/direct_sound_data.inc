@@ -4000,6 +4000,30 @@ Cry_Ursaluna::
 	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
 
 	.align 2
+Cry_Bluestoise::
+	.incbin "sound/direct_sound_samples/cries/blastoise.bin"
+
+	.align 2
+Cry_Shuckool::
+	.incbin "sound/direct_sound_samples/cries/shuckle.bin"
+
+	.align 2
+Cry_Porygon4::
+	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
+
+	.align 2
+Cry_Porygon5::
+	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
+
+	.align 2
+Cry_Porygon6::
+	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
+
+	.align 2
+Cry_Porygon7::
+	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
+
+	.align 2
 Cry_Basculegion::
 	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
 

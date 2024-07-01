@@ -1337,6 +1337,12 @@ gCryTable::
 	cry Cry_Wyrdeer
 	cry Cry_Kleavor
 	cry Cry_Ursaluna
+	cry Cry_Bluestoise
+	cry Cry_Shuckool
+	cry Cry_Porygon4
+	cry Cry_Porygon5
+	cry Cry_Porygon6
+	cry Cry_Porygon7
 	cry Cry_Basculegion
 	cry Cry_Sneasler
 	cry Cry_Overqwil
@@ -3463,6 +3469,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wyrdeer
 	cry_reverse Cry_Kleavor
 	cry_reverse Cry_Ursaluna
+	cry_reverse Cry_Bluestoise
+	cry_reverse Cry_Shuckool
+	cry_reverse Cry_Porygon4
+	cry_reverse Cry_Porygon5
+	cry_reverse Cry_Porygon6
+	cry_reverse Cry_Porygon7
 	cry_reverse Cry_Basculegion
 	cry_reverse Cry_Sneasler
 	cry_reverse Cry_Overqwil

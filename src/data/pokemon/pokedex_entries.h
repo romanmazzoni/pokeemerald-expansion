@@ -120,6 +120,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 2,
     },
 
+    [NATIONAL_DEX_BLUESTOISE] =
+    {
+        .categoryName = _("Blue"),
+        .height = 16,
+        .weight = 855,
+        .description = gBluestoisePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = -1,
+        .trainerScale = 293,
+        .trainerOffset = 2,
+    },
+
     [NATIONAL_DEX_CATERPIE] =
     {
         .categoryName = _("Worm"),
@@ -2568,6 +2580,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
+    [NATIONAL_DEX_SHUCKOOL] =
+    {
+        .categoryName = _("Goated"),
+        .height = 7,
+        .weight = 598,
+        .description = gShucklePokedexText,
+        .pokemonScale = 485,
+        .pokemonOffset = 18,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
     [NATIONAL_DEX_HERACROSS] =
     {
         .categoryName = _("Single Horn"),
@@ -2798,7 +2822,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_PORYGON2] =
     {
-        .categoryName = _("Virtual"),
+        .categoryName = _("Virtual2"),
         .height = 6,
         .weight = 325,
         .description = gPorygon2PokedexText,
@@ -5691,11 +5715,59 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_PORYGON_Z] =
     {
-        .categoryName = _("Virtual"),
+        .categoryName = _("Virtual3"),
         .height = 9,
         .weight = 340,
         .description = gPorygonZPokedexText,
         .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PORYGON4] =
+    {
+        .categoryName = _("Virtual4"),
+        .height = 10,
+        .weight = 380,
+        .description = gPorygon4PokedexText,
+        .pokemonScale = 320,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PORYGON5] =
+    {
+        .categoryName = _("Virtual5"),
+        .height = 11,
+        .weight = 410,
+        .description = gPorygon5PokedexText,
+        .pokemonScale = 300,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PORYGON6] =
+    {
+        .categoryName = _("Virtual6"),
+        .height = 12,
+        .weight = 430,
+        .description = gPorygon6PokedexText,
+        .pokemonScale = 280,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_PORYGON7] =
+    {
+        .categoryName = _("Virtual7"),
+        .height = 13,
+        .weight = 456,
+        .description = gPorygon7PokedexText,
+        .pokemonScale = 256,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,

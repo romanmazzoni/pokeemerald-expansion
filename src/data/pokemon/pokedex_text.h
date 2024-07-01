@@ -5375,6 +5375,36 @@ const u8 gUrsalunaPokedexText[] = _(
     "physique and newfound capacity to\n"
     "manipulate peat at will.");
 
+const u8 gBluestoisePokedexText[] = _(
+    "Its like blastoise,\n"
+    "but he's blue!!\n"
+    "What a creative romhack.");
+
+const u8 gShuckoolPokedexText[] = _(
+    "What could make shuckle cooler?\n"
+    "Some sweet shades.\n"
+    "Shuckle is my favorite pokemon.");
+
+const u8 gPorygon4PokedexText[] = _(
+    "The true final evolution of the\n"
+    "porygon line.\n"
+    "It has a very creative name.");
+
+const u8 gPorygon5PokedexText[] = _(
+    "The true real final evolution of the\n"
+    "porygon line.\n"
+    "It has a very creative name.");
+
+const u8 gPorygon6PokedexText[] = _(
+    "The true real actual final evolution\n"
+    "of the porygon line.\n"
+    "It has a very creative name.");
+
+const u8 gPorygon7PokedexText[] = _(
+    "The extra true real actual final evolution\n"
+    "of the porygon line.\n"
+    "It has a very creative name.");
+
 const u8 gBasculegionPokedexText[] = _(
     "Clads itself in the souls of comrades that\n"
     "perished before fulfilling their goals of\n"

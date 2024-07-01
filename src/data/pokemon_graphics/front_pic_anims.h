@@ -9487,6 +9487,36 @@ static const union AnimCmd sAnim_Ursaluna_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+static const union AnimCmd sAnim_Bluestoise_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Shuckool_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Porygon4_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Porygon5_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Porygon6_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Porygon7_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 
 static const union AnimCmd sAnim_Basculegion_1[] =
 {
@@ -11463,6 +11493,12 @@ SINGLE_ANIMATION(Calyrex);
 SINGLE_ANIMATION(Wyrdeer);
 SINGLE_ANIMATION(Kleavor);
 SINGLE_ANIMATION(Ursaluna);
+SINGLE_ANIMATION(Bluestoise);
+SINGLE_ANIMATION(Shuckool);
+SINGLE_ANIMATION(Porygon4);
+SINGLE_ANIMATION(Porygon5);
+SINGLE_ANIMATION(Porygon6);
+SINGLE_ANIMATION(Porygon7);
 SINGLE_ANIMATION(Basculegion);
 SINGLE_ANIMATION(Sneasler);
 SINGLE_ANIMATION(Overqwil);
@@ -12550,6 +12586,12 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_WYRDEER] = sAnims_Wyrdeer,
     [SPECIES_KLEAVOR] = sAnims_Kleavor,
     [SPECIES_URSALUNA] = sAnims_Ursaluna,
+    [SPECIES_BLUESTOISE] = sAnims_Bluestoise,
+    [SPECIES_SHUCKOOL] = sAnims_Shuckool,
+    [SPECIES_PORYGON4] = sAnims_Porygon4,
+    [SPECIES_PORYGON5] = sAnims_Porygon5,
+    [SPECIES_PORYGON6] = sAnims_Porygon6,
+    [SPECIES_PORYGON7] = sAnims_Porygon7,
     [SPECIES_BASCULEGION] = sAnims_Basculegion,
     [SPECIES_SNEASLER] = sAnims_Sneasler,
     [SPECIES_OVERQWIL] = sAnims_Overqwil,

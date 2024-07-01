@@ -914,6 +914,13 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_SNEASLER] = _("Sneasler"),
     [SPECIES_OVERQWIL] = _("Overqwil"),
     [SPECIES_ENAMORUS] = _("Enamorus"),
+    [SPECIES_BLUESTOISE] = _("Bluestoise"),
+    [SPECIES_SHUCKOOL] = _("Shuckool"),
+    [SPECIES_PORYGON4] = _("Porygon4"),
+    [SPECIES_PORYGON5] = _("Porygon5"),
+    [SPECIES_PORYGON6] = _("Porygon6"),
+    [SPECIES_PORYGON7] = _("Porygon7"),
+
 #endif
 
     // Megas
