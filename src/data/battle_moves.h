@@ -9805,7 +9805,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_MOONBLAST] =
     {
         .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
-        .power = 95,
+        .power = 97,
         .type = TYPE_SPACE,
         .accuracy = 100,
         .pp = 15,
@@ -14308,7 +14308,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_YELL] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 75,
+        .power = 82,
         .type = TYPE_LOUD,
         .accuracy = 100,
         .pp = 15,
@@ -14322,7 +14322,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_SHUCKLE_SHUK] =
     {
         .effect = EFFECT_BODY_PRESS,
-        .power = 80,
+        .power = 70,
         .type = TYPE_SHUCKLE,
         .accuracy = 100,
         .pp = 40,

@@ -1085,22 +1085,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Vito[] = {
     {
     .iv = 100,
     .lvl = 42,
-    .species = SPECIES_DODRIO,
+    .species = SPECIES_BLUESTOISE,
     },
     {
     .iv = 100,
     .lvl = 42,
-    .species = SPECIES_DUGTRIO,
-    },
-    {
-    .iv = 70,
-    .lvl = 42,
-    .species = SPECIES_SNEASLER,
+    .species = SPECIES_SHUCKOOL,
     },
     {
     .iv = 100,
     .lvl = 42,
-    .species = SPECIES_TOXICROAK,
+    .species = SPECIES_PORYGON7,
     }
 };
 
