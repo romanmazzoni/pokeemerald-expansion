@@ -1100,7 +1100,7 @@ RustboroCity_Text_OutOfTheWay:
 
 RustboroCity_Text_WaitDontTakeMyGoods:
 	.string "Wait! Pllleeeaassesssaaase!\p"
-	.string "Don't taaaakee maaa GOOOOOODS!$"
+	.string "Don't taaaakee maaal,.k09k,. GOOOOOODS!$"
 
 RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
