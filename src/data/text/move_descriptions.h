@@ -3285,7 +3285,7 @@ static const u8 sTriBeamDescription[] = _(
     "No moves like it!");
 
 static const u8 sGalickGunDescription[] = _(
-    "Vageta's signature move\n"
+    "Vegeta's signature move\n"
     "No moves like it!");
 
 static const u8 sShadowCloneDescription[] = _(
@@ -3306,7 +3306,7 @@ static const u8 sFearDescription[] = _(
 
 static const u8 sYellDescription[] = _(
     "AHHHHHHHHHHHHHHHHHHHH\n"
-    "GAHHHHHHHHHHHHHHHHHHHH.");
+    "GAHHHHHHHHHHHHHHHHHHHH!");
 
 static const u8 sShuckleShukDescription[] = _(
     "Shuckle\n"

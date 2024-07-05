@@ -46,7 +46,7 @@ Regigigas_sign_Text_2:
 	.string "Good enough.$"
     
 	Regiroom_Text_REDPostBattle:
-	.string "No reason for me\p"
+	.string "No reason for me\n"
     .string "to stop you.$"
 
 Regiroom_EventScript_RedBattle::

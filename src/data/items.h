@@ -5810,7 +5810,7 @@ const struct Item gItems[] =
         .holdEffectParam = 20,
         .description = sBlackGlassesDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 30,
     },

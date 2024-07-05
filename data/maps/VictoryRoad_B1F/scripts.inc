@@ -36,43 +36,38 @@ VictoryRoad_B1F_Text_SamuelDefeat:
 
 VictoryRoad_B1F_Text_SamuelPostBattle:
 	.string "The POKéMON LEAGUE became distant\n"
-	.string "again… What a letdown…$"
+	.string "again… No victory here…$"
 
 VictoryRoad_B1F_Text_ShannonIntro:
-	.string "To win your way through the POKéMON\n"
-	.string "LEAGUE, you need the trust of your\l"
-	.string "POKéMON.$"
+	.string "Dominating your friends is\n"
+	.string "such a mixed bag.$"
 
 VictoryRoad_B1F_Text_ShannonDefeat:
-	.string "Your relationship is based on\n"
-	.string "solid trust.$"
+	.string "In TF2.$"
 
 VictoryRoad_B1F_Text_ShannonPostBattle:
-	.string "By being together all the time, trust\n"
-	.string "grows between POKéMON and TRAINERS.$"
+	.string "What do you think I meant?$"
 
 VictoryRoad_B1F_Text_MichelleIntro:
-	.string "This isn't the goal. It's only a place\n"
-	.string "on the way to the POKéMON LEAGUE.$"
+	.string "You are not my friend.$"
 
 VictoryRoad_B1F_Text_MichelleDefeat:
-	.string "That's the way!$"
+	.string "You are my brother, my friend!$"
 
 VictoryRoad_B1F_Text_MichellePostBattle:
-	.string "You'll do fine, for sure!\n"
-	.string "Your POKéMON are all eager to go!$"
+	.string "I love biceps!$"
 
 VictoryRoad_B1F_Text_MitchellIntro:
-	.string "My POKéMON are cosmically\n"
+	.string "My POKéMON are comically\n"
 	.string "awe inspiring!$"
 
 VictoryRoad_B1F_Text_MitchellDefeat:
-	.string "I've never met anyone like you before.$"
+	.string "It's laughable how bad they are!$"
 
 VictoryRoad_B1F_Text_MitchellPostBattle:
 	.string "Even outside of battle, I sense\n"
-	.string "incredible power emanating from you\l"
-	.string "and your POKéMON.$"
+	.string "they can barely open a jar\l"
+	.string "of peanut butter.$"
 
 VictoryRoad_B1F_Text_HalleIntro:
 	.string "Okay, no need to get your back up!\n"
@@ -86,5 +81,5 @@ VictoryRoad_B1F_Text_HallePostBattle:
 	.string "Sure, this is VICTORY ROAD.\p"
 	.string "But it's not all that different from\n"
 	.string "the path you've taken so far.\p"
-	.string "Try to enjoy things the rest of\n"
-	.string "the way!$"
+	.string "It even uses a lot of the same\n"
+	.string "tiles as other caves you've been to!$"

@@ -33,8 +33,8 @@ VictoryRoad_B2F_EventScript_Dianne::
 
 VictoryRoad_B2F_Text_VitoIntro:
 	.string "The pokemon I caught,\n"
-	.string "They are all real!\l"
-	.string "Everyone uses these!$"
+	.string "they are all real!\l"
+	.string "Everyone uses these guys!$"
 
 VictoryRoad_B2F_Text_VitoDefeat:
 	.string "WAHHHHH?!$"
@@ -72,8 +72,8 @@ VictoryRoad_B2F_Text_JulieIntro:
 	.string "because you have a lot of GYM BADGES.\p"
 	.string "There's always going to be someone\n"
 	.string "who's better than you!\p"
-	.string "Just think about world champ\n"
-	.string "WolfyVGC!$"
+	.string "Just think about the world\n"
+	.string "champ WolfyVGC!$"
 
 VictoryRoad_B2F_Text_JulieDefeat:
 	.string "You're better than me!$"
@@ -92,18 +92,16 @@ VictoryRoad_B2F_Text_FelixDefeat:
 	.string "It hurts…$"
 
 VictoryRoad_B2F_Text_FelixPostBattle:
-	.string "I can't help getting all tense knowing\n"
-	.string "that I'm nearing the POKéMON LEAGUE.\p"
-	.string "It's all I can do to feign calm.$"
+	.string "Hopital.$"
 
 VictoryRoad_B2F_Text_DianneIntro:
-	.string "The elite among the elite gather in\n"
-	.string "this cave.\p"
-	.string "How are you finding it?$"
+	.string "The elite among us gather\n"
+	.string "in this cave.\p"
+	.string "Are you an imposter?$"
 
 VictoryRoad_B2F_Text_DianneDefeat:
 	.string "Not rattled in the least bit!$"
 
 VictoryRoad_B2F_Text_DiannePostBattle:
 	.string "You do have guts! I like that!\n"
-	.string "Keep it going!$"
+	.string "You should carry a flame orb!$"
