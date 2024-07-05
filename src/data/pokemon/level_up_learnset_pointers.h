@@ -495,6 +495,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_DARKRAI] = sDarkraiLevelUpLearnset,
     [SPECIES_SHAYMIN] = sShayminLevelUpLearnset,
     [SPECIES_ARCEUS] = sArceusLevelUpLearnset,
+    
 #endif
 #if P_GEN_5_POKEMON == TRUE
     [SPECIES_VICTINI] = sVictiniLevelUpLearnset,
@@ -1336,5 +1337,11 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     // Enamorus
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusLevelUpLearnset,
     [SPECIES_BASCULEGION_FEMALE] = sBasculegionLevelUpLearnset,
+    [SPECIES_BLUESTOISE] = sBluestoiseLevelUpLearnset,
+    [SPECIES_SHUCKOOL] = sShuckoolLevelUpLearnset,
+    [SPECIES_PORYGON4] = sPorygon4LevelUpLearnset,
+    [SPECIES_PORYGON5] = sPorygon5LevelUpLearnset,
+    [SPECIES_PORYGON6] = sPorygon6LevelUpLearnset,
+    [SPECIES_PORYGON7] = sPorygon7LevelUpLearnset,
 #endif
 };
