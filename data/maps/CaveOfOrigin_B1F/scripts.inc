@@ -113,5 +113,8 @@ CaveOfOrigin_B1F_Text_WellHeadToSkyPillar:
 	.string "Lance: The SKY PILLAR?\p"
 	.string "That's it!\n"
 	.string "It must be the SKY PILLAR!\p"
+	.string "That's where it is in normal pokemon\n"
+	.string "emerald, so it makes sense it would\l"
+	.string "be there in this crappy romhack!\p"
 	.string "{PLAYER}{KUN}, there's not a moment to lose!\n"
 	.string "We'll head to the SKY PILLAR right away!$"

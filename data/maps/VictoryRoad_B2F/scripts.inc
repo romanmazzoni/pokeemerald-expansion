@@ -33,8 +33,8 @@ VictoryRoad_B2F_EventScript_Dianne::
 
 VictoryRoad_B2F_Text_VitoIntro:
 	.string "The pokemon I caught,\n"
-	.string "they are all real!\l"
-	.string "Everyone uses these guys!$"
+	.string "They are all real!\l"
+	.string "Everyone uses these!$"
 
 VictoryRoad_B2F_Text_VitoDefeat:
 	.string "WAHHHHH?!$"

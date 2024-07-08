@@ -154,12 +154,12 @@ LilycoveCity_DepartmentStore_5F_EventScript_LittleGirl::
 
 LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls:
 	.string "This place is full of cute DOLLS.\p"
-	.string "I should buy some for me, instead of\n"
-	.string "just for my children.$"
+	.string "I should buy some for my children,\n"
+	.string "instead of just for me.$"
 
 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon:
 	.string "I'm not big enough to raise POKéMON,\n"
-	.string "so I'm getting a cute DOLL instead.$"
+	.string "law requires you to be 5 foot 10.$"
 
 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
 	.string "They sell many cute MATS here.\p"
@@ -168,4 +168,5 @@ LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
 
 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
 	.string "I think they closed the rooftop\n"
-	.string "because the weather is wild today.$"
+	.string "because mapping a rooftop would take\l"
+	.string "too much work...$"

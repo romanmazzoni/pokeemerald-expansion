@@ -27,18 +27,18 @@ SootopolisCity_House3_Text_JuanHasManyFansDoYou:
 	.string "Do you have any?$"
 
 SootopolisCity_House3_Text_YouMustBePrettyStrong:
-	.string "Oh, then you must be pretty strong.$"
+	.string "I actually don't believe you.$"
 
 SootopolisCity_House3_Text_LonesomeTryWorkingHarder:
 	.string "Oh, dear…\n"
 	.string "That's a little lonesome.\p"
-	.string "Try working a little harder to get\n"
-	.string "a fan following.$"
+	.string "You'll never be like my goat\n"
+	.string "JUANDASWAN.$"
 
 SootopolisCity_House3_Text_TrainerFanClubWasWild:
 	.string "Dedicated fans come over from even\n"
 	.string "outside of HOENN.\p"
-	.string "It was really wild when I went to the\n"
-	.string "TRAINER FAN CLUB in LILYCOVE.$"
+	.string "I would come too if there was a\n"
+	.string "cinderace here.$"
 
 `
