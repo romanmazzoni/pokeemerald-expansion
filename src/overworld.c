@@ -842,6 +842,7 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     InitSecondaryTilesetAnimation();
     UpdateLocationHistoryForRoamer();
     RoamerMove();
+    DebugPrintf("you are on route: %d ", mapNum);
     DoCurrentWeather();
     ResetFieldTasksArgs();
     RunOnResumeMapScript();

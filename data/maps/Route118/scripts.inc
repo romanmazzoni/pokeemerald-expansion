@@ -274,8 +274,8 @@ Route118_Text_IdenticalMindsTakeThis:
 	.string "Take this GOOD ROD!$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "Wherever there's water, try your luck\n"
-	.string "at fishing.$"
+	.string "Fishing doesn't work in this,\n"
+	.string "but I would never remove the rods!$"
 
 Route118_Text_DontYouLikeToFish:
 	.string "Don't you like to fish?$"
@@ -283,13 +283,13 @@ Route118_Text_DontYouLikeToFish:
 Route118_Text_TryCatchingMonWithGoodRod:
 	.string "Try catching all sorts of POKéMON\n"
 	.string "with your GOOD ROD.$"
+	.string "It won't work lol.$"
 
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"
 	.string "cross rivers and the sea if you have\l"
 	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
-	.string "much!$"
+	.string "I love riding POKéMON!$"
 
 Route118_Text_RouteSignMauville:
 	.string "ROUTE 118\n"

@@ -45,16 +45,6 @@ static const u8 sRoamerLocations[][6] =
     { MAP_NUM(ROUTE122), MAP_NUM(ROUTE121), MAP_NUM(ROUTE123), ___, ___, ___ },
     { MAP_NUM(ROUTE123), MAP_NUM(ROUTE122), MAP_NUM(ROUTE118), ___, ___, ___ },
     { MAP_NUM(ROUTE124), MAP_NUM(ROUTE121), MAP_NUM(ROUTE125), MAP_NUM(ROUTE126), ___, ___ },
-    { MAP_NUM(ROUTE125), MAP_NUM(ROUTE124), MAP_NUM(ROUTE127), ___, ___, ___ },
-    { MAP_NUM(ROUTE126), MAP_NUM(ROUTE124), MAP_NUM(ROUTE127), ___, ___, ___ },
-    { MAP_NUM(ROUTE127), MAP_NUM(ROUTE125), MAP_NUM(ROUTE126), MAP_NUM(ROUTE128), ___, ___ },
-    { MAP_NUM(ROUTE128), MAP_NUM(ROUTE127), MAP_NUM(ROUTE129), ___, ___, ___ },
-    { MAP_NUM(ROUTE129), MAP_NUM(ROUTE128), MAP_NUM(ROUTE130), ___, ___, ___ },
-    { MAP_NUM(ROUTE130), MAP_NUM(ROUTE129), MAP_NUM(ROUTE131), ___, ___, ___ },
-    { MAP_NUM(ROUTE131), MAP_NUM(ROUTE130), MAP_NUM(ROUTE132), ___, ___, ___ },
-    { MAP_NUM(ROUTE132), MAP_NUM(ROUTE131), MAP_NUM(ROUTE133), ___, ___, ___ },
-    { MAP_NUM(ROUTE133), MAP_NUM(ROUTE132), MAP_NUM(ROUTE134), ___, ___, ___ },
-    { MAP_NUM(ROUTE134), MAP_NUM(ROUTE133), MAP_NUM(ROUTE110), ___, ___, ___ },
     { ___, ___, ___, ___, ___, ___ },
 };
 
@@ -97,39 +87,39 @@ static void CreateInitialRoamerMon()
         totalMons[sizeMons] = SPECIES_LATIOS;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIAS), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_LATIAS), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_LATIAS;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_BULU), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_BULU), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_TAPU_BULU;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_FINI), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_FINI), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_TAPU_FINI;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_KOKO), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_KOKO), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_TAPU_KOKO;
         sizeMons++;
     }   
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_LELE), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TAPU_LELE), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_TAPU_LELE;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_KELDEO), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_KELDEO), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_KELDEO;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_VIRIZION), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_VIRIZION), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_VIRIZION;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_COBALION), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_COBALION), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_COBALION;
         sizeMons++;
     }
-    if ((GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TERRAKION), FLAG_GET_CAUGHT))){
+    if (!(GetSetPokedexFlag(SpeciesToNationalPokedexNum(SPECIES_TERRAKION), FLAG_GET_CAUGHT))){
         totalMons[sizeMons] = SPECIES_TERRAKION;
         sizeMons++;
     } 
@@ -138,7 +128,7 @@ static void CreateInitialRoamerMon()
     resultRoll = totalMons[Random() % sizeMons];
     ROAMER->species = resultRoll;
            
-
+    DebugPrintf("New roamer is: %d ", resultRoll);
 
     CreateMon(&gEnemyParty[0], ROAMER->species, 40, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     ROAMER->level = 40;
@@ -206,6 +196,8 @@ void RoamerMoveToOtherLocationSet(void)
 
     sRoamerLocation[MAP_GRP] = ROAMER_MAP_GROUP;
 
+    
+
     // Choose a location set that starts with a map
     // different from the roamer's current map
     while (1)
@@ -214,6 +206,7 @@ void RoamerMoveToOtherLocationSet(void)
         if (sRoamerLocation[MAP_NUM] != mapNum)
         {
             sRoamerLocation[MAP_NUM] = mapNum;
+            DebugPrintf("roamer is on route: %d ", mapNum);
             return;
         }
     }
@@ -249,6 +242,7 @@ void RoamerMove(void)
                         break;
                 }
                 sRoamerLocation[MAP_NUM] = mapNum;
+                DebugPrintf("roamer is on route: %d ", mapNum);
                 return;
             }
             locSet++;

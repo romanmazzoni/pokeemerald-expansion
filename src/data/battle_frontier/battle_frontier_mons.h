@@ -5643,15 +5643,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_ADAMANT
     },
     [FRONTIER_MON_URSARING_7] = {
-        .species = SPECIES_URSARING,
+        .species = SPECIES_TERRAKION,
         .moves = {MOVE_FACADE, MOVE_JUDGMENT, MOVE_DIRE_CLAW, MOVE_BULK_UP},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIFE_ORB,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_URSARING_8] = {
-        .species = SPECIES_URSARING,
-        .moves = {MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_DIRE_CLAW, MOVE_BRICK_BREAK},
+        .species = SPECIES_KELDEO,
+        .moves = {MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEALING_WISH, MOVE_HIGH_HORSEPOWER},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIFE_ORB,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE

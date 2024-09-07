@@ -485,7 +485,7 @@ Route119_Text_MayIntro:
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
 	.string "Ready with your POKéMON?\n"
-	.string "Of course you are! Go!$"
+	.string "POKéMON! Go!$"
 
 Route119_Text_MayDefeat:
 	.string "Achah!\n"
@@ -517,11 +517,11 @@ Route119_Text_BrendanIntro:
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
-	.string "It's a battle, so battle!$"
+	.string "POKéMON, GO!$"
 
 Route119_Text_BrendanDefeat:
 	.string "Hmm…\n"
-	.string "You've gotten pretty darn decent.$"
+	.string "You're ok I guess.$"
 
 Route119_Text_BrendanIllGiveYouThis:
 	.string "BRENDAN: I'd say you're good enough\n"
@@ -533,9 +533,9 @@ Route119_Text_BrendanExplainFly:
 	.string "BRENDAN: Use FLY, and your POKéMON\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the FORTREE GYM BADGE \n"
-	.string "to do that.\p"
-	.string "Anyway, I have to move along.$"
+	.string "good luck using it without the \n"
+	.string "FORTREE GYM BADGE.\p"
+	.string "Chump.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "SCOTT: Hahahah!\n"
@@ -570,25 +570,26 @@ Route119_Text_ScottYouWonAtFortreeGym:
 Route119_Text_StayAwayFromWeatherInstitute:
 	.string "We're standing lookout here.\p"
 	.string "Hey, you! Stay away from the WEATHER\n"
-	.string "INSTITUTE. It's not safe.$"
+	.string "INSTITUTE. Terrorists are there.$"
 
 Route119_Text_DontGoNearWeatherInstitute:
 	.string "Lookout duty is surprisingly boring.\p"
 	.string "Hey, you! Please don't go near the\n"
 	.string "WEATHER INSTITUTE.$"
+	.string "The PLOT is in there.$"
+	.string "Be careful with all of that possible.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you FLY by catching a whole\n"
 	.string "flock of BIRD POKéMON, and then\l"
 	.string "hanging on to them somehow.\p"
 	.string "But it turns out there's an HM move\n"
-	.string "called FLY!\p"
-	.string "I wish I'd known about that a long\n"
-	.string "time ago…$"
+	.string "called it was buffed to 95\n"
+	.string "base power…$"
 
 Route119_Text_TallGrassSnaresBikeTires:
 	.string "Tch…\n"
-	.string "It's a no-go…\p"
+	.string "It's a no-no…\p"
 	.string "The tall grass snares BIKE tires.\n"
 	.string "There's no way you can cycle here.$"
 
