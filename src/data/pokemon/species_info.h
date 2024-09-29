@@ -2259,13 +2259,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_POLIWRATH] =
     {
-        .baseHP        = 90,
-        .baseDefense   = 95,
+        .baseHP        = 110,
+        .baseDefense   = 105,
         .baseSpeed     = 70,
         .baseSpAttack  = 70,
         .baseSpDefense = 90,
         #if P_UPDATED_STATS >= GEN_6
-            .baseAttack    = 99,
+            .baseAttack    = 119,
         #else
             .baseAttack    = 85,
         #endif
@@ -5132,10 +5132,10 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_POLITOED] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 85,
-        .baseDefense   = 85,
-        .baseSpeed     = 80,
+        .baseHP        = 95,
+        .baseAttack    = 95,
+        .baseDefense   = 100,
+        .baseSpeed     = 95,
         .baseSpAttack  = 95,
         .baseSpDefense = 100,
         .types = { TYPE_WATER2, TYPE_KING, TYPE_GOOFY, TYPE_GOOFY },
@@ -5762,6 +5762,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .catchRate = 45,
         .expYield = 175,
         .evYield_Attack    = 2,
+        .itemCommon = ITEM_RAZOR_CLAW,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,

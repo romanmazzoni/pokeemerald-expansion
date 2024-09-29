@@ -2561,7 +2561,7 @@ Route118_Text_PerryDefeat:
 Route118_Text_PerryPostBattle:
 	.string "I need to throw blame around more.\p"
 	.string "A loss is really easy to handle\n"
-	.string "when I just say It's not my fault!$"
+	.string "when I just say it's not my fault!$"
 
 Route118_Text_ChesterIntro:
 	.string "My name is John Jacob Jingleheimer\n"

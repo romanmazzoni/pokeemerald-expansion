@@ -184,6 +184,9 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SNEASEL]               = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
                                        {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
                                        {EVO_LEVEL, 42, SPECIES_SNEASLER}},
+    [SPECIES_SNEASEL_HISUIAN]       = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
+                                       {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
+                                       {EVO_LEVEL, 42, SPECIES_SNEASLER}},
 #endif
     [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 45, SPECIES_URSARING}},
     [SPECIES_SLUGMA]                = {{EVO_LEVEL, 38, SPECIES_MAGCARGO}},

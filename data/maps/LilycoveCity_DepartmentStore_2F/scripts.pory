@@ -105,6 +105,30 @@ mart ChocoMart2{
 	ITEM_SCROLL_OF_DARKNESS
 	ITEM_SCROLL_OF_WATERS
 }
+
+mart ChocoMartIncense{
+	ITEM_FULL_INCENSE
+	ITEM_LAX_INCENSE
+	ITEM_LUCK_INCENSE
+	ITEM_ODD_INCENSE
+	ITEM_PURE_INCENSE
+	ITEM_ROCK_INCENSE
+	ITEM_ROSE_INCENSE
+	ITEM_SEA_INCENSE
+	ITEM_WAVE_INCENSE
+}
+
+script ChocoScript_Incense_Seller{
+    lock
+    faceplayer
+    message(format("Wanna make some babies?"))
+    waitmessage
+    pokemart(ChocoMartIncense)
+    msgbox("Please Come Again.")
+    release
+    end
+}
+
 script ChocoScript_I_Love_Balls{
     lock
     faceplayer

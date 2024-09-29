@@ -105,6 +105,30 @@ ChocoMart2:
 	.2byte ITEM_SCROLL_OF_WATERS
 	.2byte ITEM_NONE
 
+	.align 2
+ChocoMartIncense:
+	.2byte ITEM_FULL_INCENSE
+	.2byte ITEM_LAX_INCENSE
+	.2byte ITEM_LUCK_INCENSE
+	.2byte ITEM_ODD_INCENSE
+	.2byte ITEM_PURE_INCENSE
+	.2byte ITEM_ROCK_INCENSE
+	.2byte ITEM_ROSE_INCENSE
+	.2byte ITEM_SEA_INCENSE
+	.2byte ITEM_WAVE_INCENSE
+	.2byte ITEM_NONE
+
+ChocoScript_Incense_Seller::
+	lock
+	faceplayer
+	message ChocoScript_Incense_Seller_Text_0
+	waitmessage
+	pokemart ChocoMartIncense
+	msgbox LillyCove_2ndfloor_CustomShop_Intro_Text_1
+	release
+	end
+
+
 ChocoScript_I_Love_Balls::
 	lock
 	faceplayer
@@ -139,6 +163,9 @@ LillyCove_2ndfloor_CustomShop_Intro_Text_0:
 
 LillyCove_2ndfloor_CustomShop_Intro_Text_1:
 	.string "Please Come Again.$"
+
+ChocoScript_Incense_Seller_Text_0:
+	.string "Wanna make some babies?$"
 
 ChocoScript_I_Love_Balls_Text_0:
 	.string "I love balls!$"

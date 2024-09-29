@@ -4167,10 +4167,10 @@ const struct PokedexEntry gPokedexEntries[] =
     [NATIONAL_DEX_LILEEP] =
     {
         .categoryName = _("Sea Lily"),
-        .height = 10,
-        .weight = 238,
+        .height = 32,
+        .weight = 1209,
         .description = gLileepPokedexText,
-        .pokemonScale = 305,
+        .pokemonScale = 134,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,

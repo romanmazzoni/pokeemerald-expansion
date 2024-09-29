@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/Route1152/border.bin",
       "blockdata_filepath": "data/layouts/Route1152/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_NEW",
+      "name": "BattleFrontier_OutsideNew_Layout",
+      "width": 34,
+      "height": 41,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/BattleFrontier_OutsideNew/border.bin",
+      "blockdata_filepath": "data/layouts/BattleFrontier_OutsideNew/map.bin"
     }
   ]
 }
