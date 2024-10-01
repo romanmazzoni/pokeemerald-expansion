@@ -858,13 +858,20 @@
 #define TRAINER_MAY_PLACEHOLDER             854
 #define TRAINER_STEPHEN                     855
 #define TRAINER_LANCE                       856
+#define TRAINER_FRANK                       857
+#define TRAINER_FRANK2                      858
+#define TRAINER_FRANK3                      859
+#define TRAINER_FRANK4                      860
+#define TRAINER_FRANK5                      861
+#define TRAINER_FRANK6                      862
+#define TRAINER_FRANK7                      863
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      857
+#define TRAINERS_COUNT                      864
 #define MAX_TRAINERS_COUNT                  864
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

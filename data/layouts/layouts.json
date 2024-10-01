@@ -4485,9 +4485,9 @@
       "id": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_NEW",
       "name": "BattleFrontier_OutsideNew_Layout",
       "width": 34,
-      "height": 41,
+      "height": 43,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/BattleFrontier_OutsideNew/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_OutsideNew/map.bin"
     }

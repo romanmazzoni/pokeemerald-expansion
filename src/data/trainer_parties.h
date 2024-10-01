@@ -13160,3 +13160,68 @@ static const struct TrainerMonItemCustomMoves sParty_Adonu[] = {
     .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_ASCENT, MOVE_LANCE_PUNCH, MOVE_LANCE_BLAST}
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_Frank[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_Brenton[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+static const struct TrainerMonItemCustomMoves sParty_JeffLynne[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+static const struct TrainerMonItemCustomMoves sParty_Forest[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+static const struct TrainerMonItemCustomMoves sParty_Vinnie[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+static const struct TrainerMonItemCustomMoves sParty_Dylon[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
+static const struct TrainerMonItemCustomMoves sParty_MaxieFresh[] = {
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_DARKEST_LARIAT, MOVE_STONE_AXE, MOVE_CRUNCH, MOVE_AGILITY}
+    }
+};
