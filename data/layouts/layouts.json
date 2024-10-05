@@ -4484,12 +4484,22 @@
     {
       "id": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_NEW",
       "name": "BattleFrontier_OutsideNew_Layout",
-      "width": 34,
+      "width": 36,
       "height": 43,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/BattleFrontier_OutsideNew/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_OutsideNew/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUTSIDE_FRONTIER_NEW_HOUSE",
+      "name": "OutsideFrontierNewHouse_Layout",
+      "width": 3,
+      "height": 5,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OutsideFrontierNewHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OutsideFrontierNewHouse/map.bin"
     }
   ]
 }

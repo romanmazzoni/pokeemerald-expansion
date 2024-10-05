@@ -1075,3 +1075,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route1152/scripts.inc"
 
 	.include "data/maps/BattleFrontier_OutsideNew/scripts.inc"
+
+	.include "data/maps/OutsideFrontierNewHouse/scripts.inc"
