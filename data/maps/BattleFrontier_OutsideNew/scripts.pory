@@ -1,3 +1,4 @@
+raw `
 BattleFrontier_OutsideNew_MapScripts::
 	.byte 0
 
@@ -135,64 +136,34 @@ Route107_Text_MaxieTime::
 	.string "I mean I would...\p"
 	.string "But wouldn't a battle be more fun?$"
 
-NewBattleFrontierRoute_EventScript_MaxieEnters::
-	goto_if_unset FLAG_NewMaxieFlag, NewBattleFrontierRoute_EventScript_MaxieEnters_1
-	return
+`
+script NewBattleFrontierRoute_EventScript_MaxieEnters{
+	if(!flag(FLAG_NewMaxieFlag)){
+		lockall
+		applymovement(15,MyMovement)
+   	 	waitmovement(15)
+		face_up
+    	msgbox(Route107_Text_MaxieTime)
+    	trainerbattle_no_intro(TRAINER_FRANK7, format("Well, you earned it!"))
+    	setflag(FLAG_NewMaxieFlag)
+    	msgbox(format("Don't tell anyone I stole these back. They still think they gots the real ones up there."))
+    	giveitem(ITEM_RED_ORB)
+    	giveitem(ITEM_BLUE_ORB)
+    	msgbox(format("Whelp, I'm off."))
+    	applymovement(15, Maxiemove2)
+    	waitmovement(15)
+		removeobject(15)
+    	releaseall
+	}
+}
 
-NewBattleFrontierRoute_EventScript_MaxieEnters_1:
-	lockall
-	applymovement 15, MyMovement
-	waitmovement 15
-	face_up
-	msgbox Route107_Text_MaxieTime
-	trainerbattle_no_intro TRAINER_FRANK7, NewBattleFrontierRoute_EventScript_MaxieEnters_Text_0
-	setflag FLAG_NewMaxieFlag
-	msgbox NewBattleFrontierRoute_EventScript_MaxieEnters_Text_1
-	giveitem ITEM_RED_ORB
-	giveitem ITEM_BLUE_ORB
-	msgbox NewBattleFrontierRoute_EventScript_MaxieEnters_Text_2
-	applymovement 15, Maxiemove2
-	waitmovement 15
-	removeobject 15
-	releaseall
-	return
+movement MyMovement {
+    walk_right * 8
+	walk_down * 2
+    
+}
 
-
-MyMovement:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	step_end
-
-Maxiemove2:
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-NewBattleFrontierRoute_EventScript_MaxieEnters_Text_0:
-	.string "Well, you earned it!$"
-
-NewBattleFrontierRoute_EventScript_MaxieEnters_Text_1:
-	.string "Don't tell anyone I stole these back.\n"
-	.string "They still think they gots the real\l"
-	.string "ones up there.$"
-
-NewBattleFrontierRoute_EventScript_MaxieEnters_Text_2:
-	.string "Whelp, I'm off.$"
+movement Maxiemove2 {
+    walk_up *2
+    walk_left * 10
+}
