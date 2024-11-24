@@ -138,7 +138,6 @@ Route107_Text_MaxieTime::
 
 `
 script NewBattleFrontierRoute_EventScript_MaxieEnters{
-	if(!flag(FLAG_NewMaxieFlag)){
 		lockall
 		applymovement(15,MyMovement)
    	 	waitmovement(15)
@@ -153,8 +152,8 @@ script NewBattleFrontierRoute_EventScript_MaxieEnters{
     	applymovement(15, Maxiemove2)
     	waitmovement(15)
 		removeobject(15)
+		setvar(VAR_NewMaxieVar,1)
     	releaseall
-	}
 }
 
 movement MyMovement {
@@ -164,6 +163,6 @@ movement MyMovement {
 }
 
 movement Maxiemove2 {
-    walk_up *2
+    walk_up * 2
     walk_left * 10
 }

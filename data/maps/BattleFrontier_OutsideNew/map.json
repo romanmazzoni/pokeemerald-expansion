@@ -3,7 +3,7 @@
   "name": "BattleFrontier_OutsideNew",
   "layout": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_NEW",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ROUTE_134",
+  "region_map_section": "MAPSEC_BATTLE_FRONTIER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -231,7 +231,7 @@
       "x": 17,
       "y": 36,
       "elevation": 0,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_NewMaxieVar",
       "var_value": "0",
       "script": "NewBattleFrontierRoute_EventScript_MaxieEnters"
     }
@@ -244,6 +244,14 @@
       "elevation": 0,
       "item": "ITEM_MAX_REVIVE",
       "flag": "FLAG_FrankFlag2"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NewBattleFrontierRoute_Text_HouseSign"
     }
   ]
 }

@@ -136,10 +136,6 @@ Route107_Text_MaxieTime::
 	.string "But wouldn't a battle be more fun?$"
 
 NewBattleFrontierRoute_EventScript_MaxieEnters::
-	goto_if_unset FLAG_NewMaxieFlag, NewBattleFrontierRoute_EventScript_MaxieEnters_1
-	return
-
-NewBattleFrontierRoute_EventScript_MaxieEnters_1:
 	lockall
 	applymovement 15, MyMovement
 	waitmovement 15
@@ -154,6 +150,7 @@ NewBattleFrontierRoute_EventScript_MaxieEnters_1:
 	applymovement 15, Maxiemove2
 	waitmovement 15
 	removeobject 15
+	setvar VAR_NewMaxieVar, 1
 	releaseall
 	return
 
