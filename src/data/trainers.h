@@ -10273,9 +10273,9 @@ const struct Trainer gTrainers[] = {
     },
     [TRAINER_FRANK2] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
         .trainerName = _("BRENTON"),
         .items = {},
         .doubleBattle = TRUE,
@@ -10284,9 +10284,9 @@ const struct Trainer gTrainers[] = {
     },
     [TRAINER_FRANK3] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
         .trainerName = _("JEFF LYNNE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10295,9 +10295,9 @@ const struct Trainer gTrainers[] = {
     },
     [TRAINER_FRANK4] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_POKEFAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_POKEFAN_F,
         .trainerName = _("JAYCE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10306,9 +10306,9 @@ const struct Trainer gTrainers[] = {
     },
     [TRAINER_FRANK5] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_RICH_BOY,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
         .trainerName = _("VINNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10317,9 +10317,9 @@ const struct Trainer gTrainers[] = {
     },
     [TRAINER_FRANK6] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_EXPERT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
         .trainerName = _("DYLON"),
         .items = {},
         .doubleBattle = FALSE,

@@ -13338,10 +13338,38 @@ static const struct TrainerMonItemCustomMoves sParty_Dylon[] = {
 static const struct TrainerMonItemCustomMoves sParty_MaxieFresh[] = {
     {
     .iv = 255,
-    .lvl = 32,
-    .species = SPECIES_ZOROARK_HISUIAN,
-    .heldItem = ITEM_LIFE_ORB,
-    .moves = {MOVE_FALSE_SWIPE, MOVE_FAKE_OUT, MOVE_NIGHT_SHADE, MOVE_DIRE_CLAW}
+    .lvl = 67,
+    .species = SPECIES_LUCARIO,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_AURA_SPHERE, MOVE_PRESENT, MOVE_BONE_RUSH}
     },
+    {
+    .iv = 255,
+    .lvl = 67,
+    .species = SPECIES_BEARTIC,
+    .heldItem = ITEM_ICY_ROCK,
+    .moves = {MOVE_BLIZZARD, MOVE_SHEER_COLD, MOVE_ROAR, MOVE_BODY_SLAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 65,
+    .species = SPECIES_ZAPDOS_GALARIAN,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_ZAP_CANNON, MOVE_RECOVER, MOVE_CLOSE_COMBAT, MOVE_GLARE}
+    },
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_HEATRAN,
+    .heldItem = ITEM_HEAVY_DUTY_BOOTS,
+    .moves = {MOVE_MAGMA_STORM, MOVE_EARTH_POWER, MOVE_LEECH_SEED, MOVE_PROTECT}
+    },
+    {
+    .iv = 255,
+    .lvl = 69,
+    .species = SPECIES_URSHIFU_RAPID_STRIKE_STYLE,
+    .heldItem = ITEM_BLACK_BELT,
+    .moves = {MOVE_WICKED_BLOW, MOVE_SURGING_STRIKES, MOVE_BULLET_PUNCH, MOVE_U_TURN}
+    }
     
 };

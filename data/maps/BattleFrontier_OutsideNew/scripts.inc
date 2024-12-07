@@ -223,9 +223,9 @@ NewBattleFrontierRoute_EventScript_MaxieEnters_Text_2:
 	.string "Whelp, I'm off.$"
 
 NewBattleFrontierRoute_EventScript_Memorycaveguy_Text_0:
-	.string "This cave seems familiar. It seems to\n"
-	.string "have pokemon that I previous missed\l"
-	.string "out on catching!$"
+	.string "This cave seems familiar.\p"
+	.string "It seems to have pokemon that I\n"
+	.string "previous missed out on catching!$"
 
 NewBattleFrontierRoute_EventScript_Memorycaveguy2_Text_0:
 	.string "I remember this place...$"

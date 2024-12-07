@@ -177,7 +177,7 @@ movement Maxiemove2 {
 
 script NewBattleFrontierRoute_EventScript_Memorycaveguy{
 		lockall
-    	msgbox(format("This cave seems familiar. It seems to have pokemon that I previous missed out on catching!"))
+    	msgbox(format("This cave seems familiar.\pIt seems to have pokemon that I previous missed out on catching!"))
     	releaseall
 }
 script NewBattleFrontierRoute_EventScript_Memorycaveguy2{
