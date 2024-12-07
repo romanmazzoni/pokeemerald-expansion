@@ -5872,7 +5872,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 30,
         #if P_UPDATED_STATS >= GEN_7
             .baseHP        = 60,
-            .baseSpAttack  = 90,
+            .baseSpAttack  = 95,
         #else
             .baseHP        = 50,
             .baseSpAttack  = 80,
