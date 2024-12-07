@@ -1081,3 +1081,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MemoryCave_1F/scripts.inc"
 
 	.include "data/maps/Memorycave_bf1/scripts.inc"
+
+	.include "data/maps/MemoryCave_bf2/scripts.inc"

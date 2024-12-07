@@ -1,8 +1,8 @@
 {
-  "id": "MAP_MEMORYCAVE_BF1",
-  "name": "Memorycave_bf1",
-  "layout": "LAYOUT_MEMORYCAVE_BF1",
-  "music": "MUS_MT_CHIMNEY",
+  "id": "MAP_MEMORY_CAVE_BF2",
+  "name": "MemoryCave_bf2",
+  "layout": "LAYOUT_MEMORY_CAVE_BF2",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_BATTLE_FRONTIER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -18,18 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 15,
-      "y": 2,
+      "x": 1,
+      "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_MEMORY_CAVE_1F",
+      "dest_map": "MAP_MEMORYCAVE_BF1",
       "dest_warp_id": "1"
-    },
-    {
-      "x": 4,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_MEMORY_CAVE_BF2",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

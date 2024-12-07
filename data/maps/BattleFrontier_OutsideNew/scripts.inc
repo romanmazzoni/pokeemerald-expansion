@@ -55,6 +55,9 @@ NewBattleFrontierRoute_EventScript_ItemWideLens::
 	finditem ITEM_WIDE_LENS
 	end
 
+NewBattleFrontierRoute_EventScript_ItemDuskStone::
+	finditem ITEM_DUSK_STONE
+	end
 
 
 NewBattleFrontierRoute_Text_HouseSign::
@@ -187,6 +190,27 @@ Maxiemove2:
 	walk_left
 	step_end
 
+NewBattleFrontierRoute_EventScript_Memorycaveguy::
+	lockall
+	msgbox NewBattleFrontierRoute_EventScript_Memorycaveguy_Text_0
+	releaseall
+	return
+
+
+NewBattleFrontierRoute_EventScript_Memorycaveguy2::
+	lockall
+	msgbox NewBattleFrontierRoute_EventScript_Memorycaveguy2_Text_0
+	releaseall
+	return
+
+
+NewBattleFrontierRoute_EventScript_Memorycaveguy3::
+	lockall
+	msgbox NewBattleFrontierRoute_EventScript_Memorycaveguy3_Text_0
+	releaseall
+	return
+
+
 NewBattleFrontierRoute_EventScript_MaxieEnters_Text_0:
 	.string "Well, you earned it!$"
 
@@ -197,3 +221,14 @@ NewBattleFrontierRoute_EventScript_MaxieEnters_Text_1:
 
 NewBattleFrontierRoute_EventScript_MaxieEnters_Text_2:
 	.string "Whelp, I'm off.$"
+
+NewBattleFrontierRoute_EventScript_Memorycaveguy_Text_0:
+	.string "This cave seems familiar. It seems to\n"
+	.string "have pokemon that I previous missed\l"
+	.string "out on catching!$"
+
+NewBattleFrontierRoute_EventScript_Memorycaveguy2_Text_0:
+	.string "I remember this place...$"
+
+NewBattleFrontierRoute_EventScript_Memorycaveguy3_Text_0:
+	.string "I took all the fossils. Too slow chump!$"

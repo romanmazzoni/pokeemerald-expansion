@@ -438,7 +438,8 @@
     "VictoryRoad_B4F",
     "HiddenGrove",
     "MemoryCave_1F",
-    "Memorycave_bf1"
+    "Memorycave_bf1",
+    "MemoryCave_bf2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

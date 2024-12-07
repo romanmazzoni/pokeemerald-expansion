@@ -56,6 +56,9 @@ NewBattleFrontierRoute_EventScript_ItemWideLens::
 	finditem ITEM_WIDE_LENS
 	end
 
+NewBattleFrontierRoute_EventScript_ItemDuskStone::
+	finditem ITEM_DUSK_STONE
+	end
 
 
 NewBattleFrontierRoute_Text_HouseSign::
@@ -140,6 +143,7 @@ Route107_Text_MaxieTime::
 	.string "I mean I would...\p"
 	.string "But wouldn't a battle be more fun?$"
 
+
 `
 script NewBattleFrontierRoute_EventScript_MaxieEnters{
 		lockall
@@ -169,4 +173,20 @@ movement MyMovement {
 movement Maxiemove2 {
     walk_up * 2
     walk_left * 10
+}
+
+script NewBattleFrontierRoute_EventScript_Memorycaveguy{
+		lockall
+    	msgbox(format("This cave seems familiar. It seems to have pokemon that I previous missed out on catching!"))
+    	releaseall
+}
+script NewBattleFrontierRoute_EventScript_Memorycaveguy2{
+		lockall
+    	msgbox(format("I remember this place..."))
+    	releaseall
+}
+script NewBattleFrontierRoute_EventScript_Memorycaveguy3{
+		lockall
+    	msgbox(format("I took all the fossils. Too slow chump!"))
+    	releaseall
 }

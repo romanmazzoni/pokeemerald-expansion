@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/Memorycave_bf1/border.bin",
       "blockdata_filepath": "data/layouts/Memorycave_bf1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORY_CAVE_BF2",
+      "name": "MemoryCave_bf2_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/MemoryCave_bf2/border.bin",
+      "blockdata_filepath": "data/layouts/MemoryCave_bf2/map.bin"
     }
   ]
 }
