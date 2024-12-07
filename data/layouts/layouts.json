@@ -4500,6 +4500,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/OutsideFrontierNewHouse/border.bin",
       "blockdata_filepath": "data/layouts/OutsideFrontierNewHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORY_CAVE_1F",
+      "name": "MemoryCave_1F_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MemoryCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MemoryCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORYCAVE_BF1",
+      "name": "Memorycave_bf1_Layout",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/Memorycave_bf1/border.bin",
+      "blockdata_filepath": "data/layouts/Memorycave_bf1/map.bin"
     }
   ]
 }

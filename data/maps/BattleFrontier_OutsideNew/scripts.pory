@@ -52,6 +52,10 @@ NewBattleFrontierRoute_EventScript_ItemFullRestore::
 	finditem ITEM_FULL_RESTORE
 	end
 
+NewBattleFrontierRoute_EventScript_ItemWideLens::
+	finditem ITEM_WIDE_LENS
+	end
+
 
 
 NewBattleFrontierRoute_Text_HouseSign::

@@ -1077,3 +1077,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BattleFrontier_OutsideNew/scripts.inc"
 
 	.include "data/maps/OutsideFrontierNewHouse/scripts.inc"
+
+	.include "data/maps/MemoryCave_1F/scripts.inc"
+
+	.include "data/maps/Memorycave_bf1/scripts.inc"

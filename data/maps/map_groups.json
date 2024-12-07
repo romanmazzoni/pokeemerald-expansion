@@ -436,7 +436,9 @@
     "NewMap1",
     "VictoryRoad_B3F",
     "VictoryRoad_B4F",
-    "HiddenGrove"
+    "HiddenGrove",
+    "MemoryCave_1F",
+    "Memorycave_bf1"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
