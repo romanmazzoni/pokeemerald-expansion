@@ -9315,8 +9315,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .catchRate = 255,
         .expYield = 69,
         .evYield_Defense   = 1,
-        .itemCommon = ITEM_PEARL,
-        .itemRare = ITEM_BIG_PEARL,
+        .itemCommon = ITEM_DEEP_SEA_SCALE,
+        .itemRare = ITEM_DEEP_SEA_TOOTH,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -11865,11 +11865,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MESPRIT] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 105,
+        .baseHP        = 120,
+        .baseAttack    = 110,
         .baseDefense   = 105,
         .baseSpeed     = 80,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 110,
         .baseSpDefense = 105,
         .types = { TYPE_PSYCHIC, TYPE_SHORT, TYPE_SPACE, TYPE_RED},
         .catchRate = 3,

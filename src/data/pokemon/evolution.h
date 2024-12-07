@@ -109,7 +109,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SCYTHER]               = {{EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
                                        {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
                                        {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
-                                       {EVO_LEVEL, 37, SPECIES_KLEAVOR}},
+                                       {EVO_LEVEL_DAY, 37, SPECIES_KLEAVOR},
+                                       {EVO_LEVEL_NIGHT, 37, SPECIES_SCIZOR}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_ELECTABUZZ]            = {{EVO_TRADE_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE},
                                        {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE},
