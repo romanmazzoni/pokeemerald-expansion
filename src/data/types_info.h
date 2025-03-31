@@ -793,8 +793,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .isHiddenPowerType = FALSE,
     },[TYPE_SUBMISSIVE] =
     {
-        .name = _("SUBMISIVE"),
-        .generic = _("a SUBMISSIVE move"),
+        .name = _("SUB"),
+        .generic = _("a SUBMISIVE move"),
         .palette = 15,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,
@@ -805,7 +805,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .isHiddenPowerType = FALSE,
     },[TYPE_WAFFLEHOUSE] =
     {
-        .name = _("WAFLEHOSE"),
+        .name = _("WAFFLE"),
         .generic = _("a WAFLEHOSE move"),
         .palette = 15,
         .zMove = MOVE_BREAKNECK_BLITZ,
@@ -1045,7 +1045,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         .isHiddenPowerType = FALSE,
     },[TYPE_EXPLOSION] =
     {
-        .name = _("EXPLOSION"),
+        .name = _("BOOM"),
         .generic = _("a EXPLOSION move"),
         .palette = 15,
         .zMove = MOVE_BREAKNECK_BLITZ,
