@@ -358,6 +358,17 @@ struct SpeciesInfo /*0xC4*/
     u8 baseSpeed;
     u8 baseSpAttack;
     u8 baseSpDefense;
+    u8 baseLerAttack;
+    u8 baseLerDefense;
+    u8 critChance;
+    u8 armor; //defenseforall3
+    u8 trueDamage; //extra damage each attack
+    u8 luck; //secondary effect chance
+    u8 waxing; //slow chance
+    u8 gambit; //damage on death
+    u8 parry; //chance for half damage
+    u8 firstStrike; //chance to go first
+    u8 lifeSteal; //percent health drain
     u8 types[2];
     u8 catchRate;
     u8 forceTeraType;

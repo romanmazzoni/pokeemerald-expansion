@@ -28,7 +28,7 @@ struct String
 
 struct Stats
 {
-    int hp, attack, defense, special_attack, special_defense, speed;
+    int hp, attack, defense, special_attack, special_defense, speed, crit_chance, specialer_attack, specialer_defense, armor, truedamage, luck, reversal, waxing, gambit;
 };
 
 enum Gender
