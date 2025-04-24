@@ -358,9 +358,9 @@ struct SpeciesInfo /*0xC4*/
     u8 baseSpeed;
     u8 baseSpAttack;
     u8 baseSpDefense;
-    u8 baseLerAttack;
-    u8 baseLerDefense;
-    u8 critChance;
+    u8 baseLerAttack; //specieler attack
+    u8 baseLerDefense; //specialer defense
+    u8 critChance; //crit percent chance
     u8 armor; //defenseforall3
     u8 trueDamage; //extra damage each attack
     u8 luck; //secondary effect chance
@@ -369,6 +369,9 @@ struct SpeciesInfo /*0xC4*/
     u8 parry; //chance for half damage
     u8 firstStrike; //chance to go first
     u8 lifeSteal; //percent health drain
+    u8 sexism; //extra damage to the opposite gender
+    u8 hotStreak; //health regened on enemy kill
+    u8 doubleHit; //percent chance to hit twice in one attack
     u8 types[2];
     u8 catchRate;
     u8 forceTeraType;
