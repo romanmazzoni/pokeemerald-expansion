@@ -11330,6 +11330,8 @@ static u32 SwapMoveDamageCategory(u32 move)
 {
     if (GetMoveCategory(move) == DAMAGE_CATEGORY_PHYSICAL)
         return DAMAGE_CATEGORY_SPECIAL;
+    if (GetMoveCategory(move) == DAMAGE_CATEGORY_SPECIAL)
+        return DAMAGE_CATEGORY_SPECIALER;
     return DAMAGE_CATEGORY_PHYSICAL;
 }
 

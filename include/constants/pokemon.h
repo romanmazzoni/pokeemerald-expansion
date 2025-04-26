@@ -80,10 +80,24 @@
 #define STAT_SPEED   3
 #define STAT_SPATK   4
 #define STAT_SPDEF   5
-#define NUM_STATS    6
+#define STAT_LERATK  6
+#define STAT_LERDEF  7
+#define STAT_ARMOR   8
+#define STAT_TRUDMG  9
+#define STAT_GAMBIT  10
+#define STAT_SEXISM  11
+#define STAT_HOTSTK  12
+#define STAT_CRIT    13
+#define STAT_LUCK    14
+#define STAT_WAXING  15
+#define STAT_PARRY   16
+#define STAT_FIRSTSTRIKE 17
+#define STAT_LIFESTL 18
+#define STAT_DBLHIT  19
+#define NUM_STATS    20
 
-#define STAT_ACC     6 // Only in battles.
-#define STAT_EVASION 7 // Only in battles.
+#define STAT_ACC     20 // Only in battles.
+#define STAT_EVASION 21 // Only in battles.
 
 #define NUM_NATURE_STATS (NUM_STATS - 1) // excludes HP
 #define NUM_BATTLE_STATS (NUM_STATS + 2) // includes Accuracy and Evasion
@@ -221,6 +235,7 @@
 #define DAMAGE_CATEGORY_PHYSICAL    0
 #define DAMAGE_CATEGORY_SPECIAL     1
 #define DAMAGE_CATEGORY_STATUS      2
+#define DAMAGE_CATEGORY_SPECIALER   3
 
 // Growth rates
 #define GROWTH_MEDIUM_FAST  0
@@ -324,7 +339,7 @@ enum EvolutionMode {
 // - Unown has 1 frame, presumably to avoid the work of animating all 28 of its forms
 #define MAX_MON_PIC_FRAMES 2
 
-#define BATTLE_ALIVE_EXCEPT_BATTLER      0
+#define BATTLE_ALIVE_EXCEPT_BATTLER      0  
 #define BATTLE_ALIVE_EXCEPT_BATTLER_SIDE 1
 #define BATTLE_ALIVE_SIDE                2
 
