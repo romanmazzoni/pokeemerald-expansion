@@ -1111,7 +1111,7 @@ extern u16 gChosenMove;
 extern u16 gCalledMove;
 extern s32 gBideDmg[MAX_BATTLERS_COUNT];
 extern u16 gLastUsedItem;
-extern u16 gLastUsedAbility;
+extern u16 gLastUsedAbility[];
 extern u8 gBattlerAttacker;
 extern u8 gBattlerTarget;
 extern u8 gBattlerFainted;

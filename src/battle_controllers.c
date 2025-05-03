@@ -1115,7 +1115,8 @@ void BtlController_EmitPrintString(u32 battler, u32 bufferId, u16 stringID)
     stringInfo->moveType = GetMoveType(gCurrentMove);
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
-        stringInfo->abilities[i] = gBattleMons[i].ability;
+        for (j = 0; i < 3; i++)
+        stringInfo->abilities[i + j] = gBattleMons[i].abilities[j];
     for (i = 0; i < TEXT_BUFF_ARRAY_COUNT; i++)
     {
         stringInfo->textBuffs[0][i] = gBattleTextBuff1[i];
@@ -1144,7 +1145,8 @@ void BtlController_EmitPrintSelectionString(u32 battler, u32 bufferId, u16 strin
     stringInfo->bakScriptPartyIdx = gBattleStruct->scriptPartyIdx;
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
-        stringInfo->abilities[i] = gBattleMons[i].ability;
+        for (j = 0; i < 3; i++)
+            stringInfo->abilities[i + j] = gBattleMons[i].abilities[j];
     for (i = 0; i < TEXT_BUFF_ARRAY_COUNT; i++)
     {
         stringInfo->textBuffs[0][i] = gBattleTextBuff1[i];

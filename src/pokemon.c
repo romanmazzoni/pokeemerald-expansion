@@ -3475,22 +3475,40 @@ u16 GetAbilityBySpecies(u16 species, u8 abilityNum)
 {
     int i;
 
-    if (abilityNum < NUM_ABILITY_SLOTS)
-        gLastUsedAbility = gSpeciesInfo[species].abilities[abilityNum];
+    gLastUsedAbility[1] = ABILITY_NONE;
+    gLastUsedAbility[2] = ABILITY_NONE;
+
+    if (abilityNum < NUM_ABILITY_SLOTS){
+        gLastUsedAbility[0] = gSpeciesInfo[species].abilities[abilityNum];
+        if (abilityNum - 1 > 0)
+            gLastUsedAbility[1] = gSpeciesInfo[species].abilities[abilityNum - 1];
+        if (abilityNum + 1 < NUM_ABILITY_SLOTS)
+            gLastUsedAbility[1] = gSpeciesInfo[species].abilities[abilityNum + 1];
+    }
     else
-        gLastUsedAbility = ABILITY_NONE;
+        gLastUsedAbility[0] = ABILITY_NONE;
 
     if (abilityNum >= NUM_NORMAL_ABILITY_SLOTS) // if abilityNum is empty hidden ability, look for other hidden abilities
     {
-        for (i = NUM_NORMAL_ABILITY_SLOTS; i < NUM_ABILITY_SLOTS && gLastUsedAbility == ABILITY_NONE; i++)
+        for (i = NUM_NORMAL_ABILITY_SLOTS; i < NUM_ABILITY_SLOTS && gLastUsedAbility[0] == ABILITY_NONE; i++)
         {
-            gLastUsedAbility = gSpeciesInfo[species].abilities[i];
+            gLastUsedAbility[0] = gSpeciesInfo[species].abilities[i];
         }
     }
 
-    for (i = 0; i < NUM_ABILITY_SLOTS && gLastUsedAbility == ABILITY_NONE; i++) // look for any non-empty ability
+    for (i = 0; i < NUM_ABILITY_SLOTS && gLastUsedAbility[0] == ABILITY_NONE; i++) // look for any non-empty ability
     {
-        gLastUsedAbility = gSpeciesInfo[species].abilities[i];
+        gLastUsedAbility[0] = gSpeciesInfo[species].abilities[i];
+    }
+    for (i = 0; i < NUM_ABILITY_SLOTS && gLastUsedAbility[1] == ABILITY_NONE; i++) // look for any non-empty ability
+    {
+        if(gSpeciesInfo[species].abilities[i] != gLastUsedAbility[0])
+            gLastUsedAbility[1] = gSpeciesInfo[species].abilities[i];
+    }
+    for (i = 0; i < NUM_ABILITY_SLOTS && gLastUsedAbility[2] == ABILITY_NONE; i++) // look for any non-empty ability
+    {
+        if(gSpeciesInfo[species].abilities[i] != gLastUsedAbility[0] && gSpeciesInfo[species].abilities[i] != gLastUsedAbility[1])
+            gLastUsedAbility[2] = gSpeciesInfo[species].abilities[i];
     }
 
     return gLastUsedAbility;
@@ -5986,7 +6004,7 @@ void BoxMonRestorePP(struct BoxPokemon *boxMon)
 
 void SetMonPreventsSwitchingString(void)
 {
-    gLastUsedAbility = gBattleStruct->abilityPreventingSwitchout;
+    gLastUsedAbility[0] = gBattleStruct->abilityPreventingSwitchout;
 
     gBattleTextBuff1[0] = B_BUFF_PLACEHOLDER_BEGIN;
     gBattleTextBuff1[1] = B_BUFF_MON_NICK_WITH_PREFIX;

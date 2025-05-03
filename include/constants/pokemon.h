@@ -80,8 +80,8 @@
 #define STAT_SPEED   3
 #define STAT_SPATK   4
 #define STAT_SPDEF   5
-#define STAT_LERATK  6
-#define STAT_LERDEF  7
+#define STAT_LERATK  20
+#define STAT_LERDEF  21
 #define STAT_ARMOR   8
 #define STAT_TRUDMG  9
 #define STAT_GAMBIT  10
@@ -96,8 +96,8 @@
 #define STAT_DBLHIT  19
 #define NUM_STATS    20
 
-#define STAT_ACC     20 // Only in battles.
-#define STAT_EVASION 21 // Only in battles.
+#define STAT_ACC     6 // Only in battles.
+#define STAT_EVASION 7 // Only in battles.
 
 #define NUM_NATURE_STATS (NUM_STATS - 1) // excludes HP
 #define NUM_BATTLE_STATS (NUM_STATS + 2) // includes Accuracy and Evasion
