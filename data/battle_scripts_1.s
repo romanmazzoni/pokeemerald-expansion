@@ -333,6 +333,7 @@ BattleScript_MoveSwitchOpenPartyScreen::
 	returntoball BS_ATTACKER, FALSE
 	getswitchedmondata BS_ATTACKER
 	switchindataupdate BS_ATTACKER
+	resetswitchinabilitybits BS_ATTACKER
 	hpthresholds BS_ATTACKER
 	trytoclearprimalweather
 	printstring STRINGID_EMPTYSTRING3
@@ -577,6 +578,7 @@ BattleScript_Teatimevul:
 	moveendcase MOVEEND_CLEAR_BITS
 	goto BattleScript_MoveEnd
 BattleScript_Teatimesorb:
+	pushtraitstack BS_TARGET ABILITY_VOLT_ABSORB
 	call BattleScript_AbilityPopUpTarget
 	tryhealquarterhealth BS_TARGET BattleScript_Teatimesorb_end
 	healthbarupdate BS_TARGET
@@ -589,6 +591,7 @@ BattleScript_Teatimesorb_end:
 	moveendcase MOVEEND_CLEAR_BITS
 	goto BattleScript_MoveEnd
 BattleScript_Teatimerod:
+	pushtraitstack BS_TARGET ABILITY_LIGHTNING_ROD
 	call BattleScript_AbilityPopUpTarget
 	playstatchangeanimation BS_TARGET, BIT_SPATK, STAT_CHANGE_BY_TWO
 	setstatchanger STAT_SPATK, 1, FALSE
@@ -601,6 +604,7 @@ BattleScript_Teatimerod:
 	moveendcase MOVEEND_CLEAR_BITS
 	goto BattleScript_MoveEnd
 BattleScript_Teatimemotor:
+	pushtraitstack BS_TARGET ABILITY_MOTOR_DRIVE
 	call BattleScript_AbilityPopUpTarget
 	playstatchangeanimation BS_TARGET, BIT_SPEED, STAT_CHANGE_BY_TWO
 	setstatchanger STAT_SPEED, 1, FALSE
@@ -1211,6 +1215,7 @@ BattleScript_StrengthSapManipulateDmg:
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 BattleScript_StrengthSapLiquidOoze:
+	pushtraitstack BS_TARGET ABILITY_LIQUID_OOZE
 	call BattleScript_AbilityPopUpTarget
 	manipulatedamage DMG_CHANGE_SIGN
 	setbyte cMULTISTRING_CHOOSER, B_MSG_ABSORB_OOZE
@@ -2892,6 +2897,7 @@ BattleScript_FlowerVeilProtects::
 
 BattleScript_SweetVeilProtectsRet::
 	pause B_WAIT_TIME_SHORT
+	pushtraitstack BS_TARGET ABILITY_SWEET_VEIL
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_FLOWERVEILPROTECTED
 	waitmessage B_WAIT_TIME_LONG
@@ -3510,6 +3516,7 @@ BattleScript_EffectAuroraVeilSuccess::
 	goto BattleScript_MoveEnd
 
 BattleScript_VoltAbsorbHeal:
+	pushtraitstack BS_TARGET ABILITY_VOLT_ABSORB
 	copybyte gBattlerAbility, gBattlerTarget
 	tryhealquarterhealth BS_TARGET BattleScript_MonMadeMoveUseless @ Check if max hp
 	goto BattleScript_MoveHPDrain
@@ -4081,6 +4088,7 @@ BattleScript_PerishSongLoopIncrement::
 
 BattleScript_PerishSongBlocked::
 	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNSXBLOCKSY2
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_PerishSongLoopIncrement
@@ -4525,6 +4533,10 @@ BattleScript_NotAffectedAbilityPopUp::
 	resultmessage
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
+
+BattleScript_GenerateAbilityPopUp::
+	call BattleScript_AbilityPopUp
+	return
 
 BattleScript_EffectUproar::
 	attackcanceler
@@ -4988,10 +5000,12 @@ BattleScript_EffectSkillSwap::
 	waitanimation
 	jumpiftargetally BattleScript_EffectSkillSwap_AfterAbilityPopUp
 .if B_ABILITY_POP_UP == TRUE
+	pushtraitstack BS_ATTACKER ABILITY_VOLT_ABSORB
 	copybyte gBattlerAbility, gBattlerAttacker
 	call BattleScript_AbilityPopUpOverwriteThenNormal
 	copybyte gBattlerAbility, gBattlerTarget
 	copyhword sABILITY_OVERWRITE, gLastUsedAbility
+	pushtraitstack BS_TARGET ABILITY_VOLT_ABSORB
 	call BattleScript_AbilityPopUpOverwriteThenNormal
 .endif
 BattleScript_EffectSkillSwap_AfterAbilityPopUp:
@@ -5765,6 +5779,7 @@ BattleScript_SafeguardEnds::
 BattleScript_LeechSeedTurnDrainLiquidOoze::
 	call BattleScript_LeechSeedTurnDrain
 	copybyte gBattlerAbility, gBattlerAttacker
+	pushtraitstack BS_ATTACKER ABILITY_LIQUID_OOZE
 	call BattleScript_AbilityPopUp
 	copybyte gBattlerAttacker, gBattlerTarget   @ needed to get liquid ooze message correct
 	goto BattleScript_LeechSeedTurnDrainGainHp
@@ -6938,6 +6953,7 @@ BattleScript_DampPreventsAftermath::
 	pause 40
 	copybyte gBattlerAbility, sBATTLER
 	call BattleScript_AbilityPopUp
+	sethword gDisplayAbility2, ABILITY_AFTERMATH
 	printstring STRINGID_PKMNSABILITYPREVENTSABILITY
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -7042,6 +7058,7 @@ BattleScript_PowderMoveNoEffect::
 	printstring STRINGID_SAFETYGOGGLESPROTECTED
 	goto BattleScript_PowderMoveNoEffectWaitMsg
 BattleScript_PowderMoveNoEffectOvercoat:
+	pushtraitstack BS_TARGET ABILITY_OVERCOAT
 	call BattleScript_AbilityPopUp
 BattleScript_PowderMoveNoEffectPrint:
 	printstring STRINGID_ITDOESNTAFFECT
@@ -7537,8 +7554,8 @@ BattleScript_SolarPowerActivates::
 
 BattleScript_HealerActivates::
 	call BattleScript_AbilityPopUp
-	curestatus BS_SCRIPTING
-	updatestatusicon BS_SCRIPTING
+	curestatus BS_SCRIPTING_PARTNER
+	updatestatusicon BS_SCRIPTING_PARTNER
 	printstring STRINGID_HEALERCURE
 	waitmessage B_WAIT_TIME_LONG
 	end3
@@ -7603,6 +7620,7 @@ BattleScript_IntimidateActivates::
 	call BattleScript_AbilityPopUp
 	setbyte gBattlerTarget, 0
 BattleScript_IntimidateLoop:
+	setbyte gDisplayAbility ABILITY_INTIMIDATE
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_IntimidateLoopIncrement
 	jumpiftargetally BattleScript_IntimidateLoopIncrement
 	jumpifabsent BS_TARGET, BattleScript_IntimidateLoopIncrement
@@ -7647,14 +7665,15 @@ BattleScript_IntimidateWontDecrease:
 	goto BattleScript_IntimidateEffect_WaitString
 
 BattleScript_IntimidateContrary:
+	pushtraitstack BS_TARGET ABILITY_CONTRARY
 	call BattleScript_AbilityPopUpTarget
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_IntimidateContrary_WontIncrease
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	printfromtable gStatUpStringIds
-	goto BattleScript_IntimidateEffect_WaitString
+	printstring STRINGID_PKMNCUTSATTACKWITH
+	goto BattleScript_IntimidateLoopIncrement
 BattleScript_IntimidateContrary_WontIncrease:
 	printstring STRINGID_TARGETSTATWONTGOHIGHER
-	goto BattleScript_IntimidateEffect_WaitString
+	goto BattleScript_IntimidateLoopIncrement
 
 BattleScript_IntimidateInReverse::
 	copybyte sBATTLER, gBattlerTarget
@@ -8094,6 +8113,7 @@ BattleScript_FlinchPrevention::
 
 BattleScript_OwnTempoPrevents::
 	pause B_WAIT_TIME_SHORT
+	pushtraitstack BS_TARGET ABILITY_OWN_TEMPO
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNPREVENTSCONFUSIONWITH
 	waitmessage B_WAIT_TIME_LONG
@@ -8147,6 +8167,7 @@ BattleScript_AbilityNoSpecificStatLoss::
 
 BattleScript_StickyHoldActivates::
 	pause B_WAIT_TIME_SHORT
+	pushtraitstack BS_TARGET ABILITY_STICKY_HOLD
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNSXMADEYINEFFECTIVE
 	waitmessage B_WAIT_TIME_LONG
@@ -8188,6 +8209,10 @@ BattleScript_MummyActivates::
 .endif
 	recordability BS_TARGET
 	recordability BS_ATTACKER
+	setbyte gDisplayAbility, ABILITY_MUMMY
+	jumpifability BS_TARGET, ABILITY_MUMMY, BattleScript_MummyCalled
+	sethword gDisplayAbility, ABILITY_LINGERING_AROMA
+BattleScript_MummyCalled::
 	printstring STRINGID_ATTACKERACQUIREDABILITY
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -8343,7 +8368,7 @@ BattleScript_ActivateAsOne::
 	printfromtable gSwitchInAbilityStringIds
 	waitmessage B_WAIT_TIME_LONG
 	@ show unnerve
-	sethword sABILITY_OVERWRITE, ABILITY_UNNERVE
+	pushtraitstack BS_ABILITY_BATTLER ABILITY_UNNERVE
 	setbyte cMULTISTRING_CHOOSER, B_MSG_SWITCHIN_UNNERVE
 	call BattleScript_AbilityPopUp
 	printfromtable gSwitchInAbilityStringIds
@@ -9372,6 +9397,7 @@ BattleScript_RedCardIngrainContinue:
 	restoreattacker
 	return
 BattleScript_RedCardSuctionCups:
+	sethword gDisplayAbility, ABILITY_SUCTION_CUPS
     printstring STRINGID_PKMNANCHORSITSELFWITH
     goto BattleScript_RedCardIngrainContinue
 BattleScript_RedCardDynamaxed:

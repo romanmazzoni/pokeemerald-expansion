@@ -2565,3 +2565,13 @@
 	callnative BS_JumpIfNoWhiteOut
 	.4byte \jumpInstr
 	.endm
+
+	.macro pushtraitstack battler:req, ability:req
+	callnative BS_PushTraitStack
+	.byte \battler
+	.2byte \ability
+	.endm
+
+	.macro debugprint
+	callnative BS_DebugPrint
+	.endm
