@@ -315,6 +315,13 @@ struct BattlePokemon
     /*0x08*/ u16 spAttack;
     /*0x0A*/ u16 spDefense;
     /*0x0C*/ u16 moves[MAX_MON_MOVES];
+             u16 lerAttack;     
+             u16 lerDefense;
+             u16 armor;
+             u16 trueDamage;
+             u16 gambit;
+             u16 sexism;
+             u16 hotStreak;
     /*0x14*/ u32 hpIV:5;
     /*0x14*/ u32 attackIV:5;
     /*0x15*/ u32 defenseIV:5;
