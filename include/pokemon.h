@@ -314,13 +314,6 @@ struct BattlePokemon
     /*0x06*/ u16 speed;
     /*0x08*/ u16 spAttack;
     /*0x0A*/ u16 spDefense;
-             u16 lerAttack;     
-             u16 lerDefense;
-             u16 armor;
-             u16 trueDamage;
-             u16 gambit;
-             u16 sexism;
-             u16 hotStreak;
     /*0x0C*/ u16 moves[MAX_MON_MOVES];
     /*0x14*/ u32 hpIV:5;
     /*0x14*/ u32 attackIV:5;
@@ -328,11 +321,9 @@ struct BattlePokemon
     /*0x15*/ u32 speedIV:5;
     /*0x16*/ u32 spAttackIV:5;
     /*0x17*/ u32 spDefenseIV:5;
-    /*0x17*/ u32 abilityNum0:3;
-             u32 abilityNum1:3;
-             u32 abilityNum2:3;
+    /*0x17*/ u32 abilityNum:2;
     /*0x18*/ s8 statStages[NUM_BATTLE_STATS];
-    /*0x20*/ u16 abilities[3];
+    /*0x20*/ u16 ability;
     /*0x22*/ u8 types[3];
     /*0x25*/ u8 pp[MAX_MON_MOVES];
     /*0x29*/ u16 hp;

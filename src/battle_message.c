@@ -139,6 +139,7 @@ static const u8 sText_CritChance[] = _("Crit");
 static const u8 sText_TrueDamage[] = _("Tru Dmg");
 static const u8 sText_Armor[] = _("Armor");
 static const u8 sText_Luck[] = _("Luck");
+static const u8 sText_SpAttack[] = _("Luck");
 static const u8 sText_Waxing[] = _("Wax");
 static const u8 sText_Gambit[] = _("Gambit");
 static const u8 sText_Parry[] = _("Parry");
@@ -2816,7 +2817,7 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 }
                 break;
             case B_TXT_LAST_ABILITY: // last used ability
-                toCpy = gAbilitiesInfo[gLastUsedAbility[0]].name;
+                toCpy = gAbilitiesInfo[gLastUsedAbility].name;
                 break;
             case B_TXT_ATK_ABILITY: // attacker ability
                 toCpy = gAbilitiesInfo[sBattlerAbilities[gBattlerAttacker]].name;
