@@ -11,6 +11,7 @@
 #include "config/dexnav.h"
 #include "config/summary_screen.h"
 #include "config/ai.h"
+#include "config/follower_npc.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
@@ -96,6 +97,9 @@
 #define TRAINER_ID_LENGTH 4
 #define MAX_MON_MOVES 4
 #define ALL_MOVES_MASK ((1 << MAX_MON_MOVES) - 1)
+#define MAX_MON_INNATES 3 // The max number of Innates that are enabled in gameplay
+#define MAX_MON_INNATES_INTERNAL 3 // The max number of Innates that a pokemon can have in the species definition lists.
+#define MAX_MON_TRAITS (MAX_MON_INNATES + 1) // The max number of Innates with Abilities included
 
 #define CONTESTANT_COUNT 4
 #define CONTEST_CATEGORY_COOL     0
