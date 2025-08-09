@@ -226,7 +226,7 @@ struct PartyMenuInternal
     // It is likely that the 0x160 value used below is a constant defined by
     // bin2c, the utility used to encode the compressed palette data.
     u16 palBuffer[BG_PLTT_SIZE / sizeof(u16)];
-    s16 data[16];
+    s16 data[20];
 };
 
 struct PartyMenuBox

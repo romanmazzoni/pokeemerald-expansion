@@ -139,7 +139,6 @@ static const u8 sText_CritChance[] = _("Crit");
 static const u8 sText_TrueDamage[] = _("Tru Dmg");
 static const u8 sText_Armor[] = _("Armor");
 static const u8 sText_Luck[] = _("Luck");
-static const u8 sText_SpAttack[] = _("Luck");
 static const u8 sText_Waxing[] = _("Wax");
 static const u8 sText_Gambit[] = _("Gambit");
 static const u8 sText_Parry[] = _("Parry");
