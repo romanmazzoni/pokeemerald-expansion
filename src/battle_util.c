@@ -8974,10 +8974,14 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             atkStat = gBattleMons[battlerDef].attack;
             atkStage = gBattleMons[battlerDef].statStages[STAT_ATK];
         }
-        else
+        else if  (IsBattleMoveSpecial(move))
         {
             atkStat = gBattleMons[battlerDef].spAttack;
             atkStage = gBattleMons[battlerDef].statStages[STAT_SPATK];
+        }
+        else {
+            atkStat = gBattleMons[battlerDef].lerAttack;
+            atkStage = gBattleMons[battlerDef].statStages[STAT_LERATK];
         }
     }
     else if (moveEffect == EFFECT_BODY_PRESS)
@@ -9004,10 +9008,14 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             atkStat = gBattleMons[battlerAtk].attack;
             atkStage = gBattleMons[battlerAtk].statStages[STAT_ATK];
         }
-        else
+        else if (IsBattleMoveSpecial(move))
         {
-            atkStat = gBattleMons[battlerAtk].spAttack;
+            atkStat = gBattleMons[battlerAtk].lerAttack;
             atkStage = gBattleMons[battlerAtk].statStages[STAT_SPATK];
+        }
+        else{
+            atkStat = gBattleMons[battlerAtk].lerAttack;
+            atkStage = gBattleMons[battlerAtk].statStages[STAT_LERATK];
         }
     }
 
@@ -9203,7 +9211,7 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
 {
     bool32 usesDefStat;
     u8 defStage;
-    u32 defStat, def, spDef;
+    u32 defStat, def, spDef, lerDef;
     uq4_12_t modifier;
     u32 battlerAtk = damageCalcData->battlerAtk;
     u32 battlerDef = damageCalcData->battlerDef;
@@ -9212,15 +9220,17 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
     enum BattleMoveEffects moveEffect = GetMoveEffect(move);
     u16 battlerTraits[MAX_MON_TRAITS];
 
-    if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM) // the defense stats are swapped
+    if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM) // the defense stats are swapped 
     {
-        def = gBattleMons[battlerDef].spDefense;
+        def = gBattleMons[battlerDef].lerDefense; 
         spDef = gBattleMons[battlerDef].defense;
+        lerDef = gBattleMons[battlerDef].spDefense;
     }
     else
     {
         def = gBattleMons[battlerDef].defense;
         spDef = gBattleMons[battlerDef].spDefense;
+        lerDef = gBattleMons[battlerDef].lerDefense;
     }
 
     if (moveEffect == EFFECT_PSYSHOCK || IsBattleMovePhysical(move)) // uses defense stat instead of sp.def
@@ -9229,10 +9239,15 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         defStage = gBattleMons[battlerDef].statStages[STAT_DEF];
         usesDefStat = TRUE;
     }
-    else // is special
+    else if (IsBattleMoveSpecial(move))// is special
     {
         defStat = spDef;
         defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
+        usesDefStat = FALSE;
+    } else 
+    {
+        defStat = lerDef;
+        defStage = gBattleMons[battlerDef].statStages[STAT_LERDEF];
         usesDefStat = FALSE;
     }
 
