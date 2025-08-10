@@ -233,7 +233,6 @@ DOUBLE_BATTLE_TEST("Eject Button activation will not trigger an attack from the 
     }
 }
 
-<<<<<<< HEAD
 SINGLE_BATTLE_TEST("Eject Button is not activated by a Sheer Force boosted move (Trait)")
 {
     GIVEN {
@@ -333,7 +332,6 @@ DOUBLE_BATTLE_TEST("Eject Button activation will not trigger an attack from the 
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
             MESSAGE("Wobbuffet is switched out with the Eject Pack!");
         }
-=======
 SINGLE_BATTLE_TEST("Eject Button activates after Wandring Spirit")
 {
     GIVEN {
@@ -349,6 +347,5 @@ SINGLE_BATTLE_TEST("Eject Button activates after Wandring Spirit")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_CLAW, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
->>>>>>> MargetheMain
     }
 }

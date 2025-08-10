@@ -89,7 +89,6 @@ SINGLE_BATTLE_TEST("Effect Spore causes sleep 11% of the time")
     }
 }
 
-<<<<<<< HEAD
 SINGLE_BATTLE_TEST("Effect Spore only inflicts status on contact (Trait)")
 {
     u32 move;
@@ -160,25 +159,16 @@ SINGLE_BATTLE_TEST("Effect Spore causes paralysis 10% of the time (Trait)")
 }
 
 SINGLE_BATTLE_TEST("Effect Spore causes sleep 11% of the time (Trait)")
-=======
-SINGLE_BATTLE_TEST("Effect Spore will check if it can inflict status onto attacker, not itself")
->>>>>>> MargetheMain
 {
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_WOBBUFFET);
-<<<<<<< HEAD
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_POISON_HEAL); Innates(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
         TURN {}
-=======
-        OPPONENT(SPECIES_BRELOOM) { Status1(STATUS1_BURN); Ability(ABILITY_EFFECT_SPORE); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_SCRATCH); }
->>>>>>> MargetheMain
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);

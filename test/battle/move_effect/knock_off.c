@@ -365,7 +365,6 @@ SINGLE_BATTLE_TEST("Knock Off doesn't knock off begin-battle form-change hold it
     }
 }
 
-<<<<<<< HEAD
 // Knock Off triggers Unburden regardless of whether the item is fully removed (Gen 5+) or not.
 SINGLE_BATTLE_TEST("Knock Off triggers Unburden (Trait)")
 {
@@ -385,7 +384,6 @@ SINGLE_BATTLE_TEST("Knock Off triggers Unburden (Trait)")
         MESSAGE("Wobbuffet used Celebrate!");
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
-=======
 SINGLE_BATTLE_TEST("Knock Off does not activate if user faints")
 {
     GIVEN {
@@ -413,6 +411,5 @@ SINGLE_BATTLE_TEST("Knock Off doesn't remove item if it's prevented by Sticky Ho
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
->>>>>>> MargetheMain
     }
 }

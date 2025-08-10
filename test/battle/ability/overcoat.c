@@ -16,7 +16,6 @@ SINGLE_BATTLE_TEST("Overcoat blocks powder and spore moves")
     }
 }
 
-<<<<<<< HEAD
 TO_DO_BATTLE_TEST("Overcoat blocks damage from hail");
 TO_DO_BATTLE_TEST("Overcoat blocks damage from sandstorm");
 TO_DO_BATTLE_TEST("Overcoat blocks Effect Spore's effect");
@@ -39,7 +38,6 @@ SINGLE_BATTLE_TEST("Overcoat blocks powder and spore moves (Trait)")
 TO_DO_BATTLE_TEST("Overcoat blocks damage from hail (Trait)");
 TO_DO_BATTLE_TEST("Overcoat blocks damage from sandstorm (Trait)");
 TO_DO_BATTLE_TEST("Overcoat blocks Effect Spore's effect (Trait)");
-=======
 DOUBLE_BATTLE_TEST("Overcoat blocks damage from sandstorm")
 {
     GIVEN {
@@ -97,4 +95,3 @@ SINGLE_BATTLE_TEST("Overcoat blocks Effect Spore's effect")
     }
 }
 
->>>>>>> MargetheMain

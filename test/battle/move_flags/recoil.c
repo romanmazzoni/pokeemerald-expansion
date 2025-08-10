@@ -103,7 +103,6 @@ SINGLE_BATTLE_TEST("Recoil: Flare Blitz is absorbed by Flash Fire and no recoil 
     }
 }
 
-<<<<<<< HEAD
 SINGLE_BATTLE_TEST("Recoil: Flare Blitz is absorbed by Flash Fire and no recoil damage is dealt (Trait)")
 {
     GIVEN {
@@ -120,7 +119,6 @@ SINGLE_BATTLE_TEST("Recoil: Flare Blitz is absorbed by Flash Fire and no recoil 
             HP_BAR(opponent);
             HP_BAR(player);
         }
-=======
 SINGLE_BATTLE_TEST("Recoil: The correct amount of recoil damage is dealt after targets recovery berry proc")
 {
     s16 directDamage;
@@ -138,6 +136,5 @@ SINGLE_BATTLE_TEST("Recoil: The correct amount of recoil damage is dealt after t
         HP_BAR(player, captureDamage: &recoilDamage);
     } THEN {
         EXPECT_MUL_EQ(directDamage, UQ_4_12(0.25), recoilDamage);
->>>>>>> MargetheMain
     }
 }
