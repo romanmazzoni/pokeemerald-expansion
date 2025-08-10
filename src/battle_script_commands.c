@@ -6070,47 +6070,6 @@ static void Cmd_playstatchangeanimation(void)
     }
 }
 
-static bool32 TryKnockOffBattleScript(u32 battlerDef)
-{
-    if (gBattleMons[battlerDef].item != 0
-        && CanBattlerGetOrLoseItem(battlerDef, gBattleMons[battlerDef].item)
-        && !NoAliveMonsForEitherParty())
-    {
-        if (BattlerHasTrait(battlerDef, ABILITY_STICKY_HOLD) && IsBattlerAlive(battlerDef))
-        {
-            gBattlerAbility = battlerDef;
-            BattleScriptPushCursor();
-            gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
-        }
-        else
-        {
-            u32 side = GetBattlerSide(battlerDef);
-
-            gLastUsedItem = gBattleMons[battlerDef].item;
-            gBattleMons[battlerDef].item = 0;
-            if (!BattlerHasTrait(battlerDef, ABILITY_GORILLA_TACTICS))
-                gBattleStruct->choicedMove[battlerDef] = 0;
-            CheckSetUnburden(battlerDef);
-
-            // In Gen 5+, Knock Off removes the target's item rather than rendering it unusable.
-            if (B_KNOCK_OFF_REMOVAL >= GEN_5)
-            {
-                BtlController_EmitSetMonData(battlerDef, B_COMM_TO_CONTROLLER, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[battlerDef].item), &gBattleMons[battlerDef].item);
-                MarkBattlerForControllerExec(battlerDef);
-            }
-            else
-            {
-                gWishFutureKnock.knockedOffMons[side] |= 1u << gBattlerPartyIndexes[battlerDef];
-            }
-
-            BattleScriptPushCursor();
-            gBattlescriptCurrInstr = BattleScript_KnockedOff;
-        }
-        return TRUE;
-    }
-    return FALSE;
-}
-
 static inline bool32 TryTriggerSymbiosis(u32 battler, u32 ally)
 {
     return BattlerHasTrait(ally, ABILITY_SYMBIOSIS)    
@@ -14183,7 +14142,6 @@ static void Cmd_healpartystatus(void)
     CMD_ARGS();
 
     u32 i = 0;
-    u32 j = 0;
     u32 zero = 0;
     u32 toHeal = 0;
     u32 partner = GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(gBattlerAttacker)));
