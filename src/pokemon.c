@@ -2610,9 +2610,6 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_MET_LEVEL:
             retVal = substruct3->metLevel;
             break;
-        case MON_DATA_MET_GAME:
-            retVal = substruct3->metGame;
-            break;
         case MON_DATA_POKEBALL:
             retVal = substruct0->pokeball;
             break;
@@ -2642,21 +2639,6 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             break;
         case MON_DATA_ABILITY_NUM:
             retVal = substruct3->abilityNum;
-            break;
-        case MON_DATA_COOL_RIBBON:
-            retVal = substruct3->coolRibbon;
-            break;
-        case MON_DATA_BEAUTY_RIBBON:
-            retVal = substruct3->beautyRibbon;
-            break;
-        case MON_DATA_CUTE_RIBBON:
-            retVal = substruct3->cuteRibbon;
-            break;
-        case MON_DATA_SMART_RIBBON:
-            retVal = substruct3->smartRibbon;
-            break;
-        case MON_DATA_TOUGH_RIBBON:
-            retVal = substruct3->toughRibbon;
             break;
         case MON_DATA_CHAMPION_RIBBON:
             retVal = substruct3->championRibbon;
@@ -2732,11 +2714,6 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             retVal = 0;
             if (substruct0->species && !substruct3->isEgg)
             {
-                retVal += substruct3->coolRibbon;
-                retVal += substruct3->beautyRibbon;
-                retVal += substruct3->cuteRibbon;
-                retVal += substruct3->smartRibbon;
-                retVal += substruct3->toughRibbon;
                 retVal += substruct3->championRibbon;
                 retVal += substruct3->winningRibbon;
                 retVal += substruct3->victoryRibbon;
@@ -2756,11 +2733,6 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             if (substruct0->species && !substruct3->isEgg)
             {
                 retVal = substruct3->championRibbon
-                    | (substruct3->coolRibbon << 1)
-                    | (substruct3->beautyRibbon << 4)
-                    | (substruct3->cuteRibbon << 7)
-                    | (substruct3->smartRibbon << 10)
-                    | (substruct3->toughRibbon << 13)
                     | (substruct3->winningRibbon << 16)
                     | (substruct3->victoryRibbon << 17)
                     | (substruct3->artistRibbon << 18)
@@ -3105,9 +3077,6 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_MET_LEVEL:
             SET8(substruct3->metLevel);
             break;
-        case MON_DATA_MET_GAME:
-            SET8(substruct3->metGame);
-            break;
         case MON_DATA_POKEBALL:
             SET8(substruct0->pokeball);
             break;
@@ -3141,21 +3110,6 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             break;
         case MON_DATA_ABILITY_NUM:
             SET8(substruct3->abilityNum);
-            break;
-        case MON_DATA_COOL_RIBBON:
-            SET8(substruct3->coolRibbon);
-            break;
-        case MON_DATA_BEAUTY_RIBBON:
-            SET8(substruct3->beautyRibbon);
-            break;
-        case MON_DATA_CUTE_RIBBON:
-            SET8(substruct3->cuteRibbon);
-            break;
-        case MON_DATA_SMART_RIBBON:
-            SET8(substruct3->smartRibbon);
-            break;
-        case MON_DATA_TOUGH_RIBBON:
-            SET8(substruct3->toughRibbon);
             break;
         case MON_DATA_CHAMPION_RIBBON:
             SET8(substruct3->championRibbon);
@@ -6455,7 +6409,7 @@ struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
     {
     case MON_SPR_GFX_MODE_FULL_PARTY:
         gfx->numSprites = PARTY_SIZE + 1;
-        gfx->numSprites2 = PARTY_SIZE + 1;
+        //gfx->numSprites2 = PARTY_SIZE + 1;
         gfx->numFrames = MAX_MON_PIC_FRAMES;
         gfx->dataSize = 1;
         gfx->mode = MON_SPR_GFX_MODE_FULL_PARTY;
@@ -6464,7 +6418,7 @@ struct MonSpritesGfxManager *CreateMonSpritesGfxManager(u8 managerId, u8 mode)
     case MON_SPR_GFX_MODE_NORMAL:
     default:
         gfx->numSprites = MAX_BATTLERS_COUNT;
-        gfx->numSprites2 = MAX_BATTLERS_COUNT;
+        //gfx->numSprites2 = MAX_BATTLERS_COUNT;
         gfx->numFrames = MAX_MON_PIC_FRAMES;
         gfx->dataSize = 1;
         gfx->mode = MON_SPR_GFX_MODE_NORMAL;

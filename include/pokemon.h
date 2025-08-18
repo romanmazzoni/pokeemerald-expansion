@@ -188,6 +188,7 @@ struct PokemonSubstruct2
     u8 speedEV;
     u8 spAttackEV;
     u8 spDefenseEV;
+
     u8 cool;
     u8 beauty;
     u8 cute;
@@ -210,6 +211,9 @@ struct PokemonSubstruct3
     u32 speedIV:5;
     u32 spAttackIV:5;
     u32 spDefenseIV:5;
+    //u32 lerAttackIV:5;     
+    //u32 lerDefenseIV:5;
+    //u32 armorIV:5;
     u32 isEgg:1;
     u32 gigantamaxFactor:1;
     u32 coolRibbon:3;     // Stores the highest contest rank achieved in the Cool category.
@@ -256,7 +260,7 @@ union PokemonSubstruct
     struct PokemonSubstruct0 type0;
     struct PokemonSubstruct1 type1;
     struct PokemonSubstruct2 type2;
-    struct PokemonSubstruct3 type3;
+    struct PokemonSubstruct3 type3; 
     u16 raw[NUM_SUBSTRUCT_BYTES / 2]; // /2 because it's u16, not u8
 };
 
@@ -301,12 +305,18 @@ struct Pokemon
     u16 speed;
     u16 spAttack;
     u16 spDefense;
+    u16 lerAttack;
+    u16 lerDefense;
+    u16 armor;
+    u16 trueDamage;
+    //u16 gambit;
+    //u16 hotStreak;
 };
 
 struct MonSpritesGfxManager
 {
     u32 numSprites:4;
-    u32 numSprites2:4; // Never read
+    //u32 numSprites2:4; // Never read
     u32 numFrames:8;
     u32 active:8;
     u32 dataSize:4;
@@ -343,7 +353,6 @@ struct BattlePokemon
              u16 armor;
              u16 trueDamage;
              u16 gambit;
-             u16 sexism;
              u16 hotStreak;
     /*0x14*/ u32 hpIV:5;
     /*0x14*/ u32 attackIV:5;
@@ -352,6 +361,12 @@ struct BattlePokemon
     /*0x16*/ u32 spAttackIV:5;
     /*0x17*/ u32 spDefenseIV:5;
     /*0x17*/ u32 abilityNum:2;
+             u32 lerAttackIV:5;     
+             u32 lerDefenseIV:5;
+             u32 armorIV:5;
+             u32 trueDamageIV:5;
+             u32 gambitIV:5;
+             u32 hotStreakIV:5;
     /*0x18*/ s8 statStages[NUM_BATTLE_STATS];
     /*0x20*/ u16 ability;
     /*0x22*/ u8 types[3];
