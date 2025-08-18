@@ -189,12 +189,19 @@ struct PokemonSubstruct2
     u8 spAttackEV;
     u8 spDefenseEV;
 
-    u8 cool;
-    u8 beauty;
-    u8 cute;
-    u8 smart;
-    u8 tough;
-    u8 sheen;
+    //u8 cool;
+    //u8 beauty;
+   // u8 cute;
+    //u8 smart;
+   // u8 tough;
+   // u8 sheen;
+
+    u8 lerAttackEV;     
+    u8 lerDefenseEV;
+    u8 armorEV;
+    u8 truDmgEV;
+    u8 gambitEV;
+    u8 hotStrkIVEV;
 };
 
 struct PokemonSubstruct3
@@ -214,9 +221,9 @@ struct PokemonSubstruct3
     u32 lerAttackIV:5;     
     u32 lerDefenseIV:5;
     u32 armorIV:5;
-    u32 truDmg:5;
+    u32 truDmgIV:5;
     //u32 gambit:5;
-    u32 hotStrk:5;
+    u32 hotStrkIV:5;
     u32 isEgg:1;
     u32 gigantamaxFactor:1;
     //u32 coolRibbon:3;     // Stores the highest contest rank achieved in the Cool category.
