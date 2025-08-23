@@ -142,45 +142,45 @@ enum {
     MON_DATA_INNATE3,
 };
 
-struct PokemonSubstruct0
+struct PokemonSubstruct0 //88
 {
     u16 species:11; // 2047 species.
     u16 teraType:5; // 30 types.
     u16 heldItem:10; // 1023 items.
-    u16 unused_02:6;
+    u16 pokeball:6;// 63 balls.
+    u8 nickname12;// 12th character of nickname.
+    //u16 unused_02:6;
     u32 experience:21;
     u32 nickname11:8; // 11th character of nickname.
     u32 unused_04:3;
     u8 ppBonuses;
     u8 friendship;
-    u16 pokeball:6; // 63 balls.
-    u16 nickname12:8; // 12th character of nickname.
-    u16 unused_0A:2;
+     
+    
+    //u16 unused_0A:2;
 };
 
-struct PokemonSubstruct1
+struct PokemonSubstruct1 //88
 {
     u16 move1:11; // 2047 moves.
     u16 evolutionTracker1:5;
     u16 move2:11; // 2047 moves.
     u16 evolutionTracker2:5;
-    u16 move3:11; // 2047 moves.
-    u16 unused_04:5;
-    u16 move4:11; // 2047 moves.
-    u16 unused_06:3;
-    u16 hyperTrainedHP:1;
-    u16 hyperTrainedAttack:1;
-    u8 pp1:7; // 127 PP.
-    u8 hyperTrainedDefense:1;
-    u8 pp2:7; // 127 PP.
+    u32 move3:11; // 2047 moves.
+    u32 move4:11; // 2047 moves.
+    u32 hyperTrainedHP:1;
+    u32 hyperTrainedAttack:1;
+    u32 pp1:7; // 63 PP.
+    u32 hyperTrainedDefense:1; 
+    u8 pp2:7; // 63 PP.
     u8 hyperTrainedSpeed:1;
-    u8 pp3:7; // 127 PP.
+    u8 pp3:7; // 63 PP.
     u8 hyperTrainedSpAttack:1;
-    u8 pp4:7; // 127 PP.
+    u8 pp4:7; // 63 PP.
     u8 hyperTrainedSpDefense:1;
 };
 
-struct PokemonSubstruct2
+struct PokemonSubstruct2 // 88
 {
     u8 hpEV;
     u8 attackEV;
@@ -198,26 +198,28 @@ struct PokemonSubstruct2
 
     u8 lerAttackEV;     
     u8 lerDefenseEV;
-    u8 armorEV;
-    u8 truDmgEV;
-    u8 gambitEV;
-    u8 hotStrkIVEV;
+    
+    u16 gambit;
+    u16 hotStreak;
+    //u8 hotStrkEV;
 };
 
 struct PokemonSubstruct3
 {
     u8 pokerus;
-    u8 metLocation;
+    //u8 metLocation; //usages need to be dedleted
     u16 metLevel:7;
     //u16 metGame:4;
     u16 dynamaxLevel:4;
     u16 otGender:1;
+    
     u32 hpIV:5;
     u32 attackIV:5;
     u32 defenseIV:5;
     u32 speedIV:5;
     u32 spAttackIV:5;
     u32 spDefenseIV:5;
+
     u32 lerAttackIV:5;     
     u32 lerDefenseIV:5;
     u32 armorIV:5;
@@ -319,14 +321,14 @@ struct Pokemon
     u16 lerDefense;
     u16 armor;
     u16 trueDamage;
-    //u16 gambit;
-    //u16 hotStreak;
+    //
+    //
 };
 
 struct MonSpritesGfxManager
 {
     u32 numSprites:4;
-    //u32 numSprites2:4; // Never read
+    u32 numSprites2:4; // Never read
     u32 numFrames:8;
     u32 active:8;
     u32 dataSize:4;

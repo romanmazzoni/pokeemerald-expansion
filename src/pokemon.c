@@ -2379,6 +2379,24 @@ u32 GetMonData3(struct Pokemon *mon, s32 field, u8 *data)
     case MON_DATA_SPDEF:
         ret = mon->spDefense;
         break;
+    case MON_DATA_LERATK:
+        ret = mon->maxHP;
+        break;
+    case MON_DATA_LERDEF:
+        ret = mon->attack;
+        break;
+    case MON_DATA_GAMBIT:
+        ret = mon->defense;
+        break;
+    case MON_DATA_ARMOR:
+        ret = mon->speed;
+        break;
+    case MON_DATA_HOTSTRK:
+        ret = mon->spAttack;
+        break;
+    case MON_DATA_TRUDMG:
+        ret = mon->trueDamage;
+        break;
     case MON_DATA_ATK2:
         ret = mon->attack;
         break;
@@ -2583,11 +2601,28 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_SPDEF_EV:
             retVal = substruct2->spDefenseEV;
             break;
+        //Bonus stats
+        case MON_DATA_LERATK_EV:
+            retVal = substruct2->lerAttackEV;
+            break;
+        case MON_DATA_LERDEF_EV:
+            retVal = substruct2->lerDefenseEV;
+            break;
+        /*case MON_DATA_GAMBIT_EV:
+            retVal = substruct2->gambitEV;
+            break;
+        case MON_DATA_HOTSTRK_EV:
+            retVal = substruct2->hotStrkEV;
+            break;
+        case MON_DATA_ARMOR_EV:
+            retVal = substruct2->armorEV;
+            break;
+        case MON_DATA_TRUDMG_EV:
+            retVal = substruct2->truDmgEV;
+            break;
+        */
         case MON_DATA_POKERUS:
             retVal = substruct3->pokerus;
-            break;
-        case MON_DATA_MET_LOCATION:
-            retVal = substruct3->metLocation;
             break;
         case MON_DATA_MET_LEVEL:
             retVal = substruct3->metLevel;
@@ -2966,11 +3001,30 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_SPDEF_EV:
             SET8(substruct2->spDefenseEV);
             break;
+        //bonus evs
+        case MON_DATA_LERATK_EV:
+            SET8(substruct2->lerAttackEV);
+            break;
+        case MON_DATA_LERDEF_EV:
+            SET8(substruct2->lerDefenseEV);
+            break;
+            /*
+        case MON_DATA_HOTSTRK_EV:
+            SET8(substruct2->hotStrkEV);
+            break;
+        case MON_DATA_ARMOR_EV:
+            SET8(substruct2->armorEV);
+            break;
+        case MON_DATA_GAMBIT:
+            SET8(substruct2->gambitEV);
+            break;
+        case MON_DATA_TRUDMG_EV:
+            SET8(substruct2->truDmgEV);
+            break;
+        */
+
         case MON_DATA_POKERUS:
             SET8(substruct3->pokerus);
-            break;
-        case MON_DATA_MET_LOCATION:
-            SET8(substruct3->metLocation);
             break;
         case MON_DATA_MET_LEVEL:
             SET8(substruct3->metLevel);
