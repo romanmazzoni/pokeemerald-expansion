@@ -912,7 +912,9 @@ static const u8 sGetMonDataEVConstants[] =
     MON_DATA_DEF_EV,
     MON_DATA_SPEED_EV,
     MON_DATA_SPDEF_EV,
-    MON_DATA_SPATK_EV
+    MON_DATA_SPATK_EV,
+    MON_DATA_LERATK_EV,
+    MON_DATA_LERDEF_EV
 };
 
 // For stat-raising items
@@ -1078,6 +1080,12 @@ void ZeroMonData(struct Pokemon *mon)
     SetMonData(mon, MON_DATA_SPEED, &arg);
     SetMonData(mon, MON_DATA_SPATK, &arg);
     SetMonData(mon, MON_DATA_SPDEF, &arg);
+    SetMonData(mon, MON_DATA_LERATK, &arg);
+    SetMonData(mon, MON_DATA_LERDEF, &arg);
+    SetMonData(mon, MON_DATA_ARMOR, &arg);
+    SetMonData(mon, MON_DATA_HOTSTRK, &arg);
+    SetMonData(mon, MON_DATA_GAMBIT, &arg);
+    SetMonData(mon, MON_DATA_TRUDMG, &arg);
     arg = MAIL_NONE;
     SetMonData(mon, MON_DATA_MAIL, &arg);
 }
@@ -1212,6 +1220,11 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &fixedIV);
         SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &fixedIV);
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_LERATK_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_LERDEF_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_TRUDMG_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_ARMOR_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_HOTSTRK_IV, &fixedIV);
     }
     else
     {
@@ -1235,23 +1248,39 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
+        ivRandom = Random32();
+
+        iv = value & MAX_IV_MASK;
+        SetBoxMonData(boxMon, MON_DATA_LERATK_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        SetBoxMonData(boxMon, MON_DATA_LERDEF_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        SetBoxMonData(boxMon, MON_DATA_ARMOR_IV, &iv);
+
+        value = (u16)(ivRandom >> 16);
+
+        iv = value & MAX_IV_MASK;
+        SetBoxMonData(boxMon, MON_DATA_TRUDMG_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        SetBoxMonData(boxMon, MON_DATA_HOTSTRK_IV, &iv);
+
         if (gSpeciesInfo[species].perfectIVCount != 0)
         {
             iv = MAX_PER_STAT_IVS;
             // Initialize a list of IV indices.
-            for (i = 0; i < NUM_STATS; i++)
+            for (i = 0; i < 11; i++) //CHNAGED NUm_stats to 11 because theres 11 possible perfect ivs
             {
                 availableIVs[i] = i;
             }
 
             // Select the IVs that will be perfected.
-            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
+            for (i = 0; i < 11 && i < gSpeciesInfo[species].perfectIVCount; i++)
             {
-                u8 index = Random() % (NUM_STATS - i);
+                u8 index = Random() % (11 - i);
                 selectedIvs[i] = availableIVs[index];
                 RemoveIVIndexFromList(availableIVs, index);
             }
-            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
+            for (i = 0; i < 11 && i < gSpeciesInfo[species].perfectIVCount; i++)
             {
                 switch (selectedIvs[i])
                 {
@@ -1272,6 +1301,21 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                     break;
                 case STAT_SPDEF:
                     SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
+                    break;
+                case 6:
+                    SetBoxMonData(boxMon, MON_DATA_LERATK_IV, &iv);
+                    break;
+                case 7:
+                    SetBoxMonData(boxMon, MON_DATA_LERDEF_IV, &iv);
+                    break;
+                case 8:
+                    SetBoxMonData(boxMon, MON_DATA_TRUDMG_IV, &iv);
+                    break;
+                case 9:
+                    SetBoxMonData(boxMon, MON_DATA_ARMOR_IV, &iv);
+                    break;
+                case 10:
+                    SetBoxMonData(boxMon, MON_DATA_HOTSTRK_IV, &iv);
                     break;
                 }
             }
@@ -1361,6 +1405,12 @@ void CreateMonWithIVsOTID(struct Pokemon *mon, u16 species, u8 level, u8 *ivs, u
     SetMonData(mon, MON_DATA_SPEED_IV, &ivs[STAT_SPEED]);
     SetMonData(mon, MON_DATA_SPATK_IV, &ivs[STAT_SPATK]);
     SetMonData(mon, MON_DATA_SPDEF_IV, &ivs[STAT_SPDEF]);
+
+    SetMonData(mon, MON_DATA_LERATK_IV, &ivs[STAT_LERATK]);
+    SetMonData(mon, MON_DATA_LERDEF_IV, &ivs[STAT_LERDEF]);
+    SetMonData(mon, MON_DATA_TRUDMG_IV, &ivs[STAT_TRUDMG]);
+    SetMonData(mon, MON_DATA_ARMOR_IV, &ivs[STAT_ARMOR]);
+    SetMonData(mon, MON_DATA_HOTSTRK_IV, &ivs[STAT_HOTSTK]);
     CalculateMonStats(mon);
 }
 
@@ -1777,6 +1827,21 @@ void CalculateMonStats(struct Pokemon *mon)
     s32 spAttackEV = GetMonData(mon, MON_DATA_SPATK_EV, NULL);
     s32 spDefenseIV = GetMonData(mon, MON_DATA_HYPER_TRAINED_SPDEF) ? MAX_PER_STAT_IVS : GetMonData(mon, MON_DATA_SPDEF_IV, NULL);
     s32 spDefenseEV = GetMonData(mon, MON_DATA_SPDEF_EV, NULL);
+
+    //maybe add this in later if you want
+    s32 lerAttackIV = GetMonData(mon, MON_DATA_LERATK_IV, NULL);
+    s32 lerAttackEV = GetMonData(mon, MON_DATA_LERATK_EV, NULL);
+    s32 lerDefenseIV = GetMonData(mon, MON_DATA_LERDEF_IV, NULL);
+    s32 lerDefenseEV = GetMonData(mon, MON_DATA_LERDEF_EV, NULL);
+    s32 armorIV =  GetMonData(mon, MON_DATA_ARMOR_IV, NULL);
+    //s32 armorEV = GetMonData(mon, MON_DATA_SPEED_EV, NULL);
+    s32 hotStrkIV =  GetMonData(mon, MON_DATA_SPATK_IV, NULL);
+    //s32 hotStrkEV = GetMonData(mon, MON_DATA_SPATK_EV, NULL);
+    //s32 gambitIV = GetMonData(mon, MON_DATA_SPDEF_IV, NULL);
+    //s32 gambitEV = GetMonData(mon, MON_DATA_SPDEF_EV, NULL);
+    s32 trudmgIV = GetMonData(mon, MON_DATA_HP_IV, NULL);
+    //s32 trudmgEV = GetMonData(mon, MON_DATA_HP_EV, NULL);
+
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
     u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);
     s32 level = GetLevelFromMonExp(mon);
@@ -1807,6 +1872,13 @@ void CalculateMonStats(struct Pokemon *mon)
     CALC_STAT(baseSpeed, speedIV, speedEV, STAT_SPEED, MON_DATA_SPEED)
     CALC_STAT(baseSpAttack, spAttackIV, spAttackEV, STAT_SPATK, MON_DATA_SPATK)
     CALC_STAT(baseSpDefense, spDefenseIV, spDefenseEV, STAT_SPDEF, MON_DATA_SPDEF)
+
+    CALC_STAT(baseLerAttack, lerAttackIV, lerAttackEV, STAT_LERATK, MON_DATA_LERATK)
+    CALC_STAT(baseLerDefense, lerDefenseIV, lerDefenseEV, STAT_LERDEF, MON_DATA_LERDEF)
+    CALC_STAT(armor, armorIV, 0, STAT_ARMOR, MON_DATA_ARMOR)
+    CALC_STAT(trueDamage, trudmgIV, 0, STAT_TRUDMG, MON_DATA_TRUDMG)
+    CALC_STAT(hotStreak, hotStrkIV, 0, STAT_HOTSTK, MON_DATA_HOTSTRK)
+    CALC_STAT(gambit, 0, 0, STAT_GAMBIT, MON_DATA_GAMBIT)
 
     // Since a pokemon's maxHP data could either not have
     // been initialized at this point or this pokemon is
@@ -2651,6 +2723,22 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_SPDEF_IV:
             retVal = substruct3->spDefenseIV;
             break;
+        case MON_DATA_LERATK_IV:
+            retVal = substruct3->lerAttackIV;
+            break;
+        case MON_DATA_LERDEF_IV:
+            retVal = substruct3->lerDefenseIV;
+            break;
+        case MON_DATA_ARMOR_IV:
+            retVal = substruct3->armorIV;
+            break;
+        case MON_DATA_HOTSTRK_IV
+:            retVal = substruct3->hotStrkIV;
+            break;
+        case MON_DATA_TRUDMG_IV:
+            retVal = substruct3->truDmgIV;
+            break;
+        //gambitiv
         case MON_DATA_IS_EGG:
             retVal = substruct3->isEgg;
             break;
@@ -2878,6 +2966,18 @@ void SetMonData(struct Pokemon *mon, s32 field, const void *dataArg)
     case MON_DATA_SPDEF:
         SET16(mon->spDefense);
         break;
+    case MON_DATA_LERDEF:
+        SET16(mon->lerDefense);
+        break;
+    case MON_DATA_LERATK:
+        SET16(mon->lerAttack);
+        break;
+    case MON_DATA_ARMOR:
+        SET16(mon->armor);
+        break;
+    case MON_DATA_TRUDMG_EV:
+        SET16(mon->trueDamage);
+        break;
     case MON_DATA_MAIL:
         SET8(mon->mail);
         break;
@@ -3008,6 +3108,12 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_LERDEF_EV:
             SET8(substruct2->lerDefenseEV);
             break;
+        case MON_DATA_GAMBIT:
+            SET16(substruct2->gambit);
+            break;
+        case MON_DATA_HOTSTRK:
+            SET16(substruct2->hotStreak);
+            break;
             /*
         case MON_DATA_HOTSTRK_EV:
             SET8(substruct2->hotStrkEV);
@@ -3053,6 +3159,23 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_SPDEF_IV:
             SET8(substruct3->spDefenseIV);
             break;
+
+        case MON_DATA_LERATK_IV:
+            SET8(substruct3->lerAttackIV);
+            break;
+        case MON_DATA_LERDEF_IV:
+            SET8(substruct3->lerDefenseIV);
+            break;
+        case MON_DATA_ARMOR_IV:
+            SET8(substruct3->armorIV);
+            break;
+        case MON_DATA_TRUDMG_IV:
+            SET8(substruct3->truDmgIV);
+            break;
+        case MON_DATA_HOTSTRK_IV:
+            SET8(substruct3->hotStrkIV);
+            break;
+
         case MON_DATA_IS_EGG:
             SET8(substruct3->isEgg);
             if (substruct3->isEgg)
@@ -3078,6 +3201,18 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             substruct3->spDefenseIV = (ivs >> 25) & MAX_IV_MASK;
             break;
         }
+        case MON_DATA_IVS2:
+        {
+            u32 ivs;
+            SET32(ivs);
+            substruct3->lerAttackIV = ivs & MAX_IV_MASK;
+            substruct3->lerDefenseIV = (ivs >> 5) & MAX_IV_MASK;
+            substruct3->armorIV = (ivs >> 10) & MAX_IV_MASK;
+            substruct3->truDmgIV = (ivs >> 15) & MAX_IV_MASK;
+            substruct3->hotStrkIV = (ivs >> 20) & MAX_IV_MASK;
+            break;
+        }
+        
         case MON_DATA_HYPER_TRAINED_HP:
             SET8(substruct1->hyperTrainedHP);
             break;
