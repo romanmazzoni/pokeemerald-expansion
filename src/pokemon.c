@@ -3713,6 +3713,19 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
     dst->speed = GetMonData(src, MON_DATA_SPEED, NULL);
     dst->spAttack = GetMonData(src, MON_DATA_SPATK, NULL);
     dst->spDefense = GetMonData(src, MON_DATA_SPDEF, NULL);
+
+    dst->lerAttack = GetMonData(src, MON_DATA_LERATK, NULL);
+    dst->lerDefense= GetMonData(src, MON_DATA_LERDEF, NULL);
+    dst->armor = GetMonData(src, MON_DATA_ARMOR, NULL);
+    dst->trueDamage = GetMonData(src, MON_DATA_TRUDMG, NULL);
+    dst->hotStreak = GetMonData(src, MON_DATA_HOTSTRK, NULL);
+    dst->gambitIV = GetMonData(src, MON_DATA_GAMBIT, NULL);
+    dst->lerAttackIV = GetMonData(src, MON_DATA_LERATK_IV, NULL);
+    dst->lerDefenseIV = GetMonData(src, MON_DATA_LERDEF_IV, NULL);
+    dst->armorIV = GetMonData(src, MON_DATA_ARMOR_IV, NULL);
+    dst->trueDamageIV = GetMonData(src, MON_DATA_TRUDMG_IV, NULL);
+    dst->hotStreakIV = GetMonData(src, MON_DATA_HOTSTRK_IV, NULL);
+
     dst->abilityNum = GetMonData(src, MON_DATA_ABILITY_NUM, NULL);
     dst->otId = GetMonData(src, MON_DATA_OT_ID, NULL);
     dst->types[0] = gSpeciesInfo[dst->species].types[0];

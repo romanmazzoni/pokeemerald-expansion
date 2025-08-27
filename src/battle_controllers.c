@@ -1636,6 +1636,20 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         battleMon.speed = GetMonData(&party[monId], MON_DATA_SPEED);
         battleMon.spAttack = GetMonData(&party[monId], MON_DATA_SPATK);
         battleMon.spDefense = GetMonData(&party[monId], MON_DATA_SPDEF);
+
+        battleMon.armor = GetMonData(&party[monId], MON_DATA_ARMOR);
+        battleMon.lerAttack = GetMonData(&party[monId], MON_DATA_LERATK);
+        battleMon.lerDefense = GetMonData(&party[monId], MON_DATA_LERDEF);
+        battleMon.gambit = GetMonData(&party[monId], MON_DATA_GAMBIT);
+        battleMon.trueDamage = GetMonData(&party[monId], MON_DATA_TRUDMG);
+        battleMon.hotStreak = GetMonData(&party[monId], MON_DATA_HOTSTRK);
+
+        battleMon.armorIV = GetMonData(&party[monId], MON_DATA_ARMOR_IV);
+        battleMon.lerAttackIV = GetMonData(&party[monId], MON_DATA_LERATK_IV);
+        battleMon.lerDefenseIV = GetMonData(&party[monId], MON_DATA_LERDEF_IV);
+        battleMon.trueDamageIV = GetMonData(&party[monId], MON_DATA_TRUDMG_IV);
+        battleMon.hotStreakIV = GetMonData(&party[monId], MON_DATA_HOTSTRK_IV);
+
         battleMon.abilityNum = GetMonData(&party[monId], MON_DATA_ABILITY_NUM);
         battleMon.otId = GetMonData(&party[monId], MON_DATA_OT_ID);
         battleMon.metLevel = GetMonData(&party[monId], MON_DATA_MET_LEVEL);
