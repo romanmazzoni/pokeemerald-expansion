@@ -1753,6 +1753,14 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         dst[0] = GetMonData(&party[monId], MON_DATA_SPDEF_EV);
         size = 1;
         break;
+    case REQUEST_LERATK_EV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_LERATK_EV);
+        size = 1;
+        break;
+    case REQUEST_LERDEF_EV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_LERDEF_EV);
+        size = 1;
+        break;
     case REQUEST_FRIENDSHIP_BATTLE:
         dst[0] = GetMonData(&party[monId], MON_DATA_FRIENDSHIP);
         size = 1;
@@ -1808,6 +1816,26 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         break;
     case REQUEST_SPDEF_IV_BATTLE:
         dst[0] = GetMonData(&party[monId], MON_DATA_SPDEF_IV);
+        size = 1;
+        break;
+    case REQUEST_ARMOR_IV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_ARMOR_IV);
+        size = 1;
+        break;
+    case REQUEST_LERATK_IV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_LERATK_IV);
+        size = 1;
+        break;
+    case REQUEST_LERDEF_IV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_LERDEF_IV);
+        size = 1;
+        break;
+    case REQUEST_HOTSTRK_IV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_HOTSTRK_IV);
+        size = 1;
+        break;
+    case REQUEST_TRUDMG_IV_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_TRUDMG_IV);
         size = 1;
         break;
     case REQUEST_PERSONALITY_BATTLE:
@@ -1878,6 +1906,44 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         dst[1] = data16 >> 8;
         size = 2;
         break;
+
+    case REQUEST_ARMOR_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_ARMOR);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+    case REQUEST_LERATK_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_LERATK);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+    case REQUEST_LERDEF_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_LERDEF);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+    case REQUEST_GAMBIT_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_GAMBIT);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+    case REQUEST_HOTSTRK_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_HOTSTRK);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+    case REQUEST_TRUDMG_BATTLE:
+        data16 = GetMonData(&party[monId], MON_DATA_TRUDMG);
+        dst[0] = data16;
+        dst[1] = data16 >> 8;
+        size = 2;
+        break;
+
     case REQUEST_COOL_BATTLE:
         dst[0] = GetMonData(&party[monId], MON_DATA_COOL);
         size = 1;
