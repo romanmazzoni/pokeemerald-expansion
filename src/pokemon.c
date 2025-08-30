@@ -4453,7 +4453,7 @@ u8 *UseStatIncreaseItem(u16 itemId)
             BufferStatRoseMessage(STAT_SPDEF);
             break;
         case ITEM1_X_ACCURACY:
-            BufferStatRoseMessage(STAT_ACC);
+            BufferStatRoseMessage(6); //default id for acc
             break;
     }
 

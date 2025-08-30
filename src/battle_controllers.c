@@ -1993,7 +1993,7 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
     return size;
 }
 
-static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
+static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId) //roma
 {
     struct BattlePokemon *battlePokemon = (struct BattlePokemon *)&gBattleResources->bufferA[battler][3];
     struct MovePpInfo *moveData = (struct MovePpInfo *)&gBattleResources->bufferA[battler][3];
@@ -2027,6 +2027,18 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
             SetMonData(&party[monId], MON_DATA_SPATK_IV, &iv);
             iv = battlePokemon->spDefenseIV;
             SetMonData(&party[monId], MON_DATA_SPDEF_IV, &iv);
+
+            iv = battlePokemon->lerAttackIV;
+            SetMonData(&party[monId], MON_DATA_LERATK_IV, &iv);
+            iv = battlePokemon->lerDefenseIV;
+            SetMonData(&party[monId], MON_DATA_LERDEF_IV, &iv);
+            iv = battlePokemon->armorIV;
+            SetMonData(&party[monId], MON_DATA_ARMOR_IV, &iv);
+            iv = battlePokemon->trueDamage;
+            SetMonData(&party[monId], MON_DATA_TRUDMG_IV, &iv);
+            iv = battlePokemon->hotStreak;
+            SetMonData(&party[monId], MON_DATA_HOTSTRK_IV, &iv);
+
             SetMonData(&party[monId], MON_DATA_PERSONALITY, &battlePokemon->personality);
             SetMonData(&party[monId], MON_DATA_STATUS, &battlePokemon->status1);
             SetMonData(&party[monId], MON_DATA_LEVEL, &battlePokemon->level);
@@ -2037,6 +2049,13 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
             SetMonData(&party[monId], MON_DATA_SPEED, &battlePokemon->speed);
             SetMonData(&party[monId], MON_DATA_SPATK, &battlePokemon->spAttack);
             SetMonData(&party[monId], MON_DATA_SPDEF, &battlePokemon->spDefense);
+
+            SetMonData(&party[monId], MON_DATA_TRUDMG, &battlePokemon->trueDamage);
+            SetMonData(&party[monId], MON_DATA_LERATK, &battlePokemon->lerAttack);
+            SetMonData(&party[monId], MON_DATA_LERDEF, &battlePokemon->lerDefense);
+            SetMonData(&party[monId], MON_DATA_GAMBIT, &battlePokemon->gambit);
+            SetMonData(&party[monId], MON_DATA_HOTSTRK, &battlePokemon->hotStreak);
+            SetMonData(&party[monId], MON_DATA_ARMOR, &battlePokemon->armor);
         }
         break;
     case REQUEST_SPECIES_BATTLE:
@@ -2096,6 +2115,14 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
     case REQUEST_SPDEF_EV_BATTLE:
         SetMonData(&party[monId], MON_DATA_SPDEF_EV, &gBattleResources->bufferA[battler][3]);
         break;
+
+    case REQUEST_LERATK_EV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERATK_EV, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_LERDEF_EV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERDEF_EV, &gBattleResources->bufferA[battler][3]);
+        break;
+
     case REQUEST_FRIENDSHIP_BATTLE:
         SetMonData(&party[monId], MON_DATA_FRIENDSHIP, &gBattleResources->bufferA[battler][3]);
         break;
@@ -2140,6 +2167,23 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
     case REQUEST_SPDEF_IV_BATTLE:
         SetMonData(&party[monId], MON_DATA_SPDEF_IV, &gBattleResources->bufferA[battler][3]);
         break;
+
+    case REQUEST_LERATK_IV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERATK_IV, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_LERDEF_IV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERDEF_IV, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_ARMOR_IV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_ARMOR_IV, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_TRUDMG_IV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_TRUDMG_IV, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_HOTSTRK_IV_BATTLE:
+        SetMonData(&party[monId], MON_DATA_HOTSTRK_IV, &gBattleResources->bufferA[battler][3]);
+        break;
+
     case REQUEST_PERSONALITY_BATTLE:
         SetMonData(&party[monId], MON_DATA_PERSONALITY, &gBattleResources->bufferA[battler][3]);
         break;
@@ -2173,6 +2217,26 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
     case REQUEST_SPDEF_BATTLE:
         SetMonData(&party[monId], MON_DATA_SPDEF, &gBattleResources->bufferA[battler][3]);
         break;
+
+    case REQUEST_ARMOR_BATTLE:
+        SetMonData(&party[monId], MON_DATA_ARMOR, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_LERATK_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERATK, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_LERDEF_BATTLE:
+        SetMonData(&party[monId], MON_DATA_LERDEF, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_HOTSTRK_BATTLE:
+        SetMonData(&party[monId], MON_DATA_HOTSTRK, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_GAMBIT_BATTLE:
+        SetMonData(&party[monId], MON_DATA_GAMBIT, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_TRUDMG_BATTLE:
+        SetMonData(&party[monId], MON_DATA_TRUDMG, &gBattleResources->bufferA[battler][3]);
+        break;
+
     case REQUEST_COOL_BATTLE:
         SetMonData(&party[monId], MON_DATA_COOL, &gBattleResources->bufferA[battler][3]);
         break;

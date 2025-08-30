@@ -11277,6 +11277,13 @@ void CopyMonLevelAndBaseStatsToBattleMon(u32 battler, struct Pokemon *mon)
     gBattleMons[battler].speed = GetMonData(mon, MON_DATA_SPEED);
     gBattleMons[battler].spAttack = GetMonData(mon, MON_DATA_SPATK);
     gBattleMons[battler].spDefense = GetMonData(mon, MON_DATA_SPDEF);
+
+    gBattleMons[battler].armor = GetMonData(mon, MON_DATA_ARMOR);
+    gBattleMons[battler].lerAttack = GetMonData(mon, MON_DATA_LERATK);
+    gBattleMons[battler].lerDefense = GetMonData(mon, MON_DATA_LERDEF);
+    gBattleMons[battler].gambit = GetMonData(mon, MON_DATA_GAMBIT);
+    gBattleMons[battler].trueDamage = GetMonData(mon, MON_DATA_TRUDMG);
+    gBattleMons[battler].hotStreak = GetMonData(mon, MON_DATA_HOTSTRK);
 }
 
 void CopyMonAbilityAndTypesToBattleMon(u32 battler, struct Pokemon *mon)

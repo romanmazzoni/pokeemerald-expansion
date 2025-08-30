@@ -5160,6 +5160,14 @@ static void Cmd_getexp(void)
                 gBattleResources->beforeLvlUp->stats[STAT_SPEED] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPEED);
                 gBattleResources->beforeLvlUp->stats[STAT_SPATK] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPATK);
                 gBattleResources->beforeLvlUp->stats[STAT_SPDEF] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_SPDEF);
+
+                gBattleResources->beforeLvlUp->stats[STAT_ARMOR]    = GetMonData(&gPlayerParty[*expMonId], MON_DATA_ARMOR);
+                gBattleResources->beforeLvlUp->stats[STAT_LERATK]   = GetMonData(&gPlayerParty[*expMonId], MON_DATA_LERATK);
+                gBattleResources->beforeLvlUp->stats[STAT_LERDEF]   = GetMonData(&gPlayerParty[*expMonId], MON_DATA_LERDEF);
+                gBattleResources->beforeLvlUp->stats[STAT_TRUDMG] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_TRUDMG);
+                gBattleResources->beforeLvlUp->stats[STAT_GAMBIT] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_GAMBIT);
+                gBattleResources->beforeLvlUp->stats[STAT_HOTSTK] = GetMonData(&gPlayerParty[*expMonId], MON_DATA_HOTSTRK);
+
                 gBattleResources->beforeLvlUp->level             = currLvl;
                 gBattleResources->beforeLvlUp->learnMultipleMoves = FALSE;
 

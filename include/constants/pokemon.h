@@ -80,13 +80,16 @@
 #define STAT_SPEED   3
 #define STAT_SPATK   4
 #define STAT_SPDEF   5
-#define STAT_LERATK  20
-#define STAT_LERDEF  21
+#define STAT_LERATK  6
+#define STAT_LERDEF  7
 #define STAT_ARMOR   8
 #define STAT_TRUDMG  9
 #define STAT_GAMBIT  10
-#define STAT_SEXISM  11
-#define STAT_HOTSTK  12
+#define STAT_HOTSTK  11
+
+#define NUM_STATS    12
+
+#define STAT_SEXISM  12
 #define STAT_CRIT    13
 #define STAT_LUCK    14
 #define STAT_WAXING  15
@@ -94,20 +97,20 @@
 #define STAT_FIRSTSTRIKE 17
 #define STAT_LIFESTL 18
 #define STAT_DBLHIT  19
-#define NUM_STATS    20
 
-#define STAT_ACC     6 // Only in battles.
-#define STAT_EVASION 7 // Only in battles.
+
+#define STAT_ACC     20 // Only in battles.
+#define STAT_EVASION 21 // Only in battles.
 
 #define NUM_NATURE_STATS (NUM_STATS - 1) // excludes HP
-#define NUM_BATTLE_STATS (NUM_STATS + 2) // includes Accuracy and Evasion
+#define NUM_BATTLE_STATS (NUM_STATS + 10) // includes Accuracy and Evasion
 
 #define MIN_STAT_STAGE     0
 #define DEFAULT_STAT_STAGE 6
 #define MAX_STAT_STAGE    12
 
 // Shiny odds
-#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
+#define SHINY_ODDS 200 // Actual probability is SHINY_ODDS/65536
 
 // Ribbon IDs used by TV and Pokénav
 #define CHAMPION_RIBBON       0
