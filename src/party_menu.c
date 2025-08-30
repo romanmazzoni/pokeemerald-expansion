@@ -5938,6 +5938,13 @@ static void BufferMonStatsToTaskData(struct Pokemon *mon, s16 *data)
     data[4] = GetMonData(mon, MON_DATA_SPATK);
     data[5] = GetMonData(mon, MON_DATA_SPDEF);
     data[3] = GetMonData(mon, MON_DATA_SPEED);
+
+    data[6] = GetMonData(mon, MON_DATA_ARMOR);
+    data[7] = GetMonData(mon, MON_DATA_LERATK);
+    data[8] = GetMonData(mon, MON_DATA_LERDEF);
+    data[9] = GetMonData(mon, MON_DATA_GAMBIT);
+    data[10] = GetMonData(mon, MON_DATA_TRUDMG);
+    data[11] = GetMonData(mon, MON_DATA_HOTSTRK);
 }
 
 #define tState        data[0]

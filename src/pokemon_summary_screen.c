@@ -60,33 +60,34 @@
 #define PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE 2
 #define PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE 3
 #define PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE 4
+#define PSS_LABEL_WINDOW_BONUS_STATS_TITLE 5
 
 // Button control text (upper right)
-#define PSS_LABEL_WINDOW_PROMPT_UTILITY 5 // Also handles the "rename" prompt if P_SUMMARY_SCREEN_RENAME is true
-#define PSS_LABEL_WINDOW_PROMPT_INFO 6
-#define PSS_LABEL_WINDOW_PROMPT_SWITCH 7
-#define PSS_LABEL_WINDOW_UNUSED1 8
+#define PSS_LABEL_WINDOW_PROMPT_UTILITY 6 // Also handles the "rename" prompt if P_SUMMARY_SCREEN_RENAME is true
+#define PSS_LABEL_WINDOW_PROMPT_INFO 7
+#define PSS_LABEL_WINDOW_PROMPT_SWITCH 8
+#define PSS_LABEL_WINDOW_UNUSED1 9
 
 // Info screen
-#define PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL 9
-#define PSS_LABEL_WINDOW_POKEMON_INFO_TYPE 10
+#define PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL 10
+#define PSS_LABEL_WINDOW_POKEMON_INFO_TYPE 11
 
 // Skills screen
-#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT 11 // HP, Attack, Defense
-#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT 12 // Sp. Attack, Sp. Defense, Speed
-#define PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP 13 // EXP, Next Level
-#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATUS 14
+#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT 12 // HP, Attack, Defense
+#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT 13 // Sp. Attack, Sp. Defense, Speed
+#define PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP 14 // EXP, Next Level
+#define PSS_LABEL_WINDOW_POKEMON_SKILLS_STATUS 15
 
 // Moves screen
-#define PSS_LABEL_WINDOW_MOVES_POWER_ACC 15 // Also contains the power and accuracy values
-#define PSS_LABEL_WINDOW_MOVES_APPEAL_JAM 16
-#define PSS_LABEL_WINDOW_PROMPT_RELEARN 17
+#define PSS_LABEL_WINDOW_MOVES_POWER_ACC 16 // Also contains the power and accuracy values
+#define PSS_LABEL_WINDOW_MOVES_APPEAL_JAM 17
+#define PSS_LABEL_WINDOW_PROMPT_RELEARN 18
 
 // Above/below the pokemon's portrait (left)
-#define PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER 18
-#define PSS_LABEL_WINDOW_PORTRAIT_NICKNAME 19 // The upper name
-#define PSS_LABEL_WINDOW_PORTRAIT_SPECIES 20 // The lower name
-#define PSS_LABEL_WINDOW_END 21
+#define PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER 19
+#define PSS_LABEL_WINDOW_PORTRAIT_NICKNAME 20 // The upper name
+#define PSS_LABEL_WINDOW_PORTRAIT_SPECIES 21 // The lower name
+#define PSS_LABEL_WINDOW_END 22
 
 // Dynamic fields for the Pokémon Info page
 #define PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER 0
@@ -114,6 +115,13 @@
 
 #define MOVE_SELECTOR_SPRITES_COUNT 10
 #define TYPE_ICON_SPRITE_COUNT (MAX_MON_MOVES + 1)
+
+//Dynamic fields for the Pokemon Bonus stats page
+#define PSS_DATA_WINDOW_TRAITS1 0
+#define PSS_DATA_WINDOW_TRAITS2 1
+#define PSS_DATA_WINDOW_TRAITS3 2
+#define PSS_DATA_WINDOW_TRAITS4 3
+
 // for the spriteIds field in PokemonSummaryScreenData
 enum
 {
@@ -164,6 +172,14 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u16 spatk; // 0x28
         u16 spdef; // 0x2A
         u16 speed; // 0x2C
+
+        u16 armor; 
+        u16 lerAtk; 
+        u16 lerDef; 
+        u16 gambit; 
+        u16 truDmg; 
+        u16 hotStrk; 
+
         u16 item; // 0x2E
         u16 friendship; // 0x30
         u8 OTGender; // 0x32
@@ -1924,6 +1940,13 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
         sum->speed = GetMonData(mon, MON_DATA_SPEED);
+
+        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
+        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
+        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
+        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
+        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
+        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
     }
     else
     {
@@ -1936,6 +1959,13 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK2);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF2);
         sum->speed = GetMonData(mon, MON_DATA_SPEED2);
+        
+        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
+        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
+        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
+        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
+        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
+        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
     }
 }
 

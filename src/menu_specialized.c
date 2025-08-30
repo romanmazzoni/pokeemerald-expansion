@@ -1621,4 +1621,11 @@ void GetMonLevelUpWindowStats(struct Pokemon *mon, u16 *currStats)
     currStats[STAT_SPEED] = GetMonData(mon, MON_DATA_SPEED);
     currStats[STAT_SPATK] = GetMonData(mon, MON_DATA_SPATK);
     currStats[STAT_SPDEF] = GetMonData(mon, MON_DATA_SPDEF);
+
+    currStats[STAT_ARMOR]    = GetMonData(mon, MON_DATA_ARMOR);
+    currStats[STAT_LERATK]   = GetMonData(mon, MON_DATA_LERATK);
+    currStats[STAT_LERDEF]   = GetMonData(mon, MON_DATA_LERDEF);
+    currStats[STAT_GAMBIT] = GetMonData(mon, MON_DATA_GAMBIT);
+    currStats[STAT_TRUDMG] = GetMonData(mon, MON_DATA_TRUDMG);
+    currStats[STAT_HOTSTK] = GetMonData(mon, MON_DATA_HOTSTRK);
 }
