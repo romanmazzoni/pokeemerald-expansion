@@ -1552,10 +1552,10 @@ void CB1_Overworld(void)
 
 const struct BlendSettings gTimeOfDayBlend[] =
 {
-    [TIME_MORNING] = {.coeff = 4,  .blendColor = 0xA8B0E0,   .isTint = TRUE},
+    [TIME_MORNING] = {.coeff = 0,  .blendColor = 0,          .isTint = FALSE},
     [TIME_DAY]     = {.coeff = 0,  .blendColor = 0,          .isTint = FALSE},
-    [TIME_EVENING] = {.coeff = 4,  .blendColor = 0xA8B0E0,   .isTint = TRUE},
-    [TIME_NIGHT]   = {.coeff = 10, .blendColor = TINT_NIGHT, .isTint = TRUE},
+    [TIME_EVENING] = {.coeff = 0,  .blendColor = 0,          .isTint = FALSE},
+    [TIME_NIGHT]   = {.coeff = 0,  .blendColor = 0,          .isTint = FALSE},
 };
 
 #define DEFAULT_WEIGHT 256

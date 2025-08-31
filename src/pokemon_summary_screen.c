@@ -122,6 +122,22 @@
 #define PSS_DATA_WINDOW_TRAITS3 2
 #define PSS_DATA_WINDOW_TRAITS4 3
 
+//Dynamic fields for the Pokemon Bonus stats page
+#define PSS_DATA_WINDOW_BONUS_STAT_0 0
+#define PSS_DATA_WINDOW_BONUS_STAT_1 1
+#define PSS_DATA_WINDOW_BONUS_STAT_2 2
+#define PSS_DATA_WINDOW_BONUS_STAT_3 3
+#define PSS_DATA_WINDOW_BONUS_STAT_4 4
+#define PSS_DATA_WINDOW_BONUS_STAT_5 5
+#define PSS_DATA_WINDOW_BONUS_STAT_6 6
+#define PSS_DATA_WINDOW_BONUS_STAT_7 7
+#define PSS_DATA_WINDOW_BONUS_STAT_8 8
+#define PSS_DATA_WINDOW_BONUS_STAT_9 9
+#define PSS_DATA_WINDOW_BONUS_STAT_10 10
+#define PSS_DATA_WINDOW_BONUS_STAT_11 11
+#define PSS_DATA_WINDOW_BONUS_STAT_12 12
+#define PSS_DATA_WINDOW_BONUS_STAT_13 13
+
 // for the spriteIds field in PokemonSummaryScreenData
 enum
 {
@@ -460,6 +476,15 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .height = 2,
         .paletteNum = 6,
         .baseBlock = 45,
+    },
+    [PSS_LABEL_WINDOW_BONUS_STATS_TITLE] = {
+        .bg = 0,
+        .tilemapLeft = 0,
+        .tilemapTop = 0,
+        .width = 11,
+        .height = 2,
+        .paletteNum = 6,
+        .baseBlock = 89,
     },
     [PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE] = {
         .bg = 0,
@@ -3315,6 +3340,7 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, gText_PkmnSkills, 2, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, gText_BattleMoves, 2, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, gText_ContestMoves, 2, 1, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_BONUS_STATS_TITLE, gText_PkmnBonusStats, 2, 1, 0, 1);
 
     ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
 
@@ -3692,13 +3718,11 @@ static bool8 DoesMonOTMatchOwner(void)
 
 static bool8 DidMonComeFromGBAGames(void)
 {
-    struct PokeSummary *sum = &sMonSummaryScreen->summary;
-    return TRUE;
+    return FALSE;
 }
 
 bool8 DidMonComeFromRSE(void)
 {
-    struct PokeSummary *sum = &sMonSummaryScreen->summary;
     return FALSE;
 }
 

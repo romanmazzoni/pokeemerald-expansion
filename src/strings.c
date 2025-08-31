@@ -1303,3 +1303,5 @@ const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbec
 
 //New Summary Screen Pages
 const u8 gText_PkmnTraits[] = _("TRAITS");
+
+const u8 gText_PkmnBonusStats[] = _("BONUS STATS");

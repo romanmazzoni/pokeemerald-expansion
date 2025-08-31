@@ -2429,4 +2429,6 @@ extern const u8 gText_CannotSendMonToBoxHM[];
 //New Summary Pages
 extern const u8 gText_PkmnTraits[];
 
+extern const u8 gText_PkmnBonusStats[];
+
 #endif // GUARD_STRINGS_H
