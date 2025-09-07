@@ -303,6 +303,9 @@ static void PrintMonOTID(void);
 static void PrintMonAbilityName(void);
 static void PrintMonAbilityDescription(void);
 static void PrintMonTraits(u8);
+
+static void PrintMonBonusStats(u8);
+
 static void BufferMonTrainerMemo(void);
 static void PrintMonTrainerMemo(void);
 static void BufferNatureString(void);
@@ -377,7 +380,9 @@ static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 te
 static u8 IncrementSkillsStatsMode(u8 mode);
 static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY);
 static void PrintTraits(void);
+static void PrintBonusStats(void);
 static void Task_PrintTraits(u8);
+static void Task_PrintBonusStats(u8);
 
 
 static const struct BgTemplate sBgTemplates[] =
@@ -691,6 +696,47 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .baseBlock = 603 + TempOffset,
     },
 };
+
+static const struct WindowTemplate sPageBonusStatsTemplate[] =
+{
+	[PSS_DATA_WINDOW_BONUS_STAT_0] = {
+		.bg = 0,
+		.tilemapLeft = 11,
+		.tilemapTop = 4,
+		.width = 18,
+		.height = 4,
+		.paletteNum = 6,
+		.baseBlock = 495,
+	},
+    [PSS_DATA_WINDOW_BONUS_STAT_1] = {
+		.bg = 0,
+		.tilemapLeft = 11,
+		.tilemapTop = 8,
+		.width = 18,
+		.height = 4,
+		.paletteNum = 6,
+		.baseBlock = 495 + TempOffset * 1,
+	},
+    [PSS_DATA_WINDOW_BONUS_STAT_2] = {
+		.bg = 0,
+		.tilemapLeft = 11,
+		.tilemapTop = 12,
+		.width = 18,
+		.height = 4,
+		.paletteNum = 6,
+		.baseBlock = 495  + TempOffset * 2,
+	},
+    [PSS_DATA_WINDOW_BONUS_STAT_3] = {
+		.bg = 0,
+		.tilemapLeft = 11,
+		.tilemapTop = 16,
+		.width = 18,
+		.height = 4,
+		.paletteNum = 6,
+		.baseBlock = 495 + TempOffset * 3,
+	},
+};
+
 static const struct WindowTemplate sPageTraitsTemplate[] =
 {
 	[PSS_DATA_WINDOW_TRAITS1] = {
@@ -730,6 +776,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.baseBlock = 495 + TempOffset + 72 + 72 + 72,
 	},
 };
+
 static const struct WindowTemplate sPageSkillsTemplate[] =
 {
     [PSS_DATA_WINDOW_SKILLS_HELD_ITEM] = {
@@ -837,7 +884,8 @@ static void (*const sTextPrinterFunctions[])(void) =
     [PSS_PAGE_TRAITS] = PrintTraits,
     [PSS_PAGE_SKILLS] = PrintSkillsPageText,
     [PSS_PAGE_BATTLE_MOVES] = PrintBattleMoves,
-    [PSS_PAGE_CONTEST_MOVES] = PrintContestMoves
+    [PSS_PAGE_CONTEST_MOVES] = PrintContestMoves,
+    [PSS_PAGE_BONUS_STATS] = PrintBonusStats
 };
 
 static void (*const sTextPrinterTasks[])(u8 taskId) =
@@ -846,7 +894,8 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
     [PSS_PAGE_TRAITS] = Task_PrintTraits,
     [PSS_PAGE_SKILLS] = Task_PrintSkillsPage,
     [PSS_PAGE_BATTLE_MOVES] = Task_PrintBattleMoves,
-    [PSS_PAGE_CONTEST_MOVES] = Task_PrintContestMoves
+    [PSS_PAGE_CONTEST_MOVES] = Task_PrintContestMoves,
+    [PSS_PAGE_BONUS_STATS] = Task_PrintBonusStats
 };
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
@@ -3377,6 +3426,7 @@ static void PutPageWindowTilemaps(u8 page)
     ClearWindowTilemap(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE);
     ClearWindowTilemap(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE);
     ClearWindowTilemap(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE);
+    ClearWindowTilemap(PSS_LABEL_WINDOW_BONUS_STATS_TITLE);
 
     switch (page)
     {
@@ -3426,7 +3476,13 @@ static void PutPageWindowTilemaps(u8 page)
                 PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_RELEARN);
         }
         break;
+
+    case PSS_PAGE_BONUS_STATS:
+        PutWindowTilemap(PSS_LABEL_WINDOW_BONUS_STATS_TITLE);
+        //PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_UTILITY);
+        break;
     }
+    
 
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         PutWindowTilemap(sMonSummaryScreen->windowIds[i]);
@@ -3804,6 +3860,79 @@ static void PrintTraits(void)
     PrintMonTraits(3);
 }
 
+static void PrintBonusStats(void)
+{
+    PrintMonBonusStats(0);
+    PrintMonBonusStats(1);
+    PrintMonBonusStats(2);
+    PrintMonBonusStats(3);
+    PrintMonBonusStats(4);
+    PrintMonBonusStats(5);
+    PrintMonBonusStats(6);
+    PrintMonBonusStats(7);
+    PrintMonBonusStats(8);
+    PrintMonBonusStats(9);
+    PrintMonBonusStats(10);
+    PrintMonBonusStats(11);
+    PrintMonBonusStats(12);
+    PrintMonBonusStats(13);
+}
+
+static void Task_PrintBonusStats(u8 taskId)
+{
+    s16* data = gTasks[taskId].data;
+
+    switch (data[0])
+    {
+    case 1:
+        PrintMonBonusStats(0);
+        break;
+    case 2:
+        PrintMonBonusStats(1);
+        break;
+    case 3:
+        PrintMonBonusStats(2);
+        break;
+    case 4:
+        PrintMonBonusStats(3);
+        break;
+    case 5:
+        PrintMonBonusStats(5);
+        break;
+    case 6:
+        PrintMonBonusStats(6);
+        break;
+    case 7:
+        PrintMonBonusStats(7);
+        break;
+    case 8:
+        PrintMonBonusStats(8);
+        break;
+    case 9:
+        PrintMonBonusStats(9);
+        break;
+    case 10:
+        PrintMonBonusStats(10);
+        break;
+    case 11:
+        PrintMonBonusStats(11);
+        break;
+    case 12:
+        PrintMonBonusStats(12);
+        break;
+    case 13:
+        PrintMonBonusStats(13);
+        break;
+    case 14:
+        PrintMonBonusStats(14);
+        break;
+    case 15:
+        DestroyTask(taskId);
+        return;
+    }
+    data[0]++;
+}
+
 static void Task_PrintTraits(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
@@ -3829,6 +3958,7 @@ static void Task_PrintTraits(u8 taskId)
     data[0]++;
 }
 
+
 static void PrintMonTraits(u8 innateIndex)
 {
     u16 trait = 0;
@@ -3852,6 +3982,66 @@ static void PrintMonTraits(u8 innateIndex)
         PrintTextOnWindow(AddWindowFromTemplateList(sPageTraitsTemplate, innateIndex), gAbilitiesInfo[trait].name, x, 1, 0, 1);
         PrintTextOnWindow(AddWindowFromTemplateList(sPageTraitsTemplate, innateIndex), gAbilitiesInfo[trait].description, 0, 17, 0, 0);
     }
+}
+
+static void PrintMonBonusStats(u8 innateIndex)
+{
+    u8 stat = 0;
+    struct PokeSummary* sum = &sMonSummaryScreen->summary;
+
+    switch (innateIndex)
+    {
+    case 0:
+        //stat = sum->lerAtk;
+        break;
+    case 1:
+        //stat = sum->lerDef;
+        break;
+    case 2:
+        //stat = sum->armor;
+        break;
+    case 3:
+        //stat = sum->gambit;
+        break;
+    case 4:
+        //stat = sum->truDmg;
+        break;
+    case 5:
+        //stat = sum->hotStrk;
+        break;
+    case 6:
+        stat = gSpeciesInfo[sum->species].waxing;
+        break;
+    case 7:
+        stat = gSpeciesInfo[sum->species].luck;
+        break;
+    case 8:
+        stat = gSpeciesInfo[sum->species].parry;
+        break;
+    case 9:
+        stat = gSpeciesInfo[sum->species].firstStrike;
+        break;
+    case 10:
+        stat = gSpeciesInfo[sum->species].lifeSteal;
+        break;
+    case 11:
+        stat = gSpeciesInfo[sum->species].sexism;
+        break;
+    case 12:
+        stat = gSpeciesInfo[sum->species].doubleHit;
+        break;
+    case 13:
+        stat = gSpeciesInfo[sum->species].critChance;
+        break;
+    default:
+        break;
+    }
+        
+    //int x = GetStringRightAlignXOffset(FONT_NORMAL, gAbilitiesInfo[trait].name, 18*8);
+
+    //PrintTextOnWindow(AddWindowFromTemplateList(sPageTraitsTemplate, innateIndex), stat, x, 1, 0, 1);
+   // PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, innateIndex), stat, 0, 17, 0, 0);
+    return;
 }
 
 static void PrintSkillsPageText(void)
@@ -4040,6 +4230,31 @@ static void BufferLeftColumnIvEvStats(void)
     Free(defenseIvEvString);
 }
 
+static void PrintLeftBonusStats(void)
+{
+    int x;
+
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), gStringVar4, 4, 1, 0, 0);
+}
+
+static void BufferLeftBonusStats(void)
+{
+    u8 *armorString = Alloc(20);
+    u8 *lerAtkString = Alloc(20);
+    u8 *lerDefString = Alloc(20);
+
+    DynamicPlaceholderTextUtil_Reset();
+
+    BufferStat(armorString, STAT_ARMOR, sMonSummaryScreen->summary.armor, 1, 3);
+    BufferStat(lerAtkString, STAT_LERATK, sMonSummaryScreen->summary.lerAtk, 2, 7);
+    BufferStat(lerDefString, STAT_LERDEF, sMonSummaryScreen->summary.lerDef, 3, 7);
+
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
+
+    Free(armorString);
+    Free(lerAtkString);
+    Free(lerDefString);
+}
 static void PrintLeftColumnStats(void)
 {
     int x;
