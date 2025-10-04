@@ -383,6 +383,8 @@ static void PrintTraits(void);
 static void PrintBonusStats(void);
 static void Task_PrintTraits(u8);
 static void Task_PrintBonusStats(u8);
+static void BufferLeftBonusStats(void);
+static void PrintLeftBonusStats(void);
 
 
 static const struct BgTemplate sBgTemplates[] =
@@ -904,6 +906,7 @@ static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 
 static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
+static const u8 sStatsBonusLeftColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}");
 
 #define TAG_MOVE_SELECTOR 30000
 #define TAG_MON_STATUS 30001
@@ -3992,10 +3995,10 @@ static void PrintMonBonusStats(u8 innateIndex)
     switch (innateIndex)
     {
     case 0:
-        //stat = sum->lerAtk;
+        BufferLeftBonusStats();
         break;
     case 1:
-        //stat = sum->lerDef;
+        PrintLeftBonusStats();
         break;
     case 2:
         //stat = sum->armor;
@@ -4232,9 +4235,8 @@ static void BufferLeftColumnIvEvStats(void)
 
 static void PrintLeftBonusStats(void)
 {
-    int x;
 
-    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), gStringVar4, 4, 1, 0, 0);
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STAT_0), gStringVar4, 4, 1, 0, 0);
 }
 
 static void BufferLeftBonusStats(void)
@@ -4242,18 +4244,27 @@ static void BufferLeftBonusStats(void)
     u8 *armorString = Alloc(20);
     u8 *lerAtkString = Alloc(20);
     u8 *lerDefString = Alloc(20);
+    u8 *truDmgString = Alloc(20);
+    u8 *gambitString = Alloc(20);
+    u8 *hotStrkString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
 
-    BufferStat(armorString, STAT_ARMOR, sMonSummaryScreen->summary.armor, 1, 3);
-    BufferStat(lerAtkString, STAT_LERATK, sMonSummaryScreen->summary.lerAtk, 2, 7);
-    BufferStat(lerDefString, STAT_LERDEF, sMonSummaryScreen->summary.lerDef, 3, 7);
+    BufferStat(armorString, STAT_ARMOR, sMonSummaryScreen->summary.armor, 0, 3);
+    BufferStat(lerAtkString, STAT_LERATK, sMonSummaryScreen->summary.lerAtk, 1, 3);
+    BufferStat(lerDefString, STAT_LERDEF, sMonSummaryScreen->summary.lerDef, 2, 3);
+    BufferStat(truDmgString, STAT_TRUDMG, sMonSummaryScreen->summary.truDmg, 3, 3);
+    BufferStat(gambitString, STAT_GAMBIT, sMonSummaryScreen->summary.gambit, 4, 3);
+    BufferStat(hotStrkString, STAT_HOTSTK, sMonSummaryScreen->summary.hotStrk, 5, 3);
 
-    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusLeftColumnLayout);
 
     Free(armorString);
     Free(lerAtkString);
     Free(lerDefString);
+    Free(truDmgString);
+    Free(gambitString);
+    Free(hotStrkString);
 }
 static void PrintLeftColumnStats(void)
 {
