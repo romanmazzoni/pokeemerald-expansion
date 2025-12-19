@@ -87,7 +87,11 @@
 #define PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER 19
 #define PSS_LABEL_WINDOW_PORTRAIT_NICKNAME 20 // The upper name
 #define PSS_LABEL_WINDOW_PORTRAIT_SPECIES 21 // The lower name
-#define PSS_LABEL_WINDOW_END 22
+#define PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT 22 // LER. Attack, LER. Defense, Gambit
+#define PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT 23 // Armor, Trudmg, Hotstreak
+#define PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2 24 // LER. Attack, LER. Defense, Gambit
+#define PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2 25 // Armor, Trudmg, Hotstreak
+#define PSS_LABEL_WINDOW_END 26
 
 // Dynamic fields for the Pokémon Info page
 #define PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER 0
@@ -116,27 +120,24 @@
 #define MOVE_SELECTOR_SPRITES_COUNT 10
 #define TYPE_ICON_SPRITE_COUNT (MAX_MON_MOVES + 1)
 
-//Dynamic fields for the Pokemon Bonus stats page
+//Dynamic fields for the Pokemon Traits page
 #define PSS_DATA_WINDOW_TRAITS1 0
 #define PSS_DATA_WINDOW_TRAITS2 1
 #define PSS_DATA_WINDOW_TRAITS3 2
 #define PSS_DATA_WINDOW_TRAITS4 3
 
 //Dynamic fields for the Pokemon Bonus stats page
-#define PSS_DATA_WINDOW_BONUS_STAT_0 0
-#define PSS_DATA_WINDOW_BONUS_STAT_1 1
-#define PSS_DATA_WINDOW_BONUS_STAT_2 2
-#define PSS_DATA_WINDOW_BONUS_STAT_3 3
+#define PSS_DATA_WINDOW_BONUS_STATS_LEFT 0
+#define PSS_DATA_WINDOW_BONUS_STATS_RIGHT 1
+#define PSS_DATA_WINDOW_BONUS_STAT_LEFT2 2
+#define PSS_DATA_WINDOW_BONUS_STAT_RIGHT2 3
 #define PSS_DATA_WINDOW_BONUS_STAT_4 4
 #define PSS_DATA_WINDOW_BONUS_STAT_5 5
 #define PSS_DATA_WINDOW_BONUS_STAT_6 6
 #define PSS_DATA_WINDOW_BONUS_STAT_7 7
 #define PSS_DATA_WINDOW_BONUS_STAT_8 8
 #define PSS_DATA_WINDOW_BONUS_STAT_9 9
-#define PSS_DATA_WINDOW_BONUS_STAT_10 10
-#define PSS_DATA_WINDOW_BONUS_STAT_11 11
-#define PSS_DATA_WINDOW_BONUS_STAT_12 12
-#define PSS_DATA_WINDOW_BONUS_STAT_13 13
+
 
 // for the spriteIds field in PokemonSummaryScreenData
 enum
@@ -304,7 +305,7 @@ static void PrintMonAbilityName(void);
 static void PrintMonAbilityDescription(void);
 static void PrintMonTraits(u8);
 
-static void PrintMonBonusStats(u8);
+//static void PrintMonBonusStats(u8);
 
 static void BufferMonTrainerMemo(void);
 static void PrintMonTrainerMemo(void);
@@ -371,6 +372,7 @@ static void ShowUtilityPrompt(s16 mode);
 static void ShowMonSkillsInfo(u8 taskId, s16 mode);
 static void WriteToStatsTilemapBuffer(u32 length, u32 block, u32 statsCoordX, u32 statsCoordY);
 void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum);
+void ExtractMonBonusStatsData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillEvData(struct Pokemon *mon, struct PokeSummary *sum);
 static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId);
@@ -384,6 +386,7 @@ static void PrintBonusStats(void);
 static void Task_PrintTraits(u8);
 static void Task_PrintBonusStats(u8);
 static void BufferLeftBonusStats(void);
+static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n);
 static void PrintLeftBonusStats(void);
 
 
@@ -455,6 +458,7 @@ static const struct TilemapCtrl sContestMoveTilemapCtrl =
     gSummaryScreen_MoveEffect_Contest_Tilemap, 0, 10, 7, 0, 45
 };
 static const s8 sMultiBattleOrder[] = {0, 2, 3, 1, 4, 5};
+#define CHOCOVAR 144;
 static const struct WindowTemplate sSummaryTemplate[] =
 {
     [PSS_LABEL_WINDOW_POKEMON_INFO_TITLE] = {
@@ -654,6 +658,42 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 475,
+    }, 
+    [PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT] = {
+        .bg = 0,
+        .tilemapLeft = 10,
+        .tilemapTop = 4,
+        .width = 6,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 511,
+    },
+    [PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT] = {
+        .bg = 0,
+        .tilemapLeft = 20,
+        .tilemapTop = 4,
+        .width = 6,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 547,
+    },
+    [PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2] = {
+        .bg = 0,
+        .tilemapLeft = 10,
+        .tilemapTop = 10,
+        .width = 6,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 583,
+    },
+    [PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2] = {
+        .bg = 0,
+        .tilemapLeft = 20,
+        .tilemapTop = 10,
+        .width = 6,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 619,
     },
     [PSS_LABEL_WINDOW_END] = DUMMY_WIN_TEMPLATE
 };
@@ -668,7 +708,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 11,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset,
+        .baseBlock = 495 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_INFO_ID] = {
         .bg = 0,
@@ -677,7 +717,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 7,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 517 + TempOffset,
+        .baseBlock = 517 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_INFO_ABILITY] = {
         .bg = 0,
@@ -686,7 +726,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 18,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 531 + TempOffset,
+        .baseBlock = 531 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_INFO_MEMO] = {
         .bg = 0,
@@ -695,48 +735,48 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 18,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 603 + TempOffset,
+        .baseBlock = 603 + TempOffset + 144,
     },
 };
 
 static const struct WindowTemplate sPageBonusStatsTemplate[] =
 {
-	[PSS_DATA_WINDOW_BONUS_STAT_0] = {
-		.bg = 0,
-		.tilemapLeft = 11,
-		.tilemapTop = 4,
-		.width = 18,
-		.height = 4,
-		.paletteNum = 6,
-		.baseBlock = 495,
-	},
-    [PSS_DATA_WINDOW_BONUS_STAT_1] = {
-		.bg = 0,
-		.tilemapLeft = 11,
-		.tilemapTop = 8,
-		.width = 18,
-		.height = 4,
-		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset * 1,
-	},
-    [PSS_DATA_WINDOW_BONUS_STAT_2] = {
-		.bg = 0,
-		.tilemapLeft = 11,
-		.tilemapTop = 12,
-		.width = 18,
-		.height = 4,
-		.paletteNum = 6,
-		.baseBlock = 495  + TempOffset * 2,
-	},
-    [PSS_DATA_WINDOW_BONUS_STAT_3] = {
-		.bg = 0,
-		.tilemapLeft = 11,
-		.tilemapTop = 16,
-		.width = 18,
-		.height = 4,
-		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset * 3,
-	},
+    [PSS_DATA_WINDOW_BONUS_STATS_LEFT] = {
+        .bg = 0,
+        .tilemapLeft = 14,
+        .tilemapTop = 4,
+        .width = 6,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 613 + TempOffset + 144,
+    },
+    [PSS_DATA_WINDOW_BONUS_STATS_RIGHT] = {
+        .bg = 0,
+        .tilemapLeft = 27,
+        .tilemapTop = 7,
+        .width = 3,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 613 + TempOffset + 36 + 144,
+    },
+    [PSS_DATA_WINDOW_BONUS_STAT_LEFT2] = {
+        .bg = 0,
+        .tilemapLeft = 16,
+        .tilemapTop = 12,
+        .width = 6,
+        .height = 4,
+        .paletteNum = 6,
+        .baseBlock = 613  + TempOffset + 36 + 36 + 144,
+    },
+    [PSS_DATA_WINDOW_BONUS_STAT_RIGHT2] = {
+        .bg = 0,
+        .tilemapLeft = 26,
+        .tilemapTop = 16,
+        .width = 6,
+        .height = 4,
+        .paletteNum = 6,
+        .baseBlock = 613 + TempOffset + 36 + 36 + 36 + 144,
+    },
 };
 
 static const struct WindowTemplate sPageTraitsTemplate[] =
@@ -748,7 +788,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset,
+		.baseBlock = 495 + TempOffset + 144,
 	},
     [PSS_DATA_WINDOW_TRAITS2] = {
 		.bg = 0,
@@ -757,7 +797,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72,
+		.baseBlock = 495 + TempOffset + 72 + 144,
 	},
     [PSS_DATA_WINDOW_TRAITS3] = {
 		.bg = 0,
@@ -766,7 +806,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72 + 72,
+		.baseBlock = 495 + TempOffset + 72 + 72 + 144,
 	},
     [PSS_DATA_WINDOW_TRAITS4] = {
 		.bg = 0,
@@ -775,7 +815,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72 + 72 + 72,
+		.baseBlock = 495 + TempOffset + 72 + 72 + 72 + 144,
 	},
 };
 
@@ -788,7 +828,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 10,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset,
+        .baseBlock = 495 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT] = {
         .bg = 0,
@@ -797,7 +837,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 10,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 515 + TempOffset,
+        .baseBlock = 515 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_LEFT] = {
         .bg = 0,
@@ -806,7 +846,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 6,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 535 + TempOffset,
+        .baseBlock = 535 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_RIGHT] = {
         .bg = 0,
@@ -815,7 +855,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 3,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 571 + TempOffset,
+        .baseBlock = 571 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_EXP] = {
         .bg = 0,
@@ -824,7 +864,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 6,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 589 + TempOffset,
+        .baseBlock = 589 + TempOffset + 144,
     },
 };
 static const struct WindowTemplate sPageMovesTemplate[] = // This is used for both battle and contest moves
@@ -836,7 +876,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 9,
         .height = 10,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset,
+        .baseBlock = 495 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_MOVE_PP] = {
         .bg = 0,
@@ -845,7 +885,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 6,
         .height = 10,
         .paletteNum = 8,
-        .baseBlock = 585 + TempOffset,
+        .baseBlock = 585 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_MOVE_DESCRIPTION] = {
         .bg = 0,
@@ -854,7 +894,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 20,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 645 + TempOffset,
+        .baseBlock = 645 + TempOffset + 144,
     },
 };
 
@@ -1684,6 +1724,7 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         break;
     case 2:
         ExtractMonSkillStatsData(mon, sum);
+        ExtractMonBonusStatsData(mon, sum);
         break;
     case 3:
         GetMonData(mon, MON_DATA_OT_NAME, sum->OTName);
@@ -2017,13 +2058,6 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
         sum->speed = GetMonData(mon, MON_DATA_SPEED);
-
-        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
-        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
-        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
-        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
-        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
-        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
     }
     else
     {
@@ -2036,7 +2070,22 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK2);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF2);
         sum->speed = GetMonData(mon, MON_DATA_SPEED2);
-        
+    }
+}
+
+void ExtractMonBonusStatsData(struct Pokemon *mon, struct PokeSummary *sum)
+{
+    if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
+    {
+        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
+        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
+        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
+        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
+        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
+        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
+    }
+    else
+    {
         sum->armor = GetMonData(mon, MON_DATA_ARMOR);
         sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
         sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
@@ -3395,7 +3444,7 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_BONUS_STATS_TITLE, gText_PkmnBonusStats, 2, 1, 0, 1);
 
     ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
-
+    
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL, gText_RentalPkmn, 0, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TYPE, gText_TypeSlash, 0, 1, 0, 0);
     statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HP4, 42);
@@ -3410,6 +3459,36 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_SpDef4, statsXPos, 17, 0, 1);
     statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Speed2, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_Speed2, statsXPos, 33, 0, 1);
+
+    
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerAttack, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerAttack, statsXPos, 1, 0, 1);
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerDefense, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerDefense, statsXPos, 17, 0, 1);
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Armor, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_Armor, statsXPos, 33, 0, 1);
+    
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_TrueDamage, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_TrueDamage, statsXPos, 1, 0, 1);
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HotStreak, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_HotStreak, statsXPos, 17, 0, 1);
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Gambit, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_Gambit, statsXPos, 33, 0, 1);
+
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Luck, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_Luck, statsXPos, 1, 0, 1);
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_CritChance, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_CritChance, statsXPos, 17, 0, 1);
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_DoubleHit, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_DoubleHit, statsXPos, 33, 0, 1);
+    
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Waxing, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Waxing, statsXPos, 1, 0, 1);
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Sexism, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Sexism, statsXPos, 17, 0, 1);
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Parry, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Parry, statsXPos, 33, 0, 1);
+
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_ExpPoints, 6, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_NextLv, 6, 17, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATUS, gText_Status, 2, 1, 0, 1);
@@ -3479,13 +3558,14 @@ static void PutPageWindowTilemaps(u8 page)
                 PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_RELEARN);
         }
         break;
-
     case PSS_PAGE_BONUS_STATS:
         PutWindowTilemap(PSS_LABEL_WINDOW_BONUS_STATS_TITLE);
-        //PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_UTILITY);
+        PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT);
+        PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT);
+        PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2);
+        PutWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2);
         break;
     }
-    
 
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         PutWindowTilemap(sMonSummaryScreen->windowIds[i]);
@@ -3541,8 +3621,15 @@ static void ClearPageWindowTilemaps(u8 page)
                 ClearWindowTilemap(PSS_LABEL_WINDOW_PROMPT_RELEARN);
         }
         break;
+     case PSS_PAGE_BONUS_STATS:
+        {
+            ClearWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT);
+            ClearWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT);
+            ClearWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2);
+            ClearWindowTilemap(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2);
+        }
+        break;
     }
-
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         RemoveWindowByIndex(i);
 
@@ -3865,75 +3952,45 @@ static void PrintTraits(void)
 
 static void PrintBonusStats(void)
 {
-    PrintMonBonusStats(0);
-    PrintMonBonusStats(1);
-    PrintMonBonusStats(2);
-    PrintMonBonusStats(3);
-    PrintMonBonusStats(4);
-    PrintMonBonusStats(5);
-    PrintMonBonusStats(6);
-    PrintMonBonusStats(7);
-    PrintMonBonusStats(8);
-    PrintMonBonusStats(9);
-    PrintMonBonusStats(10);
-    PrintMonBonusStats(11);
-    PrintMonBonusStats(12);
-    PrintMonBonusStats(13);
+    struct PokeSummary *sum = &sMonSummaryScreen->summary;
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_BONUS_STATS_LEFT], 0);
+
+    ExtractMonBonusStatsData(mon, sum);
+
+    BufferLeftBonusStats();
+
+
+
+    PrintLeftBonusStats();
+    //BufferRightColumnStats();
+    //PrintRightColumnStats();
+    
 }
 
 static void Task_PrintBonusStats(u8 taskId)
 {
-    s16* data = gTasks[taskId].data;
-
+    s16 *data = gTasks[taskId].data;
     switch (data[0])
     {
     case 1:
-        PrintMonBonusStats(0);
+        BufferLeftBonusStats();
         break;
     case 2:
-        PrintMonBonusStats(1);
+        PrintLeftBonusStats();
         break;
     case 3:
-        PrintMonBonusStats(2);
+        //BufferRightColumnStats();
         break;
     case 4:
-        PrintMonBonusStats(3);
+        //PrintRightColumnStats();
         break;
-    case 5:
-        PrintMonBonusStats(5);
-        break;
-    case 6:
-        PrintMonBonusStats(6);
-        break;
-    case 7:
-        PrintMonBonusStats(7);
-        break;
-    case 8:
-        PrintMonBonusStats(8);
-        break;
-    case 9:
-        PrintMonBonusStats(9);
-        break;
-    case 10:
-        PrintMonBonusStats(10);
-        break;
-    case 11:
-        PrintMonBonusStats(11);
-        break;
-    case 12:
-        PrintMonBonusStats(12);
-        break;
-    case 13:
-        PrintMonBonusStats(13);
-        break;
-    case 14:
-        PrintMonBonusStats(14);
-        break;
-    case 15:
+    case 5: 
         DestroyTask(taskId);
-        return;
+        return; 
     }
     data[0]++;
+    return;
 }
 
 static void Task_PrintTraits(u8 taskId)
@@ -3986,67 +4043,17 @@ static void PrintMonTraits(u8 innateIndex)
         PrintTextOnWindow(AddWindowFromTemplateList(sPageTraitsTemplate, innateIndex), gAbilitiesInfo[trait].description, 0, 17, 0, 0);
     }
 }
-
+/*
 static void PrintMonBonusStats(u8 innateIndex)
 {
-    u8 stat = 0;
-    struct PokeSummary* sum = &sMonSummaryScreen->summary;
-
-    switch (innateIndex)
-    {
-    case 0:
-        BufferLeftBonusStats();
-        break;
-    case 1:
-        PrintLeftBonusStats();
-        break;
-    case 2:
-        //stat = sum->armor;
-        break;
-    case 3:
-        //stat = sum->gambit;
-        break;
-    case 4:
-        //stat = sum->truDmg;
-        break;
-    case 5:
-        //stat = sum->hotStrk;
-        break;
-    case 6:
-        stat = gSpeciesInfo[sum->species].waxing;
-        break;
-    case 7:
-        stat = gSpeciesInfo[sum->species].luck;
-        break;
-    case 8:
-        stat = gSpeciesInfo[sum->species].parry;
-        break;
-    case 9:
-        stat = gSpeciesInfo[sum->species].firstStrike;
-        break;
-    case 10:
-        stat = gSpeciesInfo[sum->species].lifeSteal;
-        break;
-    case 11:
-        stat = gSpeciesInfo[sum->species].sexism;
-        break;
-    case 12:
-        stat = gSpeciesInfo[sum->species].doubleHit;
-        break;
-    case 13:
-        stat = gSpeciesInfo[sum->species].critChance;
-        break;
-    default:
-        break;
-    }
-        
-    //int x = GetStringRightAlignXOffset(FONT_NORMAL, gAbilitiesInfo[trait].name, 18*8);
-
-    //PrintTextOnWindow(AddWindowFromTemplateList(sPageTraitsTemplate, innateIndex), stat, x, 1, 0, 1);
-   // PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, innateIndex), stat, 0, 17, 0, 0);
+    /* Kept as a no-op; PrintBonusStats handles immediate printing of the whole
+     * bonus page. This function used to print individual entries incrementally
+     * (via Task_PrintBonusStats) but the immediate implementation is preferred.
+     
+    (void)innateIndex;
     return;
 }
-
+*/
 static void PrintSkillsPageText(void)
 {
     PrintHeldItemName();
@@ -4235,37 +4242,43 @@ static void BufferLeftColumnIvEvStats(void)
 
 static void PrintLeftBonusStats(void)
 {
-
-    PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STAT_0), gStringVar4, 4, 1, 0, 0);
+    /* If someone still prepares gStringVar4 via BufferLeftBonusStats, print it
+     * into the first bonus stats data window. Otherwise PrintBonusStats prints
+     * groups directly. Keep this helper implemented to avoid leaving a stub. */
+     
+    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 46);
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STATS_LEFT), gStringVar4, x, 1, 0, 0);
 }
+
 
 static void BufferLeftBonusStats(void)
 {
     u8 *armorString = Alloc(20);
     u8 *lerAtkString = Alloc(20);
     u8 *lerDefString = Alloc(20);
-    u8 *truDmgString = Alloc(20);
-    u8 *gambitString = Alloc(20);
-    u8 *hotStrkString = Alloc(20);
+    //u8 *truDmgString = Alloc(20);
+    //u8 *gambitString = Alloc(20);
+    //u8 *hotStrkString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
 
     BufferStat(armorString, STAT_ARMOR, sMonSummaryScreen->summary.armor, 0, 3);
     BufferStat(lerAtkString, STAT_LERATK, sMonSummaryScreen->summary.lerAtk, 1, 3);
     BufferStat(lerDefString, STAT_LERDEF, sMonSummaryScreen->summary.lerDef, 2, 3);
-    BufferStat(truDmgString, STAT_TRUDMG, sMonSummaryScreen->summary.truDmg, 3, 3);
-    BufferStat(gambitString, STAT_GAMBIT, sMonSummaryScreen->summary.gambit, 4, 3);
-    BufferStat(hotStrkString, STAT_HOTSTK, sMonSummaryScreen->summary.hotStrk, 5, 3);
+    //BufferStat(truDmgString, STAT_TRUDMG, sMonSummaryScreen->summary.truDmg, 3, 3);
+   //BufferStat(gambitString, STAT_GAMBIT, sMonSummaryScreen->summary.gambit, 4, 3);
+    //BufferStat(hotStrkString, STAT_HOTSTK, sMonSummaryScreen->summary.hotStrk, 5, 3);
 
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusLeftColumnLayout);
 
     Free(armorString);
     Free(lerAtkString);
     Free(lerDefString);
-    Free(truDmgString);
-    Free(gambitString);
-    Free(hotStrkString);
+    //Free(truDmgString);
+    //Free(gambitString);
+    //Free(hotStrkString);
 }
+    
 static void PrintLeftColumnStats(void)
 {
     int x;

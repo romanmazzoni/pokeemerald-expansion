@@ -364,6 +364,21 @@ const u8 gText_Defense3[] = _("DEFENSE");
 const u8 gText_SpAtk4[] = _("SP. ATK");
 const u8 gText_SpDef4[] = _("SP. DEF");
 const u8 gText_Speed2[] = _("SPEED");
+
+const u8 gText_HotStreak[] = _("HOTSTRK");
+const u8 gText_LerAttack[] = _("LER. ATK");
+const u8 gText_LerDefense[] = _("LER. DEF");
+const u8 gText_Gambit[] = _("GAMBIT");
+const u8 gText_Armor[] = _("ARMOR");
+const u8 gText_TrueDamage[] = _("TRUE DMG");
+
+const u8 gText_CritChance[] = _("CRIT");
+const u8 gText_Luck[] = _("LUCK");
+const u8 gText_Waxing[] = _("WAXING");
+const u8 gText_Sexism[] = _("SEXISM");
+const u8 gText_Parry[] = _("PARRY");
+const u8 gText_DoubleHit[] = _("DBL HIT");
+
 const u8 gText_HP4[] = _("HP");
 const u8 gText_EmptyString8[] = _(""); // Unused
 const u8 gText_OTSlash[] = _("OT/");

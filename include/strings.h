@@ -698,6 +698,21 @@ extern const u8 gText_Defense3[];
 extern const u8 gText_SpAtk4[];
 extern const u8 gText_SpDef4[];
 extern const u8 gText_Speed2[];
+
+extern const u8 gText_HotStreak[];
+extern const u8 gText_LerAttack[];
+extern const u8 gText_LerDefense[];
+extern const u8 gText_Gambit[];
+extern const u8 gText_Armor[];
+extern const u8 gText_TrueDamage[];
+
+extern const u8 gText_CritChance[];
+extern const u8 gText_Luck[];
+extern const u8 gText_Waxing[];
+extern const u8 gText_Sexism[];
+extern const u8 gText_Parry[];
+extern const u8 gText_DoubleHit[];
+
 extern const u8 gText_ExpPoints[];
 extern const u8 gText_NextLv[];
 extern const u8 gText_Status[];
