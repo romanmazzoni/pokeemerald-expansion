@@ -713,6 +713,9 @@ extern const u8 gText_Sexism[];
 extern const u8 gText_Parry[];
 extern const u8 gText_DoubleHit[];
 
+extern const u8 gText_lifeSteal[];
+extern const u8 gText_firstStrike[];
+
 extern const u8 gText_ExpPoints[];
 extern const u8 gText_NextLv[];
 extern const u8 gText_Status[];

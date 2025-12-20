@@ -379,6 +379,9 @@ const u8 gText_Sexism[] = _("SEXISM");
 const u8 gText_Parry[] = _("PARRY");
 const u8 gText_DoubleHit[] = _("DBL HIT");
 
+const u8 gText_firstStrike[] = _("FRST STK");
+const u8 gText_lifeSteal[] = _("LIFESTL");
+
 const u8 gText_HP4[] = _("HP");
 const u8 gText_EmptyString8[] = _(""); // Unused
 const u8 gText_OTSlash[] = _("OT/");

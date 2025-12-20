@@ -129,14 +129,7 @@
 //Dynamic fields for the Pokemon Bonus stats page
 #define PSS_DATA_WINDOW_BONUS_STATS_LEFT 0
 #define PSS_DATA_WINDOW_BONUS_STATS_RIGHT 1
-#define PSS_DATA_WINDOW_BONUS_STAT_LEFT2 2
-#define PSS_DATA_WINDOW_BONUS_STAT_RIGHT2 3
-#define PSS_DATA_WINDOW_BONUS_STAT_4 4
-#define PSS_DATA_WINDOW_BONUS_STAT_5 5
-#define PSS_DATA_WINDOW_BONUS_STAT_6 6
-#define PSS_DATA_WINDOW_BONUS_STAT_7 7
-#define PSS_DATA_WINDOW_BONUS_STAT_8 8
-#define PSS_DATA_WINDOW_BONUS_STAT_9 9
+
 
 
 // for the spriteIds field in PokemonSummaryScreenData
@@ -684,7 +677,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .tilemapLeft = 10,
         .tilemapTop = 10,
         .width = 6,
-        .height = 6,
+        .height = 8,
         .paletteNum = 6,
         .baseBlock = 583,
     },
@@ -693,9 +686,9 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .tilemapLeft = 20,
         .tilemapTop = 10,
         .width = 6,
-        .height = 6,
+        .height = 8,
         .paletteNum = 6,
-        .baseBlock = 619,
+        .baseBlock = 631,
     },
     [PSS_LABEL_WINDOW_END] = DUMMY_WIN_TEMPLATE
 };
@@ -710,7 +703,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 11,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset + 144,
+        .baseBlock = 495 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_INFO_ID] = {
         .bg = 0,
@@ -719,7 +712,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 7,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 517 + TempOffset + 144,
+        .baseBlock = 517 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_INFO_ABILITY] = {
         .bg = 0,
@@ -728,7 +721,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 18,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 531 + TempOffset + 144,
+        .baseBlock = 531 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_INFO_MEMO] = {
         .bg = 0,
@@ -737,7 +730,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .width = 18,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 603 + TempOffset + 144,
+        .baseBlock = 603 + TempOffset + 168,
     },
 };
 
@@ -748,36 +741,18 @@ static const struct WindowTemplate sPageBonusStatsTemplate[] =
         .tilemapLeft = 16,
         .tilemapTop = 4,
         .width = 4,
-        .height = 12,
+        .height = 14,
         .paletteNum = 6,
-        .baseBlock = 613 + TempOffset + 144,
+        .baseBlock = 613 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_BONUS_STATS_RIGHT] = {
         .bg = 0,
         .tilemapLeft = 27,
         .tilemapTop = 4,
         .width = 4,
-        .height = 12,
+        .height = 14,
         .paletteNum = 6,
-        .baseBlock = 613 + TempOffset + 48 + 144,
-    },
-    [PSS_DATA_WINDOW_BONUS_STAT_LEFT2] = {
-        .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 12,
-        .width = 6,
-        .height = 4,
-        .paletteNum = 6,
-        .baseBlock = 613  + TempOffset + 36 + 36 + 144,
-    },
-    [PSS_DATA_WINDOW_BONUS_STAT_RIGHT2] = {
-        .bg = 0,
-        .tilemapLeft = 26,
-        .tilemapTop = 16,
-        .width = 6,
-        .height = 4,
-        .paletteNum = 6,
-        .baseBlock = 613 + TempOffset + 36 + 36 + 36 + 144,
+        .baseBlock = 613 + TempOffset + 56 + 168,
     },
 };
 
@@ -790,7 +765,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 144,
+		.baseBlock = 495 + TempOffset + 168,
 	},
     [PSS_DATA_WINDOW_TRAITS2] = {
 		.bg = 0,
@@ -799,7 +774,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72 + 144,
+		.baseBlock = 495 + TempOffset + 72 + 168,
 	},
     [PSS_DATA_WINDOW_TRAITS3] = {
 		.bg = 0,
@@ -808,7 +783,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72 + 72 + 144,
+		.baseBlock = 495 + TempOffset + 72 + 72 + 168,
 	},
     [PSS_DATA_WINDOW_TRAITS4] = {
 		.bg = 0,
@@ -817,7 +792,7 @@ static const struct WindowTemplate sPageTraitsTemplate[] =
 		.width = 18,
 		.height = 4,
 		.paletteNum = 6,
-		.baseBlock = 495 + TempOffset + 72 + 72 + 72 + 144,
+		.baseBlock = 495 + TempOffset + 72 + 72 + 72 + 168,
 	},
 };
 
@@ -830,7 +805,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 10,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset + 144,
+        .baseBlock = 495 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT] = {
         .bg = 0,
@@ -839,7 +814,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 10,
         .height = 2,
         .paletteNum = 6,
-        .baseBlock = 515 + TempOffset + 144,
+        .baseBlock = 515 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_LEFT] = {
         .bg = 0,
@@ -848,7 +823,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 6,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 535 + TempOffset + 144,
+        .baseBlock = 535 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_RIGHT] = {
         .bg = 0,
@@ -857,7 +832,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 3,
         .height = 6,
         .paletteNum = 6,
-        .baseBlock = 571 + TempOffset + 144,
+        .baseBlock = 571 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_EXP] = {
         .bg = 0,
@@ -866,7 +841,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 6,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 589 + TempOffset + 144,
+        .baseBlock = 589 + TempOffset + 168,
     },
 };
 static const struct WindowTemplate sPageMovesTemplate[] = // This is used for both battle and contest moves
@@ -878,7 +853,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 9,
         .height = 10,
         .paletteNum = 6,
-        .baseBlock = 495 + TempOffset + 144,
+        .baseBlock = 495 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_MOVE_PP] = {
         .bg = 0,
@@ -887,7 +862,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 6,
         .height = 10,
         .paletteNum = 8,
-        .baseBlock = 585 + TempOffset + 144,
+        .baseBlock = 585 + TempOffset + 168,
     },
     [PSS_DATA_WINDOW_MOVE_DESCRIPTION] = {
         .bg = 0,
@@ -896,7 +871,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .width = 20,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 645 + TempOffset + 144,
+        .baseBlock = 645 + TempOffset + 168,
     },
 };
 
@@ -948,8 +923,8 @@ static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 
 static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
-static const u8 sStatsBonusLeftColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}");
-static const u8 sStatsBonusRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}");
+static const u8 sStatsBonusLeftColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}\n{DYNAMIC 6}");
+static const u8 sStatsBonusRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}\n{DYNAMIC 6}");
 
 #define TAG_MOVE_SELECTOR 30000
 #define TAG_MON_STATUS 30001
@@ -3492,6 +3467,12 @@ static void PrintPageNamesAndStats(void)
     statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Parry, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Parry, statsXPos, 33, 0, 1);
 
+    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_lifeSteal, 42);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_lifeSteal, statsXPos, 49, 0, 1);
+
+    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_firstStrike, 36);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_firstStrike, statsXPos, 49, 0, 1);
+
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_ExpPoints, 6, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_NextLv, 6, 17, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATUS, gText_Status, 2, 1, 0, 1);
@@ -4262,6 +4243,7 @@ static void BufferLeftBonusStats(void)
     u8 *luckString = Alloc(20);
     u8 *critString = Alloc(20);
     u8 *dblHitString = Alloc(20);
+    u8 *lifeStealString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
 
@@ -4271,6 +4253,7 @@ static void BufferLeftBonusStats(void)
     BufferStat(luckString, STAT_LUCK, gSpeciesInfo[sMonSummaryScreen->summary.species].luck, 3, 3);
     BufferStat(critString, STAT_GAMBIT, gSpeciesInfo[sMonSummaryScreen->summary.species].critChance, 4, 3);
     BufferStat(dblHitString, STAT_HOTSTK, gSpeciesInfo[sMonSummaryScreen->summary.species].doubleHit, 5, 3);
+    BufferStat(lifeStealString, STAT_LIFESTL, gSpeciesInfo[sMonSummaryScreen->summary.species].lifeSteal, 6, 3);
 
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusLeftColumnLayout);
 
@@ -4280,6 +4263,7 @@ static void BufferLeftBonusStats(void)
     Free(luckString);
     Free(critString);
     Free(dblHitString);
+    Free(lifeStealString);
 }
 
 static void PrintRightBonusStats(void)
@@ -4288,7 +4272,7 @@ static void PrintRightBonusStats(void)
      * into the first bonus stats data window. Otherwise PrintBonusStats prints
      * groups directly. Keep this helper implemented to avoid leaving a stub. */
      
-    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 20)- 8 ;
+    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 20) ;
     PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STATS_RIGHT), gStringVar4, x, 1, 0, 0);
 }
 
@@ -4301,6 +4285,7 @@ static void BufferRightBonusStats(void)
     u8 *waxingString = Alloc(20);
     u8 *sexismString = Alloc(20);
     u8 *parryString = Alloc(20);
+    u8 *firstStrikeString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
 
@@ -4310,6 +4295,7 @@ static void BufferRightBonusStats(void)
     BufferStat(waxingString, STAT_WAXING, gSpeciesInfo[sMonSummaryScreen->summary.species].waxing, 3, 3);
     BufferStat(sexismString, STAT_SEXISM, gSpeciesInfo[sMonSummaryScreen->summary.species].sexism, 4, 3);
     BufferStat(parryString, STAT_PARRY, gSpeciesInfo[sMonSummaryScreen->summary.species].parry, 5, 3);
+    BufferStat(firstStrikeString, STAT_FIRSTSTRIKE, gSpeciesInfo[sMonSummaryScreen->summary.species].firstStrike, 6, 3);
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusRightColumnLayout);
 
     Free(trudmgString);
@@ -4318,6 +4304,7 @@ static void BufferRightBonusStats(void)
     Free(waxingString);
     Free(sexismString);
     Free(parryString);
+    Free(firstStrikeString);
 }
     
 static void PrintLeftColumnStats(void)
