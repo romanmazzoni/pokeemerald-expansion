@@ -388,6 +388,8 @@ static void Task_PrintBonusStats(u8);
 static void BufferLeftBonusStats(void);
 static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n);
 static void PrintLeftBonusStats(void);
+static void BufferRightBonusStats(void);
+static void PrintRightBonusStats(void);
 
 
 static const struct BgTemplate sBgTemplates[] =
@@ -743,21 +745,21 @@ static const struct WindowTemplate sPageBonusStatsTemplate[] =
 {
     [PSS_DATA_WINDOW_BONUS_STATS_LEFT] = {
         .bg = 0,
-        .tilemapLeft = 14,
+        .tilemapLeft = 16,
         .tilemapTop = 4,
-        .width = 6,
-        .height = 6,
+        .width = 4,
+        .height = 12,
         .paletteNum = 6,
         .baseBlock = 613 + TempOffset + 144,
     },
     [PSS_DATA_WINDOW_BONUS_STATS_RIGHT] = {
         .bg = 0,
         .tilemapLeft = 27,
-        .tilemapTop = 7,
-        .width = 3,
-        .height = 6,
+        .tilemapTop = 4,
+        .width = 4,
+        .height = 12,
         .paletteNum = 6,
-        .baseBlock = 613 + TempOffset + 36 + 144,
+        .baseBlock = 613 + TempOffset + 48 + 144,
     },
     [PSS_DATA_WINDOW_BONUS_STAT_LEFT2] = {
         .bg = 0,
@@ -947,6 +949,7 @@ static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYN
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 static const u8 sStatsBonusLeftColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}");
+static const u8 sStatsBonusRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}\n{DYNAMIC 4}\n{DYNAMIC 5}");
 
 #define TAG_MOVE_SELECTOR 30000
 #define TAG_MON_STATUS 30001
@@ -3980,10 +3983,10 @@ static void Task_PrintBonusStats(u8 taskId)
         PrintLeftBonusStats();
         break;
     case 3:
-        //BufferRightColumnStats();
+        BufferRightBonusStats();
         break;
     case 4:
-        //PrintRightColumnStats();
+        PrintRightBonusStats();
         break;
     case 5: 
         DestroyTask(taskId);
@@ -4246,7 +4249,7 @@ static void PrintLeftBonusStats(void)
      * into the first bonus stats data window. Otherwise PrintBonusStats prints
      * groups directly. Keep this helper implemented to avoid leaving a stub. */
      
-    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 46);
+    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 46)- 14 ;
     PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STATS_LEFT), gStringVar4, x, 1, 0, 0);
 }
 
@@ -4256,27 +4259,65 @@ static void BufferLeftBonusStats(void)
     u8 *armorString = Alloc(20);
     u8 *lerAtkString = Alloc(20);
     u8 *lerDefString = Alloc(20);
-    //u8 *truDmgString = Alloc(20);
-    //u8 *gambitString = Alloc(20);
-    //u8 *hotStrkString = Alloc(20);
+    u8 *luckString = Alloc(20);
+    u8 *critString = Alloc(20);
+    u8 *dblHitString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
 
     BufferStat(armorString, STAT_ARMOR, sMonSummaryScreen->summary.armor, 0, 3);
     BufferStat(lerAtkString, STAT_LERATK, sMonSummaryScreen->summary.lerAtk, 1, 3);
     BufferStat(lerDefString, STAT_LERDEF, sMonSummaryScreen->summary.lerDef, 2, 3);
-    //BufferStat(truDmgString, STAT_TRUDMG, sMonSummaryScreen->summary.truDmg, 3, 3);
-   //BufferStat(gambitString, STAT_GAMBIT, sMonSummaryScreen->summary.gambit, 4, 3);
-    //BufferStat(hotStrkString, STAT_HOTSTK, sMonSummaryScreen->summary.hotStrk, 5, 3);
+    BufferStat(luckString, STAT_LUCK, gSpeciesInfo[sMonSummaryScreen->summary.species].luck, 3, 3);
+    BufferStat(critString, STAT_GAMBIT, gSpeciesInfo[sMonSummaryScreen->summary.species].critChance, 4, 3);
+    BufferStat(dblHitString, STAT_HOTSTK, gSpeciesInfo[sMonSummaryScreen->summary.species].doubleHit, 5, 3);
 
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusLeftColumnLayout);
 
     Free(armorString);
     Free(lerAtkString);
     Free(lerDefString);
-    //Free(truDmgString);
-    //Free(gambitString);
-    //Free(hotStrkString);
+    Free(luckString);
+    Free(critString);
+    Free(dblHitString);
+}
+
+static void PrintRightBonusStats(void)
+{
+    /* If someone still prepares gStringVar4 via BufferLeftBonusStats, print it
+     * into the first bonus stats data window. Otherwise PrintBonusStats prints
+     * groups directly. Keep this helper implemented to avoid leaving a stub. */
+     
+    int x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 20)- 8 ;
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageBonusStatsTemplate, PSS_DATA_WINDOW_BONUS_STATS_RIGHT), gStringVar4, x, 1, 0, 0);
+}
+
+
+static void BufferRightBonusStats(void)
+{
+    u8 *trudmgString = Alloc(20);
+    u8 *hotstreakString = Alloc(20);
+    u8 *gambitString = Alloc(20);
+    u8 *waxingString = Alloc(20);
+    u8 *sexismString = Alloc(20);
+    u8 *parryString = Alloc(20);
+
+    DynamicPlaceholderTextUtil_Reset();
+
+    BufferStat(trudmgString, STAT_TRUDMG, sMonSummaryScreen->summary.truDmg, 0, 3);
+    BufferStat(hotstreakString, STAT_HOTSTK, sMonSummaryScreen->summary.hotStrk, 1, 3);
+    BufferStat(gambitString, STAT_GAMBIT, sMonSummaryScreen->summary.gambit, 2, 3);
+    BufferStat(waxingString, STAT_WAXING, gSpeciesInfo[sMonSummaryScreen->summary.species].waxing, 3, 3);
+    BufferStat(sexismString, STAT_SEXISM, gSpeciesInfo[sMonSummaryScreen->summary.species].sexism, 4, 3);
+    BufferStat(parryString, STAT_PARRY, gSpeciesInfo[sMonSummaryScreen->summary.species].parry, 5, 3);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsBonusRightColumnLayout);
+
+    Free(trudmgString);
+    Free(hotstreakString);
+    Free(gambitString);
+    Free(waxingString);
+    Free(sexismString);
+    Free(parryString);
 }
     
 static void PrintLeftColumnStats(void)
@@ -4290,6 +4331,7 @@ static void PrintLeftColumnStats(void)
 
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), gStringVar4, x, 1, 0, 0);
 }
+
 
 static void BufferRightColumnStats(void)
 {
