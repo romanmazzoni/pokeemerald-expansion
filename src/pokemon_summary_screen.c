@@ -1621,31 +1621,35 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 7:
+        LZDecompressWram(gSummaryPage_BonusStats_Tilemap, sMonSummaryScreen->bgTilemapBuffers[PSS_PAGE_BONUS_STATS][1]);
+        sMonSummaryScreen->switchCounter++;
+        break;
+    case 8:
         LoadPalette(gSummaryScreen_Pal, BG_PLTT_ID(0), 8 * PLTT_SIZE_4BPP);
         LoadPalette(&gPPTextPalette, BG_PLTT_ID(8) + 1, PLTT_SIZEOF(16 - 1));
         sMonSummaryScreen->switchCounter++;
         break;
-    case 8:
+    case 9:
         LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
         sMonSummaryScreen->switchCounter++;
         break;
-    case 9:
+    case 10:
         LoadCompressedSpriteSheet(&sMoveSelectorSpriteSheet);
         sMonSummaryScreen->switchCounter++;
         break;
-    case 10:
+    case 11:
         LoadCompressedSpriteSheet(&sStatusIconsSpriteSheet);
         sMonSummaryScreen->switchCounter++;
         break;
-    case 11:
+    case 12:
         LoadSpritePalette(&sStatusIconsSpritePalette);
         sMonSummaryScreen->switchCounter++;
         break;
-    case 12:
+    case 13:
         LoadSpritePalette(&sMoveSelectorSpritePal);
         sMonSummaryScreen->switchCounter++;
         break;
-    case 13:
+    case 14:
         LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
         LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&gSpritePal_CategoryIcons);
@@ -2036,6 +2040,13 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
         sum->speed = GetMonData(mon, MON_DATA_SPEED);
+
+        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
+        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
+        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
+        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
+        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
+        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
     }
     else
     {
@@ -2048,29 +2059,25 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
         sum->spatk = GetMonData(mon, MON_DATA_SPATK2);
         sum->spdef = GetMonData(mon, MON_DATA_SPDEF2);
         sum->speed = GetMonData(mon, MON_DATA_SPEED2);
+
+        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
+        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
+        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
+        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
+        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
+        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
     }
 }
 
 void ExtractMonBonusStatsData(struct Pokemon *mon, struct PokeSummary *sum)
 {
-    if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
-    {
         sum->armor = GetMonData(mon, MON_DATA_ARMOR);
         sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
         sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
         sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
         sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
         sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
-    }
-    else
-    {
-        sum->armor = GetMonData(mon, MON_DATA_ARMOR);
-        sum->lerAtk = GetMonData(mon, MON_DATA_LERATK);
-        sum->lerDef = GetMonData(mon, MON_DATA_LERDEF);
-        sum->truDmg = GetMonData(mon, MON_DATA_TRUDMG);
-        sum->gambit = GetMonData(mon, MON_DATA_GAMBIT);
-        sum->hotStrk = GetMonData(mon, MON_DATA_HOTSTRK);
-    }
+
 }
 
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum)

@@ -1875,10 +1875,10 @@ void CalculateMonStats(struct Pokemon *mon)
 
     CALC_STAT(baseLerAttack, lerAttackIV, lerAttackEV, STAT_LERATK, MON_DATA_LERATK)
     CALC_STAT(baseLerDefense, lerDefenseIV, lerDefenseEV, STAT_LERDEF, MON_DATA_LERDEF)
-    CALC_STAT(armor, armorIV, 0, STAT_ARMOR, MON_DATA_ARMOR)
-    CALC_STAT(trueDamage, trudmgIV, 0, STAT_TRUDMG, MON_DATA_TRUDMG)
-    CALC_STAT(hotStreak, hotStrkIV, 0, STAT_HOTSTK, MON_DATA_HOTSTRK)
-    CALC_STAT(gambit, 0, 0, STAT_GAMBIT, MON_DATA_GAMBIT)
+    CALC_STAT(armor, armorIV, defenseEV, STAT_ARMOR, MON_DATA_ARMOR)
+    CALC_STAT(trueDamage, trudmgIV, hpEV, STAT_TRUDMG, MON_DATA_TRUDMG)
+    CALC_STAT(hotStreak, hotStrkIV, spAttackEV, STAT_HOTSTK, MON_DATA_HOTSTRK)
+    CALC_STAT(gambit, spDefenseIV, spDefenseEV, STAT_GAMBIT, MON_DATA_GAMBIT)
 
     // Since a pokemon's maxHP data could either not have
     // been initialized at this point or this pokemon is
@@ -2975,7 +2975,7 @@ void SetMonData(struct Pokemon *mon, s32 field, const void *dataArg)
     case MON_DATA_ARMOR:
         SET16(mon->armor);
         break;
-    case MON_DATA_TRUDMG_EV:
+    case MON_DATA_TRUDMG:
         SET16(mon->trueDamage);
         break;
     case MON_DATA_MAIL:
