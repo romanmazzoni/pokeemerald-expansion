@@ -2452,19 +2452,13 @@ u32 GetMonData3(struct Pokemon *mon, s32 field, u8 *data)
         ret = mon->spDefense;
         break;
     case MON_DATA_LERATK:
-        ret = mon->maxHP;
+        ret = mon->lerAttack;
         break;
     case MON_DATA_LERDEF:
-        ret = mon->attack;
-        break;
-    case MON_DATA_GAMBIT:
-        ret = mon->defense;
+        ret = mon->lerDefense;
         break;
     case MON_DATA_ARMOR:
-        ret = mon->speed;
-        break;
-    case MON_DATA_HOTSTRK:
-        ret = mon->spAttack;
+        ret = mon->armor;
         break;
     case MON_DATA_TRUDMG:
         ret = mon->trueDamage;
@@ -2680,12 +2674,13 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_LERDEF_EV:
             retVal = substruct2->lerDefenseEV;
             break;
-        /*case MON_DATA_GAMBIT_EV:
-            retVal = substruct2->gambitEV;
+        case MON_DATA_GAMBIT:
+            retVal = substruct2->gambit;
             break;
-        case MON_DATA_HOTSTRK_EV:
-            retVal = substruct2->hotStrkEV;
+        case MON_DATA_HOTSTRK:
+            retVal = substruct2->hotStreak;
             break;
+            /*
         case MON_DATA_ARMOR_EV:
             retVal = substruct2->armorEV;
             break;
