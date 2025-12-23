@@ -9270,7 +9270,8 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
 
     // apply defense stat modifiers
     modifier = UQ_4_12(1.0);
-
+    //add in armor bonus after applying stat stages
+    defStat = defStat  + gBattleMons[battlerDef].armor / 4;
     // target's abilities
     STORE_BATTLER_TRAITS(battlerDef);
 
