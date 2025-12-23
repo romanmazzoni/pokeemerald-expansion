@@ -9738,7 +9738,7 @@ static inline s32 DoMoveDamageCalcVars(struct DamageCalculationData *damageCalcD
     }
 
     dmg = ApplyModifiersAfterDmgRoll(dmg, damageCalcData, typeEffectivenessModifier, abilityAtk, abilityDef, holdEffectAtk, holdEffectDef);
-
+    dmg = dmg + gBattleMons[battlerAtk].trueDamage / 5;
     if (dmg == 0)
         dmg = 1;
     return dmg;
@@ -10897,13 +10897,16 @@ u8 GetCategoryBasedOnStats(u32 battler)
 {
     u32 attack = gBattleMons[battler].attack;
     u32 spAttack = gBattleMons[battler].spAttack;
+    u32 lerAttack = gBattleMons[battler].lerAttack;
 
     attack = attack * gStatStageRatios[gBattleMons[battler].statStages[STAT_ATK]][0];
     attack = attack / gStatStageRatios[gBattleMons[battler].statStages[STAT_ATK]][1];
 
     spAttack = spAttack * gStatStageRatios[gBattleMons[battler].statStages[STAT_SPATK]][0];
     spAttack = spAttack / gStatStageRatios[gBattleMons[battler].statStages[STAT_SPATK]][1];
-
+    if (lerAttack > attack && lerAttack > spAttack)
+        return DAMAGE_CATEGORY_SPECIALER;
+    else
     if (spAttack >= attack)
         return DAMAGE_CATEGORY_SPECIAL;
     else
