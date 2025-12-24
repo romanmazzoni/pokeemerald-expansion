@@ -6171,6 +6171,21 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
     u16 battlerTraits[MAX_MON_TRAITS];
     STORE_BATTLER_TRAITS(battlerAtk);
 
+
+    //CALCULATE HOTSTREAK
+    if (IsBattlerAlive(battlerAtk) && !IsBattlerAlive(battlerDef) && gBattleMons[battlerAtk].hotStreak /2 > 0)
+        {
+            gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[battlerAtk].hotStreak / 2;
+                gBattleStruct->moveDamage[gBattlerAttacker] = GetDrainedBigRootHp(gBattlerAttacker, gBattleStruct->moveDamage[gBattlerAttacker]);
+                gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE;
+                effect = TRUE;
+                {
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_EffectHotStreak;
+                }
+        }
+
+
     if (SearchTraits(battlerTraits, ABILITY_MAGICIAN)
          && move != MOVE_FLING && move != MOVE_NATURAL_GIFT
          && gBattleMons[battlerAtk].item == ITEM_NONE

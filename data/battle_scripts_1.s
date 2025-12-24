@@ -10012,3 +10012,11 @@ BattleScript_ForfeitBattleGaveMoney::
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
+BattleScript_EffectHotStreak::
+	absorbhealthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_HOTSTREAKPROC
+	waitmessage B_WAIT_TIME_LONG
+	bicword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE | HITMARKER_PASSIVE_DAMAGE
+	return
+
