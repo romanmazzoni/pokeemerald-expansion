@@ -951,7 +951,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Charges the foe with a full-\n"
             "body tackle."),
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .power = 40,
+            .power = 3,
         #elif B_UPDATED_MOVE_DATA >= GEN_5
             .power = 50,
         #else
@@ -963,6 +963,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .pp = 35,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }),
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
