@@ -10020,3 +10020,14 @@ BattleScript_EffectHotStreak::
 	bicword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE | HITMARKER_PASSIVE_DAMAGE
 	return
 
+BattleScript_EffectGambit::
+	pause B_WAIT_TIME_SHORT
+	jumpifability BS_ATTACKER, ABILITY_WONDER_GUARD, BattleScript_AftermathDmgRet
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_GAMBITPROC
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_ATTACKER
+	return
+

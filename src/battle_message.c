@@ -931,6 +931,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_POWERCONSTRUCTTRANSFORM]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} transformed into its Complete Forme!"),
 
     [STRINGID_HOTSTREAKPROC]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is on a roll!"),
+    [STRINGID_GAMBITPROC]                        = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX2} let out its final gambit!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

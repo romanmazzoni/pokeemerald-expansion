@@ -4788,6 +4788,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
         }
+        //Calculate gambit damage
+        if (!IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove) 
+        && (gBattleMons[gBattlerTarget].gambit / 3 - 1 > 0) 
+        && IsBattlerAlive(gBattlerAttacker) )
+            {
+                gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 3;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_EffectGambit;
+                effect++;
+            }
         if (SearchTraits(battlerTraits, ABILITY_EFFECT_SPORE))
         {
             u32 abilityAtk = GetBattlerAbility(gBattlerAttacker);
