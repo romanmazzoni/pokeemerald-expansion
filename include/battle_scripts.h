@@ -874,9 +874,10 @@ extern const u8 BattleScript_QuestionForfeitBattle[];
 extern const u8 BattleScript_ForfeitBattleGaveMoney[];
 extern const u8 BattleScript_AbilityPopUp[];
 
-//COOL STAT TEXT SCRIPTS
+//COOL STAT BATTLE SCRIPTS
 
 extern const u8 BattleScript_EffectHotStreak[];
 extern const u8 BattleScript_EffectGambit[];
+extern const u8 BattleScript_EffectParry[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

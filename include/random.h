@@ -200,6 +200,8 @@ enum RandomTag
     RNG_AI_STATUS_FOCUS_PUNCH,
     RNG_HEALER,
     RNG_DEXNAV_ENCOUNTER_LEVEL,
+    RNG_PARRY,
+    RNG_WAXING,
 };
 
 #define RandomWeighted(tag, ...) \

@@ -1895,8 +1895,11 @@ static inline u32 GetCriticalHitOdds(u32 critChance)
 {   
     
         u32 finalCritChance = gSpeciesInfo[gBattleMons[gBattlerAttacker].species].critChance / 2 * sGen7CriticalHitOdds[critChance];
+        //DebugPrintfLevel(MGBA_LOG_WARN, "The species crit chance is: %u\n", gSpeciesInfo[gBattleMons[gBattlerAttacker].species].critChance);
+        //DebugPrintfLevel(MGBA_LOG_WARN, "odds multiplier: %u\n", sGen7CriticalHitOdds[critChance]);
         if (finalCritChance > 255)
             finalCritChance = 255;
+        //DebugPrintfLevel(MGBA_LOG_WARN, "returning the odds of: %u\n", finalCritChance);
         return finalCritChance;
 
 }
@@ -2097,7 +2100,8 @@ static void Cmd_critcalc(void)
         {
             //NEW CRIT LOGIC using stat critchance
 
-            u8 calcedCritChance = RandomChance(RNG_CRITICAL_HIT, GetCriticalHitOdds(gBattleStruct->critChance[battlerDef]) , 256);
+            u8 calcedCritChance = RandomChance(RNG_CRITICAL_HIT, GetCriticalHitOdds(gBattleStruct->critChance[battlerDef]) , 255);
+            //DebugPrintfLevel(MGBA_LOG_WARN, "Calculated crit is: %u\n", calcedCritChance);
             gSpecialStatuses[battlerDef].criticalHit = calcedCritChance;
         }
 

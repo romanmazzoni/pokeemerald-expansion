@@ -4463,6 +4463,12 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         break;
     case ABILITYEFFECT_MOVE_END: // Think contact abilities.
+        //apply the parry text here
+        if (gSpecialStatuses[battler].isParried == TRUE){
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_EffectParry;
+        }
+
         if (SearchTraits(battlerTraits, ABILITY_JUSTIFIED)
          && !(gBattleStruct->moveResultFlags[battler] & MOVE_RESULT_NO_EFFECT)
          && IsBattlerTurnDamaged(gBattlerTarget)
@@ -9750,6 +9756,18 @@ static inline s32 DoMoveDamageCalcVars(struct DamageCalculationData *damageCalcD
     }
 
     dmg = ApplyModifiersAfterDmgRoll(dmg, damageCalcData, typeEffectivenessModifier, abilityAtk, abilityDef, holdEffectAtk, holdEffectDef);
+    //Calculate parry
+    
+    if(RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[battlerDef].species].parry, 255) == TRUE){
+        gSpecialStatuses[battlerDef].isParried = TRUE;
+        dmg /= 2;
+        if (dmg > gBattleMons[battlerDef].maxHP / 2)
+            dmg = gBattleMons[battlerDef].maxHP / 2;
+    } else {
+        gSpecialStatuses[battlerDef].isParried = FALSE;
+    }
+        
+    //Calculate true damage
     dmg = dmg + gBattleMons[battlerAtk].trueDamage / 5;
     if (dmg == 0)
         dmg = 1;

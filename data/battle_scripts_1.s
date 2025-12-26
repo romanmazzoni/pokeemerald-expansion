@@ -10031,3 +10031,9 @@ BattleScript_EffectGambit::
 	tryfaintmon BS_ATTACKER
 	return
 
+BattleScript_EffectParry::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PARRYPROC
+	waitmessage B_WAIT_TIME_LONG
+	return
+
