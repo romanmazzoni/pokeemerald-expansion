@@ -10052,3 +10052,16 @@ BattleScript_EffectFirstStrike::
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
+BattleScript_EffectLifeStealLiquidOoze::
+	printstring STRINGID_LIQUIDOOZELIFESTEALPROC
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_EffectLifeSteal
+
+BattleScript_EffectLifeSteal::
+	absorbhealthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	pause B_WAIT_TIME_SHORT
+	tryfaintmon BS_ATTACKER
+	bicword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE | HITMARKER_PASSIVE_DAMAGE
+	return
+

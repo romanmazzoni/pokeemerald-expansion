@@ -881,5 +881,8 @@ extern const u8 BattleScript_EffectGambit[];
 extern const u8 BattleScript_EffectParry[];
 extern const u8 BattleScript_EffectWaxing[];
 extern const u8 BattleScript_EffectFirstStrike[];
+extern const u8 BattleScript_EffectLifeSteal[];
+extern const u8 BattleScript_EffectLifeStealLiquidOoze[];
+
 
 #endif // GUARD_BATTLE_SCRIPTS_H

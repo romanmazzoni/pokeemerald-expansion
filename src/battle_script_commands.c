@@ -6174,7 +6174,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
     //CALCULATE HOTSTREAK
     if (IsBattlerAlive(battlerAtk) && !IsBattlerAlive(battlerDef) && gBattleMons[battlerAtk].hotStreak /2 > 0 
-        && gBattleMons[battlerAtk].maxHP < gBattleMons[battlerAtk].hp)
+        && gBattleMons[battlerAtk].maxHP > gBattleMons[battlerAtk].hp)
         {
             gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[battlerAtk].hotStreak / 2;
                 gBattleStruct->moveDamage[gBattlerAttacker] = GetDrainedBigRootHp(gBattlerAttacker, gBattleStruct->moveDamage[gBattlerAttacker]);
@@ -6751,6 +6751,33 @@ static void Cmd_moveend(void)
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB;
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_EffectAbsorb;
+                }
+            }
+            gBattleScripting.moveendState++;
+            break;
+        case MOVEEND_LIFESTEAL:
+            if (gSpeciesInfo[gBattleMons[gBattlerAttacker].species].lifeSteal > 1
+             && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
+             && !(gStatuses3[gBattlerAttacker] & STATUS3_HEAL_BLOCK)
+             && IsBattlerAlive(gBattlerAttacker)
+             && IsBattlerTurnDamaged(gBattlerTarget))
+            {
+                gBattleStruct->moveDamage[gBattlerAttacker] = max(0, (gBattleStruct->moveDamage[gBattlerTarget] * gSpeciesInfo[gBattleMons[gBattlerAttacker].species].lifeSteal / 510));
+                gBattleStruct->moveDamage[gBattlerAttacker] *= -1;
+                gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE;
+                effect = TRUE;
+                if (BattlerHasTrait(gBattlerTarget, ABILITY_LIQUID_OOZE))
+                {
+                    gBattleStruct->moveDamage[gBattlerAttacker] *= -1;
+                    gHitMarker |= HITMARKER_PASSIVE_DAMAGE;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB_OOZE;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_EffectLifeStealLiquidOoze;
+                }
+                else
+                {
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_EffectLifeSteal;
                 }
             }
             gBattleScripting.moveendState++;
