@@ -3320,6 +3320,7 @@ const u8* FaintClearSetData(u32 battler)
     gProtectStructs[battler].statRaised = FALSE;
     gProtectStructs[battler].statFell = FALSE;
     gProtectStructs[battler].pranksterElevated = FALSE;
+    gProtectStructs[battler].isFirstStrike = FALSE;
 
     gDisableStructs[battler].isFirstTurn = 2;
 
@@ -4847,6 +4848,9 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
                               enum ItemHoldEffect holdEffectBattler1, enum ItemHoldEffect holdEffectBattler2, u32 speedBattler1, u32 speedBattler2, s32 priority1, s32 priority2)
 {
     u32 strikesFirst = 0;
+    //do the firststrikem roll
+    u8 battler1Prio = RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[battler1].species].firstStrike, 255);
+    u8 battler2Prio = RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[battler2].species].firstStrike, 255);
 
     if (priority1 == priority2)
     {
@@ -4861,7 +4865,15 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
         if (battler1HasQuickEffect && !battler2HasQuickEffect)
             strikesFirst = 1;
         else if (battler2HasQuickEffect && !battler1HasQuickEffect)
+            strikesFirst = -1;  
+        else if (battler1Prio > battler2Prio) {//Calculate if firstStrike activates
+            strikesFirst = 1;
+            gProtectStructs[battler1].isFirstStrike = TRUE;
+        }
+        else if (battler2Prio > battler1Prio){
             strikesFirst = -1;
+            gProtectStructs[battler2].isFirstStrike = TRUE;
+        }
         else if (holdEffectBattler1 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler2 != HOLD_EFFECT_LAGGING_TAIL)
             strikesFirst = -1;
         else if (holdEffectBattler2 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler1 != HOLD_EFFECT_LAGGING_TAIL)
@@ -5288,7 +5300,7 @@ static void CheckChangingTurnOrderEffects(void)
             gBattleStruct->quickClawBattlerId++;
             if (gChosenActionByBattler[battler] == B_ACTION_USE_MOVE
              && gChosenMoveByBattler[battler] != MOVE_FOCUS_PUNCH   // quick claw message doesn't need to activate here
-             && (gProtectStructs[battler].usedCustapBerry || gProtectStructs[battler].quickDraw)
+             && (gProtectStructs[battler].usedCustapBerry || gProtectStructs[battler].quickDraw || gProtectStructs[battler].isFirstStrike)
              && !(gBattleMons[battler].status1 & STATUS1_SLEEP)
              && !(gDisableStructs[gBattlerAttacker].truantCounter)
              && !(gProtectStructs[battler].noValidMoves))
@@ -5316,6 +5328,10 @@ static void CheckChangingTurnOrderEffects(void)
                     PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
                     RecordAbilityBattle(battler, gLastUsedAbility);
                     BattleScriptExecute(BattleScript_QuickDrawActivation);
+                }
+                else if (gProtectStructs[battler].isFirstStrike)
+                {
+                    BattleScriptExecute(BattleScript_EffectFirstStrike);
                 }
                 return;
             }

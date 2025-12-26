@@ -10047,3 +10047,8 @@ BattleScript_EffectWaxing::
 	swapattackerwithtarget
 	return
 
+BattleScript_EffectFirstStrike::
+	printstring STRINGID_FIRSTSTRIKEPROC
+	waitmessage B_WAIT_TIME_LONG
+	end2
+

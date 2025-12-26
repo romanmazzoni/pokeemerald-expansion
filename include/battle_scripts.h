@@ -880,5 +880,6 @@ extern const u8 BattleScript_EffectHotStreak[];
 extern const u8 BattleScript_EffectGambit[];
 extern const u8 BattleScript_EffectParry[];
 extern const u8 BattleScript_EffectWaxing[];
+extern const u8 BattleScript_EffectFirstStrike[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -922,6 +922,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 35,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
+        .firstStrike = 255,
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
