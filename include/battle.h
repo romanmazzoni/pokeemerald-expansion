@@ -215,8 +215,7 @@ struct SpecialStatus
     u8 dancerUsedMove:1;
     u8 dancerOriginalTarget:3;
     u8 isParried:1;
-    u8 isWaxing:1;
-    u8 unused:2;
+    u8 unused:3;
     // End of byte
 };
 

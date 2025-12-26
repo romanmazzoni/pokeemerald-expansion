@@ -10037,3 +10037,13 @@ BattleScript_EffectParry::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+BattleScript_EffectWaxing::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_WAXINGPROC
+	waitmessage B_WAIT_TIME_LONG
+	waitstate
+	swapattackerwithtarget  @ for defiant, mirror armor
+	seteffectsecondary MOVE_EFFECT_SPD_MINUS_1
+	swapattackerwithtarget
+	return
+

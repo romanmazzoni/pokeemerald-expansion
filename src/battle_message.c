@@ -933,7 +933,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_HOTSTREAKPROC]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is on a roll!"),
     [STRINGID_GAMBITPROC]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX2} let out its final gambit!"),
     [STRINGID_PARRYPROC]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX2} partially parried the attack!"),
-    [STRINGID_WAXINGPROC]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX2} waxed up {B_ATK_NAME_WITH_PREFIX}!\p{B_ATK_NAME_WITH_PREFIX}'s speed was lowered!"),
+    [STRINGID_WAXINGPROC]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX2} waxed up {B_ATK_NAME_WITH_PREFIX}!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

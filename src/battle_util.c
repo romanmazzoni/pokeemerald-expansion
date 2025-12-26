@@ -4464,11 +4464,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         break;
     case ABILITYEFFECT_MOVE_END: // Think contact abilities.
         //apply the parry text here
-        if (gSpecialStatuses[battler].isParried == TRUE){
+        if (gSpecialStatuses[battler].isParried == TRUE
+        && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)){
             BattleScriptPushCursor();
             gBattlescriptCurrInstr = BattleScript_EffectParry;
         }
-
+        //Waxing proc here 
+        if (RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[gBattlerTarget].species].waxing, 255) == TRUE
+        && IsBattlerAlive(gBattlerAttacker)
+        && IsBattlerTurnDamaged(gBattlerTarget)){
+            SET_STATCHANGER(STAT_SPEED, 1, TRUE);
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_EffectWaxing;
+        }
         if (SearchTraits(battlerTraits, ABILITY_JUSTIFIED)
          && !(gBattleStruct->moveResultFlags[battler] & MOVE_RESULT_NO_EFFECT)
          && IsBattlerTurnDamaged(gBattlerTarget)
