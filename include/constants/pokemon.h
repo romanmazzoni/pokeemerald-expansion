@@ -23,7 +23,16 @@
 #define TYPE_DARK             18
 #define TYPE_FAIRY            19
 #define TYPE_STELLAR          20
-#define NUMBER_OF_MON_TYPES   21
+#define TYPE_GYM1             21
+#define TYPE_SHOULEIL         22
+#define TYPE_LIGHT            23
+#define TYPE_FURRY            24
+#define TYPE_ON               25
+#define TYPE_MONEY            26
+#define TYPE_FAKE             27
+#define TYPE_KING             28
+#define TYPE_LANCE            29
+#define NUMBER_OF_MON_TYPES   30
 
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0

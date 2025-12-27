@@ -3042,6 +3042,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
     s32 hazardDamage = 0;
     u32 type1 = gSpeciesInfo[species].types[0];
     u32 type2 = gSpeciesInfo[species].types[1];
+    u32 type3 = gSpeciesInfo[species].types[2];
     u32 maxHp = GetMonData(mon, MON_DATA_MAX_HP);
 
     if (flags == 0)
