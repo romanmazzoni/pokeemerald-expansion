@@ -439,7 +439,7 @@ struct SpeciesInfo /*0xC4*/
     u8 sexism; //extra damage to the opposite gender
     u8 hotStreak; //health regened on enemy kill
     u8 doubleHit; //percent chance to hit twice in one attack
-    u8 types[2];
+    u8 types[3];
     u8 catchRate;
     u8 forceTeraType;
     u16 expYield; // expYield was changed from u8 to u16 for the new Exp System.

@@ -89,7 +89,7 @@
 // 255 (MON_GENDERLESS) is reserved for genderless Pokémon.
 #define PERCENT_FEMALE(percent) min(254, ((percent * 255) / 100))
 
-#define MON_TYPES(type1, ...) { type1, DEFAULT(type1, __VA_ARGS__) }
+#define MON_TYPES(type1, ...) { type1, DEFAULT(type1, __VA_ARGS__), DEFAULT_2(type1, __VA_ARGS__) }
 #define MON_EGG_GROUPS(group1, ...) { group1, DEFAULT(group1, __VA_ARGS__) }
 
 #define FLIP    0

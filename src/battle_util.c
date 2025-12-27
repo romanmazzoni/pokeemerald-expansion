@@ -9886,7 +9886,7 @@ static inline s32 DoFutureSightAttackDamageCalcVars(struct DamageCalculationData
     }
 
     // Same type attack bonus
-    if (gSpeciesInfo[partyMonSpecies].types[0] == moveType || gSpeciesInfo[partyMonSpecies].types[1] == moveType)
+    if (gSpeciesInfo[partyMonSpecies].types[0] == moveType || gSpeciesInfo[partyMonSpecies].types[1] == moveType || gSpeciesInfo[partyMonSpecies].types[2] == moveType)
         DAMAGE_APPLY_MODIFIER(UQ_4_12(1.5));
     else
         DAMAGE_APPLY_MODIFIER(UQ_4_12(1.0));
@@ -10030,7 +10030,8 @@ static inline void TryNoticeIllusionInTypeEffectiveness(u32 move, u32 moveType, 
     MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, ABILITY_ILLUSION, gSpeciesInfo[illusionSpecies].types[0], battlerAtk, FALSE);
     if (gSpeciesInfo[illusionSpecies].types[1] != gSpeciesInfo[illusionSpecies].types[0])
         MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, ABILITY_ILLUSION, gSpeciesInfo[illusionSpecies].types[1], battlerAtk, FALSE);
-
+    if (gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[1] && gSpeciesInfo[illusionSpecies].types[2] != gSpeciesInfo[illusionSpecies].types[0])
+        MulByTypeEffectiveness(&presumedModifier, move, moveType, battlerDef, ABILITY_ILLUSION, gSpeciesInfo[illusionSpecies].types[2], battlerAtk, FALSE);
     if (presumedModifier != resultingModifier)
         RecordAbilityBattle(battlerDef, ABILITY_ILLUSION);
 }
@@ -10182,6 +10183,8 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 a
         MulByTypeEffectiveness(&modifier, move, moveType, 0, 0, gSpeciesInfo[speciesDef].types[0], 0, FALSE);
         if (gSpeciesInfo[speciesDef].types[1] != gSpeciesInfo[speciesDef].types[0])
             MulByTypeEffectiveness(&modifier, move, moveType, 0, 0, gSpeciesInfo[speciesDef].types[1], 0, FALSE);
+        if (gSpeciesInfo[speciesDef].types[2] != gSpeciesInfo[speciesDef].types[1] && gSpeciesInfo[speciesDef].types[2] != gSpeciesInfo[speciesDef].types[0])
+            MulByTypeEffectiveness(&modifier, move, moveType, 0, 0, gSpeciesInfo[speciesDef].types[2], 0, FALSE);
 
         if (mon == 0) //catch for non Pokemon struct entries, only checks Ability
         {
@@ -10224,6 +10227,7 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, u8 moveType)
     u16 speciesDef = GetMonData(mon, MON_DATA_SPECIES);
     u8 type1 = gSpeciesInfo[speciesDef].types[0];
     u8 type2 = gSpeciesInfo[speciesDef].types[1];
+    u8 type3 = gSpeciesInfo[speciesDef].types[2];
 
     if (moveType != TYPE_MYSTERY)
     {
@@ -10233,6 +10237,8 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, u8 moveType)
         MulByTypeEffectiveness(&modifier, MOVE_POUND, moveType, 0, 0, type1, 0, FALSE);
         if (type2 != type1)
             MulByTypeEffectiveness(&modifier, MOVE_POUND, moveType, 0, 0, type2, 0, FALSE);
+        if (type3 != type2 && type3 != type1)
+            MulByTypeEffectiveness(&modifier, MOVE_POUND, moveType, 0, 0, type3, 0, FALSE);
 
         if ((modifier <= UQ_4_12(1.0)  &&  SearchTraits(battlerTraits, ABILITY_WONDER_GUARD))
          || (moveType == TYPE_FIRE     &&  SearchTraits(battlerTraits, ABILITY_FLASH_FIRE))
@@ -11336,7 +11342,7 @@ void CopyMonAbilityAndTypesToBattleMon(u32 battler, struct Pokemon *mon)
     gBattleMons[battler].ability = GetMonAbility(mon);
     gBattleMons[battler].types[0] = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].types[1] = gSpeciesInfo[gBattleMons[battler].species].types[1];
-    gBattleMons[battler].types[2] = TYPE_MYSTERY;
+    gBattleMons[battler].types[2] = gSpeciesInfo[gBattleMons[battler].species].types[2];
 }
 
 void RecalcBattlerStats(u32 battler, struct Pokemon *mon, bool32 isDynamaxing)
@@ -11520,7 +11526,7 @@ bool8 CanMonParticipateInSkyBattle(struct Pokemon *mon)
     //u16 monAbilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM, NULL);
 
     bool8 hasLevitateAbility = (MonHasTrait(mon, ABILITY_LEVITATE, TRUE));
-    bool8 isFlyingType = gSpeciesInfo[species].types[0] == TYPE_FLYING || gSpeciesInfo[species].types[1] == TYPE_FLYING;
+    bool8 isFlyingType = gSpeciesInfo[species].types[0] == TYPE_FLYING || gSpeciesInfo[species].types[1] == TYPE_FLYING || gSpeciesInfo[species].types[2] == TYPE_FLYING;
     bool8 monIsValidAndNotEgg = GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(mon, MON_DATA_IS_EGG);
 
     if (monIsValidAndNotEgg)
@@ -11586,12 +11592,14 @@ void GetBattlerTypes(u32 battler, bool32 ignoreTera, u32 types[static 3])
     // Roost.
     if (!isTera && gDisableStructs[battler].roostActive)
     {
-        if (types[0] == TYPE_FLYING && types[1] == TYPE_FLYING)
-            types[0] = types[1] = B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NORMAL : TYPE_MYSTERY;
+        if (types[0] == TYPE_FLYING && types[1] == TYPE_FLYING && types[2] == TYPE_FLYING)
+            types[0] = types[1] = types[2] = B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NORMAL : TYPE_MYSTERY;
         else if (types[0] == TYPE_FLYING)
             types[0] = TYPE_MYSTERY;
         else if (types[1] == TYPE_FLYING)
             types[1] = TYPE_MYSTERY;
+        else if (types[2] == TYPE_FLYING)
+            types[2] = TYPE_MYSTERY;
     }
 }
 

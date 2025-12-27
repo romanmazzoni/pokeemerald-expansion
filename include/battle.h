@@ -857,14 +857,14 @@ static inline bool32 IsBattleMoveStatus(u32 move)
 {                                                    \
     gBattleMons[battler].types[0] = type;            \
     gBattleMons[battler].types[1] = type;            \
-    gBattleMons[battler].types[2] = TYPE_MYSTERY;    \
+    gBattleMons[battler].types[2] = type;             \
 }
 
 #define RESTORE_BATTLER_TYPE(battler)                                                      \
 {                                                                                          \
     gBattleMons[battler].types[0] = gSpeciesInfo[gBattleMons[battler].species].types[0];   \
     gBattleMons[battler].types[1] = gSpeciesInfo[gBattleMons[battler].species].types[1];   \
-    gBattleMons[battler].types[2] = TYPE_MYSTERY;                                          \
+    gBattleMons[battler].types[2] = gSpeciesInfo[gBattleMons[battler].species].types[2];                                          \
 }
 
 #define GET_STAT_BUFF_ID(n) ((n & 7))              // first three bits 0x1, 0x2, 0x4

@@ -7868,7 +7868,7 @@ static void Cmd_switchindataupdate(void)
 
     gBattleMons[battler].types[0] = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].types[1] = gSpeciesInfo[gBattleMons[battler].species].types[1];
-    gBattleMons[battler].types[2] = TYPE_MYSTERY;
+    gBattleMons[battler].types[2] = gSpeciesInfo[gBattleMons[battler].species].types[2];
     gBattleMons[battler].ability = GetAbilityBySpecies(gBattleMons[battler].species, gBattleMons[battler].abilityNum);
     #if TESTING
     if (gTestRunnerEnabled)
@@ -11055,7 +11055,7 @@ static void Cmd_various(void)
         u32 types[3];
         GetBattlerTypes(gBattlerTarget, FALSE, types);
         u32 moveType = GetMoveType(gCurrentMove);
-        if ((types[0] == moveType && types[1] == moveType)
+        if ((types[0] == moveType && types[1] == moveType && types[2] == moveType)
          || GetActiveGimmick(gBattlerTarget) == GIMMICK_TERA)
         {
             gBattlescriptCurrInstr = cmd->failInstr;
