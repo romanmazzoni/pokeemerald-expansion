@@ -1088,6 +1088,42 @@ static const union AnimCmd sSpriteAnim_TypeStellar[] = {
     ANIMCMD_FRAME(TYPE_STELLAR * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeGym1[] = {
+    ANIMCMD_FRAME(TYPE_GYM1 * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeShouleil[] = {
+    ANIMCMD_FRAME(TYPE_SHOULEIL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLight[] = {
+    ANIMCMD_FRAME(TYPE_LIGHT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFurry[] = {
+    ANIMCMD_FRAME(TYPE_FURRY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeOn[] = {
+    ANIMCMD_FRAME(TYPE_ON * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMoney[] = {
+    ANIMCMD_FRAME(TYPE_MONEY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFake[] = {
+    ANIMCMD_FRAME(TYPE_FAKE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeKing[] = {
+    ANIMCMD_FRAME(TYPE_KING * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLance[] = {
+    ANIMCMD_FRAME(TYPE_LANCE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -1130,6 +1166,15 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     [TYPE_DARK] = sSpriteAnim_TypeDark,
     [TYPE_FAIRY] = sSpriteAnim_TypeFairy,
     [TYPE_STELLAR] = sSpriteAnim_TypeStellar,
+    [TYPE_GYM1] = sSpriteAnim_TypeGym1,
+    [TYPE_SHOULEIL] = sSpriteAnim_TypeShouleil,
+    [TYPE_LIGHT] = sSpriteAnim_TypeLight,
+    [TYPE_FURRY] = sSpriteAnim_TypeFurry,
+    [TYPE_ON] = sSpriteAnim_TypeOn,
+    [TYPE_MONEY] = sSpriteAnim_TypeMoney,
+    [TYPE_FAKE] = sSpriteAnim_TypeFake,
+    [TYPE_KING] = sSpriteAnim_TypeKing,
+    [TYPE_LANCE] = sSpriteAnim_TypeLance,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = sSpriteAnim_CategoryCool,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = sSpriteAnim_CategoryBeauty,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = sSpriteAnim_CategoryCute,

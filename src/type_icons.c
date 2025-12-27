@@ -153,6 +153,51 @@ const union AnimCmd sSpriteAnim_TypeIcon_Fairy[] =
     ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_FAIRY), 0),
     ANIMCMD_END
 };
+const union AnimCmd sSpriteAnim_TypeIcon_Gym1[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_GYM1), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Shouleil[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_SHOULEIL), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Light[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_LIGHT), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Furry[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_FURRY), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_On[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_ON), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Money[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_MONEY), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Fake[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_FAKE), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_King[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_KING), 0),
+    ANIMCMD_END
+};
+const union AnimCmd sSpriteAnim_TypeIcon_Lance[] =
+{
+    ANIMCMD_FRAME(TYPE_ICON_2_FRAME(TYPE_LANCE), 0),
+    ANIMCMD_END
+};
 
 const union AnimCmd *const sSpriteAnimTable_TypeIcons[] =
 {
@@ -177,6 +222,15 @@ const union AnimCmd *const sSpriteAnimTable_TypeIcons[] =
     [TYPE_DARK] =       sSpriteAnim_TypeIcon_Dark,
     [TYPE_FAIRY] =      sSpriteAnim_TypeIcon_Fairy,
     [TYPE_STELLAR] =    sSpriteAnim_TypeIcon_Mystery,
+    [TYPE_GYM1] =       sSpriteAnim_TypeIcon_Gym1,
+    [TYPE_SHOULEIL] =   sSpriteAnim_TypeIcon_Shouleil,
+    [TYPE_LIGHT] =      sSpriteAnim_TypeIcon_Light,
+    [TYPE_FURRY] =      sSpriteAnim_TypeIcon_Furry,
+    [TYPE_ON] =         sSpriteAnim_TypeIcon_On,
+    [TYPE_MONEY] =      sSpriteAnim_TypeIcon_Money,
+    [TYPE_FAKE] =       sSpriteAnim_TypeIcon_Fake,
+    [TYPE_KING] =       sSpriteAnim_TypeIcon_King,
+    [TYPE_LANCE] =      sSpriteAnim_TypeIcon_Lance,
 };
 
 const struct SpritePalette sTypeIconPal1 =
