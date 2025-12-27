@@ -4936,7 +4936,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
          && IsBattlerAlive(gBattlerTarget)
          && (B_ABILITY_TRIGGER_CHANCE >= GEN_4 ? RandomPercentage(RNG_CUTE_CHARM, 30) : RandomChance(RNG_CUTE_CHARM, 1, 3))
          && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_INFATUATION)
-         && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget)
          && !BattlerHasTrait(gBattlerAttacker, ABILITY_OBLIVIOUS)
          && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_PROTECTIVE_PADS
          && IsMoveMakingContact(move, gBattlerAttacker)
@@ -9774,9 +9773,14 @@ static inline s32 DoMoveDamageCalcVars(struct DamageCalculationData *damageCalcD
     } else {
         gSpecialStatuses[battlerDef].isParried = FALSE;
     }
-        
+    //Calculate sexism
+    //DebugPrintfLevel(MGBA_LOG_WARN, "Pre sexism damage: %u\n", dmg);
+    if (!AreBattlersOfSameGender(battlerAtk, battlerDef))
+        dmg = dmg  * (gSpeciesInfo[gBattleMons[battlerAtk].species].sexism + 255)  / 255;
+    //DebugPrintfLevel(MGBA_LOG_WARN, "Post sexism damage: %u\n", dmg);
     //Calculate true damage
     dmg = dmg + gBattleMons[battlerAtk].trueDamage / 5;
+    
     if (dmg == 0)
         dmg = 1;
     return dmg;

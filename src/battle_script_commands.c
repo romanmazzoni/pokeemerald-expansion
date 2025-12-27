@@ -1271,7 +1271,7 @@ static void Cmd_attackcanceler(void)
         return;
 
     if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_OFF
-     && BattlerHasTrait(gBattlerAttacker, ABILITY_PARENTAL_BOND)
+     && (BattlerHasTrait(gBattlerAttacker, ABILITY_PARENTAL_BOND) || (RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[gBattlerAttacker].species].doubleHit, 255) == TRUE))
      && IsMoveAffectedByParentalBond(gCurrentMove, gBattlerAttacker)
      && !(gAbsentBattlerFlags & (1u << gBattlerTarget))
      && GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE)
@@ -13374,16 +13374,8 @@ static void Cmd_tryinfatuating(void)
     }
     else
     {
-        if (gBattleMons[gBattlerTarget].status2 & STATUS2_INFATUATION
-            || !AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else
-        {
             gBattleMons[gBattlerTarget].status2 |= STATUS2_INFATUATED_WITH(gBattlerAttacker);
             gBattlescriptCurrInstr = cmd->nextInstr;
-        }
     }
 }
 
@@ -16857,14 +16849,11 @@ static void Cmd_jumpifcaptivateaffected(void)
         PushTraitStack(gBattlerTarget, ABILITY_OBLIVIOUS);
         RecordAbilityBattle(gBattlerTarget, ABILITY_OBLIVIOUS);
     }
-    else if (AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+    else 
     {
         gBattlescriptCurrInstr = cmd->jumpInstr;
     }
-    else
-    {
-        gBattlescriptCurrInstr = cmd->nextInstr;
-    }
+
 }
 
 static void Cmd_setnonvolatilestatus(void)
@@ -18855,8 +18844,7 @@ void BS_TrySetInfatuation(void)
 
     if (!(gBattleMons[gBattlerTarget].status2 & STATUS2_INFATUATION)
         && !BattlerHasTrait(gBattlerTarget, ABILITY_OBLIVIOUS)
-        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL)
-        && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL))
     {
         gBattleMons[gBattlerTarget].status2 |= STATUS2_INFATUATED_WITH(gBattlerAttacker);
         gBattleCommunication[MULTISTRING_CHOOSER] = 1;
