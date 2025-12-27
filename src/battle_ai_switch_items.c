@@ -1523,7 +1523,7 @@ bool32 IsMonGrounded(u16 heldItemEffect, u32 ability, u8 type1, u8 type2, u16 sp
 // Gets hazard damage
 static u32 GetSwitchinHazardsDamage(u32 battler, struct BattlePokemon *battleMon)
 {
-    u8 defType1 = battleMon->types[0], defType2 = battleMon->types[1], tSpikesLayers;
+    u8 defType1 = battleMon->types[0], defType2 = battleMon->types[1], tSpikesLayers, defType3 = battleMon->types[2];
     u16 heldItemEffect = GetItemHoldEffect(battleMon->item);
     u32 maxHP = battleMon->maxHP, ability = battleMon->ability, status = battleMon->status1, species = battleMon->species, personality = battleMon->personality;
     u32 spikesDamage = 0, tSpikesDamage = 0, hazardDamage = 0;
@@ -1535,10 +1535,10 @@ static u32 GetSwitchinHazardsDamage(u32 battler, struct BattlePokemon *battleMon
     {
         // Stealth Rock
         if ((hazardFlags & SIDE_STATUS_STEALTH_ROCK) && heldItemEffect != HOLD_EFFECT_HEAVY_DUTY_BOOTS)
-            hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, defType1, defType2, battleMon->maxHP);
+            hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, defType1, defType2, defType3, battleMon->maxHP);
         // G-Max Steelsurge
         if ((hazardFlags & SIDE_STATUS_STEELSURGE) && heldItemEffect != HOLD_EFFECT_HEAVY_DUTY_BOOTS)
-            hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, defType1, defType2, battleMon->maxHP);
+            hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, defType1, defType2, defType3, battleMon->maxHP);
         // Spikes
         if ((hazardFlags & SIDE_STATUS_SPIKES) && IsMonGrounded(heldItemEffect, ability, defType1, defType2, species, personality))
         {

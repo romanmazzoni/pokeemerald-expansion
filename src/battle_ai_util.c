@@ -3057,9 +3057,9 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
         return FALSE;
 
     if (flags & SIDE_STATUS_STEALTH_ROCK)
-        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, type1, type2, maxHp);
+        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, type1, type2, type3, maxHp);
     if ((flags & SIDE_STATUS_STEELSURGE))
-        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, maxHp);
+        hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, type3, maxHp);
 
     if (flags & SIDE_STATUS_SPIKES && ((type1 != TYPE_FLYING && type2 != TYPE_FLYING
         && !(BattlerHasTrait(currBattler, ABILITY_LEVITATE) || BattlerHasTrait(switchBattler, ABILITY_LEVITATE)) && holdEffect != HOLD_EFFECT_AIR_BALLOON)
