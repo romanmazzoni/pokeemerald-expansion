@@ -4410,6 +4410,126 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONIONBUILDING",
+      "name": "onionbuilding_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/onionbuilding/border.bin",
+      "blockdata_filepath": "data/layouts/onionbuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMARTTEST",
+      "name": "Pokemarttest_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Pokemarttest/border.bin",
+      "blockdata_filepath": "data/layouts/Pokemarttest/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_B3F",
+      "name": "VictoryRoad_B3F_Layout",
+      "width": 46,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_B4F",
+      "name": "VictoryRoad_B4F_Layout",
+      "width": 7,
+      "height": 7,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HIDDEN_GROVE",
+      "name": "HiddenGrove_Layout",
+      "width": 15,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/HiddenGrove/border.bin",
+      "blockdata_filepath": "data/layouts/HiddenGrove/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1152",
+      "name": "Route1152_Layout",
+      "width": 20,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Route1152/border.bin",
+      "blockdata_filepath": "data/layouts/Route1152/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_NEW",
+      "name": "BattleFrontier_OutsideNew_Layout",
+      "width": 36,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/BattleFrontier_OutsideNew/border.bin",
+      "blockdata_filepath": "data/layouts/BattleFrontier_OutsideNew/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUTSIDE_FRONTIER_NEW_HOUSE",
+      "name": "OutsideFrontierNewHouse_Layout",
+      "width": 3,
+      "height": 5,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OutsideFrontierNewHouse/border.bin",
+      "blockdata_filepath": "data/layouts/OutsideFrontierNewHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORY_CAVE_1F",
+      "name": "MemoryCave_1F_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MemoryCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MemoryCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORYCAVE_BF1",
+      "name": "Memorycave_bf1_Layout",
+      "width": 21,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/Memorycave_bf1/border.bin",
+      "blockdata_filepath": "data/layouts/Memorycave_bf1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORY_CAVE_BF2",
+      "name": "MemoryCave_bf2_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/MemoryCave_bf2/border.bin",
+      "blockdata_filepath": "data/layouts/MemoryCave_bf2/map.bin"
     }
   ]
 }
