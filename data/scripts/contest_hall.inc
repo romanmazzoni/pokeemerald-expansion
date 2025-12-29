@@ -1,8 +1,5 @@
 .set LOCALID_MC, 1
 .set LOCALID_JUDGE, 2
-.set LOCALID_CONTESTANT_1, 3
-.set LOCALID_CONTESTANT_2, 4
-.set LOCALID_CONTESTANT_3, 5
 .set LOCALID_AUDIENCE_1, 6
 .set LOCALID_AUDIENCE_3, 7
 .set LOCALID_AUDIENCE_4, 8
@@ -11,7 +8,6 @@
 .set LOCALID_AUDIENCE_7, 11
 .set LOCALID_AUDIENCE_2, 12
 .set LOCALID_POKEBALL, 13
-.set LOCALID_CONTESTANT_4, 14
 .set LOCALID_ARTIST, 15
 
 @ Either ends or returns to EventScript_ContestReceptionist after submitting a contest entry

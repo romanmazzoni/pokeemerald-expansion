@@ -1,4 +1,3 @@
-.set LOCALID_APPRENTICE, 6
 
 BattleFrontier_BattleTowerLobby_EventScript_Apprentice::
 	lock

@@ -4,7 +4,6 @@
 .set LOCALID_BLACK_BELT_4, 4
 .set LOCALID_ATTENDANT, 5
 .set LOCALID_OPPONENT, 7
-.set LOCALID_PLAYER, 8
 .set LOCALID_ANNOUNCER, 9
 
 BattleFrontier_BattleArenaBattleRoom_MapScripts::

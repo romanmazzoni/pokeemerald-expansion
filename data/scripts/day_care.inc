@@ -1,4 +1,3 @@
-.set LOCALID_DAYCARE_LADY, 1
 
 Route117_EventScript_DaycareMan::
 	lock
@@ -103,6 +102,7 @@ Route117_PokemonDayCare_EventScript_GiveMonToRaise::
 	msgbox Route117_PokemonDayCare_Text_WellRaiseYourMon, MSGBOX_DEFAULT
 	waitmoncry
 	special StoreSelectedPokemonInDaycare
+	callnative UpdateFollowingPokemon
 	incrementgamestat GAME_STAT_USED_DAYCARE
 	specialvar VAR_RESULT, GetDaycareState
 	goto_if_eq VAR_RESULT, DAYCARE_ONE_MON, Route117_PokemonDayCare_EventScript_CanRaiseOneMore

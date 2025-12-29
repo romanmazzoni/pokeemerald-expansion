@@ -1,4 +1,3 @@
-.set LOCALID_TRICK_MASTER, 1
 
 Route110_TrickHouseEnd_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_TrickHouseEnd_OnResume

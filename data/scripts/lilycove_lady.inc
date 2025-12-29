@@ -1,4 +1,3 @@
-.set LOCALID_LILYCOVE_LADY, 4
 .set LOCALID_LADYS_MON, 5
 
 LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady::
