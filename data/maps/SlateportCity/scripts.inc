@@ -1,3 +1,26 @@
+.set LOCALID_FAT_MAN, 1
+.set LOCALID_MAN_1, 2
+.set LOCALID_RICH_BOY, 3
+.set LOCALID_GRUNT_1, 5
+.set LOCALID_COOK, 6
+.set LOCALID_OLD_WOMAN, 7
+.set LOCALID_GIRL, 8
+.set LOCALID_TY, 9
+.set LOCALID_GABBY, 10
+.set LOCALID_CAPT_STERN, 11
+.set LOCALID_GRUNT_2, 18
+.set LOCALID_GRUNT_3, 19
+.set LOCALID_GRUNT_4, 26
+.set LOCALID_GRUNT_5, 27
+.set LOCALID_GRUNT_6, 28
+.set LOCALID_GRUNT_7, 29
+.set LOCALID_GRUNT_8, 30
+.set LOCALID_GRUNT_9, 31
+.set LOCALID_GRUNT_11, 33
+.set LOCALID_SCOTT, 35
+
+@ Note: LOCALID_SLATEPORT_ENERGY_GURU is a local id for this map used elsewhere. It's defined in event_objects.h
+
 SlateportCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_OnFrame
@@ -17,33 +40,33 @@ SlateportCity_EventScript_EnterSlateport::
 	return
 
 SlateportCity_EventScript_MovePeopleForSternInterview::
-	setobjectxyperm LOCALID_SLATEPORT_CAPT_STERN, 28, 13
-	setobjectxyperm LOCALID_SLATEPORT_OLD_WOMAN, 25, 13
-	setobjectxyperm LOCALID_SLATEPORT_RICH_BOY, 25, 14
-	setobjectxyperm LOCALID_SLATEPORT_COOK, 27, 16
-	setobjectxyperm LOCALID_SLATEPORT_GIRL, 28, 16
-	setobjectxyperm LOCALID_SLATEPORT_FAT_MAN, 29, 16
-	setobjectxyperm LOCALID_SLATEPORT_MAN_1, 31, 14
-	setobjectmovementtype LOCALID_SLATEPORT_CAPT_STERN, MOVEMENT_TYPE_FACE_DOWN
-	setobjectmovementtype LOCALID_SLATEPORT_OLD_WOMAN, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT
-	setobjectmovementtype LOCALID_SLATEPORT_RICH_BOY, MOVEMENT_TYPE_FACE_UP_AND_RIGHT
-	setobjectmovementtype LOCALID_SLATEPORT_COOK, MOVEMENT_TYPE_FACE_UP
-	setobjectmovementtype LOCALID_SLATEPORT_GIRL, MOVEMENT_TYPE_FACE_UP
-	setobjectmovementtype LOCALID_SLATEPORT_FAT_MAN, MOVEMENT_TYPE_FACE_UP
-	setobjectmovementtype LOCALID_SLATEPORT_MAN_1, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm LOCALID_CAPT_STERN, 28, 13
+	setobjectxyperm LOCALID_OLD_WOMAN, 25, 13
+	setobjectxyperm LOCALID_RICH_BOY, 25, 14
+	setobjectxyperm LOCALID_COOK, 27, 16
+	setobjectxyperm LOCALID_GIRL, 28, 16
+	setobjectxyperm LOCALID_FAT_MAN, 29, 16
+	setobjectxyperm LOCALID_MAN_1, 31, 14
+	setobjectmovementtype LOCALID_CAPT_STERN, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype LOCALID_OLD_WOMAN, MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT
+	setobjectmovementtype LOCALID_RICH_BOY, MOVEMENT_TYPE_FACE_UP_AND_RIGHT
+	setobjectmovementtype LOCALID_COOK, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_GIRL, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_FAT_MAN, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_MAN_1, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 SlateportCity_EventScript_SetReadyForScottScene::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
 	getplayerxy VAR_0x8004, VAR_0x8005
 	goto_if_eq VAR_0x8004, 30, SlateportCity_EventScript_MoveScottLeft
-	setobjectxyperm LOCALID_SLATEPORT_SCOTT, 23, 27
-	setobjectmovementtype LOCALID_SLATEPORT_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_SCOTT, 23, 27
+	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 SlateportCity_EventScript_MoveScottLeft::
-	setobjectxyperm LOCALID_SLATEPORT_SCOTT, 22, 27
-	setobjectmovementtype LOCALID_SLATEPORT_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_SCOTT, 22, 27
+	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 SlateportCity_OnFrame:
@@ -52,17 +75,17 @@ SlateportCity_OnFrame:
 
 SlateportCity_EventScript_ScottScene::
 	lockall
-	addobject LOCALID_SLATEPORT_SCOTT
-	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerFaceScott
-	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottApproachPlayer
+	addobject LOCALID_SCOTT
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerFaceScott
+	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottApproachPlayer
 	waitmovement 0
 	msgbox SlateportCity_Text_YouDroveTeamAquaAway, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_SCOTT, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 60
 	msgbox SlateportCity_Text_MaybeThisTrainer, MSGBOX_DEFAULT
-	applymovement LOCALID_SLATEPORT_SCOTT, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox SlateportCity_Text_LetsRegisterEachOther, MSGBOX_DEFAULT
 	closemessage
@@ -75,11 +98,11 @@ SlateportCity_EventScript_ScottScene::
 	setflag FLAG_ENABLE_SCOTT_MATCH_CALL
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExit
+	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExit
 	waitmovement 0
-	removeobject LOCALID_SLATEPORT_SCOTT
-	setobjectxyperm LOCALID_SLATEPORT_SCOTT, 10, 12
-	setobjectmovementtype LOCALID_SLATEPORT_SCOTT, MOVEMENT_TYPE_FACE_DOWN
+	removeobject LOCALID_SCOTT
+	setobjectxyperm LOCALID_SCOTT, 10, 12
+	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_DOWN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 2
 	addvar VAR_SCOTT_STATE, 1
@@ -131,7 +154,9 @@ SlateportCity_Pokemart_EnergyGuru:
 	.2byte ITEM_ZINC
 	.2byte ITEM_CALCIUM
 	.2byte ITEM_HP_UP
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 SlateportCity_EventScript_EffortRibbonWoman::
 	lock
@@ -347,7 +372,7 @@ SlateportCity_EventScript_AquaGrunt1::
 	faceplayer
 	msgbox SlateportCity_Text_QuitPushing, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_1, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -357,7 +382,7 @@ SlateportCity_EventScript_AquaGrunt2::
 	faceplayer
 	msgbox SlateportCity_Text_AquaHasPolicy, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_2, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -367,7 +392,7 @@ SlateportCity_EventScript_AquaGrunt3::
 	faceplayer
 	msgbox SlateportCity_Text_BossIsBrilliant, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_3, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_3, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -377,7 +402,7 @@ SlateportCity_EventScript_AquaGrunt4::
 	faceplayer
 	msgbox SlateportCity_Text_WhatsNewSchemeIWonder, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_4, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_4, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -387,7 +412,7 @@ SlateportCity_EventScript_AquaGrunt5::
 	faceplayer
 	msgbox SlateportCity_Text_ShouldTakeItAll, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_5, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_5, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -397,7 +422,7 @@ SlateportCity_EventScript_AquaGrunt6::
 	faceplayer
 	msgbox SlateportCity_Text_DontButtIn, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_6, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_6, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -407,7 +432,7 @@ SlateportCity_EventScript_AquaGrunt7::
 	faceplayer
 	msgbox SlateportCity_Text_RemindsMeOfLongLineForGames, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_7, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_7, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -417,7 +442,7 @@ SlateportCity_EventScript_AquaGrunt8::
 	faceplayer
 	msgbox SlateportCity_Text_WhyAreWeLiningUp, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_8, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_8, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -426,31 +451,31 @@ SlateportCity_EventScript_AquaGrunt9::
 	lock
 	faceplayer
 	playse SE_PIN
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_ExclamationMark
+	applymovement LOCALID_GRUNT_9, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_Delay48
+	applymovement LOCALID_GRUNT_9, Common_Movement_Delay48
 	waitmovement 0
 	msgbox SlateportCity_Text_WhatDoYouWant, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer
+	applymovement LOCALID_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox SlateportCity_Text_IllReadSignForYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
 	waitmovement 0
 	msgbox SlateportCity_Text_SaysSomethingLikeSeaIsEndless, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FacePlayer
+	applymovement LOCALID_GRUNT_9, Common_Movement_FacePlayer
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
+	applymovement LOCALID_GRUNT_9, SlateportCity_Movement_DelayAquaGrunt
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_GRUNT_9, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_9, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -469,7 +494,7 @@ SlateportCity_EventScript_AquaGrunt11::
 	faceplayer
 	msgbox SlateportCity_Text_HotSpringsAfterOperation, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_11, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_GRUNT_11, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
@@ -489,7 +514,9 @@ SlateportCity_PokemartDecor_Dolls:
 	.2byte DECOR_AZURILL_DOLL
 	.2byte DECOR_MARILL_DOLL
 	.2byte DECOR_SKITTY_DOLL
-	pokemartlistend
+	.2byte DECOR_NONE
+	release
+	end
 
 SlateportCity_EventScript_ComeBackWithSecretPower::
 	msgbox gText_ComeBackWithSecretPower, MSGBOX_DEFAULT
@@ -523,7 +550,9 @@ SlateportCity_PokemartDecor:
 	.2byte DECOR_A_NOTE_MAT
 	.2byte DECOR_B_NOTE_MAT
 	.2byte DECOR_C_HIGH_NOTE_MAT
-	pokemartlistend
+	.2byte DECOR_NONE
+	release
+	end
 
 SlateportCity_EventScript_PowerTMClerk::
 	lock
@@ -537,9 +566,11 @@ SlateportCity_EventScript_PowerTMClerk::
 
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
-	.2byte ITEM_TM_HIDDEN_POWER
-	.2byte ITEM_TM_SECRET_POWER
-	pokemartlistend
+	.2byte ITEM_TM10  @ Hidden Power
+	.2byte ITEM_TM43  @ Secret Power
+	.2byte ITEM_NONE
+	release
+	end
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
@@ -547,48 +578,48 @@ SlateportCity_EventScript_CaptStern::
 	msgbox SlateportCity_Text_SternMoveAheadWithExploration, MSGBOX_DEFAULT
 	msgbox SlateportCity_Text_GabbyWonderfulThanksForInterview, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_GABBY, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_GABBY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 10
-	applymovement LOCALID_SLATEPORT_TY, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_TY, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 25
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, SlateportCity_Movement_SternWatchGabbyAndTyExit
-	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerFaceStern
-	applymovement LOCALID_SLATEPORT_GABBY, SlateportCity_Movement_GabbyExit
-	applymovement LOCALID_SLATEPORT_TY, SlateportCity_Movement_TyExit
+	applymovement LOCALID_CAPT_STERN, SlateportCity_Movement_SternWatchGabbyAndTyExit
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerFaceStern
+	applymovement LOCALID_GABBY, SlateportCity_Movement_GabbyExit
+	applymovement LOCALID_TY, SlateportCity_Movement_TyExit
 	waitmovement 0
-	removeobject LOCALID_SLATEPORT_GABBY
-	removeobject LOCALID_SLATEPORT_TY
+	removeobject LOCALID_GABBY
+	removeobject LOCALID_TY
 	msgbox SlateportCity_Text_SternWhewFirstInterview, MSGBOX_DEFAULT
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_Text_OhPlayerWeMadeDiscovery, MSGBOX_DEFAULT
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox SlateportCity_Text_AquaWillAssumeControlOfSubmarine, MSGBOX_DEFAULT
-	applymovement LOCALID_SLATEPORT_COOK, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_SLATEPORT_FAT_MAN, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_SLATEPORT_OLD_WOMAN, SlateportCity_Movement_OldWomanConcern
-	applymovement LOCALID_SLATEPORT_RICH_BOY, Common_Movement_QuestionMark
-	applymovement LOCALID_SLATEPORT_MAN_1, SlateportCity_Movement_ManConcern
+	applymovement LOCALID_COOK, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_FAT_MAN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_OLD_WOMAN, SlateportCity_Movement_OldWomanConcern
+	applymovement LOCALID_RICH_BOY, Common_Movement_QuestionMark
+	applymovement LOCALID_MAN_1, SlateportCity_Movement_ManConcern
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox SlateportCity_Text_SternWhatWasAllThat, MSGBOX_DEFAULT
 	playse SE_PIN
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_ExclamationMark
+	applymovement LOCALID_CAPT_STERN, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_Delay48
+	applymovement LOCALID_CAPT_STERN, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT
 	msgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_SLATEPORT_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
-	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor
+	applymovement LOCALID_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor
 	waitmovement 0
-	removeobject LOCALID_SLATEPORT_CAPT_STERN
+	removeobject LOCALID_CAPT_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SUBMARINE_SHADOW
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT
@@ -864,22 +895,22 @@ SlateportCity_EventScript_NotEnoughBerryPowder::
 
 SlateportCity_EventScript_ScottBattleTentScene::
 	lockall
-	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	opendoor 10, 12
 	waitdooranim
-	addobject LOCALID_SLATEPORT_SCOTT
-	applymovement LOCALID_PLAYER, SlateportCity_Movement_PushPlayerDown
-	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExitBattleTent
+	addobject LOCALID_SCOTT
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PushPlayerDown
+	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExitBattleTent
 	waitmovement 0
 	closedoor 10, 12
 	waitdooranim
 	msgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit
-	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExitAfterBattleTent
+	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit
+	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExitAfterBattleTent
 	waitmovement 0
-	removeobject LOCALID_SLATEPORT_SCOTT
+	removeobject LOCALID_SCOTT
 	addvar VAR_SCOTT_STATE, 1
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
 	releaseall
@@ -951,27 +982,25 @@ SlateportCity_Text_EffortRibbonLooksGoodOnIt:
 SlateportCity_Text_WonderIfLighthouseStartlesPokemon:
 	.string "The light of the lighthouse reaches\n"
 	.string "dozens of miles away.\p"
-	.string "I wonder if it doesn't startle POKéMON\n"
-	.string "in the sea.$"
+	.string "Thats ampharos for ya!$"
 
 SlateportCity_Text_SeaweedFullOfLife:
 	.string "Ooh, look at this!\p"
 	.string "The seaweed you can get around these\n"
 	.string "parts is fresh and full of life.\p"
-	.string "Why, it looks like it can even rear up\n"
-	.string "and attack!$"
+	.string "Why, it looks like it can even learn\n"
+	.string "Hydro Pump!$"
 
 SlateportCity_Text_HowTownIsBornAndGrows:
 	.string "Where the water is clean, the fruits\n"
 	.string "of bountiful harvest gather.\p"
-	.string "And where people gather, a market\n"
-	.string "soon starts.\p"
-	.string "That is how a town is born and grows.$"
+	.string "I need to become evil.\p"
+	.string "I could stop this.$"
 
 SlateportCity_Text_SlateportWonderfulPlace:
 	.string "Shopping where you can breathe the\n"
-	.string "scent of the ocean…\p"
-	.string "SLATEPORT is such a wonderful place!$"
+	.string "feel of the ocean…\p"
+	.string "And the taste of champagne!$"
 
 SlateportCity_Text_BuyBricksSoDecorWontGetDirty:
 	.string "If you put DOLLS or CUSHIONS on\n"
@@ -984,30 +1013,30 @@ SlateportCity_Text_GoingToCompeteInBattleTent:
 	.string "Wroooar! I'm going to compete in\n"
 	.string "the BATTLE TENT, too!\p"
 	.string "But before that, I need to catch\n"
-	.string "some POKéMON!$"
+	.string "a POKéMON!$"
 
 SlateportCity_Text_BushedHikingFromMauville:
 	.string "Whew… I'm just bushed…\p"
 	.string "I hiked over from MAUVILLE CITY.\n"
 	.string "But, boy, this city's huge.\p"
-	.string "If I'd known this, I would've ridden\n"
-	.string "my BIKE here.$"
+	.string "It must be atleast 40 tiles wide\n"
+	.string "and 60 tiles tall...$"
 
 SlateportCity_Text_EveryoneCallsHimCaptStern:
 	.string "STERN, the fellow who built the\n"
 	.string "MUSEUM, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
-	.string "So, everyone calls him CAPT. STERN.$"
+	.string "So, everyone calls him underwater guy.$"
 
 SlateportCity_Text_WhatsLongLineOverThere:
-	.string "What is that over there?\n"
-	.string "That long line…$"
+	.string "Hey look, Its team Aqua!\n"
+	.string "Those guys are so cool!$"
 
 SlateportCity_Text_VisitedMuseumOften:
 	.string "When I was a child, I visited\n"
 	.string "the MUSEUM often.\p"
-	.string "I used to dream about the mysteries of\n"
-	.string "the sea after seeing the exhibits.$"
+	.string "I used to dream about becoming\n"
+	.string "a MUSEUM.$"
 
 SlateportCity_Text_QuitPushing:
 	.string "Hey, there! Quit pushing!\n"
@@ -1020,13 +1049,14 @@ SlateportCity_Text_AquaHasPolicy:
 
 SlateportCity_Text_BossIsBrilliant:
 	.string "Our BOSS is brilliant.\p"
-	.string "What would he want to do with\n"
-	.string "a MUSEUM now?$"
+	.string "His name is Archie.\p"
+	.string "His mother's maiden name is Baker.\p"
+	.string "His first childhood pet was Monty.$"
 
 SlateportCity_Text_WhatsNewSchemeIWonder:
 	.string "What's the new scheme, I wonder?\p"
 	.string "Our BOSS is scary when he's mad, so\n"
-	.string "I'd better not screw things up…$"
+	.string "give you his mother's maiden name…$"
 
 SlateportCity_Text_ShouldTakeItAll:
 	.string "If there's something we need in\n"
@@ -1038,8 +1068,8 @@ SlateportCity_Text_DontButtIn:
 
 SlateportCity_Text_RemindsMeOfLongLineForGames:
 	.string "A long line, huh?\p"
-	.string "It reminds me of the times I lined up to\n"
-	.string "buy smash-hit games…$"
+	.string "It reminds me of the time I lined up to\n"
+	.string "buy Super Smash Brothers: Brawl…$"
 
 SlateportCity_Text_WhyAreWeLiningUp:
 	.string "Why are we even lining up and paying?\n"
@@ -1056,9 +1086,9 @@ SlateportCity_Text_IllReadSignForYou:
 SlateportCity_Text_SaysSomethingLikeSeaIsEndless:
 	.string "Let's see…\p"
 	.string "Um… I think it says something like\n"
-	.string "“the life in the sea is endless.”\p"
-	.string "Yup, I'm pretty sure that's what\n"
-	.string "it says.$"
+	.string "“chopped crayon funny onions.”\p"
+	.string ".....................\p"
+	.string "I can't read.$"
 
 SlateportCity_Text_ShouldveBroughtMyGameBoy:
 	.string "Grumble…\p"
@@ -1074,18 +1104,19 @@ SlateportCity_Text_HotSpringsAfterOperation:
 
 SlateportCity_Text_SeaIsSoWet:
 	.string "The sea is just so vast…\p"
-	.string "Could the sea have been made by\n"
-	.string "the tears shed by POKéMON?$"
+	.string "Could the sea have been made out\n"
+	.string "of water?$"
 
 SlateportCity_Text_SinkOldBoats:
 	.string "Do you know what they do with old\n"
 	.string "ships that become too creaky to sail?\p"
 	.string "They sink them in the sea so they\n"
-	.string "become habitats for POKéMON.$"
+	.string "become habitats for POKéMON.\p"
+	.string "Just like used car batteries!$"
 
 SlateportCity_Text_BuyTooMuch:
-	.string "Whenever I visit here, I get carried\n"
-	.string "away and buy too much.$"
+	.string "Whenever I visit here, I get the\n"
+	.string "onions! I love onions!$"
 
 SlateportCity_Text_GetNameRaterToHelpYou:
 	.string "If you want to change your POKéMON's\n"
@@ -1110,24 +1141,26 @@ SlateportCity_Text_CaptSternBeingInterviewed:
 	.string "I was hoping that it was a famous star\n"
 	.string "so I could get an autograph.\p"
 	.string "But who's that being interviewed?\n"
-	.string "Isn't that CAPT. STERN?$"
+	.string "Isn't that underwater guy?$"
 
 SlateportCity_Text_InterviewerSoCool:
 	.string "That lady interviewer is so cool\n"
 	.string "and pretty.\p"
 	.string "When I grow up, I'm going to be\n"
-	.string "an international journalist!$"
+	.string "an international journalist!\p"
+	.string "I just hope I don't have to do\p"
+	.string "an article on Boeing!$"
 
 SlateportCity_Text_SternSaysDiscoveredSomething:
 	.string "CAPT. STERN says they discovered\n"
 	.string "something at the bottom of the sea.\p"
 	.string "I wonder what it is?\n"
-	.string "What could it be?$"
+	.string "Probably Kyogre.$"
 
 SlateportCity_Text_CaptainComeBackWithBigFish:
 	.string "What's going on here?\p"
 	.string "Did the good CAPTAIN come back with\n"
-	.string "a big fish from the ocean floor?$"
+	.string "the big fish from the ocean floor?$"
 
 SlateportCity_Text_AmIOnTV:
 	.string "Hey! Are you watching?\n"
@@ -1159,7 +1192,8 @@ SlateportCity_Text_GabbyWonderfulThanksForInterview:
 SlateportCity_Text_SternWhewFirstInterview:
 	.string "CAPT. STERN: Whew…\p"
 	.string "That was my first time to be filmed for\n"
-	.string "TV. That was nerve-wracking.$"
+	.string "I hope I didn't accidentally metion\p"
+	.string "my extra toe!$"
 
 SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "Oh! {PLAYER}{KUN}!\n"
@@ -1204,7 +1238,7 @@ SlateportCity_Text_BattleTentSign:
 SlateportCity_Text_SternsShipyardWantedSign:
 	.string "STERN'S SHIPYARD\p"
 	.string "“Wanted: A sailor capable of sailing\n"
-	.string "in all currents.”$"
+	.string "in the ocean.”$"
 
 SlateportCity_Text_SternsShipyardNearsCompletion:
 	.string "STERN'S SHIPYARD\p"
@@ -1220,33 +1254,33 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 
 SlateportCity_Text_PokemonFanClubSign:
 	.string "POKéMON FAN CLUB\n"
-	.string "“Calling all fans of POKéMON!”$"
+	.string "“Calling all fans of Cinderace!”$"
 
 SlateportCity_Text_OceanicMuseumSign:
-	.string "“The endless sea sustains\n"
-	.string "all life.”\p"
+	.string "“The endless ocean for\n"
+	.string "the nintendo wii.”\p"
 	.string "OCEANIC MUSEUM$"
 
 SlateportCity_Text_CitySign:
 	.string "SLATEPORT CITY\p"
-	.string "“The port where people and POKéMON\n"
+	.string "“The port where POKéMON and people\n"
 	.string "cross paths.”$"
 
 SlateportCity_Text_MarketSign:
 	.string "SLATEPORT MARKET\n"
-	.string "“Unique items found nowhere else!”$"
+	.string "“Unique items and normal stuff!”$"
 
 SlateportCity_Text_HarborFerryUnderConstruction:
 	.string "SLATEPORT HARBOR\p"
 	.string "“The ferry S.S. TIDAL is under\n"
 	.string "construction in the SHIPYARD.\p"
 	.string "“Service is scheduled to begin\n"
-	.string "shortly.”$"
+	.string "Wednesday.”$"
 
 SlateportCity_Text_HarborSign:
 	.string "SLATEPORT HARBOR\p"
 	.string "“Enjoy a delightful cruise on\n"
-	.string "the ferry S.S. TIDAL.”$"
+	.string "or the ferry S.S. TIDAL.”$"
 
 SlateportCity_Text_NameRatersHouseSign:
 	.string "NAME RATER'S HOUSE\n"
@@ -1347,7 +1381,7 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "If it isn't {PLAYER}{KUN}!\p"
 	.string "{PLAYER}{KUN}, let me guess--you're going\n"
 	.string "to take the BATTLE TENT challenge?\p"
-	.string "Yeah! That's a good idea!\n"
+	.string "Yeah! Baby! Yeah!!!!\n"
 	.string "That's a really great idea!\p"
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"

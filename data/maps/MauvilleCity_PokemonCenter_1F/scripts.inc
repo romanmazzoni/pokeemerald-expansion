@@ -1,3 +1,5 @@
+.set LOCALID_NURSE, 1
+
 MauvilleCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -14,7 +16,7 @@ MauvilleCity_PokemonCenter_1F_EventScript_SetMauvilleOldManGfx::
 	end
 
 MauvilleCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_MAUVILLE_NURSE
+	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -36,8 +38,8 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:
 	.string "That man over there, he says weird\n"
 	.string "things!\p"
-	.string "He's funny in a weird way.\n"
-	.string "I doubt I'll forget about him!$"
+	.string "He's a creep.\n"
+	.string "He's a weirdo...$"
 
 MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
 	.string "When I accessed the RECORD CORNER,\n"
@@ -47,8 +49,7 @@ MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
 	.string "as my friend's!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
-	.string "A RECORD CORNER opened upstairs in\n"
-	.string "the POKéMON CENTER.\p"
-	.string "I don't know what it's about, but it\n"
-	.string "sounds fun. I'll go check it out!$"
-
+	.string "I adopted a kitten last week.\p"
+	.string "Hes a little orange guy.\p"
+	.string "His name is Monty.\p"
+	.string "I love the Monty Hall problem.$"

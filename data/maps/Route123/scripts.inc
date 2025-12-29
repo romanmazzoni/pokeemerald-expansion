@@ -9,14 +9,14 @@ Route123_OnTransition:
 Route123_EventScript_GigaDrainGirl::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_GIGA_DRAIN, Route123_EventScript_ReceivedGigaDrain
+	goto_if_set FLAG_RECEIVED_TM19, Route123_EventScript_ReceivedGigaDrain
 	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
 	special IsGrassTypeInParty
 	goto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons
 	msgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_GIGA_DRAIN
+	giveitem ITEM_TM19
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_GIGA_DRAIN
+	setflag FLAG_RECEIVED_TM19
 	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
 	release
 	end
@@ -183,7 +183,7 @@ Route123_Text_YouLikeGrassMonsTooHaveThis:
 
 Route123_Text_CheckTreesWithMyGrassMon:
 	.string "I check trees with my GRASS-type\n"
-	.string "POKéMON. I'm like a tree doctor.$"
+	.string "POKéMON. I'm like a time doctor.$"
 
 Route123_Text_RouteSign:
 	.string "{RIGHT_ARROW} ROUTE 123\n"
@@ -195,4 +195,20 @@ Route123_Text_RouteSignMtPyre:
 
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
+
+Route123_fight_Jirachi::
+	lockall
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_JIRACHI, 40, ITEM_BRIGHT_POWDER
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_Jirachi
+	fadescreen FADE_TO_BLACK
+	removeobject 44
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	releaseall
+	return
 

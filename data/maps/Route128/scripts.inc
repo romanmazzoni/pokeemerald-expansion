@@ -1,3 +1,7 @@
+.set LOCALID_STEVEN, 3
+.set LOCALID_ARCHIE, 4
+.set LOCALID_MAXIE, 5
+
 Route128_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route128_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route128_OnFrame
@@ -14,64 +18,64 @@ Route128_OnFrame:
 Route128_EventScript_KyogreAwakenedScene::
 	lockall
 	delay 20
-	applymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieLookAround
+	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieLookAround
 	waitmovement 0
 	msgbox Route128_Text_ArchieWhatHappened, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieBackUp
+	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieBackUp
 	waitmovement 0
 	msgbox Route128_Text_ArchieIOnlyWanted, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieApproachArchie
+	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachArchie
 	waitmovement 0
-	applymovement LOCALID_ROUTE128_ARCHIE, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route128_Text_MaxieDoYouUnderstandNow, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieApproachPlayer
+	applymovement LOCALID_MAXIE, Route128_Movement_MaxieApproachPlayer
 	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route128_Text_MaxieResposibilityFallsToArchieAndMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieRunLeft
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieWalkLeft
+	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieRunLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_MAXIE, Route128_Movement_MaxieWalkLeft
 	waitmovement 0
 	msgbox Route128_Text_MaxieThisDefiesBelief, MSGBOX_DEFAULT
 	closemessage
 	delay 40
-	applymovement LOCALID_ROUTE128_MAXIE, Route128_Movement_MaxieExit
-	applymovement LOCALID_ROUTE128_ARCHIE, Route128_Movement_ArchieExit
+	applymovement LOCALID_MAXIE, Route128_Movement_MaxieExit
+	applymovement LOCALID_ARCHIE, Route128_Movement_ArchieExit
 	waitmovement 0
-	removeobject LOCALID_ROUTE128_MAXIE
-	removeobject LOCALID_ROUTE128_ARCHIE
+	removeobject LOCALID_MAXIE
+	removeobject LOCALID_ARCHIE
 	delay 100
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
 	waitfieldeffect FLDEFF_NPCFLY_OUT
-	addobject LOCALID_ROUTE128_STEVEN
-	applymovement LOCALID_ROUTE128_STEVEN, Route128_Movement_StevenApproachPlayer
+	addobject LOCALID_STEVEN
+	applymovement LOCALID_STEVEN, Route128_Movement_StevenApproachPlayer
 	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox Route128_Text_StevenWhatIsHappening, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_STEVEN, Route128_Movement_StevenWalkUp
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_STEVEN, Route128_Movement_StevenWalkUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route128_Text_StevenWholeWorldWillDrown, MSGBOX_DEFAULT
-	applymovement LOCALID_ROUTE128_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox Route128_Text_StevenImGoingToSootopolis, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE128_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
 	delay 15
-	removeobject LOCALID_ROUTE128_STEVEN
+	removeobject LOCALID_STEVEN
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_ROUTE128_STATE, 2
@@ -260,22 +264,15 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "completely out of control!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "MAXIE: {PLAYER}, don't say anything.\p"
-	.string "I know that I have no right to be\n"
-	.string "critical of ARCHIE…\p"
-	.string "But the way things are now, I doubt\n"
-	.string "that we humans will be capable of\l"
-	.string "doing anything about it.\p"
-	.string "But neither can we stand by and\n"
-	.string "just watch helplessly.\p"
-	.string "The responsibility for putting an end\n"
-	.string "to this falls to ARCHIE and me…$"
+	.string "MAXIE: {PLAYER}, Whats going on?\p"
+	.string "Hows it going?\n"
+	.string "Lets stop Archie together!$"
 
 Route128_Text_MaxieThisDefiesBelief:
 	.string "MAXIE: This defies belief…\p"
 	.string "Those super-ancient POKéMON…\p"
-	.string "Their power is unbelievable.\n"
-	.string "They've upset the balance of nature…$"
+	.string "They are so cool!\n"
+	.string "Groundon is awesome!!$"
 
 Route128_Text_StevenWhatIsHappening:
 	.string "STEVEN: {PLAYER}{KUN}!\n"
@@ -299,4 +296,3 @@ Route128_Text_StevenImGoingToSootopolis:
 	.string "but don't do anything reckless.\p"
 	.string "Okay.\n"
 	.string "I'm going to SOOTOPOLIS.$"
-

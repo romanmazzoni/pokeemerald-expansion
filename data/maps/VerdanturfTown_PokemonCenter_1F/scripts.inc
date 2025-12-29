@@ -1,3 +1,5 @@
+.set LOCALID_NURSE, 1
+
 VerdanturfTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VerdanturfTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -9,7 +11,7 @@ VerdanturfTown_PokemonCenter_1F_OnTransition:
 	end
 
 VerdanturfTown_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_VERDANTURF_NURSE
+	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -27,16 +29,15 @@ VerdanturfTown_PokemonCenter_1F_EventScript_ExpertM::
 VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon:
 	.string "You can't consider yourself a real\n"
 	.string "TRAINER if you don't have faith\l"
-	.string "in your POKéMON.\p"
+	.string "in the heart of the cards.\p"
 	.string "Only those people who can believe\n"
-	.string "in their battling POKéMON can win\l"
+	.string "in the heart of the cards can win\l"
 	.string "through to the very end.$"
 
 VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent:
 	.string "The reason why anyone would visit\n"
 	.string "VERDANTURF…\p"
-	.string "It's the BATTLE TENT. It goes without\n"
+	.string "It's the nest balls. It goes without\n"
 	.string "saying.\p"
 	.string "Or is there somebody here that you\n"
 	.string "came to see?$"
-

@@ -1,3 +1,5 @@
+.set LOCALID_FOSSIL_MANIAC, 1
+
 Route114_FossilManiacsTunnel_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route114_FossilManiacsTunnel_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route114_FossilManiacsTunnel_OnLoad
@@ -24,7 +26,7 @@ Route114_FossilManiacsTunnel_EventScript_CloseDesertUnderpass::
 Route114_FossilManiacsTunnel_EventScript_ManiacMentionCaveIn::
 	lockall
 	applymovement LOCALID_FOSSIL_MANIAC, Common_Movement_WalkInPlaceFasterUp
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox Route114_FossilManiacsTunnel_Text_NotSafeThatWay, MSGBOX_DEFAULT
 	setvar VAR_FOSSIL_MANIAC_STATE, 2
@@ -66,18 +68,15 @@ Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "You found a FOSSIL, didn't you?\n"
-	.string "That's so nice… It's so dreamy…\p"
-	.string "What are you going to do with that\n"
-	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS…\p"
-	.string "I love my FOSSILS, so I would never\n"
-	.string "do anything like that…$"
+	.string "bring your fossil to DEVON.\p"
+	.string "DEVON!! THE PLACE AT\n"
+	.string "THE BEGGINING OF THE GAME.\p"
+	.string "GO GET YOU FOSSIL EXAMINED!\n"
+	.string "ITS A PALKIA.$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSILS are so… Wonderful…\n"
-	.string "It's so dreamy…$"
+	.string "FOSSILS are so… Dreamy…\n"
+	.string "I wish I could meet a fossil boy…$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
 	.string "Oh…\n"
@@ -88,4 +87,3 @@ Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
 	.string "underneath now…\p"
 	.string "But I've left it alone because I don't\n"
 	.string "think there are any FOSSILS there…$"
-

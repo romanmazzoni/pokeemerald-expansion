@@ -1,3 +1,5 @@
+.set LOCALID_NURSE, 1
+
 FortreeCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FortreeCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -8,7 +10,7 @@ FortreeCity_PokemonCenter_1F_OnTransition:
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_FORTREE_NURSE
+	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -28,8 +30,8 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
-	.string "Listen, kid, are you working\n"
-	.string "on a POKéDEX?\p"
+	.string "Listen, kid, do you like\n"
+	.string "ULTRA BEASTS?\p"
 	.string "Hmm… Go to the SAFARI ZONE.\n"
 	.string "That's my suggestion.$"
 
@@ -39,7 +41,7 @@ FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat:
 	.string "It's pretty neat. It mixes and matches\n"
 	.string "the records of TRAINERS.\p"
 	.string "I don't know quite how it works,\n"
-	.string "but it's cool. It's exciting, even!$"
+	.string "so I didn't touch the code there!$"
 
 FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "Oh, wow, you have a POKéNAV!\n"
@@ -50,6 +52,5 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "registered TRAINERS anytime.\p"
 	.string "It also shows you which TRAINERS\n"
 	.string "want a rematch with you.\p"
-	.string "It's really nifty! Those DEVON guys\n"
-	.string "sure know what they're doing!$"
-
+	.string "I love telling people what a\n"
+	.string "phone is. I'm so cool!$"

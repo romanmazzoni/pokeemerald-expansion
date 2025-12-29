@@ -4,7 +4,7 @@ FallarborTown_CozmosHouse_MapScripts::
 FallarborTown_CozmosHouse_EventScript_ProfCozmo::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_GaveMeteorite
+	goto_if_set FLAG_RECEIVED_TM27, FallarborTown_CozmosHouse_EventScript_GaveMeteorite
 	checkitem ITEM_METEORITE
 	goto_if_eq VAR_RESULT, TRUE, FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite
 	msgbox FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow, MSGBOX_DEFAULT
@@ -16,11 +16,11 @@ FallarborTown_CozmosHouse_EventScript_PlayerHasMeteorite::
 	call_if_set FLAG_TEMP_2, FallarborTown_CozmosHouse_EventScript_AskForMeteorite
 	goto_if_eq VAR_RESULT, NO, FallarborTown_CozmosHouse_EventScript_DeclineGiveMeteorite
 	msgbox FallarborTown_CozmosHouse_Text_PleaseUseThisTM, MSGBOX_DEFAULT
-	giveitem ITEM_TM_RETURN
+	giveitem ITEM_TM27
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setvar VAR_0x8004, ITEM_METEORITE
 	call Common_EventScript_PlayerHandedOverTheItem
-	setflag FLAG_RECEIVED_TM_RETURN
+	setflag FLAG_RECEIVED_TM27
 	msgbox FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch, MSGBOX_DEFAULT
 	release
 	end
@@ -48,7 +48,7 @@ FallarborTown_CozmosHouse_EventScript_GaveMeteorite::
 FallarborTown_CozmosHouse_EventScript_CozmosWife::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_RETURN, FallarborTown_CozmosHouse_EventScript_CozmoIsHappy
+	goto_if_set FLAG_RECEIVED_TM27, FallarborTown_CozmosHouse_EventScript_CozmoIsHappy
 	goto_if_set FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY, FallarborTown_CozmosHouse_EventScript_CozmoIsSad
 	msgbox FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls, MSGBOX_DEFAULT
 	release
@@ -80,8 +80,8 @@ FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt:
 	.string "Is it the METEORITE that TEAM MAGMA\n"
 	.string "took from METEOR FALLS?\p"
 	.string "Please, may I have it?\p"
-	.string "I'm not asking for it for free.\n"
-	.string "How about in exchange for this TM?$"
+	.string "I'm probably not part of team magma.\n"
+	.string "Probably.$"
 
 FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
 	.string "PROF. COZMO: This TM, it represents\n"
@@ -91,7 +91,7 @@ FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
 	.string "PROF. COZMO: Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "This is a meteorite!$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "PROF. COZMO: Oh, but…\n"
@@ -115,4 +115,3 @@ FallarborTown_CozmosHouse_Text_FeelSorryForCozmo:
 FallarborTown_CozmosHouse_Text_CozmoIsSoHappy:
 	.string "Look at PROF. COZMO…\n"
 	.string "He's so happy! I think it's cute.$"
-

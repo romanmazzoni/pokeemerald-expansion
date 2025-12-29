@@ -4,11 +4,11 @@ SootopolisCity_House1_MapScripts::
 SootopolisCity_House1_EventScript_BrickBreakBlackBelt::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_BRICK_BREAK, SootopolisCity_House1_EventScript_ReceivedBrickBreak
+	goto_if_set FLAG_RECEIVED_TM31, SootopolisCity_House1_EventScript_ReceivedBrickBreak
 	msgbox SootopolisCity_House1_Text_DevelopedThisTM, MSGBOX_DEFAULT
-	giveitem ITEM_TM_BRICK_BREAK
+	giveitem ITEM_TM31
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_BRICK_BREAK
+	setflag FLAG_RECEIVED_TM31
 	msgbox SootopolisCity_House1_Text_ExplainBrickBreak, MSGBOX_DEFAULT
 	release
 	end
@@ -36,8 +36,7 @@ SootopolisCity_House1_Text_DevelopedThisTM:
 
 SootopolisCity_House1_Text_ExplainBrickBreak:
 	.string "TM31 contains BRICK BREAK! It's a move\n"
-	.string "so horrible that I can't describe it.$"
+	.string "that breaks them there light screens.$"
 
 SootopolisCity_House1_Text_Kecleon:
-	.string "KECLEON: Puu puhyaah.$"
-
+	.string "KECLEON: Kura tippopas.$"

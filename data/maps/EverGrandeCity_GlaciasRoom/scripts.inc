@@ -9,7 +9,7 @@ EverGrandeCity_GlaciasRoom_OnWarp:
 	.2byte 0
 
 EverGrandeCity_GlaciasRoom_EventScript_PlayerTurnNorth::
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 EverGrandeCity_GlaciasRoom_OnFrame:
@@ -62,7 +62,7 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "Welcome, my name is GLACIA\n"
 	.string "of the ELITE FOUR.\p"
 	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
+	.string "so that I may hone my nice skills.\p"
 	.string "But all I have seen are challenges by\n"
 	.string "weak TRAINERS and their POKéMON.\p"
 	.string "What about you?\p"
@@ -71,13 +71,10 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
 	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "ARE WEAK!\p"
+	.string "I was simply weaker.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "Advance to the next room.\p"
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the POKéMON LEAGUE.$"
-

@@ -1,0 +1,116 @@
+raw `
+    NewMap1_MapScripts::
+	.byte 0
+
+    Regigigas_sign::
+	lockall
+	braillemsgbox Regigigas_sign_Text_0
+	releaseall
+	return
+
+	Regigigas_sign2::
+	lockall
+	braillemsgbox Regigigas_sign_Text_1
+	releaseall
+	return
+
+	Regigigas_sign3::
+	lockall
+	braillemsgbox Regigigas_sign_Text_2
+	releaseall
+	return
+
+Regigigas_sign_Text_0:
+	brailleformat 3, 2, 27, 17, 6, 5	
+	.braille "L DID\n"
+	.braille "YOU KNOW$"
+
+Regigigas_sign_Text_1:
+	brailleformat 3, 2, 27, 17, 6, 5	
+	.braille "GODS OF\n"
+	.braille "DEATH$"
+
+Regigigas_sign_Text_2:
+	brailleformat 3, 2, 27, 17, 6, 5	
+	.braille "LOVE\n"
+	.braille "APPLES?$"
+
+    Regiroom_EventScript_Regired::
+	trainerbattle_single TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat
+	msgbox Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE
+    return
+
+    Regiroom_Text_REDIntro:
+	.string "Prove yourself.$"
+
+    Regiroom_Text_REDDefeat:
+	.string "Good enough.$"
+    
+	Regiroom_Text_REDPostBattle:
+	.string "No reason for me\n"
+    .string "to stop you.$"
+`
+
+script Regiroom_EventScript_RedBattle{
+    lockall
+    if (!flag(FLAG_BADGE08_GET)){
+        msgbox(format("I guard these three beings. You are not ready to face me. Come back when you have 8 gym badges."))
+    } else{
+        trainerbattle_single (TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat)
+	    msgbox(Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE)
+        setflag(FLAG_regired_battle)
+        fadescreen(FADE_TO_BLACK)
+        removeobject(4)
+        fadescreen(FADE_FROM_BLACK)
+    }
+
+    releaseall
+}
+
+    
+script Regiroom_Regigigas {
+    lockall
+    playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_REGIGIGAS, 50, ITEM_ROCK_MEMORY)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    setflag(FLAG_Regigigas)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
+
+script Regiroom_Regidrago {
+    lockall
+    playmoncry(SPECIES_REGIDRAGO, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_REGIDRAGO, 50, ITEM_DRACO_PLATE)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    setflag(FLAG_Regidrago)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(2)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}
+script Regiroom_Regieleki {
+    lockall
+    playmoncry(SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_REGIELEKI, 50, ITEM_ZAP_PLATE)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    setflag(FLAG_Regieleki)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(3)
+    fadescreen(FADE_FROM_BLACK)
+    waitmessage
+    releaseall
+}

@@ -92,14 +92,17 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "Route1152"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "onionbuilding",
+    "Pokemarttest"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
@@ -429,7 +432,14 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "NewMap1",
+    "VictoryRoad_B3F",
+    "VictoryRoad_B4F",
+    "HiddenGrove",
+    "MemoryCave_1F",
+    "Memorycave_bf1",
+    "MemoryCave_bf2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -583,7 +593,9 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom",
-    "TrainerHill_Elevator"
+    "TrainerHill_Elevator",
+    "BattleFrontier_OutsideNew",
+    "OutsideFrontierNewHouse"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
@@ -604,8 +616,8 @@
     "Route110_TrickHousePuzzle6",
     "Route110_TrickHousePuzzle7",
     "Route110_TrickHousePuzzle8",
-    "Route110_SeasideCyclingRoadSouthEntrance",
-    "Route110_SeasideCyclingRoadNorthEntrance"
+    "Route110_SeasideCyclingRoadNorthEntrance",
+    "Route110_SeasideCyclingRoadSouthEntrance"
   ],
   "gMapGroup_IndoorRoute113": [
     "Route113_GlassWorkshop"

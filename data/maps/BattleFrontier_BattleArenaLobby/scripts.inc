@@ -1,3 +1,5 @@
+.set LOCALID_ATTENDANT, 1
+
 BattleFrontier_BattleArenaLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleArenaLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleArenaLobby_OnWarp
@@ -9,15 +11,15 @@ BattleFrontier_BattleArenaLobby_OnWarp:
 
 BattleFrontier_BattleArenaLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 BattleFrontier_BattleArenaLobby_OnFrame:
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, BattleFrontier_BattleArenaLobby_EventScript_WonChallenge
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, BattleFrontier_BattleArenaLobby_EventScript_LostChallenge
+	map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_WON, BattleFrontier_BattleArenaLobby_EventScript_WonChallenge
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_LOST, BattleFrontier_BattleArenaLobby_EventScript_LostChallenge
 	.2byte 0
 
 BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus::
@@ -31,7 +33,7 @@ BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving::
 	arena_set ARENA_DATA_WIN_STREAK, 0
 	arena_set ARENA_DATA_WIN_STREAK_ACTIVE, FALSE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -53,7 +55,7 @@ BattleFrontier_BattleArenaLobby_EventScript_GiveBattlePoints::
 	call BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -65,7 +67,7 @@ BattleFrontier_BattleArenaLobby_EventScript_LostChallenge::
 	call BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -73,7 +75,6 @@ BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge::
 	frontier_checkairshow
 	special LoadPlayerParty
 	special HealPlayerParty
-	callnative UpdateFollowingPokemon
 	arena_save 0
 	playse SE_SAVE
 	waitse
@@ -100,7 +101,7 @@ BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge::
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	goto BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge
 
 BattleFrontier_BattleArenaLobby_EventScript_Attendant::
@@ -132,7 +133,6 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattleArenaLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
-	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
@@ -146,7 +146,7 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	case MULTI_B_PRESSED, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
 
 BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge::
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	arena_init
 	arena_set ARENA_DATA_WIN_STREAK_ACTIVE, TRUE
@@ -156,7 +156,7 @@ BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge::
 	closemessage
 	delay 2
 	call Common_EventScript_SaveGame
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed
 BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
@@ -167,7 +167,7 @@ BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50
 	call_if_eq VAR_RESULT, FRONTIER_LVL_OPEN, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen
 	warp MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR, 9, 13
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	waitstate
 	end
 
@@ -194,7 +194,6 @@ BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge::
 	special LoadPlayerParty
-	callnative UpdateFollowingPokemon
 BattleFrontier_BattleArenaLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge, MSGBOX_DEFAULT
 BattleFrontier_BattleArenaLobby_EventScript_EndCancelChallenge::
@@ -202,13 +201,13 @@ BattleFrontier_BattleArenaLobby_EventScript_EndCancelChallenge::
 	end
 
 BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50::
-	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToLeftDoor
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToLeftDoor
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToLeftDoor
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToLeftDoor
 	waitmovement 0
 	opendoor 2, 2
 	waitdooranim
-	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 2, 2
 	waitdooranim
@@ -251,13 +250,13 @@ BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor:
 	step_end
 
 BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen::
-	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToRightDoor
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToRightDoor
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantWalkToRightDoor
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerWalkToRightDoor
 	waitmovement 0
 	opendoor 11, 2
 	waitdooranim
-	applymovement LOCALID_ARENA_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
-	applymovement LOCALID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattleArenaLobby_Movement_AttendantEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattleArenaLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 11, 2
 	waitdooranim

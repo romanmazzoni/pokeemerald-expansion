@@ -217,3 +217,30 @@ LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney:
 
 LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink:
 	.string "Decided against buying a drink.$"
+
+LillyCove_Topfloor_CustomShop_Intro::
+	lock
+	faceplayer
+	message LillyCove_Topfloor_CustomShop_Intro_Text_0
+	waitmessage
+	pokemart ChocoMart
+	msgbox LillyCove_Topfloor_CustomShop_Intro_Text_1
+	release
+	end
+
+
+	.align 2
+ChocoMart:
+	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_NONE
+
+LillyCove_Topfloor_CustomShop_Intro_Text_0:
+	.string "There are a whole lot of pokemon in this\n"
+	.string "game. It would be a shame if you didn't\l"
+	.string "get to try them all. Use the candy\l"
+	.string "responsibly.$"
+
+LillyCove_Topfloor_CustomShop_Intro_Text_1:
+	.string "Please Come Again.$"

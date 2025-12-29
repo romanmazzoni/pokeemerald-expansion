@@ -69,7 +69,7 @@ ContestHall_EventScript_Contest::
 
 ContestHall_EventScript_SetContestObjects::
 	special LoadLinkContestPlayerPalettes
-	hideobjectat LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_LITTLEROOT_TOWN
 	call ContestHall_EventScript_CreateAudience
 	end
 
@@ -447,4 +447,3 @@ LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan::
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfxMay::
 	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
 	return
-

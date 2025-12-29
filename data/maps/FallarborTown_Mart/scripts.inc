@@ -25,7 +25,9 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_GUARD_SPEC
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 FallarborTown_Mart_EventScript_Woman::
 	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
@@ -52,13 +54,12 @@ FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "but it's so hard to decide…\p"
 	.string "If I make it evolve, it will become\n"
 	.string "much stronger.\p"
-	.string "But it will look so different, too.$"
+	.string "But no downsides...$"
 
 FallarborTown_Mart_Text_Skitty:
 	.string "SKITTY: Miyao?$"
 
 FallarborTown_Mart_Text_SellNuggetIFound:
 	.string "This NUGGET I found here…\n"
-	.string "I suppose I'll have to sell it, seeing\l"
+	.string "I suppose I'll have to LEARN FLING\l"
 	.string "as how it has no other use.$"
-

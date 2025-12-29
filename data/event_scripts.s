@@ -91,8 +91,8 @@ gSpecialVars::
 	.4byte gSpecialVar_ContestCategory
 	.4byte gSpecialVar_MonBoxId
 	.4byte gSpecialVar_MonBoxPos
-	.4byte gSpecialVar_Unused_0x8014
 	.4byte gTrainerBattleParameter + 2 // gTrainerBattleParameter.params.opponentA
+	.4byte gTrainerBattleOpponent_A
 
 	.include "data/specials.inc"
 
@@ -571,8 +571,8 @@ gStdScripts_End::
 	.include "data/maps/Route110_TrickHousePuzzle6/scripts.inc"
 	.include "data/maps/Route110_TrickHousePuzzle7/scripts.inc"
 	.include "data/maps/Route110_TrickHousePuzzle8/scripts.inc"
-	.include "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
 	.include "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
+	.include "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
 	.include "data/maps/Route113_GlassWorkshop/scripts.inc"
 	.include "data/maps/Route123_BerryMastersHouse/scripts.inc"
 	.include "data/maps/Route119_WeatherInstitute_1F/scripts.inc"
@@ -585,7 +585,6 @@ gStdScripts_End::
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
 
-	.include "data/scripts/config.inc"
 	.include "data/scripts/debug.inc"
 
 EventScript_WhiteOut::
@@ -649,6 +648,11 @@ EventScript_MoveMrBrineyToDewford::
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	end
+
+EventScript_CancelMessageBox::
+	special UseBlankMessageToCancelPokemonPic
+	release
 	end
 
 EventScript_MoveMrBrineyToRoute109::
@@ -730,11 +734,6 @@ EventScript_BackupMrBrineyLocation::
 	.include "data/scripts/rival_graphics.inc"
 	.include "data/scripts/set_gym_trainers.inc"
 
-EventScript_CancelMessageBox::
-	special UseBlankMessageToCancelPokemonPic
-	release
-	end
-
 Common_EventScript_ShowBagIsFull::
 	msgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT
 	release
@@ -763,12 +762,11 @@ Common_EventScript_PlayGymBadgeFanfare::
 	return
 
 Common_EventScript_OutOfCenterPartyHeal::
-	fadescreenswapbuffers FADE_TO_BLACK
+	fadescreen FADE_TO_BLACK
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
-	callnative UpdateFollowingPokemon
-	fadescreenswapbuffers FADE_FROM_BLACK
+	fadescreen FADE_FROM_BLACK
 	return
 
 EventScript_RegionMap::
@@ -822,8 +820,8 @@ EventScript_HideMrBriney::
 	return
 
 RusturfTunnel_EventScript_SetRusturfTunnelOpen::
-	removeobject LOCALID_RUSTURF_TUNNEL_WANDAS_BF
-	removeobject LOCALID_RUSTURF_TUNNEL_WANDA
+	removeobject LOCALID_WANDAS_BF
+	removeobject LOCALID_WANDA
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDAS_BOYFRIEND
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA
 	setvar VAR_RUSTURF_TUNNEL_STATE, 6
@@ -832,11 +830,11 @@ RusturfTunnel_EventScript_SetRusturfTunnelOpen::
 
 EventScript_UnusedBoardFerry::
 	delay 30
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	showobjectat LOCALID_PLAYER, 0
+	showobjectat OBJ_EVENT_ID_PLAYER, 0
 	delay 30
-	applymovement LOCALID_PLAYER, Movement_UnusedBoardFerry
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_UnusedBoardFerry
 	waitmovement 0
 	delay 30
 	return
@@ -849,7 +847,7 @@ Common_EventScript_FerryDepartIsland::
 	call_if_eq VAR_FACING, DIR_SOUTH, Ferry_EventScript_DepartIslandSouth
 	call_if_eq VAR_FACING, DIR_WEST, Ferry_EventScript_DepartIslandWest
 	delay 30
-	hideobjectat LOCALID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	call Common_EventScript_FerryDepart
 	return
 
@@ -927,7 +925,7 @@ gText_UnusedNicknameReceivedPokemon::
 
 gText_PlayerWhitedOut::
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "POKéMON!\p{PLAYER} blacked out!$"
 
 gText_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
@@ -1114,6 +1112,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/contest_strings.inc"
 	.include "data/text/contest_link.inc"
 	.include "data/text/contest_painting.inc"
+	.include "data/text/trick_house_mechadolls.inc"
 	.include "data/scripts/tv.inc"
 	.include "data/text/tv.inc"
 	.include "data/scripts/interview.inc"
@@ -1153,7 +1152,32 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/move_tutors.inc"
 	.include "data/scripts/trainer_hill.inc"
 	.include "data/scripts/test_signpost.inc"
+	.include "data/text/frontier_brain.inc"
 	.include "data/scripts/follower.inc"
+	.include "data/scripts/dexnav.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
-	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/onionbuilding/scripts.inc"
+
+	.include "data/maps/Pokemarttest/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/VictoryRoad_B3F/scripts.inc"
+
+	.include "data/maps/VictoryRoad_B4F/scripts.inc"
+
+	.include "data/maps/HiddenGrove/scripts.inc"
+
+	.include "data/maps/Route1152/scripts.inc"
+
+	.include "data/maps/BattleFrontier_OutsideNew/scripts.inc"
+
+	.include "data/maps/OutsideFrontierNewHouse/scripts.inc"
+
+	.include "data/maps/MemoryCave_1F/scripts.inc"
+
+	.include "data/maps/Memorycave_bf1/scripts.inc"
+
+	.include "data/maps/MemoryCave_bf2/scripts.inc"

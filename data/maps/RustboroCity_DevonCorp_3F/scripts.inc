@@ -1,3 +1,5 @@
+.set LOCALID_DEVON_EMPLOYEE, 2
+
 RustboroCity_DevonCorp_3F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_DevonCorp_3F_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RustboroCity_DevonCorp_3F_OnWarp
@@ -9,8 +11,8 @@ RustboroCity_DevonCorp_3F_OnTransition:
 	end
 
 RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos::
-	setobjectxyperm LOCALID_DEVON_CORP_3F_EMPLOYEE, 3, 2
-	setobjectmovementtype LOCALID_DEVON_CORP_3F_EMPLOYEE, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 3, 2
+	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 RustboroCity_DevonCorp_3F_OnWarp:
@@ -18,7 +20,7 @@ RustboroCity_DevonCorp_3F_OnWarp:
 	.2byte 0
 
 RustboroCity_DevonCorp_3F_EventScript_PlayerFaceEast::
-	turnobject LOCALID_PLAYER, DIR_EAST
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	end
 
 RustboroCity_DevonCorp_3F_OnFrame:
@@ -29,22 +31,22 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	lockall
 	msgbox RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen
+	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen
 	waitmovement 0
 	delay 80
-	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer
+	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer
 	waitmovement 0
 	msgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_FOLLOW_ME, FALSE
-	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident
-	applymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident
+	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident
+	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident
 	waitmovement 0
 	msgbox RustboroCity_DevonCorp_3F_Text_PleaseGoAhead, MSGBOX_DEFAULT
 	closemessage
 	fadedefaultbgm
-	applymovement LOCALID_DEVON_CORP_3F_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk
-	applymovement LOCALID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk
+	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk
+	applymovement OBJ_EVENT_ID_PLAYER, RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk
 	waitmovement 0
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor, MSGBOX_DEFAULT
 	giveitem ITEM_LETTER
@@ -207,12 +209,20 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "a package to SLATEPORT's SHIPYARD.\p"
 	.string "Well, on the way, could you stop off in\n"
 	.string "DEWFORD TOWN?\p"
-	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in DEWFORD.$"
+	.string "Would you kindly deliver a\n"
+	.string "LETTER to STEPHEN in DEWFORD.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "MR. STONE: Now, you should know that\n"
 	.string "I am a great PRESIDENT.\p"
+	.string "I am a great Person.\p"
+	.string "I am a great POKEMON trainer.\p"
+	.string "I have a lot of money.\p"
+	.string "I am really attractive.\p"
+	.string "I have a saintly aura.\p"
+	.string "I have an IQ of 184.\p"
+	.string "I speak 8 languages.\p"
+	.string "I invented the POKEBALL.\p"
 	.string "So, I'd never be so cheap as to ask\n"
 	.string "a favor for nothing in return.\p"
 	.string "That's why I want you to have this!$"
@@ -222,8 +232,8 @@ RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "MR. STONE: That device…\p"
-	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
-	.string "for short.\p"
+	.string "It's a POKéMON NAVIGATOR, or\n"
+	.string "POKéMO NAVIGATOR for short.\p"
 	.string "It's an indispensable tool for any\n"
 	.string "TRAINER on an adventure.\p"
 	.string "It has a map of the HOENN region.\p"
@@ -237,14 +247,14 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
 	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
-	.string "go with caution and care!$"
+	.string "go with honor and valor!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
 	.string "MR. STONE: I'm counting on you!$"
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 	.string "MR. STONE: You delivered my LETTER?\n"
-	.string "Thank you kindly!\p"
+	.string "Poggers!\p"
 	.string "This is my way of thanking you.\n"
 	.string "It should help you, a TRAINER.$"
 
@@ -254,8 +264,8 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "EXP Points from battle.\p"
 	.string "It will get EXP Points even if it didn't\n"
 	.string "actually battle.\p"
-	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
+	.string "I don't understand how this\n"
+	.string "is fair at all!$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"
@@ -263,7 +273,10 @@ RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
 	.string "But do young people all want to be\n"
-	.string "TRAINERS in the POKéMON LEAGUE?$"
+	.string "TRAINERS in the POKéMON LEAGUE?\p"
+	.string "Honestly, I think a game about\n"
+	.string "being the DEVON CORPORATION CEO?\l"
+	.string "would be way more fun!$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
 	.string "This is the DEVON CORPORATION's\n"
@@ -278,8 +291,7 @@ RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
 	.string "the SHIPYARD in SLATEPORT?\p"
 	.string "It would be awful if those robbers\n"
 	.string "tried to take it again.\p"
-	.string "Uh… Hehehe, so, uh, could I count\n"
-	.string "on you to do that for me?\p"
+	.string "You seem pretty unrobbable.\p"
 	.string "Oh, that's right.\n"
 	.string "Could you wait here a second?$"
 
@@ -289,18 +301,21 @@ RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe:
 	.string "Please come with me.$"
 
 RustboroCity_DevonCorp_3F_Text_PleaseGoAhead:
-	.string "Please, go ahead.$"
+	.string "Please, go on.$"
 
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "If you visit the SHIPYARD in SLATEPORT,\n"
 	.string "you should go see CAPT. STERN.$"
+	.string "You're a good trainer, you can beat him.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
 	.string "DEVON's new products, the REPEAT BALL\n"
 	.string "and TIMER BALL, have become hugely\l"
-	.string "popular among TRAINERS.$"
+	.string "popular among TRAINERS.\p"
+	.string "I don't know why.\n"
+	.string "Just use ultra balls idiots.$"
 
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by the PRESIDENT.$"
-
+	.string "stones assembled by the PRESIDENT.\p"
+	.string "Is he stupid?$"

@@ -1,4 +1,7 @@
-@ LOCALID_BRIDGE_KECLEON_SHADOW is a second object which is identical to LOCALID_BRIDGE_KECLEON but has a reflection palette tag for the bridge shadow
+.set LOCALID_BRIDGE_KECLEON, 30
+.set LOCALID_STEVEN, 31
+.set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
+
 Route120_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route120_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route120_OnTransition
@@ -177,7 +180,7 @@ Route120_EventScript_StevenBattleKecleon::
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachKecleonNorth
 	call_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachKecleonWest
-	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route120_Text_StevenUsedDevonScope, MSGBOX_DEFAULT
@@ -211,21 +214,21 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 	end
 
 Route120_EventScript_StevenGiveDeconScope::
-	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox Route120_Text_StevenGiveDevonScope, MSGBOX_DEFAULT
 	giveitem ITEM_DEVON_SCOPE
 	setflag FLAG_RECEIVED_DEVON_SCOPE
 	msgbox Route120_Text_StevenGoodbye, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
 	delay 15
-	removeobject LOCALID_ROUTE120_STEVEN
+	removeobject LOCALID_STEVEN
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 	setmetatile 13, 15, METATILE_Fortree_WoodBridge1_Top, FALSE
 	setmetatile 12, 16, METATILE_Fortree_WoodBridge1_Bottom, FALSE
@@ -236,12 +239,12 @@ Route120_EventScript_StevenGiveDeconScope::
 	end
 
 Route120_EventScript_PlayerApproachKecleonNorth::
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
 Route120_EventScript_PlayerApproachKecleonWest::
-	applymovement LOCALID_PLAYER, Route120_Movement_ApproachKecleonWest
+	applymovement OBJ_EVENT_ID_PLAYER, Route120_Movement_ApproachKecleonWest
 	waitmovement 0
 	return
 
@@ -398,14 +401,21 @@ Route120_Text_StevenGiveDevonScope:
 	.string "I'd like you to have this\n"
 	.string "DEVON SCOPE.\p"
 	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "concealed POKéMON.\p"
+	.string "LIKE AT THE GYM. REMEMBER WHEN YOU\n"
+	.string "WENT TO THE GYM IN FORTREE AND IT WAS\l"
+	.string "BLOCKED, JUST PLOP ON THESE BAD BOYS\l"
+	.string "AND GO TO TOWN. Sorry, it's kinda hard to\l"
+	.string "know where to go sometimes so I wanted\l"
+	.string "to be really direct here.$"
 
 Route120_Text_StevenGoodbye:
 	.string "STEVEN: {PLAYER}{KUN}.\p"
 	.string "I enjoy seeing POKéMON and TRAINERS\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "Well, let's meet again\n"
+	.string "when you beat everyone else.$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"

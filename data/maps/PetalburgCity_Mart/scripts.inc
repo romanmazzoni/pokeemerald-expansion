@@ -25,7 +25,9 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 PetalburgCity_Mart_EventScript_ExpandedItems::
 	pokemart PetalburgCity_Mart_Pokemart_Expanded
@@ -48,7 +50,9 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_ORANGE_MAIL
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 PetalburgCity_Mart_EventScript_Woman::
 	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC
@@ -65,8 +69,8 @@ PetalburgCity_Mart_EventScript_Man::
 PetalburgCity_Mart_Text_WeakWillGrowStronger:
 	.string "Even if a POKéMON is weak now,\n"
 	.string "it will grow stronger.\p"
-	.string "The most important thing is love!\n"
-	.string "Love for your POKéMON!$"
+	.string "The most important thing is candy!\n"
+	.string "Rare candy for your POKéMON!$"
 
 PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "Do you use REPEL?\n"
@@ -77,6 +81,5 @@ PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
 	.string "Do you have any ANTIDOTES with\n"
 	.string "you?\p"
 	.string "If you walk around with a poisoned\n"
-	.string "POKéMON, it will lose HP until it faints.\l"
-	.string "Take some ANTIDOTES with you.$"
-
+	.string "POKéMON, it will lose HP until it faints.\p"
+	.string "Well, unless you're cool enough.$"

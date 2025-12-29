@@ -22,7 +22,9 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
 	.2byte ITEM_HARBOR_MAIL
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 SlateportCity_Mart_EventScript_BlackBelt::
 	msgbox SlateportCity_Mart_Text_SomeItemsOnlyAtMart, MSGBOX_NPC
@@ -43,4 +45,3 @@ SlateportCity_Mart_Text_GreatBallIsBetter:
 	.string "at catching POKéMON.\p"
 	.string "With this, I should be able to get that\n"
 	.string "elusive POKéMON…$"
-

@@ -1,0 +1,21 @@
+mapscripts Pokemarttest_MapScripts {
+ 
+}
+
+script Littleroot_Mart_Employee{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(MyMartItems)
+    msgbox("Please Come Again.")
+    release
+    end
+}
+ 
+
+ 
+ mart MyMartItems {
+     ITEM_BLUE_ORB
+     ITEM_PREMIER_BALL
+}

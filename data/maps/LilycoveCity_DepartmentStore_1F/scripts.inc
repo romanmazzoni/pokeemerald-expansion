@@ -1,3 +1,5 @@
+.set LOCALID_LOTTERY_CLERK, 2
+
 LilycoveCity_DepartmentStore_1F_MapScripts::
 	.byte 0
 
@@ -180,4 +182,3 @@ LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:
 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
 	.string "I want to spread the word about how\n"
 	.string "fun Wireless Communication can be.$"
-

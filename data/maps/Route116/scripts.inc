@@ -1,3 +1,6 @@
+.set LOCALID_BRINEY, 11
+.set LOCALID_WANDAS_BF_OUTSIDE, 21
+
 Route116_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route116_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route116_OnLoad
@@ -12,7 +15,7 @@ Route116_OnTransition:
 	end
 
 Route116_EventScript_SetWandasBoyfriendPos::
-	setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
+	setobjectxyperm LOCALID_WANDAS_BF_OUTSIDE, 38, 10
 	return
 
 Route116_OnLoad:
@@ -141,8 +144,8 @@ Route116_EventScript_Briney::
 
 Route116_EventScript_BrineyTrigger::
 	lockall
-	applymovement LOCALID_ROUTE116_BRINEY, Common_Movement_WalkInPlaceFasterRight
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
 	setvar VAR_ROUTE116_STATE, 2
@@ -354,7 +357,7 @@ Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
 	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "GAAAAHHHHHH! PEEKO!$"
 
 Route116_Text_WantToDigTunnel:
 	.string "Nnn… Roar!\p"
@@ -368,11 +371,10 @@ Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
 	.string "That tunnel's filled with POKéMON\n"
 	.string "that react badly to loud noises.\l"
 	.string "They could cause an uproar.\p"
-	.string "That's why we stopped using heavy\n"
-	.string "equipment for tunneling…\p"
-	.string "I'm worried that the goon will do\n"
-	.string "something stupid and startle the\l"
-	.string "POKéMON into an uproar.$"
+	.string "Uproar is a 90 base power\n"
+	.string "loud type move.\p"
+	.string "My POKéMON couldn't handle it so\n"
+	.string "early into the game!$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
 	.string "Nnn… Roar!\p"
@@ -396,13 +398,11 @@ Route116_Text_ThankYouTokenOfAppreciation:
 	.string "Recently, our company developed\n"
 	.string "a new kind of POKé BALL.\p"
 	.string "As a token of our appreciation, this\n"
-	.string "is our gift to our wonderful TRAINER!$"
+	.string "is our gift to our superdude TRAINER!$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
-	.string "Please do try it out!\n"
-	.string "Thank you and bye-bye!$"
+	.string "Its really good for people\n"
+	.string "that want to catch 20 wurmples!$"
 
 Route116_Text_BagIsJamPacked:
 	.string "Your BAG is jam-packed.\n"
@@ -423,25 +423,24 @@ Route116_Text_MayISeeThoseGlasses:
 	.string "May I see them for a second?$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here…$"
+	.string "You found them!\n"
+	.string "Thank you so much!\p"
+	.string "As a token of my thanks,\p"
+	.string "I'll let you keep them.$"
 
 Route116_Text_CantFindGlassesNotHere:
 	.string "Hmm…\n"
-	.string "I can't find my glasses anywhere…\l"
-	.string "Maybe they're not around here…$"
+	.string "I can't see anything…\l"
+	.string "Maybe I need glasses…$"
 
 Route116_Text_NotWhatImLookingFor:
 	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…$"
+	.string "I can't see anything…\l"
+	.string "Maybe I need glasses…$"
 
 Route116_Text_RouteSignRustboro:
 	.string "ROUTE 116\n"
-	.string "{LEFT_ARROW} RUSTBORO CITY$"
+	.string "{LEFT_ARROW} RUSTB-UWU CITY$"
 
 Route116_Text_RusturfTunnelSign:
 	.string "RUSTURF TUNNEL\n"
@@ -457,8 +456,8 @@ Route116_Text_TrainerTipsBToStopEvolution:
 	.string "If you want to stop a POKéMON from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"
-	.string "The startled POKéMON will stop.\p"
-	.string "This is called an evolution cancel.$"
+	.string "Dont't let sliggoo evolve.\p"
+	.string "Goodra is really bad in this mod.$"
 
 Route116_Text_TrainerTipsBagHasPockets:
 	.string "TRAINER TIPS\p"
@@ -467,4 +466,3 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "placed in the appropriate POCKETS.\p"
 	.string "No TRAINER can afford to be without\n"
 	.string "a BAG of their own.$"
-

@@ -1575,32 +1575,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GROWLITHE_HISUIAN"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_VOLTORB_HISUIAN"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_TYPHLOSION_HISUIAN"
+                "species": "SPECIES_TYPHLOSION_HISUI"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_SNEASEL_HISUIAN"
+                "species": "SPECIES_SNEASEL_HISUI"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_SNEASEL_HISUIAN"
+                "species": "SPECIES_SNEASEL_HISUI"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_LILLIGANT_HISUIAN"
+                "species": "SPECIES_LILLIGANT_HISUI"
               },
               {
                 "min_level": 35,
@@ -1610,17 +1610,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZORUA_HISUIAN"
+                "species": "SPECIES_ZORUA_HISUI"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_BRAVIARY_HISUIAN"
+                "species": "SPECIES_BRAVIARY_HISUI"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_AVALUGG_HISUIAN"
+                "species": "SPECIES_AVALUGG_HISUI"
               },
               {
                 "min_level": 39,
@@ -4588,32 +4588,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_RATTATA_ALOLAN"
+                "species": "SPECIES_RATTATA_ALOLA"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_RAICHU_ALOLAN"
+                "species": "SPECIES_RAICHU_ALOLA"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_SANDSHREW_ALOLAN"
+                "species": "SPECIES_SANDSHREW_ALOLA"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_VULPIX_ALOLAN"
+                "species": "SPECIES_VULPIX_ALOLA"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_DIGLETT_ALOLAN"
+                "species": "SPECIES_DIGLETT_ALOLA"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_MEOWTH_ALOLAN"
+                "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
                 "min_level": 35,
@@ -4623,17 +4623,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GEODUDE_ALOLAN"
+                "species": "SPECIES_GEODUDE_ALOLA"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GRIMER_ALOLAN"
+                "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_MAROWAK_ALOLAN"
+                "species": "SPECIES_MAROWAK_ALOLA"
               },
               {
                 "min_level": 39,
@@ -4653,7 +4653,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_QWILFISH_HISUIAN"
+                "species": "SPECIES_QWILFISH_HISUI"
               },
               {
                 "min_level": 30,
@@ -4687,32 +4687,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_MEOWTH_GALARIAN"
+                "species": "SPECIES_MEOWTH_GALAR"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_PONYTA_GALARIAN"
+                "species": "SPECIES_PONYTA_GALAR"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_FARFETCHD_GALARIAN"
+                "species": "SPECIES_FARFETCHD_GALAR"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_DECIDUEYE_HISUIAN"
+                "species": "SPECIES_DECIDUEYE_HISUI"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_WEEZING_GALARIAN"
+                "species": "SPECIES_WEEZING_GALAR"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_MR_MIME_GALARIAN"
+                "species": "SPECIES_MR_MIME_GALAR"
               },
               {
                 "min_level": 35,
@@ -4722,17 +4722,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZIGZAGOON_GALARIAN"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_DARUMAKA_GALARIAN"
+                "species": "SPECIES_DARUMAKA_GALAR"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_SLOWPOKE_GALARIAN"
+                "species": "SPECIES_SLOWPOKE_GALAR"
               },
               {
                 "min_level": 39,
@@ -4756,32 +4756,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GROWLITHE_HISUIAN"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_VOLTORB_HISUIAN"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_SAMUROTT_HISUIAN"
+                "species": "SPECIES_SAMUROTT_HISUI"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_SNEASEL_HISUIAN"
+                "species": "SPECIES_SNEASEL_HISUI"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_SNEASEL_HISUIAN"
+                "species": "SPECIES_SNEASEL_HISUI"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_LILLIGANT_HISUIAN"
+                "species": "SPECIES_LILLIGANT_HISUI"
               },
               {
                 "min_level": 35,
@@ -4791,17 +4791,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZORUA_HISUIAN"
+                "species": "SPECIES_ZORUA_HISUI"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_BRAVIARY_HISUIAN"
+                "species": "SPECIES_BRAVIARY_HISUI"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_AVALUGG_HISUIAN"
+                "species": "SPECIES_AVALUGG_HISUI"
               },
               {
                 "min_level": 39,
@@ -4821,7 +4821,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_STUNFISK_GALARIAN"
+                "species": "SPECIES_STUNFISK_GALAR"
               },
               {
                 "min_level": 30,
@@ -6438,32 +6438,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_YAMASK_GALARIAN"
+                "species": "SPECIES_YAMASK_GALAR"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_PONYTA_GALARIAN"
+                "species": "SPECIES_PONYTA_GALAR"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_FARFETCHD_GALARIAN"
+                "species": "SPECIES_FARFETCHD_GALAR"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_DARUMAKA_GALARIAN"
+                "species": "SPECIES_DARUMAKA_GALAR"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_WEEZING_GALARIAN"
+                "species": "SPECIES_WEEZING_GALAR"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_MR_MIME_GALARIAN"
+                "species": "SPECIES_MR_MIME_GALAR"
               },
               {
                 "min_level": 35,
@@ -6473,17 +6473,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZIGZAGOON_GALARIAN"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_DARUMAKA_GALARIAN"
+                "species": "SPECIES_DARUMAKA_GALAR"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_SLOWPOKE_GALARIAN"
+                "species": "SPECIES_SLOWPOKE_GALAR"
               },
               {
                 "min_level": 39,
@@ -6503,7 +6503,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_CORSOLA_GALARIAN"
+                "species": "SPECIES_CORSOLA_GALAR"
               },
               {
                 "min_level": 30,
@@ -6537,32 +6537,32 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_EXEGGUTOR_ALOLAN"
+                "species": "SPECIES_EXEGGUTOR_ALOLA"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_RAICHU_ALOLAN"
+                "species": "SPECIES_RAICHU_ALOLA"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_SANDSHREW_ALOLAN"
+                "species": "SPECIES_SANDSHREW_ALOLA"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_VULPIX_ALOLAN"
+                "species": "SPECIES_VULPIX_ALOLA"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_DIGLETT_ALOLAN"
+                "species": "SPECIES_DIGLETT_ALOLA"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_MEOWTH_ALOLAN"
+                "species": "SPECIES_MEOWTH_ALOLA"
               },
               {
                 "min_level": 35,
@@ -6572,17 +6572,17 @@
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GEODUDE_ALOLAN"
+                "species": "SPECIES_GEODUDE_ALOLA"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GRIMER_ALOLAN"
+                "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_MAROWAK_ALOLAN"
+                "species": "SPECIES_MAROWAK_ALOLA"
               },
               {
                 "min_level": 39,
@@ -7385,12 +7385,12 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BURMY_SANDY_CLOAK"
+                "species": "SPECIES_BURMY_SANDY"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BURMY_TRASH_CLOAK"
+                "species": "SPECIES_BURMY_TRASH"
               },
               {
                 "min_level": 22,
@@ -8588,12 +8588,12 @@
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_BURMY_SANDY_CLOAK"
+                "species": "SPECIES_BURMY_SANDY"
               },
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_BURMY_TRASH_CLOAK"
+                "species": "SPECIES_BURMY_TRASH"
               },
               {
                 "min_level": 50,

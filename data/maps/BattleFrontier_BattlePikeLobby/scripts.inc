@@ -1,13 +1,15 @@
+.set LOCALID_ATTENDANT, 1
+
 BattleFrontier_BattlePikeLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattlePikeLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattlePikeLobby_OnWarp
 	.byte 0
 
 BattleFrontier_BattlePikeLobby_OnFrame:
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattlePikeLobby_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePikeLobby_EventScript_QuitWithoutSaving
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, BattleFrontier_BattlePikeLobby_EventScript_WonChallenge
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, BattleFrontier_BattlePikeLobby_EventScript_LostChallenge
+	map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattlePikeLobby_EventScript_GetChallengeStatus
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePikeLobby_EventScript_QuitWithoutSaving
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_WON, BattleFrontier_BattlePikeLobby_EventScript_WonChallenge
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_LOST, BattleFrontier_BattlePikeLobby_EventScript_LostChallenge
 	.2byte 0
 
 BattleFrontier_BattlePikeLobby_OnWarp:
@@ -16,7 +18,7 @@ BattleFrontier_BattlePikeLobby_OnWarp:
 
 BattleFrontier_BattlePikeLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_GetChallengeStatus::
@@ -32,7 +34,7 @@ BattleFrontier_BattlePikeLobby_EventScript_QuitWithoutSaving::
 	pike_set PIKE_DATA_WIN_STREAK, 0
 	pike_set PIKE_DATA_WIN_STREAK_ACTIVE, FALSE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -57,7 +59,6 @@ BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
 	pike_set PIKE_DATA_TOTAL_STREAKS, VAR_RESULT
 	special LoadPlayerParty
 	special HealPlayerParty
-	callnative UpdateFollowingPokemon
 	pike_resethelditems
 	message BattleFrontier_BattlePikeLobby_Text_ShallRecordResults
 	waitmessage
@@ -66,7 +67,7 @@ BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
 	waitse
 	msgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -79,14 +80,13 @@ BattleFrontier_BattlePikeLobby_EventScript_LostChallenge::
 	pike_set PIKE_DATA_WIN_STREAK_ACTIVE, FALSE
 	special LoadPlayerParty
 	special HealPlayerParty
-	callnative UpdateFollowingPokemon
 	pike_resethelditems
 	pike_save 0
 	playse SE_SAVE
 	waitse
 	msgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -119,7 +119,6 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
-	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
@@ -133,7 +132,7 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	case MULTI_B_PRESSED, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge
 
 BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	setvar VAR_TEMP_1, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	pike_init
@@ -145,7 +144,7 @@ BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
 	closemessage
 	delay 2
 	call Common_EventScript_SaveGame
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	pike_savehelditems
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed
 	special SavePlayerParty
@@ -157,7 +156,7 @@ BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
 	special HealPlayerParty
 	call BattleFrontier_BattlePike_EventScript_CloseCurtain
 	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR, 6, 7
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	waitstate
 	end
 
@@ -184,7 +183,6 @@ BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge::
 	special LoadPlayerParty
-	callnative UpdateFollowingPokemon
 BattleFrontier_BattlePikeLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou, MSGBOX_DEFAULT
 BattleFrontier_BattlePikeLobby_EventScript_EndCancelChallenge::
@@ -200,8 +198,8 @@ BattleFrontier_BattlePikeLobby_EventScript_ShowResults::
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_WalkToCorridor::
-	applymovement LOCALID_PIKE_LOBBY_ATTENDANT, BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor
-	applymovement LOCALID_PLAYER, BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor
+	applymovement LOCALID_ATTENDANT, BattleFrontier_BattlePikeLobby_Movement_AttendantWalkToCorridor
+	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_BattlePikeLobby_Movement_PlayerWalkToCorridor
 	waitmovement 0
 	return
 
@@ -432,4 +430,3 @@ BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:
 	.string "changed.\p"
 	.string "The sequence must be set before\n"
 	.string "starting your challenge.$"
-

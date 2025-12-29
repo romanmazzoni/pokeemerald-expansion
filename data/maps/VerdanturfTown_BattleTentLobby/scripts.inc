@@ -1,3 +1,5 @@
+.set LOCALID_ATTENDANT, 1
+
 VerdanturfTown_BattleTentLobby_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, VerdanturfTown_BattleTentLobby_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, VerdanturfTown_BattleTentLobby_OnWarp
@@ -9,15 +11,15 @@ VerdanturfTown_BattleTentLobby_OnWarp:
 
 VerdanturfTown_BattleTentLobby_EventScript_TurnPlayerNorth::
 	setvar VAR_TEMP_1, 1
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 VerdanturfTown_BattleTentLobby_OnFrame:
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, VerdanturfTown_BattleTentLobby_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, VerdanturfTown_BattleTentLobby_EventScript_QuitWithoutSaving
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_PAUSED, VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, VerdanturfTown_BattleTentLobby_EventScript_WonChallenge
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, VerdanturfTown_BattleTentLobby_EventScript_LostChallenge
+	map_script_2 VAR_TEMP_0, 0, VerdanturfTown_BattleTentLobby_EventScript_GetChallengeStatus
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_SAVING, VerdanturfTown_BattleTentLobby_EventScript_QuitWithoutSaving
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_PAUSED, VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_WON, VerdanturfTown_BattleTentLobby_EventScript_WonChallenge
+	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_LOST, VerdanturfTown_BattleTentLobby_EventScript_LostChallenge
 	.2byte 0
 
 VerdanturfTown_BattleTentLobby_EventScript_GetChallengeStatus::
@@ -29,7 +31,7 @@ VerdanturfTown_BattleTentLobby_EventScript_QuitWithoutSaving::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge, MSGBOX_DEFAULT
 	closemessage
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50
 	releaseall
 	end
@@ -57,7 +59,7 @@ VerdanturfTown_BattleTentLobby_EventScript_GivePrize::
 	waitfanfare
 	msgbox VerdanturfTown_BattleTentLobby_Text_ReturnFortified, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -65,7 +67,7 @@ VerdanturfTown_BattleTentLobby_EventScript_NoRoomForPrize::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -85,7 +87,7 @@ VerdanturfTown_BattleTentLobby_EventScript_LostChallenge::
 	waitse
 	msgbox VerdanturfTown_BattleTentLobby_Text_ReturnFortified, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	releaseall
 	end
 
@@ -98,7 +100,7 @@ VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge::
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	goto VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge
 
 VerdanturfTown_BattleTentLobby_EventScript_Attendant::
@@ -139,7 +141,7 @@ VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge::
 	case MULTI_B_PRESSED, VerdanturfTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge
 
 VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	verdanturftent_init
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING
@@ -148,7 +150,7 @@ VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	closemessage
 	delay 2
 	call Common_EventScript_SaveGame
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	setvar VAR_TEMP_0, 255
 	goto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed
 VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
@@ -157,7 +159,7 @@ VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge::
 	closemessage
 	call VerdanturfTown_BattleTentLobby_EventScript_WalkToDoor
 	warp MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR, 2, 7
-	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	setvar VAR_TEMP_0, 0
 	waitstate
 	end
 
@@ -191,13 +193,13 @@ VerdanturfTown_BattleTentLobby_EventScript_EndCancelChallenge::
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_WalkToDoor::
-	applymovement LOCALID_VERDANTURF_TENT_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
-	applymovement LOCALID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
+	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
+	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_WalkToDoor
 	waitmovement 0
 	opendoor 6, 1
 	waitdooranim
-	applymovement LOCALID_VERDANTURF_TENT_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_AttendantEnterDoor
-	applymovement LOCALID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor
+	applymovement LOCALID_ATTENDANT, VerdanturfTown_BattleTentLobby_Movement_AttendantEnterDoor
+	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor
 	waitmovement 0
 	closedoor 6, 1
 	waitdooranim
@@ -223,11 +225,11 @@ VerdanturfTown_BattleTentLobby_Movement_PlayerEnterDoor:
 VerdanturfTown_BattleTentLobby_EventScript_AttractGiver::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_ATTRACT, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
+	goto_if_set FLAG_RECEIVED_TM45, VerdanturfTown_BattleTentLobby_EventScript_ReceivedAttract
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep, MSGBOX_DEFAULT
-	giveitem ITEM_TM_ATTRACT
+	giveitem ITEM_TM45
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_ATTRACT
+	setflag FLAG_RECEIVED_TM45
 	msgbox VerdanturfTown_BattleTentLobby_Text_AttractionMutual, MSGBOX_DEFAULT
 	release
 	end
@@ -331,18 +333,15 @@ VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
 	.string "It doesn't matter how strong it is,\n"
 	.string "either.\p"
 	.string "For example, a POKéMON with a GENTLE\n"
-	.string "nature probably won't enjoy hurting\l"
-	.string "its opponents.\p"
-	.string "If it can't seem to live up to its\n"
-	.string "potential, it's probably failing at\l"
-	.string "using a disliked move against its will.$"
+	.string "nature will have lower defense\l"
+	.string "and higher special defense.\p"
+	.string "I guess that doesn't really\n"
+	.string "make too much sense.$"
 
 VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
-	.string "My big sister is gentle usually.\n"
-	.string "But when she gets angry,\l"
-	.string "she's really, really scary!\p"
-	.string "I bet a gentle POKéMON will be scary\n"
-	.string "if it gets angry!$"
+	.string "My big sister is brave usually.\n"
+	.string "That means she has extra attack,\l"
+	.string "and less speed!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 	.string "My feelings toward my POKéMON…\n"
@@ -355,15 +354,16 @@ VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
 	.string "My feelings toward my POKéMON…\n"
 	.string "I'm sure the attraction is mutual!\p"
-	.string "They battle exactly the way I want\n"
-	.string "them to!$"
+	.string "They behave exactly the way I want\n"
+	.string "them to!\p"
+	.string "I'm gonna go to jail...$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
 	.string "What kind of moves have you taught\n"
 	.string "your POKéMON?\p"
 	.string "I think you would give yourself\n"
-	.string "an advantage if they knew how to\l"
-	.string "heal or protect themselves.$"
+	.string "an advantage if they knew\l"
+	.string "metronome.$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
 	.string "SCOTT: Hey there, {PLAYER}{KUN}!\n"
