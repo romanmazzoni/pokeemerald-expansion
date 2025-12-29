@@ -1,5 +1,4 @@
 .set LOCALID_MART_EMPLOYEE, 2
-.set LOCALID_FOOTPRINTS_MAN, 3
 .set LOCALID_RIVAL, 4
 
 OldaleTown_MapScripts::

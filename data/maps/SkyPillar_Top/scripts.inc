@@ -1,4 +1,3 @@
-.set LOCALID_RAYQUAZA_SLEEPING, 1
 
 SkyPillar_Top_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SkyPillar_Top_OnResume
