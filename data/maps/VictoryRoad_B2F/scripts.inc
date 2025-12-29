@@ -42,7 +42,7 @@ VictoryRoad_B2F_Text_VitoDefeat:
 
 VictoryRoad_B2F_Text_VitoPostBattle:
 	.string "I was better than everyone in my\n"
-	.string "family. I've never lost before…\p"
+	.string "family. I've never lost befor
 	.string "I've lost my confidence…\n"
 	.string "Maybe I'll go home…$"
 

@@ -248,7 +248,11 @@
       "flag": "FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1"
     },
     {
+<<<<<<< Updated upstream
       "local_id": "LOCALID_ROUTE120_GABBY_1",
+=======
+      "local_id": "LOCALID_ROUTE120_GABBY_2",
+>>>>>>> Stashed changes
       "graphics_id": "OBJ_EVENT_GFX_REPORTER_F",
       "x": 36,
       "y": 5,
