@@ -1,3 +1,6 @@
+.set LOCALID_NURSE, 1
+.set LOCALID_LANETTE, 4
+
 FallarborTown_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, FallarborTown_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -9,7 +12,7 @@ FallarborTown_PokemonCenter_1F_OnTransition:
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_Nurse::
-	setvar VAR_0x800B, LOCALID_FALLARBOR_NURSE
+	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
@@ -35,20 +38,20 @@ FallarborTown_PokemonCenter_1F_EventScript_Lanette::
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_LanetteExitNorth::
-	applymovement LOCALID_FALLARBOR_LANETTE, FallarborTown_PokemonCenter_1F_Movement_LanetteExitNorth
+	applymovement LOCALID_LANETTE, FallarborTown_PokemonCenter_1F_Movement_LanetteExitNorth
 	waitmovement 0
 	goto FallarborTown_PokemonCenter_1F_EventScript_LanetteExited
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_LanetteExitWest::
-	applymovement LOCALID_FALLARBOR_LANETTE, FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest
+	applymovement LOCALID_LANETTE, FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest
 	waitmovement 0
 	goto FallarborTown_PokemonCenter_1F_EventScript_LanetteExited
 	end
 
 FallarborTown_PokemonCenter_1F_EventScript_LanetteExited::
 	playse SE_SLIDING_DOOR
-	removeobject LOCALID_FALLARBOR_LANETTE
+	removeobject LOCALID_LANETTE
 	clearflag FLAG_HIDE_LANETTES_HOUSE_LANETTE
 	release
 	end
@@ -88,24 +91,15 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
 	.string "I can see that you're a TRAINER.\p"
 	.string "So that means you use the POKéMON\n"
 	.string "Storage System I developed.\p"
-	.string "How I arrived at that conclusion is\n"
-	.string "a simple deductive process.\p"
-	.string "You spoke to me because you wanted\n"
-	.string "to access something on this PC.\p"
-	.string "Oh, I'm sorry. I'm LANETTE.\p"
-	.string "Honestly, I'm glad to meet you--it's\n"
-	.string "great you're using the Storage System.\p"
-	.string "If you could, please visit me at home.\n"
-	.string "My house is on ROUTE 114.$"
+	.string "Nothing I say is relevant to the story.$"
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
 	.string "I wonder what POKéMON looked like\n"
 	.string "long, long ago?\p"
-	.string "Maybe the FOSSIL MANIAC at the edge\n"
-	.string "of town will know.$"
+	.string "Maybe Paradox POKéMON will be\n"
+	.string "released in gen 9.$"
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:
 	.string "In the fields of FALLARBOR, we plant\n"
 	.string "seedlings of hardy trees that thrive\l"
 	.string "even in volcanic ash.$"
-
