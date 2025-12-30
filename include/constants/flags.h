@@ -189,7 +189,7 @@
 #define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
 #define FLAG_RECEIVED_TM_FACADE              0xA9
-#define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
+#define FLAG_RECEIVED_TM40          0xAA
 #define FLAG_RECEIVED_TM_CALM_MIND           0xAB
 #define FLAG_RECEIVED_TM_WATER_PULSE         0xAC
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
@@ -250,7 +250,7 @@
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
-#define FLAG_RECEIVED_TM_RETURN              0xE5
+#define FLAG_RECEIVED_TM27              0xE5
 #define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
@@ -287,7 +287,7 @@
 #define FLAG_RECEIVED_TM_DIG                 0x105
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
 #define FLAG_ENTERED_ELITE_FOUR              0x107
-#define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
+#define FLAG_RECEIVED_TM10                  0x108
 #define FLAG_RECEIVED_TM_TORMENT             0x109
 #define FLAG_RECEIVED_LAVARIDGE_EGG          0x10A
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
