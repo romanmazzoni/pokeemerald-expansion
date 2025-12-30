@@ -9,7 +9,7 @@ EverGrandeCity_PhoebesRoom_OnWarp:
 	.2byte 0
 
 EverGrandeCity_PhoebesRoom_EventScript_PlayerTurnNorth::
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 EverGrandeCity_PhoebesRoom_OnFrame:
@@ -59,26 +59,26 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
+	.string "Love, Trust?\p"
+	.string "The exceptional bond made\n"
+	.string "through years of friendship?\p"
+	.string "None of these things matter when\n"
+	.string "it comes to being a great trainer.\p"
 	.string "Yes, the bond I developed with POKéMON\n"
 	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "No, it does not compare to my\n"
+	.string "sheer raw power.\p"
+	.string "BOW BEFORE ME!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
 	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "Friendship did matter.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
+	.string "...........\n"
+	.string "...........\p"
+	.string "I guess I wasted the last 5\n"
+	.string "years of my life.\p"
+	.string ".............\n"
+	.string ".............\p"
 	.string "Go ahead, move on to the next room.$"
-
