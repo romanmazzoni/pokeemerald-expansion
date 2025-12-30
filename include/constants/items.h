@@ -763,6 +763,7 @@
 #define ITEM_TM43 624
 #define ITEM_TM44 625
 #define ITEM_TM45 626
+#define ITEM_TM45_ATTRACT ITEM_TM45  // Alias
 #define ITEM_TM46 627
 #define ITEM_TM47 628
 #define ITEM_TM48 629

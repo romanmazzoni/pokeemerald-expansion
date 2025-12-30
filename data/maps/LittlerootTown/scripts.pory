@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_TWIN, 1
 .set LOCALID_MOM, 4
 .set LOCALID_RIVAL, 7
@@ -1020,296 +1021,129 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
-LittlerootTown_EventScript_CreditsSign::
+`
+
+script LittlerootTown_EventScript_CreditsSign{
 	lockall
-	msgbox LittlerootTown_EventScript_CreditsSign_Text_0
+	msgbox("Credits building")
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign1::
+}
+script Creditsbuilding_EventScript_CreditsSign1{
 	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign1_Text_0
+	msgbox(format("First and foremost thank you to gamefreak for making pokemon emerald."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign2::
+}
+script Creditsbuilding_EventScript_CreditsSign2{
 	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign2_Text_0
+	msgbox(format("Thank you to Alpharad and friends for creating the too many types romhack that Inspired this romhack."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign3::
+}
+script Creditsbuilding_EventScript_CreditsSign3{
 	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign3_Text_0
+	msgbox(format("Thank you to Team aqua's hideout and their romhacking community teaching me everything I know about romhacking."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign4::
+}
+script Creditsbuilding_EventScript_CreditsSign4{
 	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign4_Text_0
+	msgbox(format("Thank you to Nuzlockers, competitive players, trivia makers and casual pokemon youtubers because I really knew nothing about pokemon before making this."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign5::
+}
+script Creditsbuilding_EventScript_CreditsSign5{
 	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign5_Text_0
+	msgbox(format("And of course, thank you the player for playing this game :)"))
 	releaseall
-	return
+}
 
-
-Creditsbuilding_EventScript_Computer1::
+script Creditsbuilding_EventScript_Computer1{
 	lockall
-	msgbox Creditsbuilding_EventScript_Computer1_Text_0
+	msgbox(format("The tabs open are not safe to read aloud. A spotify tab is also playing boys of summer."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Computer2::
+}
+script Creditsbuilding_EventScript_Computer2{
 	lockall
-	msgbox Creditsbuilding_EventScript_Computer2_Text_0
+	msgbox(format("Counter Strike is open. Whoever was playing only has 3 kills."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Computer3::
+}
+script Creditsbuilding_EventScript_Computer3{
 	lockall
-	msgbox Creditsbuilding_EventScript_Computer3_Text_0
+	msgbox(format("A lot of pictures of cats are open. That one's name is Divy."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Book1::
+}
+script Creditsbuilding_EventScript_Book1{
 	lockall
-	msgbox Creditsbuilding_EventScript_Book1_Text_0
+	msgbox(format("The joy of mathematics by Arthur T Benjamin. Mathematics has an e in it?"))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Book2::
+}
+script Creditsbuilding_EventScript_Book2{
 	lockall
-	msgbox Creditsbuilding_EventScript_Book2_Text_0
+	msgbox(format("University Physics with Modern Physics 14th Edition by Hugh D. Young, Roger A. Freedman. Tears of joy stream down your face."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Book3::
+}
+script Creditsbuilding_EventScript_Book3{
 	lockall
-	msgbox Creditsbuilding_EventScript_Book3_Text_0
+	msgbox(format("How to raise a cat. Do cats exist in the pokemon world?"))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Book4::
+}
+script Creditsbuilding_EventScript_Book4{
 	lockall
-	msgbox Creditsbuilding_EventScript_Book4_Text_0
+	msgbox(format("Piles of untouched books. At least get a bookshelf."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Book5::
+}
+script Creditsbuilding_EventScript_Book5{
 	lockall
-	msgbox Creditsbuilding_EventScript_Book5_Text_0
+	msgbox(format("Shelves of untouched books. Very neatly organized. The shelf looks really nice."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Chair::
+}
+script Creditsbuilding_EventScript_Chair{
 	lockall
-	msgbox Creditsbuilding_EventScript_Chair_Text_0
+	msgbox(format("This chair is covered in claw marks."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Plant1::
+}
+script Creditsbuilding_EventScript_Plant1{
 	lockall
-	msgbox Creditsbuilding_EventScript_Plant1_Text_0
+	msgbox(format("A jalepeno plant. It looks like it is doing well."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Plant2::
+}
+script Creditsbuilding_EventScript_Plant2{
 	lockall
-	msgbox Creditsbuilding_EventScript_Plant2_Text_0
+	msgbox(format("A basil plant. It is doing extremely well."))
 	releaseall
-	return
-
-
-Creditsbuilding_EventScript_Plant3::
+}
+script Creditsbuilding_EventScript_Plant3{
 	lockall
-	msgbox Creditsbuilding_EventScript_Plant3_Text_0
+	msgbox(format("A fig tree. If it keeps growing it will need to be planted outside."))
 	releaseall
-	return
+}
 
-
-Creditsbuilding_EventScript_Roman::
+script Creditsbuilding_EventScript_Roman{
 	lockall
 	faceplayer
-	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_3
-Creditsbuilding_EventScript_Roman_1:
-	goto_if_unset FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Roman_7
-Creditsbuilding_EventScript_Roman_6:
-	goto_if_set FLAG_defeated_roman, Creditsbuilding_EventScript_Roman_10
-Creditsbuilding_EventScript_Roman_9:
+	if(flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN) && !flag(FLAG_defeated_roman)){
+	msgbox(format("Roman: Oh, you wanted to fight me?"))
+	trainerbattle_no_intro(TRAINER_LEAF, format("Rats."))
+	setflag(FLAG_defeated_roman)
+	}
+	if(!flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)){
+	msgbox(format("Roman: I think I did a pretty good job here."))
+	}
+	if(flag(FLAG_defeated_roman)){
+		msgbox(format("Roman: Nice job man. Hope you enjoyed the Romhack."))
+	}
 	releaseall
-	return
-
-Creditsbuilding_EventScript_Roman_2:
-	msgbox Creditsbuilding_EventScript_Roman_Text_0
-	trainerbattle_no_intro TRAINER_LEAF, Creditsbuilding_EventScript_Roman_Text_1
-	setflag FLAG_defeated_roman
-	goto Creditsbuilding_EventScript_Roman_1
-
-Creditsbuilding_EventScript_Roman_3:
-	goto_if_unset FLAG_defeated_roman, Creditsbuilding_EventScript_Roman_2
-	goto Creditsbuilding_EventScript_Roman_1
-
-Creditsbuilding_EventScript_Roman_7:
-	msgbox Creditsbuilding_EventScript_Roman_Text_2
-	goto Creditsbuilding_EventScript_Roman_6
-
-Creditsbuilding_EventScript_Roman_10:
-	msgbox Creditsbuilding_EventScript_Roman_Text_3
-	goto Creditsbuilding_EventScript_Roman_9
-
-
-Creditsbuilding_EventScript_Adonu::
+}
+script Creditsbuilding_EventScript_Adonu{
 	lockall
 	faceplayer
-	goto_if_set FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Adonu_3
-Creditsbuilding_EventScript_Adonu_1:
-	goto_if_unset FLAG_DEFEATED_METEOR_FALLS_STEVEN, Creditsbuilding_EventScript_Adonu_7
-Creditsbuilding_EventScript_Adonu_6:
-	goto_if_set FLAG_defeated_adonu, Creditsbuilding_EventScript_Adonu_10
-Creditsbuilding_EventScript_Adonu_9:
+	if(flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN) && !flag(FLAG_defeated_adonu)){
+	msgbox(format("Adonu: Ok I'll fight you, smile."))
+	trainerbattle_no_intro(TRAINER_BRENDAN_PLACEHOLDER, format("PepeSmile."))
+	setflag(FLAG_defeated_adonu)
+	}
+	if(!flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)){
+	msgbox(format("Adonu: I downloaded the files from GitHub. I came really close to helping."))
+	}
+	if(flag(FLAG_defeated_adonu)){
+		msgbox(format("Adonu: I cannot believe my eyes! 10 million fireflies!"))
+	}
 	releaseall
-	return
-
-Creditsbuilding_EventScript_Adonu_2:
-	msgbox Creditsbuilding_EventScript_Adonu_Text_0
-	trainerbattle_no_intro TRAINER_BRENDAN_PLACEHOLDER, Creditsbuilding_EventScript_Adonu_Text_1
-	setflag FLAG_defeated_adonu
-	goto Creditsbuilding_EventScript_Adonu_1
-
-Creditsbuilding_EventScript_Adonu_3:
-	goto_if_unset FLAG_defeated_adonu, Creditsbuilding_EventScript_Adonu_2
-	goto Creditsbuilding_EventScript_Adonu_1
-
-Creditsbuilding_EventScript_Adonu_7:
-	msgbox Creditsbuilding_EventScript_Adonu_Text_2
-	goto Creditsbuilding_EventScript_Adonu_6
-
-Creditsbuilding_EventScript_Adonu_10:
-	msgbox Creditsbuilding_EventScript_Adonu_Text_3
-	goto Creditsbuilding_EventScript_Adonu_9
-
-
-LittlerootTown_EventScript_CreditsSign_Text_0:
-	.string "Credits building$"
-
-Creditsbuilding_EventScript_CreditsSign1_Text_0:
-	.string "First and foremost thank you to\n"
-	.string "gamefreak for making pokemon emerald.$"
-
-Creditsbuilding_EventScript_CreditsSign2_Text_0:
-	.string "Thank you to Alpharad and friends for\n"
-	.string "creating the too many types romhack\l"
-	.string "that Inspired this romhack.$"
-
-Creditsbuilding_EventScript_CreditsSign3_Text_0:
-	.string "Thank you to Team aqua's hideout and\n"
-	.string "their romhacking community teaching\l"
-	.string "me everything I know about romhacking.$"
-
-Creditsbuilding_EventScript_CreditsSign4_Text_0:
-	.string "Thank you to Nuzlockers, competitive\n"
-	.string "players, trivia makers and casual\l"
-	.string "pokemon youtubers because I really\l"
-	.string "knew nothing about pokemon before\l"
-	.string "making this.$"
-
-Creditsbuilding_EventScript_CreditsSign5_Text_0:
-	.string "And of course, thank you the player for\n"
-	.string "playing this game :)$"
-
-Creditsbuilding_EventScript_Computer1_Text_0:
-	.string "The tabs open are not safe to read\n"
-	.string "aloud. A spotify tab is also playing\l"
-	.string "boys of summer.$"
-
-Creditsbuilding_EventScript_Computer2_Text_0:
-	.string "Counter Strike is open. Whoever was\n"
-	.string "playing only has 3 kills.$"
-
-Creditsbuilding_EventScript_Computer3_Text_0:
-	.string "A lot of pictures of cats are open. That\n"
-	.string "one's name is Divy.$"
-
-Creditsbuilding_EventScript_Book1_Text_0:
-	.string "The joy of mathematics by Arthur T\n"
-	.string "Benjamin. Mathematics has an e in it?$"
-
-Creditsbuilding_EventScript_Book2_Text_0:
-	.string "University Physics with Modern Physics\n"
-	.string "14th Edition by Hugh D. Young, Roger A.\l"
-	.string "Freedman. Tears of joy stream down\l"
-	.string "your face.$"
-
-Creditsbuilding_EventScript_Book3_Text_0:
-	.string "How to raise a cat. Do cats exist in the\n"
-	.string "pokemon world?$"
-
-Creditsbuilding_EventScript_Book4_Text_0:
-	.string "Piles of untouched books. At least get\n"
-	.string "a bookshelf.$"
-
-Creditsbuilding_EventScript_Book5_Text_0:
-	.string "Shelves of untouched books. Very\n"
-	.string "neatly organized. The shelf looks\l"
-	.string "really nice.$"
-
-Creditsbuilding_EventScript_Chair_Text_0:
-	.string "This chair is covered in claw marks.$"
-
-Creditsbuilding_EventScript_Plant1_Text_0:
-	.string "A jalepeno plant. It looks like it is\n"
-	.string "doing well.$"
-
-Creditsbuilding_EventScript_Plant2_Text_0:
-	.string "A basil plant. It is doing extremely well.$"
-
-Creditsbuilding_EventScript_Plant3_Text_0:
-	.string "A fig tree. If it keeps growing it will\n"
-	.string "need to be planted outside.$"
-
-Creditsbuilding_EventScript_Roman_Text_0:
-	.string "Roman: Oh, you wanted to fight me?$"
-
-Creditsbuilding_EventScript_Roman_Text_1:
-	.string "Rats.$"
-
-Creditsbuilding_EventScript_Roman_Text_2:
-	.string "Roman: I think I did a pretty good job\n"
-	.string "here.$"
-
-Creditsbuilding_EventScript_Roman_Text_3:
-	.string "Roman: Nice job man. Hope you enjoyed\n"
-	.string "the Romhack.$"
-
-Creditsbuilding_EventScript_Adonu_Text_0:
-	.string "Adonu: Ok I'll fight you, smile.$"
-
-Creditsbuilding_EventScript_Adonu_Text_1:
-	.string "PepeSmile.$"
-
-Creditsbuilding_EventScript_Adonu_Text_2:
-	.string "Adonu: I downloaded the files from\n"
-	.string "GitHub. I came really close to helping.$"
-
-Creditsbuilding_EventScript_Adonu_Text_3:
-	.string "Adonu: I cannot believe my eyes! 10\n"
-	.string "million fireflies!$"
+}

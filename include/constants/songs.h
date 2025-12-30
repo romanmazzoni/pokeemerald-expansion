@@ -548,6 +548,8 @@
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
+#define MUS_THROUGHTHEFIREANDFLAMES 610  // Custom music
+
 #define MUS_NONE                    0xFFFF
 
 #define FIRST_PHONEME_SONG          PH_TRAP_BLEND

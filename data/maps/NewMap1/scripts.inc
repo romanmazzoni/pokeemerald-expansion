@@ -1,19 +1,19 @@
-    NewMap1_MapScripts::
+NewMap1_MapScripts::
 	.byte 0
 
-    Regigigas_sign::
+Regigigas_sign::
 	lockall
 	braillemsgbox Regigigas_sign_Text_0
 	releaseall
 	return
 
-	Regigigas_sign2::
+Regigigas_sign2::
 	lockall
 	braillemsgbox Regigigas_sign_Text_1
 	releaseall
 	return
 
-	Regigigas_sign3::
+Regigigas_sign3::
 	lockall
 	braillemsgbox Regigigas_sign_Text_2
 	releaseall
@@ -34,20 +34,20 @@ Regigigas_sign_Text_2:
 	.braille "LOVE\n"
 	.braille "APPLES?$"
 
-    Regiroom_EventScript_Regired::
+Regiroom_EventScript_Regired::
 	trainerbattle_single TRAINER_RED, Regiroom_Text_REDIntro, Regiroom_Text_REDDefeat
 	msgbox Regiroom_Text_REDPostBattle, MSGBOX_AUTOCLOSE
-    return
+return
 
-    Regiroom_Text_REDIntro:
+Regiroom_Text_REDIntro:
 	.string "Prove yourself.$"
 
-    Regiroom_Text_REDDefeat:
+Regiroom_Text_REDDefeat:
 	.string "Good enough.$"
-    
-	Regiroom_Text_REDPostBattle:
+
+Regiroom_Text_REDPostBattle:
 	.string "No reason for me\n"
-    .string "to stop you.$"
+	.string "to stop you.$"
 
 Regiroom_EventScript_RedBattle::
 	lockall
@@ -66,7 +66,6 @@ Regiroom_EventScript_RedBattle_2:
 	msgbox Regiroom_EventScript_RedBattle_Text_0
 	goto Regiroom_EventScript_RedBattle_1
 
-
 Regiroom_Regigigas::
 	lockall
 	playmoncry SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER
@@ -82,7 +81,6 @@ Regiroom_Regigigas::
 	waitmessage
 	releaseall
 	return
-
 
 Regiroom_Regidrago::
 	lockall
@@ -100,7 +98,6 @@ Regiroom_Regidrago::
 	releaseall
 	return
 
-
 Regiroom_Regieleki::
 	lockall
 	playmoncry SPECIES_REGIELEKI, CRY_MODE_ENCOUNTER
@@ -116,7 +113,6 @@ Regiroom_Regieleki::
 	waitmessage
 	releaseall
 	return
-
 
 Regiroom_EventScript_RedBattle_Text_0:
 	.string "I guard these three beings. You are not\n"
