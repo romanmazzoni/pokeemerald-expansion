@@ -60,3 +60,19 @@ TrainerHill_Roof_EventScript_AlreadyReceivedPrize::
 	release
 	end
 
+trainerhill_roof_fight_zygarde::
+	lockall
+	playmoncry SPECIES_ZYGARDE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZYGARDE, 40, ITEM_RELIC_CROWN
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_Zygarde
+	fadescreen FADE_TO_BLACK
+	removeobject 2
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	releaseall
+	return
+

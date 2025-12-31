@@ -196,3 +196,19 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
+Route123_fight_Jirachi::
+	lockall
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_JIRACHI, 40, ITEM_BRIGHT_POWDER
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	setflag FLAG_Jirachi
+	fadescreen FADE_TO_BLACK
+	removeobject 44
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	releaseall
+	return
+

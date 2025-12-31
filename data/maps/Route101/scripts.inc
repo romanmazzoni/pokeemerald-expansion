@@ -329,7 +329,7 @@ route101_fight_zamazenta_1:
 	return
 
 route101_fight_zamazenta_2:
-	setflag FLAG_Zacian
+	setflag FLAG_Zamazenta
 	playmoncry SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
