@@ -1,13 +1,8 @@
 MossdeepCity_Gym_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_Gym_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_Gym_OnLoad
 	.byte 0
 
 @ NOTE: Mossdeep Gym was redesigned between R/S and E. Leftover (and now functionally unused) scripts are commented below
-
-MossdeepCity_Gym_OnTransition:
-	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower since it can collide with moving statues
-	end
 
 @ All the below checks are leftover from RS. FLAG_MOSSDEEP_GYM_SWITCH_X is never set
 MossdeepCity_Gym_OnLoad:
@@ -95,7 +90,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
-	giveitem ITEM_TM_CALM_MIND
+	giveitem ITEM_TM04
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_CALM_MIND
@@ -103,7 +98,7 @@ MossdeepCity_Gym_EventScript_GiveCalmMind2::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind::
-	giveitem ITEM_TM_CALM_MIND
+	giveitem ITEM_TM04
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_CALM_MIND
@@ -119,7 +114,7 @@ MossdeepCity_Gym_EventScript_Switch1::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_1, MossdeepCity_Gym_EventScript_ClearSwitch1
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_1
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -134,7 +129,7 @@ MossdeepCity_Gym_EventScript_DrawMapAfterSwitchUsed::
 
 MossdeepCity_Gym_EventScript_ClearSwitch1::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_1
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
 	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -145,7 +140,7 @@ MossdeepCity_Gym_EventScript_Switch2::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_2, MossdeepCity_Gym_EventScript_ClearSwitch2
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_2
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -154,7 +149,7 @@ MossdeepCity_Gym_EventScript_Switch2::
 
 MossdeepCity_Gym_EventScript_ClearSwitch2::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_2
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Down, FALSE
 	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -165,7 +160,7 @@ MossdeepCity_Gym_EventScript_Switch3::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_3, MossdeepCity_Gym_EventScript_ClearSwitch3
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_3
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
 	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -174,7 +169,7 @@ MossdeepCity_Gym_EventScript_Switch3::
 
 MossdeepCity_Gym_EventScript_ClearSwitch3::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_3
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -185,7 +180,7 @@ MossdeepCity_Gym_EventScript_Switch4::
 	lockall
 	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_4, MossdeepCity_Gym_EventScript_ClearSwitch4
 	setflag FLAG_MOSSDEEP_GYM_SWITCH_4
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Up, FALSE
 	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Down, TRUE
@@ -194,7 +189,7 @@ MossdeepCity_Gym_EventScript_Switch4::
 
 MossdeepCity_Gym_EventScript_ClearSwitch4::
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_4
-	applymovement LOCALID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
+	applymovement OBJ_EVENT_ID_PLAYER, MossdeepCity_Gym_Movement_WaitAfterSwitchUse
 	waitmovement 0
 	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
 	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Up, TRUE
@@ -373,9 +368,9 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-bound\n"
 	.string "{PLAYER}?\p"
 	.string "The GYM LEADERS here use\n"
-	.string "PSYCHIC-type POKéMON.\p"
+	.string "EVIL-type POKéMON.\p"
 	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type POKéMON,\l"
+	.string "SHIFTY- or LOCKED-type POKéMON,\l"
 	.string "they'll inflict horrible damage!\p"
 	.string "Plus, they'll come at you with\n"
 	.string "outstanding combination attacks.\p"
@@ -396,7 +391,7 @@ MossdeepCity_Gym_Text_PrestonDefeat:
 	.string "I must temper my spirit again!$"
 
 MossdeepCity_Gym_Text_PrestonPostBattle:
-	.string "The indecisive lose.\n"
+	.string "An indecisive loss.\n"
 	.string "That's my warning to you.$"
 
 MossdeepCity_Gym_Text_VirgilIntro:
@@ -409,7 +404,9 @@ MossdeepCity_Gym_Text_VirgilPostBattle:
 	.string "If there are prodigies in the world,\n"
 	.string "then our GYM LEADERS are them!\p"
 	.string "However, you may be even more talented\n"
-	.string "than them…$"
+	.string "than them…\p"
+	.string "Go on, now fight!\n"
+	.string "Show them your might!$"
 
 MossdeepCity_Gym_Text_BlakeIntro:
 	.string "Fufufufu… Watch me levitate a POKé\n"
@@ -441,9 +438,9 @@ MossdeepCity_Gym_Text_HannahDefeat:
 
 MossdeepCity_Gym_Text_HannahPostBattle:
 	.string "I'm not going to get down on myself for\n"
-	.string "losing. I just need to train harder.\p"
-	.string "Positive thinking--that's my strong\n"
-	.string "point!$"
+	.string "losing. I just think you cheated.\p"
+	.string "Walls?\n"
+	.string "Yeah this guy is definitely walling!$"
 
 MossdeepCity_Gym_Text_SamanthaIntro:
 	.string "I see it…\n"
@@ -455,9 +452,9 @@ MossdeepCity_Gym_Text_SamanthaDefeat:
 	.string "I surrender!$"
 
 MossdeepCity_Gym_Text_SamanthaPostBattle:
-	.string "You will wage a terrifically intense\n"
-	.string "battle with our GYM LEADERS…\p"
-	.string "The result…\n"
+	.string "Your future holds a little bit\n"
+	.string "of Lance, maybe a little\l"
+	.string "bit of stephen...\n"
 	.string "You won't hear it from me!$"
 
 MossdeepCity_Gym_Text_MauraIntro:
@@ -492,15 +489,15 @@ MossdeepCity_Gym_Text_SylviaPostBattle:
 MossdeepCity_Gym_Text_NateIntro:
 	.string "Hohoho.\p"
 	.string "You need me to show you how tenacious\n"
-	.string "the PSYCHIC type can be.$"
+	.string "the RAT type can be.$"
 
 MossdeepCity_Gym_Text_NateDefeat:
 	.string "Oh! My, my!\n"
-	.string "Your battle style is fantastic!$"
+	.string "Your battle style is tenacious!$"
 
 MossdeepCity_Gym_Text_NatePostBattle:
-	.string "I… I don't let defeat rattle m-me,\n"
-	.string "however b-badly.$"
+	.string "If I had 4 full restores,\n"
+	.string "I would have won.$"
 
 MossdeepCity_Gym_Text_KathleenIntro:
 	.string "Let me show you a perfectly awful,\n"
@@ -510,8 +507,7 @@ MossdeepCity_Gym_Text_KathleenDefeat:
 	.string "N-nooooo!$"
 
 MossdeepCity_Gym_Text_KathleenPostBattle:
-	.string "Your vitality is contagious!\n"
-	.string "Get away from me quickly!$"
+	.string "You are horrifying!$"
 
 MossdeepCity_Gym_Text_CliffordIntro:
 	.string "I may be past my prime, but I suggest\n"
@@ -535,7 +531,7 @@ MossdeepCity_Gym_Text_MaceyDefeat:
 
 MossdeepCity_Gym_Text_MaceyPostBattle:
 	.string "Humph! You may be strong, but you're\n"
-	.string "not suitable for the PSYCHIC type!\p"
+	.string "not suitable for the CHARGE type!\p"
 	.string "The way you battle is somehow brutal!$"
 
 MossdeepCity_Gym_Text_NicholasIntro:
@@ -551,24 +547,29 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: Fufufu… Were you surprised?\p"
+	.string "TATE: Hehehe… Were you unwise\p"
+	.string "LIZA: Fufufu… you feel surprise?\p"
 	.string "TATE: That there are two GYM LEADERS?\n"
-	.string "LIZA: That there are two GYM LEADERS?\p"
-	.string "TATE: We're twins!\n"
-	.string "LIZA: We're twins!\p"
+	.string "LIZA: That there are two RUN FEEDERS?\p"
+	.string "TATE: We are twins!\n"
+	.string "LIZA: We get wins!\p"
 	.string "TATE: We don't need to talk because…\n"
-	.string "LIZA: We can each determine what…\p"
-	.string "TATE: The other is thinking…\n"
-	.string "LIZA: All in our minds!\p"
-	.string "TATE: This combination of ours…\n"
-	.string "LIZA: Can you beat it?$"
+	.string "LIZA: We can each determine what…\l"
+	.string "TATE: The other is sandwiches!\p"
+	.string "LIZA: ......\p"
+	.string "LIZA: What?\p"
+	.string "LIZA: What does that mean?\p"
+	.string "TATE: Well its like we always finish\n"
+	.string "eachothers sandwiches.\n"
+	.string "LIZA: I didn't set you up for that.\p"
+	.string "LIZA: Whatever lets just smack this…\n"
+	.string "TATE: Loser!$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "TATE: What?! Our combination…\n"
 	.string "LIZA: Was shattered!\p"
 	.string "TATE: It can't be helped. You've won…\n"
-	.string "LIZA: So, in recognition, take this.$"
+	.string "LIZA: Nothing else mattered.$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
@@ -587,7 +588,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "TATE: It raises SP. ATK and…\n"
 	.string "LIZA: It raises SP. DEF!\p"
 	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC POKéMON!\p"
+	.string "LIZA: For special attackers!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
@@ -598,8 +599,9 @@ MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "TATE: Looks like the bond between you\n"
 	.string "and your POKéMON is far stronger than\l"
 	.string "the bond that we share as twins.\p"
-	.string "LIZA: You will become even stronger!\n"
-	.string "We've battled you, so we know.$"
+	.string "LIZA: Pretty low bar!\n"
+	.string "I'm looking for another\l"
+	.string "doubles partner right now!$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "TATE: Hehehe… Were you surprised?\p"
