@@ -1390,8 +1390,8 @@ SootopolisCity_Movement_DestroyTask::
 SootopolisCity_Text_GymSign:
 	.string "SOOTOPOLIS CITY POKéMON GYM\n"
 	.string "LEADER: JUAN\p"
-	.string "“The GYM LEADER with the beauty\n"
-	.string "of pure water!”$"
+	.string "“The GYM LEADER of pure\n"
+	.string "Swanage!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "SOOTOPOLIS CITY\p"
@@ -1413,46 +1413,47 @@ SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
 	.string "And, I've never seen them before!\p"
 	.string "Why are they smashing into each\n"
 	.string "other like that?\p"
-	.string "Why can't they be friends, those\n"
-	.string "POKéMON?$"
+	.string "Why can't they be friends,\n"
+	.string "why can't we be friends?$"
 
 SootopolisCity_Text_WhatIsThatGreenPokemon:
 	.string "What? What? What?\n"
-	.string "What is that green POKéMON?!$"
+	.string "RAQAYAAY?!?$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
 	.string "GROUDON and KYOGRE…\n"
 	.string "Where did they go?\p"
-	.string "Will they cause droughts or downpours\n"
-	.string "somewhere else?$"
+	.string "I genuinely don't know how to\n"
+	.string "find them in this game.$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
 	.string "the two POKéMON aren't angry.\p"
-	.string "I think… They probably can't control\n"
-	.string "their own power…$"
+	.string "I think… They probably just have\n"
+	.string "drought and drizzle…$"
 
 SootopolisCity_Text_FlyingMonStoppedRampage:
 	.string "That flying POKéMON came down from\n"
-	.string "the sky and stopped the rampaging\l"
-	.string "POKéMON…$"
+	.string "heaven and stopped the rampaging\l"
+	.string "POKéMON…\p"
+	.string "Just like Chuck Noris...$"
 
 SootopolisCity_Text_WonderWhatWorldIsLike:
 	.string "I… I've never been out of this city.\p"
 	.string "I wonder what the world is like on\n"
-	.string "the other side of this round sky?$"
+	.string "in a real city?$"
 
 SootopolisCity_Text_ThisIsWicked:
 	.string "Wow!\n"
-	.string "This is wicked!$"
+	.string "Gnarly bro!$"
 
 SootopolisCity_Text_ThatWasWicked:
 	.string "Wow!\n"
-	.string "That was wicked!$"
+	.string "That was gnarly bro!$"
 
 SootopolisCity_Text_GoRedAndBlueMon:
-	.string "Go for it, red POKéMON!\n"
-	.string "Don't back off, blue POKéMON!$"
+	.string "It's my monies now!\n"
+	.string "Go for it, red POKéMON!$"
 
 SootopolisCity_Text_DoYouKnowMonNames:
 	.string "… … … … … …\p"
@@ -1463,7 +1464,7 @@ SootopolisCity_Text_GreenOneSettlesThings:
 	.string "I was wondering which one would win,\n"
 	.string "the red one or the blue one, but, oh no,\l"
 	.string "it's the green one that settles things!\p"
-	.string "Talk about a huge turn of events!$"
+	.string "680 bst kinda wild!$"
 
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
@@ -1471,8 +1472,8 @@ SootopolisCity_Text_SeeingLegendWithOwnEyes:
 	.string "a colossal battle between POKéMON.\p"
 	.string "Well, I'm seeing that happen with\n"
 	.string "my very own eyes!\p"
-	.string "Whoa! I never expected to be\n"
-	.string "witness to something this huge!$"
+	.string "Whoa! I guess arceus didn't\n"
+	.string "do anything!$"
 
 SootopolisCity_Text_SawLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
@@ -1486,64 +1487,63 @@ SootopolisCity_Text_SawLegendWithOwnEyes:
 SootopolisCity_Text_BigPokemonFighting:
 	.string "A big POKéMON is fighting with\n"
 	.string "another big POKéMON!\p"
-	.string "Please, someone make them stop!$"
+	.string "I bet 50 monies on green!$"
 
 SootopolisCity_Text_PrettyMonCameFromSky:
-	.string "A pretty POKéMON came down from\n"
-	.string "the sky…$"
+	.string "A GREEN POKéMON came down FROM\n"
+	.string "the SKY…$"
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
 	.string "Oh, no!\n"
 	.string "SOOTOPOLIS CITY will get wrecked!$"
 
 SootopolisCity_Text_SootopolisDidntGetWrecked:
-	.string "SOOTOPOLIS CITY didn't get wrecked!$"
+	.string "SOOTOPOLIS CITY didn't get wrecked!\p"
+	.string "BOOOrrrrIIInnnggg.$"
 
 SootopolisCity_Text_NoOrdinaryTourist:
 	.string "Hm!\n"
 	.string "You've come all the way to SOOTOPOLIS?\l"
 	.string "You're no ordinary tourist.\p"
-	.string "But I suppose that doesn't make you\n"
-	.string "an extraordinary tourist, either.$"
+	.string "Hell, you're barely a tourist\n"
+	.string "at all! Loser!$"
 
 SootopolisCity_Text_CityRegainedCalm:
-	.string "The city has regained its calm…$"
+	.string "The city has regained its clam…$"
 
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
 	.string "Who might you be?\p"
 	.string "This is the CAVE OF ORIGIN.\p"
 	.string "The spirits of POKéMON, becalmed at\n"
 	.string "MT. PYRE, are said to be revived here.\p"
-	.string "Please leave.$"
+	.string "This will be important late in\n"
+	.string "the story$"
 
 SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A person with a strong will and\n"
 	.string "superior talent…\p"
 	.string "A TRAINER who has knowledge and\n"
 	.string "experience of many kinds of POKéMON…\p"
-	.string "If such a person were to appear, I was\n"
-	.string "instructed by WALLACE to lead that\l"
-	.string "TRAINER to this CAVE.$"
+	.string "Or someone like you…$"
 
 SootopolisCity_Text_AwakenedPokemonClash:
 	.string "Oh, my…\p"
 	.string "The clash between the two awakened\n"
 	.string "POKéMON was quelled by the awakening\l"
-	.string "of a third POKéMON…$"
+	.string "of a even more POKéMON like POKéMON…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
 	.string "This is the CAVE OF ORIGIN…\p"
-	.string "With the passing of the crisis,\n"
-	.string "the cave, too, shall sleep…$"
+	.string "It really did have no purpose.$"
 
 SootopolisCity_Text_SootopolisSkyBeautiful:
 	.string "SOOTOPOLIS sprang up as a town in\n"
 	.string "the crater of a volcano.\p"
-	.string "If you look up at the sky, the lip of\n"
-	.string "the crater is also visible.\l"
-	.string "So, all you see is the sky in a circle.\p"
-	.string "But that's what makes the sky above\n"
-	.string "SOOTOPOLIS the most beautiful.$"
+	.string "Why did anyone build a town here?\n"
+	.string "I don't know!\p"
+	.string "How do you leave without fly or dive?\n"
+	.string "I don't know!\p"
+	.string "HELP HELP! GET ME OUT OF HERE!$"
 
 SootopolisCity_Text_GiganticPokemonFight:
 	.string "When two POKéMON that gigantic\n"
@@ -1552,14 +1552,14 @@ SootopolisCity_Text_GiganticPokemonFight:
 
 SootopolisCity_Text_FearedWorstWhenPokemonFlewDown:
 	.string "When that third POKéMON flew down,\n"
-	.string "I feared the worst.$"
+	.string "I was like, whaaaaaaat.$"
 
 SootopolisCity_Text_NightSkyFavoriteScenery:
 	.string "A circle of a night sky framed by\n"
 	.string "the crater of a volcano…\p"
 	.string "And in that ring, stars flicker and\n"
 	.string "blink as if they were alive…\l"
-	.string "It's my favorite scenery.$"
+	.string "Honestly the stars probably are alive.$"
 
 SootopolisCity_Text_WeatherWentWild:
 	.string "The weather was clear this morning,\n"
@@ -1569,31 +1569,28 @@ SootopolisCity_Text_WeatherWentWild:
 	.string "there was thunder and lightning, too.\p"
 	.string "The weather just went completely\n"
 	.string "wild!\p"
-	.string "Is all of this because of those\n"
-	.string "POKéMON?$"
+	.string "Is all of drizzle?$"
 
 SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Oh?\p"
 	.string "It was you who brought that flying\n"
 	.string "POKéMON here?\p"
-	.string "Well, aren't you amazing!$"
+	.string "Wellcha, aren'tcha amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
 	.string "MAXIE: G… GROUDON…\n"
-	.string "Please! Stop what you're doing!\p"
-	.string "I know the extent of your power now!\p"
-	.string "If you keep going, all HOENN, not just\n"
-	.string "SOOTOPOLIS, will be utterly ruined!$"
+	.string "WOW!\p"
+	.string "You are so cool!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
 	.string "MAXIE: So the super-ancient POKéMON\n"
 	.string "weren't only GROUDON and KYOGRE…\p"
-	.string "After all our fruitless scheming and\n"
-	.string "frantic efforts, that one POKéMON's\l"
+	.string "That one POKéMON's\n"
 	.string "simple action puts everything right\l"
 	.string "again as if nothing had happened…\p"
-	.string "Fu…\n"
-	.string "Fuhahaha…$"
+	.string "So cool!\n"
+	.string "{PLAYER}{KUN}!$"
+	.string "You should catch that one too!$"
 
 SootopolisCity_Text_KyogreCalmDown:
 	.string "ARCHIE: KYOGRE! What's wrong?!\n"
@@ -1642,7 +1639,7 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 SootopolisCity_Text_HereWereAreHelpWallace:
 	.string "STEVEN: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "WALLACE.\p"
+	.string "Lance.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 
@@ -1667,7 +1664,7 @@ SootopolisCity_Text_MaxieArchieLeft:
 	.string "return those ORBS…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
-	.string "WALLACE: Oh?\n"
+	.string "Lance: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the SKY PILLAR\n"
 	.string "yet?\p"
@@ -1675,14 +1672,14 @@ SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "the top of the SKY PILLAR…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "The leaders of TEAM MAGMA and AQUA,\n"
-	.string "I don't think they meant harm.\p"
-	.string "It wouldn't hurt to hear what they\n"
-	.string "have to say for themselves.$"
+	.string "Lance: {PLAYER}{KUN}…\p"
+	.string "The leader of Team AQUA,\n"
+	.string "I don't think he meant harm.\p"
+	.string "It wouldn't hurt to hear what he\n"
+	.string "have to say for himself.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
-	.string "WALLACE: {PLAYER}{KUN}…\n"
+	.string "Lance: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, SOOTOPOLIS…\n"
 	.string "No, all of HOENN was saved.\p"
@@ -1695,15 +1692,16 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "WATERFALL.\p"
 	.string "If you have the RAIN BADGE, a POKéMON\n"
 	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
+	.string "swim its way up waterfalls.\p"
 	.string "And where does one get the RAIN BADGE?\n"
 	.string "You know, don't you?\p"
 	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "When you're all set to go, step through\n"
-	.string "that door.$"
+	.string "the mother swan himself.\p"
+	.string "JUANDASWAN BABY!\n"
+	.string "GYYYYMMM TIMMMEEEEE!!!$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "WALLACE: I'm sure that you will be\n"
+	.string "Lance: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
-	.string "elegant battle style.$"
+	.string "swanny battle style.$"
+
