@@ -25,7 +25,9 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_X_ACCURACY
-	pokemartlistend
+	.2byte ITEM_NONE
+	release
+	end
 
 MauvilleCity_Mart_EventScript_ExpertM::
 	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC
@@ -40,12 +42,10 @@ MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:
 	.string "elevate the stats of POKéMON.\p"
 	.string "The ones I know you use in battle\n"
 	.string "are X ATTACK and X DEFEND…\p"
-	.string "I do believe that there are others\n"
-	.string "like them.$"
+	.string "You can use them to cheat.$"
 
 MauvilleCity_Mart_Text_DecisionsDetermineBattle:
 	.string "Use a certain move, or use an item\n"
 	.string "instead…\p"
 	.string "The TRAINER's decisions determine how\n"
 	.string "battles turn out, I think.$"
-

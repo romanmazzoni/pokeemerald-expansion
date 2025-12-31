@@ -865,6 +865,8 @@
 #define TRAINER_FRANK5                      859  
 #define TRAINER_FRANK6                      860  
 #define TRAINER_FRANK7                      861  
+#define TRAINER_LANCE                       862
+#define TRAINER_STEPHEN                     863
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
