@@ -1,3 +1,11 @@
+.set LOCALID_GROUDON, 1
+.set LOCALID_GRUNT_1, 2
+.set LOCALID_GRUNT_2, 3
+.set LOCALID_GRUNT_3, 4
+.set LOCALID_TABITHA, 5
+.set LOCALID_MAXIE, 6
+.set LOCALID_GROUDON_SLEEPING, 7
+
 MagmaHideout_4F_MapScripts::
 	.byte 0
 
@@ -15,14 +23,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 150
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON_SLEEPING
-	addobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
+	removeobject LOCALID_GROUDON_SLEEPING
+	addobject LOCALID_GROUDON
 	waitstate
 	delay 60
-	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
+	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonApproach
 	waitmovement 0
 	special FadeOutOrbEffect
 	waitstate
@@ -32,9 +40,9 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applymovement LOCALID_MAGMA_HIDEOUT_4F_GROUDON, MagmaHideout_4F_Movement_GroudonExit
+	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
 	waitmovement 0
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_GROUDON
+	removeobject LOCALID_GROUDON
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
@@ -43,14 +51,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	special ShakeCamera
 	waitstate
 	delay 30
-	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
+	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
@@ -63,11 +71,11 @@ MagmaHideout_4F_EventScript_Maxie::
 	setflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT
 	setvar VAR_SLATEPORT_HARBOR_STATE, 1
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3
-	removeobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
+	removeobject LOCALID_MAXIE
+	removeobject LOCALID_GRUNT_1
+	removeobject LOCALID_GRUNT_2
+	removeobject LOCALID_GRUNT_3
+	removeobject LOCALID_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
 	releaseall
@@ -137,7 +145,8 @@ MagmaHideout_4F_Text_Grunt11Defeat:
 	.string "doesn't have a calm mind…$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "I wonder if GROUDON even has a tail?$"
+	.string "When you catch groundon, let\n"
+	.string "me see what it looks like!$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
 	.string "Fuhahaha!\n"
@@ -199,26 +208,25 @@ MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
 	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "MAXIE: Oh, so it was you?\p"
-	.string "I've seen you poking around uninvited\n"
-	.string "here and there…\p"
-	.string "I get it now!\n"
-	.string "You must have pulled a cheap stunt!$"
+	.string "MAXIE: Oh, hi {PLAYER}{KUN}!\p"
+	.string "I'm tryna summon groundon\n"
+	.string "for ya but it didn't work.\p"
+	.string "We'll he left, sorry about that!\n"
+	.string "Hey, since you're here, wanna battle?$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "What makes you so adept at handling\n"
-	.string "POKéMON?$"
+	.string "Wow you are awesome!$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "MAXIE: There has to be some reason\n"
 	.string "why GROUDON fled…\p"
-	.string "That's what you're trying to say,\n"
-	.string "aren't you?\p"
+	.string "I swear on my life,\n"
+	.string "I will help you catch groundon!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Humph…\n"
-	.string "You think I didn't know that?\p"
+	.string "Well, getting a but hot in here.\p"
 	.string "With GROUDON gone, there is no longer\n"
-	.string "any need for this blasted volcano.\p"
-	.string "I am going after GROUDON, so this\n"
-	.string "is where we part!$"
+	.string "any need for us to be in this volcano.\p"
+	.string "I am going after GROUDON, so\n"
+	.string "I'll see you later!$"
