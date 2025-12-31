@@ -22,7 +22,14 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_SHADOW_MAIL
-	pokemartlistend
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_NONE
+	release
+	end
 
 SootopolisCity_Mart_EventScript_FatMan::
 	lock
@@ -54,8 +61,8 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 
 SootopolisCity_Mart_Text_PPUpIsGreat:
 	.string "PP UP is great!\p"
-	.string "It raises the POWER POINTS, the PP,\n"
-	.string "of a POKéMON move.$"
+	.string "It raises the POTENTIAL PUNCH,\n"
+	.string "the PP, of a POKéMON move.$"
 
 SootopolisCity_Mart_Text_TooScaryOutside:
 	.string "What…\n"
@@ -67,9 +74,8 @@ SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
 	.string "Do you know FULL RESTORE?\p"
 	.string "Full restoration of HP!\n"
 	.string "Eradication of all status problems!\p"
-	.string "It's truly an item of your dreams!$"
+	.string "It's banned in hardcore nuzlockes!$"
 
 SootopolisCity_Mart_Text_DidSomethingAwaken:
 	.string "This weather…\n"
-	.string "Did something awaken?$"
-
+	.string "I've never seen rain before.$"
