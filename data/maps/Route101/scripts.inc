@@ -258,16 +258,18 @@ Route101_Movement_BirchApproachPlayer:
 	step_end
 
 Route101_Text_HelpMe:
-	.string "H-help me!$"
+	.string "H-help me >.<!$"
 
 Route101_Text_PleaseHelp:
 	.string "Hello! You over there!\n"
 	.string "Please! Help!\p"
 	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "There's a POKé BALL!\p"
+	.string "Grab the scorbunny!\n"
+	.string "It's way cooler than the other 2!$"
 
 Route101_Text_DontLeaveMe:
-	.string "Wh-Where are you going?!\n"
+	.string "The BAG go to the BAG!\n"
 	.string "Don't leave me like this!$"
 
 Route101_Text_YouSavedMe:
@@ -282,18 +284,64 @@ Route101_Text_YouSavedMe:
 	.string "by my POKéMON LAB later, okay?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
-	.string "TOWN right close by.$"
+	.string "I don't have any pokeballs.\p"
+	.string "Why am I here?$"
 
 Route101_Text_WildPokemonInTallGrass:
 	.string "Wild POKéMON will jump out at you in\n"
 	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "Not this patch though\n"
+	.string "No encounters in 349 steps...$"
 
 Route101_Text_RouteSign:
-	.string "ROUTE 101\n"
+	.string "ROOT 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
 
+route101_fight_zacian::
+	lockall
+	goto_if_set FLAG_BADGE08_GET, route101_fight_zacian_2
+	msgbox route101_fight_zacian_Text_0
+route101_fight_zacian_1:
+	releaseall
+	return
+
+route101_fight_zacian_2:
+	setflag FLAG_Zacian
+	playmoncry SPECIES_ZACIAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZACIAN, 50, ITEM_ABILITY_SHIELD
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	fadescreen FADE_TO_BLACK
+	removeobject 7
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	goto route101_fight_zacian_1
+
+
+route101_fight_zamazenta::
+	lockall
+	goto_if_set FLAG_BADGE08_GET, route101_fight_zamazenta_2
+	msgbox route101_fight_zacian_Text_0
+route101_fight_zamazenta_1:
+	releaseall
+	return
+
+route101_fight_zamazenta_2:
+	setflag FLAG_Zacian
+	playmoncry SPECIES_ZAMAZENTA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ZAMAZENTA, 50, ITEM_LIGHT_CLAY
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	fadescreen FADE_TO_BLACK
+	removeobject 8
+	fadescreen FADE_FROM_BLACK
+	waitmessage
+	goto route101_fight_zamazenta_1
+
+
+route101_fight_zacian_Text_0:
+	.string "The inert object will not budge$"

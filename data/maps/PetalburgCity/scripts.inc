@@ -760,4 +760,3 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
 
-	
