@@ -340,6 +340,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PSYCHIC] = { _("PSYCHIC"), 6 },
     [TRAINER_CLASS_GENTLEMAN] = { _("GENTLEMAN"), 20, BALL_LUXURY },
     [TRAINER_CLASS_ELITE_FOUR] = { _("ELITE FOUR"), 25, BALL_ULTRA },
+    [TRAINER_CLASS_MIRROR] = { _("ELITE FOUR"), 25, BALL_ULTRA },
     [TRAINER_CLASS_LEADER] = { _("LEADER"), 25 },
     [TRAINER_CLASS_SCHOOL_KID] = { _("SCHOOL KID") },
     [TRAINER_CLASS_SR_AND_JR] = { _("SR. AND JR."), 4 },
@@ -2023,13 +2024,76 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
     return trainer->partySize;
 }
+u8 CreateMirrorTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags)
+{
+    u32 personalityValue;
+    s32 i, j;
+    u8 monsCount = 6;
+    if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
+                                                                        | BATTLE_TYPE_EREADER_TRAINER
+                                                                        | BATTLE_TYPE_TRAINER_HILL)))
+    {
+
+        u32 monIndices[monsCount];
+        DoTrainerPartyPool(trainer, monIndices, monsCount, battleTypeFlags);
+
+        for (i = 0; i < monsCount; i++)
+        {
+            u32 monIndex = monIndices[i];
+            s32 ball = -1;
+            u32 personalityHash = GeneratePartyHash(trainer, i);
+
+
+            personalityValue += personalityHash << 8;
+            //old mirror logic
+                const struct TrainerMon *partyData = trainer->party; 
+                u16 part1 = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
+                CreateMon(&party[i], GetMonData(&gPlayerParty[i], MON_DATA_SPECIES), GetMonData(&gPlayerParty[i], MON_DATA_LEVEL), 0, TRUE, GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY), OT_ID_RANDOM_NO_SHINY, 0);
+                SetMonData(&party[i], MON_DATA_IVS, &(partyData[monIndex].iv));
+            if (partyData[monIndex].ev != NULL)
+            {
+                SetMonData(&party[i], MON_DATA_HP_EV, &(partyData[monIndex].ev[0]));
+                SetMonData(&party[i], MON_DATA_ATK_EV, &(partyData[monIndex].ev[1]));
+                SetMonData(&party[i], MON_DATA_DEF_EV, &(partyData[monIndex].ev[2]));
+                SetMonData(&party[i], MON_DATA_SPATK_EV, &(partyData[monIndex].ev[3]));
+                SetMonData(&party[i], MON_DATA_SPDEF_EV, &(partyData[monIndex].ev[4]));
+                SetMonData(&party[i], MON_DATA_SPEED_EV, &(partyData[monIndex].ev[5]));
+            }
+                
+                SetMonData(&party[i], MON_DATA_HELD_ITEM, &part1);
+                part1 = GetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM);
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &part1);
+                part1 = GetMonData(&gPlayerParty[i], MON_DATA_IS_SHINY);
+                SetMonData(&party[i], MON_DATA_IS_SHINY, &part1);
+                for (j = 0; j < MAX_MON_MOVES; j++)
+                {
+                    u8 pp = GetMonData(&gPlayerParty[i], MON_DATA_PP1 + j);
+                    part1 = GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + j);
+                    SetMonData(&party[i], MON_DATA_MOVE1 + j, &part1);
+                    SetMonData(&party[i], MON_DATA_PP1 + j, &pp);
+                }
+                break;
+            //choose ball
+            if (B_TRAINER_CLASS_POKE_BALLS >= GEN_7 && ball == -1)
+            {
+                ball = gTrainerClasses[trainer->trainerClass].ball ?: ITEM_POKE_BALL;
+                SetMonData(&party[i], MON_DATA_POKEBALL, &ball);
+            }
+        }
+    }
+
+    return trainer->partySize;
+}
 
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 firstTrainer)
 {
     u8 retVal;
     if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
-    retVal = CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags);
+    if (GetTrainerStructFromId(trainerNum)->trainerClass == TRAINER_CLASS_MIRROR)
+        retVal = CreateMirrorTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags);
+    else
+        retVal = CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum), firstTrainer, gBattleTypeFlags);
     return retVal;
 }
 

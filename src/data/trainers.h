@@ -11383,7 +11383,7 @@ F_TRAINER_FEMALE |
 #line 4588
         .trainerName = _("SIDNEY"),
 #line 4589
-        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
+        .trainerClass = TRAINER_CLASS_MIRROR,
 #line 4590
         .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
         .encounterMusic_gender =
