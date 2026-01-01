@@ -149,10 +149,23 @@ bool8 TryAddRoamer(u16 species, u8 level)
 // gSpecialVar_0x8004 here corresponds to the options in the multichoice MULTI_TV_LATI (0 for 'Red', 1 for 'Blue')
 void InitRoamer(void)
 {
-    if (gSpecialVar_0x8004 == 0) // Red
+
         TryAddRoamer(SPECIES_LATIAS, 40);
-    else
+
         TryAddRoamer(SPECIES_LATIOS, 40);
+        //new roamers!!
+        TryAddRoamer(SPECIES_COBALION, 40);
+        TryAddRoamer(SPECIES_TERRAKION, 40);
+        TryAddRoamer(SPECIES_VIRIZION, 40);
+        TryAddRoamer(SPECIES_KELDEO, 40);
+        TryAddRoamer(SPECIES_TAPU_KOKO, 40);
+        TryAddRoamer(SPECIES_TAPU_LELE, 40);
+        TryAddRoamer(SPECIES_TAPU_BULU, 40);
+        TryAddRoamer(SPECIES_TAPU_FINI, 40);
+        TryAddRoamer(SPECIES_WALKING_WAKE, 40);
+        TryAddRoamer(SPECIES_RAGING_BOLT, 40);
+        TryAddRoamer(SPECIES_GOUGING_FIRE, 40);
+
 }
 
 void UpdateLocationHistoryForRoamer(void)
