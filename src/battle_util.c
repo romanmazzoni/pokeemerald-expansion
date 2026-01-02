@@ -11424,6 +11424,8 @@ u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct Addi
     //Bonus stat luck modifier
     if (secondaryEffectChance <= 10) 
         secondaryEffectChance = 0;
+    if (secondaryEffectChance > 10) 
+        secondaryEffectChance-= 10;
     secondaryEffectChance += gSpeciesInfo[gBattleMons[battler].species].luck * 100 / 255;
 
     if (hasRainbow && hasSereneGrace && additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
