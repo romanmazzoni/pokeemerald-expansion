@@ -11420,13 +11420,15 @@ u32 CalcSecondaryEffectChance(u32 battler, u32 battlerAbility, const struct Addi
 {
     bool8 hasSereneGrace = (BattlerHasTrait(battler, ABILITY_SERENE_GRACE));
     bool8 hasRainbow = (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_RAINBOW) != 0;
-    u16 secondaryEffectChance = additionalEffect->chance;   
+    u16 secondaryEffectChance = additionalEffect->chance;  
+    
+    secondaryEffectChance += gSpeciesInfo[gBattleMons[battler].species].luck * 100 / 255; 
     //Bonus stat luck modifier
     if (secondaryEffectChance <= 10) 
         secondaryEffectChance = 0;
     if (secondaryEffectChance > 10) 
         secondaryEffectChance-= 10;
-    secondaryEffectChance += gSpeciesInfo[gBattleMons[battler].species].luck * 100 / 255;
+    
 
     if (hasRainbow && hasSereneGrace && additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
         return secondaryEffectChance * 2;
