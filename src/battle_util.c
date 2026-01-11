@@ -4804,11 +4804,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         //Calculate gambit damage
         if (!IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove) 
-        && (gBattleMons[gBattlerTarget].gambit / 3 > 1) 
+        && (gBattleMons[gBattlerTarget].gambit / 4 > 1) 
         && IsBattlerAlive(gBattlerAttacker)
         && !IsBattlerAlive(gBattlerTarget))
             {
-                gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 3;
+                gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 4;
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_EffectGambit;
                 effect++;
