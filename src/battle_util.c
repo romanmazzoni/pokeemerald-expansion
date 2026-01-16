@@ -3257,6 +3257,19 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
         PushTraitStack(battlerDef, ABILITY_HORSE_EATER);
         effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
     }
+    if ((gAiLogicData->aiCalcInProgress ? AISearchTraits(AIBattlerTraits, ABILITY_FAIRY_ABSORB) : SearchTraits(battlerTraits, ABILITY_FAIRY_ABSORB) || abilityDef == ABILITY_FAIRY_ABSORB)
+     && moveType == TYPE_FAIRY)
+    {
+        PushTraitStack(battlerDef, ABILITY_FAIRY_ABSORB);
+        effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+    }
+    if ((gAiLogicData->aiCalcInProgress ? AISearchTraits(AIBattlerTraits, ABILITY_FURRY_ABSORB) : SearchTraits(battlerTraits, ABILITY_FURRY_ABSORB) || abilityDef == ABILITY_FURRY_ABSORB)
+     && moveType == TYPE_FURRY)
+    {
+        PushTraitStack(battlerDef, ABILITY_FURRY_ABSORB);
+        effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+    }
+    
     if ((gAiLogicData->aiCalcInProgress ? AISearchTraits(AIBattlerTraits, ABILITY_MOTOR_DRIVE) : SearchTraits(battlerTraits, ABILITY_MOTOR_DRIVE) || abilityDef == ABILITY_MOTOR_DRIVE)
      && moveType == TYPE_ELECTRIC && GetBattlerMoveTargetType(battlerAtk, move) != MOVE_TARGET_ALL_BATTLERS)
     {
@@ -9093,6 +9106,9 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
     if (SearchTraits(battlerTraits, ABILITY_SOLAR_POWER)
      && IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN))
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+    if (SearchTraits(battlerTraits, ABILITY_WEATHER_SPECIALIST)
+     && IsBattleMoveSpecial(move) && gBattleWeather & B_WEATHER_ANY)
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.2));
     if (SearchTraits(battlerTraits, ABILITY_DEFEATIST)
      && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
@@ -9150,6 +9166,9 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
     if (SearchTraits(battlerTraits, ABILITY_ROCKY_PAYLOAD)
      && moveType == TYPE_ROCK)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+    if (SearchTraits(battlerTraits, ABILITY_DETHRONE)
+     && IS_BATTLER_OF_TYPE(battlerDef, TYPE_KING))
+        modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
     if (SearchTraits(battlerTraits, ABILITY_PROTOSYNTHESIS)
      && !(gBattleMons[battlerAtk].status2 & STATUS2_TRANSFORMED))
     {
@@ -9407,6 +9426,12 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
     // snow def boost for ice types
     if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE) && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SNOW) && usesDefStat)
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+    
+    if (SearchTraits(battlerTraits, ABILITY_WEATHERED_BODY) && gBattleWeather & B_WEATHER_ANY && usesDefStat)
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+
+    if (SearchTraits(battlerTraits, ABILITY_WEATHERED_MIND) && gBattleWeather & B_WEATHER_ANY && !usesDefStat)
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
 
     // The offensive stats of a Player's Pokémon are boosted by x1.1 (+10%) if they have the corresponding flags set (eg. Badges)

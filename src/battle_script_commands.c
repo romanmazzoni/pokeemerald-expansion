@@ -1632,7 +1632,7 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     if (SearchTraits(battlerTraits, ABILITY_COMPOUND_EYES))
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
     if (SearchTraits(battlerTraits, ABILITY_VICTORY_STAR))
-        calc = (calc * 110) / 100; // 1.1 victory star boost
+        calc = (calc * 120) / 100; // 1.2 victory star boost
     if (SearchTraits(battlerTraits, ABILITY_HUSTLE))
         if (IsBattleMovePhysical(move))
             calc = (calc * 80) / 100; // 1.2 hustle loss
@@ -1642,10 +1642,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
 
     if (SearchTraits(battlerTraits, ABILITY_SAND_VEIL))
         if (HasWeatherEffect() && gBattleWeather & B_WEATHER_SANDSTORM)
-            calc = (calc * 80) / 100; // 1.2 sand veil loss
+            calc = (calc * 70) / 100; // 1.3 sand veil loss
     if (SearchTraits(battlerTraits, ABILITY_SNOW_CLOAK))
         if (HasWeatherEffect() && (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
-            calc = (calc * 80) / 100; // 1.2 snow cloak loss
+            calc = (calc * 70) / 100; // 1.3 snow cloak loss
     if (SearchTraits(battlerTraits, ABILITY_TANGLED_FEET))
         if (gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
             calc = (calc * 50) / 100; // 1.5 tangled feet loss
@@ -1653,7 +1653,7 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     // Attacker's ally's ability
     if (BattlerHasTrait(atkAlly, ABILITY_VICTORY_STAR))
         if (IsBattlerAlive(atkAlly))
-            calc = (calc * 110) / 100; // 1.1 ally's victory star boost
+            calc = (calc * 120) / 100; // 1.2 ally's victory star boost
 
     // Attacker's hold effect
     switch (atkHoldEffect)
