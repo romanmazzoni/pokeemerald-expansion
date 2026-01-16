@@ -3251,6 +3251,12 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
         PushTraitStack(battlerDef, ABILITY_EARTH_EATER);
         effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
     }
+    if ((gAiLogicData->aiCalcInProgress ? AISearchTraits(AIBattlerTraits, ABILITY_HORSE_EATER) : SearchTraits(battlerTraits, ABILITY_HORSE_EATER) || abilityDef == ABILITY_HORSE_EATER)
+     && IsHorseMove(move))
+    {
+        PushTraitStack(battlerDef, ABILITY_HORSE_EATER);
+        effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+    }
     if ((gAiLogicData->aiCalcInProgress ? AISearchTraits(AIBattlerTraits, ABILITY_MOTOR_DRIVE) : SearchTraits(battlerTraits, ABILITY_MOTOR_DRIVE) || abilityDef == ABILITY_MOTOR_DRIVE)
      && moveType == TYPE_ELECTRIC && GetBattlerMoveTargetType(battlerAtk, move) != MOVE_TARGET_ALL_BATTLERS)
     {
@@ -8810,6 +8816,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     if (SearchTraits(battlerTraits, ABILITY_IRON_FIST) && IsPunchingMove(move))
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+    if (SearchTraits(battlerTraits, ABILITY_HORSE_HERO) && IsHorseMove(move))
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+    if (SearchTraits(battlerTraits, ABILITY_TRUE_HORSE) && IsHorseMove(move))
+        modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
     if (SearchTraits(battlerTraits, ABILITY_SHEER_FORCE) && MoveIsAffectedBySheerForce(move))
         {modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));}
     if (SearchTraits(battlerTraits, ABILITY_SAND_FORCE) && (moveType == TYPE_STEEL || moveType == TYPE_ROCK || moveType == TYPE_GROUND)

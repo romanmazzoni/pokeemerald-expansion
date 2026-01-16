@@ -295,6 +295,11 @@ static inline bool32 IsBoringMove(u32 moveId)
     return gMovesInfo[SanitizeMoveId(moveId)].boringMove;
 }
 
+static inline bool32 IsHorseMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].horseMove;
+}
+
 static inline bool32 IsBitingMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].bitingMove;
