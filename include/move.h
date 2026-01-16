@@ -133,7 +133,9 @@ struct MoveInfo
     bool32 sketchBanned:1;
     //Other
     bool32 validApprenticeMove:1;
-    u32 padding:7;
+    bool32 horseMove:1;
+    bool32 boringMove:1;
+    u32 padding:5;
     // end of word
 
     union {
@@ -286,6 +288,11 @@ static inline bool32 MoveIgnoresKingsRock(u32 moveId)
 static inline bool32 IsPunchingMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].punchingMove;
+}
+
+static inline bool32 IsBoringMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].boringMove;
 }
 
 static inline bool32 IsBitingMove(u32 moveId)

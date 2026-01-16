@@ -3111,6 +3111,22 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
             PushTraitStack(battlerDef, ABILITY_BULLETPROOF);
             battleScriptBlocksMove = BattleScript_SoundproofProtected;
         }
+    if (SearchTraits(battlerTraits, ABILITY_BORING_BLOCKER))
+        if (IsBoringMove(move))
+        {
+            if (gBattleMons[battlerAtk].status2 & STATUS2_MULTIPLETURNS)
+                gHitMarker |= HITMARKER_NO_PPDEDUCT;
+            PushTraitStack(battlerDef, ABILITY_BORING_BLOCKER);
+            battleScriptBlocksMove = BattleScript_SoundproofProtected;
+        }
+    if (SearchTraits(battlerTraits, ABILITY_DEATH_BLOCK))
+        if (IsPunchingMove(move))
+        {
+            if (gBattleMons[battlerAtk].status2 & STATUS2_MULTIPLETURNS)
+                gHitMarker |= HITMARKER_NO_PPDEDUCT;
+            PushTraitStack(battlerDef, ABILITY_DEATH_BLOCK);
+            battleScriptBlocksMove = BattleScript_SoundproofProtected;
+        }
     if (SearchTraits(battlerTraits, ABILITY_DAZZLING)
      || SearchTraits(battlerTraits, ABILITY_QUEENLY_MAJESTY)
      || SearchTraits(battlerTraits, ABILITY_ARMOR_TAIL))

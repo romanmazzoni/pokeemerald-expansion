@@ -2404,8 +2404,145 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Poison Puppeteer"),
         .description = COMPOUND_STRING("Confuses poisoned foes."),
         .aiRating = 8,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
+    },
+
+    [ABILITY_BORING_BLOCKER] =
+    {
+        .name = _("Boring Blocker"),
+        .description = COMPOUND_STRING("Blocks boring moves."),
+        .aiRating = 10,
+    },
+
+    [ABILITY_HORSE_HERO] =
+    {
+        .name = _("Horse Hero"),
+        .description = COMPOUND_STRING("Powers up horse moves."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_TRUE_HORSE] =
+    {
+        .name = _("True Horse"),
+        .description = COMPOUND_STRING("Ultra powers horse moves."),
+        .aiRating = 10,
+    },
+
+    [ABILITY_HORSE_EATER] =
+    {
+        .name = _("Horse Eater"),
+        .description = COMPOUND_STRING("Eats horse moves."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_DEATH_BLOCK] =
+    {
+        .name = _("Death Block"),
+        .description = COMPOUND_STRING("Blocks punching moves."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_WEATHER_SPECIALIST] =
+    {
+        .name = _("Weather Special"),
+        .description = COMPOUND_STRING("Boosts SP. Attack in weather."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_WEATHERED_BODY] =
+    {
+        .name = _("Weathered Body"),
+        .description = COMPOUND_STRING("Boosts Defense in weather."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_WEATHERED_MIND] =
+    {
+        .name = _("Weathered Mind"),
+        .description = COMPOUND_STRING("Boosts SP. Defense in weather."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_DETHRONE] =
+    {
+        .name = _("Dethrone"),
+        .description = COMPOUND_STRING("Boosts dmg against king types."),
+        .aiRating = 9,
+    },
+
+    [ABILITY_FAIRY_ABSORB] =
+    {
+        .name = _("Fairy Absorb"),
+        .description = COMPOUND_STRING("Changes fairy into HP."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_FURRY_ABSORB] =
+    {
+        .name = _("Furry Absorb"),
+        .description = COMPOUND_STRING("UWU."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_SLEEPY_GUY] =
+    {
+        .name = _("Sleepy Guy"),
+        .description = COMPOUND_STRING("Sleep inducing hits."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_NO_MOONBLAST] =
+    {
+        .name = _("No Moonblast"),
+        .description = COMPOUND_STRING("Prevents Moonblast."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_KNOWER] =
+    {
+        .name = _("Knower"),
+        .description = COMPOUND_STRING("Boosts noncontact moves."),
+        .aiRating = 10,
+    },
+
+    [ABILITY_ARMOR_SHREAD] =
+    {
+        .name = _("Armor Shread"),
+        .description = COMPOUND_STRING("Ignores Armor."),
+        .aiRating = 10,
+    },
+
+    [ABILITY_INTIMIDATE2] =
+    {
+        .name = _("Intimidate 2"),
+        .description = COMPOUND_STRING("Lowers the other one."),
+        .aiRating = 9,
+    },
+
+    [ABILITY_SHOULEILY_PAYLOAD] =
+    {
+        .name = _("Shouleil Payload"),
+        .description = COMPOUND_STRING("Powers up Shouleil moves"),
+        .aiRating = 7,
+    },
+
+    [ABILITY_RETURN_FIRE] =
+    {
+        .name = _("Return Fire"),
+        .description = COMPOUND_STRING("Fires back fire moves."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_FIGHT_BACK] =
+    {
+        .name = _("Fight Back"),
+        .description = COMPOUND_STRING("Returns Fighting type moves."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_BUG_BACK] =
+    {
+        .name = _("Bug Back"),
+        .description = COMPOUND_STRING("Returns Bug type moves."),
+        .aiRating = 7,
     },
 };
