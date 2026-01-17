@@ -3127,6 +3127,14 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
             PushTraitStack(battlerDef, ABILITY_DEATH_BLOCK);
             battleScriptBlocksMove = BattleScript_SoundproofProtected;
         }
+    if (SearchTraits(battlerTraits, ABILITY_NO_MOONBLAST))
+        if (IsMoonBlast(move))
+        {
+            if (gBattleMons[battlerAtk].status2 & STATUS2_MULTIPLETURNS)
+                gHitMarker |= HITMARKER_NO_PPDEDUCT;
+            PushTraitStack(battlerDef, ABILITY_NO_MOONBLAST);
+            battleScriptBlocksMove = BattleScript_SoundproofProtected;
+        }
     if (SearchTraits(battlerTraits, ABILITY_DAZZLING)
      || SearchTraits(battlerTraits, ABILITY_QUEENLY_MAJESTY)
      || SearchTraits(battlerTraits, ABILITY_ARMOR_TAIL))
@@ -3984,6 +3992,12 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             gBattlerAttacker = battler;
             SET_STATCHANGER(STAT_ATK, 1, TRUE);
             effect += CommonSwitchInAbilities(battler, 0, ABILITY_INTIMIDATE, traitCheck, BattleScript_IntimidateActivates);
+        }
+        if ((traitCheck = SearchTraits(battlerTraits, ABILITY_INTIMIDATE2)) && !gSpecialStatuses[battler].switchInTraitDone[traitCheck - 1])
+        {
+            gBattlerAttacker = battler;
+            SET_STATCHANGER(STAT_SPATK, 1, TRUE);
+            effect += CommonSwitchInAbilities(battler, 0, ABILITY_INTIMIDATE2, traitCheck, BattleScript_IntimidateActivates);
         }
         if ((traitCheck = SearchTraits(battlerTraits, ABILITY_SUPERSWEET_SYRUP)) && !gSpecialStatuses[battler].switchInTraitDone[traitCheck - 1]
          && !gBattleStruct->partyState[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].supersweetSyrup)
@@ -5201,6 +5215,23 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         {
             gBattleScripting.moveEffect = MOVE_EFFECT_TOXIC;
             gLastUsedAbility = ABILITY_TOXIC_CHAIN;
+            PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+            PushTraitStack(gBattlerAttacker, gLastUsedAbility);
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_AbilityStatusEffect;
+            gHitMarker |= HITMARKER_STATUS_ABILITY_EFFECT;
+            effect++;
+        }
+        if (SearchTraits(battlerTraits, ABILITY_SLEEPY_GUY)
+         && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
+         && IsBattlerAlive(gBattlerTarget)
+         && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+         && CanBePoisoned(gBattlerAttacker, gBattlerTarget, gLastUsedAbility, GetBattlerAbility(gBattlerAttacker))
+         && IsBattlerTurnDamaged(gBattlerTarget) // Need to actually hit the target
+         && RandomWeighted(RNG_TOXIC_CHAIN, 7, 3))
+        {
+            gBattleScripting.moveEffect = MOVE_EFFECT_SLEEP;
+            gLastUsedAbility = ABILITY_SLEEPY_GUY;
             PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
             PushTraitStack(gBattlerAttacker, gLastUsedAbility);
             BattleScriptPushCursor();
@@ -8850,6 +8881,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
     if (SearchTraits(battlerTraits, ABILITY_TOUGH_CLAWS) && IsMoveMakingContact(move, battlerAtk))
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        if (SearchTraits(battlerTraits, ABILITY_KNOWER) && !IsMoveMakingContact(move, battlerAtk))
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
     if (SearchTraits(battlerTraits, ABILITY_STRONG_JAW) && IsBitingMove(move))
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
             if (SearchTraits(battlerTraits, ABILITY_MEGA_LAUNCHER) && IsPulseMove(move))
@@ -9166,6 +9199,9 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
     if (SearchTraits(battlerTraits, ABILITY_ROCKY_PAYLOAD)
      && moveType == TYPE_ROCK)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+    if (SearchTraits(battlerTraits, ABILITY_SHOULEILY_PAYLOAD)
+     && moveType == TYPE_SHOULEIL)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     if (SearchTraits(battlerTraits, ABILITY_DETHRONE)
      && IS_BATTLER_OF_TYPE(battlerDef, TYPE_KING))
         modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
@@ -9339,8 +9375,9 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
 
     // apply defense stat modifiers
     modifier = UQ_4_12(1.0);
-    //add in armor bonus after applying stat stages
-    defStat = defStat  + gBattleMons[battlerDef].armor / 5;
+    //Calculate armor effectiveness
+    if (BattlerHasTrait(battlerAtk, ABILITY_ARMOR_SHREAD))
+        defStat = defStat  + gBattleMons[battlerDef].armor / 5;
     // target's abilities
     STORE_BATTLER_TRAITS(battlerDef);
 

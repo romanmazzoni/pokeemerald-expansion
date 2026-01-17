@@ -135,7 +135,8 @@ struct MoveInfo
     bool32 validApprenticeMove:1;
     bool32 horseMove:1;
     bool32 boringMove:1;
-    u32 padding:5;
+    bool32 isMoonBlast:1;
+    u32 padding:4;
     // end of word
 
     union {
@@ -298,6 +299,11 @@ static inline bool32 IsBoringMove(u32 moveId)
 static inline bool32 IsHorseMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].horseMove;
+}
+
+static inline bool32 IsMoonBlast(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].isMoonBlast;
 }
 
 static inline bool32 IsBitingMove(u32 moveId)
