@@ -22861,4 +22861,81 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
+
+    [MOVE_HIGHER_HORSEPOWER] =
+    {
+        .name = COMPOUND_STRING("Higher Horsepower"),
+        .description = COMPOUND_STRING(
+            "Only a true horse would be\n"
+            "able to channel this power."),
+        .effect = EFFECT_HIT,
+        .power = 140,
+        .type = TYPE_GROUND,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .horseMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_HighHorsepower,
+    },
+
+    [MOVE_SHEER_WET] =
+    {
+        .name = COMPOUND_STRING("Sheer Wet"),
+        .description = COMPOUND_STRING(
+            "Summons the element of wet\n"
+            "to annihilate foes."),
+        .effect = EFFECT_OHKO,
+        .power = 1,
+        .type = TYPE_WATER,
+        .accuracy = 60,
+        .pp = 5,
+        .target = B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_TARGET_FOES_AND_ALLY : MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .damagesUnderwater = TRUE,
+        .skyBattleBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_SURF,
+        .contestComboMoves = {COMBO_STARTER_DIVE, COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_Surf,
+        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_TURTLE_UP] =
+    {
+        .name = COMPOUND_STRING("Turtle up"),
+        .description = COMPOUND_STRING(
+            "Summons pure turtle energy\n"
+            "for fun."),
+        .effect = EFFECT_HIT,
+        .power = 85,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIALER,
+        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_PLUS_1,
+            .self = TRUE,
+            .chance = 10,
+        }),
+        .mirrorMoveBanned = TRUE,
+        .snatchAffected = TRUE,
+        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_Withdraw,
+        .validApprenticeMove = TRUE,
+    },
 };

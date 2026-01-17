@@ -908,7 +908,11 @@
 #define MOVE_UPPER_HAND 846
 #define MOVE_MALIGNANT_CHAIN 847
 
-#define MOVES_COUNT_GEN9 848
+#define MOVE_HIGHER_HORSEPOWER 848
+#define MOVE_SHEER_WET 849
+#define MOVE_TURTLE_UP 850
+
+#define MOVES_COUNT_GEN9 851
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 
@@ -1017,7 +1021,7 @@
 
 #define MOVES_COUNT_DYNAMAX       (LAST_MAX_MOVE + 1)
 
-#define MOVES_COUNT_ALL         MOVES_COUNT_DYNAMAX
+#define MOVES_COUNT_ALL         MOVES_COUNT_DYNAMAX //933 default
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF
