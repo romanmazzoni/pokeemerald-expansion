@@ -5307,6 +5307,84 @@ break;
             BattleScriptExecute(BattleScript_DancerActivates);
             effect++;
         }
+        if (SearchTraits(battlerTraits, ABILITY_RETURN_FIRE)
+         && IsBattlerAlive(battler)
+         && moveType == TYPE_FIRE
+         && !gSpecialStatuses[battler].dancerUsedMove
+         && gBattlerAttacker != battler)
+        {
+            // Set bit and save Dancer mon's original target
+            gSpecialStatuses[battler].dancerUsedMove = TRUE;
+            gSpecialStatuses[battler].dancerOriginalTarget = *(gBattleStruct->moveTarget + battler) | 0x4;
+            gBattlerAttacker = gBattlerAbility = battler;
+            gCalledMove = move;
+
+            // Set the target to the original target of the mon that first used a Dance move
+            gBattlerTarget = gBattleScripting.savedBattler & 0x3;
+
+                // Edge case for dance moves that hit multiply targets
+                gHitMarker &= ~HITMARKER_NO_ATTACKSTRING;
+
+            // Make sure that the target isn't an ally - if it is, target the original user
+            if (IsBattlerAlly(gBattlerTarget, gBattlerAttacker))
+                gBattlerTarget = (gBattleScripting.savedBattler & 0xF0) >> 4;
+            gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+            PushTraitStack(battler, ABILITY_RETURN_FIRE);
+            BattleScriptExecute(BattleScript_DancerActivates);
+            effect++;
+        }
+        if (SearchTraits(battlerTraits, ABILITY_FIGHT_BACK)
+         && IsBattlerAlive(battler)
+         && moveType == TYPE_FIGHTING
+         && !gSpecialStatuses[battler].dancerUsedMove
+         && gBattlerAttacker != battler)
+        {
+            // Set bit and save Dancer mon's original target
+            gSpecialStatuses[battler].dancerUsedMove = TRUE;
+            gSpecialStatuses[battler].dancerOriginalTarget = *(gBattleStruct->moveTarget + battler) | 0x4;
+            gBattlerAttacker = gBattlerAbility = battler;
+            gCalledMove = move;
+
+            // Set the target to the original target of the mon that first used a Dance move
+            gBattlerTarget = gBattleScripting.savedBattler & 0x3;
+
+                // Edge case for dance moves that hit multiply targets
+                gHitMarker &= ~HITMARKER_NO_ATTACKSTRING;
+
+            // Make sure that the target isn't an ally - if it is, target the original user
+            if (IsBattlerAlly(gBattlerTarget, gBattlerAttacker))
+                gBattlerTarget = (gBattleScripting.savedBattler & 0xF0) >> 4;
+            gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+            PushTraitStack(battler, ABILITY_FIGHT_BACK);
+            BattleScriptExecute(BattleScript_DancerActivates);
+            effect++;
+        }
+        if (SearchTraits(battlerTraits, ABILITY_BUG_BACK)
+         && IsBattlerAlive(battler)
+         && moveType == TYPE_BUG
+         && !gSpecialStatuses[battler].dancerUsedMove
+         && gBattlerAttacker != battler)
+        {
+            // Set bit and save Dancer mon's original target
+            gSpecialStatuses[battler].dancerUsedMove = TRUE;
+            gSpecialStatuses[battler].dancerOriginalTarget = *(gBattleStruct->moveTarget + battler) | 0x4;
+            gBattlerAttacker = gBattlerAbility = battler;
+            gCalledMove = move;
+
+            // Set the target to the original target of the mon that first used a Dance move
+            gBattlerTarget = gBattleScripting.savedBattler & 0x3;
+
+                // Edge case for dance moves that hit multiply targets
+                gHitMarker &= ~HITMARKER_NO_ATTACKSTRING;
+
+            // Make sure that the target isn't an ally - if it is, target the original user
+            if (IsBattlerAlly(gBattlerTarget, gBattlerAttacker))
+                gBattlerTarget = (gBattleScripting.savedBattler & 0xF0) >> 4;
+            gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+            PushTraitStack(battler, ABILITY_BUG_BACK);
+            BattleScriptExecute(BattleScript_DancerActivates);
+            effect++;
+        }
         break;
     case ABILITYEFFECT_OPPORTUNIST:
         /* Similar to ABILITYEFFECT_IMMUNITY in that it loops through all battlers.
