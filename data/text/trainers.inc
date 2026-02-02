@@ -51,7 +51,7 @@ Route102_Text_RickIntro:
 	.string "Come on, you'll be number 1000!$"
 
 Route102_Text_RickDefeated:
-	.string "7 years of my life wasted$"
+	.string "7 years of my life wasted.$"
 
 Route102_Text_RickPostBattle:
 	.string "Yeah I'm done with battling forever.\n"
