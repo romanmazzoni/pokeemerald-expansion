@@ -3989,7 +3989,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_PSYWAVE,
         .power = 1,
         .type = TYPE_PSYCHIC,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
+        .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

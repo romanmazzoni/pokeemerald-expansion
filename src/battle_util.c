@@ -8939,7 +8939,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
     if (SearchTraits(battlerTraits, ABILITY_IRON_FIST) && IsPunchingMove(move))
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
     if (SearchTraits(battlerTraits, ABILITY_HORSE_HERO) && IsHorseMove(move))
-        modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     if (SearchTraits(battlerTraits, ABILITY_TRUE_HORSE) && IsHorseMove(move))
         modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
     if (SearchTraits(battlerTraits, ABILITY_SHEER_FORCE) && MoveIsAffectedBySheerForce(move))
