@@ -2485,7 +2485,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SLEEPY_GUY] =
     {
-        .name = _("Sleepy Guy"),
+        .name = _("Eepy Guy"),
         .description = COMPOUND_STRING("Sleep inducing hits."),
         .aiRating = 8,
     },
