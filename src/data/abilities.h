@@ -2506,7 +2506,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ARMOR_SHREAD] =
     {
-        .name = _("Armor Shread"),
+        .name = _("Armor Shred"),
         .description = COMPOUND_STRING("Ignores Armor."),
         .aiRating = 10,
     },

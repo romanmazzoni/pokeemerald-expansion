@@ -318,6 +318,8 @@ public class RandomAbility {
         String ability3 = ABILITIES[random.nextInt(ABILITIES.length)];
         String ability4 = ABILITIES[random.nextInt(ABILITIES.length)];
         String ability5 = ABILITIES[random.nextInt(ABILITIES.length)];
-		System.out.println(ability + ", " + ability2 + ", " + ability3 + ", " + ability4 + ", " + ability5);
+		String ability6 = ABILITIES[random.nextInt(ABILITIES.length)];
+		String ability7 = ABILITIES[random.nextInt(ABILITIES.length)];
+		System.out.println(ability + ", " + ability2 + ", " + ability3 + ", " + ability4 + ", " + ability5 + ", " + ability6 + ", " + ability7);
 	}
 }
