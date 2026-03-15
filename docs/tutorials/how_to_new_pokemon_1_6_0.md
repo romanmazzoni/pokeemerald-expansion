@@ -607,7 +607,7 @@ Edit [src/data/pokemon/species_info.h](https://github.com/rh-hideout/pokeemerald
 +        .catchRate = 3,
 +        .expYield = 255,
 +        .evYield_SpAttack  = 3,
-+        .genderRatio = MON_GENDERLESS,
++        .genderRatio = PERCENT_FEMALE(50),
 +        .eggCycles = 120,
 +        .friendship = 0,
 +        .growthRate = GROWTH_SLOW,
