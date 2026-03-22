@@ -606,7 +606,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 60,  
         .doubleHit = 40,  
         .innates = { ABILITY_FLAME_BODY,  ABILITY_BERSERK, ABILITY_RECKLESS},
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING, TYPE_ON),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_LANCE, TYPE_ON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 267,
@@ -2443,7 +2443,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sRattataTeachableLearnset,
         .eggMoveLearnset = sRattataEggMoveLearnset,
         .formSpeciesIdTable = sRattataFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 20, SPECIES_RATICATE, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_RATICATE] =
@@ -3409,8 +3410,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -4618,7 +4619,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSandshrewTeachableLearnset,
         .eggMoveLearnset = sSandshrewEggMoveLearnset,
         .formSpeciesIdTable = sSandshrewFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH},{EVO_ITEM, ITEM_ICE_STONE, SPECIES_SANDSLASH_ALOLA}),
     },
 
     [SPECIES_SANDSLASH] =
@@ -7602,7 +7603,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sDiglettTeachableLearnset,
         .eggMoveLearnset = sDiglettEggMoveLearnset,
         .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 26, SPECIES_DUGTRIO, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_DUGTRIO] =
@@ -7962,7 +7964,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sMeowthEggMoveLearnset,
         .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
         .formChangeTable = sMeowthFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERRSERKER, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 28, SPECIES_PERSIAN, CONDITIONS({IF_TIME, TIME_DAY})},
+        {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_PERSIAN_ALOLA}),
     },
 
     [SPECIES_PERSIAN] =
@@ -8978,7 +8982,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .eggMoveLearnset = sGrowlitheEggMoveLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE, CONDITIONS({IF_TIME, TIME_DAY})},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE_HISUI, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_ARCANINE] =
@@ -9004,7 +9009,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 60,  
         .doubleHit = 35,  
         .innates = {ABILITY_TINTED_LENS, ABILITY_HUGE_POWER, ABILITY_SLOW_START},
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_LANCE),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 194 : 213,
         .evYield_Attack = 2,
@@ -10182,7 +10187,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMachokeLevelUpLearnset,
         .teachableLearnset = sMachokeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
+                                {EVO_LEVEL, 43, SPECIES_MACHAMP}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -10915,7 +10920,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGeodudeTeachableLearnset,
         .eggMoveLearnset = sGeodudeEggMoveLearnset,
         .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 25, SPECIES_GRAVELER, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_GRAVELER] =
@@ -11432,7 +11438,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPonytaTeachableLearnset,
         .eggMoveLearnset = sPonytaEggMoveLearnset,
         .formSpeciesIdTable = sPonytaFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 40, SPECIES_RAPIDASH, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_RAPIDASH] =
@@ -11771,8 +11778,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSlowpokeTeachableLearnset,
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO}
-                                ),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SLOWBRO_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_SLOWBRO] =
@@ -12102,7 +12109,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSlowpokeGalarTeachableLearnset,
         .eggMoveLearnset = sSlowpokeGalarEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SLOWBRO_GALAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SLOWBRO_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_TIME, TIME_DAY})}),
         
     },
 
@@ -13301,7 +13309,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGrimerTeachableLearnset,
         .eggMoveLearnset = sGrimerEggMoveLearnset,
         .formSpeciesIdTable = sGrimerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 38, SPECIES_MUK, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_MUK] =
@@ -15314,8 +15323,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sExeggcuteLevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
         .eggMoveLearnset = sExeggcuteEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
-                                {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR, CONDITIONS({IF_TIME, TIME_DAY})},
+                                {EVO_NONE, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
@@ -15441,7 +15450,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 40,  
         .doubleHit = 94,  
         .innates = {ABILITY_AROMA_VEIL, ABILITY_DROUGHT, ABILITY_THICK_FAT },
-        .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON, TYPE_FAKE),
+        .types = MON_TYPES(TYPE_LANCE),
         .catchRate = 45,
         .expYield = EXEGGUTOR_EXP_YIELD,
         .evYield_SpAttack = 2,
@@ -15589,9 +15598,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sCuboneLevelUpLearnset,
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA},
-                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 28, SPECIES_MAROWAK, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_MAROWAK] =
@@ -16465,8 +16473,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKoffingLevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
-                                {EVO_NONE, 0, SPECIES_WEEZING_GALAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 35, SPECIES_WEEZING, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
     [SPECIES_WEEZING] =
@@ -17040,7 +17048,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sHappinyTeachableLearnset,
         .eggMoveLearnset = sHappinyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CHANSEY, CONDITIONS({IF_NOT_TIME, TIME_NIGHT},{IF_HOLD_ITEM, ITEM_OVAL_STONE})},
-                                {EVO_ITEM, ITEM_OVAL_STONE, SPECIES_CHANSEY, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
+                                {EVO_ITEM, ITEM_OVAL_STONE, SPECIES_CHANSEY}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -17432,7 +17440,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 74,  
         .doubleHit = 0,  
         .innates = {ABILITY_PARENTAL_BOND, ABILITY_GUARD_DOG, ABILITY_ARMOR_TAIL},
-        .types = MON_TYPES(TYPE_NORMAL),
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 175,
         .evYield_HP = 2,
@@ -17593,7 +17601,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 50,  
         .doubleHit = 53,  
         .innates = {ABILITY_OPPORTUNIST},
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_WATER, TYPE_LANCE),
         .catchRate = 225,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 59 : 83,
         .evYield_SpAttack = 1,
@@ -17685,7 +17693,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 80,  
         .doubleHit = 70,  
         .innates = {ABILITY_OPPORTUNIST, ABILITY_DRAGONS_MAW},
-        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .types = MON_TYPES(TYPE_WATER, TYPE_LANCE),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 154 : 155,
         .evYield_Defense = 1,
@@ -17779,7 +17787,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 104,  
         .doubleHit = 89,  
         .innates = {ABILITY_OPPORTUNIST, ABILITY_DRAGONS_MAW, ABILITY_STORM_DRAIN},
-        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON, TYPE_KING),
+        .types = MON_TYPES(TYPE_WATER, TYPE_LANCE, TYPE_KING),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 270,
@@ -18430,7 +18438,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMrMimeTeachableLearnset,
         .eggMoveLearnset = sMrMimeEggMoveLearnset,
         .formSpeciesIdTable = sMrMimeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_MR_MIME_GALAR})
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_MR_RIME})
     },
 
 #if P_GALARIAN_FORMS
@@ -19246,7 +19254,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .critChance = 18,
         .armor = 92,
         .trueDamage = 50,
-        .luck = 34,        
+        .luck = 140,        
         .waxing = 81,     
         .gambit = 70,
         .parry = 53,       
@@ -19256,7 +19264,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 75,  
         .doubleHit = 103,  
         .innates = {ABILITY_DRY_SKIN, ABILITY_ELECTRIC_SURGE},
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 156,
         .evYield_Speed = 2,
@@ -19346,7 +19354,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 80,  
         .doubleHit = 104,  
         .innates = {ABILITY_DRY_SKIN, ABILITY_ELECTRIC_SURGE, ABILITY_ANGER_POINT},
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_LANCE),
         .catchRate = 30,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 270,
@@ -20320,7 +20328,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 88,  
         .doubleHit = 63,  
         .innates = {ABILITY_STRONG_JAW, ABILITY_LIGHTNING_ROD, ABILITY_PROTEAN},
-        .types = MON_TYPES(TYPE_WATER, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_WATER, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 214,
         .evYield_Attack = 2,
@@ -20492,7 +20500,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 57,  
         .doubleHit = 91,  
         .innates = {ABILITY_MISTY_SURGE, ABILITY_GUTS, ABILITY_REGENERATOR},
-        .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
+        .types = MON_TYPES(TYPE_WATER, TYPE_ICE, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 187 : 219,
         .evYield_HP = 2,
@@ -21651,6 +21659,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 79 : 130,
         .evYield_SpAttack = 1,
+        .itemCommon = ITEM_UPGRADE,
+        .itemRare = ITEM_DUBIOUS_DISC,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -22296,7 +22306,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 65,  
         .doubleHit = 80,  
         .innates = {ABILITY_IRON_BARBS, ABILITY_TOUGH_CLAWS, ABILITY_GALE_WINGS},
-        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 180 : 202,
         .evYield_Speed = 2,
@@ -22547,7 +22557,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 120,  
         .doubleHit = 45,  
         .innates = {ABILITY_COMATOSE, ABILITY_OBLIVIOUS, ABILITY_TELEPATHY},
-        .types = MON_TYPES(TYPE_NORMAL),
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_LANCE),
         .catchRate = 25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 154,
         .evYield_HP = 2,
@@ -23362,7 +23372,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 102,  
         .doubleHit = 76,  
         .innates = {ABILITY_SKILL_LINK, ABILITY_SWIFT_SWIM},
-        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .types = MON_TYPES(TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 144,
         .evYield_Attack = 2,
@@ -23448,7 +23458,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .hotStreak = 122,  
         .doubleHit = 106,  
         .innates = {ABILITY_SKILL_LINK, ABILITY_SWIFT_SWIM, ABILITY_SHED_SKIN},
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_LANCE),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,

@@ -1048,7 +1048,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .hotStreak = 35,
         .doubleHit = 42,
         .innates = {ABILITY_BATTLE_ARMOR, ABILITY_HARVEST, ABILITY_NATURAL_CURE},
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_KING),
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_KING, TYPE_MONEY),
         .catchRate = 90,
         .expYield = 161,
         .evYield_HP = 2,
@@ -6555,7 +6555,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSnomLevelUpLearnset,
         .teachableLearnset = sSnomTeachableLearnset,
         .eggMoveLearnset = sSnomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_FROSMOTH, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_FROSMOTH, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
     [SPECIES_FROSMOTH] =

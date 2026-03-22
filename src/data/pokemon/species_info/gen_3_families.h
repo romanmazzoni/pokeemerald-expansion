@@ -8873,7 +8873,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .hotStreak = 80,
         .doubleHit = 92,
         .innates = {ABILITY_SYNCHRONIZE, ABILITY_SHED_SKIN, ABILITY_ROCK_HEAD},
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON, TYPE_ON),
+        .types = MON_TYPES(TYPE_LANCE, TYPE_FLYING, TYPE_ON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 260,
@@ -8893,7 +8893,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_DRAGONS_MAW },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Flygon"),
         .cryId = CRY_FLYGON,
@@ -9254,7 +9254,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .hotStreak = 73,
         .doubleHit = 66,
         .innates = {ABILITY_SLEEPY_GUY, ABILITY_LIGHTNING_ROD, ABILITY_DANCER},
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_LIGHT, TYPE_LANCE),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 188,
         .evYield_SpDefense = 2,
@@ -13677,7 +13677,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .hotStreak = 107,
         .doubleHit = 109,
         .innates = { ABILITY_FOREWARN, ABILITY_ILLUMINATE, ABILITY_WELL_BAKED_BODY},
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING, TYPE_ON),
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_LANCE, TYPE_ON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,

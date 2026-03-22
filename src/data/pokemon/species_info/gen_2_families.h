@@ -439,8 +439,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUI, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 36, SPECIES_TYPHLOSION, CONDITIONS({IF_TIME, TIME_DAY})}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -812,7 +812,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .hotStreak = 72,  
         .doubleHit = 60,  
         .innates = {ABILITY_STRONG_JAW, ABILITY_BUG_BACK, ABILITY_POWER_CONSTRUCT},
-        .types = MON_TYPES(TYPE_WATER, TYPE_KING),
+        .types = MON_TYPES(TYPE_WATER, TYPE_KING, TYPE_LANCE),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 265,
@@ -6586,7 +6586,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggMoveLearnset = sSneaselEggMoveLearnset,
         .formSpeciesIdTable = sSneaselFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WEAVILE, CONDITIONS({IF_TIME, TIME_NIGHT}, {IF_HOLD_ITEM, ITEM_RAZOR_CLAW})}, 
-                                {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_WEAVILE, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+                                {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -9682,7 +9682,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .hotStreak = 74,
         .doubleHit = 67,
         .innates = {ABILITY_GUTS, ABILITY_GALVANIZE},
-        .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND, TYPE_LANCE),
         .catchRate = 45,
         .expYield = 144,
         .evYield_Attack = 2,
@@ -9764,7 +9764,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .hotStreak = 150,
         .doubleHit = 93,
         .innates = {ABILITY_GUTS, ABILITY_GALVANIZE, ABILITY_HUSTLE},
-        .types = MON_TYPES(TYPE_ROCK, TYPE_DARK, TYPE_KING),
+        .types = MON_TYPES(TYPE_ROCK, TYPE_DARK, TYPE_LANCE),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,
@@ -9942,7 +9942,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .hotStreak = 108,
         .doubleHit = 91,
         .innates = {ABILITY_INTIMIDATE2, ABILITY_AIR_LOCK, ABILITY_MAGIC_BOUNCE},
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING, TYPE_LANCE),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 340,
