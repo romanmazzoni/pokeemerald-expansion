@@ -8042,7 +8042,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .hotStreak = 97,
         .doubleHit = 76,
         .innates = {ABILITY_STEAM_ENGINE, ABILITY_BATTLE_ARMOR, ABILITY_BLAZE},
-        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER, TYPE_ON),
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
