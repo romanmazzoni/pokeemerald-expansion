@@ -2444,7 +2444,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sRattataEggMoveLearnset,
         .formSpeciesIdTable = sRattataFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 20, SPECIES_RATICATE, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 20, SPECIES_RATICATE, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_RATICATE] =
@@ -3411,7 +3411,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
 #if P_COSPLAY_PIKACHU_FORMS
@@ -5807,7 +5807,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sVulpixTeachableLearnset,
         .eggMoveLearnset = sVulpixEggMoveLearnset,
         .formSpeciesIdTable = sVulpixFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES},
+        {EVO_ITEM, ITEM_ICE_STONE, SPECIES_NINETALES_ALOLA}),
     },
 
     [SPECIES_NINETALES] =
@@ -7604,7 +7605,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sDiglettEggMoveLearnset,
         .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 26, SPECIES_DUGTRIO, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 26, SPECIES_DUGTRIO, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_DUGTRIO] =
@@ -7965,7 +7966,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
         .formChangeTable = sMeowthFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERRSERKER, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 28, SPECIES_PERSIAN, CONDITIONS({IF_TIME, TIME_DAY})},
+            {EVO_LEVEL, 28, SPECIES_PERSIAN, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
         {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_PERSIAN_ALOLA}),
     },
 
@@ -8982,7 +8983,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGrowlitheTeachableLearnset,
         .eggMoveLearnset = sGrowlitheEggMoveLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE, CONDITIONS({IF_TIME, TIME_DAY})},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE_HISUI, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
@@ -10921,7 +10922,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sGeodudeEggMoveLearnset,
         .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 25, SPECIES_GRAVELER, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 25, SPECIES_GRAVELER, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_GRAVELER] =
@@ -11439,7 +11440,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sPonytaEggMoveLearnset,
         .formSpeciesIdTable = sPonytaFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 40, SPECIES_RAPIDASH, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 40, SPECIES_RAPIDASH, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_RAPIDASH] =
@@ -11779,7 +11780,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sSlowpokeEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SLOWBRO_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_SLOWBRO] =
@@ -12110,7 +12111,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sSlowpokeGalarEggMoveLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SLOWBRO_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 32, SPECIES_SLOWBRO, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
         
     },
 
@@ -13310,7 +13311,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sGrimerEggMoveLearnset,
         .formSpeciesIdTable = sGrimerFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 38, SPECIES_MUK, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 38, SPECIES_MUK, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_MUK] =
@@ -14978,7 +14979,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sVoltorbLevelUpLearnset,
         .teachableLearnset = sVoltorbTeachableLearnset,
         .formSpeciesIdTable = sVoltorbFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ELECTRODE_HISUI}),
     },
 
     [SPECIES_ELECTRODE] =
@@ -15323,7 +15325,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sExeggcuteLevelUpLearnset,
         .teachableLearnset = sExeggcuteTeachableLearnset,
         .eggMoveLearnset = sExeggcuteEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR, CONDITIONS({IF_TIME, TIME_DAY})},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
                                 {EVO_NONE, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
@@ -15599,7 +15601,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 28, SPECIES_MAROWAK, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 28, SPECIES_MAROWAK, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_MAROWAK] =
@@ -16474,7 +16476,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING_GALAR, CONDITIONS({IF_TIME, TIME_NIGHT})},
-            {EVO_LEVEL, 35, SPECIES_WEEZING, CONDITIONS({IF_TIME, TIME_DAY})}),
+            {EVO_LEVEL, 35, SPECIES_WEEZING, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_WEEZING] =
