@@ -505,7 +505,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DITTO),
         .abilities = {  ABILITY_LIBERO, ABILITY_NONE, ABILITY_LIBERO },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Cinderace"),
@@ -3035,9 +3035,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sApplinLevelUpLearnset,
         .teachableLearnset = sApplinTeachableLearnset,
         .eggMoveLearnset = sApplinEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_TART_APPLE, SPECIES_FLAPPLE},
-                                {EVO_ITEM, ITEM_SWEET_APPLE, SPECIES_APPLETUN},
-                                {EVO_ITEM, ITEM_SYRUPY_APPLE, SPECIES_DIPPLIN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAPPLE},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_APPLETUN},
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_DIPPLIN}),
     },
 
     [SPECIES_FLAPPLE] =

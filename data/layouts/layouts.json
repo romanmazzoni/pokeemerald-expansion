@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/MemoryCave_bf2/border.bin",
       "blockdata_filepath": "data/layouts/MemoryCave_bf2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE135",
+      "name": "Route135_Layout",
+      "width": 24,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route135/border.bin",
+      "blockdata_filepath": "data/layouts/Route135/map.bin"
     }
   ]
 }
