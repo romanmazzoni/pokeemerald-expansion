@@ -4989,7 +4989,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSinisteaLevelUpLearnset,
         .teachableLearnset = sSinisteaTeachableLearnset,
         .formSpeciesIdTable = sSinisteaFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_CRACKED_POT, SPECIES_POLTEAGEIST_PHONY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_POLTEAGEIST_PHONY}),
     },
 
     [SPECIES_SINISTEA_ANTIQUE] =
@@ -5070,7 +5070,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSinisteaLevelUpLearnset,
         .teachableLearnset = sSinisteaTeachableLearnset,
         .formSpeciesIdTable = sSinisteaFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_CHIPPED_POT, SPECIES_POLTEAGEIST_ANTIQUE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_POLTEAGEIST_ANTIQUE}),
     },
 
     [SPECIES_POLTEAGEIST_PHONY] =
@@ -7830,7 +7830,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggMoveLearnset = sDuraludonEggMoveLearnset,
         .formSpeciesIdTable = sDuraludonFormSpeciesIdTable,
         .formChangeTable = sDuraludonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_ARCHALUDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ARCHALUDON}),
     },
 
 #if P_GIGANTAMAX_FORMS

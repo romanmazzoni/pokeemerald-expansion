@@ -2797,8 +2797,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sCharcadetLevelUpLearnset,
         .teachableLearnset = sCharcadetTeachableLearnset,
         .eggMoveLearnset = sCharcadetEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_AUSPICIOUS_ARMOR, SPECIES_ARMAROUGE},
-                                {EVO_ITEM, ITEM_MALICIOUS_ARMOR, SPECIES_CERULEDGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RATICATE_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
+            {EVO_LEVEL, 30, SPECIES_RATICATE, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
     [SPECIES_ARMAROUGE] =
@@ -8850,7 +8850,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sPoltchageistLevelUpLearnset,
         .teachableLearnset = sPoltchageistTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_UNREMARKABLE_TEACUP, SPECIES_SINISTCHA_UNREMARKABLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_SINISTCHA_UNREMARKABLE}),
         .formSpeciesIdTable = sPoltchageistFormSpeciesIdTable,
     },
     [SPECIES_POLTCHAGEIST_ARTISAN] =
@@ -8930,7 +8930,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sPoltchageistLevelUpLearnset,
         .teachableLearnset = sPoltchageistTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MASTERPIECE_TEACUP, SPECIES_SINISTCHA_MASTERPIECE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_SINISTCHA_MASTERPIECE}),
         .formSpeciesIdTable = sPoltchageistFormSpeciesIdTable,
     },
 

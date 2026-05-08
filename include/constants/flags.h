@@ -81,10 +81,10 @@
 #define FLAG_FrankFlag6    0x43 // Unused Flag
 #define FLAG_FrankFlag7    0x44 // Unused Flag
 #define FLAG_TAKESTARTINGLEGENDARY  0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
+#define FLAG_135ITEM1    0x46 // Unused Flag
+#define FLAG_135ITEM2    0x47 // Unused Flag
+#define FLAG_KORAIDON    0x48 // Unused Flag
+#define FLAG_MIRAIDON    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
