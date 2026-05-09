@@ -8734,63 +8734,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 45,
                 "species": "SPECIES_IRON_MOTH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_THORNS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_HANDS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_BUNDLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_JUGULIS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_BOULDER"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_FEZANDIPITI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_IRON_LEAVES"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_CROWN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 48,
                 "species": "SPECIES_IRON_VALIANT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_MUNKIDORI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "SPECIES_OKIDOGI"
               }
             ]

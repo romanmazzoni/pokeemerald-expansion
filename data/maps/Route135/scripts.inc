@@ -39,8 +39,30 @@ ROUTE135_SIGN::
 	releaseall
 	return
 
+ROUTE135_Hiker1::
+	lockall
+	faceplayer
+	msgbox ROUTE135_Hiker1_Text_0
+	releaseall
+	return
+
+ROUTE135_Hiker2::
+	lockall
+	faceplayer
+	msgbox ROUTE135_Hiker2_Text_0
+	releaseall
+	return
+
 
 ROUTE135_SIGN_Text_0:
 	.string "I had to put these guys\n"
 	.string "in the game somewhere.$"
-	
+
+ROUTE135_Hiker1_Text_0:
+	.string "We really just ran out\n"
+	.string "of room for the remaining legendaries.\p"
+	.string "Just shove em all here I guess.$"
+
+ROUTE135_Hiker2_Text_0:
+	.string "Nothing useful in here.\n"
+	.string "Just a few smolvivies.$"
