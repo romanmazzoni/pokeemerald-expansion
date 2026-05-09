@@ -1172,3 +1172,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/Route135/scripts.inc"
+
+	.include "data/maps/cave135/scripts.inc"

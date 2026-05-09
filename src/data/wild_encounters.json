@@ -475,7 +475,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_SMOLIV"
+                "species": "SPECIES_MAREEP"
               },
               {
                 "min_level": 13,
@@ -8792,6 +8792,75 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_OKIDOGI"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE135",
+          "base_label": "gcave135",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 12,
+                "max_level": 18,
+                "species": "SPECIES_SMOLIV"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_WO_CHIEN"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_TING_LU"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHI_YU"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_CHIEN_PAO"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_TERAPAGOS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_PECHARUNT"
               }
             ]
           }
