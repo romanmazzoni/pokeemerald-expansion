@@ -25,21 +25,23 @@ public class RandomMoves {
         for (String line : inputLines) {
             if (inLearnset) {
                 if (line.strip().equals("LEVEL_UP_END")) {
-                    // Pick a random move and a random level between 12 and 75.
-                    String move  = MOVES[rng.nextInt(MOVES.length)];
-                    int level    = 12 + rng.nextInt(64); // [12, 75]
-                    String entry = "    LEVEL_UP_MOVE(" + String.format("%2d", level) + ", " + move + "),";
+                    // Add 3 random moves between levels 12 and 75.
+                    for (int n = 0; n < 9; n++) {
+                        String move  = MOVES[rng.nextInt(MOVES.length)];
+                        int level    = 12 + rng.nextInt(64); // [12, 75]
+                        String entry = "    LEVEL_UP_MOVE(" + String.format("%2d", level) + ", " + move + "),";
 
-                    // Find the correct sorted insertion point by level.
-                    int insertIdx = buffer.size();
-                    for (int i = 0; i < buffer.size(); i++) {
-                        java.util.regex.Matcher m = lvlPattern.matcher(buffer.get(i));
-                        if (m.find() && Integer.parseInt(m.group(1)) > level) {
-                            insertIdx = i;
-                            break;
+                        // Find the correct sorted insertion point by level.
+                        int insertIdx = buffer.size();
+                        for (int i = 0; i < buffer.size(); i++) {
+                            java.util.regex.Matcher m = lvlPattern.matcher(buffer.get(i));
+                            if (m.find() && Integer.parseInt(m.group(1)) > level) {
+                                insertIdx = i;
+                                break;
+                            }
                         }
+                        buffer.add(insertIdx, entry);
                     }
-                    buffer.add(insertIdx, entry);
 
                     outputLines.addAll(buffer);
                     outputLines.add(line); // LEVEL_UP_END
