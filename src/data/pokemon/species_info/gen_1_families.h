@@ -1136,6 +1136,100 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBlastoiseTeachableLearnset,
         .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
         .formChangeTable = sBlastoiseFormChangeTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 51, SPECIES_BLUESTOISE}),
+    },
+    
+    [SPECIES_BLUESTOISE] =
+    {
+        .baseHP        = 130,
+        .baseAttack    = 90,
+        .baseDefense   = 107,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 93,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 135 : 85,
+        .baseLerAttack = 84,
+        .baseLerDefense = 120,
+        .critChance = 50,
+        .armor = 133,
+        .trueDamage = 77,
+        .luck = 150,        
+        .waxing = 35,     
+        .gambit = 88,
+        .parry = 84,       
+        .firstStrike = 60, 
+        .lifeSteal = 84,  
+        .sexism = 102,
+        .hotStreak = 90,  
+        .doubleHit = 109,  
+        .innates = { ABILITY_SHELL_ARMOR, ABILITY_SWIFT_SWIM, ABILITY_BULLETPROOF},
+        .types = MON_TYPES(TYPE_WATER, TYPE_SHOULEIL, TYPE_FAKE),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 265,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 239,
+    #else
+        .expYield = 210,
+    #endif
+        .evYield_SpDefense = 3,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DRIZZLE },
+        //.innates = { ABILITY_SHELL_ARMOR, ABILITY_BULLETPROOF, ABILITY_ROCK_HEAD },
+		.bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Bluestoise"),
+        .cryId = CRY_BLASTOISE,
+        .natDexNum = NATIONAL_DEX_BLASTOISE,
+        .categoryName = _("BLUE"),
+        .height = 16,
+        .weight = 855,
+        .description = COMPOUND_STRING(
+            "The waterspouts that protrude from its\n"
+            "shell are highly accurate. Their bullets of\n"
+            "water can precisely nail tin cans from\n"
+            "a distance of over 160 feet."),
+        .pokemonScale = 256,
+        .pokemonOffset = -1,
+        .trainerScale = 293,
+        .trainerOffset = 2,
+        .frontPic = gMonFrontPic_Bluestoise,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 25),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        .frontAnimDelay = P_GBA_STYLE_SPECIES_GFX ? 50 : 20,
+        .backPic = gMonBackPic_Bluestoise,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 7,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
+        .palette = gMonPalette_Bluestoise,
+        .shinyPalette = gMonShinyPalette_Bluestoise,
+        .iconSprite = gMonIcon_Bluestoise,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 7, SHADOW_SIZE_L)
+        FOOTPRINT(Blastoise)
+        OVERWORLD(
+            sPicTable_Blastoise,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Blastoise,
+            gShinyOverworldPalette_Blastoise
+        )
+        .levelUpLearnset = sBlastoiseLevelUpLearnset,
+        .teachableLearnset = sBlastoiseTeachableLearnset,
+        .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
+        .formChangeTable = sBlastoiseFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -16854,7 +16948,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRhydonLevelUpLearnset,
         .teachableLearnset = sRhydonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_RHYPERIOR, CONDITIONS({IF_HOLD_ITEM, ITEM_PROTECTOR})},
-                                {EVO_ITEM, ITEM_PROTECTOR, SPECIES_RHYPERIOR}),
+                                {EVO_LEVEL, 47, SPECIES_RHYPERIOR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -17050,7 +17144,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sHappinyTeachableLearnset,
         .eggMoveLearnset = sHappinyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CHANSEY, CONDITIONS({IF_NOT_TIME, TIME_NIGHT},{IF_HOLD_ITEM, ITEM_OVAL_STONE})},
-                                {EVO_ITEM, ITEM_OVAL_STONE, SPECIES_CHANSEY}),
+                                {EVO_LEVEL, 11, SPECIES_CHANSEY}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -17762,7 +17856,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSeadraLevelUpLearnset,
         .teachableLearnset = sSeadraTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_KINGDRA, CONDITIONS({IF_HOLD_ITEM, ITEM_DRAGON_SCALE})},
-                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+                                {EVO_LEVEL, 45, SPECIES_KINGDRA}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -18712,8 +18806,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sScytherTeachableLearnset,
         .eggMoveLearnset = sScytherEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_SCIZOR, CONDITIONS({IF_HOLD_ITEM, ITEM_METAL_COAT})},
-                                {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}),
+                                {EVO_LEVEL, 32, SPECIES_SCIZOR, CONDITIONS({IF_TIME, TIME_NIGHT})},
+                                {EVO_LEVEL, 32, SPECIES_KLEAVOR, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})}),
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -19329,7 +19423,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sElectabuzzLevelUpLearnset,
         .teachableLearnset = sElectabuzzTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ELECTIVIRE, CONDITIONS({IF_HOLD_ITEM, ITEM_ELECTIRIZER})},
-                                {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE}),
+                                {EVO_LEVEL, 45, SPECIES_ELECTIVIRE}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -19598,7 +19692,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMagmarLevelUpLearnset,
         .teachableLearnset = sMagmarTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MAGMORTAR, CONDITIONS({IF_HOLD_ITEM, ITEM_MAGMARIZER})},
-                                {EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR}),
+                                {EVO_LEVEL, 42, SPECIES_MAGMORTAR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -21909,7 +22003,378 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sPorygonZLevelUpLearnset,
         .teachableLearnset = sPorygonZTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON2, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
+                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON4}),
     },
+
+    [SPECIES_PORYGON4] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 90,
+        .baseDefense   = 80,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 145,
+        .baseSpDefense = 85,
+        .baseLerAttack = 130,
+        .baseLerDefense = 110,
+        .critChance = 37,
+        .armor = 85,
+        .trueDamage = 110,
+        .luck = 130,        
+        .waxing = 55,     
+        .gambit = 90,
+        .parry = 85,       
+        .firstStrike = 85, 
+        .lifeSteal = 60,  
+        .sexism = 30,
+        .hotStreak = 90,  
+        .doubleHit = 210,  
+        .innates = {ABILITY_BATTERY, ABILITY_IMMUNITY, ABILITY_VOLT_ABSORB},
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_ON),
+        .catchRate = 30,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 268,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 241,
+    #else
+        .expYield = 185,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
+        //.innates = { ABILITY_LEVITATE, ABILITY_MOODY, ABILITY_TANGLED_FEET },
+		.bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Porygon4"),
+        .cryId = CRY_PORYGON_Z,
+        .natDexNum = NATIONAL_DEX_PORYGON_Z,
+        .categoryName = _("Virtual"),
+        .height = 9,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            "In order to create a more advanced\n"
+            "Pokémon, an additional program was\n"
+            "installed, but apparently it contained a\n"
+            "defect that made it move oddly."),
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Porygon4,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 40),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Porygon4,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Porygon4,
+        .shinyPalette = gMonShinyPalette_Porygon4,
+        .iconSprite = gMonIcon_Porygon4,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_S)
+        FOOTPRINT(PorygonZ)
+        OVERWORLD(
+            sPicTable_PorygonZ,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_PorygonZ,
+            gShinyOverworldPalette_PorygonZ
+        )
+        .levelUpLearnset = sPorygonZLevelUpLearnset,
+        .teachableLearnset = sPorygonZTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON5, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
+                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON5}),
+    },
+    [SPECIES_PORYGON5] =
+    {
+        .baseHP        = 130,
+        .baseAttack    = 91,
+        .baseDefense   = 90,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 147,
+        .baseSpDefense = 130,
+        .baseLerAttack = 131,
+        .baseLerDefense = 130,
+        .critChance = 37,
+        .armor = 101,
+        .trueDamage = 111,
+        .luck = 130,        
+        .waxing = 55,     
+        .gambit = 90,
+        .parry = 97,       
+        .firstStrike = 85, 
+        .lifeSteal = 68,  
+        .sexism = 30,
+        .hotStreak = 90,  
+        .doubleHit = 220,  
+        .innates = {ABILITY_BATTERY, ABILITY_IMMUNITY, ABILITY_VOLT_ABSORB},
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_ON),
+        .catchRate = 30,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 268,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 241,
+    #else
+        .expYield = 185,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
+        //.innates = { ABILITY_LEVITATE, ABILITY_MOODY, ABILITY_TANGLED_FEET },
+		.bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Porygon5"),
+        .cryId = CRY_PORYGON_Z,
+        .natDexNum = NATIONAL_DEX_PORYGON_Z,
+        .categoryName = _("Virtual"),
+        .height = 9,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            "In order to create a more advanced\n"
+            "Pokémon, an additional program was\n"
+            "installed, but apparently it contained a\n"
+            "defect that made it move oddly."),
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Porygon5,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 40),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Porygon5,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Porygon5,
+        .shinyPalette = gMonShinyPalette_Porygon5,
+        .iconSprite = gMonIcon_Porygon5,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_S)
+        FOOTPRINT(PorygonZ)
+        OVERWORLD(
+            sPicTable_PorygonZ,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_PorygonZ,
+            gShinyOverworldPalette_PorygonZ
+        )
+        .levelUpLearnset = sPorygonZLevelUpLearnset,
+        .teachableLearnset = sPorygonZTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON6, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
+                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON6}),
+    },
+
+    [SPECIES_PORYGON6] =
+    {
+        .baseHP        = 135,
+        .baseAttack    = 163,
+        .baseDefense   = 90,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 151,
+        .baseSpDefense = 130,
+        .baseLerAttack = 163,
+        .baseLerDefense = 130,
+        .critChance = 73,
+        .armor = 120,
+        .trueDamage = 130,
+        .luck = 146,        
+        .waxing = 84,     
+        .gambit = 130,
+        .parry = 110,       
+        .firstStrike = 100, 
+        .lifeSteal = 74,  
+        .sexism = 39,
+        .hotStreak = 110,  
+        .doubleHit = 230,  
+        .innates = {ABILITY_BATTERY, ABILITY_IMMUNITY, ABILITY_VOLT_ABSORB},
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_ON),
+        .catchRate = 30,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 268,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 241,
+    #else
+        .expYield = 185,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
+        //.innates = { ABILITY_LEVITATE, ABILITY_MOODY, ABILITY_TANGLED_FEET },
+		.bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Porygon6"),
+        .cryId = CRY_PORYGON_Z,
+        .natDexNum = NATIONAL_DEX_PORYGON_Z,
+        .categoryName = _("Virtual"),
+        .height = 9,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            "In order to create a more advanced\n"
+            "Pokémon, an additional program was\n"
+            "installed, but apparently it contained a\n"
+            "defect that made it move oddly."),
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Porygon6,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 40),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Porygon6,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Porygon6,
+        .shinyPalette = gMonShinyPalette_Porygon6,
+        .iconSprite = gMonIcon_Porygon6,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_S)
+        FOOTPRINT(PorygonZ)
+        OVERWORLD(
+            sPicTable_PorygonZ,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_PorygonZ,
+            gShinyOverworldPalette_PorygonZ
+        )
+        .levelUpLearnset = sPorygonZLevelUpLearnset,
+        .teachableLearnset = sPorygonZTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON7, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
+                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON7}),
+    },
+    [SPECIES_PORYGON7] =
+    {
+        .baseHP        = 150,
+        .baseAttack    = 170,
+        .baseDefense   = 102,
+        .baseSpeed     = 131,
+        .baseSpAttack  = 170,
+        .baseSpDefense = 133,
+        .baseLerAttack = 170,
+        .baseLerDefense = 133,
+        .critChance = 110,
+        .armor = 125,
+        .trueDamage = 130,
+        .luck = 180,        
+        .waxing = 144,     
+        .gambit = 150,
+        .parry = 115,       
+        .firstStrike = 133, 
+        .lifeSteal = 100,  
+        .sexism = 50,
+        .hotStreak = 134,  
+        .doubleHit = 250,  
+        .innates = {ABILITY_BATTERY, ABILITY_IMMUNITY, ABILITY_VOLT_ABSORB},
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_ON),
+        .catchRate = 30,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 268,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 241,
+    #else
+        .expYield = 185,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
+        //.innates = { ABILITY_LEVITATE, ABILITY_MOODY, ABILITY_TANGLED_FEET },
+		.bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Porygon7"),
+        .cryId = CRY_PORYGON_Z,
+        .natDexNum = NATIONAL_DEX_PORYGON_Z,
+        .categoryName = _("Virtual"),
+        .height = 9,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            "In order to create a more advanced\n"
+            "Pokémon, an additional program was\n"
+            "installed, but apparently it contained a\n"
+            "defect that made it move oddly."),
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Porygon7,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 30),
+            ANIMCMD_FRAME(1, 30),
+            ANIMCMD_FRAME(0, 40),
+        ),
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .enemyMonElevation = 12,
+        .backPic = gMonBackPic_Porygon7,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Porygon7,
+        .shinyPalette = gMonShinyPalette_Porygon7,
+        .iconSprite = gMonIcon_Porygon7,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 17, SHADOW_SIZE_S)
+        FOOTPRINT(PorygonZ)
+        OVERWORLD(
+            sPicTable_PorygonZ,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_PorygonZ,
+            gShinyOverworldPalette_PorygonZ
+        )
+        .levelUpLearnset = sPorygonZLevelUpLearnset,
+        .teachableLearnset = sPorygonZTeachableLearnset,
+    },
+    
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_PORYGON

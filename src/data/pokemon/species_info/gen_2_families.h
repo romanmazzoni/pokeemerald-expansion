@@ -5674,7 +5674,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sGligarTeachableLearnset,
         .eggMoveLearnset = sGligarEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GLISCOR, CONDITIONS({IF_TIME, TIME_NIGHT}, {IF_HOLD_ITEM, ITEM_RAZOR_FANG})}, 
-                                {EVO_ITEM, ITEM_RAZOR_FANG, SPECIES_GLISCOR, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+                                {EVO_LEVEL, 31, SPECIES_GLISCOR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -6296,6 +6296,97 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sShuckleLevelUpLearnset,
         .teachableLearnset = sShuckleTeachableLearnset,
         .eggMoveLearnset = sShuckleEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_BLACK_GLASSES, SPECIES_SHUCKOOL}),
+    },
+
+    [SPECIES_SHUCKOOL] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 230,
+        .baseDefense   = 230,
+        .baseSpeed     = 5,
+        .baseSpAttack  = 10,
+        .baseSpDefense = 230,
+        .baseLerAttack = 27,
+        .baseLerDefense = 44,
+        .critChance = 35,
+        .armor = 161,
+        .trueDamage = 120,
+        .luck = 80,
+        .waxing = 51,
+        .gambit = 33,
+        .parry = 98,
+        .firstStrike = 181,
+        .lifeSteal = 33,
+        .sexism = 1,
+        .hotStreak = 31,
+        .doubleHit = 180,
+        .innates = {ABILITY_OBLIVIOUS, ABILITY_TOXIC_DEBRIS, ABILITY_POISON_HEAL},
+        .types = MON_TYPES(TYPE_BUG, TYPE_ROCK, TYPE_MONEY),
+        .catchRate = 190,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 177 : 80,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .itemCommon = ITEM_BERRY_JUICE,
+        .itemRare = ITEM_BERRY_JUICE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_STURDY, ABILITY_GLUTTONY, ABILITY_CONTRARY },
+    #else
+        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_CONTRARY },
+    #endif
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Shuckool"),
+        .cryId = CRY_SHUCKLE,
+        .natDexNum = NATIONAL_DEX_SHUCKLE,
+        .categoryName = _("Cool"),
+        .height = 6,
+        .weight = 205,
+        .description = COMPOUND_STRING(
+            "A Shuckle hides under rocks, keeping its\n"
+            "body concealed inside its shell while\n"
+            "eating stored berries. The berries mix with\n"
+            "its body fluids to become a juice."),
+        .pokemonScale = 485,
+        .pokemonOffset = 18,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Shuckool,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 8,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(1, 50),
+            ANIMCMD_FRAME(0, 30),
+        ),
+        .frontAnimId = ANIM_SWING_CONCAVE,
+        .backPic = gMonBackPic_Shuckool,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Shuckool,
+        .shinyPalette = gMonShinyPalette_Shuckool,
+        .iconSprite = gMonIcon_Shuckool,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(1, 3, SHADOW_SIZE_M)
+        FOOTPRINT(Shuckle)
+        OVERWORLD(
+            sPicTable_Shuckle,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Shuckle,
+            gShinyOverworldPalette_Shuckle
+        )
+        .levelUpLearnset = sShuckleLevelUpLearnset,
+        .teachableLearnset = sShuckleTeachableLearnset,
+        .eggMoveLearnset = sShuckleEggMoveLearnset,
     },
 #endif //P_FAMILY_SHUCKLE
 
@@ -6588,8 +6679,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggMoveLearnset = sSneaselEggMoveLearnset,
         .formSpeciesIdTable = sSneaselFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WEAVILE, CONDITIONS({IF_TIME, TIME_NIGHT}, {IF_HOLD_ITEM, ITEM_RAZOR_CLAW})}, 
-                                {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_WEAVILE, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
-                            {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_SNEASLER, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+                                {EVO_LEVEL, 34, SPECIES_WEAVILE, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
+                            {EVO_LEVEL, 34, SPECIES_SNEASLER, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 
 #if P_GEN_4_CROSS_EVOS

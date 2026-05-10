@@ -319,7 +319,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Wartortle[] = INCBIN_U16("graphics/pokemon/wartortle/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-
+const u32 gMonFrontPic_Bluestoise[] = INCBIN_U32("graphics/pokemon/bluestoise/anim_front.4bpp.lz");
+    const u16 gMonPalette_Bluestoise[] = INCBIN_U16("graphics/pokemon/bluestoise/normal.gbapal");
+    const u32 gMonBackPic_Bluestoise[] = INCBIN_U32("graphics/pokemon/bluestoise/back.4bpp.lz");
+    const u16 gMonShinyPalette_Bluestoise[] = INCBIN_U16("graphics/pokemon/bluestoise/shiny.gbapal");
+    const u8 gMonIcon_Bluestoise[] = INCBIN_U8("graphics/pokemon/bluestoise/icon.4bpp");
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Blastoise[] = INCBIN_U32("graphics/pokemon/blastoise/anim_front.4bpp.lz");
     const u16 gMonPalette_Blastoise[] = INCBIN_U16("graphics/pokemon/blastoise/normal.gbapal");
@@ -5852,6 +5856,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+const u32 gMonFrontPic_Porygon4[] = INCBIN_U32("graphics/pokemon/porygon4/anim_front.4bpp.lz");
+    const u16 gMonPalette_Porygon4[] = INCBIN_U16("graphics/pokemon/porygon4/normal.gbapal");
+    const u32 gMonBackPic_Porygon4[] = INCBIN_U32("graphics/pokemon/porygon4/back.4bpp.lz");
+    const u16 gMonShinyPalette_Porygon4[] = INCBIN_U16("graphics/pokemon/porygon4/shiny.gbapal");
+    const u8 gMonIcon_Porygon4[] = INCBIN_U8("graphics/pokemon/porygon4/icon.4bpp");
+
+    const u32 gMonFrontPic_Porygon5[] = INCBIN_U32("graphics/pokemon/porygon5/anim_front.4bpp.lz");
+    const u16 gMonPalette_Porygon5[] = INCBIN_U16("graphics/pokemon/porygon5/normal.gbapal");
+    const u32 gMonBackPic_Porygon5[] = INCBIN_U32("graphics/pokemon/porygon5/back.4bpp.lz");
+    const u16 gMonShinyPalette_Porygon5[] = INCBIN_U16("graphics/pokemon/porygon5/shiny.gbapal");
+    const u8 gMonIcon_Porygon5[] = INCBIN_U8("graphics/pokemon/porygon5/icon.4bpp");
+
+    const u32 gMonFrontPic_Porygon6[] = INCBIN_U32("graphics/pokemon/porygon6/anim_front.4bpp.lz");
+    const u16 gMonPalette_Porygon6[] = INCBIN_U16("graphics/pokemon/porygon6/normal.gbapal");
+    const u32 gMonBackPic_Porygon6[] = INCBIN_U32("graphics/pokemon/porygon6/back.4bpp.lz");
+    const u16 gMonShinyPalette_Porygon6[] = INCBIN_U16("graphics/pokemon/porygon6/shiny.gbapal");
+    const u8 gMonIcon_Porygon6[] = INCBIN_U8("graphics/pokemon/porygon6/icon.4bpp");
+
+    const u32 gMonFrontPic_Porygon7[] = INCBIN_U32("graphics/pokemon/porygon7/anim_front.4bpp.lz");
+    const u16 gMonPalette_Porygon7[] = INCBIN_U16("graphics/pokemon/porygon7/normal.gbapal");
+    const u32 gMonBackPic_Porygon7[] = INCBIN_U32("graphics/pokemon/porygon7/back.4bpp.lz");
+    const u16 gMonShinyPalette_Porygon7[] = INCBIN_U16("graphics/pokemon/porygon7/shiny.gbapal");
+    const u8 gMonIcon_Porygon7[] = INCBIN_U8("graphics/pokemon/porygon7/icon.4bpp");
+
 #if P_GEN_2_CROSS_EVOS
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Porygon2[] = INCBIN_U32("graphics/pokemon/porygon2/anim_front.4bpp.lz");
@@ -8375,7 +8403,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_QWILFISH
-
+const u32 gMonFrontPic_Shuckool[] = INCBIN_U32("graphics/pokemon/shuckool/anim_front.4bpp.lz");
+    const u16 gMonPalette_Shuckool[] = INCBIN_U16("graphics/pokemon/shuckool/normal.gbapal");
+    const u32 gMonBackPic_Shuckool[] = INCBIN_U32("graphics/pokemon/shuckool/back.4bpp.lz");
+    const u16 gMonShinyPalette_Shuckool[] = INCBIN_U16("graphics/pokemon/shuckool/shiny.gbapal");
+    const u8 gMonIcon_Shuckool[] = INCBIN_U8("graphics/pokemon/shuckool/icon.4bpp");
 #if P_FAMILY_SHUCKLE
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/anim_front.4bpp.lz");
