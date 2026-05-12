@@ -5880,7 +5880,7 @@ const u32 gMonFrontPic_Porygon4[] = INCBIN_U32("graphics/pokemon/porygon4/anim_f
     const u16 gMonShinyPalette_Porygon7[] = INCBIN_U16("graphics/pokemon/porygon7/shiny.gbapal");
     const u8 gMonIcon_Porygon7[] = INCBIN_U8("graphics/pokemon/porygon7/icon.4bpp");
 
-    const u32 gMonFrontPic_ArbolivaSuper[] = INCBIN_U32("graphics/pokemon/arbolivasuper/anim_front.4bpp.lz");
+    const u32 gMonFrontPic_ArbolivaSuper[] = INCBIN_U32("graphics/pokemon/arbolivasuper/front.4bpp.lz");
     const u16 gMonPalette_ArbolivaSuper[] = INCBIN_U16("graphics/pokemon/arbolivasuper/normal.gbapal");
     const u32 gMonBackPic_ArbolivaSuper[] = INCBIN_U32("graphics/pokemon/arbolivasuper/back.4bpp.lz");
     const u16 gMonShinyPalette_ArbolivaSuper[] = INCBIN_U16("graphics/pokemon/arbolivasuper/shiny.gbapal");
@@ -5892,11 +5892,11 @@ const u32 gMonFrontPic_Porygon4[] = INCBIN_U32("graphics/pokemon/porygon4/anim_f
     const u16 gMonShinyPalette_PlusleTall[] = INCBIN_U16("graphics/pokemon/plusletall/shiny.gbapal");
     const u8 gMonIcon_PlusleTall[] = INCBIN_U8("graphics/pokemon/plusletall/icon.4bpp");
 
-    const u32 gMonFrontPic_MinumTall[] = INCBIN_U32("graphics/pokemon/minumtall/anim_front.4bpp.lz");
-    const u16 gMonPalette_MinumTall[] = INCBIN_U16("graphics/pokemon/minumtall/normal.gbapal");
-    const u32 gMonBackPic_MinumTall[] = INCBIN_U32("graphics/pokemon/minumtall/back.4bpp.lz");
-    const u16 gMonShinyPalette_MinumTall[] = INCBIN_U16("graphics/pokemon/minumtall/shiny.gbapal");
-    const u8 gMonIcon_MinumTall[] = INCBIN_U8("graphics/pokemon/minumtall/icon.4bpp");
+    const u32 gMonFrontPic_MinunTall[] = INCBIN_U32("graphics/pokemon/minuntall/anim_front.4bpp.lz");
+    const u16 gMonPalette_MinunTall[] = INCBIN_U16("graphics/pokemon/minuntall/normal.gbapal");
+    const u32 gMonBackPic_MinunTall[] = INCBIN_U32("graphics/pokemon/minuntall/back.4bpp.lz");
+    const u16 gMonShinyPalette_MinunTall[] = INCBIN_U16("graphics/pokemon/minuntall/shiny.gbapal");
+    const u8 gMonIcon_MinunTall[] = INCBIN_U8("graphics/pokemon/minuntall/icon.4bpp");
     
     const u32 gMonFrontPic_MagcargoHorse[] = INCBIN_U32("graphics/pokemon/magcargohorse/anim_front.4bpp.lz");
     const u16 gMonPalette_MagcargoHorse[] = INCBIN_U16("graphics/pokemon/magcargohorse/normal.gbapal");
@@ -5904,7 +5904,7 @@ const u32 gMonFrontPic_Porygon4[] = INCBIN_U32("graphics/pokemon/porygon4/anim_f
     const u16 gMonShinyPalette_MagcargoHorse[] = INCBIN_U16("graphics/pokemon/magcargohorse/shiny.gbapal");
     const u8 gMonIcon_MagcargoHorse[] = INCBIN_U8("graphics/pokemon/magcargohorse/icon.4bpp");
 
-    const u32 gMonFrontPic_FlamigoBall[] = INCBIN_U32("graphics/pokemon/flamigoball/anim_front.4bpp.lz");
+    const u32 gMonFrontPic_FlamigoBall[] = INCBIN_U32("graphics/pokemon/flamigoball/front.4bpp.lz");
     const u16 gMonPalette_FlamigoBall[] = INCBIN_U16("graphics/pokemon/flamigoball/normal.gbapal");
     const u32 gMonBackPic_FlamigoBall[] = INCBIN_U32("graphics/pokemon/flamigoball/back.4bpp.lz");
     const u16 gMonShinyPalette_FlamigoBall[] = INCBIN_U16("graphics/pokemon/flamigoball/shiny.gbapal");

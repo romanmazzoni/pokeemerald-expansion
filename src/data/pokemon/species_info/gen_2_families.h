@@ -7476,6 +7476,98 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMagcargoLevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 53, SPECIES_HORSECARGO})
+    },
+
+    [SPECIES_HORSECARGO] =
+    {
+        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 120 : 50,
+        .baseAttack    = 120,
+        .baseDefense   = 111,
+        .baseSpeed     = 255,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 100 : 80,
+        .baseSpDefense = 100,
+        .baseLerAttack = 60,
+        .baseLerDefense = 140,
+        .critChance = 88,
+        .armor = 122,
+        .trueDamage = 88,
+        .luck = 255,
+        .waxing = 1,
+        .gambit = 90,
+        .parry = 140,
+        .firstStrike = 255,
+        .lifeSteal = 50,
+        .sexism = 72,
+        .hotStreak = 150,
+        .doubleHit = 74,
+        .innates = {ABILITY_WATER_ABSORB, ABILITY_EARTH_EATER, ABILITY_TRUE_HORSE},
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ROCK, TYPE_KING),
+        .catchRate = 75,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 151,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 144,
+    #else
+        .expYield = 154,
+    #endif
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
+        .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
+        .speciesName = _("Horsecargo"),
+        .cryId = CRY_MAGCARGO,
+        .natDexNum = NATIONAL_DEX_MAGCARGO,
+        .categoryName = _("Horse"),
+        .height = 8,
+        .weight = 550,
+        .description = COMPOUND_STRING(
+            "The shell on its back is made of hardened\n"
+            "magma. Tens of thousands of years spent\n"
+            "living in volcanic craters have turned\n"
+            "Magcargo's bodies into magma."),
+        .pokemonScale = 332,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MagcargoHorse,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 56) : MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 6,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_MagcargoHorse,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 7,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_MagcargoHorse,
+        .shinyPalette = gMonShinyPalette_MagcargoHorse,
+        .iconSprite = gMonIcon_MagcargoHorse,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 5, SHADOW_SIZE_M)
+        FOOTPRINT(Magcargo)
+        OVERWORLD(
+            sPicTable_Magcargo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            sAnimTable_Following,
+            gOverworldPalette_Magcargo,
+            gShinyOverworldPalette_Magcargo
+        )
+        .levelUpLearnset = sMagcargoLevelUpLearnset,
+        .teachableLearnset = sMagcargoTeachableLearnset,
     },
 #endif //P_FAMILY_SLUGMA
 

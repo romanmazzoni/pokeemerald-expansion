@@ -1643,7 +1643,7 @@
 #define SPECIES_PORYGON5                                1527
 #define SPECIES_PORYGON6                                1528
 #define SPECIES_PORYGON7                                1529
-#define SPECIES_ARBORLIVA_SUPER                         1530
+#define SPECIES_ARBOLIVA_SUPER                          1530
 #define SPECIES_PLUSLE_TALL                             1531
 #define SPECIES_MINUN_TALL                              1532
 #define SPECIES_HORSECARGO                              1533
