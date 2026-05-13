@@ -7537,7 +7537,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MagcargoHorse,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 56) : MON_COORDS_SIZE(56, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 6,
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
@@ -7550,12 +7550,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 7,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_MagcargoHorse,
-        .shinyPalette = gMonShinyPalette_MagcargoHorse,
+        .palette = gMonPalette_Magcargo,
+        .shinyPalette = gMonShinyPalette_Magcargo,
         .iconSprite = gMonIcon_MagcargoHorse,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 5, SHADOW_SIZE_M)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(Magcargo)
         OVERWORLD(
             sPicTable_Magcargo,

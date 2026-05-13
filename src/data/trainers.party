@@ -5979,8 +5979,28 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 10
+Flamigo_ball
+Level: 1
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+
+Horsecargo
+Level: 1
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+
+Plusle_Tall
+Level: 1
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+
+Minun_Tall
+Level: 1
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+
+Arboliva_super
+Level: 1
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 

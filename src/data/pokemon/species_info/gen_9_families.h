@@ -6065,10 +6065,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_FlamigoBall,
-        .shinyPalette = gMonShinyPalette_FlamigoBall,
+        .palette = gMonPalette_Flamigo,
+        .shinyPalette = gMonShinyPalette_Flamigo,
         .iconSprite = gMonIcon_FlamigoBall,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_S)
         FOOTPRINT(Flamigo)

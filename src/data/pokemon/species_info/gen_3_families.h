@@ -6825,7 +6825,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_PLUSLE,
         .natDexNum = NATIONAL_DEX_PLUSLE,
         .categoryName = _("Cheering"),
-        .height = 4,
+        .height = 40,
         .weight = 42,
         .description = COMPOUND_STRING(
             "It has the trait of cheering on its fellow\n"
@@ -6838,7 +6838,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_PlusleTall,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 11,
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : -6,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
@@ -6856,7 +6856,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_PlusleTall,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(2, 3, SHADOW_SIZE_S)
+        SHADOW(2, 12, SHADOW_SIZE_S)
         FOOTPRINT(Plusle)
         OVERWORLD(
             sPicTable_Plusle,
@@ -7008,7 +7008,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .cryId = CRY_MINUN,
         .natDexNum = NATIONAL_DEX_MINUN,
         .categoryName = _("Cheering"),
-        .height = 4,
+        .height = 40,
         .weight = 42,
         .description = COMPOUND_STRING(
             "At a meeting of Pokémon academics, it was\n"
@@ -7021,7 +7021,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MinunTall,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(40, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 11,
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : -6,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
@@ -7039,7 +7039,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_MinunTall,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(-4, 3, SHADOW_SIZE_S)
+        SHADOW(-4, 12, SHADOW_SIZE_S)
         FOOTPRINT(Minun)
         OVERWORLD(
             sPicTable_Minun,
