@@ -7555,7 +7555,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_MagcargoHorse,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 12, SHADOW_SIZE_M)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Magcargo)
         OVERWORLD(
             sPicTable_Magcargo,
