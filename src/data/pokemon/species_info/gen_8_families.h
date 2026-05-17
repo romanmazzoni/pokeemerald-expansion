@@ -8233,7 +8233,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ZACIAN_HERO] =
     {
         .baseHP        = 92,
-        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
+        .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 130 : 130,
         .baseDefense   = 115,
         .baseSpeed     = 138,
         .baseSpAttack  = 80,
