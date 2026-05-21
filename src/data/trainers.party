@@ -4124,8 +4124,8 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia
-Level: 36
+fraxure
+Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_VIRGIL ===
@@ -4137,7 +4137,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
+cofagrigus
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4163,7 +4163,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
+espurr
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4171,7 +4171,7 @@ Ralts
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kirlia
+munna
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4184,11 +4184,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
+reuniclus
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Solrock
+musharna
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4214,7 +4214,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
+emolga
 Level: 33
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -4296,7 +4296,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia
+hakamo o
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4309,7 +4309,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Xatu
+turtonator
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4322,7 +4322,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
+minior
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4339,11 +4339,11 @@ Wobbuffet
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Natu
+sinistea
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Kadabra
+poltchageist
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4356,11 +4356,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia
+zoroark hisui
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
+zoroark
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4373,12 +4373,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra
+deerling
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lunatone
-Level: 30
+sawsbuck
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACKI_2 ===
@@ -4458,7 +4458,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+vespiquen
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4471,11 +4471,11 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
+drifblim
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
+rillaboom
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4488,7 +4488,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Zangoose
+dudunsparce
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5136,7 +5136,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
+lechonk
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5149,7 +5149,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
+tandemaus
 Level: 17
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5162,15 +5162,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Numel
+pawmi
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Oddish
+fuecoco
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Wingull
+snom
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5255,7 +5255,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
+nickit
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5268,7 +5268,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
+gossifleur
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5361,7 +5361,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dizzy Punch
 - Teeter Dance
 
-Slaking
+bewear
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Focus Punch
@@ -5378,7 +5378,7 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Zigzagoon
+BIDOOF
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
@@ -5386,7 +5386,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Headbutt
 - Odor Sleuth
 
-Makuhita
+BIDOOF
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -5498,11 +5498,11 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Taillow @ Oran Berry
+staravia @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Zigzagoon @ Oran Berry
+luxio @ Oran Berry
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -5515,7 +5515,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Skitty @ Oran Berry
+pancham @ Oran Berry
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5637,7 +5637,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Roselia @ Oran Berry
+tyrunt @ Oran Berry
 Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -5650,9 +5650,9 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu @ Oran Berry
+pachirisu @ Oran Berry
 Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 0 HP / 0 Atk / 0 Def / 31 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BETHANY ===
 Name: BETHANY
@@ -5663,15 +5663,15 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Azurill @ Oran Berry
+Luxray @ Oran Berry
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Marill @ Oran Berry
+bouffalant @ Oran Berry
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Azumarill @ Oran Berry
+garganacl @ Oran Berry
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -5684,11 +5684,11 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Plusle @ Oran Berry
+tarountula @ Oran Berry
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Minun @ Oran Berry
+chewtle @ Oran Berry
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5769,7 +5769,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Hariyama
+klink
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -5867,11 +5867,11 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
+deerling
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Makuhita
+swoobat
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -5965,11 +5965,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+tympole
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Seedot
+pikipek
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5982,30 +5982,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Flamigo_ball
-Level: 1
+ditto
+Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 
-Horsecargo
-Level: 1
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-
-Plusle_Tall
-Level: 1
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-
-Minun_Tall
-Level: 1
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-
-Arboliva_super
-Level: 1
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6016,11 +5997,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+grubbin
 Level: 8
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
+grubbin
 Level: 8
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -6033,7 +6014,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
+rookidee
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6083,10 +6064,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Dusclops
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Skill Swap
-- Protect
+- pain split
+- poltergeist
 - Will O Wisp
-- Toxic
+- knock off
 
 === TRAINER_KATELYNN ===
 Name: KATELYNN
@@ -6098,13 +6079,13 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gardevoir
-Level: 43
+Flamigo_ball
+Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Skill Swap
+- rollout
 - Psychic
-- Thunderbolt
-- Calm Mind
+- high jump kick
+- knock off
 
 Slaking
 Level: 43
@@ -6123,7 +6104,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Trapinch
+Trapinch @ CHOICE SCARF
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6221,7 +6202,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+eevee
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6242,7 +6223,7 @@ Zigzagoon
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Taillow
+fletchling
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6255,11 +6236,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aron
+klink
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
+dwebble
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6335,7 +6316,7 @@ Magikarp
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+finneon
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6360,7 +6341,7 @@ Magikarp
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
+Feebas
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6377,12 +6358,12 @@ Magikarp
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Goldeen
+BIDOOF
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Barboach
-Level: 18
+STUNFISK
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ELLIOT_1 ===
@@ -6394,8 +6375,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 10
+INKAY
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
@@ -6432,15 +6413,15 @@ Tentacool
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
+POPPLIO
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+arrokuda
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
+finizen
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6453,8 +6434,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Barboach
-Level: 19
+LURANTIS
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARNY ===
@@ -6466,11 +6447,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+KOMALA
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
+BRUXISH
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6483,7 +6464,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+TOGEDEMARU
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6500,7 +6481,7 @@ Wailmer
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Tentacruel
+DEWOTT
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6630,7 +6611,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Gyarados
-Level: 35
+Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACOB ===
@@ -6642,16 +6623,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 6
+YAMASK
+Level: 8
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Voltorb
-Level: 6
+LITLEO
+Level: 12
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Magnemite
-Level: 14
+YAMPER
+Level: 12
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ANTHONY ===
@@ -6663,11 +6644,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
+milcery
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magnemite
+milcery
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6680,7 +6661,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
+NACLI
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6745,7 +6726,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
+SMOLIV
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6766,8 +6747,8 @@ Magnemite
 Level: 14
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-Voltorb
-Level: 6
+KLAWF
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ABIGAIL_2 ===
@@ -6831,7 +6812,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
+WIGLETT
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6896,7 +6877,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
+CETODDLE
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6961,11 +6942,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+GOLISOPOD
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+TOGEKISS
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6979,11 +6960,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 25
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
-Level: 25
+EXCADRILL
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISAIAH_1 ===
@@ -6995,7 +6976,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+ZEBSTRIKA
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7008,12 +6989,12 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+PALPITOAD
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 33
+CRUSTLE
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHASE ===
@@ -7025,11 +7006,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+ARCHEN
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+CINCCINO
 Level: 34
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -7094,8 +7075,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
-Level: 34
+Clawitzer
+Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DONNY ===
@@ -7107,11 +7088,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+AMAURA
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+eiscue
 Level: 34
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
@@ -7124,7 +7105,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+GRAFAIAI
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7137,7 +7118,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
+TOEDSCRUEL
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7150,11 +7131,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+fletchinder
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
+pidgeotto
 Level: 33
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
@@ -7219,7 +7200,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Altaria
+snorlax
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7312,10 +7293,10 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bagon
+magmortar
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Breath
+- glare
 - Headbutt
 - Focus Energy
 - Ember
@@ -7329,7 +7310,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+liepard
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7342,7 +7323,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+munna
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7359,7 +7340,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+throh
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7372,7 +7353,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
+mimikyu
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7380,7 +7361,7 @@ Skarmory
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Tropius
+maractus
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7393,9 +7374,9 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Skarmory
-Level: 30
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+guzzlord
+Level: 25
+IVs: 30 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PRESLEY ===
 Name: PRESLEY
@@ -7406,11 +7387,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Tropius
+eldegoss
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
+sigilyph
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7423,7 +7404,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
+emolga
 Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -7440,11 +7421,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+karrablast
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Natu
+shelmet
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7457,7 +7438,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Swablu
+durant
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7470,7 +7451,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
+escavalier
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7478,7 +7459,7 @@ Pelipper
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Xatu
+accelgor
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7491,7 +7472,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
+rufflet
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7576,7 +7557,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Natu
+vullaby
 Level: 33
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
