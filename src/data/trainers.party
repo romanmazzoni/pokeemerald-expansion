@@ -4801,29 +4801,29 @@ Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
+yungoos
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
 - Rock Throw
-- Rock Tomb
+- flail
 
-Geodude
+bidoof @ kings rock
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
-- Rock Throw
-- Rock Tomb
+- water gun
+- flail
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
+furret @ Oran Berry
+Level: 14
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- ember
+- defense curl
 - Tackle
-- Rock Tomb
+- flail
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -4835,29 +4835,37 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Machop
+weepinbell
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
+- pay day
 - Low Kick
-- Seismic Toss
-- Bulk Up
+- poison sting
+- pluck
 
-Meditite
+shroomish @ light clay
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
-- Light Screen
+- spore
 - Reflect
-- Bulk Up
+- pluck
 
-Makuhita @ Sitrus Berry
+foongus @ leftovers 
+Level: 16
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- recover
+- rollout
+- infestation
+- pluck
+
+hattrem @ Sitrus Berry
 Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+- psybeam
+- body press
+- powder snow
+- pluck
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -4869,37 +4877,45 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Voltorb
+tadbulb @light ball
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
+- glare
 - Spark
 - Self Destruct
-- Shock Wave
+- AURORA beam
 
-Electrike
+togepi @ punching glove
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+- metronome
+- wish
+- light screen
+- AURORA beam
 
-Magneton
+Ninjask @ quick claw
 Level: 22
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+- agility
+- air slash
+- icy wind
+- AURORA beam
 
-Manectric @ Sitrus Berry
+solosis @ leftovers
+Level: 22
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- morning sun
+- psyshock
+- glare
+- AURORA beam
+
+shiinotic @ Sitrus Berry
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+- spore
+- leech seed
+- sludge bomb
+- AURORA beam
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -4911,37 +4927,53 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Numel
+umbreon @ lum berry
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
+- foul play
+- spikes
+- refresh
+- iron tail
 
-Slugma
+porygon @ up grade
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
+- tri attack
 - Smog
-- Light Screen
-- Sunny Day
+- rapid spin
+- iron tail
 
-Camerupt
+tinkaton @ wide lens
 Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
+- play rough
 - Tackle
-- Sunny Day
-- Attract
+- metal claw
+- iron tail
 
-Torkoal @ White Herb
+shieldon @ leftovers
+Level: 26
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- iron defense
+- heavy slam
+- stealth rock
+- iron tail
+
+Kecleon @ utility umbrella
+Level: 26
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- conversion
+- conversion 2
+- forests curse
+- iron tail
+
+toucannon @ White Herb
 Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+- beak blast
+- dig
+- fly
+- iron tail
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -4953,37 +4985,53 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Spinda
+zoroark @ razor claw
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
+- swords dance
+- dark pulse
 - Facade
-- Encore
+- fury attack
 
-Vigoroth
+floragato @ mirror herb
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
+- toxic spikes
+- rapid spin
 - Encore
-- Feint Attack
+- fury attack
 
-Linoone
+sylveon @ leftovers
+Level: 27
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- alluring voice
+- nuzzle
+- light screen
+- fury attack
+
+lycanroc midnight @ EXPERT BELT
+Level: 27
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- night shade
+- shadow sneak
+- tailwind
+- fury attack
+
+braixen @ destiny knot
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
+- grass knot
+- Flamethrower
+- power gem
+- fury attack
 
-Slaking @ Sitrus Berry
+luxray @ Sitrus Berry
 Level: 31
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Counter
 - Yawn
 - Facade
-- Feint Attack
+- fury attack
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
@@ -4995,45 +5043,53 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer / Risky
 
-Swablu
+GUMshoos @ amulet coin
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
+- spikes
 - Mirror Move
-- Safeguard
-- Aerial Ace
+- stealth rock
+- payback
 
-Tropius
+Carvanha @ amulet coin
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
+- topsy turvy
+- flip turn
+- sludge bomb
+- payback
 
-Pelipper
+greedent @ salac berry
+Level: 30
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 31 Spe
+- belly drum
+- body slam
+- close combat
+- payback
+
+pikachu @ zap plate
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
+- thunderbolt
 - Supersonic
-- Protect
-- Aerial Ace
+- iron tail
+- payback
 
-Skarmory
+Sableye @ leftovers
 Level: 31
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
+- will o wisp
+- recover
+- knock off
+- payback
 
-Altaria @ Oran Berry
+gholdengo @ sitrus Berry
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+- make it rain
+- recover
+- shadow ball
+- payback
 
 === TRAINER_TATE_AND_LIZA_1 ===
 Name: TATE&LIZA

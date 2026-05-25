@@ -6151,9 +6151,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks with a rock-hard\n"
             "tail. May lower Defense."),
         .effect = EFFECT_TWO_TYPED_MOVE,
-        .argument = { .type = TYPE_ON },
+        .argument = { .type = TYPE_FURRY },
         .power = 100,
-        .type = TYPE_FURRY,
+        .type = TYPE_ON,
         .accuracy = 75,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,

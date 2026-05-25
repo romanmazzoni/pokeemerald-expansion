@@ -1808,7 +1808,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .hotStreak = 41,  
         .doubleHit = 75,  
         .innates = {ABILITY_FURRY_ABSORB},
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE),
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_LIGHT),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 74,
         .evYield_SpDefense = 1,
