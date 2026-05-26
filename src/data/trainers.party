@@ -5101,37 +5101,53 @@ Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
 Double Battle: Yes
 AI: Basic Trainer
 
-Claydol
+orbeetle @ leftovers
 Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
+- iron defense
 - Ancient Power
-- Psychic
-- Light Screen
+- bug buzz
+- syrup bomb
 
-Xatu
+sigilyph @ light clay
+Level: 40
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- tailwind
+- reflect
+- light screen
+- syrup bomb
+
+claydol @ assault vest
 Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Psychic
-- Sunny Day
+- earthquake
+- fly
 - Confuse Ray
-- Calm Mind
+- syrup bomb
 
-Lunatone @ Sitrus Berry
-Level: 42
+palossand @ focus band
+Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Psychic
+- surf
+- shore up
+- Confuse Ray
+- syrup bomb
+
+electrode hisui @ chesto berry
+Level: 41
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- will o wisp
+- electro ball
 - Hypnosis
-- Calm Mind
+- syrup bomb
 
-Solrock @ Sitrus Berry
-Level: 42
+brambleghast @ Sitrus Berry
+Level: 43
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+- strength sap
+- leech seed
+- poltergeist
+- syrup bomb
 
 === TRAINER_JUAN_1 ===
 Name: JUAN
@@ -5143,45 +5159,53 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc
+Nidoking @ kings rock
 Level: 41
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
+- Horn Leech
 - Attract
-- Sweet Kiss
-- Flail
+- stealth rock
+- sacred sword
 
-Whiscash
+vespiquen @ heavy duty boots
 Level: 41
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
+- toxic spikes
+- spikes
+- attack order
+- sacred sword
+
+Jellicent @ safety goggles
+Level: 41
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- shadow ball
+- aqua jet
 - Amnesia
-- Earthquake
+- sacred sword
 
-Sealeo
+Whiscash @ wide lens
 Level: 43
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
+- dragon dance
 - Body Slam
-- Aurora Beam
-- Water Pulse
+- stone edge
+- sacred sword
 
-Crawdaunt
+Seaking @ mystic water
 Level: 43
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Water Pulse
-- Crabhammer
-- Taunt
-- Leer
+- horn drill
+- topsy turvy
+- sacred sword
 
-Kingdra @ Chesto Berry
+Kingambit @ sitrus Berry
 Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
+- kowtow cleave
 - Double Team
-- Ice Beam
-- Rest
+- iron head
+- sacred sword
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
