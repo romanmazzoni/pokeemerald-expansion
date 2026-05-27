@@ -4649,45 +4649,45 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Green
 
-Dusclops
+Munkidori @ focus band
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+- fake out
+- sludge wave
+- psychic
+- toxic spikes
 
-Banette
+Rapidash galar @ leftovers
 Level: 49
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
+- electro ball
+- play rough
+- high horsepower
+- expanding force
 
-Sableye
+Houndstone @ ring target
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
+- Fling
+- poltergeist
 - Night Shade
-- Feint Attack
+- spikes
 
-Banette
+Tropius @ mirror herb
 Level: 49
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
+- dragon dance
+- dual wingbeat
+- horn leech
+- sucker punch
 
-Dusclops @ Sitrus Berry
+basculegion @ Sitrus Berry
 Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
+- last respects
 - Ice Beam
-- Rock Slide
-- Earthquake
+- wave crash
+- double edge
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -4700,44 +4700,44 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Pink
 
-Sealeo
+Houndoom
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
+- pursuit
+- Flamethrower
+- weather ball
+- sucker punch
 
-Glalie
+garganacl @ bright powder
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
+- Stealth rock
+- reflect
+- salt cure
+- recover
 
-Sealeo
+Malamar @ leftovers
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
+- superpower
+- draco meteor
+- power trip
+- Hammer arm
 
-Glalie
+mienshao @ heavy duty boots
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+- u turn
+- close combat
+- knock off
+- extreme speed
 
 Walrein @ Sitrus Berry
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
+- surging strikes
+- giga impact
+- Glacial lance
 - Sheer Cold
 
 === TRAINER_DRAKE ===
@@ -4747,49 +4747,49 @@ Pic: Elite Four Drake
 Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 Mugshot: Blue
 
-Shelgon
+Incineroar @ white herb
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+- fake out
+- parting shot
+- darkest lariat
+- flare blitz
 
-Altaria
+farigiraf @ colbur berry
 Level: 54
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+- Trick room
+- Future sight
+- Helping hand
+- Light screen
 
-Kingdra
+archaludon @ shell bell
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+- body press
+- electro shot
+- flash cannon
+- curse
 
-Flygon
+whimsicott @ kebia berry
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+- encore
+- tailwind
+- moonblast
+- leech seed
 
-Salamence @ Sitrus Berry
+glimmora @ power herb
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+- mortal spin
+- spiky shield
+- meteor beam
+- earth power
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -6335,53 +6335,53 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Yellow
 
-Wailord
+Dragonite @ leftovers
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
+- Dragon Dance
+- outrage
 - Double Edge
-- Blizzard
+- Hyper beam
 
-Tentacruel
+Kangaskhan @ poison barb
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+- power up punch
+- rock slide
+- poison fang
+- ice fang
 
-Ludicolo
+Haxorus @ choice scarf
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+- u turn
+- volt switch
+- flip turn
+- outrage
 
-Whiscash
+aegislash @ iron ball
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+- kings shield
+- shadow claw
+- gyro ball
+- toxic
 
-Gyarados
+Gyarados @ life orb
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+- waterfall
+- fly
+- dragon dance
+- hyper beam
 
-Milotic @ Sitrus Berry
+Lugia @ Sitrus Berry
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+- Calm mind
+- Doom desire
+- Hyper beam
+- Aeroblast
 
 === TRAINER_ANDREW ===
 Name: ANDREW
