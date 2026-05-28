@@ -2156,7 +2156,7 @@ Route116_Text_JoseDefeat:
 	.string "I studied everything!$"
 
 Route116_Text_JosePostBattle:
-	.string "There are 80 more types that I\n"
+	.string "There are 9 more types that I\n"
 	.string "Haven't studied? How?$"
 
 Route116_Text_JaniceIntro:

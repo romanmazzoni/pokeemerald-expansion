@@ -329,6 +329,8 @@ static bool8 SlideInLevelUpBanner(void);
 static bool8 SlideOutLevelUpBanner(void);
 static void DrawLevelUpWindow1(void);
 static void DrawLevelUpWindow2(void);
+static void DrawLevelUpWindow3(void);
+static void DrawLevelUpWindow4(void);
 static void PutMonIconOnLvlUpBanner(void);
 static void DrawLevelUpBannerText(void);
 static void SpriteCB_MonIconOnLvlUpBanner(struct Sprite *sprite);
@@ -9535,6 +9537,32 @@ static void Cmd_drawlvlupbox(void)
         }
         break;
     case 8:
+        // Draw page 1 of level up box
+        DrawLevelUpWindow3();
+        PutWindowTilemap(B_WIN_LEVEL_UP_BOX);
+        CopyWindowToVram(B_WIN_LEVEL_UP_BOX, COPYWIN_FULL);
+        gBattleScripting.drawlvlupboxState++;
+        break;
+    case 9:
+    case 11:
+        // Wait for draw after each page
+        if (!IsDma3ManagerBusyWithBgCopy())
+        {
+            gBattle_BG1_Y = 0;
+            gBattleScripting.drawlvlupboxState++;
+        }
+        break;
+    case 10:
+        if (gMain.newKeys != 0 || RECORDED_WILD_BATTLE)
+        {
+            // Draw page 2 of level up box
+            PlaySE(SE_SELECT);
+            DrawLevelUpWindow4();
+            CopyWindowToVram(B_WIN_LEVEL_UP_BOX, COPYWIN_GFX);
+            gBattleScripting.drawlvlupboxState++;
+        }
+        break;
+    case 12:
         if (gMain.newKeys != 0 || RECORDED_WILD_BATTLE)
         {
             // Close level up box
@@ -9543,7 +9571,7 @@ static void Cmd_drawlvlupbox(void)
             gBattleScripting.drawlvlupboxState++;
         }
         break;
-    case 9:
+    case 13:
         if (!SlideOutLevelUpBanner())
         {
             ClearWindowTilemap(B_WIN_LEVEL_UP_BANNER);
@@ -9555,10 +9583,10 @@ static void Cmd_drawlvlupbox(void)
             SetBgAttribute(2, BG_ATTR_PRIORITY, 2);
             ShowBg(2);
 
-            gBattleScripting.drawlvlupboxState = 10;
+            gBattleScripting.drawlvlupboxState = 14;
         }
         break;
-    case 10:
+    case 14:
         if (!IsDma3ManagerBusyWithBgCopy())
         {
             SetBgAttribute(0, BG_ATTR_PRIORITY, 0);
@@ -9585,6 +9613,22 @@ static void DrawLevelUpWindow2(void)
 
     GetMonLevelUpWindowStats(&gPlayerParty[gBattleStruct->expGetterMonId], currStats);
     DrawLevelUpWindowPg2(B_WIN_LEVEL_UP_BOX, currStats, TEXT_DYNAMIC_COLOR_5, TEXT_DYNAMIC_COLOR_4, TEXT_DYNAMIC_COLOR_6);
+}
+
+static void DrawLevelUpWindow3(void)
+{
+    u16 currStats[NUM_STATS];
+
+    GetMonLevelUpWindowStats(&gPlayerParty[gBattleStruct->expGetterMonId], currStats);
+    DrawLevelUpWindowPg3(B_WIN_LEVEL_UP_BOX, gBattleResources->beforeLvlUp->stats, currStats, TEXT_DYNAMIC_COLOR_5, TEXT_DYNAMIC_COLOR_4, TEXT_DYNAMIC_COLOR_6);
+}
+
+static void DrawLevelUpWindow4(void)
+{
+    u16 currStats[NUM_STATS];
+
+    GetMonLevelUpWindowStats(&gPlayerParty[gBattleStruct->expGetterMonId], currStats);
+    DrawLevelUpWindowPg4(B_WIN_LEVEL_UP_BOX, currStats, TEXT_DYNAMIC_COLOR_5, TEXT_DYNAMIC_COLOR_4, TEXT_DYNAMIC_COLOR_6);
 }
 
 static void InitLevelUpBanner(void)

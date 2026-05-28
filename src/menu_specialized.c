@@ -1508,6 +1508,16 @@ static const u8 *const sLvlUpStatStrings[NUM_STATS] =
     gText_Speed
 };
 
+static const u8 *const sLvlUpStatStrings2[NUM_STATS] =
+{
+    gText_Armor,
+    gText_LerAttack,
+    gText_LerDefense,
+    gText_Gambit,
+    gText_TrueDamage,
+    gText_HotStreak
+};
+
 void DrawLevelUpWindowPg1(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bgClr, u8 fgClr, u8 shadowClr)
 {
     u16 i, x;
@@ -1613,6 +1623,111 @@ void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 s
     }
 }
 
+void DrawLevelUpWindowPg3(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bgClr, u8 fgClr, u8 shadowClr)
+{
+    u16 i, x;
+    s16 statsDiff[NUM_STATS];
+    u8 text[12];
+    u8 color[3];
+
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(bgClr));
+
+    statsDiff[0] = statsAfter[STAT_ARMOR]  - statsBefore[STAT_ARMOR];
+    statsDiff[1] = statsAfter[STAT_LERATK] - statsBefore[STAT_LERATK];
+    statsDiff[2] = statsAfter[STAT_LERDEF] - statsBefore[STAT_LERDEF];
+    statsDiff[3] = statsAfter[STAT_GAMBIT] - statsBefore[STAT_GAMBIT];
+    statsDiff[4] = statsAfter[STAT_TRUDMG] - statsBefore[STAT_TRUDMG];
+    statsDiff[5] = statsAfter[STAT_HOTSTK] - statsBefore[STAT_HOTSTK];
+
+    color[0] = bgClr;
+    color[1] = fgClr;
+    color[2] = shadowClr;
+
+    for (i = 0; i < NUM_STATS; i++)
+    {
+
+        AddTextPrinterParameterized3(windowId,
+                                     FONT_NORMAL,
+                                     0,
+                                     15 * i,
+                                     color,
+                                     TEXT_SKIP_DRAW,
+                                     sLvlUpStatStrings2[i]);
+
+        StringCopy(text, (statsDiff[i] >= 0) ? gText_Plus : gText_Dash);
+        AddTextPrinterParameterized3(windowId,
+                                     FONT_NORMAL,
+                                     56,
+                                     15 * i,
+                                     color,
+                                     TEXT_SKIP_DRAW,
+                                     text);
+        if (abs(statsDiff[i]) <= 9)
+            x = 18;
+        else
+            x = 12;
+
+        ConvertIntToDecimalStringN(text, abs(statsDiff[i]), STR_CONV_MODE_LEFT_ALIGN, 2);
+        AddTextPrinterParameterized3(windowId,
+                                     FONT_NORMAL,
+                                     56 + x,
+                                     15 * i,
+                                     color,
+                                     TEXT_SKIP_DRAW,
+                                     text);
+    }
+}
+
+void DrawLevelUpWindowPg4(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 shadowClr)
+{
+    u16 i, numDigits, x;
+    s16 stats[NUM_STATS];
+    u8 text[12];
+    u8 color[3];
+
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(bgClr));
+
+    stats[0] = currStats[STAT_ARMOR];
+    stats[1] = currStats[STAT_LERATK];
+    stats[2] = currStats[STAT_LERDEF];
+    stats[3] = currStats[STAT_GAMBIT];
+    stats[4] = currStats[STAT_TRUDMG];
+    stats[5] = currStats[STAT_HOTSTK];
+
+    color[0] = bgClr;
+    color[1] = fgClr;
+    color[2] = shadowClr;
+
+    for (i = 0; i < NUM_STATS; i++)
+    {
+        if (stats[i] > 99)
+            numDigits = 3;
+        else if (stats[i] > 9)
+            numDigits = 2;
+        else
+            numDigits = 1;
+
+        ConvertIntToDecimalStringN(text, stats[i], STR_CONV_MODE_LEFT_ALIGN, numDigits);
+        x = 6 * (4 - numDigits);
+
+        AddTextPrinterParameterized3(windowId,
+                                     FONT_NORMAL,
+                                     0,
+                                     15 * i,
+                                     color,
+                                     TEXT_SKIP_DRAW,
+                                     sLvlUpStatStrings2[i]);
+
+        AddTextPrinterParameterized3(windowId,
+                                     FONT_NORMAL,
+                                     56 + x,
+                                     15 * i,
+                                     color,
+                                     TEXT_SKIP_DRAW,
+                                     text);
+    }
+}
+
 void GetMonLevelUpWindowStats(struct Pokemon *mon, u16 *currStats)
 {
     currStats[STAT_HP]    = GetMonData(mon, MON_DATA_MAX_HP);
@@ -1625,7 +1740,7 @@ void GetMonLevelUpWindowStats(struct Pokemon *mon, u16 *currStats)
     currStats[STAT_ARMOR]    = GetMonData(mon, MON_DATA_ARMOR);
     currStats[STAT_LERATK]   = GetMonData(mon, MON_DATA_LERATK);
     currStats[STAT_LERDEF]   = GetMonData(mon, MON_DATA_LERDEF);
-    currStats[STAT_GAMBIT] = GetMonData(mon, MON_DATA_GAMBIT);
-    currStats[STAT_TRUDMG] = GetMonData(mon, MON_DATA_TRUDMG);
-    currStats[STAT_HOTSTK] = GetMonData(mon, MON_DATA_HOTSTRK);
+    currStats[STAT_GAMBIT] = GetMonData(mon,   MON_DATA_GAMBIT);
+    currStats[STAT_TRUDMG] = GetMonData(mon,   MON_DATA_TRUDMG);
+    currStats[STAT_HOTSTK] = GetMonData(mon,   MON_DATA_HOTSTRK);
 }

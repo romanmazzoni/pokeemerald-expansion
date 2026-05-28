@@ -832,7 +832,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Reduces the foe's accuracy\n"
             "by hurling sand in its face."),
-        .effect = EFFECT_ACCURACY_DOWN,
+        .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_GROUND,
         .accuracy = 100,
