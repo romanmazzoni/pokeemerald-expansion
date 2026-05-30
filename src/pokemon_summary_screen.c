@@ -942,7 +942,7 @@ static const struct OamData sOamData_CategoryIcons =
 const struct CompressedSpriteSheet gSpriteSheet_CategoryIcons =
 {
     .data = gCategoryIcons_Gfx,
-    .size = 16*16*3/2,
+    .size = 16*16*2,
     .tag = TAG_CATEGORY_ICONS,
 };
 
@@ -970,11 +970,18 @@ static const union AnimCmd sSpriteAnim_CategoryIcon2[] =
     ANIMCMD_END
 };
 
+static const union AnimCmd sSpriteAnim_CategoryIcon3[] =
+{
+    ANIMCMD_FRAME(12, 0),
+    ANIMCMD_END
+};
+
 static const union AnimCmd *const sSpriteAnimTable_CategoryIcons[] =
 {
     sSpriteAnim_CategoryIcon0,
     sSpriteAnim_CategoryIcon1,
     sSpriteAnim_CategoryIcon2,
+    sSpriteAnim_CategoryIcon3,
 };
 
 const struct SpriteTemplate gSpriteTemplate_CategoryIcons =
