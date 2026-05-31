@@ -1030,27 +1030,7 @@ script LittlerootTown_EventScript_CreditsSign{
 }
 script Creditsbuilding_EventScript_CreditsSign1{
 	lockall
-	msgbox(format("First and foremost thank you to gamefreak for making pokemon emerald."))
-	releaseall
-}
-script Creditsbuilding_EventScript_CreditsSign2{
-	lockall
-	msgbox(format("Thank you to Alpharad and friends for creating the too many types romhack that Inspired this romhack."))
-	releaseall
-}
-script Creditsbuilding_EventScript_CreditsSign3{
-	lockall
-	msgbox(format("Thank you to Team aqua's hideout and their romhacking community teaching me everything I know about romhacking."))
-	releaseall
-}
-script Creditsbuilding_EventScript_CreditsSign4{
-	lockall
-	msgbox(format("Thank you to Nuzlockers, competitive players, trivia makers and casual pokemon youtubers because I really knew nothing about pokemon before making this."))
-	releaseall
-}
-script Creditsbuilding_EventScript_CreditsSign5{
-	lockall
-	msgbox(format("And of course, thank you the player for playing this game :)"))
+	msgbox(format("Ravepossum is pretty cool."))
 	releaseall
 }
 

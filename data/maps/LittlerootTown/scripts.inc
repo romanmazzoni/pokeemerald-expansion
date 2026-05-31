@@ -1034,34 +1034,6 @@ Creditsbuilding_EventScript_CreditsSign1::
 	return
 
 
-Creditsbuilding_EventScript_CreditsSign2::
-	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign2_Text_0
-	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign3::
-	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign3_Text_0
-	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign4::
-	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign4_Text_0
-	releaseall
-	return
-
-
-Creditsbuilding_EventScript_CreditsSign5::
-	lockall
-	msgbox Creditsbuilding_EventScript_CreditsSign5_Text_0
-	releaseall
-	return
-
-
 Creditsbuilding_EventScript_Computer1::
 	lockall
 	msgbox Creditsbuilding_EventScript_Computer1_Text_0
@@ -1209,32 +1181,10 @@ Creditsbuilding_EventScript_Adonu_10:
 
 
 LittlerootTown_EventScript_CreditsSign_Text_0:
-	.string "Credits building$"
+	.string "Dev building$"
 
 Creditsbuilding_EventScript_CreditsSign1_Text_0:
-	.string "First and foremost thank you to\n"
-	.string "gamefreak for making pokemon emerald.$"
-
-Creditsbuilding_EventScript_CreditsSign2_Text_0:
-	.string "Thank you to Alpharad and friends for\n"
-	.string "creating the too many types romhack\l"
-	.string "that Inspired this romhack.$"
-
-Creditsbuilding_EventScript_CreditsSign3_Text_0:
-	.string "Thank you to Team aqua's hideout and\n"
-	.string "their romhacking community teaching\l"
-	.string "me everything I know about romhacking.$"
-
-Creditsbuilding_EventScript_CreditsSign4_Text_0:
-	.string "Thank you to Nuzlockers, competitive\n"
-	.string "players, trivia makers and casual\l"
-	.string "pokemon youtubers because I really\l"
-	.string "knew nothing about pokemon before\l"
-	.string "making this.$"
-
-Creditsbuilding_EventScript_CreditsSign5_Text_0:
-	.string "And of course, thank you the player for\n"
-	.string "playing this game :)$"
+	.string "Shoutout Ravepossum.$"
 
 Creditsbuilding_EventScript_Computer1_Text_0:
 	.string "The tabs open are not safe to read\n"
@@ -1307,8 +1257,8 @@ Creditsbuilding_EventScript_Adonu_Text_1:
 	.string "PepeSmile.$"
 
 Creditsbuilding_EventScript_Adonu_Text_2:
-	.string "Adonu: I downloaded the files from\n"
-	.string "GitHub. I came really close to helping.$"
+	.string "Adonu: I almost worked on\n"
+	.string "this romhack. Oh well.$"
 
 Creditsbuilding_EventScript_Adonu_Text_3:
 	.string "Adonu: I cannot believe my eyes! 10\n"
