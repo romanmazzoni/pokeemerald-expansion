@@ -527,7 +527,7 @@ Route106_Text_ElliotIntro:
 	.string "from a basement on the hill.$"
 
 Route106_Text_ElliotDefeated:
-	.string "Everybody's scared of this place$"
+	.string "Everybody's scared of this place.$"
 
 Route106_Text_ElliotPostBattle:
 	.string "I forget where it is though.\p"
@@ -1201,7 +1201,7 @@ Route110_Text_KalebIntro:
 	.string "Down from the seas in to space!$"
 
 Route110_Text_KalebDefeated:
-	.string "They're making suishi out of me!$"
+	.string "They're making sushi out of me!$"
 
 Route110_Text_KalebPostBattle:
 	.string "Or is is calamari...$"
