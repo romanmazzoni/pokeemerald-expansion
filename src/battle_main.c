@@ -112,7 +112,7 @@ static void SetActionsAndBattlersTurnOrder(void);
 static void UpdateBattlerPartyOrdersOnSwitch(u32 battler);
 static bool8 AllAtActionConfirmed(void);
 static void TryChangeTurnOrder(void);
-static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickClawRandom, u32 *quickDrawRandom);
+static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickClawRandom, u32 *quickDrawRandom, u32 *firstStrikeRandom);
 static void CheckChangingTurnOrderEffects(void);
 static void FreeResetData_ReturnToOvOrDoEvolutions(void);
 static void ReturnFromBattleToOverworld(void);
@@ -4912,17 +4912,15 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
                               enum ItemHoldEffect holdEffectBattler1, enum ItemHoldEffect holdEffectBattler2, u32 speedBattler1, u32 speedBattler2, s32 priority1, s32 priority2)
 {
     u32 strikesFirst = 0;
-    //do the firststrikem roll
-    u8 battler1Prio = RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[battler1].species].firstStrike, 255);
-    u8 battler2Prio = RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[battler2].species].firstStrike, 255);
+    
 
     if (priority1 == priority2)
     {
         // Quick Claw / Quick Draw / Custap Berry - always first
         // Stall / Mycelium Might - last but before Lagging Tail
         // Lagging Tail - always last
-        bool32 battler1HasQuickEffect = gProtectStructs[battler1].quickDraw || gProtectStructs[battler1].usedCustapBerry;
-        bool32 battler2HasQuickEffect = gProtectStructs[battler2].quickDraw || gProtectStructs[battler2].usedCustapBerry;
+        bool32 battler1HasQuickEffect = gProtectStructs[battler1].quickDraw || gProtectStructs[battler1].usedCustapBerry || gProtectStructs[battler1].isFirstStrike;
+        bool32 battler2HasQuickEffect = gProtectStructs[battler2].quickDraw || gProtectStructs[battler2].usedCustapBerry || gProtectStructs[battler2].isFirstStrike;
         bool32 battler1HasStallingAbility = BattlerHasTrait(battler1, ABILITY_STALL) || (BattlerHasTrait(battler1, ABILITY_MYCELIUM_MIGHT) && IsBattleMoveStatus(gChosenMoveByBattler[battler1]));
         bool32 battler2HasStallingAbility = BattlerHasTrait(battler2, ABILITY_STALL) || (BattlerHasTrait(battler2, ABILITY_MYCELIUM_MIGHT) && IsBattleMoveStatus(gChosenMoveByBattler[battler2]));
 
@@ -4930,14 +4928,6 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
             strikesFirst = 1;
         else if (battler2HasQuickEffect && !battler1HasQuickEffect)
             strikesFirst = -1;  
-        else if (battler1Prio > battler2Prio) {//Calculate if firstStrike activates
-            strikesFirst = 1;
-            gProtectStructs[battler1].isFirstStrike = TRUE;
-        }
-        else if (battler2Prio > battler1Prio){
-            strikesFirst = -1;
-            gProtectStructs[battler2].isFirstStrike = TRUE;
-        }
         else if (holdEffectBattler1 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler2 != HOLD_EFFECT_LAGGING_TAIL)
             strikesFirst = -1;
         else if (holdEffectBattler2 == HOLD_EFFECT_LAGGING_TAIL && holdEffectBattler1 != HOLD_EFFECT_LAGGING_TAIL)
@@ -5116,6 +5106,7 @@ static void SetActionsAndBattlersTurnOrder(void)
         {
             u32 quickClawRandom[MAX_BATTLERS_COUNT] = {0};
             u32 quickDrawRandom[MAX_BATTLERS_COUNT] = {0};
+            u32 firstStrikeRandom[MAX_BATTLERS_COUNT] = {0};
 
             for (battler = 0; battler < gBattlersCount; battler++)
             {
@@ -5138,6 +5129,7 @@ static void SetActionsAndBattlersTurnOrder(void)
                     gBattlerByTurnOrder[turnOrderId] = battler;
                     quickClawRandom[battler] = RandomPercentage(RNG_QUICK_CLAW, GetBattlerHoldEffectParam(battler));
                     quickDrawRandom[battler] = RandomPercentage(RNG_QUICK_DRAW, 30);
+                    firstStrikeRandom[battler] = RandomChance(RNG_FIRSTSTRIKE, gSpeciesInfo[gBattleMons[battler].species].firstStrike, 255);
                     turnOrderId++;
                 }
             }
@@ -5147,7 +5139,7 @@ static void SetActionsAndBattlersTurnOrder(void)
                 {
                     u8 battler1 = gBattlerByTurnOrder[i];
                     u8 battler2 = gBattlerByTurnOrder[j];
-                    TryChangingTurnOrderEffects(battler1, battler2, quickClawRandom, quickDrawRandom);
+                    TryChangingTurnOrderEffects(battler1, battler2, quickClawRandom, quickDrawRandom, firstStrikeRandom);
                     if (gActionsByTurnOrder[i] != B_ACTION_USE_ITEM
                         && gActionsByTurnOrder[j] != B_ACTION_USE_ITEM
                         && gActionsByTurnOrder[i] != B_ACTION_SWITCH
@@ -5178,6 +5170,7 @@ static void TurnValuesCleanUp(bool8 var0)
             gProtectStructs[i].quash = FALSE;
             gProtectStructs[i].usedCustapBerry = FALSE;
             gProtectStructs[i].quickDraw = FALSE;
+            gProtectStructs[i].isFirstStrike = FALSE;
             memset(&gQueuedStatBoosts[i], 0, sizeof(struct QueuedStatBoost));
         }
         else
@@ -5324,7 +5317,7 @@ static void TryChangeTurnOrder(void)
     }
 }
 
-static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickClawRandom, u32 *quickDrawRandom)
+static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickClawRandom, u32 *quickDrawRandom, u32 *firstStrikeRandom)
 {
     //u32 ability1 = GetBattlerAbility(battler1);
     enum ItemHoldEffect holdEffectBattler1 = GetBattlerHoldEffect(battler1, TRUE);
@@ -5341,6 +5334,9 @@ static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickCl
      || (holdEffectBattler1 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler1, 4, gBattleMons[battler1].item))))
         gProtectStructs[battler1].usedCustapBerry = TRUE;
 
+    if (firstStrikeRandom[battler1] && !firstStrikeRandom[battler2])
+        gProtectStructs[battler1].isFirstStrike = TRUE;
+
     // Battler 2
     // Quick Draw
     if (BattlerHasTrait(battler2, ABILITY_QUICK_DRAW) && !IsBattleMoveStatus(gChosenMoveByBattler[battler2]) && quickDrawRandom[battler2])
@@ -5350,6 +5346,9 @@ static void TryChangingTurnOrderEffects(u32 battler1, u32 battler2, u32 *quickCl
      && ((holdEffectBattler2 == HOLD_EFFECT_QUICK_CLAW && quickClawRandom[battler2])
      || (holdEffectBattler2 == HOLD_EFFECT_CUSTAP_BERRY && HasEnoughHpToEatBerry(battler2, 4, gBattleMons[battler2].item))))
         gProtectStructs[battler2].usedCustapBerry = TRUE;
+
+    if (!firstStrikeRandom[battler1] && firstStrikeRandom[battler2])
+        gProtectStructs[battler2].isFirstStrike = TRUE;
 }
 
 static void CheckChangingTurnOrderEffects(void)

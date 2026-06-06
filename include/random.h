@@ -201,6 +201,7 @@ enum RandomTag
     RNG_HEALER,
     RNG_DEXNAV_ENCOUNTER_LEVEL,
     RNG_PARRY,
+    RNG_FIRSTSTRIKE,
     RNG_WAXING,
 };
 
