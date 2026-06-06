@@ -17276,25 +17276,113 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - stone edge
 
 === TRAINER_LEAF ===
-Name: LEAF
+Name: Roman
 Class: Rival
-Pic: Leaf
+Pic: Parasol Lady
 Gender: Female
-Music: Male
+Music: Female
 Double Battle: No
 
-Bulbasaur
-Level: 5
-IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Cinderace @ Choice band
+Level: 77
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- pyro ball
+- u turn
+- sucker punch
+- surging strikes
+
+Regigigas @ chesto berry
+Level: 77
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- body slam
+- knock off
+- rest
+- avalanche
+
+Porygon5 @ upgrade
+Level: 75
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- tri attack
+- charge beam
+- ice beam
+- recover
+
+Shuckool @ leftovers
+Level: 68
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- body press
+- pain split
+- wrap
+- iron defense
+
+Gigalith @ weakness policy
+Level: 78
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Topsy turvy
+- Head smash
+- Rock Polish
+- Glacial Lance
+
+Cinderace @ expert belt
+Level: 82
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pyro ball
+- Spectral thief
+- Wicked blow
+- Extreme speed
 
 === TRAINER_BRENDAN_PLACEHOLDER ===
-Name: BRENDAN
-Class: RS Protag
-Pic: RS Brendan
+Name: Adonu
+Class: Rival
+Pic: Gentleman
 Gender: Male
 Music: Male
 Double Battle: No
 
-Groudon
-Level: 5
-IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Sceptile @ Miracle seed
+Level: 76
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- leaf storm
+- leaf blade
+- substitute
+- close combat
+
+Absol @ Expert belt
+Level: 76
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- spikes
+- knock off
+- giga impact
+- payback
+
+Hariyama @ focus band
+Level: 78
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- stealth rock
+- heavy slam
+- thunderous kick
+- jaw lock
+
+Dragonite @ Yache berry
+Level: 77
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- hyper beam
+- scale shot
+- wing attack
+- magical torque
+
+blastoise @ leftovers
+Level: 78
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- scald
+- toxic
+- rapid spin
+- ice beam
+
+arcanine @ heavy duty boots
+Level: 80
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- flare blitz
+- morning sun
+- drain punch
+- drill run
