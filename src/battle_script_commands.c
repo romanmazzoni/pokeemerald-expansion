@@ -6175,10 +6175,10 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
 
     //CALCULATE HOTSTREAK
-    if (IsBattlerAlive(battlerAtk) && !IsBattlerAlive(battlerDef) && gBattleMons[battlerAtk].hotStreak /2 > 0 
+    if (IsBattlerAlive(battlerAtk) && !IsBattlerAlive(battlerDef) && gBattleMons[battlerAtk].hotStreak /3 > 0 
         && gBattleMons[battlerAtk].maxHP > gBattleMons[battlerAtk].hp)
         {
-            gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[battlerAtk].hotStreak / 2;
+            gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[battlerAtk].hotStreak / 3;
                 gBattleStruct->moveDamage[gBattlerAttacker] = GetDrainedBigRootHp(gBattlerAttacker, gBattleStruct->moveDamage[gBattlerAttacker]);
                 gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_IGNORE_DISGUISE;
                 effect = TRUE;

@@ -868,7 +868,7 @@ Route109_Text_LolaPostBattle:
 
 Route109_Text_LolaRegister:
 	.string "Me?\n"
-	.string "You want me on your cs team?$"
+	.string "You want me on your CS team?$"
 
 Route109_Text_LolaRematchIntro:
 	.string "I learned 2 new lineups!$"
@@ -1216,7 +1216,7 @@ Route111_Text_DrewDefeat:
 
 Route111_Text_DrewPostBattle:
 	.string "I'm gonna go back to listening to\n"
-	.string "camel by camel.\p"
+	.string "Camel by Camel.\p"
 	.string "I love this song for some reason!$"
 
 Route111_Text_HeidiIntro:
