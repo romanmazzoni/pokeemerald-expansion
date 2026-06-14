@@ -35,6 +35,7 @@
 #include "pokemon_sprite_visualizer.h"
 #include "pokemon_storage_system.h"
 #include "pokemon_summary_screen.h"
+#include "reshow_battle_screen.h"
 #include "region_map.h"
 #include "scanline_effect.h"
 #include "sound.h"
@@ -383,6 +384,7 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n);
 static void PrintLeftBonusStats(void);
 static void BufferRightBonusStats(void);
 static void PrintRightBonusStats(void);
+static bool32 ShouldHideBonusStatsPage(void);
 
 
 static const struct BgTemplate sBgTemplates[] =
@@ -1441,6 +1443,11 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
         break;
     }
 
+    // In battle we don't need the bonus stats page, and skipping it avoids
+    // extra window pressure in move-learn summary contexts.
+    if (gMain.inBattle)
+        sMonSummaryScreen->maxPageIndex = PSS_PAGE_CONTEST_MOVES;
+
     if (mode == SUMMARY_MODE_RELEARNER_BATTLE)
         sMonSummaryScreen->currPageIndex = PSS_PAGE_BATTLE_MOVES;
     else if (mode == SUMMARY_MODE_RELEARNER_CONTEST)
@@ -1510,6 +1517,7 @@ static bool8 LoadGraphics(void)
         gMain.state++;
         break;
     case 3:
+        ResetTasks();
         ResetSpriteData();
         gMain.state++;
         break;
@@ -3347,10 +3355,22 @@ static void ResetWindows(void)
 {
     u8 i;
 
+    FreeAllWindowBuffers();
     InitWindows(sSummaryTemplate);
     DeactivateAllTextPrinters();
     for (i = 0; i < PSS_LABEL_WINDOW_END; i++)
         FillWindowPixelBuffer(i, PIXEL_FILL(0));
+
+    // The battle move-learn summary never exposes the bonus stats page, so free
+    // those windows to leave headroom for move list/PP/description windows.
+    if (ShouldHideBonusStatsPage())
+    {
+        RemoveWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT);
+        RemoveWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT);
+        RemoveWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2);
+        RemoveWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2);
+    }
+
     for (i = 0; i < ARRAY_COUNT(sMonSummaryScreen->windowIds); i++)
         sMonSummaryScreen->windowIds[i] = WINDOW_NONE;
 }
@@ -3478,7 +3498,8 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_TITLE, gText_PkmnSkills, 2, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_BATTLE_MOVES_TITLE, gText_BattleMoves, 2, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_CONTEST_MOVES_TITLE, gText_ContestMoves, 2, 1, 0, 1);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_BONUS_STATS_TITLE, gText_PkmnBonusStats, 2, 1, 0, 1);
+    if (!ShouldHideBonusStatsPage())
+        PrintTextOnWindow(PSS_LABEL_WINDOW_BONUS_STATS_TITLE, gText_PkmnBonusStats, 2, 1, 0, 1);
 
     ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
     
@@ -3497,40 +3518,42 @@ static void PrintPageNamesAndStats(void)
     statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Speed2, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_Speed2, statsXPos, 33, 0, 1);
 
-    
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerAttack, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerAttack, statsXPos, 1, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerDefense, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerDefense, statsXPos, 17, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Armor, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_Armor, statsXPos, 33, 0, 1);
-    
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_TrueDamage, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_TrueDamage, statsXPos, 1, 0, 1);
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HotStreak, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_HotStreak, statsXPos, 17, 0, 1);
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Gambit, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_Gambit, statsXPos, 33, 0, 1);
+    if (!ShouldHideBonusStatsPage())
+    {
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerAttack, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerAttack, statsXPos, 1, 0, 1);
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_LerDefense, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_LerDefense, statsXPos, 17, 0, 1);
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Armor, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT, gText_Armor, statsXPos, 33, 0, 1);
 
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Luck, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_Luck, statsXPos, 1, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_CritChance, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_CritChance, statsXPos, 17, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_DoubleHit, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_DoubleHit, statsXPos, 33, 0, 1);
-    
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Waxing, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Waxing, statsXPos, 1, 0, 1);
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Sexism, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Sexism, statsXPos, 17, 0, 1);
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Parry, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Parry, statsXPos, 33, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_TrueDamage, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_TrueDamage, statsXPos, 1, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HotStreak, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_HotStreak, statsXPos, 17, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Gambit, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT, gText_Gambit, statsXPos, 33, 0, 1);
 
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_lifeSteal, 42);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_lifeSteal, statsXPos, 49, 0, 1);
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Luck, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_Luck, statsXPos, 1, 0, 1);
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_CritChance, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_CritChance, statsXPos, 17, 0, 1);
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_DoubleHit, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_DoubleHit, statsXPos, 33, 0, 1);
 
-    statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_firstStrike, 36);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_firstStrike, statsXPos, 49, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Waxing, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Waxing, statsXPos, 1, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Sexism, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Sexism, statsXPos, 17, 0, 1);
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Parry, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_Parry, statsXPos, 33, 0, 1);
+
+        statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_lifeSteal, 42);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_LEFT2, gText_lifeSteal, statsXPos, 49, 0, 1);
+
+        statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_firstStrike, 36);
+        PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_BONUS_STATS_RIGHT2, gText_firstStrike, statsXPos, 49, 0, 1);
+    }
 
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_ExpPoints, 6, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_EXP, gText_NextLv, 6, 17, 0, 1);
@@ -3540,6 +3563,11 @@ static void PrintPageNamesAndStats(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_APPEAL_JAM, gText_Appeal, 0, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_APPEAL_JAM, gText_Jam, 0, 17, 0, 1);
     PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PROMPT_RELEARN, gText_Relearn, 0, 4, 0, 0, FONT_SMALL);
+}
+
+static bool32 ShouldHideBonusStatsPage(void)
+{
+    return gMain.inBattle;
 }
 
 static void PutPageWindowTilemaps(u8 page)
@@ -3685,7 +3713,8 @@ static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 te
     if (*windowIdPtr == WINDOW_NONE)
     {
         *windowIdPtr = AddWindow(&template[templateId]);
-        FillWindowPixelBuffer(*windowIdPtr, PIXEL_FILL(0));
+        if (*windowIdPtr != WINDOW_NONE)
+            FillWindowPixelBuffer(*windowIdPtr, PIXEL_FILL(0));
     }
     return *windowIdPtr;
 }
@@ -4479,7 +4508,13 @@ static void Task_PrintBattleMoves(u8 taskId)
         if (sMonSummaryScreen->mode == SUMMARY_MODE_SELECT_MOVE)
         {
             if (sMonSummaryScreen->newMove != MOVE_NONE || sMonSummaryScreen->firstMoveIndex != MAX_MON_MOVES)
-                PrintMoveDetails(data[1]);
+            {
+                // Resolve the move at print time so this task can't overwrite the live hover selection with stale data.
+                if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES)
+                    PrintMoveDetails(sMonSummaryScreen->newMove);
+                else
+                    PrintMoveDetails(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]);
+            }
         }
         break;
     case 8:
@@ -4628,6 +4663,8 @@ static void PrintContestMoveDescription(u8 moveSlot)
 static void PrintMoveDetails(u16 move)
 {
     u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_DESCRIPTION);
+
+
     FillWindowPixelBuffer(windowId, PIXEL_FILL(0));
     if (move != MOVE_NONE)
     {
@@ -4637,6 +4674,8 @@ static void PrintMoveDetails(u16 move)
                 ShowCategoryIcon(GetBattleMoveCategory(move));
             PrintMovePowerAndAccuracy(move);
             PrintTextOnWindow(windowId, GetMoveDescription(move), 6, 1, 0, 0);
+            PutWindowTilemap(windowId);
+            CopyWindowToVram(windowId, COPYWIN_FULL);
         }
         else
         {
