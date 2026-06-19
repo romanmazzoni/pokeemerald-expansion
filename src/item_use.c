@@ -850,6 +850,12 @@ void ItemUseOutOfBattle_AbilityCapsule(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_GenderPatch(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_GenderPatch;
+    SetUpItemUseCallback(taskId);
+}
+
 void ItemUseOutOfBattle_AbilityPatch(u8 taskId)
 {
     gItemUseCB = ItemUseCB_AbilityPatch;

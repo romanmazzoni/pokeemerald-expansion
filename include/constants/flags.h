@@ -89,7 +89,7 @@
 #define FLAG_135cave1    0x4B // Unused Flag
 #define FLAG_135cave2    0x4C // Unused Flag
 #define FLAG_135cave3    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
+#define FLAG_GENDER_PATCH    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
 // Scripts

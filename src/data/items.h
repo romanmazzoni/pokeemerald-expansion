@@ -1551,6 +1551,23 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_AbilityPatch,
     },
 
+    [ITEM_GENDER_PATCH] =
+    {
+        .name = _("Gender Patch"),
+        .pluralName = _("Gender Patches"),
+        .price = (I_PRICE >= GEN_9) ? 100 : 20,
+        .holdEffectParam = 0,
+        .description = COMPOUND_STRING(
+            "Swaps a Pokémon's\n"
+            "gender into the\n"
+            "opposite gender."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_GenderPatch,
+        .iconPic = gItemIcon_AbilityPatch,
+        .iconPalette = gItemIconPalette_AbilityPatch,
+    },
+
 // Mints
 
     [ITEM_LONELY_MINT] =
