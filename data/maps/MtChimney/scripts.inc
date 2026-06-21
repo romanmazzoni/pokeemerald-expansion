@@ -657,8 +657,8 @@ MtChimney_Text_ArchieGoStopTeamMagma:
 	.string "of TEAM MAGMA are up to!\p"
 	.string "They're trying to inject the stolen\n"
 	.string "METEORITE's power into the volcano!\p"
-	.string "Give Grunt1 more land to build\n"
-	.string "a bigger house!$"
+	.string "they want to give Grunt1 more land \n"
+	.string "to build a bigger house!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
 	.string "ARCHIE: Grrr…\p"
