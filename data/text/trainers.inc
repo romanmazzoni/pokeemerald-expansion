@@ -1223,10 +1223,11 @@ Route111_Text_HeidiIntro:
 	.string "I take the moon and I take the sun!$"
 
 Route111_Text_HeidiDefeat:
-	.string "You take everything that seems like fun!$"
+	.string "You take everything that seems like\n"
+	.string "fun!$"
 
 Route111_Text_HeidiPostBattle:
-	.string "Rada rada rada, rada rada$"
+	.string "Rada rada rada, rada rada.$"
 
 Route111_Text_BeauIntro:
 	.string "Wearing these GO-GOGGLES makes me\n"
@@ -1404,7 +1405,7 @@ Route111_Text_BryanDefeat:
 
 Route111_Text_BryanPostBattle:
 	.string "I might have some character traits\n"
-	.string "that some might see as innocence\l$"
+	.string "that some might see as innocence\l"
 	.string "or naive.\p"
 	.string "That's because I have discovered peace\n"
 	.string "and happiness in my soul.\p"

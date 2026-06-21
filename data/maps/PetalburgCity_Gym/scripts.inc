@@ -1253,7 +1253,7 @@ PetalburgCity_Gym_Text_NormanIntro:
 	.string "DAD: Hm…\n"
 	.string "I can tell by the number of BADGES\l"
 	.string "that you've earned that you\l"
-	.string "You have 4 gym badges.\p"
+	.string "have 4 gym badges.\p"
 	.string "{PLAYER}…\p"
 	.string "I'm so happy that\n"
 	.string "you have 4 gym badges.\p"
