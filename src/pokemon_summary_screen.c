@@ -1517,7 +1517,6 @@ static bool8 LoadGraphics(void)
         gMain.state++;
         break;
     case 3:
-        ResetTasks();
         ResetSpriteData();
         gMain.state++;
         break;
@@ -4509,11 +4508,7 @@ static void Task_PrintBattleMoves(u8 taskId)
         {
             if (sMonSummaryScreen->newMove != MOVE_NONE || sMonSummaryScreen->firstMoveIndex != MAX_MON_MOVES)
             {
-                // Resolve the move at print time so this task can't overwrite the live hover selection with stale data.
-                if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES)
-                    PrintMoveDetails(sMonSummaryScreen->newMove);
-                else
-                    PrintMoveDetails(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]);
+                PrintMoveDetails(data[1]);
             }
         }
         break;
@@ -4674,8 +4669,7 @@ static void PrintMoveDetails(u16 move)
                 ShowCategoryIcon(GetBattleMoveCategory(move));
             PrintMovePowerAndAccuracy(move);
             PrintTextOnWindow(windowId, GetMoveDescription(move), 6, 1, 0, 0);
-            PutWindowTilemap(windowId);
-            CopyWindowToVram(windowId, COPYWIN_FULL);
+
         }
         else
         {

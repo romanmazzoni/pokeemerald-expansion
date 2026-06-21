@@ -4690,7 +4690,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .sexism = 72,                                                                                   \
         .hotStreak = 48,                                                                                \
         .doubleHit = 72,                                                                                \
-        .innates = {ABILITY_POWER_OF_ALCHEMY, ABILITY_WONDER_GUARD, ABILITY_GORILLA_TACTICS},           \
+        .innates = {ABILITY_ARMOR_SHREAD, ABILITY_WONDER_GUARD, ABILITY_GORILLA_TACTICS},           \
         .types = MON_TYPES(TYPE_PSYCHIC),                                                               \
         .catchRate = 225,                                                                               \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 118 : 61,                                         \

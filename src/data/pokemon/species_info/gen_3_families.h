@@ -3723,7 +3723,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .sexism = 25,
         .hotStreak = 55,
         .doubleHit = 48,
-        .innates = {ABILITY_POWER_OF_ALCHEMY},
+        .innates = {ABILITY_ARMOR_SHREAD},
         .types = MON_TYPES(TYPE_BUG, TYPE_WATER),
         .catchRate = 200,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 54 : 63,
@@ -3812,7 +3812,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .hotStreak = 7,
         .doubleHit = 140,
         .catchRate = 75,
-        .innates = {ABILITY_POWER_OF_ALCHEMY, ABILITY_COLOR_CHANGE, ABILITY_DETHRONE},
+        .innates = {ABILITY_ARMOR_SHREAD, ABILITY_COLOR_CHANGE, ABILITY_DETHRONE},
     #if P_UPDATED_EXP_YIELDS >= GEN_7
         .expYield = 159,
     #elif P_UPDATED_EXP_YIELDS >= GEN_5
