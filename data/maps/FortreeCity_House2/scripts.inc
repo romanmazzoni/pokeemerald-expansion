@@ -43,8 +43,8 @@ FortreeCity_House2_EventScript_WrongGuess::
 
 FortreeCity_House2_Text_HiddenPowersArousedByNature:
 	.string "People… POKéMON…\p"
-	.string "Their hidden power id\n"
-	.string "a damage-dealing Normal-type move\l"
+	.string "Their hidden power id…\n"
+	.string "A damage-dealing Normal-type move\l"
 	.string "introduced in Generation II. Although\l"
 	.string "it appears as a Normal-type move,\l"
 	.string "Hidden Power's actual type varies. It\l"
@@ -85,8 +85,7 @@ FortreeCity_House2_Text_ExplainHiddenPower:
 	.string "Hidden Power's actual type varies. It\l"
 	.string "was TM10 from Generation II to Pokémon\l"
 	.string "Ultra Sun and Ultra Moon. In Generation\l"
-	.string "VIII, it is the signature move of Unown.\p"
-	.string "VIII, it is the signature move of Unown.\p"
+	.string "VIII, it is the signature move of Unown.$"
 
 FortreeCity_House2_Text_YouGuessedWrong:
 	.string "No, too bad.\n"

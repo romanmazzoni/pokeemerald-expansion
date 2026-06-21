@@ -26,4 +26,6 @@ FortreeCity_House3_Text_OhYouHavePokedex:
 	.string "What's that thing you have there?\p"
 	.string "… … … … … …\p"
 	.string "Oh, it's called a POKéDEX?\n"
-	.string "It's really awesome!$"
+	.string "It's really awesome!\p"
+	.string "I bet this is the only romhack\n"
+	.string "that has a POKéDEX!$"

@@ -68,7 +68,7 @@ FortreeCity_House4_Text_BringsWorldCloserTogether:
 	.string "By being together with POKéMON,\n"
 	.string "people make more and more friends.\p"
 	.string "And that brings the world closer\n"
-	.string "together. you should go and buy\l"
+	.string "together. You should go and buy\l"
 	.string "every single pokemon game!!!$"
 
 FortreeCity_House4_Text_GoBirdPokemon:
