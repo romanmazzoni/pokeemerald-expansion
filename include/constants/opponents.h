@@ -269,7 +269,7 @@
 #define TRAINER_GLACIA                      263
 #define TRAINER_DRAKE                       264
 #define TRAINER_ROXANNE_1                   265
-#define TRAINER_BRAWLY_1                    266
+#define TRAINER_BRAWNY_1                    266
 #define TRAINER_WATTSON_1                   267
 #define TRAINER_FLANNERY_1                  268
 #define TRAINER_NORMAN_1                    269
@@ -777,10 +777,10 @@
 #define TRAINER_ROXANNE_3                   771
 #define TRAINER_ROXANNE_4                   772
 #define TRAINER_ROXANNE_5                   773
-#define TRAINER_BRAWLY_2                    774
-#define TRAINER_BRAWLY_3                    775
-#define TRAINER_BRAWLY_4                    776
-#define TRAINER_BRAWLY_5                    777
+#define TRAINER_BRAWNY_2                    774
+#define TRAINER_BRAWNY_3                    775
+#define TRAINER_BRAWNY_4                    776
+#define TRAINER_BRAWNY_5                    777
 #define TRAINER_WATTSON_2                   778
 #define TRAINER_WATTSON_3                   779
 #define TRAINER_WATTSON_4                   780

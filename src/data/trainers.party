@@ -4825,10 +4825,10 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Tackle
 - flail
 
-=== TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+=== TRAINER_BRAWNY_1 ===
+Name: BRAWNY
 Class: Leader
-Pic: Leader Brawly
+Pic: Leader Brawny
 Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
@@ -14518,10 +14518,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Rock Slide
 
-=== TRAINER_BRAWLY_2 ===
-Name: BRAWLY
+=== TRAINER_BRAWNY_2 ===
+Name: BRAWNY
 Class: Leader
-Pic: Leader Brawly
+Pic: Leader Brawny
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
@@ -14560,10 +14560,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belly Drum
 - Earthquake
 
-=== TRAINER_BRAWLY_3 ===
-Name: BRAWLY
+=== TRAINER_BRAWNY_3 ===
+Name: BRAWNY
 Class: Leader
-Pic: Leader Brawly
+Pic: Leader Brawny
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
@@ -14602,10 +14602,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belly Drum
 - Earthquake
 
-=== TRAINER_BRAWLY_4 ===
-Name: BRAWLY
+=== TRAINER_BRAWNY_4 ===
+Name: BRAWNY
 Class: Leader
-Pic: Leader Brawly
+Pic: Leader Brawny
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
@@ -14652,10 +14652,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belly Drum
 - Earthquake
 
-=== TRAINER_BRAWLY_5 ===
-Name: BRAWLY
+=== TRAINER_BRAWNY_5 ===
+Name: BRAWNY
 Class: Leader
-Pic: Leader Brawly
+Pic: Leader Brawny
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore

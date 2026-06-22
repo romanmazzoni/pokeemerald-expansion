@@ -385,23 +385,23 @@ static const struct MatchCallStructTrainer sRoxanneMatchCallHeader =
     .textData = sRoxanneTextScripts
 };
 
-static const match_call_text_data_t sBrawlyTextScripts[] = {
-    { MatchCall_Text_Brawly1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Brawly2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Brawly3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Brawly4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
+static const match_call_text_data_t sBrawnyTextScripts[] = {
+    { MatchCall_Text_Brawny1, 0xFFFE,              0xFFFF },
+    { MatchCall_Text_Brawny2, 0xFFFF,              0xFFFF },
+    { MatchCall_Text_Brawny3, 0xFFFF,              0xFFFF },
+    { MatchCall_Text_Brawny4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
     { NULL,                   0xFFFF,              0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sBrawlyMatchCallHeader =
+static const struct MatchCallStructTrainer sBrawnyMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_DEWFORD_TOWN,
-    .flag = FLAG_ENABLE_BRAWLY_MATCH_CALL,
-    .rematchTableIdx = REMATCH_BRAWLY,
+    .flag = FLAG_ENABLE_BRAWNY_MATCH_CALL,
+    .rematchTableIdx = REMATCH_BRAWNY,
     .desc = COMPOUND_STRING("THE BIG HIT"),
     .name = NULL,
-    .textData = sBrawlyTextScripts
+    .textData = sBrawnyTextScripts
 };
 
 static const match_call_text_data_t sWattsonTextScripts[] = {
@@ -592,7 +592,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_STEVEN]     = {.npc    = &sStevenMatchCallHeader},
     [MC_HEADER_SCOTT]      = {.npc    = &sScottMatchCallHeader},
     [MC_HEADER_ROXANNE]    = {.leader = &sRoxanneMatchCallHeader},
-    [MC_HEADER_BRAWLY]     = {.leader = &sBrawlyMatchCallHeader},
+    [MC_HEADER_BRAWNY]     = {.leader = &sBrawnyMatchCallHeader},
     [MC_HEADER_WATTSON]    = {.leader = &sWattsonMatchCallHeader},
     [MC_HEADER_FLANNERY]   = {.leader = &sFlanneryMatchCallHeader},
     [MC_HEADER_WINONA]     = {.leader = &sWinonaMatchCallHeader},

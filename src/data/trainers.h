@@ -447,7 +447,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 252
-            .species = SPECIES_DIPPLIN,
+            .species = SPECIES_ROTOM_HEAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 254
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -11958,14 +11958,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 4828
-    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_1] =
+    [DIFFICULTY_NORMAL][TRAINER_BRAWNY_1] =
     {
 #line 4829
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("BRAWNY"),
 #line 4830
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4831
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWNY,
         .encounterMusic_gender =
 #line 4833
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -12126,7 +12126,7 @@ F_TRAINER_FEMALE |
 #line 4896
             .heldItem = ITEM_QUICK_CLAW,
 #line 4898
-            .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
+            .iv = TRAINER_PARTY_IVS(5, 5, 5, 5, 5, 5),
 #line 4897
             .lvl = 22,
             .nature = NATURE_HARDY,
@@ -27268,7 +27268,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10851
-            .species = SPECIES_SPRIGATITO,
+            .species = SPECIES_MEOWSCARADA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10853
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36520,14 +36520,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14521
-    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
+    [DIFFICULTY_NORMAL][TRAINER_BRAWNY_2] =
     {
 #line 14522
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("BRAWNY"),
 #line 14523
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14524
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWNY,
         .encounterMusic_gender =
 #line 14526
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -36619,14 +36619,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14563
-    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_3] =
+    [DIFFICULTY_NORMAL][TRAINER_BRAWNY_3] =
     {
 #line 14564
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("BRAWNY"),
 #line 14565
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14566
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWNY,
         .encounterMusic_gender =
 #line 14568
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -36718,14 +36718,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14605
-    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_4] =
+    [DIFFICULTY_NORMAL][TRAINER_BRAWNY_4] =
     {
 #line 14606
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("BRAWNY"),
 #line 14607
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14608
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWNY,
         .encounterMusic_gender =
 #line 14610
             TRAINER_ENCOUNTER_MUSIC_MALE,
@@ -36835,14 +36835,14 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14655
-    [DIFFICULTY_NORMAL][TRAINER_BRAWLY_5] =
+    [DIFFICULTY_NORMAL][TRAINER_BRAWNY_5] =
     {
 #line 14656
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("BRAWNY"),
 #line 14657
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14658
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerPic = TRAINER_PIC_LEADER_BRAWNY,
         .encounterMusic_gender =
 #line 14660
             TRAINER_ENCOUNTER_MUSIC_MALE,

@@ -328,10 +328,10 @@ const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer rock-hard POK
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro1[] = _("A LEADER of a big GYM bears");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro2[] = _("a lot of responsibility.");
 
-const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct physical action!");
-const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("FIGHTING POKéMON rule!");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("The world awaits me as the");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("next big wave!");
+const u8 gText_MatchCallTheBigHit_Brawny_Strategy[] = _("Direct physical action!");
+const u8 gText_MatchCallTheBigHit_Brawny_Pokemon[] = _("FIGHTING POKéMON rule!");
+const u8 gText_MatchCallTheBigHit_Brawny_Intro1[] = _("The world awaits me as the");
+const u8 gText_MatchCallTheBigHit_Brawny_Intro2[] = _("next big wave!");
 
 const u8 gText_MatchCallSwellShock_Wattson_Strategy[] = _("I choose to electrify.");
 const u8 gText_MatchCallSwellShock_Wattson_Pokemon[] = _("Get shocked by electricity!");
@@ -456,7 +456,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_KIRA_AND_DAN] = MCFLAVOR(YoungCouple_LoisAndHal),
     [REMATCH_WALLY_VR] = MCFLAVOR(PkmnTrainer_Wally),
     [REMATCH_ROXANNE] = MCFLAVOR(RockinWhiz_Roxanne),
-    [REMATCH_BRAWLY] = MCFLAVOR(TheBigHit_Brawly),
+    [REMATCH_BRAWNY] = MCFLAVOR(TheBigHit_Brawny),
     [REMATCH_WATTSON] = MCFLAVOR(SwellShock_Wattson),
     [REMATCH_FLANNERY] = MCFLAVOR(PassionBurn_Flannery),
     [REMATCH_NORMAN] = MCFLAVOR(ReliableOne_Dad),
