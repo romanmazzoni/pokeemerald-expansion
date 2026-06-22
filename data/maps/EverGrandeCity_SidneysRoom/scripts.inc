@@ -66,7 +66,7 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated::
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 	.string "Heh, is that the team you're\n"
-	.string "going to use?.\p"
+	.string "going to use?\p"
 	.string "..............\n"
 	.string "..............\l"
 	.string "..............\p"
@@ -75,7 +75,7 @@ EverGrandeCity_SidneysRoom_Text_IntroSpeech:
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
 	.string "I lost?\p"
-	.string "That's just becuase your\n"
+	.string "That's just because your\n"
 	.string "team was useless!$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
