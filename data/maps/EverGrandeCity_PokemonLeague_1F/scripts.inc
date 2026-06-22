@@ -141,7 +141,5 @@ EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:
 	.string "TRAINER! Believe in yourself and your\n"
 	.string "POKéMON, and go forth!\p"
-	.string "Oh wait, one thing!\p"
-	.string "Please save your game before you\n"
-	.string "enter. The first guy might be\l"
-	.string "in a game crashing mood.$"
+	.string "You got this king!$"
+	
