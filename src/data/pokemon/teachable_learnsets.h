@@ -31503,6 +31503,7 @@ static const u16 sCinderaceTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
+    MOVE_EARTHQUAKE,
     MOVE_REST,
     MOVE_SHADOW_BALL,
     MOVE_SLEEP_TALK,

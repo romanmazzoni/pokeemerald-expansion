@@ -644,7 +644,7 @@ LilycoveCity_Text_SeaRemainsForeverYoung:
 
 LilycoveCity_Text_SixtyYearsAgoHusbandProposed:
 	.string "It was sixty years ago that my husband\n"
-	.string "proposed to me here.\l"
+	.string "proposed to me here.\p"
 	.string "I said no just like aunt may\n"
 	.string "from spider man 3...$"
 

@@ -1161,7 +1161,7 @@ SlateportCity_Text_GabbyWonderfulThanksForInterview:
 SlateportCity_Text_SternWhewFirstInterview:
 	.string "CAPT. STERN: Whew…\p"
 	.string "That was my first time to be filmed for\n"
-	.string "I hope I didn't accidentally metion\p"
+	.string "I hope I didn't accidentally metion\l"
 	.string "my extra toe!$"
 
 SlateportCity_Text_OhPlayerWeMadeDiscovery:
