@@ -2043,7 +2043,6 @@ u8 CreateMirrorTrainerPartyFromTrainer(struct Pokemon *party, const struct Train
             s32 ball = -1;
             u32 personalityHash = GeneratePartyHash(trainer, i);
 
-
             personalityValue += personalityHash << 8;
             //old mirror logic
                 const struct TrainerMon *partyData = trainer->party; 
@@ -2072,7 +2071,6 @@ u8 CreateMirrorTrainerPartyFromTrainer(struct Pokemon *party, const struct Train
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &part1);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &pp);
                 }
-                break;
             //choose ball
             if (B_TRAINER_CLASS_POKE_BALLS >= GEN_7 && ball == -1)
             {
