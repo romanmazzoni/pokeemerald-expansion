@@ -11753,7 +11753,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
     {
 #line 4744
-        .trainerName = _("DRAKE"),
+        .trainerName = _("SCOTTY"),
 #line 4745
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 4746
@@ -15733,7 +15733,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLACE] =
     {
 #line 6328
-        .trainerName = _("WALLACE"),
+        .trainerName = _("LANCE"),
 #line 6329
         .trainerClass = TRAINER_CLASS_CHAMPION,
 #line 6330

@@ -14,7 +14,7 @@ NavelRock_Harbor_EventScript_Sailor::
 	hideobjectat LOCALID_NAVEL_ROCK_SAILOR, MAP_NAVEL_ROCK_HARBOR
 	setvar VAR_0x8004, LOCALID_NAVEL_ROCK_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
-	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
+	warp MAP_LILYCOVE_CITY_HARBOR, 7, 12
 	waitstate
 	release
 	end
