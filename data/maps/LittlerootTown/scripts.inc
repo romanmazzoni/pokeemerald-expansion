@@ -961,7 +961,7 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "Try everything you can!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "There are 101 types of pokémon!\p"
+	.string "There are 27 types of pokémon!\p"
     .string "I'm glad I took time and memorized\n"
     .string "the type effectiveness chart!$"
 
