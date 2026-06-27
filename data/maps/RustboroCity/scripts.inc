@@ -1029,7 +1029,7 @@ RustboroCity_Text_WeShortenItToDevon:
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
 	.string "Hm? A sneaky-looking man?\p"
-	.string "Come to think of it, yes, a fox-\n"
+	.string "Come to think of it, yes, a foxy-\n"
 	.string "looking guy went around the corner.$"
 
 RustboroCity_Text_HaveYouChallengedGym:

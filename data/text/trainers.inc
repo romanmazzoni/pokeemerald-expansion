@@ -747,7 +747,7 @@ Route108_Text_MissyPostBattle:
 
 Route108_Text_CoryIntro:
 	.string "I love FISH-type POKéMON.\n"
-	.string "What clever design!$"
+	.string "Surely I'll find one!$"
 
 Route108_Text_CoryDefeated:
 	.string "Fishing rod? Whats that?$"

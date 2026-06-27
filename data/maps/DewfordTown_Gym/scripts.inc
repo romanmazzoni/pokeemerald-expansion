@@ -287,31 +287,28 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "bound {PLAYER}?\p"
 	.string "DEWFORD's GYM LEADER BRAWNY commands\n"
 	.string "FIGHTING-type POKéMON.\p"
-	.string "Going against him with NORMAL-type\n"
+	.string "Going against him with BRAN-type\n"
 	.string "POKéMON is asking for trouble.\p"
 	.string "FIGHTING POKéMON will lay a serious\n"
-	.string "smack down on NORMAL POKéMON,\l"
-	.string "so be careful!\p"
-	.string "What's worse, the GYM is as dark as\n"
-	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
-	.string "Hey, okay, go for it!$"
+	.string "SMACK DOWN on BRAN POKéMON,\p"
+	.string "Ok I lied about the fighting types\n"
+	.string "but I was hinting that they all know\l"
+	.string "SMACK DOWN, the move SMACK DOWN.$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "Whoah! It's turned too bright in here!\p"
-	.string "Your future is bright, too!$"
+	.string "Lmao none of them knew smack down!\p"
+	.string "Fell for the classic SMACK DOWN trick!$"
 
 DewfordTown_Gym_Text_TakaoIntro:
-	.string "Might is right!\n"
-	.string "Come on!$"
+	.string "A challenger!\n"
+	.string "Glory awaits!$"
 
 DewfordTown_Gym_Text_TakaoDefeat:
-	.string "Not enough power…$"
+	.string "Over 9000…$"
 
 DewfordTown_Gym_Text_TakaoPostBattle:
 	.string "Your skill overcame my strength!\n"
-	.string "Your technique is commendable!$"
+	.string "You're kinda a boring person!$"
 
 DewfordTown_Gym_Text_JocelynIntro:
 	.string "There's no need for BRAWNY to be\n"
@@ -331,40 +328,40 @@ DewfordTown_Gym_Text_JocelynPostBattle:
 
 DewfordTown_Gym_Text_LauraIntro:
 	.string "Don't you dare brush me off!\n"
-	.string "It's not my fault if you cry!$"
+	.string "I'll never lose!$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "Waaaaaaah!\n"
-	.string "I lost!$"
+	.string "Waaaaaaah Waaaaaaah Waaaaaaaaaaaah!\n"
+	.string "Who sent all these babies to fight?$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
 	.string "I battle in the dark to make my heart\n"
 	.string "stronger.\p"
-	.string "But because it's so dark, I can never\n"
-	.string "see BRAWNY's face…$"
+	.string "Why does the move sunny day\n"
+	.string "work in such a dark room?$"
 
 DewfordTown_Gym_Text_LilithIntro:
 	.string "Ufufu…\n"
-	.string "Are you stumbling around in the dark?$"
+	.string "Are you bumbling around in the dark?$"
 
 DewfordTown_Gym_Text_LilithDefeat:
 	.string "Oh, you…\n"
-	.string "I don't want to know you!$"
+	.string "Beat me while bumbling!$"
 
 DewfordTown_Gym_Text_LilithPostBattle:
 	.string "You deserve to stay lost and end up\n"
-	.string "back at the entrance again!$"
+	.string "dead!$"
 
 DewfordTown_Gym_Text_BrendenIntro:
-	.string "I'll show you the gumption of\n"
-	.string "a sailing man!$"
+	.string "Gumption?\n"
+	.string "I'm no english major!$"
 
 DewfordTown_Gym_Text_BrendenDefeat:
-	.string "How'd this happen?\n"
-	.string "It's not like me to lose this way!$"
+	.string "How'd this happen to me?\n"
+	.string "I've made my mistakes!$"
 
 DewfordTown_Gym_Text_BrendenPostBattle:
-	.string "Oh, aye! You're worthy of seeing\n"
+	.string "Oh, aye! You're worthy of seaing\n"
 	.string "our GYM LEADER.$"
 
 DewfordTown_Gym_Text_CristianIntro:
@@ -373,27 +370,26 @@ DewfordTown_Gym_Text_CristianIntro:
 
 DewfordTown_Gym_Text_CristianDefeat:
 	.string "Grrrrr!\n"
-	.string "Vastly overpowered!$"
+	.string "Power Overwhelming!$"
 
 DewfordTown_Gym_Text_CristianPostBattle:
-	.string "You win!\n"
-	.string "Go after that BADGE!$"
+	.string "You built me up, buttercup baby\n"
+	.string "just to let me down and mess me around!$"
 
-DewfordTown_Gym_Text_BrawnyIntro:
+DewfordTown_Gym_Text_BrawlyIntro:
 	.string "I'm BRAWNY!\n"
 	.string "DEWFORD's GYM LEADER!\p"
 	.string "I've been churned in the rough waves\n"
 	.string "of these parts, and I've grown tough\l"
-	.string "in the pitch-black cave!\p"
-	.string "So you wanted to challenge me?\n"
-	.string "Let me see what you're made of!$"
+	.string "I play 10 hours of tf2 a day!\p"
+	.string "9001 hours total, only 4 on sniper!\n"
+	.string "I make b4nny look like a common chump\p"
+	.string "I make dustbowl last look a cake walk!\p"
+	.string "Grass grows birds fly and brother?\n"
+	.string "I end nuzlockes!$"
 
-DewfordTown_Gym_Text_BrawnyDefeat:
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
-	.string "You swamped me!\p"
-	.string "Okay, you've got me.\n"
-	.string "Take this GYM BADGE!$"
+DewfordTown_Gym_Text_BrawlyDefeat:
+	.string "Rafters clear!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} received the KNUCKLE BADGE\n"
@@ -406,19 +402,19 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "And, you'll be able to use the HM move\n"
 	.string "FLASH outside of battle.\p"
 	.string "If you'd like, use this TECHNICAL\n"
-	.string "MACHINE, too.$"
+	.string "MACHINE, too. Its kinda broken.$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "That TM08 contains BULK UP.\p"
-	.string "It's a move that raises both ATTACK\n"
-	.string "and DEFENSE stats.\p"
+	.string "It's what I do every day\n"
+	.string "-Brawny flexes-\p"
 	.string "… … … … … …$"
 
-DewfordTown_Gym_Text_RegisteredBrawny:
+DewfordTown_Gym_Text_RegisteredBrawly:
 	.string "Registered GYM LEADER BRAWNY\n"
 	.string "in the POKéNAV.$"
 
-DewfordTown_Gym_Text_BrawnyPostBattle:
+DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among TRAINERS one day!$"
@@ -431,7 +427,7 @@ DewfordTown_Gym_Text_GymStatueCertified:
 	.string "BRAWNY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-DewfordTown_Gym_Text_BrawnyPreRematch:
+DewfordTown_Gym_Text_BrawlyPreRematch:
 	.string "BRAWNY: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
@@ -439,18 +435,18 @@ DewfordTown_Gym_Text_BrawnyPreRematch:
 	.string "Show me how much higher\n"
 	.string "you've gone!$"
 
-DewfordTown_Gym_Text_BrawnyRematchDefeat:
+DewfordTown_Gym_Text_BrawlyRematchDefeat:
 	.string "Wow!\n"
-	.string "Swamped again!$"
+	.string "Thats kinda BS!$"
 
-DewfordTown_Gym_Text_BrawnyPostRematch:
+DewfordTown_Gym_Text_BrawlyPostRematch:
 	.string "BRAWNY: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
-	.string "It's just like the sea of HOENN!$"
+	.string "Wait I should've said sea the bottom$"
 
-DewfordTown_Gym_Text_BrawnyRematchNeedTwoMons:
+DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "BRAWNY: A wave may draw back, but it\n"
-	.string "always returns to the shore.\p"
+	.string "always returns to im sure.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"
 	.string "Oh? You only have one POKéMON\n"
