@@ -31,7 +31,7 @@ Route118_EventScript_GoodRodFisherman::
 
 Route118_EventScript_ReceiveGoodRod::
 	msgbox Route118_Text_IdenticalMindsTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_GOOD_ROD
+	giveitem ITEM_LIGHT_CLAY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_GOOD_ROD
 	msgbox Route118_Text_TryYourLuckFishing, MSGBOX_DEFAULT
@@ -273,21 +273,21 @@ Route118_Text_IdenticalMindsTakeThis:
 	.string "Take this GOOD ROD!$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "Wherever there's water, try your luck\n"
-	.string "at fishing.$"
+	.string "GOTCHA PUNK!\p"
+	.string "I hate fishing!$"
 
 Route118_Text_DontYouLikeToFish:
 	.string "Don't you like to fish?$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
 	.string "Try catching all sorts of POKéMON\n"
-	.string "with your GOOD ROD.$"
+	.string "with your Light clay. hehe.$"
 
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"
 	.string "cross rivers and the sea if you have\l"
 	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
+	.string "I love riding POKéMON so\n"
 	.string "much!$"
 
 Route118_Text_RouteSignMauville:

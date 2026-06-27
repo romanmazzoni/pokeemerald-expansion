@@ -293,8 +293,8 @@ SSTidalCorridor_Text_CanRestInCabin2:
 	.string "I reckon.\p"
 	.string "You can rest up in your cabin if you'd\n"
 	.string "like. Your cabin's No. 2.\p"
-	.string "The bed in there is soft and plushy.\n"
-	.string "I can attest to how comfy it is!$"
+	.string "Hehe.\n"
+	.string "Poop joke...$"
 
 SSTidalCorridor_Text_WeveArrived:
 	.string "We've arrived!$"
@@ -322,7 +322,7 @@ SSTidalCorridor_Text_BrineyWelcomeAboard:
 	.string "soul as a sailor!$"
 
 SSTidalCorridor_Text_Peeko:
-	.string "PEEKO: Pihyo pihyohyo…$"
+	.string "PEEKO: Piyoyuo Pitoyeyee…$"
 
 SSTidalCorridor_Text_Cabin1:
 	.string "Cabin 1$"
@@ -334,4 +334,13 @@ SSTidalCorridor_Text_Cabin3:
 	.string "Cabin 3$"
 
 SSTidalCorridor_Text_Cabin4:
-	.string "Cabin 4$"
+	.string "Cabin 5\p"
+	.string "...\p"
+	.string "Why did they skip cabin 4?\p"
+	.string "Did you pass by it?\p"
+	.string "Nope.\p"
+	.string "1 2 3 5\p"
+	.string "Guess they just messed up.\p"
+	.string "Not really worth thinking about.\p"
+	.string "Doesn't even impact anything.\p"
+	.string "But you will think about it.$"

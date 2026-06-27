@@ -80,7 +80,7 @@ DewfordTown_EventScript_OldRodFisherman::
 
 DewfordTown_EventScript_GiveOldRod::
 	msgbox DewfordTown_Text_GiveYouOneOfMyRods, MSGBOX_DEFAULT
-	giveitem ITEM_OLD_ROD
+	giveitem ITEM_COVERT_CLOAK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_OLD_ROD
 	msgbox DewfordTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
@@ -703,14 +703,15 @@ DewfordTown_Text_GiveYouOneOfMyRods:
 DewfordTown_Text_ThrowInFishingAdvice:
 	.string "And, as an added bonus, I'll even throw\n"
 	.string "in a little fishing advice!\p"
-	.string "First, you want to face the water,\n"
-	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
-	.string "Sometimes you can snag something\n"
-	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "If you want to fish,\n"
+	.string "play a different romhack.\p"
+	.string "Scratch that.\p"
+	.string "Play a different game.\p"
+	.string "Even OOT got that finishing game.\n"
+	.string "Webfishing is a big one.\l"
+	.string "Hades 1. Hades 2.\l"
+	.string "Regular Emerald version.\l"
+	.string "Just not this game.$"
 
 DewfordTown_Text_ThatsTooBadThen:
 	.string "Oh, is that so?\n"

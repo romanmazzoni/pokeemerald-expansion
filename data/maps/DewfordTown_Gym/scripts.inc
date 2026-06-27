@@ -376,7 +376,7 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "You built me up, buttercup baby\n"
 	.string "just to let me down and mess me around!$"
 
-DewfordTown_Gym_Text_BrawlyIntro:
+DewfordTown_Gym_Text_BrawnyIntro:
 	.string "I'm BRAWNY!\n"
 	.string "DEWFORD's GYM LEADER!\p"
 	.string "I've been churned in the rough waves\n"
@@ -388,7 +388,7 @@ DewfordTown_Gym_Text_BrawlyIntro:
 	.string "Grass grows birds fly and brother?\n"
 	.string "I end nuzlockes!$"
 
-DewfordTown_Gym_Text_BrawlyDefeat:
+DewfordTown_Gym_Text_BrawnyDefeat:
 	.string "Rafters clear!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
@@ -410,11 +410,11 @@ DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "-Brawny flexes-\p"
 	.string "… … … … … …$"
 
-DewfordTown_Gym_Text_RegisteredBrawly:
+DewfordTown_Gym_Text_RegisteredBrawny:
 	.string "Registered GYM LEADER BRAWNY\n"
 	.string "in the POKéNAV.$"
 
-DewfordTown_Gym_Text_BrawlyPostBattle:
+DewfordTown_Gym_Text_BrawnyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among TRAINERS one day!$"
@@ -427,7 +427,7 @@ DewfordTown_Gym_Text_GymStatueCertified:
 	.string "BRAWNY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
-DewfordTown_Gym_Text_BrawlyPreRematch:
+DewfordTown_Gym_Text_BrawnyPreRematch:
 	.string "BRAWNY: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
@@ -435,16 +435,16 @@ DewfordTown_Gym_Text_BrawlyPreRematch:
 	.string "Show me how much higher\n"
 	.string "you've gone!$"
 
-DewfordTown_Gym_Text_BrawlyRematchDefeat:
+DewfordTown_Gym_Text_BrawnyRematchDefeat:
 	.string "Wow!\n"
 	.string "Thats kinda BS!$"
 
-DewfordTown_Gym_Text_BrawlyPostRematch:
+DewfordTown_Gym_Text_BrawnyPostRematch:
 	.string "BRAWNY: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
 	.string "Wait I should've said sea the bottom$"
 
-DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
+DewfordTown_Gym_Text_BrawnyRematchNeedTwoMons:
 	.string "BRAWNY: A wave may draw back, but it\n"
 	.string "always returns to im sure.\p"
 	.string "A giant wave of a talent like you…\n"

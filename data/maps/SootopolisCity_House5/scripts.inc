@@ -14,9 +14,9 @@ SootopolisCity_House5_Text_SootopolisMtPyreConnection:
 	.string "between SOOTOPOLIS and MT. PYRE.\p"
 	.string "My friends and I did some research on\n"
 	.string "it at the lab where I used to work.\p"
-	.string "Now I work at ubisoft.$"
+	.string "Now I work at Ubisoft.$"
 
 SootopolisCity_House5_Text_BrotherUsedToStudySea:
 	.string "My big brother used to study the sea.\p"
-	.string "He got fired for looking at mt pyre.\n"
-	.string "and sootopolis connections instead.$"
+	.string "He got fired for looking at Mt. Pyre.\n"
+	.string "and Sootopolis connections instead.$"

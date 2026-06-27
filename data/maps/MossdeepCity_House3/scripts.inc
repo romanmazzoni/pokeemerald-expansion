@@ -8,7 +8,7 @@ MossdeepCity_House3_EventScript_SuperRodFisherman::
 	msgbox MossdeepCity_House3_Text_YouWantSuperRod, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_House3_EventScript_DeclineSuperRod
 	msgbox MossdeepCity_House3_Text_SuperRodIsSuper, MSGBOX_DEFAULT
-	giveitem ITEM_SUPER_ROD
+	giveitem ITEM_FOCUS_SASH
 	setflag FLAG_RECEIVED_SUPER_ROD
 	msgbox MossdeepCity_House3_Text_TryDroppingRodInWater, MSGBOX_DEFAULT
 	release
@@ -37,8 +37,8 @@ MossdeepCity_House3_Text_SuperRodIsSuper:
 	.string "After all, a SUPER ROD is really super!$"
 
 MossdeepCity_House3_Text_TryDroppingRodInWater:
-	.string "If there's any water, try dropping in\n"
-	.string "your ROD and see what bites!$"
+	.string "Yeah, no fishing in this romhack!\n"
+	.string "I just hate fishing!$"
 
 MossdeepCity_House3_Text_DontYouLikeToFish:
 	.string "Hunh?\n"
