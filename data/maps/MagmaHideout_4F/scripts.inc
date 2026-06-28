@@ -134,11 +134,11 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "I want to see GROUDON, too, but they\n"
+	.string "I want to see GROUNDON, too, but they\n"
 	.string "won't let me see even its tail…\p"
 	.string "It's got me feeling really frustrated.\p"
 	.string "Oh, no!\n"
-	.string "I blabbed about GROUDON!$"
+	.string "I blabbed about GROUNDON!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
 	.string "I guess it's impossible to win if one\n"

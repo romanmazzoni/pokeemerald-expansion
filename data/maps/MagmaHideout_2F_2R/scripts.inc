@@ -49,7 +49,7 @@ MagmaHideout_2F_2R_Text_Grunt6PostBattle:
 MagmaHideout_2F_2R_Text_Grunt7Intro:
 	.string "You can hear tremors here sometimes.\p"
 	.string "Could it be the volcano rattling?\n"
-	.string "Or is it GROU…\p"
+	.string "Or is it GROUN…\p"
 	.string "Whoops!\n"
 	.string "No, no, never mind!$"
 
@@ -65,13 +65,13 @@ MagmaHideout_2F_2R_Text_Grunt7PostBattle:
 
 MagmaHideout_2F_2R_Text_Grunt8Intro:
 	.string "One of our guys was freaking out that\n"
-	.string "he lost his MAGMA EMBLEM…\p"
+	.string "he lost his deadlock match…\p"
 	.string "Wait a minute!\n"
-	.string "Was it you who found it?$"
+	.string "Were you the rem?$"
 
 MagmaHideout_2F_2R_Text_Grunt8Defeat:
 	.string "I'm having trouble believing this…$"
 
 MagmaHideout_2F_2R_Text_Grunt8PostBattle:
-	.string "I'm getting this feeling that our plan\n"
-	.string "is going to end in failure…$"
+	.string "I'm getting this feeling that you\n"
+	.string "shouldn't be at this elo…$"

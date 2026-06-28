@@ -56,7 +56,7 @@ MagmaHideout_2F_1R_Text_Grunt4Intro:
 	.string "An intruder!$"
 
 MagmaHideout_2F_1R_Text_Grunt4Defeat:
-	.string "Graaah!$"
+	.string "THEY'VE DESTROYED OUR GREEN WALKER!$"
 
 MagmaHideout_2F_1R_Text_Grunt4PostBattle:
 	.string "I've already lost.\p"

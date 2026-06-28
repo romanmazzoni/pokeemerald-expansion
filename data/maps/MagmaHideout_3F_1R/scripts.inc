@@ -39,4 +39,4 @@ MagmaHideout_3F_1R_Text_Grunt16PostBattle:
 	.string "Listen to me.\n"
 	.string "TEAM MAGMA is right!\p"
 	.string "Don't listen to TEAM AQUA.\n"
-	.string "Don't believe their lies!$"
+	.string "Archie is a huge dork!$"

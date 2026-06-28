@@ -46,7 +46,5 @@ MagmaHideout_1F_Text_Grunt2Defeat:
 	.string "Taken down!$"
 
 MagmaHideout_1F_Text_Grunt2PostBattle:
-	.string "I won't tell you after all.\n"
-	.string "You'll find out when you get there!\p"
-	.string "It'd be better if you saved surprises\n"
-	.string "to the end, don't you think?$"
+	.string "It was a Cinderace.\n"
+	.string "Really great POKéMON to find!$"
