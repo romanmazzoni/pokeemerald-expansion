@@ -833,7 +833,7 @@ Route110_Text_YouGotBikeFromRydel:
 	.string "the place--it's good marketing!$"
 
 Route110_Text_TwoRoads:
-	.string "Two roads diverged in a yellow wood,\p"
+	.string "Two roads diverged in a yellow wood,\n"
 	.string "And sorry I could not travel both\l"
 	.string "And be one traveler, long I stood\l"
 	.string "And looked down one as far as I could\l"
