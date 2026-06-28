@@ -370,7 +370,7 @@ Route120_Text_StevenGreeting:
 	.string "I should just show you.\l"
 	.string "That would be more fun.\p"
 	.string "{PLAYER}{KUN}, are your POKéMON ready for\n"
-	.string "battle?$"
+	.string "the hardest possible battle?$"
 
 Route120_Text_StevenIllWaitHere:
 	.string "STEVEN: No?\p"
@@ -393,17 +393,17 @@ Route120_Text_StevenUsedDevonScope:
 Route120_Text_StevenGiveDevonScope:
 	.string "STEVEN: I see…\n"
 	.string "Your battle style is intriguing.\p"
-	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
+	.string "Your POKéMON have no objection\n"
+	.string "to sensely beating down a KECLEON.\p"
 	.string "I'd like you to have this\n"
 	.string "DEVON SCOPE.\p"
 	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "KECLEON to annihilate.$"
 
 Route120_Text_StevenGoodbye:
 	.string "STEVEN: {PLAYER}{KUN}.\p"
 	.string "I enjoy seeing POKéMON and TRAINERS\n"
-	.string "who strive together.\p"
+	.string "who strike together.\p"
 	.string "I think you're doing great.\p"
 	.string "Well, let's meet again somewhere.$"
 

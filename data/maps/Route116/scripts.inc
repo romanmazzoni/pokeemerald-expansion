@@ -376,7 +376,7 @@ Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
 
 Route116_Text_GoonHightailedItOutOfTunnel:
 	.string "Nnn… Roar!\p"
-	.string "That goofy goon hightailed it out of\n"
+	.string "That goofy goober booked it out of\n"
 	.string "the tunnel! I can go back to digging!$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
@@ -424,10 +424,10 @@ Route116_Text_MayISeeThoseGlasses:
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
 	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here…$"
+	.string "These are my glasses!\l"
+	.string "Thank you so much for finding them!\p"
+	.string "As a reward,\n"
+	.string "you can keep them!$"
 
 Route116_Text_CantFindGlassesNotHere:
 	.string "Hmm…\n"
@@ -465,6 +465,6 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "Your BAG has several POCKETS.\p"
 	.string "Items you obtain are automatically\n"
 	.string "placed in the appropriate POCKETS.\p"
-	.string "No TRAINER can afford to be without\n"
-	.string "a BAG of their own.$"
+	.string "This romhack gives you extra space\n"
+	.string "within those pockets.$"
 

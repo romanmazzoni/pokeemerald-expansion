@@ -33,7 +33,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
 	.string "My POKéMON has a NAIVE nature, and my\n"
 	.string "friend's has a JOLLY nature.\p"
-	.string "Both of our pokemon are faster\n"
+	.string "Both of our POKéMON are faster\n"
 	.string "than average!$"
 
 RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
@@ -42,7 +42,7 @@ RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 	.string "But no one seems to have any idea how\n"
 	.string "they're different.\p"
 	.string "Wait till they find out about\n"
-	.string "the pokemon combee.$"
+	.string "the POKéMON combee.$"
 
 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 	.string "The man next door gave me an HM!\p"

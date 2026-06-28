@@ -744,11 +744,11 @@ Route110_Text_WeCantTalkAboutAquaActivities:
 
 Route110_Text_KickUpARuckus:
 	.string "I want to get going to SLATEPORT and\n"
-	.string "kick up a ruckus!$"
+	.string "catch some CINDERACES!$"
 
 Route110_Text_MyFirstJobInAqua:
 	.string "This is my first job after joining\n"
-	.string "TEAM AQUA. It's a little scary.$"
+	.string "TEAM AQUA. I gotta kill a guy.$"
 
 Route110_Text_AquaActionsBringSmiles:
 	.string "TEAM AQUA's actions should bring\n"
@@ -762,7 +762,7 @@ Route110_Text_MayLetsBattle:
 	.string "How about a little battle?$"
 
 Route110_Text_MayDefeated:
-	.string "Yikes!\n"
+	.string "Yikers!\n"
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis:
@@ -830,12 +830,29 @@ Route110_Text_YouGotBikeFromRydel:
 	.string "RYDEL, RYDEL, RYDEL, RYDEL, RYDEL…\n"
 	.string "That name's everywhere.\p"
 	.string "You should ride it around all over\n"
-	.string "the place--it's good advertising!$"
+	.string "the place--it's good marketing!$"
 
 Route110_Text_TwoRoads:
-	.string "The two roads, one above, one below…\p"
-	.string "A road each for people and POKéMON.\n"
-	.string "Perhaps that is right and fair.$"
+	.string "Two roads diverged in a yellow wood,\p"
+	.string "And sorry I could not travel both\l"
+	.string "And be one traveler, long I stood\l"
+	.string "And looked down one as far as I could\l"
+	.string "To where it bent in the undergrowth;\l"
+	.string "Then took the other, as just as fair,\l"
+	.string "And having perhaps the better claim,\l"
+	.string "Because it was grassy and wanted wear;\l"
+	.string "Though as for that the passing there\l"
+	.string "Had worn them really about the same,\l"
+	.string "And both that morning equally lay\l"
+	.string "In leaves no step had trodden black.\l"
+	.string "Oh, I kept the first for another day!\l"
+	.string "Yet knowing how way leads on to way,\l"
+	.string "I doubted if I should ever come back.\l"
+	.string "I shall be telling this with a sigh\l"
+	.string "Somewhere ages and ages hence:\l"
+	.string "Two roads diverged in a wood, and I—\l"
+	.string "I took the one less traveled by,\l"
+	.string "And that has made all the difference.$"
 
 Route110_Text_WalkOnTheLowRoad:
 	.string "I don't have a BIKE, so I'll take\n"
@@ -845,13 +862,13 @@ Route110_Text_BikeTechniques:
 	.string "Learning techniques will make BIKE\n"
 	.string "riding even more fun.\p"
 	.string "There are some places that you can\n"
-	.string "reach only by using a BIKE technique.$"
+	.string "reach only by playing hop rock.$"
 
 Route110_Text_WhichShouldIChoose:
 	.string "Which should I choose?\p"
 	.string "Make a beeline for MAUVILLE on\n"
 	.string "CYCLING ROAD, or take the low road\l"
-	.string "and look for POKéMON?$"
+	.string "and make a beeline for MAUVILLE?$"
 
 Route110_Text_CyclingChallengeResultSummary:
 	.string "Number of collisions:\n"
@@ -872,15 +889,15 @@ Route110_Text_ChallengeReactionGood:
 
 Route110_Text_ChallengeReactionOk:
 	.string "I would consider you a work in\n"
-	.string "progress.\p"
-	.string "Still, I hope you don't forget the\n"
-	.string "sheer pleasure of cycling.$"
+	.string "nonsense.\p"
+	.string "You are a danger to society.\n"
+	.string "Please stay off the road.$"
 
 Route110_Text_ChallengeReactionBad:
 	.string "My word… Your cycling skills border\n"
 	.string "on terrifying.\p"
-	.string "Most certainly, you need much more\n"
-	.string "practice riding.$"
+	.string "I think you killed a\n"
+	.string "guy out there.$"
 
 Route110_Text_ChallengeReactionWorst:
 	.string "…I am aghast…\p"
@@ -919,7 +936,7 @@ Route110_Text_AquaWasHere:
 	.string "“TEAM AQUA was here!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
-	.string "“TEAM MAGMA rules!” is what it\n"
+	.string "“Hop on deadlock!” is what it\n"
 	.string "says now.$"
 
 Route110_Text_Route103Sign:
@@ -961,7 +978,7 @@ Route110_Text_ThereIsNoRecord:
 
 Route110_Text_ImagineSeeingYouHere:
 	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
-	.string "Imagine seeing you here!\p"
+	.string "Imagine seeing you here fatty!\p"
 	.string "And where might my {RIVAL} be?$"
 
 Route110_Text_HeardYouInstallMatchCall:

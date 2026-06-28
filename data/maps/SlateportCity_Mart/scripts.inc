@@ -42,5 +42,5 @@ SlateportCity_Mart_Text_GreatBallIsBetter:
 	.string "A GREAT BALL is better than a POKé BALL\n"
 	.string "at catching POKéMON.\p"
 	.string "With this, I should be able to get that\n"
-	.string "elusive POKéMON…$"
+	.string "ultra NECROZMA…$"
 

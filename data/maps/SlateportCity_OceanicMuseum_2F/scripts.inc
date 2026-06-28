@@ -389,9 +389,9 @@ SlateportCity_OceanicMuseum_2F_Text_PressureExperiment:
 	.string "exerts pressure.\p"
 	.string "“In shallow water, the pressure is not\n"
 	.string "very heavy.\p"
-	.string "“However, in extremely deep water,\n"
-	.string "the pressure can reach even tens of\l"
-	.string "tens of pounds on a small area.”$"
+	.string "“However, that is not what is\n"
+	.string "happening here. We could not\l"
+	.string "afford an experiment like that.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_HoennModel:
 	.string "“MODEL OF HOENN REGION”\p"
@@ -410,24 +410,29 @@ SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay:
 SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
 	.string "It's a display on the flow of seawater.\p"
 	.string "“Toward the surface, seawater flows\n"
-	.string "as currents driven by the winds.”$"
+	.string "as currents driven by water flow.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
 	.string "“THE FERRY S.S. TIDAL\p"
 	.string "“A scale replica of the ship under\n"
-	.string "construction at STERN'S SHIPYARD.”$"
+	.string "construction at STERN'S SHIPYARD.”\p"
+	.string "It looks nothing like it.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
 	.string "“SUBMARINE EXPLORER 1\p"
 	.string "“A replica of the high-performance\n"
-	.string "ocean floor exploration submarine.”$"
+	.string "ocean floor exploration submarine.”\p"
+	.string "It looks nothing like one.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
 	.string "“SUBMERSIBLE POD\p"
 	.string "“A replica of a compact, unmanned\n"
-	.string "pod for seafloor exploration.”$"
+	.string "pod for seafloor exploration.”\p"
+	.string "It's just a ball with the word\n"
+	.string "pod painted on it.$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. ANNE\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
+	.string "The replica says S.S. ANEE.$"

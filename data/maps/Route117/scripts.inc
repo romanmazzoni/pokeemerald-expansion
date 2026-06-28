@@ -218,8 +218,8 @@ Route117_EventScript_Aisha::
 Route117_Text_DayCarePokemonHadNewMove:
 	.string "I left my POKéMON at the DAY CARE.\p"
 	.string "When I got it back, it had a new move\n"
-	.string "that I didn't teach it.\l"
-	.string "I was really, really surprised.$"
+	.string "that I didn't teach it.\p"
+	.string "I'm gonna sue.$"
 
 Route117_Text_ArentTheseFlowersPretty:
 	.string "What do you think?\n"
@@ -239,4 +239,4 @@ Route117_Text_RouteSignMauville:
 
 Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "“Let us take your POKéMON.”$"

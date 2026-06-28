@@ -295,14 +295,14 @@ SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
 	.string "haven't you?\p"
 	.string "What will happen to the world if this\n"
 	.string "downpour continues for all eternity?\p"
-	.string "The world's landmass will drown in\n"
-	.string "the deepening sea…$"
+	.string "This DRIZZLE is too strong,\n"
+	.string "even for the OU format…$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
 	.string "ARCHIE: W-what?!\n"
 	.string "Don't get all high and mighty with me!\p"
 	.string "Wasn't it you, TEAM MAGMA, that\n"
-	.string "infuriated GROUDON?\p"
+	.string "wakey wakeyied GROUDON?\p"
 	.string "So long as I have this RED ORB,\n"
 	.string "I should be able to control KYOGRE…\p"
 	.string "I should be able to control it…$"

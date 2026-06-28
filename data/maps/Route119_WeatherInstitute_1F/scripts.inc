@@ -88,7 +88,7 @@ Route119_WeatherInstitute_1F_Text_Grunt4Intro:
 	.string "What's a kid doing here?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "Huh?\n"
+	.string "Huhlucha?\n"
 	.string "I lost?!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
@@ -129,6 +129,6 @@ Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo:
 
 Route119_WeatherInstitute_1F_Text_TakeRestInBed:
 	.string "There's a bed…\n"
-	.string "Let's take a rest.$"
+	.string "Eepy time…$"
 
 

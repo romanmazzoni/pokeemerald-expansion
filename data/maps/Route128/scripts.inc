@@ -244,7 +244,7 @@ Route128_EventScript_Carlee::
 Route128_Text_ArchieWhatHappened:
 	.string "ARCHIE: What happened…\n"
 	.string "What is this wretched scene…\p"
-	.string "Did I…make a horrible mistake?$"
+	.string "Did I…make a big oopsie?$"
 
 Route128_Text_ArchieIOnlyWanted:
 	.string "I…\n"
@@ -257,7 +257,7 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "your dream turned out to be?\p"
 	.string "We have to hurry! We have to do\n"
 	.string "something before the situation goes\l"
-	.string "completely out of control!$"
+	.string "completely un-kyogre-able!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 	.string "MAXIE: {PLAYER}, don't say anything.\p"
@@ -269,17 +269,17 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 	.string "But neither can we stand by and\n"
 	.string "just watch helplessly.\p"
 	.string "The responsibility for putting an end\n"
-	.string "to this falls to ARCHIE and me…$"
+	.string "to us to save the world…$"
 
 Route128_Text_MaxieThisDefiesBelief:
 	.string "MAXIE: This defies belief…\p"
 	.string "Those super-ancient POKéMON…\p"
 	.string "Their power is unbelievable.\n"
-	.string "They've upset the balance of nature…$"
+	.string "This is so cool…$"
 
 Route128_Text_StevenWhatIsHappening:
 	.string "STEVEN: {PLAYER}{KUN}!\n"
-	.string "What is happening?$"
+	.string "What up big dawg?$"
 
 Route128_Text_StevenWholeWorldWillDrown:
 	.string "This is terrible…\p"

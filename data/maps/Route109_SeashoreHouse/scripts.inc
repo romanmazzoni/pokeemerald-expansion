@@ -158,11 +158,11 @@ Route109_SeashoreHouse_Text_DwaynePostBattle:
 
 Route109_SeashoreHouse_Text_JohannaIntro:
 	.string "Boring battles aren't worth the effort.\p"
-	.string "Fiery hot battles are what toughen up\n"
-	.string "TRAINERS and POKéMON!$"
+	.string "I can tell this won't be worth\n"
+	.string "the effort!$"
 
 Route109_SeashoreHouse_Text_JohannaDefeated:
-	.string "That's hot!$"
+	.string "Another boring one!$"
 
 Route109_SeashoreHouse_Text_JohannaPostBattle:
 	.string "Whew, I'm all thirsty.\n"
@@ -173,10 +173,8 @@ Route109_SeashoreHouse_Text_SimonIntro:
 	.string "my POKéMON are, but don't cry!$"
 
 Route109_SeashoreHouse_Text_SimonDefeated:
-	.string "…I lost, but I won't cry…$"
+	.string "…I lost, but I will cry…$"
 
 Route109_SeashoreHouse_Text_SimonPostBattle:
-	.string "If one of my POKéMON knew the move\n"
-	.string "for carrying me across water on its\l"
-	.string "back, I could get rid of this inner tube.$"
+	.string "WAHHH WAHH WAHHHHHHH!!$"
 

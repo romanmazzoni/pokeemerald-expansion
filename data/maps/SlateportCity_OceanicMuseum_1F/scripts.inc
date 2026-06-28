@@ -231,8 +231,8 @@ SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself:
 	.string "Please enjoy yourself.$"
 
 SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney:
-	.string "Oh? I'm sorry, but you don't seem to\n"
-	.string "have enough money.$"
+	.string "Oh? You are the most broke\n"
+	.string "person I have ever seen.$"
 
 SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
 	.string "Oh? You're with that group that\n"
@@ -242,12 +242,12 @@ SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
 
 SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
 	.string "We, TEAM AQUA, exist for the good\n"
-	.string "of all!$"
+	.string "of the ocean!$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
 	.string "We were told to assemble here,\n"
 	.string "so we did, but…\p"
-	.string "Our BOSS, the linchpin, isn't here.$"
+	.string "Our BOSS, ARCHIE, isn't here.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich:
 	.string "If I ripped off the stuff here,\n"
@@ -267,7 +267,7 @@ SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney:
 
 SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
 	.string "I want to learn about the sea and\n"
-	.string "use that knowledge for battling.$"
+	.string "what a boat is.$"
 
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 	.string "I get all giddy and gooey when\n"
@@ -278,8 +278,8 @@ SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
 	.string "The sea is vast without end, and\n"
 	.string "infinitely deep…\p"
-	.string "There must be many POKéMON that\n"
-	.string "we don't know about.$"
+	.string "I'd even say that the HOENN\n"
+	.string "region is mostly water.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
 	.string "I want a sea POKéMON.\p"
@@ -308,14 +308,14 @@ SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis:
 SlateportCity_OceanicMuseum_1F_Text_WhirlpoolExperiment:
 	.string "A blue fluid is spiraling inside\n"
 	.string "a glass vessel.\p"
-	.string "“This is an experiment to create a\n"
-	.string "WHIRLPOOL artificially using wind.”$"
+	.string "“This is an experiment to see\n"
+	.string "if we can spin water.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment:
 	.string "A red ball is bobbing up and down\n"
 	.string "inside a glass vessel.\p"
-	.string "“This is an experiment simulating a\n"
-	.string "WATERFALL using the ball's buoyancy.”$"
+	.string "“This is an experiment simulating\n"
+	.string "nothing at all.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay:
 	.string "It's a sample of soil from the ocean\n"
@@ -323,43 +323,38 @@ SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay:
 	.string "“Over many years, the remains of\n"
 	.string "life-forms settle at the bottom of\l"
 	.string "the sea, making sedimentary layers.\p"
-	.string "“By analyzing these layers, the\n"
-	.string "ancient past is revealed.”$"
+	.string "“By analyzing these layers, we\n"
+	.string "waste one month weekly.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay:
 	.string "It's a sample of beach sand.\p"
-	.string "“Stones from mountains are washed\n"
-	.string "down by rivers where they are\l"
-	.string "chipped and ground down.\p"
-	.string "“They are reduced to grains and end\n"
-	.string "up as sand on beaches.”$"
+	.string "“We stole this sand from a child.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
 	.string "“OCEANIC MINIFACT 1\n"
 	.string "Why is seawater blue?\p"
 	.string "“Light is composed of many colors.\p"
 	.string "“When light passes through water,\n"
-	.string "most kinds of light lose color.\p"
-	.string "“However, blue light retains its\n"
-	.string "color, making the sea appear blue.”$"
+	.string "it gets really warm.\p"
+	.string "“All warm things are blue.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
 	.string "“OCEANIC MINIFACT 2\n"
 	.string "Why is the sea salty?\p"
 	.string "“Seawater contains dissolved salt in\n"
 	.string "the form of sodium and chlorine ions.\p"
-	.string "“These ions leech out of rocks\n"
-	.string "and are carried out to sea by rain.\p"
-	.string "“The concentration of dissolved salt\n"
-	.string "makes the sea salty.”$"
+	.string "“These ions come from our employee\n"
+	.string "named Nigel.\p"
+	.string "“Nigel pours about 5000 tons of\n"
+	.string "salt into the ocean every day.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3:
 	.string "“OCEANIC MINIFACT 3\n"
 	.string "Which is bigger? The sea or land?\p"
 	.string "“The sea covers about 70% of\n"
 	.string "the planet, and the rest is land.\p"
-	.string "“The sea is therefore more than twice\n"
-	.string "the size of land.”$"
+	.string "“The sea is therefore more than ten\n"
+	.string "times the size of land.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_FossilDisplay:
 	.string "It's a fossil with wavy ridges on it.\p"
@@ -373,5 +368,5 @@ SlateportCity_OceanicMuseum_1F_Text_FossilDisplay:
 SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine:
 	.string "A strange machine is rotating under\n"
 	.string "a glass dome.\p"
-	.string "Maybe it's for measuring the depth\n"
-	.string "of something…$"
+	.string "It probably has no use, like\n"
+	.string "most of the things here…$"

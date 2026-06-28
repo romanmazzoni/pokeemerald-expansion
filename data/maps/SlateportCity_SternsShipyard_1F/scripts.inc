@@ -133,7 +133,7 @@ SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing:
 	.string "These and other conditions make\n"
 	.string "the sea change its expression.\p"
 	.string "That's right!\n"
-	.string "The sea is like a living thing!$"
+	.string "The sea is a POKéMON!$"
 
 SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily:
 	.string "I get seasick real easily.\n"

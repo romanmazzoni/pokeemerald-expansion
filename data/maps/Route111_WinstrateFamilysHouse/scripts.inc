@@ -92,11 +92,11 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrong:
 	.string "He must be challenging the POKéMON\n"
 	.string "LEAGUE CHAMPION by now.\p"
 	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "stone that Steves!$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 	.string "My grandson must be challenging the\n"
 	.string "POKéMON LEAGUE CHAMPION by now.\p"
 	.string "Knowing my grandson, he could be the\n"
-	.string "CHAMPION already!$"
+	.string "stone that Steves!$"
 

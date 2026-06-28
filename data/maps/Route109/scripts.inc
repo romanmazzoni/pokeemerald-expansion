@@ -522,8 +522,8 @@ Route109_Text_LittleKidsDartAround:
 	.string "Little kids can dart around so quickly…\p"
 	.string "You don't dare take your eyes off them\n"
 	.string "for an instant. It's very taxing.\p"
-	.string "Mine are with my POKéMON, so they\n"
-	.string "should be okay, but…$"
+	.string "Mine are with my POKéMON, so my\n"
+	.string "GUZZLORD might eat them…$"
 
 Route109_Text_SandCastleTakingLongTime:
 	.string "Our sand castle's taking a long time\n"
@@ -546,10 +546,13 @@ Route109_Text_ZigzagoonPicksUpLitter:
 	.string "Dirty water becomes rain and joins our\n"
 	.string "rivers, which we drink from…\p"
 	.string "If we pollute the sea, it all comes\n"
-	.string "back to haunt us eventually.$"
+	.string "back to haunt us eventually.\p"
+	.string "If only there was a team of people\n"
+	.string "trying to make the ocean so big\l"
+	.string "that we can't pollute it.$"
 
 Route109_Text_ZigzagoonCry:
-	.string "ZIGZAGOON: Guguu?$"
+	.string "ZIGZAGOON: Shazoawoo?$"
 
 Route109_Text_SeashoreHouseSign:
 	.string "SEASHORE HOUSE\p"
@@ -560,5 +563,5 @@ Route109_Text_TrainerTipsSign:
 	.string "TRAINER TIPS\p"
 	.string "POKéMON at the same level may not\n"
 	.string "always have identical stats.\p"
-	.string "POKéMON raised by TRAINERS are said\n"
-	.string "to grow stronger than wild POKéMON.$"
+	.string "I bet your ivs are bad.\n"
+	.string "You should restart.$"
