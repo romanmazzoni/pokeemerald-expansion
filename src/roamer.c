@@ -162,9 +162,6 @@ void InitRoamer(void)
         TryAddRoamer(SPECIES_TAPU_LELE, 40);
         TryAddRoamer(SPECIES_TAPU_BULU, 40);
         TryAddRoamer(SPECIES_TAPU_FINI, 40);
-        TryAddRoamer(SPECIES_WALKING_WAKE, 40);
-        TryAddRoamer(SPECIES_RAGING_BOLT, 40);
-        TryAddRoamer(SPECIES_GOUGING_FIRE, 40);
 
 }
 
