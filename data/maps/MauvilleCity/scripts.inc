@@ -614,14 +614,14 @@ MauvilleCity_Text_WattsonYoungTakeCharge:
 MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "You know, it's cool to have POKéMON\n"
 	.string "battles and stuff…\p"
-	.string "But if your POKéMON gets hurt,\n"
-	.string "you won't forgive yourself!$"
+	.string "But if your POKéMON gets hurt\n"
+	.string "in a nuzlocke, they'll die!$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
 	.string "The roads of this town stretch north\n"
 	.string "and south, and east and west.\p"
-	.string "Because of that, we get all sorts of\n"
-	.string "people coming through.$"
+	.string "Because of that, we has to start\n"
+	.string "a neighborhood watch.$"
 
 MauvilleCity_Text_RydelVeryGenerous:
 	.string "Have you been to RYDEL'S CYCLES yet?\p"
@@ -636,7 +636,7 @@ MauvilleCity_Text_PokemonCanJumpYouOnBike:
 
 MauvilleCity_Text_CitySign:
 	.string "MAUVILLE CITY\n"
-	.string "“The bright and shiny city of fun!”$"
+	.string "“The city of Cinderace!”$"
 
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
