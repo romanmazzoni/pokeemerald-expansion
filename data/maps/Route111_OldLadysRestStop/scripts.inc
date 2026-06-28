@@ -32,7 +32,7 @@ Route111_OldLadysRestStop_Text_RestUpHere:
 	.string "Oh, dear, dear.\n"
 	.string "Aren't your POKéMON exhausted?\p"
 	.string "You really need to care for them.\n"
-	.string "I know how to treat a POKéMON	.$"
+	.string "I know how to treat a POKéMON.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
 	.string "That's right.\n"

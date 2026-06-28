@@ -850,7 +850,7 @@ Route110_Text_TwoRoads:
 	.string "I doubted if I should ever come back.\l"
 	.string "I shall be telling this with a sigh\l"
 	.string "Somewhere ages and ages hence:\l"
-	.string "Two roads diverged in a wood, and I—\l"
+	.string "Two roads diverged in a wood, and I,\l"
 	.string "I took the one less traveled by,\l"
 	.string "And that has made all the difference.$"
 

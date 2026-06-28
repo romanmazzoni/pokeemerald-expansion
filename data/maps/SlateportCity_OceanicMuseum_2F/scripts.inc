@@ -357,8 +357,8 @@ SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
 	.string "out our facilities, though.$"
 
 SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip:
-	.string "I saw a model of a ship here.\p"
-	.string "of Kanal with the little model\n"
+	.string "I saw a model of Kanal\n"
+	.string "with the little model\l"
 	.string "of the building…$"
 
 SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
