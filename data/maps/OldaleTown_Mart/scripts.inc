@@ -58,7 +58,7 @@ OldaleTown_Mart_EventScript_Boy::
 
 OldaleTown_Mart_Text_PokeBallsAreSoldOut:
 	.string "I got a lil hungry :3\n"
-	.string "no more POKé BALLS.$"
+	.string "No more POKé BALLS.$"
 
 OldaleTown_Mart_Text_ImGoingToBuyPokeBalls:
 	.string "I'm going to buy a bunch of POKé BALLS!\n"
