@@ -47,18 +47,13 @@ MtPyre_3F_Text_WilliamPostBattle:
 
 MtPyre_3F_Text_KaylaIntro:
 	.string "Ahahahaha!\p"
-	.string "This is no place for children, least\n"
-	.string "of all you!$"
+	.string "You're so old!$"
 
 MtPyre_3F_Text_KaylaDefeat:
-	.string "I lost that cleanly…$"
+	.string "Unc still got it…$"
 
 MtPyre_3F_Text_KaylaPostBattle:
-	.string "This means my training is still not\n"
-	.string "enough…\p"
-	.string "I've got to keep working toward the\n"
-	.string "summit…\p"
-	.string "Go, me!$"
+	.string "You're like 45.$"
 
 MtPyre_3F_Text_GabrielleIntro:
 	.string "Why have you come here?$"
@@ -72,13 +67,11 @@ MtPyre_3F_Text_GabriellePostBattle:
 	.string "POKéMON that are with you now.\p"
 	.string "And the POKéMON that you will meet\n"
 	.string "in the future…\p"
-	.string "They are all to be equally cherished.\n"
-	.string "Please remember that.$"
+	.string "That is 3 POKéMON.\n"
+	.string "3 is the best number.$"
 
 MtPyre_3F_Text_GabrielleRegister:
-	.string "I would like to see your POKéMON\n"
-	.string "when they grow up some more…\p"
-	.string "Please, I need to see your POKéNAV.$"
+	.string "POKéNAV please.$"
 
 MtPyre_3F_Text_GabrielleRematchIntro:
 	.string "Oh, it's you…\p"
@@ -87,7 +80,7 @@ MtPyre_3F_Text_GabrielleRematchIntro:
 
 MtPyre_3F_Text_GabrielleRematchDefeat:
 	.string "How amazing!\n"
-	.string "You are a special person.$"
+	.string "You are a special person mentally.$"
 
 MtPyre_3F_Text_GabriellePostRematch:
 	.string "POKéMON no longer of this world.\n"

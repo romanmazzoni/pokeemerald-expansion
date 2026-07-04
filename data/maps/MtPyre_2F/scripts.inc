@@ -43,8 +43,8 @@ MtPyre_2F_EventScript_Zander::
 	end
 
 MtPyre_2F_Text_MemoriesOfSkitty:
-	.string "Memories of my darling SKITTY…\n"
-	.string "My eyes overflow thinking about it.$"
+	.string "I love FR-nc…\n"
+	.string "Doober killed the team.$"
 
 MtPyre_2F_Text_TumbledFromFloorAbove:
 	.string "Ooch, ouch… There are holes in the\n"
@@ -53,7 +53,7 @@ MtPyre_2F_Text_TumbledFromFloorAbove:
 	.string "the floor above.$"
 
 MtPyre_2F_Text_MarkIntro:
-	.string "Hey! Are you searching for POKéMON?\n"
+	.string "Hey! Are you a POKéMON?\n"
 	.string "You came along after me! You're rude!$"
 
 MtPyre_2F_Text_MarkDefeat:
@@ -62,7 +62,7 @@ MtPyre_2F_Text_MarkDefeat:
 
 MtPyre_2F_Text_MarkPostBattle:
 	.string "People don't come here often, so\n"
-	.string "I thought there'd be rare POKéMON.$"
+	.string "I thought you were rare POKéMON.$"
 
 MtPyre_2F_Text_LukeIntro:
 	.string "LUKE: We're here on a dare.\p"
@@ -130,5 +130,5 @@ MtPyre_2F_Text_ZanderDefeat:
 
 MtPyre_2F_Text_ZanderPostBattle:
 	.string "I get freaked out every time I see\n"
-	.string "anything move…\p"
+	.string "another person…\p"
 	.string "I shouldn't have come here to train…$"

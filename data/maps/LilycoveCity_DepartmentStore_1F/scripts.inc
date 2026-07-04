@@ -144,18 +144,18 @@ LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore:
 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings:
 	.string "Whenever I come to the DEPARTMENT\n"
 	.string "STORE, I always end up buying all sorts\l"
-	.string "of things because it's so fun.$"
+	.string "of useless crap because it's so fun.$"
 
 LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
 	.string "Today, my mom is going to buy me some\n"
-	.string "nice furniture.$"
+	.string "rare candy.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
 	.string "I'm buying something for my AZUMARILL\n"
 	.string "as a reward for winning a CONTEST.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "AZUMARILL: Maririroo!$"
+	.string "AZUMARILL: Maiairisooopopo!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "1F: SERVICE COUNTER\n"
@@ -179,5 +179,5 @@ LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
 	.string "I want to spread the word about how\n"
-	.string "fun Wireless Communication can be.$"
+	.string "fun The Internet can be.$"
 

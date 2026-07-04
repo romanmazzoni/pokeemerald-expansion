@@ -11983,7 +11983,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_WEEPINBELL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4840
-            .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
 #line 4839
             .lvl = 16,
             .nature = NATURE_HARDY,
@@ -12025,7 +12025,7 @@ F_TRAINER_FEMALE |
 #line 4856
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 4855
-            .lvl = 16,
+            .lvl = 15,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -12128,7 +12128,7 @@ F_TRAINER_FEMALE |
 #line 4898
             .iv = TRAINER_PARTY_IVS(5, 5, 5, 5, 5, 5),
 #line 4897
-            .lvl = 22,
+            .lvl = 21,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -12311,7 +12311,7 @@ F_TRAINER_FEMALE |
 #line 4970
             .heldItem = ITEM_WHITE_HERB,
 #line 4972
-            .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
 #line 4971
             .lvl = 29,
             .nature = NATURE_HARDY,
@@ -12517,7 +12517,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_CARVANHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5054
-            .heldItem = ITEM_AMULET_COIN,
+            .heldItem = ITEM_COBA_BERRY,
 #line 5056
             .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
 #line 5055

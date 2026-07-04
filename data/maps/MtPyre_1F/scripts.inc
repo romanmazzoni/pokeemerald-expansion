@@ -38,9 +38,9 @@ MtPyre_1F_Text_ExplainCleanseTag:
 
 MtPyre_1F_Text_ComeToPayRespects:
 	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
+	.string "to the dead tf2 teamd?\p"
 	.string "You must care for your POKéMON a lot.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
 	.string "This is the final resting place of my\n"
-	.string "ZIGZAGOON. I cherished it…$"
+	.string "ZIGZAGOON. Prollaly a GENGAR now…$"
