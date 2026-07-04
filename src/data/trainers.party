@@ -4837,7 +4837,7 @@ AI: Basic Trainer
 
 weepinbell
 Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - pay day
 - Low Kick
 - poison sting
@@ -4852,7 +4852,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - pluck
 
 foongus @ leftovers 
-Level: 16
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - recover
 - rollout
@@ -4894,7 +4894,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - AURORA beam
 
 Ninjask @ quick claw
-Level: 22
+Level: 21
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - agility
 - air slash
@@ -4969,7 +4969,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 toucannon @ White Herb
 Level: 29
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - beak blast
 - dig
 - fly
@@ -5051,7 +5051,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - stealth rock
 - payback
 
-Carvanha @ amulet coin
+Carvanha @ coba berry
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - topsy turvy
