@@ -17026,9 +17026,9 @@ Level: 72
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_FRANK2 ===
-Name: Frank
-Class: Hiker
-Pic: Hiker
+Name: Oak
+Class: School Kid
+Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -17050,9 +17050,9 @@ Level: 69
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_FRANK3 ===
-Name: Frank
-Class: Hiker
-Pic: Hiker
+Name: Jeff
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
 Music: Male
 Double Battle: No
@@ -17074,9 +17074,9 @@ Level: 68
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_FRANK4 ===
-Name: Frank
-Class: Hiker
-Pic: Hiker
+Name: Daniel
+Class: Parasol Lady
+Pic: Parasol Lady
 Gender: Male
 Music: Male
 Double Battle: No
@@ -17098,9 +17098,9 @@ Level: 68
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_FRANK5 ===
-Name: Frank
-Class: Hiker
-Pic: Hiker
+Name: Vincent
+Class: Expert
+Pic: Expert M
 Gender: Male
 Music: Male
 Double Battle: No
@@ -17122,9 +17122,9 @@ Level: 68
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_FRANK6 ===
-Name: Frank
-Class: Hiker
-Pic: Hiker
+Name: Shady
+Class: Pokemaniac
+Pic: Pokemaniac
 Gender: Male
 Music: Male
 Double Battle: No

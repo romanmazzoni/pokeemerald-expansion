@@ -7698,7 +7698,8 @@ static void Cmd_moveend(void)
                 originallyUsedMove = gChosenMove; // Fallback to chosen move in case attacker is switched out in the middle of an attack resolution (eg red card)
             else
                 originallyUsedMove = gCurrentMove;
-            if (IsDanceMove(originallyUsedMove) && !gBattleStruct->snatchedMoveIsUsed)
+                // check move type
+            if ((IsDanceMove(originallyUsedMove) || moveType == TYPE_BUG || moveType == TYPE_FIRE || moveType == TYPE_FIGHTING) && !gBattleStruct->snatchedMoveIsUsed)
             {
                 u32 battler, nextDancer = 0;
                 bool32 hasDancerTriggered = FALSE;
@@ -7726,7 +7727,7 @@ static void Cmd_moveend(void)
                     }
                     for (battler = 0; battler < gBattlersCount; battler++)
                     {
-                        if (BattlerHasTrait(battler, ABILITY_DANCER) && !gSpecialStatuses[battler].dancerUsedMove)
+                        if ((BattlerHasTrait(battler, ABILITY_DANCER) || BattlerHasTrait(battler, ABILITY_RETURN_FIRE) || BattlerHasTrait(battler, ABILITY_FIGHT_BACK) || BattlerHasTrait(battler, ABILITY_BUG_BACK)) && !gSpecialStatuses[battler].dancerUsedMove)
                         {
                             if (!nextDancer || (gBattleMons[battler].speed < gBattleMons[nextDancer & 0x3].speed))
                                 nextDancer = battler | 0x4;
