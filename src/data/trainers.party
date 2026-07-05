@@ -17220,12 +17220,13 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - rollout
 
 === TRAINER_STEPHEN ===
-Name: RED
+Name: Stephen
 Class: Rival
-Pic: Red
+Pic: Steven
 Gender: Male
 Music: Male
 Double Battle: Yes
+AI: Basic Trainer
 
 Blissey @ leftovers
 Level: 77
