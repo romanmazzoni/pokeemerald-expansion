@@ -3878,7 +3878,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .hotStreak = 66,
         .doubleHit = 60,
         .innates = {ABILITY_RETURN_FIRE, ABILITY_ANGER_POINT},
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND, TYPE_SHOULEIL),
+        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
         .catchRate = 120,
         .expYield = 134,
         .evYield_HP = 2,
@@ -3963,7 +3963,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .hotStreak = 90,
         .doubleHit = 98,
         .innates = {ABILITY_RETURN_FIRE, ABILITY_ANGER_POINT, ABILITY_LIQUID_OOZE},
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND, TYPE_SHOULEIL),
+        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 255,
@@ -11929,7 +11929,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
     #else
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_SHADOW_TAG },
     #endif
