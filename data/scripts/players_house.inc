@@ -333,14 +333,57 @@ PlayersHouse_1F_EventScript_TryRegisterMom::
 PlayersHouse_1F_EventScript_CheckGiveAmuletCoin::
 	goto_if_set FLAG_BADGE05_GET, PlayersHouse_1F_EventScript_TryGiveAmuletCoin
 	goto PlayersHouse_1F_EventScript_MomHealsParty
+	end
 
 PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	goto_if_set FLAG_RECEIVED_AMULET_COIN, PlayersHouse_1F_EventScript_MomHealsParty
 	msgbox PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_AMULET_COIN
 	giveitem ITEM_AMULET_COIN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_AMULET_COIN
+	goto PlayersHouse_1F_EventScript_ReceiveCastform
+	end
+
+PlayersHouse_1F_EventScript_ReceiveCastform::
+	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemonRaikou, MSGBOX_DEFAULT
+	setvar VAR_TEMP_1, SPECIES_RAIKOU
+	givemon SPECIES_RAIKOU, 30, ITEM_DUSK_STONE
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, PlayersHouse_1F_EventScript_ReceiveCastformParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, PlayersHouse_1F_EventScript_ReceiveCastformPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+PlayersHouse_1F_EventScript_ReceiveCastformParty::
+	call PlayersHouse_1F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_1F_EventScript_ExplainCastform
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto PlayersHouse_1F_EventScript_ExplainCastform
+	end
+
+PlayersHouse_1F_EventScript_ReceiveCastformPC::
+	call PlayersHouse_1F_EventScript_ReceivedCastformFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PlayersHouse_1F_EventScript_SendCastformToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto PlayersHouse_1F_EventScript_SendCastformToPC
+	end
+
+PlayersHouse_1F_EventScript_SendCastformToPC::
+	call Common_EventScript_TransferredToPC
+	goto PlayersHouse_1F_EventScript_ExplainCastform
+	end
+
+PlayersHouse_1F_EventScript_ReceivedCastformFanfare::
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_RAIKOU
+	return
+
+PlayersHouse_1F_EventScript_ExplainCastform::
+	msgbox PlayersHouse_1F_Text_MomIsTheBest, MSGBOX_DEFAULT
 	release
 	end
 
@@ -487,14 +530,10 @@ PlayersHouse_1F_EventScript_AirLatiBroadcast::
 
 PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale::
 	setvar VAR_0x8008, MALE
-	setvar VAR_0x8009, LOCALID_PLAYERS_HOUSE_1F_DAD
-	setvar VAR_0x800A, LOCALID_PLAYERS_HOUSE_1F_MOM
 	return
 
 PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale::
 	setvar VAR_0x8008, FEMALE
-	setvar VAR_0x8009, LOCALID_PLAYERS_HOUSE_1F_DAD
-	setvar VAR_0x800A, LOCALID_PLAYERS_HOUSE_1F_MOM
 	return
 
 PlayersHouse_1F_EventScript_DadApproachPlayerMale::
