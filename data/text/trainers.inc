@@ -1749,7 +1749,7 @@ Route114_Text_LennyDefeat:
 	.string "Not Lenny!$"
 
 Route114_Text_LennyPostBattle:
-	.string "Ol' Lenny with keep staggering on.\n"
+	.string "Ol' Lenny will keep staggering on.\n"
 	.string "Don't you worry about me...\p"
 	.string "“Yodelayhihoo.”$"
 
