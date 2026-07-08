@@ -1438,7 +1438,7 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
         break;
     case SUMMARY_MODE_SELECT_MOVE:
         sMonSummaryScreen->minPageIndex = PSS_PAGE_BATTLE_MOVES;
-        sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 1;
+        sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 2;
         sMonSummaryScreen->lockMonFlag = TRUE;
         break;
     }
@@ -4034,6 +4034,9 @@ static void PrintBonusStats(void)
 
 
     PrintLeftBonusStats();
+    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_BONUS_STATS_RIGHT], 0);
+    BufferRightBonusStats();
+    PrintRightBonusStats();
     //BufferRightColumnStats();
     //PrintRightColumnStats();
     
