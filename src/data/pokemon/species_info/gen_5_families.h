@@ -15711,6 +15711,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .evYield_HP = 1,
         .evYield_Attack = 1,
         .evYield_SpAttack = 1,
+        .itemCommon = ITEM_DNA_SPLICERS,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 120,
         .friendship = 0,
