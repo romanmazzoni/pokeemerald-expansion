@@ -174,7 +174,7 @@ Route103_Text_MiguelIntro:
 
 Route103_Text_MiguelDefeated:
 	.string "Oh, my gosh!\n"
-	.string "You broke its kneecaps$"
+	.string "You broke its kneecaps!$"
 
 Route103_Text_MiguelPostBattle:
 	.string "Why would you harm something\n"
@@ -260,7 +260,7 @@ Route104_Text_GinaNotEnoughMons:
 	.string "be lonesome. That's not nice.$"
 
 Route104_Text_MiaIntro:
-	.string "MIA: My sister won't stop singing that$"
+	.string "MIA: My sister won't stop singing that.$"
 
 Route104_Text_MiaDefeat:
 	.string "MIA: Its not a good song.$"
@@ -283,7 +283,7 @@ Route104_Text_IvanDefeat:
 	.string "But I guess strategy doesn't mater here.$"
 
 Route104_Text_IvanPostBattle:
-	.string "Happy floppa friday btw.\n"
+	.string "Happy floppa Friday btw.\n"
 	.string "Are you in the dump?$"
 
 Route104_Text_BillyIntro:
@@ -793,8 +793,8 @@ Route109_Text_DavidDefeated:
 
 Route109_Text_DavidPostBattle:
 	.string "Biyah!\p"
-	.string "My sculpted abs have nothing to do\n"
-	.string "are simply too big!$"
+	.string "My sculpted abs!\n"
+	.string "They are simply too big!$"
 
 Route109_Text_AliceIntro:
 	.string "Are you properly protected against\n"

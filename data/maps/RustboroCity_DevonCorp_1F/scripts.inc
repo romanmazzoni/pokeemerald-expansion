@@ -84,7 +84,7 @@ RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
 	.string "Hello and welcome to the DEVON\n"
 	.string "CORPORATION.\p"
 	.string "Shoes and phones and all\n"
-	.string "the stuff kinda like that$"
+	.string "the stuff kinda like that.$"
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
 	.string "One of our research staff stupidly\n"
@@ -100,7 +100,7 @@ RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright:
 	.string "That stolen parcel…\p"
 	.string "Well, sure it's important, but it's not\n"
 	.string "anything that anyone can use.\p"
-	.string "He the theif would need a detonation\n"
+	.string "The thief would need a detonation\n"
 	.string "code to be able to use it.$"
 
 RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered:
