@@ -938,13 +938,13 @@ LittlerootTown_Text_WearTheseRunningShoes:
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
 	.string "{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES.\p"
-	.string "{PLAYER} gained +5 quick$"
+	.string "{PLAYER} gained +5 quick.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: +5 quick? I thought it\n"
 	.string "was +5 fast\p"
 	.string "“I forget the main difference\n"
-	.string "between the two stats\p"
+	.string "between the two stats.\p"
 	.string "“I think one lets you run away\n"
 	.string "from wild battles easier?”\p"
 	.string "It really doesnt matter, enjoy”\n"

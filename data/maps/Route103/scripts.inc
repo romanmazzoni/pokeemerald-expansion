@@ -342,7 +342,7 @@ Route103_Text_BrendanTimeToHeadBack:
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"
-	.string "I should caught a better one$"
+	.string "I should caught a better one.$"
 
 Route103_Text_ShortcutToOldale:
 	.string "If you cross the sea from here,\n"
