@@ -14247,7 +14247,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A powerful 1-turn move that\n"
             "may inflict a freezerburn."),
         .effect = EFFECT_TWO_TYPED_MOVE,
-        .argument = { .type = TYPE_ELECTRIC },
+        .argument = { .type = TYPE_FIRE },
         .power = 110,
         .type = TYPE_ICE,
         .accuracy = 90,
@@ -20659,7 +20659,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BLAZING_TORQUE] =
     {
         .name = COMPOUND_STRING("Blazing Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING("Hot hot torque."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FIRE,
@@ -20688,7 +20688,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WICKED_TORQUE] =
     {
         .name = COMPOUND_STRING("Wicked Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING("Evil torque."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DARK,
@@ -20717,7 +20717,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_NOXIOUS_TORQUE] =
     {
         .name = COMPOUND_STRING("Noxious Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING("Poisonous torque."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_POISON,
@@ -20746,7 +20746,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_COMBAT_TORQUE] =
     {
         .name = COMPOUND_STRING("Combat Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING("Fighting torque."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIGHTING,
@@ -20775,7 +20775,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MAGICAL_TORQUE] =
     {
         .name = COMPOUND_STRING("Magical Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING("Magical torque."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FAIRY,
