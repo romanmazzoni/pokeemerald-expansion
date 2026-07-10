@@ -24047,7 +24047,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9602
-            .species = SPECIES_SPRIGATITO,
+            .species = SPECIES_TURTWIG,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9604
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24469,7 +24469,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9767
-            .species = SPECIES_SPRIGATITO,
+            .species = SPECIES_TURTWIG,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9769
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

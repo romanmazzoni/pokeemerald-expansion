@@ -329,7 +329,7 @@ MauvilleCity_Gym_Text_AngeloPostBattle:
 MauvilleCity_Gym_Text_WattsonIntro:
 	.string "I am the lucid dream...\p"
 	.string "The monster in your nightmares...\p"
-	.string "the fiend of a thousand faces!\p"
+	.string "The fiend of a thousand faces!\p"
 	.string "COWER BEFORE MY TRUE FORM!\p"
 	.string "BOW DOWN BEFORE THE GOD OF DEATH!\p"
 	.string "Your fate is sealed.\p"
