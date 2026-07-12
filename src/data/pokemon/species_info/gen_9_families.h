@@ -6004,7 +6004,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sFlamigoLevelUpLearnset,
         .teachableLearnset = sFlamigoTeachableLearnset,
         .eggMoveLearnset = sFlamigoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FLAMIGO_BALL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_FLAMIGO_BALL}),
     },
 
     [SPECIES_FLAMIGO_BALL] =
