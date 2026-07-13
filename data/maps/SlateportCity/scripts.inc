@@ -1117,7 +1117,7 @@ SlateportCity_Text_InterviewerSoCool:
 	.string "and pretty.\p"
 	.string "When I grow up, I'm going to be\n"
 	.string "an international journalist!\p"
-	.string "I just hope I don't have to do\p"
+	.string "I just hope I don't have to do\n"
 	.string "an article on Boeing!$"
 
 SlateportCity_Text_SternSaysDiscoveredSomething:

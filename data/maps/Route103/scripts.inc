@@ -308,7 +308,7 @@ Route103_Text_MayTimeToHeadBack:
 	.string "MAY: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, he watches you constantly.\n"
-	.string "There are cameras in your home\p"
+	.string "There are cameras in your home.\p"
 	.string ".........................\n"
 	.string ".........................\p"
 	.string "Well, it's time to head back to\n"

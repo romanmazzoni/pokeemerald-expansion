@@ -55,16 +55,16 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "STEPHEN: I must admit I was holding back\n"
-	.string "but don't worry about that anymore\p"
+	.string "but don't worry about that anymore.\p"
 	.string "Try your best!\n"
 	.string "Try everything you can!$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat2:
-	.string "I can't go on\p"
+	.string "I can't go on.\p"
 	.string "There is no stopping you!$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat3:
 	.string "STEPHEN: Nothing more to say about it\n"
-	.string "You beat me while I was going all out\p"
+	.string "You beat me while I was going all out.\p"
 	.string "You are the true champion of Hoenn.\n"
 	.string "A title well deserved.$"

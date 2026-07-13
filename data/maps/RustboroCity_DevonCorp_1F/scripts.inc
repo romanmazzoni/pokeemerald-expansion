@@ -88,7 +88,7 @@ RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
 	.string "One of our research staff stupidly\n"
-	.string "got robbed of an important parcel.$"
+	.string "got robbed of an important parcel.\p"
 	.string "What kind of idiot gets robbed?$"
 
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct:

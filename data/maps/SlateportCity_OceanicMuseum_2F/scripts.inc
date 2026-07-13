@@ -434,5 +434,5 @@ SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. ANNE\p"
 	.string "“A replica of the luxury liner that\n"
-	.string "circles the globe.”$"
+	.string "circles the globe.”\p"
 	.string "The replica says S.S. ANEE.$"

@@ -1589,7 +1589,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 	.string "simple action puts everything right\l"
 	.string "again as if nothing had happened…\p"
 	.string "So cool!\n"
-	.string "{PLAYER}{KUN}!$"
+	.string "{PLAYER}{KUN}!\p"
 	.string "You should catch that one too!$"
 
 SootopolisCity_Text_KyogreCalmDown:

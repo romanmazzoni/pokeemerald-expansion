@@ -1290,7 +1290,7 @@ PetalburgCity_Gym_Text_ExplainFacade:
 	.string "the POKéMON is poisoned, paralyzed,\l"
 	.string "or burned.\p"
 	.string "It might be able to turn a bad\n"
-	.string "situation into an advantage.$"
+	.string "situation into an advantage.\p"
 	.string "It also might be a 75 base\n"
 	.string "power fake type move.$"
 

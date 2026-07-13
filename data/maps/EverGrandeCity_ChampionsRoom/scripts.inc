@@ -224,7 +224,7 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "accept your challenge!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "…It's over\p"
+	.string "…It's over.\p"
 	.string "But it's an odd feeling.\n"
 	.string "I'm not angry that I lost.\l"
 	.string "In fact, I feel happy.\p"

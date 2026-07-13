@@ -178,8 +178,8 @@ VictoryRoad_1F_Text_AlbertDefeat:
 	.string "I lost?$"
 
 VictoryRoad_1F_Text_AlbertPostBattle:
-	.string "I should have never gone\p"
-	.string "against a Sicilian. Good thing\n"
+	.string "I should have never gone\n"
+	.string "against a Sicilian. Good thing\l"
 	.string "death wasn't on the line…$"
 
 VictoryRoad_1F_Text_HopeIntro:

@@ -83,7 +83,7 @@ RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead:
 	.string "My POKéMON evolved.\n"
 	.string "It has a lot of HP now.\p"
 	.string "I should buy SUPER POTIONS for it\n"
-	.string "instead of ordinary POTIONS.$"
+	.string "instead of ordinary POTIONS.\p"
 	.string "Full restores are cheating.$"
 
 RustboroCity_Mart_Text_GettingEscapeRopeJustInCase:

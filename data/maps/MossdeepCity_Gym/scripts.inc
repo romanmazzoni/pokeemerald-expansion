@@ -547,7 +547,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "invincible POKéMON power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "TATE: Hehehe… Were you unwise\p"
+	.string "TATE: Hehehe… Were you unwise.\p"
 	.string "LIZA: Fufufu… you feel surprise?\p"
 	.string "TATE: That there are two GYM LEADERS?\n"
 	.string "LIZA: That there are two RUN FEEDERS?\p"

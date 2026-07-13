@@ -265,8 +265,8 @@ RustboroCity_PokemonSchool_Text_TradingRightNow:
 
 RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
 	.string "I always wanted a SEEDOT, and\n"
-	.string "I'm finally getting one!$"
-	.string "All it cost is one arceus!$"
+	.string "I'm finally getting one!\p"
+	.string "All it cost is one Arceus!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
 	.string "POKéMON can hold items, but they\n"

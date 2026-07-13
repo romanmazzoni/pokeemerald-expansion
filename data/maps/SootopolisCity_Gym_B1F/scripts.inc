@@ -120,7 +120,7 @@ SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
 	.string "Rather than being satisfied by being\n"
 	.string "in a strong GYM, I imagine training in\l"
 	.string "other places will make you stronger.\l"
-	.string "But above all, it looks more fun.$"
+	.string "But above all, it looks more fun.\p"
 	.string "Juandaswan is so hot.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:

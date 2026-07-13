@@ -674,7 +674,7 @@ LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "Now they aren't in the cave.\p"
 	.string "That makes the cave empty.\p"
 	.string "With no team aqua members,\n"
-	.string "and nother other guys.\p"
+	.string "and nother other guys.$"
 
 LilycoveCity_Text_CitySign:
 	.string "LILYCOVE CITY\p"

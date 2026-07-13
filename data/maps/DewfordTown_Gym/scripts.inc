@@ -383,7 +383,7 @@ DewfordTown_Gym_Text_BrawnyIntro:
 	.string "of these parts, and I've grown tough\l"
 	.string "I play 10 hours of tf2 a day!\p"
 	.string "9001 hours total, only 4 on sniper!\n"
-	.string "I make b4nny look like a common chump\p"
+	.string "I make b4nny look like a common chump.\p"
 	.string "I make dustbowl last look a cake walk!\p"
 	.string "Grass grows birds fly and brother?\n"
 	.string "I end nuzlockes!$"

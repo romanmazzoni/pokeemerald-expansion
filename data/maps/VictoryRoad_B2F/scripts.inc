@@ -80,7 +80,7 @@ VictoryRoad_B2F_Text_JulieDefeat:
 
 VictoryRoad_B2F_Text_JuliePostBattle:
 	.string "I have 8 badges.\n"
-	.string "That should be more than$"
+	.string "That should be more than\l"
 	.string "a chump like you.$"
 
 VictoryRoad_B2F_Text_FelixIntro:

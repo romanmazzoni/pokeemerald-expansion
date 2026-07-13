@@ -243,7 +243,7 @@ Route103_Text_MarcosPostBattle:
 	.string "Thats a stupid name for a band.$"
 
 Route104_Text_GinaIntro:
-	.string "Abra Abra Kadabra\p"
+	.string "Abra Abra Kadabra!\p"
 	.string "I wanna reach out and grab ya!$"
 
 Route104_Text_GinaDefeat:
@@ -451,7 +451,7 @@ Route105_Text_DominikDefeated:
 	.string "I need to get a life...$"
 
 Route105_Text_DominikPostBattle:
-	.string "I spent so much time swimming\p"
+	.string "I spent so much time swimming\n"
 	.string "that I've forgotten the true\l"
 	.string "meaning of Christmas.$"
 
@@ -464,7 +464,7 @@ Route105_Text_BeverlyDefeated:
 
 Route105_Text_PostBattle:
 	.string "If I can find 2 more ninjas\n"
-	.string "I might have a chance against you.\p"
+	.string "I might have a chance against you.$"
 
 Route105_Text_ImaniIntro:
 	.string "The blue, blue sky…\n"
@@ -569,7 +569,7 @@ Route106_Text_DouglasDefeated:
 	.string "I give up!$"
 
 Route106_Text_DouglasPostBattle:
-	.string "I wouldn't lose in a swim race…\n"
+	.string "I wouldn't lose in a swim race…$"
 
 Route106_Text_KylaIntro:
 	.string "The sea is my backyard. I'm not going\n"
@@ -604,7 +604,7 @@ Route107_Text_TonyDefeated:
 
 Route107_Text_TonyPostBattle:
 	.string "Anyways, I'm battling these other guys.\n"
-	.string "I never can beat land trainers.\n"
+	.string "I never can beat land trainers.$"
 
 Route107_Text_TonyRegister:
 	.string "You've shocked me to the bone!\n"
@@ -753,7 +753,7 @@ Route108_Text_CoryDefeated:
 	.string "Fishing rod? Whats that?$"
 
 Route108_Text_CoryPostBattle:
-	.string "Only losers use fishing rods\p"
+	.string "Only losers use fishing rods.\p"
 	.string "Maybe I should buy one...$"
 
 Route108_Text_CoryRegister:
@@ -831,7 +831,7 @@ Route109_Text_EdmondPostBattle:
 	.string "You're overleveled!$"
 
 Route109_Text_RickyIntro:
-	.string "How did I get here?\n"
+	.string "How did I get here?$"
 
 Route109_Text_RickyDefeated:
 	.string "You knocked out my pokemon?$"
@@ -1459,7 +1459,7 @@ Route111_Text_HaydenPostBattle:
 	.string "Levy was right!$"
 
 Route111_Text_BiancaIntro:
-	.string "Hey lets do a quick warm up battle!$"
+	.string "Hey lets do a quick warm up battle!\n"
 	.string "I need practice for the real deal!$"
 
 Route111_Text_BiancaDefeat:
@@ -1584,7 +1584,7 @@ Route113_Text_JaylenPostBattle:
 	.string "Nay! I thought it impossible!$"
 
 Route113_Text_DillonIntro:
-	.string "There is a big bad boomin' system\p"
+	.string "There is a big bad boomin' system.\p"
 	.string "The parties exploded\n"
 	.string "the core is corroded!\p"
 	.string "You don't believe me\n"
@@ -1812,7 +1812,7 @@ Route114_Text_SteveDefeat:
 	.string "Good day sir!$"
 
 Route114_Text_StevePostBattle:
-	.string "I lost?\n"
+	.string "I lost?$"
 
 Route114_Text_SteveRegister:
 	.string "Heres my number!\n"
@@ -2097,8 +2097,8 @@ Route115_Text_HeleneDefeat:
 
 Route115_Text_HelenePostBattle:
 	.string "Black belt isn't very good.\p"
-	.string "Next time my pokemon are going to\p"
-	.string "have focus-sash level strength!\n"
+	.string "Next time my pokemon are going to\n"
+	.string "have focus-sash level strength!$"
 
 Route115_Text_AlixIntro:
 	.string "It's the big apple!\n"
@@ -2135,7 +2135,7 @@ Route116_Text_ClarkDefeat:
 Route116_Text_ClarkPostBattle:
 	.string "2 mirrors would create an infinite loop.\p"
 	.string "I feel like that would only make\n"
-	.string "battle harder to follow.\n"
+	.string "battle harder to follow.$"
 
 Route116_Text_JoeyIntro:
 	.string "My POKéMON my rules!$"
@@ -2779,7 +2779,7 @@ Route119_Text_HughIntro:
 
 Route119_Text_HughDefeat:
 	.string "Yeah. I'm gonna need you to run\n"
-	.string "that command now.\n"
+	.string "that command now.$"
 
 Route119_Text_HughPostBattle:
 	.string "It's a fun command to make your\n"
@@ -2912,7 +2912,7 @@ Route120_Text_RobertPostBattle:
 	.string "counting on that one.$"
 
 Route120_Text_RobertRegister:
-	.string "Me become more big phone!\n"
+	.string "Me become more big phone!$"
 
 Route120_Text_RobertRematchIntro:
 	.string "A POKéMON that grows steadily is one\n"
@@ -3038,7 +3038,6 @@ Route120_Text_KeigoDefeat:
 	.string "feel the break...$"
 
 Route120_Text_KeigoPostBattle:
-	.string "what I really want to say\p"
 	.string "What I really want to say,\n"
 	.string "is I've got mine!$"
 
@@ -3871,7 +3870,7 @@ Route126_Text_BrendaPostBattle:
 	.string "You sound scared to me!$"
 
 Route126_Text_PabloIntro:
-	.string "Level 675 gaming warlord.\n"
+	.string "Level 675 gaming warlord.$"
 
 Route126_Text_PabloDefeat:
 	.string "I lose sometimes.\n"
@@ -3915,11 +3914,11 @@ Route126_Text_LeonardoPostBattle:
 
 Route126_Text_IsobelIntro:
 	.string "All I need is your credit card number,\n"
-	.string "the three little digits on the back.$"
+	.string "the three little digits on the back,\l"
 	.string "the expiration month and year,$"
 
 Route126_Text_IsobelDefeat:
-	.string "But the TF2 heavy needed your help...\n"
+	.string "But the TF2 heavy needed your help...$"
 
 Route126_Text_IsobelPostBattle:
 	.string "He's in real trouble\n"
@@ -3934,7 +3933,7 @@ Route126_Text_SiennaDefeat:
 	.string "I don't feel no pain.$"
 
 Route126_Text_SiennaPostBattle:
-	.string "You're headed for the hall of fame.\n"
+	.string "You're headed for the hall of fame.$"
 
 Route127_Text_CamdenIntro:
 	.string "Soulsilver is the best pokemon\n"
@@ -4016,10 +4015,10 @@ Route127_Text_KojiIntro:
 	.string "Heavy duty boots?\n"
 	.string "Choice band?\p"
 	.string "I usually try to use\n"
-	.string "Choice band?\p"
+	.string "Choice band?$"
 
 Route127_Text_KojiDefeat:
-	.string "The bird flew?\n"
+	.string "The bird flew?$"
 
 Route127_Text_KojiPostBattle:
 	.string "Yeah, they tend to do that.$"
@@ -4038,7 +4037,7 @@ Route127_Text_KojiRematchDefeat:
 Route127_Text_KojiPostRematch:
 	.string "It's the name of a food?\p"
 	.string "Yeah a food that a shrimp very\n"
-	.string "clearly did NOT fry.\n"
+	.string "clearly did NOT fry.$"
 
 Route127_Text_AthenaIntro:
 	.string "What's upstairs?$"
@@ -4102,7 +4101,7 @@ Route128_Text_KatelynPostRematch:
 	.string "challenges on VICTORY ROAD.$"
 
 Route128_Text_AlexaIntro:
-	.string "Wood fired pizza?\p"
+	.string "Wood fired pizza?$"
 
 Route128_Text_AlexaDefeat:
 	.string "Oh!\n"
@@ -4111,7 +4110,7 @@ Route128_Text_AlexaDefeat:
 Route128_Text_AlexaPostBattle:
 	.string "Getting wood fired makes pizza\n"
 	.string "taste better?\p"
-	.string "Please don't seek revenge on wood!\p"
+	.string "Please don't seek revenge on wood!$"
 
 Route128_Text_RubenIntro:
 	.string "Based?$"
@@ -4120,7 +4119,7 @@ Route128_Text_RubenDefeat:
 	.string "Based on what!$"
 
 Route128_Text_RubenPostBattle:
-	.string "Speaking ofk based. I need paste.$"
+	.string "Speaking of based. I need paste.$"
 
 Route128_Text_WayneIntro:
 	.string "I want to visit EVER GRANDE, so I\n"

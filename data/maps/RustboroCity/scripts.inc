@@ -1066,7 +1066,7 @@ RustboroCity_Text_MrBrineyLovesPeeko:
 	.string "He said he was going shopping in\n"
 	.string "SLATEPORT for his pet, PEEKO.\p"
 	.string "That old sea dog, he must really love\n"
-	.string "SLATEPORT CITY.$"
+	.string "SLATEPORT CITY.\p"
 	.string "Why not just buy stuff here?$"
 
 RustboroCity_Text_WowYouHavePokemon:

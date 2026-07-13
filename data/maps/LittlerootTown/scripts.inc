@@ -942,7 +942,7 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes:
 
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: +5 quick? I thought it\n"
-	.string "was +5 fast\p"
+	.string "was +5 fast.\p"
 	.string "“I forget the main difference\n"
 	.string "between the two stats.\p"
 	.string "“I think one lets you run away\n"

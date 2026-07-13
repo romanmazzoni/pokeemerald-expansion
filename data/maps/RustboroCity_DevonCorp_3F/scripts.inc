@@ -303,7 +303,7 @@ RustboroCity_DevonCorp_3F_Text_PleaseGoAhead:
 
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "If you visit the SHIPYARD in SLATEPORT,\n"
-	.string "you should go see CAPT. STERN.$"
+	.string "you should go see CAPT. STERN.\p"
 	.string "You're a good trainer, you can beat him.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:

@@ -102,7 +102,7 @@ Route102_Text_CatchWholeBunchOfPokemon:
 	.string "I'm going to catch a whole bunch of\n"
 	.string "POKéMON!\p"
 	.string "Only caterpie, wurmple, lotad, eevee,\n"
-	.string "sentret, and ralts though!\n"
+	.string "sentret, and ralts though!$"
 
 Route102_Text_RouteSignOldale:
 	.string "ROUTE 102\n"
