@@ -761,7 +761,7 @@ LilycoveCity_Text_JustArrivedAndSawRarePokemon:
 	.string "We happened to see a DRAGON-type\n"
 	.string "POKéMON flying way up in the sky.\p"
 	.string "It was a RAYQUAZA.\p"
-	.string "Why does no one know what$"
+	.string "Why does no one know what\n"
 	.string "a RAQUAZA is around here?$"
 
 LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:

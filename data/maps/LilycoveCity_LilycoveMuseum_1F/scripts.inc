@@ -248,7 +248,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_StoneTabletWithAncientText:
 	.string "You try to read it anyway.\p"
 	.string "................\p"
 	.string "................\p"
-	.string "You can't read it$"
+	.string "You can't read it.$"
 
 LilycoveCity_LilycoveMuseum_1F_Text_WorksOfMagnificence:
 	.string "Hmmm…\n"

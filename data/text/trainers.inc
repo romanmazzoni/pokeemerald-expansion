@@ -266,7 +266,7 @@ Route104_Text_MiaDefeat:
 	.string "MIA: Its not a good song.$"
 
 Route104_Text_MiaPostBattle:
-	.string "MIA: I have a bad taste in music$"
+	.string "MIA: I have a bad taste in music.$"
 
 Route104_Text_MiaNotEnoughMons:
 	.string "MIA: You want to battle with us?\p"
@@ -307,7 +307,7 @@ Route104_Text_HaleyDefeat:
 	.string "I stayed and there was double!$"
 
 Route104_Text_HaleyPostBattle:
-	.string "This indecion's bugging me$"
+	.string "This indecion's bugging me!$"
 
 Route104_Text_HaleyRegister1:
 	.string "You're strong, but should I register\n"
@@ -633,7 +633,7 @@ Route107_Text_DeniseDefeated:
 
 Route107_Text_DenisePostBattle:
 	.string "I wanted to beat Norman,\n"
-	.string "but I can't even beat you$"
+	.string "but I can't even beat you.$"
 
 Route107_Text_BethIntro:
 	.string "Did you want to battle me?\n"
@@ -655,7 +655,7 @@ Route107_Text_LisaDefeated:
 
 Route107_Text_LisaPostBattle:
 	.string "LISA: No wonder why he wanted\n"
-	.string "to queue with me$"
+	.string "to queue with me.$"
 
 Route107_Text_LisaNotEnoughPokemon:
 	.string "LISA: If you want to battle with us,\n"
@@ -1074,7 +1074,7 @@ Route110_Text_JasmineDefeated:
 Route110_Text_JasminePostBattle:
 	.string "I'm done using that lorem\n"
 	.string "ipsum nonsense. It doesn't make\l"
-	.string "sense to use in real life$"
+	.string "sense to use in real life.$"
 
 Route110_Text_EdwardIntro:
 	.string "It really is that shrimple.$"
@@ -2093,7 +2093,7 @@ Route115_Text_HeleneIntro:
 
 Route115_Text_HeleneDefeat:
 	.string "But, they're so good at\n"
-	.string "chopping through wood$"
+	.string "chopping through wood.$"
 
 Route115_Text_HelenePostBattle:
 	.string "Black belt isn't very good.\p"
@@ -2250,7 +2250,7 @@ Route116_Text_SarahIntro:
 	.string "into your microphone!$"
 
 Route116_Text_SarahDefeat:
-	.string "ACTIVATE ABILITY$"
+	.string "ACTIVATE ABILITY!$"
 
 Route116_Text_SarahPostBattle:
 	.string "Aw rats.\p"
@@ -2424,7 +2424,7 @@ Route117_Text_AnnaIntro:
 	.string "if Meg brought her typholsion!$"
 
 Route117_Text_AnnaDefeat:
-	.string "ANNA: I hate her$"
+	.string "ANNA: I hate her.$"
 
 Route117_Text_AnnaPostBattle:
 	.string "ANNA: I think I would've won\n"
@@ -2440,7 +2440,7 @@ Route117_Text_AnnaNotEnoughMons:
 	.string "bring two POKéMON with you.$"
 
 Route117_Text_MegIntro:
-	.string "MEG: I forgot my typholsion$"
+	.string "MEG: I forgot my typholsion.$"
 
 Route117_Text_MegDefeat:
 	.string "MEG: I hope she isn't mad.$"
@@ -3129,8 +3129,8 @@ Route121_Text_TammyIntro:
 	.string "understanding in the world…$"
 
 Route121_Text_TammyDefeat:
-	.string "This battle was beyond$"
-	.string "your understanding."
+	.string "This battle was beyond\n"
+	.string "your understanding.$"
 
 Route121_Text_TammyPostBattle:
 	.string "MT. PYRE…\p"
@@ -3364,7 +3364,7 @@ Route123_Text_JackiPostRematch:
 	.string "That could be a psychic power, too.$"
 
 Route123_Text_MiuIntro:
-	.string "MIU: Don't go breaking my heart$"
+	.string "MIU: Don't go breaking my heart.$"
 
 Route123_Text_MiuDefeat:
 	.string "MIU: Honey I get restless.$"
@@ -3461,8 +3461,8 @@ Route123_Text_JazmynPostBattle:
 	.string "to help you at all.$"
 
 Route123_Text_FrederickIntro:
-	.string "Hey, remember to have fun.\n"
-	.string "That's the most important part$"
+	.string "Hey, remember to have fun.\p"
+	.string "That's the most important part\n"
 	.string "of playing a game right?$"
 
 Route123_Text_FrederickDefeat:
@@ -3516,7 +3516,7 @@ Route123_Text_KayleyDefeat:
 
 Route123_Text_KayleyPostBattle:
 	.string "I have a degree in statics.\p"
-	.string "It's about 87 percent more useful$"
+	.string "It's about 87 percent more useful\n"
 	.string "than other degrees.$"
 
 Route124_Text_SpencerIntro:
@@ -3622,7 +3622,7 @@ Route124_Text_RoyIntro:
 
 Route124_Text_RoyDefeat:
 	.string "ROY: Bound!\n"
-	.string "Exhausted by the weight$"
+	.string "Exhausted by the weight!$"
 
 Route124_Text_RoyPostBattle:
 	.string "ROY: Your chains are forged\n"
@@ -3927,8 +3927,8 @@ Route126_Text_IsobelPostBattle:
 
 Route126_Text_SiennaIntro:
 	.string "I know the score,\n"
-	.string "like the back of my hand.$"
-	.string "Nothing can break me down$"
+	.string "like the back of my hand.\p"
+	.string "Nothing can break me down.$"
 
 Route126_Text_SiennaDefeat:
 	.string "I don't feel no pain.$"
@@ -3985,13 +3985,13 @@ Route127_Text_HenryPostBattle:
 	.string "are you kidding me dude?$"
 
 Route127_Text_RogerIntro:
-	.string "I need a good battle experience.\n"
-	.string "Every battle I've done recently$"
+	.string "I need a good battle experience.\p"
+	.string "Every battle I've done recently\n"
 	.string "has been against blatent cheaters!$"
 
 Route127_Text_RogerDefeat:
 	.string "Chat do you see this?\p"
-	.string "How can you say this\n$"
+	.string "How can you say this\n"
 	.string "guy isn't blatently walling?$"
 
 Route127_Text_RogerPostBattle:

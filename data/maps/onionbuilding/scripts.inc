@@ -171,10 +171,10 @@ onionbuilding_eventScript_getAFreeLegendary_Text_0:
 	.string "Do you want to choose Jirachi?$"
 
 onionbuilding_eventScript_getAFreeLegendary_Text_1:
-	.string "Recieved Jirachi$"
+	.string "Recieved Jirachi.$"
 
 onionbuilding_eventScript_getAFreeLegendary_Text_2:
-	.string "No More Room$"
+	.string "No More Room.$"
 
 onionbuilding_eventScript_getAFreeLegendary2_Text_0:
 	.string "Do you want to choose Ursaring?$"
@@ -184,13 +184,13 @@ onionbuilding_eventScript_getAFreeLegendary2_Text_1:
 	.string "easy cake from here$"
 
 onionbuilding_eventScript_getAFreeLegendary2_Text_2:
-	.string "Recieved Celebi$"
+	.string "Recieved Celebi.$"
 
 onionbuilding_eventScript_getAFreeLegendary3_Text_0:
 	.string "Do you want to choose Victini?$"
 
 onionbuilding_eventScript_getAFreeLegendary3_Text_1:
-	.string "Recieved Victini$"
+	.string "Recieved Victini.$"
 
 NicknamePartyMon_Text_0:
 	.string "Give it a nickname?$"

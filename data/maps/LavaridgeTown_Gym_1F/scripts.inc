@@ -266,7 +266,7 @@ LavaridgeTown_Gym_B1F_Text_JaceIntro:
 LavaridgeTown_Gym_B1F_Text_JaceDefeat:
 	.string "It's so hot, and yet your heart\n"
 	.string "is cold as ice…\p"
-	.string "Someday you'll pay the price$"
+	.string "Someday you'll pay the price.$"
 
 LavaridgeTown_Gym_B1F_Text_JacePostBattle:
 	.string "The way the battling spirit burns\n"

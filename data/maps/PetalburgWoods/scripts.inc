@@ -434,7 +434,7 @@ PetalburgWoods_Text_StayOutOfTallGrass:
 	.string "Yo, there!\n"
 	.string "Your POKéMON doing okay?\p"
 	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you stop playing$"
+	.string "to avoid battles, you stop playing.$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
 	.string "Sometimes, there are things on the\n"

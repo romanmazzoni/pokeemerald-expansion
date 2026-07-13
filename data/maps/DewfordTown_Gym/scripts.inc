@@ -442,7 +442,7 @@ DewfordTown_Gym_Text_BrawnyRematchDefeat:
 DewfordTown_Gym_Text_BrawnyPostRematch:
 	.string "BRAWNY: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
-	.string "Wait I should've said sea the bottom$"
+	.string "Wait I should've said sea the bottom.$"
 
 DewfordTown_Gym_Text_BrawnyRematchNeedTwoMons:
 	.string "BRAWNY: A wave may draw back, but it\n"

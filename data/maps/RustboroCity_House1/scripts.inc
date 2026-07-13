@@ -68,7 +68,7 @@ RustboroCity_House1_Text_DoesntLookLikeMonToMe:
 RustboroCity_House1_Text_YouDontWantToThatsOkay:
 	.string "Oh, if you don't want to, that's okay.\n"
 	.string "I'm the only one who can give you\l"
-	.string "a {STR_VAR_1} though...$"
+	.string "a {STR_VAR_2} though...$"
 
 RustboroCity_House1_Text_AnyPokemonCanBeCute:
 	.string "Any POKéMON can be cute if you raise\n"

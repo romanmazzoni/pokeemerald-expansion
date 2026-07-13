@@ -31,7 +31,7 @@ RustboroCity_House3_Text_NamingPikachuPekachu:
 	.string "a PIKACHU? It seems pointless.\p"
 	.string "I suppose it is good to use a name\n"
 	.string "that's easy to understand, but…\p"
-	.string "Now PeePoo! that's a banger!$"
+	.string "Now PeePoo! That's a banger!$"
 
 RustboroCity_House3_Text_Pekachu:
 	.string "PeePoo: Peka!$"
