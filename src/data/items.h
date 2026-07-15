@@ -8990,7 +8990,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Weakness Policy"),
         .pluralName = _("Weakness Policies"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
+        .price = (I_PRICE >= GEN_9) ? 40000 : 1000,
         .holdEffect = HOLD_EFFECT_WEAKNESS_POLICY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9008,7 +9008,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ASSAULT_VEST] =
     {
         .name = _("Assault Vest"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
+        .price = (I_PRICE >= GEN_9) ? 40000 : 1000,
         .holdEffect = HOLD_EFFECT_ASSAULT_VEST,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
@@ -12581,7 +12581,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EON_TICKET] =
     {
         .name = _("Eon Ticket"),
-        .price = 0,
+        .price = 20000,
         .description = COMPOUND_STRING(
             "The ticket for a\n"
             "ferry to a distant\n"
@@ -12598,7 +12598,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MYSTIC_TICKET] =
     {
         .name = _("Mystic Ticket"),
-        .price = 0,
+        .price = 20000,
         .description = COMPOUND_STRING(
             "A ticket required\n"
             "to board the ship\n"
@@ -12614,7 +12614,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AURORA_TICKET] =
     {
         .name = _("Aurora Ticket"),
-        .price = 0,
+        .price = 20000,
         .description = COMPOUND_STRING(
             "A ticket required\n"
             "to board the ship\n"
@@ -12630,7 +12630,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_SEA_MAP] =
     {
         .name = _("Old Sea Map"),
-        .price = 0,
+        .price = 20000,
         .description = COMPOUND_STRING(
             "A faded sea chart\n"
             "that shows the way\n"
