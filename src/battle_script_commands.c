@@ -321,6 +321,51 @@ enum GiveCaughtMonStates
 
 #define TAG_LVLUP_BANNER_MON_ICON 55130
 
+static u32 GetStatIdFromMoveEffect(u32 moveEffect)
+{
+    static const u8 sStatChangeOrder[] =
+    {
+        STAT_ATK,
+        STAT_DEF,
+        STAT_SPEED,
+        STAT_SPATK,
+        STAT_SPDEF,
+        STAT_ACC,
+        STAT_EVASION,
+    };
+
+    if (moveEffect >= MOVE_EFFECT_ATK_PLUS_1 && moveEffect <= MOVE_EFFECT_EVS_PLUS_1)
+        return sStatChangeOrder[moveEffect - MOVE_EFFECT_ATK_PLUS_1];
+    if (moveEffect >= MOVE_EFFECT_ATK_MINUS_1 && moveEffect <= MOVE_EFFECT_EVS_MINUS_1)
+        return sStatChangeOrder[moveEffect - MOVE_EFFECT_ATK_MINUS_1];
+    if (moveEffect >= MOVE_EFFECT_ATK_PLUS_2 && moveEffect <= MOVE_EFFECT_EVS_PLUS_2)
+        return sStatChangeOrder[moveEffect - MOVE_EFFECT_ATK_PLUS_2];
+    if (moveEffect >= MOVE_EFFECT_ATK_MINUS_2 && moveEffect <= MOVE_EFFECT_EVS_MINUS_2)
+        return sStatChangeOrder[moveEffect - MOVE_EFFECT_ATK_MINUS_2];
+
+    return STAT_ATK;
+}
+
+static u32 GetStatIdFromStatChanger(u8 statChanger, u32 moveEffect)
+{
+    u32 statId = GET_STAT_BUFF_STAT_ID(statChanger);
+    u32 effect = moveEffect & ~(MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN);
+
+    // Backward-compatibility: old scripts packed STAT_ACC/STAT_EVASION directly into a 3-bit field,
+    // which can decode as Sp. Atk/Sp. Def. Prefer the move effect when it clearly indicates ACC/EVS.
+    if (statId == STAT_SPATK || statId == STAT_SPDEF)
+    {
+        if (effect == MOVE_EFFECT_ACC_PLUS_1 || effect == MOVE_EFFECT_ACC_MINUS_1
+         || effect == MOVE_EFFECT_ACC_PLUS_2 || effect == MOVE_EFFECT_ACC_MINUS_2)
+            statId = STAT_ACC;
+        else if (effect == MOVE_EFFECT_EVS_PLUS_1 || effect == MOVE_EFFECT_EVS_MINUS_1
+              || effect == MOVE_EFFECT_EVS_PLUS_2 || effect == MOVE_EFFECT_EVS_MINUS_2)
+            statId = STAT_EVASION;
+    }
+
+    return statId;
+}
+
 static void TrySetDestinyBondToHappen(void);
 static u32 ChangeStatBuffs(s8 statValue, u32 statId, u32 flags, const u8 *BS_ptr);
 static bool32 IsMonGettingExpSentOut(void);
@@ -3583,7 +3628,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_EVS_PLUS_1:
                 if (NoAliveMonsForEitherParty()
                   || ChangeStatBuffs(SET_STAT_BUFF_VALUE(1),
-                                    gBattleScripting.moveEffect - MOVE_EFFECT_ATK_PLUS_1 + 1,
+                                    GetStatIdFromMoveEffect(gBattleScripting.moveEffect),
                                     affectsUser | STAT_CHANGE_UPDATE_MOVE_EFFECT, 0) == STAT_CHANGE_DIDNT_WORK)
                 {
                     gBattlescriptCurrInstr++;
@@ -3613,7 +3658,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     flags |= STAT_CHANGE_UPDATE_MOVE_EFFECT;
 
                 if (ChangeStatBuffs(SET_STAT_BUFF_VALUE(1) | STAT_BUFF_NEGATIVE,
-                                    gBattleScripting.moveEffect - MOVE_EFFECT_ATK_MINUS_1 + 1,
+                                    GetStatIdFromMoveEffect(gBattleScripting.moveEffect),
                                     flags, gBattlescriptCurrInstr + 1) == STAT_CHANGE_DIDNT_WORK)
                 {
                     if (!mirrorArmorReflected)
@@ -3636,7 +3681,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_EVS_PLUS_2:
                 if (NoAliveMonsForEitherParty()
                   || ChangeStatBuffs(SET_STAT_BUFF_VALUE(2),
-                                    gBattleScripting.moveEffect - MOVE_EFFECT_ATK_PLUS_2 + 1,
+                                    GetStatIdFromMoveEffect(gBattleScripting.moveEffect),
                                     affectsUser | STAT_CHANGE_UPDATE_MOVE_EFFECT, 0) == STAT_CHANGE_DIDNT_WORK)
                 {
                     gBattlescriptCurrInstr++;
@@ -3666,7 +3711,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     flags |= STAT_CHANGE_UPDATE_MOVE_EFFECT;
 
                 if (ChangeStatBuffs(SET_STAT_BUFF_VALUE(2) | STAT_BUFF_NEGATIVE,
-                                    gBattleScripting.moveEffect - MOVE_EFFECT_ATK_MINUS_2 + 1,
+                                    GetStatIdFromMoveEffect(gBattleScripting.moveEffect),
                                     flags, gBattlescriptCurrInstr + 1) == STAT_CHANGE_DIDNT_WORK)
                 {
                     if (!mirrorArmorReflected)
@@ -5929,6 +5974,7 @@ static void Cmd_setgraphicalstatchangevalues(void)
     CMD_ARGS();
 
     u8 value = GET_STAT_BUFF_VALUE_WITH_SIGN(gBattleScripting.statChanger);
+    u32 statId = GetStatIdFromStatChanger(gBattleScripting.statChanger, gBattleScripting.moveEffect);
 
     switch (value)
     {
@@ -5957,7 +6003,7 @@ static void Cmd_setgraphicalstatchangevalues(void)
             value = STAT_ANIM_PLUS2 + 1;
         break;
     }
-    gBattleScripting.animArg1 = GET_STAT_BUFF_ID(gBattleScripting.statChanger) + value - 1;
+    gBattleScripting.animArg1 = GET_STAT_ANIM_ID(statId) + value - 1;
     gBattleScripting.animArg2 = 0;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -6222,7 +6268,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
                 gLastUsedAbility = ABILITY_MOXIE;
                 SET_STATCHANGER(stat, numMonsFainted, FALSE);
                 PREPARE_STAT_BUFFER(gBattleTextBuff1, stat);
-                gBattleScripting.animArg1 = GET_STAT_BUFF_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
+                gBattleScripting.animArg1 = GET_STAT_ANIM_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
                 PushTraitStack(battlerAtk, gLastUsedAbility);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_RaiseStatOnFaintingTarget;
@@ -6246,7 +6292,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
                 SET_STATCHANGER(stat, numMonsFainted, FALSE);
                 PREPARE_STAT_BUFFER(gBattleTextBuff1, stat);
-                gBattleScripting.animArg1 = GET_STAT_BUFF_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
+                gBattleScripting.animArg1 = GET_STAT_ANIM_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
                 PushTraitStack(battlerAtk, gLastUsedAbility);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_RaiseStatOnFaintingTarget;
@@ -6271,7 +6317,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
                 SET_STATCHANGER(stat, numMonsFainted, FALSE);
                 PREPARE_STAT_BUFFER(gBattleTextBuff1, stat);
-                gBattleScripting.animArg1 = GET_STAT_BUFF_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
+                gBattleScripting.animArg1 = GET_STAT_ANIM_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
                 PushTraitStack(battlerAtk, gLastUsedAbility);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_RaiseStatOnFaintingTarget;
@@ -6291,7 +6337,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
                 gLastUsedAbility = ABILITY_BEAST_BOOST;
                 SET_STATCHANGER(stat, numMonsFainted, FALSE);
                 PREPARE_STAT_BUFFER(gBattleTextBuff1, stat);
-                gBattleScripting.animArg1 = GET_STAT_BUFF_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
+                gBattleScripting.animArg1 = GET_STAT_ANIM_ID(stat) + (numMonsFainted > 1 ? STAT_ANIM_PLUS2 : STAT_ANIM_PLUS1);
                 PushTraitStack(battlerAtk, gLastUsedAbility);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_RaiseStatOnFaintingTarget;
@@ -12854,7 +12900,7 @@ static void Cmd_statbuffchange(void)
     const u8 *failInstr = cmd->failInstr;
 
     if (ChangeStatBuffs(GET_STAT_BUFF_VALUE_WITH_SIGN(gBattleScripting.statChanger),
-                        GET_STAT_BUFF_ID(gBattleScripting.statChanger),
+                        GetStatIdFromStatChanger(gBattleScripting.statChanger, gBattleScripting.moveEffect),
                         flags,
                         failInstr) == STAT_CHANGE_WORKED)
         gBattlescriptCurrInstr = cmd->nextInstr;

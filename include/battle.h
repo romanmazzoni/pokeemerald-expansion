@@ -867,15 +867,20 @@ static inline bool32 IsBattleMoveStatus(u32 move)
     gBattleMons[battler].types[2] = gSpeciesInfo[gBattleMons[battler].species].types[2];                                          \
 }
 
+// statChanger stores stat id in 3 bits. Accuracy/Evasion are remapped to fit this encoding.
+#define ENCODE_STAT_BUFF_ID(n) (((n) == STAT_ACC) ? 6 : ((n) == STAT_EVASION) ? 7 : (n))
+#define DECODE_STAT_BUFF_ID(n) (((n) == 6) ? STAT_ACC : ((n) == 7) ? STAT_EVASION : (n))
 #define GET_STAT_BUFF_ID(n) ((n & 7))              // first three bits 0x1, 0x2, 0x4
+#define GET_STAT_BUFF_STAT_ID(n) (DECODE_STAT_BUFF_ID(GET_STAT_BUFF_ID(n)))
+#define GET_STAT_ANIM_ID(n) (ENCODE_STAT_BUFF_ID(n))
 #define GET_STAT_BUFF_VALUE_WITH_SIGN(n) ((n & 0xF8))
 #define GET_STAT_BUFF_VALUE(n) (((n >> 3) & 0xF))      // 0x8, 0x10, 0x20, 0x40
 #define STAT_BUFF_NEGATIVE 0x80                     // 0x80, the sign bit
 
 #define SET_STAT_BUFF_VALUE(n) ((((n) << 3) & 0xF8))
 
-#define SET_STATCHANGER(statId, stage, goesDown) (gBattleScripting.statChanger = (statId) + ((stage) << 3) + (goesDown << 7))
-#define SET_STATCHANGER2(dst, statId, stage, goesDown)(dst = (statId) + ((stage) << 3) + (goesDown << 7))
+#define SET_STATCHANGER(statId, stage, goesDown) (gBattleScripting.statChanger = ENCODE_STAT_BUFF_ID(statId) + ((stage) << 3) + (goesDown << 7))
+#define SET_STATCHANGER2(dst, statId, stage, goesDown)(dst = ENCODE_STAT_BUFF_ID(statId) + ((stage) << 3) + (goesDown << 7))
 
 #define DO_ACCURACY_CHECK 2 // Don't skip the accuracy check before the move might be absorbed
 

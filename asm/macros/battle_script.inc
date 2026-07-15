@@ -2352,7 +2352,13 @@
 
 @ helpful macros
 	.macro setstatchanger stat:req, stages:req, down:req
-	setbyte sSTATCHANGER, \stat | \stages << 3 | \down << 7
+	.if \stat == STAT_ACC
+		setbyte sSTATCHANGER, 6 | \stages << 3 | \down << 7
+	.elseif \stat == STAT_EVASION
+		setbyte sSTATCHANGER, 7 | \stages << 3 | \down << 7
+	.else
+		setbyte sSTATCHANGER, \stat | \stages << 3 | \down << 7
+	.endif
 	.endm
 
 	.macro setmoveeffect effect:req

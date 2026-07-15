@@ -12200,45 +12200,50 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
-
-Delcatty
+Dracovish @ choice scarf
 Level: 46
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+- fishious rend
 
-Roselia
+Kommo o @ lagging tail
+Level: 45
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- clangorous soul
+- scale shot
+- close combat
+- boomburst
+
+Zangoose @ toxic orb
 Level: 47
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+- facade
+- burning bulwark
+- Earthquake
+- fling
 
-Magneton
-Level: 44
+Zarude @ covert cloak
+Level: 47
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
+- leaf blade
+- Leech Seed
+- knock off
+- flail
 
-Gardevoir
+Dondozo @ leftovers
+Level: 46
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- curse
+- wave crash
+- double edge
+- rest
+
+Gardevoir @ wise glasses
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Team
 - Calm Mind
 - Psychic
-- Future Sight
+- focus blast
 
 === TRAINER_WALLY_VR_3 ===
 Name: WALLY
@@ -12250,45 +12255,50 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 50
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
-
-Delcatty
+Dracovish @ choice scarf
 Level: 49
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+- fishious rend
 
-Roselia
+Kommo o @ lagging tail
 Level: 50
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+- clangorous soul
+- scale shot
+- close combat
+- boomburst
 
-Magneton
+Zangoose @ toxic orb
+Level: 50
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- facade
+- burning bulwark
+- Earthquake
+- fling
+
+Zarude @ covert cloak
 Level: 47
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
+- leaf blade
+- Leech Seed
+- knock off
+- flail
 
-Gardevoir
+Dondozo @ leftovers
+Level: 48
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- curse
+- wave crash
+- double edge
+- rest
+
+Gardevoir @ wise glasses
 Level: 51
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Team
 - Calm Mind
 - Psychic
-- Future Sight
+- focus blast
 
 === TRAINER_WALLY_VR_4 ===
 Name: WALLY
@@ -12300,45 +12310,50 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 53
+Dracovish @ choice scarf
+Level: 54
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
+- fishious rend
 
-Delcatty
+Kommo o @ lagging tail
+Level: 54
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- clangorous soul
+- scale shot
+- close combat
+- boomburst
+
+Zangoose @ toxic orb
 Level: 52
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+- facade
+- burning bulwark
+- Earthquake
+- fling
 
-Roselia
+Zarude @ covert cloak
+Level: 52
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- leaf blade
+- Leech Seed
+- knock off
+- flail
+
+Dondozo @ leftovers
 Level: 53
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+- curse
+- wave crash
+- double edge
+- rest
 
-Magneton
-Level: 50
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
-
-Gardevoir
-Level: 54
+Gardevoir @ wise glasses
+Level: 55
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Team
 - Calm Mind
 - Psychic
-- Future Sight
+- focus blast
 
 === TRAINER_WALLY_VR_5 ===
 Name: WALLY
@@ -12350,45 +12365,50 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 56
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
-
-Delcatty
+Dracovish @ choice scarf
 Level: 55
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+- fishious rend
 
-Roselia
-Level: 56
+Kommo o @ Sitrus berry
+Level: 54
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
+- clangorous soul
+- scale shot
+- close combat
+- boomburst
+
+Zangoose @ toxic orb
+Level: 55
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- facade
+- burning bulwark
+- Earthquake
+- fling
+
+Zarude @ covert cloak
+Level: 55
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- leaf blade
 - Leech Seed
-- Giga Drain
-- Toxic
+- knock off
+- flail
 
-Magneton
-Level: 53
+Dondozo @ leftovers
+Level: 55
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
+- curse
+- wave crash
+- double edge
+- rest
 
-Gardevoir
+Gardevoir @ wise glasses
 Level: 57
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Team
 - Calm Mind
 - Psychic
-- Future Sight
+- focus blast
 
 === TRAINER_BRENDAN_LILYCOVE_MUDKIP ===
 Name: BRENDAN
