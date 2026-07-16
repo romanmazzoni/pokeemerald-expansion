@@ -102,6 +102,9 @@ static const u8 sPkblToEscapeFactor[][3] = {
 static const u8 sGoNearCounterToCatchFactor[] = {4, 3, 2, 1};
 static const u8 sGoNearCounterToEscapeFactor[] = {4, 4, 4, 4};
 
+// Deferred Gambit damage that should resolve after higher-priority move-end reactions.
+static s32 sQueuedGambitDamage[MAX_BATTLERS_COUNT];
+
 struct BattleWeatherInfo
 {
     u16 flag;
@@ -4512,12 +4515,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         break;
     case ABILITYEFFECT_MOVE_END: // Think contact abilities.
+        bool32 shouldQueueGambit = !IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove)
+                               && (gBattleMons[gBattlerTarget].gambit / 4 > 1)
+                               && IsBattlerAlive(gBattlerAttacker)
+                               && !IsBattlerAlive(gBattlerTarget);
+
         //apply the parry text here
         if (gSpecialStatuses[battler].isParried == TRUE
         && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)){
             BattleScriptPushCursor();
             gBattlescriptCurrInstr = BattleScript_EffectParry;
         }
+        //calculate waxing
         //Waxing proc here 
         if (RandomChance(RNG_PARRY, gSpeciesInfo[gBattleMons[gBattlerTarget].species].waxing, 255) == TRUE
         && IsBattlerAlive(gBattlerAttacker)
@@ -4834,9 +4843,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_AftermathDmg;
             }
+            if (shouldQueueGambit)
+                sQueuedGambitDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 4;
             effect++;
         }
-        if (SearchTraits(battlerTraits, ABILITY_INNARDS_OUT)
+        else if (SearchTraits(battlerTraits, ABILITY_INNARDS_OUT)
          && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
          && !IsBattlerAlive(gBattlerTarget)
          && IsBattlerAlive(gBattlerAttacker))
@@ -4848,14 +4859,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 PushTraitStack(battler, ABILITY_INNARDS_OUT);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_AftermathDmg;
+                if (shouldQueueGambit)
+                    sQueuedGambitDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 4;
                 effect++;
             }
         }
-        //Calculate gambit damage
-        if (!IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove) 
-        && (gBattleMons[gBattlerTarget].gambit / 4 > 1) 
-        && IsBattlerAlive(gBattlerAttacker)
-        && !IsBattlerAlive(gBattlerTarget))
+        // Run Gambit immediately only when no higher-priority recoil script triggered.
+        else if (shouldQueueGambit)
             {
                 gBattleStruct->moveDamage[gBattlerAttacker] = gBattleMons[gBattlerTarget].gambit / 4;
                 BattleScriptPushCursor();
@@ -5184,6 +5194,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
     break;
     case ABILITYEFFECT_MOVE_END_ATTACKER: // Same as above, but for attacker
+        if (sQueuedGambitDamage[gBattlerAttacker] != 0)
+        {
+            if (IsBattlerAlive(gBattlerAttacker))
+            {
+                gBattleStruct->moveDamage[gBattlerAttacker] = sQueuedGambitDamage[gBattlerAttacker];
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_EffectGambit;
+                effect++;
+            }
+            sQueuedGambitDamage[gBattlerAttacker] = 0;
+            break;
+        }
+
         STORE_BATTLER_TRAITS(gBattlerAttacker);
 
         if (SearchTraits(battlerTraits, ABILITY_POISON_TOUCH)
