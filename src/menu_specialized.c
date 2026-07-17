@@ -1498,7 +1498,7 @@ static void ShowAllConditionSparkles(struct Sprite *sprite)
 #undef sMonSpriteId
 #undef sNextSparkleSpriteId
 
-static const u8 *const sLvlUpStatStrings[NUM_STATS] =
+static const u8 *const sLvlUpStatStrings[6] =
 {
     gText_MaxHP,
     gText_Attack,
@@ -1508,7 +1508,7 @@ static const u8 *const sLvlUpStatStrings[NUM_STATS] =
     gText_Speed
 };
 
-static const u8 *const sLvlUpStatStrings2[NUM_STATS] =
+static const u8 *const sLvlUpStatStrings2[6] =
 {
     gText_Armor,
     gText_LerAttack,
@@ -1521,7 +1521,7 @@ static const u8 *const sLvlUpStatStrings2[NUM_STATS] =
 void DrawLevelUpWindowPg1(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bgClr, u8 fgClr, u8 shadowClr)
 {
     u16 i, x;
-    s16 statsDiff[NUM_STATS];
+    s16 statsDiff[6];
     u8 text[12];
     u8 color[3];
 
@@ -1538,7 +1538,7 @@ void DrawLevelUpWindowPg1(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bg
     color[1] = fgClr;
     color[2] = shadowClr;
 
-    for (i = 0; i < NUM_STATS; i++)
+    for (i = 0; i < 6; i++)
     {
 
         AddTextPrinterParameterized3(windowId,
@@ -1576,7 +1576,7 @@ void DrawLevelUpWindowPg1(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bg
 void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 shadowClr)
 {
     u16 i, numDigits, x;
-    s16 stats[NUM_STATS];
+    s16 stats[6];
     u8 text[12];
     u8 color[3];
 
@@ -1593,7 +1593,7 @@ void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 s
     color[1] = fgClr;
     color[2] = shadowClr;
 
-    for (i = 0; i < NUM_STATS; i++)
+    for (i = 0; i < 6; i++)
     {
         if (stats[i] > 99)
             numDigits = 3;
@@ -1626,7 +1626,7 @@ void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 s
 void DrawLevelUpWindowPg3(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bgClr, u8 fgClr, u8 shadowClr)
 {
     u16 i, x;
-    s16 statsDiff[NUM_STATS];
+    s16 statsDiff[6];
     u8 text[12];
     u8 color[3];
 
@@ -1643,7 +1643,7 @@ void DrawLevelUpWindowPg3(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bg
     color[1] = fgClr;
     color[2] = shadowClr;
 
-    for (i = 0; i < NUM_STATS; i++)
+    for (i = 0; i < 6; i++)
     {
 
         AddTextPrinterParameterized3(windowId,
@@ -1681,7 +1681,7 @@ void DrawLevelUpWindowPg3(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bg
 void DrawLevelUpWindowPg4(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 shadowClr)
 {
     u16 i, numDigits, x;
-    s16 stats[NUM_STATS];
+    s16 stats[6];
     u8 text[12];
     u8 color[3];
 
@@ -1698,7 +1698,7 @@ void DrawLevelUpWindowPg4(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 s
     color[1] = fgClr;
     color[2] = shadowClr;
 
-    for (i = 0; i < NUM_STATS; i++)
+    for (i = 0; i < 6; i++)
     {
         if (stats[i] > 99)
             numDigits = 3;

@@ -226,7 +226,7 @@ struct PartyMenuInternal
     // It is likely that the 0x160 value used below is a constant defined by
     // bin2c, the utility used to encode the compressed palette data.
     u16 palBuffer[BG_PLTT_SIZE / sizeof(u16)];
-    s16 data[20];
+    s16 data[24];
 };
 
 struct PartyMenuBox
@@ -5869,10 +5869,10 @@ static void Task_DisplayLevelUpStatsPg2(u8 taskId)
 static void DisplayLevelUpStatsPg1(u8 taskId)
 {
     u16 *arrayPtr = (u16*) sPartyMenuInternal->data;
+    u8 windowId = CreateLevelUpStatsWindow();
 
-    arrayPtr[12] = CreateLevelUpStatsWindow();
-    DrawLevelUpWindowPg1(arrayPtr[12], arrayPtr, &arrayPtr[6], TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY);
-    CopyWindowToVram(arrayPtr[12], COPYWIN_GFX);
+    DrawLevelUpWindowPg1(windowId, arrayPtr, &arrayPtr[12], TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY);
+    CopyWindowToVram(windowId, COPYWIN_GFX);
     ScheduleBgCopyTilemapToVram(2);
 }
 
@@ -5880,8 +5880,8 @@ static void DisplayLevelUpStatsPg2(u8 taskId)
 {
     u16 *arrayPtr = (u16*) sPartyMenuInternal->data;
 
-    DrawLevelUpWindowPg2(arrayPtr[12], &arrayPtr[6], TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY);
-    CopyWindowToVram(arrayPtr[12], COPYWIN_GFX);
+    DrawLevelUpWindowPg2(sPartyMenuInternal->windowId[0], &arrayPtr[12], TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY);
+    CopyWindowToVram(sPartyMenuInternal->windowId[0], COPYWIN_GFX);
     ScheduleBgCopyTilemapToVram(2);
 }
 

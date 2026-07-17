@@ -9584,11 +9584,15 @@ static void Cmd_drawlvlupbox(void)
         }
         break;
     case 8:
-        // Draw page 1 of level up box
-        DrawLevelUpWindow3();
-        PutWindowTilemap(B_WIN_LEVEL_UP_BOX);
-        CopyWindowToVram(B_WIN_LEVEL_UP_BOX, COPYWIN_FULL);
-        gBattleScripting.drawlvlupboxState++;
+        // Draw page 3 of level up box
+        if (gMain.newKeys != 0 || RECORDED_WILD_BATTLE)
+        {
+            PlaySE(SE_SELECT);
+            DrawLevelUpWindow3();
+            PutWindowTilemap(B_WIN_LEVEL_UP_BOX);
+            CopyWindowToVram(B_WIN_LEVEL_UP_BOX, COPYWIN_FULL);
+            gBattleScripting.drawlvlupboxState++;
+        }
         break;
     case 9:
     case 11:
@@ -9602,7 +9606,7 @@ static void Cmd_drawlvlupbox(void)
     case 10:
         if (gMain.newKeys != 0 || RECORDED_WILD_BATTLE)
         {
-            // Draw page 2 of level up box
+            // Draw page 4 of level up box
             PlaySE(SE_SELECT);
             DrawLevelUpWindow4();
             CopyWindowToVram(B_WIN_LEVEL_UP_BOX, COPYWIN_GFX);
