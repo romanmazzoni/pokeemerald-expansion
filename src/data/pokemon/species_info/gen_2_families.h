@@ -811,7 +811,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .sexism = 82,
         .hotStreak = 72,  
         .doubleHit = 60,  
-        .innates = {ABILITY_STRONG_JAW, ABILITY_BUG_BACK, ABILITY_POWER_CONSTRUCT},
+        .innates = {ABILITY_STRONG_JAW, ABILITY_BUG_BACK, ABILITY_POWER_SPOT},
         .types = MON_TYPES(TYPE_WATER, TYPE_KING, TYPE_LANCE),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -8643,7 +8643,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .sexism = 52,
         .hotStreak = 52,
         .doubleHit = 54,
-        .innates = {ABILITY_INTREPID_SWORD, ABILITY_POWER_CONSTRUCT, ABILITY_RETURN_FIRE},
+        .innates = {ABILITY_INTREPID_SWORD, ABILITY_POWER_SPOT, ABILITY_RETURN_FIRE},
         .types = MON_TYPES(TYPE_STEEL, TYPE_FLYING),
         .catchRate = 25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 168,
