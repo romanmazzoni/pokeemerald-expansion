@@ -61,6 +61,12 @@ NewBattleFrontierRoute_EventScript_ItemDuskStone::
 
 
 NewBattleFrontierRoute_Text_HouseSign::
+    lockall
+    msgbox NewBattleFrontierRoute_Text_HouseSign_Text
+    releaseall
+    return
+
+NewBattleFrontierRoute_Text_HouseSign_Text::
 	.string "The Pokemon breeder House.$"
 
 Route107_Text_FrankIntro::
