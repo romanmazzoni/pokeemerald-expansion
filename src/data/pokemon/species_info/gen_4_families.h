@@ -2853,7 +2853,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .sexism = 68,
         .hotStreak = 51,
         .doubleHit = 56,
-        .innates = {ABILITY_POISON_POINT, ABILITY_FLAME_BODY, ABILITY_STATIC},
+        .innates = {ABILITY_POISON_POINT, ABILITY_QUEENLY_MAJESTY, ABILITY_SCREEN_CLEANER},
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING, TYPE_KING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 188,
