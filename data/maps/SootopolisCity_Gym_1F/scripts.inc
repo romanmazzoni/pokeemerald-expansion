@@ -180,7 +180,8 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "bound {PLAYER}?\p"
 	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
 	.string "a master of KING-type POKéMON.\p"
-	.string "And, to get to JUAN, an icy floor\n"
+	.string "This one is for real.\p"
+	.string "To get to JUAN, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -210,7 +211,7 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "vomitous mass, that I'm only lying\l"
 	.string "here because I lack the strength\l"
 	.string "to stand.\p"
-	.string "But, then again... perhaps\n"
+	.string "But, then again... Perhaps\n"
 	.string "I have the strength after all.$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for

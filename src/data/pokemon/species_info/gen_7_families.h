@@ -8999,7 +8999,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .hotStreak = 125,
         .doubleHit = 118,
         .innates = {ABILITY_NORMALIZE, ABILITY_ADAPTABILITY},
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FURRY),
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Speed = 3,

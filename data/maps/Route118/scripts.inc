@@ -281,7 +281,7 @@ Route118_Text_DontYouLikeToFish:
 
 Route118_Text_TryCatchingMonWithGoodRod:
 	.string "Try catching all sorts of POKéMON\n"
-	.string "with your Light clay. hehe.$"
+	.string "with your Light Clay. Hehe.$"
 
 Route118_Text_CanCrossRiversWithSurf:
 	.string "Even if there isn't a boat, you can\n"

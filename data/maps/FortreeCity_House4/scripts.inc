@@ -86,7 +86,7 @@ FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "What is it holding?\p"
 	.string "500 dollars?\n"
 	.string "It must have robbed someone.\p"
-	.string "Don't tell anyone. here,\n"
+	.string "Don't tell anyone. Here,\n"
 	.string "take this as a gift.$"
 
 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:

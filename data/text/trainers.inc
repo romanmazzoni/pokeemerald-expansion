@@ -2629,7 +2629,7 @@ Route118_Text_DaltonPostRematch:
 	.string "you through my electric guitar…$"
 
 Route118_Text_DeandreIntro:
-	.string "from ivy, out middle\n"
+	.string "From ivy, out middle\n"
 	.string "through our connector like a speed demon!$"
 
 Route118_Text_DeandreDefeat:
@@ -3455,7 +3455,7 @@ Route123_Text_JazmynDefeat:
 	.string "to save the world.$"
 
 Route123_Text_JazmynPostBattle:
-	.string "Whelp. you seem pretty strong.\n"
+	.string "Whelp. You seem pretty strong.\n"
 	.string "I guess there's no reason\l"
 	.string "to help you at all.$"
 
@@ -3542,7 +3542,7 @@ Route124_Text_RolandDefeat:
 Route124_Text_RolandPostBattle:
 	.string "Wait you know how to swim\n"
 	.string "and you know how to battle?\p"
-	.string "pick a side dr. flip flop!$"
+	.string "pick a side dr. Flip flop!$"
 
 Route124_Text_JennyIntro:
 	.string "I find lots of cool stuff in\n"
