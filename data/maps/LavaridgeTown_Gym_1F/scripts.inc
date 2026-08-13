@@ -311,7 +311,7 @@ LavaridgeTown_Gym_1F_Text_FlanneryIntro:
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat:
 	.string "Oh…\n"
 	.string "Fair treatment was never shown\l"
-	.string "to my people\n"
+	.string "to my people.\n"
 	.string "Thanks for teaching me that.\n"
 	.string "For that, you deserve this.$"
 
